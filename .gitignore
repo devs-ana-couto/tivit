@@ -30,3 +30,19 @@ node_modules/
 
 # WP config
 wp-config.php
+wp-admin/
+wp-includes/
+index.php
+wp-active.php
+wp-blog-header.php
+wp-comments.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
