@@ -1,0 +1,364 @@
+/**
+  *  Hide desktop and mobile
+  */
+
+  @media(max-width: 760px){
+    .hide-mobile{
+      display: none;
+    }
+  }
+
+  @media(min-width: 760px){
+    .hide-desktop{
+      display: none;
+    }
+  }
+
+/**
+ *  Mobile
+ */
+
+// Botão Vermelho
+.botao{
+  text-align: center;
+  margin: 30px 0 60px 0;
+  a{
+    font-size: 14px;
+    line-height: 21.29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: $vermelho-tivit;
+    border: 0;
+    border-radius: 0;
+    padding: 15px 40px;
+  }
+}
+
+// Hero
+.home-hero{
+  .content{
+    background: url('../../assets/images/home/slider-1-mobile.png') no-repeat center center;
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title{
+      max-width: 320px;
+      margin: 0 auto;
+      h1{
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 119px;
+      }
+    }
+  }
+}
+
+// Intro
+.home-intro{
+  p{
+    font-size: 38px;
+    line-height: 38px;
+    color: #262626;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    span{
+      font-weight: bold;
+      color: $vermelho-tivit;
+    }
+  }
+  .arrow{
+    margin-top: 30px;
+  }
+}
+
+// Portifolio
+.home-portifolio{
+  background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
+  height: 580px;
+  margin-bottom: 50px;
+  .home-portifolio-content{
+    margin-top: 200px;
+    .hide-arrow{
+      opacity: 0;
+      @media(max-width: 760px){
+        display: none;
+      }
+    }
+    h3, p{
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    h3{
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: 15px;
+
+    }
+    .red{
+      color: $vermelho-tivit;
+      font-weight: 600;
+    }
+  }
+}
+
+// Cases
+.home-cases{
+  background: url('../../assets/images/home/cases-mobile.png') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  .home-cases-title{
+    h2{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  .carousel{
+    margin-top: 336px;
+    .home-cases-content{
+      .home-cases-autor{
+        h3{
+          color: $vermelho-tivit;
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: bold;       
+          text-transform: uppercase;   
+        }
+        p{
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 400;
+          color: white;
+        }
+      }
+      .botao{
+        a{
+          background: transparent;
+          border: 1px solid $vermelho-tivit;
+        }
+      }
+    }
+  }
+}
+
+// Pessoas e Carreiras
+.home-pessoas-e-carreiras{
+  background: url('../../assets/images/home/carreiras-mobile.png') no-repeat center center;
+  height: 350px;
+  margin-bottom: 38px;
+  background-size: cover;
+  .home-pessoas-e-carreiras-title{
+    margin-top: 187px;
+    h2{
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+    }
+  }
+  .botao{
+    margin-top: 24px;
+    a{
+      background: white;
+      color: $vermelho-tivit;
+      border: solid 1px $vermelho-tivit;
+      padding: 15px 11px;
+      &:hover{
+        background: $vermelho-tivit;
+        color: white;
+      }
+    }
+  }
+}
+
+
+/**
+ *  Desktop
+ */
+
+@media(min-width: 760px){
+  .home-hero{
+    margin-bottom: 140px;
+    .content{
+      background: url('../../assets/images/home/slider-1.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      .title{
+        max-width: 100%;
+      }
+    }
+
+    .container{
+      position: relative;
+      .redes{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        bottom: 40px;
+      }
+    }
+
+  }
+
+  .home-intro{
+    padding: 140px 0;
+    p{
+      font-size: 48px;
+      max-width: 766px;
+    }
+    .arrow{
+      margin-top: 0;
+    }
+    .botao{
+      margin-bottom: 0;
+      a{
+        border: red solid 1px; 
+        &:hover{
+          background: white;
+          color: $vermelho-tivit;
+          border: red solid 1px;          
+        }
+      }
+    }
+  }
+
+  .home-portifolio{
+    background: url('../../assets/images/home/portifolio.png') no-repeat center center;
+    height: 699px;
+
+    .home-portifolio-content{
+
+      margin-top: 182px;
+      h3, p, a{
+        text-align: left;
+      }
+      h3{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      p{
+        font-size: 36px;
+        line-height: 56px;
+        margin-bottom: 0;
+        color: white;
+        &:hover{
+          .hide-arrow{
+            opacity: 1;
+          }
+          color: $vermelho-tivit;
+        }
+      }
+      .botao{
+        margin: 40px 0 0 0;
+        text-align: left;
+        &:hover{
+          a{
+            background: white;
+            color: $vermelho-tivit;
+          }
+        }
+      }
+
+    }
+  }
+
+  .home-cases{
+    background: url('../../assets/images/home/cases.png') no-repeat center center;
+    background-size: cover;
+    .home-cases-title{
+      h2{
+        margin-top: 100px;
+      }
+      p{
+        text-align: center;
+        color: white;
+        margin-top: 5px;
+      }
+    }
+    .home-cases-content{
+    
+      .home-cases-autor{
+        width: 450px;
+        h3{
+          color: $vermelho-tivit;
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: bold;       
+          text-transform: uppercase;   
+        }
+        p{
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 400;
+          color: white;
+        }
+      } 
+      .botao{
+        a{
+          background: transparent;
+          border: 1px solid $vermelho-tivit;
+          &:hover{            
+            background: white;
+            color: $vermelho-tivit;
+            border: white solid 1px;
+          }       
+        } 
+      }
+    }
+    .home-cases-content.left{
+      margin-top: 205px;
+
+
+      h3,p, .botao{
+        text-align: left;
+        
+      }
+    }
+    .home-cases-content.right{
+      margin-top: 205px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h3,p, .botao{
+        text-align: right;
+      }
+    }
+  }
+
+  .home-pessoas-e-carreiras{
+    background: url('../../assets/images/home/carreiras.png') no-repeat center center;
+    height: 760px;
+    .home-pessoas-e-carreiras-title{
+      margin-top: 317px;
+      p{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,290 @@
+// Banner
+.cases-hero{
+    height: 580px;
+    background: url('../../assets/images/cases/banner-mobile.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .cases-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .cases-hero-content{
+    h2{
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+        width: 320px;
+        margin: 198px auto 0 auto;
+    }
+    }
+    .botao{
+        margin-bottom: 30px;
+    a{
+        background: transparent;
+        color: $vermelho-tivit;
+        border: solid 1px $vermelho-tivit;
+        
+    }
+    }
+    .arrow{
+    margin-top: 0;
+    }
+}
+
+// Depoimentos
+.cases-depoimentos{
+    padding-top: 50px;
+    .img{
+        margin-top: 50px;
+    }
+    .title-autor{
+        margin-top: 10px;
+        h3{
+            font-size: 16px;
+            line-height: 24.34px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    .desc-autor{
+        p{
+            font-size: 14px;
+            line-height: 21.29px;
+            margin: 0;
+        }
+    }
+    .depoimento{
+        margin-top: 30px;
+        p{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            width: 328px;
+            margin: 0 auto;
+        }
+        span{
+            color: $vermelho-tivit;
+        }
+    }
+    .botao{
+        margin-top: 45px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+// Cases
+.a-tivit-cases.cases{
+    background-image: url('../../assets/images/cases/bg-cases.png');
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+// Cases Recentes
+.cases-recentes{
+    background: $cinza-dark-cyber-tivit;
+    padding-top: 60px;
+    margin-top: -1px;
+    .title{
+        h2{
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 0.03em;
+
+        }
+    }
+    .img{
+        margin-top: 40px;
+    }
+    .detalhes{
+        margin-top: 20px;
+        a{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            border-radius: 50px;
+            border: solid 1px white;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            &:first-child{
+                margin-right: 5px;
+            }
+        }
+        span{
+            color: white;
+            font-size: 12px;
+            line-height: 18.25px;
+            margin-left: 10px;
+        }
+    }
+    .content{
+        width: 284px;
+        margin-top: 12px;
+        h3{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            margin: 0;
+            color: $vermelho-tivit;
+            text-transform: uppercase;
+        }
+    }
+    .autor-time{
+        margin: 10px 0;
+        p{
+            color: white;
+            font-size: 12px;
+            line-height: 18.25px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    .acessar{
+        margin-bottom: 100px;
+        a{
+            font-size: 14px;
+            line-height: 21.29px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: flex;
+        }
+        img{
+            margin-left: 5px;
+        }
+    }
+}
+
+
+@media(min-width: 760px){
+    .cases-hero{
+        background: url('../../assets/images/cases/banner.png') no-repeat center center;
+        background-size: cover;
+        height: 823px;
+        .cases-hero-title{
+            h1, h2{
+                text-align: center;
+                color: white;
+            }
+            h1{
+                margin-top: 243px;
+            }
+        }
+    }
+    .cases-depoimentos{
+        .img{
+            margin-top: 0;
+        }
+        .depoimento{
+            p{
+                width: 1092px;
+                font-size: 38px;
+                line-height: 48px;
+                font-weight: 700;
+            }
+        }
+    }
+    .a-tivit-cases.cases{
+        background-image: url('../../assets/images/cases/bg-cases-desktop.png');
+        background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+        background-size: unset;
+        .detalhes{
+            margin-top: 180px;
+        }
+    }
+    .cases-recentes{
+        padding-bottom: 100px;
+        .acessar{
+            margin-bottom: 30px;
+        }
+        .img{
+            img{
+                width: 371px;
+            }
+        }
+        .content{
+            width: 371px;
+        }
+        .autor-time{
+            display: inline-flex;
+            p{
+                &:first-child{
+                    margin-right: 38px;
+                }
+            }
+        }
+        .assuntos{
+            h4{
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+            }
+            a{
+                font-size: 12px;
+                border: 1px solid white;
+                border-radius: 50px;
+                padding: 0 13px;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-right: 7px;
+                &:hover{
+                    background-color: red;
+                    border: 1px solid red;
+                }
+            }
+            .active{
+                background-color: red;
+                border: 1px solid red;
+            }
+        }
+        .col-5{
+            display: flex;
+            justify-content: center;
+        }
+        .filtros{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 34px;
+            .select{
+                margin-right: 50px;
+                select{
+                    width: 270px;
+                    font-weight: bold;
+                    color: white;
+                    text-transform: uppercase;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    background: transparent;
+                    option{
+                       color: black;
+                    }
+                }
+            }
+        }
+    }
+}

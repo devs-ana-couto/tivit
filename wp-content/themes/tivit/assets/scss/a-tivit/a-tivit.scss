@@ -1,0 +1,579 @@
+// Banner
+.a-tivit-hero{
+    height: 580px;
+    background: url('../../assets/images/a-tivit/banner.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .a-tivit-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .botao{
+            a{
+                background: white;
+                border: white solid 1px;
+                text-decoration: none;
+                &:hover{
+                    background: $vermelho-tivit;
+                    color: white;
+                    border: 1px solid $vermelho-tivit;
+                }
+            }
+        }
+    }
+    .a-tivit-hero-content{
+      h2{
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 98px;
+      }
+    }
+    .botao{
+        margin-bottom: 30px;
+      a{
+        background: transparent;
+        color: $vermelho-tivit;
+        border: solid 1px $vermelho-tivit;
+        
+      }
+    }
+    .arrow{
+      margin-top: 0;
+    }
+}
+
+// Sobre
+.a-tivit-sobre{
+    margin: 100px 0 40px 0;
+    p{
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+// Carousel 
+.a-tivit-carousel{
+    .arrow-slider{
+        position: absolute;
+        z-index: -1;
+    }
+    .mask-slider{
+        position: absolute;
+        z-index: 1;
+        width: 600px;
+        bottom: 172px;
+    }
+    .carousel-indicators{
+        background: black;
+        bottom: unset!important;
+        margin: 0;
+        height: 73px;
+    }
+    .carousel-indicators .active{
+        font-weight: bold!important;
+    }
+    .carousel-indicators [data-bs-target]{
+        margin: auto 3px;
+        height: 50px;
+        width: 50px;
+        text-indent: 0!important;
+        color: white;
+        background: transparent;
+        padding: 0 18px;
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 1;
+    }
+    .content{
+        background: black;
+        height: 172px;
+        display: flex;
+        p{
+            margin-top: 43px;
+            font-size: 16px;
+            line-height: 27px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+// Cases
+.a-tivit-cases{
+    height: 580px;
+    background: url('../../assets/images/a-tivit/cases.png') no-repeat center center;
+    margin-top: 50px;
+    .detalhes{
+        width: 284px;
+        margin: 250px auto 0 auto;
+        a{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            padding: 4px 10px;
+            &:hover{
+                background: #fff;
+                color: $vermelho-tivit;
+                border: 1px solid $vermelho-tivit;
+            }
+        }
+        :first-child{
+            margin-right: 5px;
+        }
+        span{
+            font-size: 12px;
+            line-height: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+    }
+    .content{
+        width: 284px;
+        margin: 12px auto 13px auto;
+        h2{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .autor-time{
+        width: 284px;
+        margin: 12px auto 0 auto;
+        p{
+            font-size: 12px;
+            line-height: auto;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+    }
+    .acessar{
+        width: 284px;
+        margin: 10px auto 0 auto;
+        a{
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: flex;
+            &:hover{
+                background: $vermelho-tivit;
+                color: white;
+                border: 1px solid $vermelho-tivit;
+            }
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// Inovação
+.a-tivit-inovacao{
+    padding-top: 45px;
+    background-color: rgba($color: $cinza-light-tivit, $alpha: 0.2);
+    .content{
+        width: 320px;
+        margin: 0 auto;
+        h2{
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: bold;
+            color: $cinza-dark-cyber-tivit;
+            text-transform: uppercase;
+        }
+        P{
+            margin-bottom: 30px;
+        }
+    }
+    
+    .card{
+        margin-top: 20px;
+        background: #fff;
+        height: 160px;
+        justify-content: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-top: 20px;
+                &:hover{
+                    color: $vermelho-tivit;
+                }
+            }
+        }
+    }
+
+    .botao{
+        margin-top: 40px;
+        a{
+            color: #fff;
+            text-decoration: none;
+            &:hover{
+                color: $vermelho-tivit;
+                background: transparent;
+                border: $vermelho-tivit 1px solid;
+            }
+        }
+    }
+
+}
+
+// Experts
+.a-tivit-experts{
+    padding-top: 60px;
+    .a-tivit-experts-title{
+        margin-bottom: 40px;
+        h2{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .col-6{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .a-tivit-experts-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 150px;
+
+        h3{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $vermelho-tivit;
+            margin-bottom: 0;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Carousel
+.carousel.a-tivit{
+    margin-top: 50px;
+    .lp-tbanks-confira {
+        
+        .lp-tdx-confira-bg-right{
+            background-color: $cinza-dark-tivit;
+            h3{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 24px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 24px;
+                width: 320px;
+                margin: 0 auto;
+            }
+        }
+        .col-md-6{
+            justify-content: unset;
+        }
+        
+    }
+}
+
+// Certificações
+.a-tivit-certificacoes{
+    padding-bottom: 120px;
+    .title{
+        margin-top: 53px;
+        h2{
+            font-size: 24px;
+            line-height: 24px;
+            color: $cinza-dark-tivit;
+        }
+    }
+    .desc{
+        margin: 20px auto 40px auto;
+        max-width: 320px;   
+    }
+    .col-6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Inovar
+.inovar{
+    background: url('../../assets/images/a-tivit/inovar.svg') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+/**
+  * Desktop  
+  */
+
+
+@media(min-width: 760px){
+    // Hero
+    .a-tivit-hero{
+        background: url('../../assets/images/a-tivit/banner-desktop.png') no-repeat center center;
+        background-size: cover;
+        height: 630px;
+        @media(min-width: 1441px){
+            height: 818px;
+        }
+        .a-tivit-hero-title{
+            margin: 229px auto 0 auto;
+            h1{
+               font-size: 14px;
+               line-height: 21.29px;
+               font-weight: 700; 
+               text-align: center;
+               margin: 0;
+      
+            }
+            h2{
+                font-size: 48px;
+                line-height: 54px;
+                color: white;
+                font-weight: 400;
+                text-align: center;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+        }
+    }
+    // Sobre
+    .a-tivit-sobre{
+        margin: 55px 0 145px 0;
+        p{
+            font-size: 44px;
+            line-height: 50px;
+            text-align: center;
+            width: 908px;
+            margin: 0 auto;
+        }
+    }
+    // Carousel
+    .a-tivit-carousel{
+        display: none;
+    }
+    // Cases
+    .a-tivit-cases{
+        background: url('../../assets/images/a-tivit/cases-desktop.png') no-repeat center center;
+        height: 700px;
+        .confira{
+            margin: 100px auto 13px auto;
+            h2{
+            font-size: 44px;
+            line-height: 50px;
+            color: white;
+            
+            }
+        }
+        .detalhes{
+            margin-top: 77px;
+        }
+        .detalhes, .acessar, .confira{
+            width: 429.36px;
+        }
+        .content{
+            width: 429.36px;
+            h2{
+                font-size: 28px;
+                line-height: 34px;
+                font-weight: 600;
+                letter-spacing: 0.03em;
+
+            }
+        }
+        .autor-time{
+            width: 429.36px;
+            display: flex;
+            p{
+                margin: 30px 28px 40px 0;
+            }
+        }
+        .acessar{
+            a{ 
+                border: solid 1px $vermelho-tivit;
+                padding: 20px 10px;
+                width: 160px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    // Inovação
+    .a-tivit-inovacao{
+        padding: 100px 0 30px 0;
+        .content{
+            width: 828px;
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                margin-bottom: 50px;
+            }
+        }
+        .card{
+            width: 467px;
+            height: 220px;
+            background: unset;
+            box-shadow: unset;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            a{
+                margin-top: 0!important;
+                opacity: 0;
+            }
+            &:hover{
+                transition: 1.2s;
+                .card-content.card1{
+                    margin-top: -65px;
+
+                    mix-blend-mode: unset;
+                }
+                .card-content.card2{
+                    margin-top: -65px;
+                    mix-blend-mode: unset;
+                }
+                a, p, .card-content.card1, .card-content.card2, .card{
+                    transition: 2s;
+                    opacity: 1;
+                }
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 80px;
+                text-align: center;
+                opacity: 0;
+            }
+            .card-content.card1{
+                background-image: url('../../assets/images/a-tivit/labs1.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 85px;
+                mix-blend-mode: luminosity;
+                opacity: 0.3;
+                width: 413px;
+
+            }
+            .card-content.card2{
+                background-image: url('../../assets/images/a-tivit/labs2.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 50px;
+                mix-blend-mode: luminosity;
+                opacity: 0.3;
+            }
+        }
+        .botao{
+            margin-top: 60px;
+        }
+    }
+    // Experts
+    .a-tivit-experts{
+        margin-bottom: 100px;
+        img{
+            margin-top: 29px;
+        }
+        .a-tivit-experts-desc{
+            text-align: center;
+            max-width: 270px;
+            margin: 0 auto;
+            h3{
+                margin-top: 30px;
+            }
+        }
+    }
+    // Carousel
+    .carousel.a-tivit{
+        h2, h3, p{
+            text-align: left;
+        }
+        .lp-tbanks-confira{
+            height: 100%;
+            .lp-tdx-confira-bg-right{
+                p{
+                    margin: 0;
+                }
+                h3{
+                    margin-top: 31px;
+                    width: 471px;
+                    font-size: 44px;
+                    line-height: 50px;
+                }
+            }
+            .lp-tbanks-confira-bg-left{
+                background: url('../../assets/images/a-tivit/carousel/banner1.png') no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    // Certificações
+    .a-tivit-certificacoes{
+        background: rgba(202, 210, 216, 0.2);
+        .desc{
+            max-width: 828px;
+        }
+        .title{
+            margin-top: 90px;
+            h2{
+                font-size: 28px;
+                line-height: 44px;
+                font-weight: bold;
+                color: $cinza-dark-tivit;
+                text-transform: uppercase;
+            }
+        }
+    }
+    // Inovar
+    .home-pessoas-e-carreiras.inovar{
+        background: url('../../assets/images/a-tivit/inovar-bg.png') no-repeat center center;
+        height: 675px;
+        background-size: cover;
+        .home-pessoas-e-carreiras-title{
+            margin-top: 217px;
+        }
+    }
+}
