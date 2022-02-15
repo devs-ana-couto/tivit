@@ -2,28 +2,51 @@
 
 <div class="home-hero">
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="hero" class="carousel slide" data-bs-ride="carousel">
 
     <div class="carousel-inner text-center">
-      <div class="carousel-item active">
+      <div class="carousel-item heroslide active">
         <div class="content">
           <div class="title">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item heroslide">
         <div class="content">
           <div class="title">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item heroslide">
         <div class="content">
           <div class="title">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">        
+          <div class="navigation"> 
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+            </button>
+            <div class="d-flex flex-row counter">
+              <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hero 1"></button>
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Hero 2"></button>
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Hero 3"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +65,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
 </div>

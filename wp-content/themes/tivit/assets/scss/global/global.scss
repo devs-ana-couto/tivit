@@ -329,15 +329,16 @@ html, body, * {
         font-size: 14px;
         line-height: 24.34px;
         font-weight: 600;
-        color: white;
+        color: $vermelho-tivit;
+        background: white;
         text-transform: uppercase;
         text-decoration: none;
         border: 1px solid white;
         box-sizing: border-box;
         border-radius: 50px;
         &:hover{
-          background-color: white;
-          color: $vermelho-tivit;
+          background-color: transparent;
+          color: white;
         }
       }
     }
@@ -753,11 +754,11 @@ html, body, * {
     }
   }
 }
+.carousel-control-prev, .carousel-control-next{
+  width: auto !important;
+  opacity: 1 !important;
+}
 .carousel-indicators{
-  @media(min-width:760px){
-    right: unset!important;
-    margin: 0 0 5rem 0!important;
-  }
   @media(max-width:759px){
     bottom: 0!important;
   }

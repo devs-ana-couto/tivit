@@ -195,7 +195,6 @@
 /**
  *  Desktop
  */
-
 @media(min-width: 760px){
   .home-hero{
     margin-bottom: 140px;
@@ -216,6 +215,45 @@
         flex-direction: column;
         right: 0;
         bottom: 40px;
+      }
+    }
+
+    .container{
+      position: relative;
+      .navigation{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 0;
+        bottom: 50px;
+        a{
+          color: white;
+        }
+        .carousel-indicators{
+          top: 25px;
+          margin: 0;
+          button{
+            height: 1px;
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+        .counter{
+          margin-left: 27px;
+          margin-right: 27px;
+          .numactive{
+            color: white;
+            font-weight: 700;
+          }
+          .numseparation, .numtotal{
+            color: white;
+            font-weight: 300;
+          }
+          .numseparation{
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+        }
       }
     }
 

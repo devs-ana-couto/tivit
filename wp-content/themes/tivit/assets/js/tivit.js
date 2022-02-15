@@ -65,6 +65,31 @@ if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tban
    change_icon_hamburguer_color_tdx(); 
 }
 
+// Executes after DOM loads
+jQuery(document).ready(function($) {
+
+   var totalItems = $('.heroslide').length;
+   var currentIndex = $('.heroslide.active').index() + 1;
+   
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive').html( currentIndex );
+   $('.numseparation').html('  /  ');
+   $('.numtotal').html( totalItems );
+
+   $('#hero').carousel({
+      interval: 4000
+    });
+
+   $('#hero').bind('slid.bs.carousel', function() {
+      currentIndex = $('.heroslide.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive').html( currentIndex );
+      $('.numseparation').html('  /  ');
+      $('.numtotal').html( totalItems );
+   });
+
+})
+
 // Add class on scroll
 window.addEventListener('scroll', function() { 
   scrollpos = window.scrollY;
