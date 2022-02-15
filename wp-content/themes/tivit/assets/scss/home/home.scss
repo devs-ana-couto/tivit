@@ -58,8 +58,28 @@
   }
 }
 
+//Efeito intro
+.imgtransition.active{
+  max-height: 0%;
+  opacity: 0;
+  // transition: max-height 0.25s ease-in;
+  transition: all 0.3s ease-out;
+}
+
+.imgtransition{
+  max-height: 100%;
+  opacity: 1;
+  // transition: max-height 0.25s ease-in;
+  transition: all 0.3s ease-out;
+  width: 100% !important;
+  @media(max-width:759px){
+    height: 500px !important;
+  }
+}
+
 // Intro
 .home-intro{
+  position: relative;
   p{
     font-size: 38px;
     line-height: 38px;
@@ -74,6 +94,14 @@
   }
   .arrow{
     margin-top: 30px;
+  }
+  .pcustom{
+    opacity: 0;
+    transition: all 0.2s ease-out;
+  }
+  .pcustom.active{
+    opacity: 1;
+    transition: all 1s ease-out;
   }
 }
 
@@ -197,7 +225,7 @@
  */
 @media(min-width: 760px){
   .home-hero{
-    margin-bottom: 140px;
+    margin-bottom: 0px;
     .content{
       background: url('../../assets/images/home/slider-1.png') no-repeat center center;
       background-size: cover;
@@ -260,10 +288,14 @@
   }
 
   .home-intro{
-    padding: 140px 0;
+    .pcustom{
+      padding: 140px 0 140px 0;
+    }
     p{
       font-size: 48px;
       max-width: 766px;
+      line-height: 54px;
+      font-weight: lighter;
     }
     .arrow{
       margin-top: 0;

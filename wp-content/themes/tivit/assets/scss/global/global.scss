@@ -757,6 +757,9 @@ html, body, * {
 .carousel-control-prev, .carousel-control-next{
   width: auto !important;
   opacity: 1 !important;
+  @media(max-width:759px){
+    padding: 10px !important;
+  }
 }
 .carousel-indicators{
   @media(max-width:759px){

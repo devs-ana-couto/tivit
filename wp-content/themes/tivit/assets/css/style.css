@@ -453,6 +453,9 @@ html, body, * {
 .carousel-control-prev, .carousel-control-next {
   width: auto !important;
   opacity: 1 !important; }
+  @media (max-width: 759px) {
+    .carousel-control-prev, .carousel-control-next {
+      padding: 10px !important; } }
 
 @media (max-width: 759px) {
   .carousel-indicators {
@@ -514,18 +517,40 @@ html, body, * {
       font-weight: 400;
       margin-top: 119px; }
 
-.home-intro p {
-  font-size: 38px;
-  line-height: 38px;
-  color: #262626;
-  text-align: center;
-  max-width: 320px;
-  margin: 0 auto; }
-  .home-intro p span {
-    font-weight: bold;
-    color: #F20024; }
-.home-intro .arrow {
-  margin-top: 30px; }
+.imgtransition.active {
+  max-height: 0%;
+  opacity: 0;
+  transition: all 0.3s ease-out; }
+
+.imgtransition {
+  max-height: 100%;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  width: 100% !important; }
+  @media (max-width: 759px) {
+    .imgtransition {
+      height: 500px !important; } }
+
+.home-intro {
+  position: relative; }
+  .home-intro p {
+    font-size: 38px;
+    line-height: 38px;
+    color: #262626;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto; }
+    .home-intro p span {
+      font-weight: bold;
+      color: #F20024; }
+  .home-intro .arrow {
+    margin-top: 30px; }
+  .home-intro .pcustom {
+    opacity: 0;
+    transition: all 0.2s ease-out; }
+  .home-intro .pcustom.active {
+    opacity: 1;
+    transition: all 1s ease-out; }
 
 .home-portifolio {
   background: url("../../assets/images/home/portifolio-mobile.png") no-repeat center center;
@@ -615,7 +640,7 @@ html, body, * {
  */
 @media (min-width: 760px) {
   .home-hero {
-    margin-bottom: 140px; }
+    margin-bottom: 0px; }
     .home-hero .content {
       background: url("../../assets/images/home/slider-1.png") no-repeat center center;
       background-size: cover;
@@ -660,21 +685,23 @@ html, body, * {
             margin-left: 5px;
             margin-right: 5px; }
 
-  .home-intro {
-    padding: 140px 0; }
-    .home-intro p {
-      font-size: 48px;
-      max-width: 766px; }
-    .home-intro .arrow {
-      margin-top: 0; }
-    .home-intro .botao {
-      margin-bottom: 0; }
-      .home-intro .botao a {
+  .home-intro .pcustom {
+    padding: 140px 0 140px 0; }
+  .home-intro p {
+    font-size: 48px;
+    max-width: 766px;
+    line-height: 54px;
+    font-weight: lighter; }
+  .home-intro .arrow {
+    margin-top: 0; }
+  .home-intro .botao {
+    margin-bottom: 0; }
+    .home-intro .botao a {
+      border: red solid 1px; }
+      .home-intro .botao a:hover {
+        background: white;
+        color: #F20024;
         border: red solid 1px; }
-        .home-intro .botao a:hover {
-          background: white;
-          color: #F20024;
-          border: red solid 1px; }
 
   .home-portifolio {
     background: url("../../assets/images/home/portifolio.png") no-repeat center center;
