@@ -76,7 +76,7 @@
   <div class="container pcustom">
     <div class="row">
       <div class="col-12">
-        <div class="arrow text-center">
+        <div class="to  text-center">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
         </div>
         <p class="mt-3">

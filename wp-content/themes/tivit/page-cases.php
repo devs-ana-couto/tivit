@@ -47,11 +47,11 @@
 </div>
 
 <div class="a-tivit-cases cases">
-  <div id="hero" class="carousel slide" data-bs-ride="carousel">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="container">
       <div class="row">
         <div class="carousel-inner">
-          <div class="carousel-item heroslide">
+          <div class="carousel-item heroslide active fundo1">
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item heroslide">
+          <div class="carousel-item heroslide fundo2">
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">
@@ -89,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item heroslide active">
+          <div class="carousel-item heroslide fundo3">
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">

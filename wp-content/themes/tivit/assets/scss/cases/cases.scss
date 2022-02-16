@@ -27,13 +27,12 @@
     }
     }
     .botao{
-        margin-bottom: 30px;
-    a{
+      margin-bottom: 30px;
+      a{
         background: transparent;
         color: $vermelho-tivit;
-        border: solid 1px $vermelho-tivit;
-        
-    }
+        border: solid 1px $vermelho-tivit;        
+      }
     }
     .arrow{
     margin-top: 0;
@@ -44,43 +43,43 @@
 .cases-depoimentos{
     padding-top: 50px;
     .img{
-        margin-top: 50px;
+      margin-top: 50px;
     }
     .title-autor{
-        margin-top: 10px;
-        h3{
-            font-size: 16px;
-            line-height: 24.34px;
-            font-weight: 600;
-            margin: 0;
-        }
+      margin-top: 10px;
+      h3{
+        font-size: 16px;
+        line-height: 24.34px;
+        font-weight: 600;
+        margin: 0;
+      }
     }
     .desc-autor{
-        p{
-            font-size: 14px;
-            line-height: 21.29px;
-            margin: 0;
-        }
+      p{
+        font-size: 14px;
+        line-height: 21.29px;
+        margin: 0;
+      }
     }
     .depoimento{
-        margin-top: 30px;
-        p{
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 700;
-            width: 328px;
-            margin: 0 auto;
-        }
-        span{
-            color: $vermelho-tivit;
-        }
+      margin-top: 30px;
+      p{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        width: 328px;
+        margin: 0 auto;
+      }
+      span{
+        color: $vermelho-tivit;
+      }
     }
     .botao{
-        margin-top: 45px;
-        a{
-            color: white;
-            text-decoration: none;
-        }
+      margin-top: 45px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
 }
 
@@ -91,19 +90,29 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  background-image: url('../../assets/images/cases/bg-cases.png');
-  background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  .fundo1{
+    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    height: 560px;
+  }
+  .fundo2{
+    background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    height: 560px;
+  }
+  .fundo3{
+    background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    height: 560px;
+  }
 
   .navigation{
     position: absolute;
     display: flex;
     flex-direction: row;
-    right: 40px;
-    bottom: 0px;
+    right: 80px;
+    bottom: 70px;
     a{
       color: white;
     }
@@ -119,6 +128,7 @@
     .counter{
       margin-left: 27px;
       margin-right: 27px;
+      z-index: 1;
       .numactive{
         color: white;
         font-weight: 700;
@@ -249,9 +259,6 @@
   }
 
   .a-tivit-cases.cases{
-    background-image: url('../../assets/images/cases/bg-cases-desktop.png');
-    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
-    background-size: unset;
     height: 580px;
     .autor-time {
       p{
@@ -297,6 +304,10 @@
         width: 101px;
         padding-left: 0;
         margin-left: 0;
+        &:hover{
+          color: $vermelho-tivit;
+          background: none;
+        }
       }
     } 
   }

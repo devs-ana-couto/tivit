@@ -906,7 +906,6 @@ html, body, * {
 
 .a-tivit-cases {
   height: 580px;
-  background: url("../../assets/images/a-tivit/cases.png") no-repeat center center;
   margin-top: 50px; }
   .a-tivit-cases .detalhes {
     width: 284px;
@@ -1115,7 +1114,6 @@ html, body, * {
   .a-tivit-carousel {
     display: none; }
   .a-tivit-cases {
-    background: url("../../assets/images/a-tivit/cases-desktop.png") no-repeat center center;
     height: 700px; }
     .a-tivit-cases .confira {
       margin: 100px auto 13px auto; }
@@ -1306,9 +1304,6 @@ html, body, * {
       text-decoration: none; }
 
 .a-tivit-cases.cases {
-  background-image: url("../../assets/images/cases/bg-cases.png");
-  background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, #262626 50%, white 50%);
-  /* W3C */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
@@ -1316,12 +1311,24 @@ html, body, * {
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto; }
+  .a-tivit-cases.cases .fundo1 {
+    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, #262626 50%, white 50%);
+    /* W3C */
+    height: 560px; }
+  .a-tivit-cases.cases .fundo2 {
+    background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, #262626 50%, white 50%);
+    /* W3C */
+    height: 560px; }
+  .a-tivit-cases.cases .fundo3 {
+    background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, #262626 50%, white 50%);
+    /* W3C */
+    height: 560px; }
   .a-tivit-cases.cases .navigation {
     position: absolute;
     display: flex;
     flex-direction: row;
-    right: 40px;
-    bottom: 0px; }
+    right: 80px;
+    bottom: 70px; }
     .a-tivit-cases.cases .navigation a {
       color: white; }
     .a-tivit-cases.cases .navigation .carousel-indicators {
@@ -1333,7 +1340,8 @@ html, body, * {
         margin-right: 0; }
     .a-tivit-cases.cases .navigation .counter {
       margin-left: 27px;
-      margin-right: 27px; }
+      margin-right: 27px;
+      z-index: 1; }
       .a-tivit-cases.cases .navigation .counter .numactive {
         color: white;
         font-weight: 700; }
@@ -1426,10 +1434,6 @@ html, body, * {
     line-height: 48px;
     font-weight: 700; }
   .a-tivit-cases.cases {
-    background-image: url("../../assets/images/cases/bg-cases-desktop.png");
-    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, #262626 50%, white 50%);
-    /* W3C */
-    background-size: unset;
     height: 580px; }
     .a-tivit-cases.cases .autor-time p {
       margin: 30px 28px 0 0; }
@@ -1462,6 +1466,9 @@ html, body, * {
       width: 101px;
       padding-left: 0;
       margin-left: 0; }
+      .a-tivit-cases.cases .acessar a:hover {
+        color: #F20024;
+        background: none; }
   .cases-recentes {
     padding-bottom: 100px; }
     .cases-recentes .acessar {
