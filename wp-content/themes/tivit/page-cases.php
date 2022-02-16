@@ -42,9 +42,6 @@
       <div class="depoimento">
           <p><span>”</span>A solução TIVIT nos permitiu criar uma estrutura que podemos dimensionar para ser maior ou menor, dependendo do que está acontecendo e o que aprendemos sobre COVID-19.<span>”</span></p>
       </div>
-      <div class="botao">
-          <a href="#">Conheça essa história</a>
-      </div>
     </div>
   </div>
 </div>
@@ -54,58 +51,57 @@
     <div class="container">
       <div class="row">
         <div class="carousel-inner">
+          <div class="carousel-item heroslide">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
           <div class="carousel-item heroslide active">
             <div class="col-12 col-md-6">
               <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
               </div>
               <div class="content">
-                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
               </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
-              </div>
-              <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item heroslide">
-            <div class="col-12 col-md-6">
-              <div class="detalhes">
+              <div class="tag">
                 <a href="#">conta híbrida</a>
                 <a href="#">varejo</a>
-                <span>01/01/2021</span>
-              </div>
-              <div class="content">
-                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
-              </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
-              </div>
-              <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-              </div>
-            </div>
-            
-          </div>
-          <div class="carousel-item heroslide">
-            <div class="col-12 col-md-6">
-              <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
-              </div>
-              <div class="content">
-                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
-              </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
               </div>
               <div class="acessar">
                 <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
