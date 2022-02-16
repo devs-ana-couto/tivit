@@ -2,27 +2,30 @@
 
 <div class="home-hero">
 
-  <div id="hero" class="carousel slide" data-bs-ride="carousel">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner text-center">
       <div class="carousel-item heroslide active">
         <div class="content">
-          <div class="title">
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide1" />
+          <div class="title position-absolute">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
         </div>
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <div class="title">
-            <h1>Seu futuro, nosso desafio</h1>   
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2.png" alt="slide2" />
+          <div class="title position-absolute">
+            <h1>Seu futuro, nosso desafio(2)</h1>   
           </div>       
         </div>
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <div class="title">
-            <h1>Seu futuro, nosso desafio</h1>   
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide3" />
+          <div class="title position-absolute">
+            <h1>Seu futuro, nosso desafio(3)</h1>   
           </div>       
         </div>
       </div>
@@ -90,26 +93,31 @@
   </div>
 </div>
 
-<div class="home-portifolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 hide-mobile"></div>
-      <div class="col-12 col-md-6">
-        <div class="home-portifolio-content">
-          <h3>Possuímos um portifólio diverso</h3>
-          <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
-          <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
-          <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
-          <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
-          <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
-          <div class="botao">
-            <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+<section class="port">
+  <div class="d-flex justify-content-center bgport position-absolute">
+  </div>
+  <div class="home-portifolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="home-portifolio-content">
+              <div class="txt">
+              <h3>Possuímos um portifólio diverso</h3>
+              <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
+              <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
+              <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
+              <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
+              <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
+              <div class="botao">
+                <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="home-cases">
   <div class="container">

@@ -250,7 +250,7 @@ html, body, * {
     justify-content: center;
     margin-bottom: 10px; }
   .footer .bg-red {
-    background-color: #F20024;
+    background-color: #990017;
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -303,15 +303,16 @@ html, body, * {
       font-size: 14px;
       line-height: 24.34px;
       font-weight: 600;
-      color: #454D54;
+      color: white;
       text-transform: uppercase;
       text-decoration: none;
-      border: 1px solid #454D54;
+      border: 1px solid #F20024;
+      background: #F20024;
       box-sizing: border-box;
       border-radius: 50px; }
       .footer .footer-options .btn.btn-contact:hover {
-        background-color: #454D54;
-        color: white; }
+        background-color: transparent;
+        color: #454D54; }
   .footer .footer-address, .footer .footer-phone, .footer .footer-socials {
     margin: 38px 0 28px; }
     .footer .footer-address p, .footer .footer-phone p, .footer .footer-socials p {
@@ -500,12 +501,14 @@ html, body, * {
     padding: 15px 40px; }
 
 .home-hero .content {
-  background: url("../../assets/images/home/slider-1-mobile.png") no-repeat center center;
   background-size: cover;
   height: 580px;
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 759px) {
+    .home-hero .content {
+      background: url("../../assets/images/home/slider-1-mobile.png") no-repeat center center; } }
   .home-hero .content .title {
     max-width: 320px;
     margin: 0 auto; }
@@ -523,7 +526,7 @@ html, body, * {
   transition: all 0.3s ease-out; }
 
 .imgtransition {
-  max-height: 100%;
+  max-height: 100vh;
   opacity: 1;
   transition: all 0.3s ease-out;
   width: 100% !important; }
@@ -555,7 +558,10 @@ html, body, * {
 .home-portifolio {
   background: url("../../assets/images/home/portifolio-mobile.png") no-repeat center center;
   height: 580px;
-  margin-bottom: 50px; }
+  margin-bottom: 140px; }
+  @media (max-width: 760px) {
+    .home-portifolio {
+      display: 50px; } }
   .home-portifolio .home-portifolio-content {
     margin-top: 200px; }
     .home-portifolio .home-portifolio-content .hide-arrow {
@@ -641,20 +647,23 @@ html, body, * {
 @media (min-width: 760px) {
   .home-hero {
     margin-bottom: 0px; }
+    .home-hero #hero {
+      background-color: #990017; }
     .home-hero .content {
-      background: url("../../assets/images/home/slider-1.png") no-repeat center center;
-      background-size: cover;
-      height: 100vh; }
+      height: 100%; }
       .home-hero .content .title {
         max-width: 100%; }
     .home-hero .container {
       position: relative; }
       .home-hero .container .redes {
+        z-index: 2;
         position: absolute;
         display: flex;
         flex-direction: column;
         right: 0;
         bottom: 40px; }
+        .home-hero .container .redes img {
+          margin-bottom: 5px; }
     .home-hero .container {
       position: relative; }
       .home-hero .container .navigation {
@@ -674,7 +683,8 @@ html, body, * {
             margin-right: 0; }
         .home-hero .container .navigation .counter {
           margin-left: 27px;
-          margin-right: 27px; }
+          margin-right: 27px;
+          z-index: 2; }
           .home-hero .container .navigation .counter .numactive {
             color: white;
             font-weight: 700; }
@@ -703,31 +713,52 @@ html, body, * {
         color: #F20024;
         border: red solid 1px; }
 
+  .home-portifolio.active {
+    transition: all 0.3s linear; }
+
+  section.port {
+    height: 900px;
+    position: relative; }
+    section.port .bgport {
+      background: url("../../assets/images/home/portfolio.png") no-repeat top center;
+      height: 40px;
+      margin-top: 640px;
+      width: 100%;
+      transition: all 0.3s linear; }
+    section.port .bgport.active {
+      margin-top: 0px;
+      height: 700px;
+      transition: all 0.3s linear; }
+
   .home-portifolio {
-    background: url("../../assets/images/home/portifolio.png") no-repeat center center;
-    height: 699px; }
-    .home-portifolio .home-portifolio-content {
-      margin-top: 182px; }
-      .home-portifolio .home-portifolio-content h3, .home-portifolio .home-portifolio-content p, .home-portifolio .home-portifolio-content a {
-        text-align: left; }
-      .home-portifolio .home-portifolio-content h3 {
-        font-size: 20px;
-        line-height: 30px; }
-      .home-portifolio .home-portifolio-content p {
-        font-size: 36px;
-        line-height: 56px;
-        margin-bottom: 0;
-        color: white; }
-        .home-portifolio .home-portifolio-content p:hover {
-          color: #F20024; }
-          .home-portifolio .home-portifolio-content p:hover .hide-arrow {
-            opacity: 1; }
-      .home-portifolio .home-portifolio-content .botao {
-        margin: 40px 0 0 0;
-        text-align: left; }
-        .home-portifolio .home-portifolio-content .botao:hover a {
-          background: white;
-          color: #F20024; }
+    background: url("../../assets/images/home/portfolio.png") no-repeat top center;
+    width: 100%;
+    height: 700px;
+    opacity: 1;
+    transition: all 0.3s linear; }
+    .home-portifolio .home-portifolio-content .txt {
+      margin-top: 150px;
+      margin-left: 150px; }
+    .home-portifolio .home-portifolio-content h3, .home-portifolio .home-portifolio-content p, .home-portifolio .home-portifolio-content a {
+      text-align: left; }
+    .home-portifolio .home-portifolio-content h3 {
+      font-size: 20px;
+      line-height: 30px; }
+    .home-portifolio .home-portifolio-content p {
+      font-size: 36px;
+      line-height: 56px;
+      margin-bottom: 0;
+      color: white; }
+      .home-portifolio .home-portifolio-content p:hover {
+        color: #F20024; }
+        .home-portifolio .home-portifolio-content p:hover .hide-arrow {
+          opacity: 1; }
+    .home-portifolio .home-portifolio-content .botao {
+      margin: 40px 0 0 0;
+      text-align: left; }
+      .home-portifolio .home-portifolio-content .botao:hover a {
+        background: white;
+        color: #F20024; }
 
   .home-cases {
     background: url("../../assets/images/home/cases.png") no-repeat center center;

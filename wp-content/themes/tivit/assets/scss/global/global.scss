@@ -461,7 +461,7 @@ html, body, * {
   }
 
   .bg-red{
-    background-color: $vermelho-tivit;
+    background-color: $vermelho-dark-tivit;
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -535,15 +535,16 @@ html, body, * {
         font-size: 14px;
         line-height: 24.34px;
         font-weight: 600;
-        color: $cinza-dark-tivit;
+        color: white;
         text-transform: uppercase;
         text-decoration: none;
-        border: 1px solid $cinza-dark-tivit;
+        border: 1px solid $vermelho-tivit;
+        background: $vermelho-tivit;
         box-sizing: border-box;
         border-radius: 50px;
         &:hover{
-          background-color: $cinza-dark-tivit;
-          color: white;
+          background-color: transparent;
+          color: $cinza-dark-tivit;
         }
       }
     }

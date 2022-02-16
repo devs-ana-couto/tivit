@@ -95,14 +95,25 @@ window.addEventListener('scroll', function() {
   scrollpos = window.scrollY;
 
   //first transition
-  var offsets = document.querySelector('.transition').getBoundingClientRect();
-  console.log(scrollpos)
-  if(scrollpos > offsets.top + 100){
+  var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
+  var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
+
+  //Effect Intro
+  if(scrollpos > offsetsIntro.top + 400){
    document.querySelector('.imgtransition').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
   } else {
    document.querySelector('.imgtransition').classList.remove('active')
    document.querySelector('.pcustom').classList.remove('active')
+  }
+
+  //Effect portifolio
+  if(scrollpos > offsetsPortifolio.top + 850){
+   document.querySelector('.home-portifolio').classList.add('active')
+   document.querySelector('.bgport').classList.add('active')
+  } else {
+   document.querySelector('.home-portifolio').classList.remove('active')
+   document.querySelector('.bgport').classList.remove('active')
   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
