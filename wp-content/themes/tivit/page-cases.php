@@ -50,28 +50,98 @@
 </div>
 
 <div class="a-tivit-cases cases">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
+  <div id="hero" class="carousel slide" data-bs-ride="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="carousel-inner">
+          <div class="carousel-item heroslide active">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+                <span>01/01/2021</span>
+              </div>
+              <div class="content">
+                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
+              </div>
+              <div class="autor-time">
+                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
+                <p>Tempo de leitura: <b>6 minutos</b></p>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+                <span>01/01/2021</span>
+              </div>
+              <div class="content">
+                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
+              </div>
+              <div class="autor-time">
+                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
+                <p>Tempo de leitura: <b>6 minutos</b></p>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item heroslide">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+                <span>01/01/2021</span>
+              </div>
+              <div class="content">
+                <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
+              </div>
+              <div class="autor-time">
+                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
+                <p>Tempo de leitura: <b>6 minutos</b></p>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="navigation">
+              <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+              </button>
+              <div class="d-flex flex-row counter hide-mobile">
+                <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hero 1"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Hero 2"></button>
+                <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Hero 3"></button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="content">
-          <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
+
       </div>
+
     </div>
+
+
   </div>
+
 </div>
+
+
 
 <div class="cases-recentes">
  

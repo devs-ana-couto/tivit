@@ -86,12 +86,53 @@
 
 // Cases
 .a-tivit-cases.cases{
-    background-image: url('../../assets/images/cases/bg-cases.png');
-    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+  #hero{
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  background-image: url('../../assets/images/cases/bg-cases.png');
+  background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  .navigation{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 40px;
+    bottom: 0px;
+    a{
+      color: white;
+    }
+    .carousel-indicators{
+      top: 25px;
+      margin: 0;
+      button{
+        height: 1px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .counter{
+      margin-left: 27px;
+      margin-right: 27px;
+      .numactive{
+        color: white;
+        font-weight: 700;
+      }
+      .numseparation, .numtotal{
+        color: white;
+        font-weight: 300;
+      }
+      .numseparation{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
 
 }
 
@@ -101,37 +142,36 @@
     padding-top: 60px;
     margin-top: -1px;
     .title{
-        h2{
-            font-size: 24px;
-            line-height: 24px;
-            text-align: center;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: white;
-            letter-spacing: 0.03em;
-
-        }
+      h2{
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.03em;
+      }
     }
     .img{
-        margin-top: 40px;
+      margin-top: 40px;
     }
     .detalhes{
-        margin-top: 20px;
-        a{
-            font-size: 12px;
-            line-height: 14px;
-            font-weight: 400;
-            color: white;
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            border-radius: 50px;
-            border: solid 1px white;
-            text-transform: uppercase;
-            padding: 4px 10px;
-            &:first-child{
-                margin-right: 5px;
-            }
+      margin-top: 20px;
+      a{
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        border-radius: 50px;
+        border: solid 1px white;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        &:first-child{
+          margin-right: 5px;
         }
+      }
         span{
             color: white;
             font-size: 12px;
@@ -179,112 +219,114 @@
 
 @media(min-width: 760px){
     .cases-hero{
-        background: url('../../assets/images/cases/banner.png') no-repeat center center;
-        background-size: cover;
-        height: 823px;
-        .cases-hero-title{
-            h1, h2{
-                text-align: center;
-                color: white;
-            }
-            h1{
-                margin-top: 243px;
-            }
+      background: url('../../assets/images/cases/banner.png') no-repeat center center;
+      background-size: cover;
+      height: 823px;
+      .cases-hero-title{
+        h1, h2{
+          text-align: center;
+          color: white;
         }
+        h1{
+          margin-top: 243px;
+        }
+      }
     }
     .cases-depoimentos{
-        .img{
-            margin-top: 0;
+      .img{
+        margin-top: 0;
+      }
+      .depoimento{
+        p{
+          width: 1092px;
+          font-size: 38px;
+          line-height: 48px;
+          font-weight: 700;
         }
-        .depoimento{
-            p{
-                width: 1092px;
-                font-size: 38px;
-                line-height: 48px;
-                font-weight: 700;
-            }
-        }
+      }
     }
     .a-tivit-cases.cases{
-        background-image: url('../../assets/images/cases/bg-cases-desktop.png');
-        background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
-        background-size: unset;
-        .detalhes{
-            margin-top: 180px;
-        }
+      background-image: url('../../assets/images/cases/bg-cases-desktop.png');
+      background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+      background-size: unset;
+      height: 580px;
+      .detalhes{
+        margin-top: 180px;
+      }
+      
     }
     .cases-recentes{
         padding-bottom: 100px;
         .acessar{
-            margin-bottom: 30px;
+          margin-bottom: 30px;
         }
         .img{
-            img{
-                width: 371px;
-            }
+          img{
+              width: 371px;
+          }
         }
         .content{
-            width: 371px;
+          width: 371px;
         }
         .autor-time{
-            display: inline-flex;
-            p{
-                &:first-child{
-                    margin-right: 38px;
-                }
+          display: inline-flex;
+          p{
+            &:first-child{
+              margin-right: 38px;
             }
+          }
         }
         .assuntos{
-            h4{
-                font-size: 12px;
-                font-weight: bold;
-                color: white;
-                text-transform: uppercase;
-            }
-            a{
-                font-size: 12px;
-                border: 1px solid white;
-                border-radius: 50px;
-                padding: 0 13px;
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-                font-weight: 400;
-                margin-right: 7px;
-                &:hover{
-                    background-color: red;
-                    border: 1px solid red;
-                }
-            }
-            .active{
+          h4{
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+          }
+          a{
+            font-size: 12px;
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 0 13px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-right: 7px;
+            &:hover{
                 background-color: red;
                 border: 1px solid red;
             }
+          }
+          .active{
+            background-color: red;
+            border: 1px solid red;
+          }
         }
         .col-5{
-            display: flex;
-            justify-content: center;
+          display: flex;
+          justify-content: center;
         }
         .filtros{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 34px;
-            .select{
-                margin-right: 50px;
-                select{
-                    width: 270px;
-                    font-weight: bold;
-                    color: white;
-                    text-transform: uppercase;
-                    border: none;
-                    border-bottom: 1px solid white;
-                    background: transparent;
-                    option{
-                       color: black;
-                    }
-                }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 34px;
+          .select{
+            margin-right: 50px;
+            select{
+              width: 270px;
+              font-weight: bold;
+              color: white;
+              text-transform: uppercase;
+              border: none;
+              border-bottom: 1px solid white;
+              background: transparent;
+              option{
+                color: black;
+              }
             }
+          }
         }
     }
 }
