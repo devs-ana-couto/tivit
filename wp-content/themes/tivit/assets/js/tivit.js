@@ -92,7 +92,28 @@ jQuery(document).ready(function($) {
 
 // Add class on scroll
 window.addEventListener('scroll', function() { 
-  scrollpos = window.scrollY;
+   scrollpos = window.scrollY;
+
+   //first transition
+   if(window.location.pathname === "/"){
+      var offsets = document.querySelector('.transition').getBoundingClientRect();
+      if(scrollpos > offsets.top + 100){
+         document.querySelector('.imgtransition').classList.add('active')
+         document.querySelector('.pcustom').classList.add('active')
+      } else {
+         document.querySelector('.imgtransition').classList.remove('active')
+         document.querySelector('.pcustom').classList.remove('active')
+      }
+   }
+
+  //Effect portifolio
+  if(scrollpos > offsetsPortifolio.top + 850){
+   document.querySelector('.home-portifolio').classList.add('active')
+   document.querySelector('.bgport').classList.add('active')
+  } else {
+   document.querySelector('.home-portifolio').classList.remove('active')
+   document.querySelector('.bgport').classList.remove('active')
+  }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
       add_class_on_scroll_tbanks();
@@ -107,8 +128,6 @@ window.addEventListener('scroll', function() {
       remove_class_on_scroll_tdx();
       remove_class_on_scroll_global();
    }
-
-
 
    if(scrollpos >= header_height && window.innerWidth > 768 && window.location.pathname === "/staged/tivit/tbanks/" || window.location.pathname === "/staged/tivit/tdx/")
       change_logo_on_scroll_desktop();

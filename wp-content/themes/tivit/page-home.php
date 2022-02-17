@@ -2,27 +2,30 @@
 
 <div class="home-hero">
 
-  <div id="hero" class="carousel slide" data-bs-ride="carousel">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner text-center">
       <div class="carousel-item heroslide active">
         <div class="content">
-          <div class="title">
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide1" />
+          <div class="title position-absolute">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
         </div>
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <div class="title">
-            <h1>Seu futuro, nosso desafio</h1>   
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2.png" alt="slide2" />
+          <div class="title position-absolute">
+            <h1>Seu futuro, nosso desafio(2)</h1>   
           </div>       
         </div>
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <div class="title">
-            <h1>Seu futuro, nosso desafio</h1>   
+          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide3" />
+          <div class="title position-absolute">
+            <h1>Seu futuro, nosso desafio(3)</h1>   
           </div>       
         </div>
       </div>
@@ -35,7 +38,7 @@
             <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
             </button>
-            <div class="d-flex flex-row counter">
+            <div class="d-flex flex-row counter hide-mobile">
               <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
             </div>
             <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
@@ -56,7 +59,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">        
-        <div class="redes"> 
+        <div class="redes hide-mobile"> 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg"  alt="Linkedin">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg"  alt="Instagram">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg"  alt="Twitter">
@@ -69,34 +72,15 @@
 
 </div>
 
-<div class="home-portifolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 hide-mobile"></div>
-      <div class="col-12 col-md-6">
-        <div class="home-portifolio-content">
-          <h3>Possuímos um portifólio diverso</h3>
-          <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
-          <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
-          <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
-          <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
-          <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
-          <div class="botao">
-            <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="home-intro">
-  <div class="container">
+  <div class="w-100 transition">
+    <img class="img-fluid imgtransition position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/trans1.svg"  alt="transition1">
+  </div>
+  <div class="container pcustom">
     <div class="row">
       <div class="col-12">
-
-        <div class="arrow text-center">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" class="bounce" alt="Saiba Mais">
+        <div class="to  text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
         </div>
         <p class="mt-3">
           Dentre as maiores empresas do Brasil, a <span>TIVIT</span> proporciona soluções flexíveis para 8 a cada 10.
@@ -108,6 +92,32 @@
     </div>
   </div>
 </div>
+
+<section class="port">
+  <div class="d-flex justify-content-center bgport position-absolute">
+  </div>
+  <div class="home-portifolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="home-portifolio-content">
+              <div class="txt">
+              <h3>Possuímos um portifólio diverso</h3>
+              <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
+              <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
+              <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
+              <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
+              <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
+              <div class="botao">
+                <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="home-cases">
   <div class="container">
