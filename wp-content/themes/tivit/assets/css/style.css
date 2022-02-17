@@ -592,6 +592,79 @@ html, body, * {
       color: #F20024;
       font-weight: 600; }
 
+.home-content {
+  background-color: #262626;
+  padding-bottom: 140px;
+  padding-top: 140px; }
+  .home-content .img img {
+    width: 100%; }
+  .home-content .content {
+    width: 371px;
+    margin-top: 12px; }
+  .home-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    text-transform: uppercase; }
+    .home-content h3:hover {
+      color: #F20024; }
+  .home-content p {
+    color: white; }
+  .home-content .autor-time {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .home-content .autor-time p {
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px;
+      font-weight: 400;
+      margin: 0; }
+    .home-content .autor-time a {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border-radius: 50px;
+      border: solid 1px white;
+      text-transform: uppercase;
+      padding: 4px 10px; }
+  .home-content .detalhes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .home-content .detalhes span {
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px; }
+  .home-content .acessar {
+    font-size: 14px;
+    line-height: 21.29px;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: unset !important; }
+    .home-content .acessar a {
+      text-decoration: unset !important; }
+      .home-content .acessar a:hover {
+        color: white; }
+  .home-content div.btn {
+    padding-top: 75px; }
+    .home-content div.btn .btncontent {
+      background: transparent;
+      border: 1px solid #F20024;
+      padding: 15px 35px 15px 35px;
+      color: white;
+      text-transform: uppercase;
+      transition: all 0.4s linear; }
+      .home-content div.btn .btncontent:hover {
+        background: #F20024;
+        transition: all 0.4s linear; }
+
 .home-cases {
   background: url("../../assets/images/home/cases-mobile.png") no-repeat center center;
   background-size: cover;

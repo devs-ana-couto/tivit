@@ -119,6 +119,98 @@
   </div>
 </section>
 
+<div class="home-content">
+  <div class="container">
+    <div class="row">
+      <!-- content 1 -->
+      <div class="col-12 col-md-4">
+        <div class="title">
+          <h2 class="hide-desktop">cases mais recentes</h2>
+        </div>
+        <div class="img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
+        </div>
+        <div class="detalhes">
+          <span>01/01/2021</span>
+          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+        </div>
+        <div class="content">
+          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </div>
+        <div class="autor-time w-100">
+          <div class="d-flex flex-row">
+            <a href="#">conta híbrida</a>
+            <a href="#">varejo</a>
+          </div>
+          <p>Tempo de leitura: <b>6 minutos</b></p>
+        </div>
+        <div class="acessar">
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+        </div>
+      </div>
+      <!-- // content 1 -->
+
+      <!-- content 2 -->
+      <div class="col-12 col-md-4">
+        <div class="title">
+          <h2 class="hide-desktop">cases mais recentes</h2>
+        </div>
+        <div class="img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
+        </div>
+        <div class="detalhes">
+          <span>01/01/2021</span>
+          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+        </div>
+        <div class="content">
+          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </div>
+        <div class="autor-time w-100">
+          <div class="d-flex flex-row">
+            <a href="#">conta híbrida</a>
+            <a href="#">varejo</a>
+          </div>
+          <p>Tempo de leitura: <b>6 minutos</b></p>
+        </div>
+        <div class="acessar">
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+        </div>
+      </div>
+      <!-- // content 2 -->
+      <!-- content 3 -->
+      <div class="col-12 col-md-4">
+        <div class="title">
+          <h2 class="hide-desktop">cases mais recentes</h2>
+        </div>
+        <div class="img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
+        </div>
+        <div class="detalhes">
+          <span>01/01/2021</span>
+          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+        </div>
+        <div class="content">
+          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        </div>
+        <div class="autor-time w-100">
+          <div class="d-flex flex-row align-items-center">
+            <a href="#">conta híbrida</a>
+            <a href="#">varejo</a>
+          </div>
+          <p>Tempo de leitura: <b>6 minutos</b></p>
+        </div>
+        <div class="acessar">
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+        </div>
+      </div>
+      <!-- // content 3 -->
+    </div>
+    <div class="d-flex justify-content-center align-items-center btn">
+      <button class="btncontent">VER TODOS OS NOSSOS CONTEÚDOS</button>
+    </div>
+  </div>
+</div>
+
 <div class="home-cases">
   <div class="container">
     <div class="row">
