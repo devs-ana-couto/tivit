@@ -185,86 +185,98 @@
 
 // Cases Recentes
 .cases-recentes{
-    background: $cinza-dark-cyber-tivit;
-    padding-top: 60px;
-    margin-top: -1px;
-    .title{
-      h2{
-        font-size: 24px;
-        line-height: 24px;
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 0.03em;
+  background: $cinza-dark-cyber-tivit;
+  padding-top: 60px;
+  margin-top: -1px;
+  .title{
+    h2{
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 0.03em;
+    }
+  }
+  .img{
+    margin-top: 40px;
+  }
+  .detalhes{
+    margin-top: 20px;
+    a{
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border-radius: 50px;
+      border: solid 1px white;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      &:first-child{
+        margin-right: 5px;
       }
     }
-    .img{
-      margin-top: 40px;
+    span{
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px;
+      margin-left: 10px;
     }
-    .detalhes{
-      margin-top: 20px;
-      a{
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 400;
+  }
+  .content{
+    width: 284px;
+    margin-top: 12px;
+    h3{
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      margin: 0;
+      color: $vermelho-tivit;
+      text-transform: uppercase;
+    }
+  }
+  .autor-time{
+    margin: 10px 0;
+    p{
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+  .acessar{
+    margin-bottom: 100px;
+    a{
+      font-size: 14px;
+      line-height: 21.29px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+    }
+    img{
+      margin-left: 5px;
+    }
+  }
+  .slider-cases{
+    .carousel-indicators{
+      button{
+        text-indent: 0;
+        height: 0;
+        width: 10px;
         color: white;
-        text-decoration: none;
-        letter-spacing: 0.02em;
-        border-radius: 50px;
-        border: solid 1px white;
-        text-transform: uppercase;
-        padding: 4px 10px;
-        &:first-child{
-          margin-right: 5px;
-        }
+        background-color: transparent;
       }
-        span{
-            color: white;
-            font-size: 12px;
-            line-height: 18.25px;
-            margin-left: 10px;
-        }
     }
-    .content{
-        width: 284px;
-        margin-top: 12px;
-        h3{
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 700;
-            margin: 0;
-            color: $vermelho-tivit;
-            text-transform: uppercase;
-        }
-    }
-    .autor-time{
-        margin: 10px 0;
-        p{
-            color: white;
-            font-size: 12px;
-            line-height: 18.25px;
-            font-weight: 400;
-            margin: 0;
-        }
-    }
-    .acessar{
-        margin-bottom: 100px;
-        a{
-            font-size: 14px;
-            line-height: 21.29px;
-            text-transform: uppercase;
-            text-decoration: none;
-            display: flex;
-        }
-        img{
-            margin-left: 5px;
-        }
-    }
+  }
 }
 
 
 @media(min-width: 760px){
+
   .cases-hero{
     background: url('../../assets/images/cases/banner.png') no-repeat center center;
     background-size: cover;
@@ -279,7 +291,7 @@
       }
     }
   }
-
+  
   .cases-depoimentos{
     .img{
       margin-top: 0;

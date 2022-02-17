@@ -1472,6 +1472,12 @@ html, body, * {
       display: flex; }
     .cases-recentes .acessar img {
       margin-left: 5px; }
+  .cases-recentes .slider-cases .carousel-indicators button {
+    text-indent: 0;
+    height: 0;
+    width: 10px;
+    color: white;
+    background-color: transparent; }
 
 @media (min-width: 760px) {
   .cases-hero {
