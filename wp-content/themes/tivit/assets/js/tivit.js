@@ -92,7 +92,6 @@ jQuery(document).ready(function($) {
 
 // Add class on scroll
 window.addEventListener('scroll', function() { 
-<<<<<<< HEAD
    scrollpos = window.scrollY;
 
    //first transition
@@ -106,22 +105,6 @@ window.addEventListener('scroll', function() {
          document.querySelector('.pcustom').classList.remove('active')
       }
    }
-=======
-  scrollpos = window.scrollY;
-
-  //first transition
-  var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
-  var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
-
-  //Effect Intro
-  if(scrollpos > offsetsIntro.top + 400){
-   document.querySelector('.imgtransition').classList.add('active')
-   document.querySelector('.pcustom').classList.add('active')
-  } else {
-   document.querySelector('.imgtransition').classList.remove('active')
-   document.querySelector('.pcustom').classList.remove('active')
-  }
->>>>>>> 29320fd81b3cbd6d97e3e10a08f582b8f6a4d4aa
 
   //Effect portifolio
   if(scrollpos > offsetsPortifolio.top + 850){
