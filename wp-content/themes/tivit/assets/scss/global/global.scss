@@ -213,7 +213,9 @@ html, body, * {
 
 
 // Header
-
+.frontpage{
+  z-index: 9030 !important;
+}
 // Header Mobile
 @media (max-width: 768px) {
   .header{

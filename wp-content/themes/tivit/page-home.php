@@ -74,7 +74,7 @@
 
 <div class="home-intro">
   <div class="w-100 transition">
-    <img class="img-fluid imgtransition position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/trans1.svg"  alt="transition1">
+    <img class="imgtransition position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/trans1flp.svg" alt="transition1">
   </div>
   <div class="container pcustom">
     <div class="row">
@@ -102,7 +102,7 @@
         <div class="col-12">
           <div class="home-portifolio-content">
               <div class="txt">
-              <h3>Possuímos um portifólio diverso</h3>
+              <h3>Possuímos um portfolio diverso</h3>
               <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
               <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
               <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>

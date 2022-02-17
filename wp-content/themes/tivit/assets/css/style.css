@@ -92,6 +92,9 @@ html, body, * {
 /**
  * Header Global
  **/
+.frontpage {
+  z-index: 9030 !important; }
+
 @media (max-width: 768px) {
   .header {
     background: white;
@@ -523,13 +526,15 @@ html, body, * {
 .imgtransition.active {
   max-height: 0%;
   opacity: 0;
-  transition: all 0.3s ease-out; }
+  transition: all 0.4s ease-out; }
 
 .imgtransition {
-  max-height: 100vh;
+  max-height: 1725px;
+  width: 100vw;
   opacity: 1;
-  transition: all 0.3s ease-out;
-  width: 100% !important; }
+  transition: all 0.4s ease-out;
+  width: 100% !important;
+  z-index: 5500; }
   @media (max-width: 759px) {
     .imgtransition {
       height: 500px !important; } }
@@ -550,7 +555,7 @@ html, body, * {
     margin-top: 30px; }
   .home-intro .pcustom {
     opacity: 0;
-    transition: all 0.2s ease-out; }
+    transition: all 0.3s ease-out; }
   .home-intro .pcustom.active {
     opacity: 1;
     transition: all 1s ease-out; }
@@ -563,7 +568,7 @@ html, body, * {
     .home-portifolio {
       display: 50px; } }
   .home-portifolio .home-portifolio-content {
-    margin-top: 200px; }
+    margin-top: 150px; }
     .home-portifolio .home-portifolio-content .hide-arrow {
       opacity: 0; }
       @media (max-width: 760px) {
@@ -714,28 +719,30 @@ html, body, * {
         border: red solid 1px; }
 
   .home-portifolio.active {
-    transition: all 0.3s linear; }
+    opacity: 1;
+    transition: all 0.9s linear; }
 
   section.port {
     height: 900px;
     position: relative; }
     section.port .bgport {
-      background: url("../../assets/images/home/portfolio.png") no-repeat top center;
-      height: 40px;
-      margin-top: 640px;
+      background: url("../../assets/images/home/trans2flp.svg") no-repeat bottom center;
+      height: 100%;
       width: 100%;
-      transition: all 0.3s linear; }
+      opacity: 1;
+      transition: all 0.3s linear 0.2s;
+      z-index: 5000; }
     section.port .bgport.active {
-      margin-top: 0px;
-      height: 700px;
-      transition: all 0.3s linear; }
+      opacity: 0;
+      height: 0%;
+      transition: all 0.3s linear 0.2s; }
 
   .home-portifolio {
     background: url("../../assets/images/home/portfolio.png") no-repeat top center;
     width: 100%;
     height: 700px;
-    opacity: 1;
-    transition: all 0.3s linear; }
+    opacity: 0;
+    transition: all 0.55s linear; }
     .home-portifolio .home-portifolio-content .txt {
       margin-top: 150px;
       margin-left: 150px; }

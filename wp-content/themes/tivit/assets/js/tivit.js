@@ -99,7 +99,7 @@ window.addEventListener('scroll', function() {
   var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
 
   //Effect Intro
-  if(scrollpos > offsetsIntro.top + 400){
+  if(scrollpos > offsetsIntro.top + 630){
    document.querySelector('.imgtransition').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
   } else {
@@ -108,7 +108,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect portifolio
-  if(scrollpos > offsetsPortifolio.top + 850){
+  if(scrollpos > offsetsPortifolio.top + 800){
    document.querySelector('.home-portifolio').classList.add('active')
    document.querySelector('.bgport').classList.add('active')
   } else {
