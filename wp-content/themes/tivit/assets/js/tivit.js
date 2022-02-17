@@ -94,9 +94,11 @@ jQuery(document).ready(function($) {
 window.addEventListener('scroll', function() { 
   scrollpos = window.scrollY;
 
-  //first transition
+  //transition vars
   var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
   var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
+  var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
+  var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
 
   //Effect Intro
   if(scrollpos > offsetsIntro.top + 630){
@@ -114,6 +116,30 @@ window.addEventListener('scroll', function() {
   } else {
    document.querySelector('.home-portifolio').classList.remove('active')
    document.querySelector('.bgport').classList.remove('active')
+  }
+
+  //Effect Content
+  if(scrollpos > offsetsContent.top + 1950){
+   document.querySelector('.home-content').classList.add('active')
+   document.querySelector('.transitionContent').classList.add('active')
+   document.querySelector('.transitionCases').classList.add('active')
+  } else {
+   document.querySelector('.home-content').classList.remove('active')
+   document.querySelector('.transitionContent').classList.remove('active')
+   document.querySelector('.transitionCases').classList.remove('active')
+  }
+
+  //Effect Cases
+  if(scrollpos > offsetsCases.top + 2600){
+   document.querySelector('.transitionCases').classList.add('deactive')
+   document.querySelector('.home-cases').classList.add('active')
+   document.querySelector('.divOpacity').classList.add('active')
+   document.querySelector('.bgtriangulo').classList.add('active')
+  } else {
+   document.querySelector('.transitionCases').classList.remove('deactive')
+   document.querySelector('.home-cases').classList.remove('active')
+   document.querySelector('.divOpacity').classList.remove('active')
+   document.querySelector('.bgtriangulo').classList.remove('active')
   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 

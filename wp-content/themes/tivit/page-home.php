@@ -35,13 +35,13 @@
       <div class="row">
         <div class="col-12">        
           <div class="navigation"> 
-            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <button class="carousel-control-prev hide-mobile" type="button" data-bs-target="#hero" data-bs-slide="prev">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
             </button>
             <div class="d-flex flex-row counter hide-mobile">
               <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
             </div>
-            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <button class="carousel-control-next hide-mobile" type="button" data-bs-target="#hero" data-bs-slide="next">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
             </button>
             <div class="carousel-indicators">
@@ -120,7 +120,9 @@
 </section>
 
 <div class="home-content">
-  <div class="container">
+<div class="d-flex justify-content-center transitionContent position-absolute"></div>
+<div id="triangle-down"></div>
+  <div class="container pd">
     <div class="row">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
@@ -145,7 +147,7 @@
           <p>Tempo de leitura: <b>6 minutos</b></p>
         </div>
         <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
         </div>
       </div>
       <!-- // content 1 -->
@@ -173,7 +175,7 @@
           <p>Tempo de leitura: <b>6 minutos</b></p>
         </div>
         <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
         </div>
       </div>
       <!-- // content 2 -->
@@ -200,7 +202,7 @@
           <p>Tempo de leitura: <b>6 minutos</b></p>
         </div>
         <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
         </div>
       </div>
       <!-- // content 3 -->
@@ -212,13 +214,16 @@
 </div>
 
 <div class="home-cases">
-  <div class="container">
-    <div class="row">
+  <div class="d-flex justify-content-center transitionCases position-absolute"></div>
+  <div class="d-flex justify-content-center bgtriangulo position-absolute"></div>
+  <div class="container divOpacity">
+    <div class="row d-flex justify-content-center align-items-center position-absolute lr">
+
       <div class="home-cases-title">
         <h2>Nossos Cases</h2>
         <p class="paragrafo2 hide-mobile">Lorem ipsum dolor sit amet, consectetur.</p>
       </div>
-      <div class="col-12 col-md-6">
+      <div class="col-12">
         <div id="carouselExampleControls" class="carousel slide hide-desktop" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -282,31 +287,53 @@
         </div>
 
         <div class="home-cases-content left text-center hide-mobile">
-          <div class="home-cases-autor">
-            <h3>Nome Cliente 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis. Pellentesque dapibus dui turpis, non.
-            </p>
-          </div>
-          <div class="botao">
-            <a href="#" class="btn btn-primary">Ver Case</a>
-          </div>
-        </div>
-        
-        </div>
-        <div class="col-md-6 hide-mobile">
-          <div class="home-cases-content right text-center">
-            <div class="home-cases-autor">
-              <h3>Nome Cliente 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis. Pellentesque dapibus dui turpis, non.
-              </p>
+          <div class="row d-flex justify-content-center">
+            <div class="d-flex customContainer">
+              <div class="col-md-4">
+                  <div class="bg1 m-3">
+                    <div class="overlay"></div>
+                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
+                    <div class="textCase">
+                    <h3> NOME DO CLIENTE 1 </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
+                      <div class="w-100 d-flex text-left">
+                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bg2 m-3">
+                    <div class="overlay"></div>
+                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg2.png" alt="backgroundcase2">
+                    <div class="textCase">
+                    <h3> NOME DO CLIENTE 2 </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
+                      <div class="w-100 d-flex text-left">
+                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="bg3 m-3">
+                    <div class="overlay"></div>
+                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg3.png" alt="backgroundcase3">
+                    <div class="textCase">
+                    <h3> NOME DO CLIENTE 3 </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
+                      <div class="w-100 d-flex text-left">
+                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="botao">
-              <a href="#" class="btn btn-primary">Ver Case</a>
-            </div>
           </div>
         </div>
+
+      </div>
     </div>
   </div>
 </div>

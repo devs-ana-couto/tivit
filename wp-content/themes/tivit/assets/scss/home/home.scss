@@ -42,6 +42,7 @@
   .content{
     @media(max-width:759px){
       background: url('../../assets/images/home/slider-1-mobile.png') no-repeat center center;
+      background-size: cover;
     }
     background-size: cover;
     height: 580px;
@@ -81,6 +82,7 @@
   z-index: 5500;
   @media(max-width:759px){
     height: 500px !important;
+    margin-top: -1px;
   }
 }
 
@@ -154,10 +156,41 @@
 }
 
 //Home Content
+.home-content.active{
+  opacity: 1;
+  transition: all 0.6s linear;
+}
+
 .home-content{
+  position: relative;
   background-color: #262626;
-  padding-bottom: 140px;
-  padding-top: 140px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.55s linear;
+  .transitionContent{
+    background: url('../../assets/images/home/trans3flp.svg') no-repeat bottom center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.3s linear 0.2s;
+    z-index: 4999;
+    top: 0;
+    }
+  .transitionContent.active{
+    opacity: 0;
+    height: 0%;
+    transition: all 0.3s linear 0.2s;
+  }
+  #triangle-down{
+    position: absolute;
+    top: 0;
+  }
+  .pd{
+    padding-bottom: 140px;
+    padding-top: 140px;
+  }
   .img{
     img{
       width: 100%;
@@ -234,7 +267,7 @@
     .btncontent{
       background: transparent;
       border: 1px solid #F20024;
-      padding: 15px 35px 15px 35px;
+      padding: 20px 35px 20px 35px;
       color: white;
       text-transform: uppercase;
       transition: all 0.4s linear;
@@ -247,13 +280,60 @@
 }
 
 // Cases
+.home-cases.active{
+  background-color: black;
+  transition: background-color 0.35s linear;
+}
 .home-cases{
-  background: url('../../assets/images/home/cases-mobile.png') no-repeat center center;
-  background-size: cover;
-  height: 700px;
+  .bgtriangulo{
+    background: url('../../assets/images/home/triangulocinza.svg') no-repeat top center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0 !important;
+    transition: all 0.55s linear;
+  }
+  .bgtriangulo.active{
+    opacity: 1;
+    transition: all 0.55s linear;
+  }
+  .transitionCases{
+    background: url('../../assets/images/home/trans4flp.svg') no-repeat bottom center;
+    background-size: cover;
+    opacity: 0;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    z-index: 4998;
+    transition: all 0.55s linear;
+  }
+  .transitionCases.active{
+    opacity: 1;
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    transition: all 0.55s linear;
+  }
+  .transitionCases.deactive{
+    opacity: 0;
+    max-height: 0%;
+    width: 100%;
+    transition: all 0.55s linear;
+  }
+  background-color: white;
+  transition: background-color 0.35s linear;
+  height: 900px;
+  .divOpacity{
+    opacity: 0;
+    transition: all 0.55s linear;
+  }
+  .divOpacity.active{
+    opacity: 1;
+    transition: all 0.55s linear;
+  }
   .home-cases-title{
     h2{
-      font-size: 24px;
+      font-size: 48px;
       line-height: 24px;
       font-weight: bold;
       color: white;
@@ -322,6 +402,16 @@
   }
 }
 
+.lr{
+  left: 0;
+  right: 0;
+}
+
+.customContainer{
+  max-width: 1320px !important;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
 
 /**
  *  Desktop
@@ -496,9 +586,21 @@
     }
   }
 
-  .home-cases{
-    background: url('../../assets/images/home/cases.png') no-repeat center center;
-    background-size: cover;
+  .home-cases.active{
+    background-color: black;
+    transition: background-color 0.35s linear;
+  }
+  .home-cases{  
+    background-color: white;
+    transition: background-color 0.35s linear;
+    .divOpacity{
+      opacity: 0;
+      transition: all 0.55s linear;
+    }
+    .divOpacity.active{
+      opacity: 1;
+      transition: all 0.55s linear;
+    }
     .home-cases-title{
       h2{
         margin-top: 100px;
@@ -506,11 +608,47 @@
       p{
         text-align: center;
         color: white;
-        margin-top: 5px;
+        margin-top: 25px;
       }
     }
     .home-cases-content{
-    
+      .bg1, .bg2, .bg3 {
+        position: relative;
+      }
+      .overlay{
+        // background: black;
+        // opacity: 0.5;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), RGBA(0,0,0,0.51));
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      .textCase{
+        position: absolute;
+        top: 55%;
+        margin: 20px;
+        h3{
+          color: white;
+          font-weight: 600;
+          text-align: left;
+        }
+        p{
+          color: white;
+          text-align: left;
+          font-weight: lighter;
+        }
+        a{
+          color: #F20024;
+          text-transform: uppercase;
+          text-align: left;
+          &:hover{
+            color: white;
+          }
+          img{
+            margin-left: 10px;
+          }
+        }
+      }
       .home-cases-autor{
         width: 450px;
         h3{
@@ -540,7 +678,7 @@
       }
     }
     .home-cases-content.left{
-      margin-top: 205px;
+      margin-top: 50px;
 
 
       h3,p, .botao{
