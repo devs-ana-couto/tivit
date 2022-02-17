@@ -198,126 +198,38 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
+
+  <div class="row">
+
+    <?php
+
+    for($i = 0; $i < 6; $i++){
+    ?>
       <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
         <div class="img">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
         </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
+        <div class="autor-time">
+          <p>Cliente: <b>Nome cliente</b></p>
         </div>
         <div class="content">
           <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
         <div class="detalhes">
           <a href="#">conta híbrida</a>
           <a href="#">varejo</a>
-          <span>01/01/2021</span>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
         </div>
         <div class="acessar">
           <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
         </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
-      </div>
-    </div>
+      </div>    
+    <?php
+    }
+    ?>
+
+  </div>
+
 
   </div>
   <!--- End Mobile -->
@@ -446,6 +358,7 @@
 </div>
 
 <div class="home-pessoas-e-carreiras inovar">
+  <div id="triangle-down"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">

@@ -127,15 +127,17 @@
 
   .fundo1{
     background-image: url('../../assets/images/cases/bg-cases.png');
-    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
     height: 560px;
   }
   .fundo2{
-    background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    background-image: url('../../assets/images/cases/bg-cases.png');
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
     height: 560px;
   }
   .fundo3{
-    background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+    background-image: url('../../assets/images/cases/bg-cases.png');
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
     height: 560px;
   }
 
@@ -188,6 +190,7 @@
   background: $cinza-dark-cyber-tivit;
   padding-top: 60px;
   margin-top: -1px;
+
   .title{
     h2{
       font-size: 24px;
@@ -199,11 +202,15 @@
       letter-spacing: 0.03em;
     }
   }
+
   .img{
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
+    width: 284px;
   }
+
   .detalhes{
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    width: 284px;
     a{
       font-size: 12px;
       line-height: 14px;
@@ -226,9 +233,10 @@
       margin-left: 10px;
     }
   }
+
   .content{
     width: 284px;
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
     h3{
       font-size: 20px;
       line-height: 28px;
@@ -238,8 +246,10 @@
       text-transform: uppercase;
     }
   }
+
   .autor-time{
-    margin: 10px 0;
+    margin: 10px auto 0 auto;
+    width: 284px;
     p{
       color: white;
       font-size: 12px;
@@ -248,8 +258,10 @@
       margin: 0;
     }
   }
+
   .acessar{
-    margin-bottom: 100px;
+    margin: 10px auto 100px auto;
+    width: 284px;
     a{
       font-size: 14px;
       line-height: 21.29px;
@@ -261,16 +273,37 @@
       margin-left: 5px;
     }
   }
+
   .slider-cases{
     .carousel-indicators{
+      bottom: 50px!important;
       button{
         text-indent: 0;
         height: 0;
         width: 10px;
         color: white;
+        padding: 0 5px;
         background-color: transparent;
+        &::after{
+          content: '/';
+          opacity: 0.5;
+          padding: 0 5px;
+        }
+        &:last-child{
+          &::after{
+            content: '';
+          }
+        }
       }
     }
+  }
+}
+
+.home-pessoas-e-carreiras.inovar{
+  #triangle-down{
+    border-left: 48.84px solid transparent;
+    border-right: 48.84px solid transparent;
+    border-top: 40px solid $cinza-dark-cyber-tivit;
   }
 }
 
@@ -367,30 +400,67 @@
       left: unset;
       bottom: 50px;
     }
+    .fundo1{
+      background-image: url('../../assets/images/cases/bg-cases-desktop.png');
+      background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+      height: 560px;
+    }
+    .fundo2{
+      background-image: url('../../assets/images/cases/bg-cases-desktop2.png');
+      background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+      height: 560px;
+    }
+    .fundo3{
+      background-image: url('../../assets/images/cases/bg-cases-desktop3.png');
+      background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, $cinza-dark-cyber-tivit 50%, white 50%); /* W3C */
+      height: 560px;
+    }
   }
 
   .cases-recentes{
     padding-bottom: 100px;
+
     .acessar{
-      margin-bottom: 30px;
+      margin-top: 20px;
+      width: 100%;
     }
+
     .img{
       img{
           width: 371px;
       }
+      width: 100%;
     }
+
     .content{
       width: 371px;
+      margin-left: 0;
+      max-width: 100%;
+      h3{
+        color: white;
+        &:hover{
+          color: $vermelho-tivit;
+        }
+      }
     }
+
     .autor-time{
+      width: 100%;
       display: inline-flex;
+      margin-top: 15px;
       p{
         &:first-child{
           margin-right: 38px;
         }
       }
     }
+
+    .detalhes{
+      width: 100%;
+    }
+
     .assuntos{
+      width: 100%;
       h4{
         font-size: 12px;
         font-weight: bold;
@@ -417,10 +487,12 @@
         border: 1px solid red;
       }
     }
+
     .col-5{
       display: flex;
       justify-content: center;
     }
+
     .filtros{
       display: flex;
       justify-content: center;

@@ -1366,15 +1366,17 @@ html, body, * {
       margin-right: 5px; }
   .a-tivit-cases.cases .fundo1 {
     background-image: url("../../assets/images/cases/bg-cases.png");
-    background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, #262626 50%, white 50%);
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, #262626 50%, white 50%);
     /* W3C */
     height: 560px; }
   .a-tivit-cases.cases .fundo2 {
-    background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, #262626 50%, white 50%);
+    background-image: url("../../assets/images/cases/bg-cases.png");
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, #262626 50%, white 50%);
     /* W3C */
     height: 560px; }
   .a-tivit-cases.cases .fundo3 {
-    background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, #262626 50%, white 50%);
+    background-image: url("../../assets/images/cases/bg-cases.png");
+    background-image: url("../../assets/images/cases/bg-cases.png"), linear-gradient(to top, #262626 50%, white 50%);
     /* W3C */
     height: 560px; }
   .a-tivit-cases.cases .navigation {
@@ -1423,9 +1425,11 @@ html, body, * {
     color: white;
     letter-spacing: 0.03em; }
   .cases-recentes .img {
-    margin-top: 40px; }
+    margin: 40px auto 0 auto;
+    width: 284px; }
   .cases-recentes .detalhes {
-    margin-top: 20px; }
+    margin: 20px auto 0 auto;
+    width: 284px; }
     .cases-recentes .detalhes a {
       font-size: 12px;
       line-height: 14px;
@@ -1446,7 +1450,7 @@ html, body, * {
       margin-left: 10px; }
   .cases-recentes .content {
     width: 284px;
-    margin-top: 12px; }
+    margin: 12px auto 0 auto; }
     .cases-recentes .content h3 {
       font-size: 20px;
       line-height: 28px;
@@ -1455,7 +1459,8 @@ html, body, * {
       color: #F20024;
       text-transform: uppercase; }
   .cases-recentes .autor-time {
-    margin: 10px 0; }
+    margin: 10px auto 0 auto;
+    width: 284px; }
     .cases-recentes .autor-time p {
       color: white;
       font-size: 12px;
@@ -1463,7 +1468,8 @@ html, body, * {
       font-weight: 400;
       margin: 0; }
   .cases-recentes .acessar {
-    margin-bottom: 100px; }
+    margin: 10px auto 100px auto;
+    width: 284px; }
     .cases-recentes .acessar a {
       font-size: 14px;
       line-height: 21.29px;
@@ -1472,12 +1478,26 @@ html, body, * {
       display: flex; }
     .cases-recentes .acessar img {
       margin-left: 5px; }
-  .cases-recentes .slider-cases .carousel-indicators button {
-    text-indent: 0;
-    height: 0;
-    width: 10px;
-    color: white;
-    background-color: transparent; }
+  .cases-recentes .slider-cases .carousel-indicators {
+    bottom: 50px !important; }
+    .cases-recentes .slider-cases .carousel-indicators button {
+      text-indent: 0;
+      height: 0;
+      width: 10px;
+      color: white;
+      padding: 0 5px;
+      background-color: transparent; }
+      .cases-recentes .slider-cases .carousel-indicators button::after {
+        content: '/';
+        opacity: 0.5;
+        padding: 0 5px; }
+      .cases-recentes .slider-cases .carousel-indicators button:last-child::after {
+        content: ''; }
+
+.home-pessoas-e-carreiras.inovar #triangle-down {
+  border-left: 48.84px solid transparent;
+  border-right: 48.84px solid transparent;
+  border-top: 40px solid #262626; }
 
 @media (min-width: 760px) {
   .cases-hero {
@@ -1544,39 +1564,69 @@ html, body, * {
       right: 40px;
       left: unset;
       bottom: 50px; }
+    .a-tivit-cases.cases .fundo1 {
+      background-image: url("../../assets/images/cases/bg-cases-desktop.png");
+      background-image: url("../../assets/images/cases/bg-cases-desktop.png"), linear-gradient(to top, #262626 50%, white 50%);
+      /* W3C */
+      height: 560px; }
+    .a-tivit-cases.cases .fundo2 {
+      background-image: url("../../assets/images/cases/bg-cases-desktop2.png");
+      background-image: url("../../assets/images/cases/bg-cases-desktop2.png"), linear-gradient(to top, #262626 50%, white 50%);
+      /* W3C */
+      height: 560px; }
+    .a-tivit-cases.cases .fundo3 {
+      background-image: url("../../assets/images/cases/bg-cases-desktop3.png");
+      background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, #262626 50%, white 50%);
+      /* W3C */
+      height: 560px; }
   .cases-recentes {
     padding-bottom: 100px; }
     .cases-recentes .acessar {
-      margin-bottom: 30px; }
-    .cases-recentes .img img {
-      width: 371px; }
+      margin-top: 20px;
+      width: 100%; }
+    .cases-recentes .img {
+      width: 100%; }
+      .cases-recentes .img img {
+        width: 371px; }
     .cases-recentes .content {
-      width: 371px; }
+      width: 371px;
+      margin-left: 0;
+      max-width: 100%; }
+      .cases-recentes .content h3 {
+        color: white; }
+        .cases-recentes .content h3:hover {
+          color: #F20024; }
     .cases-recentes .autor-time {
-      display: inline-flex; }
+      width: 100%;
+      display: inline-flex;
+      margin-top: 15px; }
       .cases-recentes .autor-time p:first-child {
         margin-right: 38px; }
-    .cases-recentes .assuntos h4 {
-      font-size: 12px;
-      font-weight: bold;
-      color: white;
-      text-transform: uppercase; }
-    .cases-recentes .assuntos a {
-      font-size: 12px;
-      border: 1px solid white;
-      border-radius: 50px;
-      padding: 0 13px;
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-weight: 400;
-      margin-right: 7px; }
-      .cases-recentes .assuntos a:hover {
+    .cases-recentes .detalhes {
+      width: 100%; }
+    .cases-recentes .assuntos {
+      width: 100%; }
+      .cases-recentes .assuntos h4 {
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase; }
+      .cases-recentes .assuntos a {
+        font-size: 12px;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 0 13px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-right: 7px; }
+        .cases-recentes .assuntos a:hover {
+          background-color: red;
+          border: 1px solid red; }
+      .cases-recentes .assuntos .active {
         background-color: red;
         border: 1px solid red; }
-    .cases-recentes .assuntos .active {
-      background-color: red;
-      border: 1px solid red; }
     .cases-recentes .col-5 {
       display: flex;
       justify-content: center; }

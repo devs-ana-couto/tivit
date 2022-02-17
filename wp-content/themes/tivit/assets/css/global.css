@@ -247,7 +247,7 @@ html, body, * {
     justify-content: center;
     margin-bottom: 10px; }
   .footer .bg-red {
-    background-color: #F20024;
+    background-color: #990017;
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -300,15 +300,16 @@ html, body, * {
       font-size: 14px;
       line-height: 24.34px;
       font-weight: 600;
-      color: #454D54;
+      color: white;
       text-transform: uppercase;
       text-decoration: none;
-      border: 1px solid #454D54;
+      border: 1px solid #F20024;
+      background: #F20024;
       box-sizing: border-box;
       border-radius: 50px; }
       .footer .footer-options .btn.btn-contact:hover {
-        background-color: #454D54;
-        color: white; }
+        background-color: transparent;
+        color: #454D54; }
   .footer .footer-address, .footer .footer-phone, .footer .footer-socials {
     margin: 38px 0 28px; }
     .footer .footer-address p, .footer .footer-phone p, .footer .footer-socials p {
