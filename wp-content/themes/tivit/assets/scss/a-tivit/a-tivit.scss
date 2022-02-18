@@ -111,6 +111,20 @@
 }
 
 // Cases
+.a-tivit-cases.ctivit{
+    background: linear-gradient(to top, rgba($color: $cinza-light-tivit, $alpha: 0.2) 50%, white 50%)!important;
+    height: 100%!important;
+    .title{
+        h2{
+            font-size: 28px;
+            line-height: 50px;
+            font-weight: 700;
+            margin-bottom: 38px;
+            color: $cinza-dark-cyber-tivit;
+            text-transform: uppercase;
+        }
+    }
+}
 .a-tivit-cases{   
     height: 580px;
     margin-top: 50px;
@@ -352,7 +366,7 @@
     .a-tivit-hero{
         background: url('../../assets/images/a-tivit/banner-desktop.png') no-repeat center center;
         background-size: cover;
-        height: 730px;
+        height: 100vh;
         position: relative;
 
         .a-tivit-hero-title{

@@ -85,10 +85,13 @@
   </div>
 </div>
 
-<div class="a-tivit-cases cases">
+<div class="a-tivit-cases cases ctivit">
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="container">
       <div class="row">
+        <div class="title">
+          <h2 class="text-center">Confira o que nossas parcerias estratégicas já fizeram!</h2>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item heroslide active fundo1">
             <div class="col-12 col-md-6">

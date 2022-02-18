@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 html, body, * {
   font-family: 'Titillium Web', sans-serif; }
+  html p, body p, * p {
+    max-width: 100%; }
   html img, body img, * img {
     max-width: 100%; }
   @media (max-width: 768px) {
@@ -933,6 +935,17 @@ html, body, * {
     color: white;
     text-align: center; }
 
+.a-tivit-cases.ctivit {
+  background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important;
+  height: 100% !important; }
+  .a-tivit-cases.ctivit .title h2 {
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    color: #262626;
+    text-transform: uppercase; }
+
 .a-tivit-cases {
   height: 580px;
   margin-top: 50px; }
@@ -1110,7 +1123,7 @@ html, body, * {
   .a-tivit-hero {
     background: url("../../assets/images/a-tivit/banner-desktop.png") no-repeat center center;
     background-size: cover;
-    height: 730px;
+    height: 100vh;
     position: relative; }
     .a-tivit-hero .a-tivit-hero-title {
       margin-top: 196px; }

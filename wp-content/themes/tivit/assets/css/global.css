@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 html, body, * {
   font-family: 'Titillium Web', sans-serif; }
+  html p, body p, * p {
+    max-width: 100%; }
   html img, body img, * img {
     max-width: 100%; }
   @media (max-width: 768px) {
