@@ -223,7 +223,7 @@
   <div class="d-flex justify-content-center transitionCases position-absolute"></div>
   <div class="d-flex justify-content-center bgtriangulo position-absolute"></div>
   <div class="container divOpacity">
-    <div class="row d-flex justify-content-center align-items-center position-absolute lr">
+    <div class="row d-flex justify-content-center align-items-center position-absolute m-0 lr">
 
       <div class="home-cases-title">
         <h2>Nossos Cases</h2>
@@ -351,7 +351,8 @@
 
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute"></div>
-  <div class="home-pessoas-e-carreiras">
+  <div class="d-flex justify-content-center home-pessoas-e-carreiras">
+  <div id="triangle-down" class=""></div>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -365,6 +366,34 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <div class="title w-100">
+      <h2 class="text-center"> Com quem trabalhamos </h2>
+    </div>
+    <div class="d-flex justify-content-between">
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/anima.svg" alt="Anima logo">
+      </a>
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/cielo.svg" alt="Cielo logo">
+      </a>
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/google.svg" alt="Google logo">
+      </a>
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/itau.svg" alt="Itau logo">
+      </a>
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/johnson.svg" alt="Johnson logo">
+      </a>
+      <a href="#">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/nestle.svg" alt="Nestle logo">
+      </a>
     </div>
   </div>
 </section>
