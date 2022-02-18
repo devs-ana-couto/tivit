@@ -1262,16 +1262,46 @@ html, body, * {
       margin: 0 auto; }
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
-  #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+  #esg .row > * {
+    padding-left: 0;
+    padding-right: 0 !important; }
+  #esg .lp-tbanks-confira.lp-tdx {
     background-color: #454D54; }
+    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
+      font-size: 48px;
+      line-height: 54px; }
+    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+      background-color: unset;
+      padding: 50px 40px 50px 40px; }
+    #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
+      display: unset; }
+      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
+        height: 599px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+        padding-right: 50px;
+        padding-bottom: 60px; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
+          font-size: 36px;
+          line-height: 42px;
+          font-weight: 700; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
+          width: 419px;
+          margin: 0 auto;
+          color: white;
+          max-width: 100%; }
+      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
+        background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
+        background-size: cover; }
   #esg .navigation {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     bottom: 36px;
-    left: 0;
-    right: 0;
+    left: 30px;
     margin: 0 auto;
     width: 110px; }
     #esg .navigation a {

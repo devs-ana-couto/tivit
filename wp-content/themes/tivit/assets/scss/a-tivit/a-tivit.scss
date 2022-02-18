@@ -560,9 +560,52 @@
     }
    
     #esg{
+        .row > *{
+            padding-left: 0;
+            padding-right: 0!important;
+        }
+        
         .lp-tbanks-confira.lp-tdx{
+            background-color: $cinza-dark-tivit;
+
+            .lp-tbanks-confira-content{
+                h3{
+                    font-size: 48px;
+                    line-height: 54px;
+                }
+            }
+         
+            
             .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right{
-                background-color: $cinza-dark-tivit;
+                background-color: unset;
+                padding: 50px 40px 50px 40px;
+            }
+            .col-12.col-md-6{
+                display: unset;
+                .lp-tbanks-confira-bg-left{
+                    height: 599px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    text-align: right;
+                    padding-right: 50px;
+                    padding-bottom: 60px;
+                    h2{
+                        font-size: 36px;
+                        line-height: 42px;
+                        font-weight: 700;
+                    }
+                    p{
+                        width: 419px;
+                        margin: 0 auto;
+                        color: white;
+                        max-width: 100%;
+                    }
+                }
+                .slide1{
+                    background: url('../../assets/images/a-tivit/slider-02.png') no-repeat;
+                    background-size: cover;
+                }
             }
         }
 
@@ -573,8 +616,7 @@
             justify-content: center;
         
             bottom: 36px;
-            left: 0;
-            right: 0;
+            left: 30px;
             margin: 0 auto;
             width: 110px;
             a{
