@@ -1480,7 +1480,7 @@ html, body, * {
       font-weight: 400;
       margin: 0; }
   .cases-recentes .acessar {
-    margin: 10px auto 10px auto;
+    margin: 10px auto 100px auto;
     width: 284px; }
     .cases-recentes .acessar a {
       font-size: 14px;
@@ -1594,8 +1594,8 @@ html, body, * {
   .cases-recentes {
     padding-bottom: 100px; }
     .cases-recentes .acessar {
-      margin-top: 20px;
-      width: 100%; }
+      width: 100%;
+      margin: 20px auto 10px auto; }
     .cases-recentes .img {
       width: 100%; }
       .cases-recentes .img img {
