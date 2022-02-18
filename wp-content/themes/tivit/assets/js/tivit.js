@@ -180,6 +180,7 @@ window.addEventListener('scroll', function() {
          document.querySelector('.bgtriangulo').classList.remove('active')
          document.querySelector('.transCarreiras').classList.remove('active')
       }
+      
 
       //Effect Pessoas e Carreiras
       if(scrollpos > offsetsPessoas.top + 3550){
@@ -193,10 +194,10 @@ window.addEventListener('scroll', function() {
       //Effect Partners
       if(scrollpos > offsetsPartners.top + 3460){
          document.querySelector('.partners').classList.add('active')
-         document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
+         // document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
       } else {
          document.querySelector('.partners').classList.remove('active')
-         document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
+         // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
       }
    }
 
