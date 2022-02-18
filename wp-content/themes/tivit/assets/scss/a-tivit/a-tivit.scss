@@ -63,7 +63,7 @@
     }
 }
 
-// arousel 
+// Carousel 
 .a-tivit-carousel{
     .arrow-slider{
         position: absolute;
@@ -352,12 +352,11 @@
     .a-tivit-hero{
         background: url('../../assets/images/a-tivit/banner-desktop.png') no-repeat center center;
         background-size: cover;
-        height: 630px;
-        @media(min-width: 1441px){
-            height: 818px;
-        }
+        height: 730px;
+        position: relative;
+
         .a-tivit-hero-title{
-            margin: 229px auto 0 auto;
+            margin-top: 196px;
             h1{
                font-size: 14px;
                line-height: 21.29px;
@@ -375,16 +374,37 @@
                 max-width: 960px;
                 margin: 0 auto;
             }
+            .botao{
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                left: 0;
+                a{                
+                    text-decoration: none;
+                    border: none;
+                    padding: 0;
+                    color: white;
+                    background-color: transparent;
+                    p{
+                        margin-top: 10px;
+                    }
+                    &:hover{
+                        background: transparent;
+                        border:none;
+                    }
+                }
+            }
         }
+        
     }
     // Sobre
     .a-tivit-sobre{
-        margin: 55px 0 145px 0;
+        margin: 77px 0 149px 0;
         p{
-            font-size: 44px;
-            line-height: 50px;
+            font-size: 36px;
+            line-height: 42px;
             text-align: center;
-            width: 908px;
+            width: 749px;
             margin: 0 auto;
         }
     }

@@ -6,10 +6,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>A Tivit</h1>
-          <h2 class="hide-mobile">A TIVIT transforma</br> tecnologias com tecnologia</h2>
+          <h1>Quem Somos</h1>
+          <h2 class="hide-mobile">A TIVIT transforma pessoas e tecnologia com expertise em <strong>soluções de ponta a ponta.</strong></h2>
           <div class="botao">
-            <a href="#">Assista ao Reel</a>
+            <a href="#">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
+              <p>Assista ao reel</p>
+            </a>
           </div>
         </div>
       </div>
@@ -35,7 +38,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-          Somos uma Multinacional brasileira de tecnologia, entregando o que existe de mais atual, com a segurança de quem tem mais de 20 anos de mercado.
+        Somos uma multinacional brasileira </br>one-stop-shop que não abre mão da flexibilidade e da agilidade em todos os nossos processos. 
         </p>
       </div>
     </div>
@@ -58,7 +61,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/slider-01.png" class="d-block w-100" alt="...">
         <div class="content">
           <p>
-          A Proceda é adquirida e chega com experiência em missão crítica. É criada a marca TIVIT.
+            A Proceda é adquirida e chega com experiência em missão crítica. É criada a marca TIVIT.
           </p>
         </div>
       </div>
@@ -82,30 +85,113 @@
   </div>
 </div>
 
-<div class="a-tivit-cases">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="confira hide-mobile">
-          <h2><b>Confira</b> o que nossas parcerias estratégicas já fizeram!</h2>
+<div class="a-tivit-cases cases">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="carousel-inner">
+          <div class="carousel-item heroslide active fundo1">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo2">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo3">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo3">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="navigation">
+              <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+              </button>
+              <div class="d-flex flex-row counter">
+                <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#content" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="1" aria-label="Content 2"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="2" aria-label="Content 3"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="3" aria-label="Content 4"></button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-          <span>01/01/2021</span>
-        </div>
-        <div class="content">
-          <h2>Como a indústria de varejo se reinventou para levar o relacionamento com o cliente para um outro nível</h2>
-        </div>
-        <div class="autor-time">
-          <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-          <p>Tempo de leitura <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
+
       </div>
+
     </div>
+
+
   </div>
 </div>
 

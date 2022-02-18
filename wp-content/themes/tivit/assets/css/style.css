@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 html, body, * {
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: 'Titillium Web', sans-serif;
+  max-width: 100%; }
   html img, body img, * img {
     max-width: 100%; }
   @media (max-width: 768px) {
@@ -1110,14 +1111,10 @@ html, body, * {
   .a-tivit-hero {
     background: url("../../assets/images/a-tivit/banner-desktop.png") no-repeat center center;
     background-size: cover;
-    height: 630px; } }
-  @media (min-width: 760px) and (min-width: 1441px) {
-    .a-tivit-hero {
-      height: 818px; } }
-
-@media (min-width: 760px) {
+    height: 730px;
+    position: relative; }
     .a-tivit-hero .a-tivit-hero-title {
-      margin: 229px auto 0 auto; }
+      margin-top: 196px; }
       .a-tivit-hero .a-tivit-hero-title h1 {
         font-size: 14px;
         line-height: 21.29px;
@@ -1132,13 +1129,29 @@ html, body, * {
         text-align: center;
         max-width: 960px;
         margin: 0 auto; }
+      .a-tivit-hero .a-tivit-hero-title .botao {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0; }
+        .a-tivit-hero .a-tivit-hero-title .botao a {
+          text-decoration: none;
+          border: none;
+          padding: 0;
+          color: white;
+          background-color: transparent; }
+          .a-tivit-hero .a-tivit-hero-title .botao a p {
+            margin-top: 10px; }
+          .a-tivit-hero .a-tivit-hero-title .botao a:hover {
+            background: transparent;
+            border: none; }
   .a-tivit-sobre {
-    margin: 55px 0 145px 0; }
+    margin: 77px 0 149px 0; }
     .a-tivit-sobre p {
-      font-size: 44px;
-      line-height: 50px;
+      font-size: 36px;
+      line-height: 42px;
       text-align: center;
-      width: 908px;
+      width: 749px;
       margin: 0 auto; }
   .a-tivit-carousel {
     display: none; }
