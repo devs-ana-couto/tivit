@@ -94,26 +94,77 @@ jQuery(document).ready(function($) {
 window.addEventListener('scroll', function() { 
    scrollpos = window.scrollY;
 
-   //first transition
-   if(window.location.pathname === "/"){
-      var offsets = document.querySelector('.transition').getBoundingClientRect();
-      if(scrollpos > offsets.top + 100){
+  //transition vars
+  if(window.location.pathname === "/"){
+   var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
+   var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
+   var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
+   var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
+   var offsetsPessoas = document.querySelector('.pessoasCarreiras').getBoundingClientRect();
+   var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
+
+      //Effect Intro
+      if(scrollpos > offsetsIntro.top + 330){
          document.querySelector('.imgtransition').classList.add('active')
          document.querySelector('.pcustom').classList.add('active')
       } else {
          document.querySelector('.imgtransition').classList.remove('active')
          document.querySelector('.pcustom').classList.remove('active')
       }
+
       //Effect portifolio
-      if(scrollpos > offsetsPortifolio.top + 850){
+      if(scrollpos > offsetsPortifolio.top + 750){
          document.querySelector('.home-portifolio').classList.add('active')
          document.querySelector('.bgport').classList.add('active')
       } else {
          document.querySelector('.home-portifolio').classList.remove('active')
          document.querySelector('.bgport').classList.remove('active')
       }
-   }
 
+      //Effect Content
+      if(scrollpos > offsetsContent.top + 1650){
+         document.querySelector('.home-content').classList.add('active')
+         document.querySelector('.transitionContent').classList.add('active')
+         document.querySelector('.transitionCases').classList.add('active')
+      } else {
+         document.querySelector('.home-content').classList.remove('active')
+         document.querySelector('.transitionContent').classList.remove('active')
+         document.querySelector('.transitionCases').classList.remove('active')
+      }
+
+      //Effect Cases
+      if(scrollpos > offsetsCases.top + 2650){
+         document.querySelector('.transitionCases').classList.add('deactive')
+         document.querySelector('.home-cases').classList.add('active')
+         document.querySelector('.divOpacity').classList.add('active')
+         document.querySelector('.bgtriangulo').classList.add('active')
+         document.querySelector('.transCarreiras').classList.add('active')
+      } else {
+         document.querySelector('.transitionCases').classList.remove('deactive')
+         document.querySelector('.home-cases').classList.remove('active')
+         document.querySelector('.divOpacity').classList.remove('active')
+         document.querySelector('.bgtriangulo').classList.remove('active')
+         document.querySelector('.transCarreiras').classList.remove('active')
+      }
+
+      //Effect Pessoas e Carreiras
+      if(scrollpos > offsetsPessoas.top + 3550){
+         document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
+         document.querySelector('.transCarreiras').classList.add('deactive')
+      } else {
+         document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
+         document.querySelector('.transCarreiras').classList.remove('deactive')
+      }
+
+      //Effect Partners
+      if(scrollpos > offsetsPartners.top + 3460){
+         document.querySelector('.partners').classList.add('active')
+         document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
+      } else {
+         document.querySelector('.partners').classList.remove('active')
+         document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
+      }
+   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
       add_class_on_scroll_tbanks();

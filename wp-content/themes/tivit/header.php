@@ -14,7 +14,7 @@
 ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="fixed-top header">
+<header class="fixed-top header frontpage">
   <nav class="navbar navbar-expand-md navbar-light" role="navigation"> 
     <div class="container">
       <div class="row">
