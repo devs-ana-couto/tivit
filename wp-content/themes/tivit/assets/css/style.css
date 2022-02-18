@@ -1200,7 +1200,7 @@ html, body, * {
   .a-tivit-inovacao {
     padding: 100px 0 30px 0; }
     .a-tivit-inovacao .content {
-      width: 828px; }
+      width: 818px; }
       .a-tivit-inovacao .content h2 {
         margin-bottom: 20px; }
       .a-tivit-inovacao .content p {
@@ -1262,20 +1262,40 @@ html, body, * {
       margin: 0 auto; }
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
-  .carousel.a-tivit h2, .carousel.a-tivit h3, .carousel.a-tivit p {
-    text-align: left; }
-  .carousel.a-tivit .lp-tbanks-confira {
-    height: 100%; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right p {
+  #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+    background-color: #454D54; }
+  #esg .navigation {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 110px; }
+    #esg .navigation a {
+      color: white; }
+    #esg .navigation .carousel-indicators {
+      top: 25px;
       margin: 0; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
-      margin-top: 31px;
-      width: 471px;
-      font-size: 44px;
-      line-height: 50px; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tbanks-confira-bg-left {
-      background: url("../../assets/images/a-tivit/carousel/banner1.png") no-repeat center center;
-      background-size: cover; }
+      #esg .navigation .carousel-indicators button {
+        height: 1px;
+        margin-left: 0;
+        margin-right: 0; }
+    #esg .navigation .counter2 {
+      margin-left: 27px;
+      margin-right: 27px;
+      z-index: 1; }
+      #esg .navigation .counter2 .numactive2 {
+        color: white;
+        font-weight: 700; }
+      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+        color: white;
+        font-weight: 300; }
+      #esg .navigation .counter2 .numseparation2 {
+        margin-left: 5px;
+        margin-right: 5px; }
   .a-tivit-certificacoes {
     background: rgba(202, 210, 216, 0.2); }
     .a-tivit-certificacoes .desc {

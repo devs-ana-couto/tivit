@@ -65,9 +65,18 @@ if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tban
    change_icon_hamburguer_color_tdx(); 
 }
 
+
+
 // Executes after DOM loads
 jQuery(document).ready(function($) {
 
+   /**
+    * Slider Effect Counter
+    */
+   
+   /*
+   ** When has only one element
+   */
    var totalItems = $('.heroslide').length;
    var currentIndex = $('.heroslide.active').index() + 1;
    
@@ -87,6 +96,31 @@ jQuery(document).ready(function($) {
       $('.numseparation').html('  /  ');
       $('.numtotal').html( totalItems );
    });
+
+   /*
+   ** When has two elements
+   */
+
+   var totalItems2 = $('.heroslide2').length;
+   var currentIndex2 = $('.heroslide2.active').index() + 1;
+   
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive2').html( currentIndex2 );
+   $('.numseparation2').html('  /  ');
+   $('.numtotal2').html( totalItems2 );
+
+   $('#esg').carousel({
+      interval: 4000
+    });
+
+   $('#esg').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
 
 })
 
