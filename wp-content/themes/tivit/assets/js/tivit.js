@@ -129,7 +129,7 @@ window.addEventListener('scroll', function() {
    scrollpos = window.scrollY;
 
   //transition vars
-  if(window.location.pathname === "/"){
+  if(window.location.pathname == "/staged/tivit/"){
    var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
    var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
    var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
