@@ -104,16 +104,16 @@ window.addEventListener('scroll', function() {
          document.querySelector('.imgtransition').classList.remove('active')
          document.querySelector('.pcustom').classList.remove('active')
       }
+      //Effect portifolio
+      if(scrollpos > offsetsPortifolio.top + 850){
+         document.querySelector('.home-portifolio').classList.add('active')
+         document.querySelector('.bgport').classList.add('active')
+      } else {
+         document.querySelector('.home-portifolio').classList.remove('active')
+         document.querySelector('.bgport').classList.remove('active')
+      }
    }
 
-  //Effect portifolio
-  if(scrollpos > offsetsPortifolio.top + 850){
-   document.querySelector('.home-portifolio').classList.add('active')
-   document.querySelector('.bgport').classList.add('active')
-  } else {
-   document.querySelector('.home-portifolio').classList.remove('active')
-   document.querySelector('.bgport').classList.remove('active')
-  }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
       add_class_on_scroll_tbanks();
