@@ -123,86 +123,92 @@
 <div class="d-flex justify-content-center transitionContent position-absolute"></div>
 <div id="triangle-down"></div>
   <div class="container pd">
+    <div class="title">
+      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+    </div>
     <div class="row">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <span>01/01/2021</span>
-          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time w-100">
-          <div class="d-flex flex-row">
-            <a href="#">conta híbrida</a>
-            <a href="#">varejo</a>
+        <div class="p-1"> 
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
           </div>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          </div>
         </div>
       </div>
       <!-- // content 1 -->
 
       <!-- content 2 -->
       <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <span>01/01/2021</span>
-          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time w-100">
-          <div class="d-flex flex-row">
-            <a href="#">conta híbrida</a>
-            <a href="#">varejo</a>
+        <div class="p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          </div>
         </div>
       </div>
       <!-- // content 2 -->
       <!-- content 3 -->
       <div class="col-12 col-md-4">
-        <div class="title">
-          <h2 class="hide-desktop">cases mais recentes</h2>
-        </div>
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="detalhes">
-          <span>01/01/2021</span>
-          <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="autor-time w-100">
-          <div class="d-flex flex-row align-items-center">
-            <a href="#">conta híbrida</a>
-            <a href="#">varejo</a>
+        <div class="p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <p>Tempo de leitura: <b>6 minutos</b></p>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row align-items-center">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+          </div>
         </div>
       </div>
       <!-- // content 3 -->
@@ -329,6 +335,11 @@
                   </div>
                 </div>
               </div>
+              <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center btn">
+                  <button class="btncontent">VER TODOS OS CASES</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -338,21 +349,24 @@
   </div>
 </div>
 
-<div class="home-pessoas-e-carreiras">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="home-pessoas-e-carreiras-title">
-          <h2>Pessoas e Carreiras</h2>
-          <p class="hide-mobile">Você está preparado para o futuro? 
-          </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
-        </div>
-        <div class="botao">
-          <a href="#" class="btn btn-primary">Acesse para saber mais</a>
+<section class="pessoasCarreiras">
+  <div class="d-flex justify-content-center transCarreiras position-absolute"></div>
+  <div class="home-pessoas-e-carreiras">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="home-pessoas-e-carreiras-title">
+            <h2>Pessoas e Carreiras</h2>
+            <p class="hide-mobile">Você está preparado para o futuro? 
+            </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
+          </div>
+          <div class="botao">
+            <a href="#">Saiba mais <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <?php get_footer(); ?>

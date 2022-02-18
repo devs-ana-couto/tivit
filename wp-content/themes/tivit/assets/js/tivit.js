@@ -99,9 +99,10 @@ window.addEventListener('scroll', function() {
   var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
   var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
   var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
+  var offsetsPessoas = document.querySelector('.pessoasCarreiras').getBoundingClientRect();
 
   //Effect Intro
-  if(scrollpos > offsetsIntro.top + 630){
+  if(scrollpos > offsetsIntro.top + 330){
    document.querySelector('.imgtransition').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
   } else {
@@ -110,7 +111,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect portifolio
-  if(scrollpos > offsetsPortifolio.top + 800){
+  if(scrollpos > offsetsPortifolio.top + 750){
    document.querySelector('.home-portifolio').classList.add('active')
    document.querySelector('.bgport').classList.add('active')
   } else {
@@ -119,7 +120,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Content
-  if(scrollpos > offsetsContent.top + 1950){
+  if(scrollpos > offsetsContent.top + 1650){
    document.querySelector('.home-content').classList.add('active')
    document.querySelector('.transitionContent').classList.add('active')
    document.querySelector('.transitionCases').classList.add('active')
@@ -130,16 +131,27 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Cases
-  if(scrollpos > offsetsCases.top + 2600){
+  if(scrollpos > offsetsCases.top + 2650){
    document.querySelector('.transitionCases').classList.add('deactive')
    document.querySelector('.home-cases').classList.add('active')
    document.querySelector('.divOpacity').classList.add('active')
    document.querySelector('.bgtriangulo').classList.add('active')
+   document.querySelector('.transCarreiras').classList.add('active')
   } else {
    document.querySelector('.transitionCases').classList.remove('deactive')
    document.querySelector('.home-cases').classList.remove('active')
    document.querySelector('.divOpacity').classList.remove('active')
    document.querySelector('.bgtriangulo').classList.remove('active')
+   document.querySelector('.transCarreiras').classList.remove('active')
+  }
+
+  //Effect Pessoas e Carreiras
+  if(scrollpos > offsetsPessoas.top + 3550){
+   document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
+   document.querySelector('.transCarreiras').classList.add('deactive')
+  } else {
+   document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
+   document.querySelector('.transCarreiras').classList.remove('deactive')
   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
