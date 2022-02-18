@@ -63,7 +63,7 @@
     }
 }
 
-// arousel 
+// Carousel 
 .a-tivit-carousel{
     .arrow-slider{
         position: absolute;
@@ -111,6 +111,20 @@
 }
 
 // Cases
+.a-tivit-cases.ctivit{
+    background: linear-gradient(to top, rgba($color: $cinza-light-tivit, $alpha: 0.2) 50%, white 50%)!important;
+    height: 100%!important;
+    .title{
+        h2{
+            font-size: 28px;
+            line-height: 50px;
+            font-weight: 700;
+            margin-bottom: 38px;
+            color: $cinza-dark-cyber-tivit;
+            text-transform: uppercase;
+        }
+    }
+}
 .a-tivit-cases{   
     height: 580px;
     margin-top: 50px;
@@ -352,12 +366,11 @@
     .a-tivit-hero{
         background: url('../../assets/images/a-tivit/banner-desktop.png') no-repeat center center;
         background-size: cover;
-        height: 630px;
-        @media(min-width: 1441px){
-            height: 818px;
-        }
+        height: 100vh;
+        position: relative;
+
         .a-tivit-hero-title{
-            margin: 229px auto 0 auto;
+            margin-top: 196px;
             h1{
                font-size: 14px;
                line-height: 21.29px;
@@ -375,16 +388,37 @@
                 max-width: 960px;
                 margin: 0 auto;
             }
+            .botao{
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                left: 0;
+                a{                
+                    text-decoration: none;
+                    border: none;
+                    padding: 0;
+                    color: white;
+                    background-color: transparent;
+                    p{
+                        margin-top: 10px;
+                    }
+                    &:hover{
+                        background: transparent;
+                        border:none;
+                    }
+                }
+            }
         }
+        
     }
     // Sobre
     .a-tivit-sobre{
-        margin: 55px 0 145px 0;
+        margin: 77px 0 149px 0;
         p{
-            font-size: 44px;
-            line-height: 50px;
+            font-size: 36px;
+            line-height: 42px;
             text-align: center;
-            width: 908px;
+            width: 749px;
             margin: 0 auto;
         }
     }
@@ -441,7 +475,7 @@
     .a-tivit-inovacao{
         padding: 100px 0 30px 0;
         .content{
-            width: 828px;
+            width: 818px;
             h2{
                 margin-bottom: 20px;
             }
@@ -524,30 +558,99 @@
             }
         }
     }
-    // Carousel
-    .carousel.a-tivit{
-        h2, h3, p{
-            text-align: left;
+   
+    #esg{
+        .row > *{
+            padding-left: 0;
+            padding-right: 0!important;
         }
-        .lp-tbanks-confira{
-            height: 100%;
-            .lp-tdx-confira-bg-right{
-                p{
-                    margin: 0;
-                }
+        
+        .lp-tbanks-confira.lp-tdx{
+            background-color: $cinza-dark-tivit;
+
+            .lp-tbanks-confira-content{
                 h3{
-                    margin-top: 31px;
-                    width: 471px;
-                    font-size: 44px;
-                    line-height: 50px;
+                    font-size: 48px;
+                    line-height: 54px;
                 }
             }
-            .lp-tbanks-confira-bg-left{
-                background: url('../../assets/images/a-tivit/carousel/banner1.png') no-repeat center center;
-                background-size: cover;
+         
+            
+            .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right{
+                background-color: unset;
+                padding: 50px 40px 50px 40px;
+            }
+            .col-12.col-md-6{
+                display: unset;
+                .lp-tbanks-confira-bg-left{
+                    height: 599px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    text-align: right;
+                    padding-right: 50px;
+                    padding-bottom: 60px;
+                    h2{
+                        font-size: 36px;
+                        line-height: 42px;
+                        font-weight: 700;
+                    }
+                    p{
+                        width: 419px;
+                        margin: 0 auto;
+                        color: white;
+                        max-width: 100%;
+                    }
+                }
+                .slide1{
+                    background: url('../../assets/images/a-tivit/slider-02.png') no-repeat;
+                    background-size: cover;
+                }
             }
         }
+
+        .navigation{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        
+            bottom: 36px;
+            left: 30px;
+            margin: 0 auto;
+            width: 110px;
+            a{
+              color: white;
+            }
+            .carousel-indicators{
+              top: 25px;
+              margin: 0;
+              button{
+                height: 1px;
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+            .counter2{
+              margin-left: 27px;
+              margin-right: 27px;
+              z-index: 1;
+              .numactive2{
+                color: white;
+                font-weight: 700;
+              }
+              .numseparation2, .numtotal2{
+                color: white;
+                font-weight: 300;
+              }
+              .numseparation2{
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+            }
+        }        
     }
+
     // Certificações
     .a-tivit-certificacoes{
         background: rgba(202, 210, 216, 0.2);

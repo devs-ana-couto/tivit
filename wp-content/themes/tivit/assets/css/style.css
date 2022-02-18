@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 html, body, * {
   font-family: 'Titillium Web', sans-serif; }
+  html p, body p, * p {
+    max-width: 100%; }
   html img, body img, * img {
     max-width: 100%; }
   @media (max-width: 768px) {
@@ -1203,6 +1205,17 @@ html, body, * {
     color: white;
     text-align: center; }
 
+.a-tivit-cases.ctivit {
+  background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important;
+  height: 100% !important; }
+  .a-tivit-cases.ctivit .title h2 {
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    color: #262626;
+    text-transform: uppercase; }
+
 .a-tivit-cases {
   height: 580px;
   margin-top: 50px; }
@@ -1380,13 +1393,10 @@ html, body, * {
   .a-tivit-hero {
     background: url("../../assets/images/a-tivit/banner-desktop.png") no-repeat center center;
     background-size: cover;
-    height: 630px; } }
-  @media (min-width: 760px) and (min-width: 1441px) {
-    .a-tivit-hero {
-      height: 818px; } }
-@media (min-width: 760px) {
+    height: 100vh;
+    position: relative; }
     .a-tivit-hero .a-tivit-hero-title {
-      margin: 229px auto 0 auto; }
+      margin-top: 196px; }
       .a-tivit-hero .a-tivit-hero-title h1 {
         font-size: 14px;
         line-height: 21.29px;
@@ -1401,14 +1411,30 @@ html, body, * {
         text-align: center;
         max-width: 960px;
         margin: 0 auto; }
+      .a-tivit-hero .a-tivit-hero-title .botao {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0; }
+        .a-tivit-hero .a-tivit-hero-title .botao a {
+          text-decoration: none;
+          border: none;
+          padding: 0;
+          color: white;
+          background-color: transparent; }
+          .a-tivit-hero .a-tivit-hero-title .botao a p {
+            margin-top: 10px; }
+          .a-tivit-hero .a-tivit-hero-title .botao a:hover {
+            background: transparent;
+            border: none; }
 
   .a-tivit-sobre {
-    margin: 55px 0 145px 0; }
+    margin: 77px 0 149px 0; }
     .a-tivit-sobre p {
-      font-size: 44px;
-      line-height: 50px;
+      font-size: 36px;
+      line-height: 42px;
       text-align: center;
-      width: 908px;
+      width: 749px;
       margin: 0 auto; }
 
   .a-tivit-carousel {
@@ -1448,7 +1474,7 @@ html, body, * {
   .a-tivit-inovacao {
     padding: 100px 0 30px 0; }
     .a-tivit-inovacao .content {
-      width: 828px; }
+      width: 818px; }
       .a-tivit-inovacao .content h2 {
         margin-bottom: 20px; }
       .a-tivit-inovacao .content p {
@@ -1512,20 +1538,70 @@ html, body, * {
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
 
-  .carousel.a-tivit h2, .carousel.a-tivit h3, .carousel.a-tivit p {
-    text-align: left; }
-  .carousel.a-tivit .lp-tbanks-confira {
-    height: 100%; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right p {
+  #esg .row > * {
+    padding-left: 0;
+    padding-right: 0 !important; }
+  #esg .lp-tbanks-confira.lp-tdx {
+    background-color: #454D54; }
+    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
+      font-size: 48px;
+      line-height: 54px; }
+    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+      background-color: unset;
+      padding: 50px 40px 50px 40px; }
+    #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
+      display: unset; }
+      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
+        height: 599px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+        padding-right: 50px;
+        padding-bottom: 60px; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
+          font-size: 36px;
+          line-height: 42px;
+          font-weight: 700; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
+          width: 419px;
+          margin: 0 auto;
+          color: white;
+          max-width: 100%; }
+      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
+        background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
+        background-size: cover; }
+  #esg .navigation {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 36px;
+    left: 30px;
+    margin: 0 auto;
+    width: 110px; }
+    #esg .navigation a {
+      color: white; }
+    #esg .navigation .carousel-indicators {
+      top: 25px;
       margin: 0; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
-      margin-top: 31px;
-      width: 471px;
-      font-size: 44px;
-      line-height: 50px; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tbanks-confira-bg-left {
-      background: url("../../assets/images/a-tivit/carousel/banner1.png") no-repeat center center;
-      background-size: cover; }
+      #esg .navigation .carousel-indicators button {
+        height: 1px;
+        margin-left: 0;
+        margin-right: 0; }
+    #esg .navigation .counter2 {
+      margin-left: 27px;
+      margin-right: 27px;
+      z-index: 1; }
+      #esg .navigation .counter2 .numactive2 {
+        color: white;
+        font-weight: 700; }
+      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+        color: white;
+        font-weight: 300; }
+      #esg .navigation .counter2 .numseparation2 {
+        margin-left: 5px;
+        margin-right: 5px; }
 
   .a-tivit-certificacoes {
     background: rgba(202, 210, 216, 0.2); }
@@ -1861,8 +1937,8 @@ html, body, * {
   .cases-recentes {
     padding-bottom: 100px; }
     .cases-recentes .acessar {
-      margin-top: 20px;
-      width: 100%; }
+      width: 100%;
+      margin: 20px auto 10px auto; }
     .cases-recentes .img {
       width: 100%; }
       .cases-recentes .img img {

@@ -61,7 +61,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
 html, body, * {
   font-family: 'Titillium Web', sans-serif;
-
+  p{
+    max-width: 100%;
+  }
   // Img Responsive
   img {
     max-width: 100%;
