@@ -606,7 +606,7 @@ html, body, * {
   opacity: 0;
   transition: all 0.55s linear; }
   .home-content .transitionContent {
-    background: url("../../assets/images/home/trans3flp.svg") no-repeat bottom center;
+    background: url("../../assets/images/home/trans3flp2.svg") no-repeat bottom center;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -650,6 +650,8 @@ html, body, * {
       line-height: 18.25px;
       font-weight: 400;
       margin: 0; }
+    .home-content .autor-time a:first-child {
+      margin-right: 5px; }
     .home-content .autor-time a {
       font-size: 12px;
       line-height: 14px;
@@ -712,7 +714,7 @@ html, body, * {
     opacity: 1;
     transition: all 0.55s linear; }
   .home-cases .transitionCases {
-    background: url("../../assets/images/home/trans4flp.svg") no-repeat bottom center;
+    background: url("../../assets/images/home/trans4flp2.svg") no-repeat bottom center;
     background-size: cover;
     opacity: 0;
     height: 100%;
@@ -939,7 +941,7 @@ html, body, * {
     .home-cases .home-cases-content .bg1, .home-cases .home-cases-content .bg2, .home-cases .home-cases-content .bg3 {
       position: relative; }
     .home-cases .home-cases-content .overlay {
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), RGBA(0, 0, 0, 0.51));
+      background: linear-gradient(to top, black, RGBA(0, 0, 0, 0.51));
       position: absolute;
       height: 100%;
       width: 100%; }

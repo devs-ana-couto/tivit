@@ -169,7 +169,7 @@
   opacity: 0;
   transition: all 0.55s linear;
   .transitionContent{
-    background: url('../../assets/images/home/trans3flp.svg') no-repeat bottom center;
+    background: url('../../assets/images/home/trans3flp2.svg') no-repeat bottom center;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -224,6 +224,9 @@
       line-height: 18.25px;
       font-weight: 400;
       margin: 0;
+    }
+    a:first-child{
+      margin-right: 5px;
     }
     a{
       font-size: 12px;
@@ -298,7 +301,7 @@
     transition: all 0.55s linear;
   }
   .transitionCases{
-    background: url('../../assets/images/home/trans4flp.svg') no-repeat bottom center;
+    background: url('../../assets/images/home/trans4flp2.svg') no-repeat bottom center;
     background-size: cover;
     opacity: 0;
     height: 100%;
@@ -618,7 +621,7 @@
       .overlay{
         // background: black;
         // opacity: 0.5;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), RGBA(0,0,0,0.51));
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), RGBA(0,0,0,0.51));
         position: absolute;
         height: 100%;
         width: 100%;
