@@ -90,6 +90,22 @@ jQuery(document).ready(function($) {
 
 })
 
+// JS executes after DOM loads
+document.addEventListener("DOMContentLoaded", function(){
+   // var menus = document.querySelectorAll('#bs-example-navbar-collapse-1 .menu-item')
+   // for (let i = 0; i < menus.length; i++) {
+   //    menus[i].addEventListener('click', function() { 
+   //       cleanMenu();
+   //    }, false);
+   //  }
+   // function cleanMenu(){
+   //    for (let i = 0; i < menus.length; i++) {
+   //       menus[i].classList.contains('active')? menus[i].classList.remove('active') : ''
+   //       console.log(menus[i])
+   //     }
+   // }
+});
+
 // Add class on scroll
 window.addEventListener('scroll', function() { 
   scrollpos = window.scrollY;
