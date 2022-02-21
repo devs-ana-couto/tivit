@@ -23,10 +23,6 @@
     <h2>A TIVIT transforma tecnologias com tecnologia.</h2>
   </div>
 
-  <div class="botao hide-desktop">
-    <a href="#" class="btn btn-primary">Assista ao Reel</a>
-  </div>
-
   <div class="arrow text-center hide-desktop">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" class="bounce" alt="Saiba Mais">
   </div>
@@ -38,7 +34,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-        Somos uma multinacional brasileira </br>one-stop-shop que não abre mão da flexibilidade e da agilidade em todos os nossos processos. 
+        Somos uma multinacional brasileira one-stop-shop que não abre mão da flexibilidade e da agilidade em todos os nossos processos. 
         </p>
       </div>
     </div>
@@ -205,7 +201,7 @@
 
         <div class="content text-center">
           <h2>Como a TIVIT tem inovado?</h2>
-          <p class="paragrafo2">Investir em pessoas e ideias faz parte do nosso DNA. Entendemos que a transformação digital e a busca por inovação se fazem a partir da antecipação das tendências do mercado. Para compor nossa atuação, contamos com soluções personalizadas e áreas como TIVIT Ventures, TBanks, TIVIT Labs e Tdx.</p>
+          <p class="paragrafo3">Investir em pessoas e ideias faz parte do nosso DNA. Entendemos que a transformação digital e a busca por inovação se fazem a partir da antecipação das tendências do mercado. Para compor nossa atuação, contamos com soluções personalizadas e áreas como TIVIT Ventures, TBanks, TIVIT Labs e Tdx.</p>
         </div>
 
         <div class="row">
