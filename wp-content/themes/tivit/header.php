@@ -41,7 +41,7 @@
 
         <div class="col-8 col-md-4 header-logo">
           <a class="navbar-brand" href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tivit.png" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
           </a>
         </div>
 

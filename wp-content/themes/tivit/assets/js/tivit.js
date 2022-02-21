@@ -27,7 +27,7 @@ const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('sr
 const remove_class_on_scroll_tbanks = () => header.classList.remove("on-scroll-tbanks") 
 // Change logo on scroll desktop
 const change_logo_on_scroll_desktop = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo-red.png');
-const change_logo_on_scroll_desktop_original = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo-tivit.png');
+const change_logo_on_scroll_desktop_original = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo.svg');
 
 /*
  ** Global
@@ -119,16 +119,18 @@ window.addEventListener('scroll', function() {
   var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
 
   //Effect Intro
-  if(scrollpos > offsetsIntro.top + 330){
+  if(scrollpos > offsetsIntro.top + -200){
    document.querySelector('.imgtransition').classList.add('active')
+   document.querySelector('.home-intro').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
   } else {
    document.querySelector('.imgtransition').classList.remove('active')
+   document.querySelector('.home-intro').classList.remove('active')
    document.querySelector('.pcustom').classList.remove('active')
   }
 
   //Effect portifolio
-  if(scrollpos > offsetsPortifolio.top + 750){
+  if(scrollpos > offsetsPortifolio.top + 350){
    document.querySelector('.home-portifolio').classList.add('active')
    document.querySelector('.bgport').classList.add('active')
   } else {
@@ -137,7 +139,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Content
-  if(scrollpos > offsetsContent.top + 1650){
+  if(scrollpos > offsetsContent.top + 1250){
    document.querySelector('.home-content').classList.add('active')
    document.querySelector('.transitionContent').classList.add('active')
    document.querySelector('.transitionCases').classList.add('active')
@@ -148,7 +150,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Cases
-  if(scrollpos > offsetsCases.top + 2650){
+  if(scrollpos > offsetsCases.top + 2050){
    document.querySelector('.transitionCases').classList.add('deactive')
    document.querySelector('.home-cases').classList.add('active')
    document.querySelector('.divOpacity').classList.add('active')
@@ -165,9 +167,11 @@ window.addEventListener('scroll', function() {
   //Effect Pessoas e Carreiras
   if(scrollpos > offsetsPessoas.top + 3550){
    document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
+   document.querySelector('.pessoasCarreiras').classList.add('active')
    document.querySelector('.transCarreiras').classList.add('deactive')
   } else {
    document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
+   document.querySelector('.pessoasCarreiras').classList.remove('active')
    document.querySelector('.transCarreiras').classList.remove('deactive')
   }
 
