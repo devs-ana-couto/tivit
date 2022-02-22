@@ -1138,19 +1138,15 @@ html, body, * {
       text-transform: uppercase;
       text-align: center; }
     .a-tivit-hero .a-tivit-hero-title .botao a {
-      background: white;
-      border: white solid 1px;
+      border: solid 1px transparent;
+      padding: 0;
       text-decoration: none; }
-      .a-tivit-hero .a-tivit-hero-title .botao a:hover {
-        background: #F20024;
-        color: white;
-        border: 1px solid #F20024; }
   .a-tivit-hero .a-tivit-hero-content h2 {
     font-size: 34px;
     line-height: 34px;
     text-align: center;
     font-weight: 400;
-    margin-top: 98px; }
+    margin: 23px 0 40px 0; }
   .a-tivit-hero .botao {
     margin-bottom: 30px; }
     .a-tivit-hero .botao a {
@@ -1161,7 +1157,7 @@ html, body, * {
     margin-top: 0; }
 
 .a-tivit-sobre {
-  margin: 100px 0 40px 0; }
+  margin: 40px 0 40px 0; }
   .a-tivit-sobre p {
     font-size: 26px;
     line-height: 34px;
@@ -1210,7 +1206,7 @@ html, body, * {
   height: 100% !important; }
   .a-tivit-cases.ctivit .title h2 {
     font-size: 28px;
-    line-height: 50px;
+    line-height: 34px;
     font-weight: 700;
     margin-bottom: 38px;
     color: #262626;
@@ -1348,23 +1344,57 @@ html, body, * {
     .a-tivit-experts .a-tivit-experts-desc p {
       margin-bottom: 0; }
 
-.carousel.a-tivit {
+#esg {
   margin-top: 50px; }
-  .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right {
+  #esg .lp-tbanks-confira .lp-tbanks-confira-content {
+    padding: 30px; }
+  #esg .lp-tbanks-confira .lp-tdx-confira-bg-right {
     background-color: #454D54; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
+    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
       font-size: 30px;
       line-height: 40px; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
+    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
       font-size: 24px;
       line-height: 28px; }
-    .carousel.a-tivit .lp-tbanks-confira .lp-tdx-confira-bg-right p {
+    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right p {
       font-size: 18px;
       line-height: 24px;
       width: 320px;
       margin: 0 auto; }
-  .carousel.a-tivit .lp-tbanks-confira .col-md-6 {
+  #esg .lp-tbanks-confira .col-md-6 {
     justify-content: unset; }
+  #esg .navigation {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 36px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 110px; }
+    #esg .navigation a {
+      color: white; }
+    #esg .navigation .carousel-indicators {
+      top: 25px;
+      margin: 0; }
+      #esg .navigation .carousel-indicators button {
+        height: 1px;
+        margin-left: 0;
+        margin-right: 0; }
+    #esg .navigation .counter2 {
+      margin-left: 27px;
+      margin-right: 27px;
+      z-index: 1; }
+      #esg .navigation .counter2 .numactive2 {
+        color: white;
+        font-weight: 700; }
+      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+        color: white;
+        font-weight: 300; }
+      #esg .navigation .counter2 .numseparation2 {
+        margin-left: 5px;
+        margin-right: 5px; }
 
 .a-tivit-certificacoes {
   padding-bottom: 120px; }
