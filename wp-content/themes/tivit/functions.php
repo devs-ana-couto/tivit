@@ -55,35 +55,5 @@ register_nav_menus(
   )
 );
 
-
-/**
- * Custom Meta Box
- * Nome: Cases
- */
-
-function add_custom_meta_box() {
-  add_meta_box(
-    'custom_meta_box', // Nome do meta box
-    'Cases', // Titulo do meta box
-    'custom_meta_box_callback', // Função para exibir o conteúdo do meta box
-    'page', // Tipo de post que o meta box será exibido
-    'normal', // Posição do meta box
-    'high' // Prioridade do meta box
-  );
-}
-
-function custom_meta_box_callback( $post ) {
-
-  
-  // Verifica se o post tem um valor para o campo custom_meta_box
-  $custom_meta_box_value = get_post_meta( $post->ID, 'custom_meta_box', true );
-  // Se o valor do campo custom_meta_box estiver vazio, então o valor padrão é '0'
-  if ( empty( $custom_meta_box_value ) ) {
-    $custom_meta_box_value = '0';
-  }
-  // Cria um formulário para exibir o valor do campo custom_meta_box
-  echo '<label for="custom_meta_box">';
-  echo '<input type="checkbox" name="custom_meta_box" id="custom_meta_box" value="1" ' . checked( 1, $custom_meta_box_value, false ) . ' />';
-  echo '</label>';
-}
-add_action('add_meta_boxes', 'add_custom_meta_box');
+// Inclui os arquivos de meta box
+include_once( get_template_directory() . '/inc/cases.php' );
