@@ -7,7 +7,8 @@
     <div class="carousel-inner text-center">
       <div class="carousel-item heroslide active">
         <div class="content">
-          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide1" />
+          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider1.jpg" alt="slide1" />
+          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
             <h1>Seu futuro, nosso desafio</h1>   
           </div>       
@@ -15,7 +16,8 @@
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider2.png" alt="slide2" />
+          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider2.jpg" alt="slide2" />
+          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
             <h1>Seu futuro, nosso desafio(2)</h1>   
           </div>       
@@ -23,7 +25,8 @@
       </div>
       <div class="carousel-item heroslide">
         <div class="content">
-          <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/slider1.png" alt="slide3" />
+          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider3.jpg" alt="slide3" />
+          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
             <h1>Seu futuro, nosso desafio(3)</h1>   
           </div>       
@@ -98,22 +101,28 @@
   </div>
   <div class="home-portifolio">
     <div class="container">
-      <div class="row">
+      <div class="d-flex justify-content-center w-100">
+        <div id="triangle-down"></div>
+      </div>
+      <div class="row customposition">
         <div class="col-12">
           <div class="home-portifolio-content">
               <div class="txt">
-              <h3>Possuímos um portfolio diverso</h3>
-              <p>Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
-              <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
-              <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
-              <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
-              <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
-              <div class="botao">
-                <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-              </div>
+                <h3>Possuímos um portfolio diverso</h3>
+                <p class="active">Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
+                <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
+                <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
+                <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
+                <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
+                <div class="botao">
+                  <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+                </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
       </div>
     </div>
   </div>

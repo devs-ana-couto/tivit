@@ -67,7 +67,7 @@
 //Efeito intro
 .imgtransition.active{
   max-height: 0%;
-  opacity: 0;
+  opacity: 1;
   // transition: max-height 0.25s ease-in;
   transition: all 0.4s ease-out;
 }
@@ -87,8 +87,14 @@
 }
 
 // Intro
+.home-intro.active{
+  background: white;
+  transition: all 0.4s linear;
+}
 .home-intro{
   position: relative;
+  background: #990017;
+  transition: all 0.3s linear;
   p{
     font-size: 38px;
     line-height: 38px;
@@ -110,7 +116,7 @@
   }
   .pcustom.active{
     opacity: 1;
-    transition: all 1s ease-out;
+    transition: all 1.05s ease-out;
   }
 }
 
@@ -158,7 +164,7 @@
 //Home Content
 .home-content.active{
   opacity: 1;
-  transition: all 0.6s linear;
+  transition: all 0.5s linear;
 }
 
 .home-content{
@@ -174,14 +180,14 @@
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: all 0.3s linear 0.2s;
+    transition: all 0.4s linear 0.2s;
     z-index: 4999;
     top: 0;
     }
   .transitionContent.active{
-    opacity: 0;
+    opacity: 1;
     height: 0%;
-    transition: all 0.3s linear 0.2s;
+    transition: all 0.4s linear 0.2s;
   }
   #triangle-down{
     position: absolute;
@@ -192,9 +198,9 @@
     padding-top: 140px;
     .title{
       .titleText{
-        font-size: 44px;
+        font-size: 28px;
         line-height: 24px;
-        font-weight: bold;
+        font-weight: 600;
         color: white;
         text-transform: uppercase;
         text-align: center;
@@ -205,6 +211,7 @@
   .img{
     img{
       width: 100%;
+      cursor: pointer;
     }
   }
   .content{
@@ -215,11 +222,14 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
+    cursor: pointer;
     margin: 0;
     color: white;
     text-transform: uppercase;
+    transition: all 0.2s linear;
     &:hover{
       color: #F20024;
+      transition: all 0.2s linear;
     }
   }
   p{
@@ -271,8 +281,18 @@
     text-decoration: unset !important;
     a{
       text-decoration: unset !important;
+      transition: all 0.3s linear;
       &:hover{
         color: white;
+        transition: all 0.3s linear;
+        img{
+          margin-left: 15px;
+          transition: all 0.2s linear;
+        }
+      }
+      img{
+        margin-left: 5px;
+        transition: all 0.2s linear;
       }
     }
   }
@@ -329,7 +349,7 @@
     transition: all 0.55s linear;
   }
   .transitionCases.deactive{
-    opacity: 0;
+    opacity: 1;
     max-height: 0%;
     width: 100%;
     transition: all 0.55s linear;
@@ -347,9 +367,9 @@
   }
   .home-cases-title{
     h2{
-      font-size: 48px;
+      font-size: 36px;
       line-height: 24px;
-      font-weight: bold;
+      font-weight: 600;
       color: white;
       text-transform: uppercase;
       text-align: center;
@@ -393,17 +413,17 @@
   .home-pessoas-e-carreiras-title{
     margin-top: 187px;
     h2{
-      font-size: 30px;
+      font-size: 36px;
       line-height: 28px;
-      font-weight: bold;
+      font-weight: 600;
       text-transform: uppercase;
       text-align: center;
       color: white;
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
   }
   .botao{
-    margin-top: 24px;
+    margin-top: 27px;
     a{
       color: white;
       background: transparent;
@@ -456,6 +476,16 @@
 @media(min-width: 760px){
   .home-hero{
     margin-bottom: 0px;
+    .carousel-inner{
+      height: 865px;
+    }
+    .mask{
+      z-index: 200;
+      position: absolute;
+    }
+    .maskImg{
+      z-index: 100;
+    }
     #hero{
       background-color: #990017;
     }
@@ -464,7 +494,8 @@
       // background-size: cover;
       height: 100%;
       .title{
-        max-width: 100%;
+        max-width: 900px;
+        z-index: 300;
       }
     }
 
@@ -476,9 +507,12 @@
         display: flex;
         flex-direction: column;
         right: 0;
-        bottom: 40px;
+        bottom: 90px;
         img{
           margin-bottom: 5px;
+          &:hover{
+            filter: invert(18%) sepia(8%) saturate(0%) hue-rotate(143deg) brightness(97%) contrast(89%);
+          }
         }
       }
     }
@@ -490,7 +524,7 @@
         display: flex;
         flex-direction: row;
         left: 0;
-        bottom: 50px;
+        bottom: 100px;
         a{
           color: white;
         }
@@ -524,7 +558,6 @@
     }
 
   }
-
   .home-intro{
     .pcustom{
       padding: 140px 0 140px 0;
@@ -556,7 +589,7 @@
     opacity: 1;
     // max-height: 100%;
     // height: 700px;
-    transition: all 0.9s linear;
+    transition: all 0.7s linear;
   }
 
   section.port{
@@ -567,55 +600,83 @@
       height: 100%;
       width: 100%;
       opacity: 1;
-      transition: all 0.3s linear 0.2s;
+      transition: all 0.4s linear 0.2s;
       z-index: 5000;
     }
     .bgport.active{
-      opacity: 0;
+      opacity: 1;
       height: 0%;
-      transition: all 0.3s linear 0.2s;
+      transition: all 0.4s linear 0.2s;
     }
   }
   
   .home-portifolio{
-    background: url('../../assets/images/home/portfolio.png') no-repeat top center;
+    background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
     // position: absolute;
     width: 100%;
     height: 700px;
     // bottom: 0;
     opacity: 0;
-    transition: all 0.55s linear;
+    transition: all 0.6s ease-in;
+    @media(min-width: 760px){
+      .customposition{
+        position: absolute;
+      }
+    }
+    #triangle-down{
+      border-left: 48.84px solid transparent !important;
+      border-right: 48.84px solid transparent !important;
+      border-top: 40px solid white !important;
+      position: absolute;
+    }
+    .mascaraDobra3{
+      left: 19%;
+      // position: absolute;
+      top: 0;
+    }
     .home-portifolio-content{
       .txt{
         margin-top: 150px;
         margin-left: 150px;
+        .active{
+          .hide-arrow{
+            opacity: 1;
+          }
+          color: $vermelho-tivit;
+          transition: all 0.25s linear;
+        }
       }
       h3, p, a{
         text-align: left;
       }
       h3{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
+        font-weight: 600;
       }
       p{
         font-size: 36px;
         line-height: 56px;
         margin-bottom: 0;
         color: white;
+        transition: all 0.25s linear;
         &:hover{
           .hide-arrow{
             opacity: 1;
           }
           color: $vermelho-tivit;
+          transition: all 0.25s linear;
         }
       }
       .botao{
         margin: 40px 0 0 0;
         text-align: left;
+        transition: all 0.4s linear;
         &:hover{
           a{
             background: white;
             color: $vermelho-tivit;
+            transition: all 0.4s linear;
           }
         }
       }
@@ -628,7 +689,7 @@
     transition: background-color 0.35s linear;
   }
   .home-cases{  
-    background-color: white;
+    background-color: #262626;
     transition: background-color 0.35s linear;
     .divOpacity{
       opacity: 0;
@@ -655,7 +716,7 @@
       .overlay{
         // background: black;
         // opacity: 0.5;
-        background: linear-gradient(to top, rgba(0, 0, 0, 1), RGBA(0,0,0,0.51));
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), RGBA(0,0,0,0.1));
         position: absolute;
         height: 100%;
         width: 100%;
@@ -668,6 +729,12 @@
           color: white;
           font-weight: 600;
           text-align: left;
+          font-size: 24px;
+          transition: all 0.2s linear;
+          &:hover{
+            color: $vermelho-tivit;
+            transition: all 0.2s linear;
+          }
         }
         p{
           color: white;
@@ -678,11 +745,19 @@
           color: #F20024;
           text-transform: uppercase;
           text-align: left;
+          transition: all .3s linear;
+          cursor: pointer;
           &:hover{
             color: white;
+            transition: all .3s linear;
+            img{
+              margin-left: 15px;
+              transition: all .2s linear;
+            }
           }
           img{
-            margin-left: 10px;
+            margin-left: 5px;
+            transition: all .2s linear;
           }
         }
       }
@@ -736,13 +811,14 @@
 
   .home-pessoas-e-carreiras{
     background: url('../../assets/images/home/carreiras.png') no-repeat center center;
-    height: 760px;
+    height: 860px;
+    background-size: cover;
     .home-pessoas-e-carreiras-title{
-      margin-top: 317px;
+      margin-top: 417px;
       p{
         font-size: 24px;
-        line-height: 30px;
-        font-weight: ligther;
+        line-height: 1.3;
+        font-weight: lighter;
         text-align: center;
         color: white;
       }
@@ -750,8 +826,14 @@
 
   }
 
+  .pessoasCarreiras.active{
+    background: white;
+    transition: all 0.7s ease-in;
+  }
   .pessoasCarreiras{
     position: relative;
+    background: black;
+    transition: all 0.6s ease-in;
     #triangle-down{
       border-left: 72.84px solid transparent !important;
       border-right: 72.84px solid transparent !important;
@@ -784,7 +866,7 @@
       height: 0%;
       max-height: 0%;
       width: 100%;
-      opacity: 0;
+      opacity: 1;
       transition: all 0.4s linear 0.2s;
     }
     .home-pessoas-e-carreiras{
