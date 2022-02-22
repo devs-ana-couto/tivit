@@ -129,6 +129,17 @@ html, body, * {
     border-radius: 50px;
     padding: 0px 15px 0px 15px; }
 
+  .header .header-menu ul li {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 0px 15px 0px 15px; }
+
+  .header .header-menu ul li:hover {
+    border-color: white; }
+
+  #menu-header-menu {
+    flex-wrap: wrap; }
+
   .navbar-expand-md {
     background: transparent;
     height: 70px;
@@ -156,7 +167,7 @@ html, body, * {
       align-items: center;
       padding-left: 0; }
       .header .header-menu ul li {
-        margin-right: 20px; }
+        margin-right: 0px; }
         .header .header-menu ul li a {
           font-size: 14px;
           line-height: 24.34px;
@@ -541,7 +552,7 @@ html, body, * {
   max-height: 1725px;
   width: 100vw;
   opacity: 1;
-  transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
   width: 100% !important;
   z-index: 5500; }
   @media (max-width: 759px) {
@@ -556,7 +567,7 @@ html, body, * {
 .home-intro {
   position: relative;
   background: #990017;
-  transition: all 0.35s linear; }
+  transition: all 0.3s linear; }
   .home-intro p {
     font-size: 38px;
     line-height: 38px;
@@ -610,7 +621,7 @@ html, body, * {
 
 .home-content.active {
   opacity: 1;
-  transition: all 0.6s linear; }
+  transition: all 0.5s linear; }
 
 .home-content {
   position: relative;
@@ -625,13 +636,13 @@ html, body, * {
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: all 0.3s linear 0.2s;
+    transition: all 0.4s linear 0.2s;
     z-index: 4999;
     top: 0; }
   .home-content .transitionContent.active {
     opacity: 1;
     height: 0%;
-    transition: all 0.3s linear 0.2s; }
+    transition: all 0.4s linear 0.2s; }
   .home-content #triangle-down {
     position: absolute;
     top: 0; }
@@ -946,7 +957,19 @@ html, body, * {
     width: 100%;
     height: 700px;
     opacity: 0;
-    transition: all 0.6s linear; }
+    transition: all 0.6s linear; } }
+  @media (min-width: 760px) and (min-width: 760px) {
+    .home-portifolio .customposition {
+      position: absolute; } }
+@media (min-width: 760px) {
+    .home-portifolio #triangle-down {
+      border-left: 48.84px solid transparent !important;
+      border-right: 48.84px solid transparent !important;
+      border-top: 40px solid white !important;
+      position: absolute; }
+    .home-portifolio .mascaraDobra3 {
+      left: 19%;
+      top: 0; }
     .home-portifolio .home-portifolio-content .txt {
       margin-top: 150px;
       margin-left: 150px; }
@@ -1071,7 +1094,7 @@ html, body, * {
     height: 860px;
     background-size: cover; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
-      margin-top: 317px; }
+      margin-top: 417px; }
       .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title p {
         font-size: 24px;
         line-height: 1.3;

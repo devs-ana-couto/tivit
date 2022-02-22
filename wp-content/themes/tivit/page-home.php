@@ -98,7 +98,10 @@
   </div>
   <div class="home-portifolio">
     <div class="container">
-      <div class="row">
+      <div class="d-flex justify-content-center w-100">
+        <div id="triangle-down"></div>
+      </div>
+      <div class="row customposition">
         <div class="col-12">
           <div class="home-portifolio-content">
               <div class="txt">
@@ -114,6 +117,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
       </div>
     </div>
   </div>

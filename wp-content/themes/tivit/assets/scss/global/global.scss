@@ -263,6 +263,17 @@ html, body, * {
     border-radius: 50px;
     padding: 0px 15px 0px 15px;
   }
+  .header .header-menu ul li{
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 0px 15px 0px 15px;
+  }
+  .header .header-menu ul li:hover{
+    border-color: white;
+  }
+  #menu-header-menu{
+    flex-wrap: wrap;
+  }
   .navbar-expand-md{
     background: transparent;
     height: 70px;
@@ -297,7 +308,7 @@ html, body, * {
       padding-left: 0;
       ul{
         li{
-          margin-right: 20px;
+          margin-right: 0px;
           // &:hover{
           //   border: 1px solid white;
           //   border-radius: 50px;
