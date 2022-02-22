@@ -119,7 +119,7 @@ window.addEventListener('scroll', function() {
   var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
 
   //Effect Intro
-  if(scrollpos > offsetsIntro.top + -200){
+  if(scrollpos > offsetsIntro.top + -300){
    document.querySelector('.imgtransition').classList.add('active')
    document.querySelector('.home-intro').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
@@ -182,6 +182,40 @@ window.addEventListener('scroll', function() {
   } else {
    document.querySelector('.partners').classList.remove('active')
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
+  }
+
+  document.querySelectorAll('.txt > p')[0].addEventListener("mouseover", func1, false);
+  document.querySelectorAll('.txt > p')[1].addEventListener("mouseover", func2, false);
+  document.querySelectorAll('.txt > p')[2].addEventListener("mouseover", func3, false);
+  document.querySelectorAll('.txt > p')[3].addEventListener("mouseover", func4, false);
+  document.querySelectorAll('.txt > p')[4].addEventListener("mouseover", func5, false);
+  var items = document.querySelectorAll('.txt > p')
+
+  function func1(){
+   cleanHover()
+   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;');
+  }
+  function func2(){
+   cleanHover()
+   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;');
+  }
+  function func3(){
+   cleanHover()
+   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;');
+  }
+  function func4(){
+   cleanHover()
+   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
+  }
+  function func5(){
+   cleanHover()
+   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
+  }
+  
+  function cleanHover(){
+      for (let i = 0; i <= 0; i++) {
+         items[i].classList.contains('active')? items[i].classList.remove('active') : ''
+      }
   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 

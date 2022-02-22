@@ -132,10 +132,12 @@ html, body, * {
   .header .header-menu ul li {
     border: 1px solid transparent;
     border-radius: 50px;
-    padding: 0px 15px 0px 15px; }
+    padding: 0px 15px 0px 15px;
+    transition: all .15s linear; }
 
   .header .header-menu ul li:hover {
-    border-color: white; }
+    border-color: white;
+    transition: all .2s linear; }
 
   #menu-header-menu {
     flex-wrap: wrap; }
@@ -205,10 +207,12 @@ html, body, * {
         text-decoration: none;
         border: 1px solid white;
         box-sizing: border-box;
-        border-radius: 50px; }
+        border-radius: 50px;
+        transition: all .2s linear; }
         .header .header-options .btn.btn-contact:hover {
           background-color: transparent;
-          color: white; }
+          color: white;
+          transition: all .2s linear; }
     .header .nav {
       margin-bottom: 0px; }
 
@@ -552,7 +556,7 @@ html, body, * {
   max-height: 1725px;
   width: 100vw;
   opacity: 1;
-  transition: all 0.3s ease-out;
+  transition: all 0.4s ease-out;
   width: 100% !important;
   z-index: 5500; }
   @media (max-width: 759px) {
@@ -722,7 +726,7 @@ html, body, * {
         color: white;
         transition: all 0.3s linear; }
         .home-content .acessar a:hover img {
-          margin-left: 20px;
+          margin-left: 15px;
           transition: all 0.2s linear; }
       .home-content .acessar a img {
         margin-left: 5px;
@@ -865,12 +869,20 @@ html, body, * {
 @media (min-width: 760px) {
   .home-hero {
     margin-bottom: 0px; }
+    .home-hero .carousel-inner {
+      height: 865px; }
+    .home-hero .mask {
+      z-index: 200;
+      position: absolute; }
+    .home-hero .maskImg {
+      z-index: 100; }
     .home-hero #hero {
       background-color: #990017; }
     .home-hero .content {
       height: 100%; }
       .home-hero .content .title {
-        max-width: 900px; }
+        max-width: 900px;
+        z-index: 300; }
     .home-hero .container {
       position: relative; }
       .home-hero .container .redes {
@@ -879,7 +891,7 @@ html, body, * {
         display: flex;
         flex-direction: column;
         right: 0;
-        bottom: 40px; }
+        bottom: 90px; }
         .home-hero .container .redes img {
           margin-bottom: 5px; }
           .home-hero .container .redes img:hover {
@@ -891,7 +903,7 @@ html, body, * {
         display: flex;
         flex-direction: row;
         left: 0;
-        bottom: 50px; }
+        bottom: 100px; }
         .home-hero .container .navigation a {
           color: white; }
         .home-hero .container .navigation .carousel-indicators {
@@ -952,12 +964,20 @@ html, body, * {
       height: 0%;
       transition: all 0.4s linear 0.2s; }
 
+  .banner1 {
+    background: url("../../assets/images/home/img_banner1.jpg") no-repeat top center;
+    transition: all .2s linear; }
+
+  .banner2 {
+    background: url("../../assets/images/home/img_banner2.jpg") no-repeat top center;
+    transition: all .2s linear; }
+
   .home-portifolio {
-    background: url("../../assets/images/home/portfolio.png") no-repeat top center;
+    background: url("../../assets/images/home/img_banner1.jpg") no-repeat top center;
     width: 100%;
     height: 700px;
     opacity: 0;
-    transition: all 0.6s linear; } }
+    transition: all 0.6s ease-in; } }
   @media (min-width: 760px) and (min-width: 760px) {
     .home-portifolio .customposition {
       position: absolute; } }
@@ -973,6 +993,11 @@ html, body, * {
     .home-portifolio .home-portifolio-content .txt {
       margin-top: 150px;
       margin-left: 150px; }
+      .home-portifolio .home-portifolio-content .txt .active {
+        color: #F20024;
+        transition: all 0.25s linear; }
+        .home-portifolio .home-portifolio-content .txt .active .hide-arrow {
+          opacity: 1; }
     .home-portifolio .home-portifolio-content h3, .home-portifolio .home-portifolio-content p, .home-portifolio .home-portifolio-content a {
       text-align: left; }
     .home-portifolio .home-portifolio-content h3 {
@@ -1052,7 +1077,7 @@ html, body, * {
           color: white;
           transition: all .3s linear; }
           .home-cases .home-cases-content .textCase a:hover img {
-            margin-left: 20px;
+            margin-left: 15px;
             transition: all .2s linear; }
         .home-cases .home-cases-content .textCase a img {
           margin-left: 5px;
