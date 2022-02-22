@@ -1,3 +1,4 @@
+<?php /* Template Name: Landing Tbanks */ ?>
 <?php get_header(); ?>
 
 <div class="lp-tbanks-hero">

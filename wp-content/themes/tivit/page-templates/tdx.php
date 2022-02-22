@@ -1,3 +1,4 @@
+<?php /* Template Name: Landing TDX */ ?>
 <?php get_header(); ?>
 
 <div class="lp-tbanks-hero lp-tdx-hero">

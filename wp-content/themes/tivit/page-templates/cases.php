@@ -1,3 +1,4 @@
+<?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
 <div class="cases-hero">

@@ -1,3 +1,4 @@
+<?php /* Template Name: Pessoas e Carreiras */ ?>
 <?php get_header(); ?>
 
 <div class="pessoas-e-carreiras-hero">
