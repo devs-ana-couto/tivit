@@ -185,10 +185,15 @@ window.addEventListener('scroll', function() {
   }
 
   document.querySelectorAll('.txt > p')[0].addEventListener("mouseover", func1, false);
+  document.querySelectorAll('.txt > p')[0].addEventListener("mouseout", func1, false);
   document.querySelectorAll('.txt > p')[1].addEventListener("mouseover", func2, false);
+  document.querySelectorAll('.txt > p')[1].addEventListener("mouseout", func2, false);
   document.querySelectorAll('.txt > p')[2].addEventListener("mouseover", func3, false);
+  document.querySelectorAll('.txt > p')[2].addEventListener("mouseout", func3, false);
   document.querySelectorAll('.txt > p')[3].addEventListener("mouseover", func4, false);
+  document.querySelectorAll('.txt > p')[3].addEventListener("mouseout", func4, false);
   document.querySelectorAll('.txt > p')[4].addEventListener("mouseover", func5, false);
+  document.querySelectorAll('.txt > p')[4].addEventListener("mouseout", func5, false);
   var items = document.querySelectorAll('.txt > p')
 
   function func1(){
