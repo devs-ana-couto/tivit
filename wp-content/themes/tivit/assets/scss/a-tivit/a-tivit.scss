@@ -18,14 +18,9 @@
         }
         .botao{
             a{
-                background: white;
-                border: white solid 1px;
+                border: solid 1px transparent;
+                padding: 0;
                 text-decoration: none;
-                &:hover{
-                    background: $vermelho-tivit;
-                    color: white;
-                    border: 1px solid $vermelho-tivit;
-                }
             }
         }
     }
@@ -35,7 +30,7 @@
         line-height: 34px;
         text-align: center;
         font-weight: 400;
-        margin-top: 98px;
+        margin: 23px 0 40px 0;
       }
     }
     .botao{
@@ -54,7 +49,7 @@
 
 // Sobre
 .a-tivit-sobre{
-    margin: 100px 0 40px 0;
+    margin: 40px 0 40px 0;
     p{
         font-size: 26px;
         line-height: 34px;
@@ -117,7 +112,7 @@
     .title{
         h2{
             font-size: 28px;
-            line-height: 50px;
+            line-height: 34px;
             font-weight: 700;
             margin-bottom: 38px;
             color: $cinza-dark-cyber-tivit;
@@ -298,10 +293,13 @@
 }
 
 // Carousel
-.carousel.a-tivit{
+#esg{
     margin-top: 50px;
     .lp-tbanks-confira {
-        
+
+        .lp-tbanks-confira-content{
+            padding: 30px;
+        }
         .lp-tdx-confira-bg-right{
             background-color: $cinza-dark-tivit;
             h3{
@@ -324,6 +322,47 @@
         }
         
     }
+    .navigation{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+        bottom: 36px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 110px;
+        a{
+          color: white;
+        }
+        .carousel-indicators{
+          top: 25px;
+          margin: 0;
+          button{
+            height: 1px;
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+        .counter2{
+          margin-left: 27px;
+          margin-right: 27px;
+          z-index: 1;
+          .numactive2{
+            color: white;
+            font-weight: 700;
+          }
+          .numseparation2, .numtotal2{
+            color: white;
+            font-weight: 300;
+          }
+          .numseparation2{
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+        }
+    }  
 }
 
 // Certificações
