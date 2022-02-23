@@ -10,8 +10,8 @@
           <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider1.jpg" alt="slide1" />
           <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio</h1>   
-          </div>       
+            <h1>Seu futuro, nosso desafio</h1>
+          </div>
         </div>
       </div>
       <div class="carousel-item heroslide">
@@ -19,8 +19,8 @@
           <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider2.jpg" alt="slide2" />
           <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio(2)</h1>   
-          </div>       
+            <h1>Seu futuro, nosso desafio(2)</h1>
+          </div>
         </div>
       </div>
       <div class="carousel-item heroslide">
@@ -28,16 +28,16 @@
           <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider3.jpg" alt="slide3" />
           <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
           <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio(3)</h1>   
-          </div>       
+            <h1>Seu futuro, nosso desafio(3)</h1>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-12">        
-          <div class="navigation"> 
+        <div class="col-12">
+          <div class="navigation">
             <button class="carousel-control-prev hide-mobile" type="button" data-bs-target="#hero" data-bs-slide="prev">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
             </button>
@@ -61,8 +61,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12">        
-        <div class="redes hide-mobile"> 
+      <div class="col-12">
+        <div class="redes hide-mobile">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg"  alt="Linkedin">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg"  alt="Instagram">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg"  alt="Twitter">
@@ -82,7 +82,7 @@
   <div class="container pcustom">
     <div class="row">
       <div class="col-12">
-        <div class="to  text-center">
+        <div class="arrow text-center">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
         </div>
         <p class="mt-3">
@@ -100,23 +100,25 @@
   <div class="d-flex justify-content-center bgport position-absolute">
   </div>
   <div class="home-portifolio">
-    <div class="container">
-      <div class="d-flex justify-content-center w-100">
-        <div id="triangle-down"></div>
-      </div>
-      <div class="row customposition">
-        <div class="col-12">
-          <div class="home-portifolio-content">
-              <div class="txt">
-                <h3>Possuímos um portfolio diverso</h3>
-                <p class="active">Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
-                <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
-                <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
-                <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
-                <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
-                <div class="botao">
-                  <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                </div>
+    <div class="home-portifolio-imagem">
+      <div class="container">
+        <div class="d-flex justify-content-center w-100">
+          <div id="triangle-down"></div>
+        </div>
+        <div class="row customposition">
+          <div class="col-12">
+            <div class="home-portifolio-content">
+                <div class="txt">
+                  <h3>Possuímos um portfolio diverso</h3>
+                  <a href="#"><p class="active">Meios de pagamento</p></a>
+                  <a href="#"><p>Serviços financeiros</p></a>
+                  <a href="#"><p>Manufatura</p></a>
+                  <a href="#"><p>Utilities</p></a>
+                  <a href="#"><p>Varejo</p></a>
+                  <div class="botao">
+                    <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -138,7 +140,7 @@
     <div class="row">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="p-1"> 
+        <div class="p-1">
           <div class="img">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
           </div>
@@ -367,7 +369,7 @@
         <div class="col-12">
           <div class="home-pessoas-e-carreiras-title">
             <h2>Pessoas e Carreiras</h2>
-            <p class="hide-mobile">Você está preparado para o futuro? 
+            <p class="hide-mobile">Você está preparado para o futuro?
             </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
           </div>
           <div class="botao">

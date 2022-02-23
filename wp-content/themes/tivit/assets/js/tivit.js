@@ -16,15 +16,15 @@ const header_logo_desktop = document.querySelector(".logo-brand")
 
 const header_height = header.offsetHeight
 // Add class on scroll
-const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-tbanks") 
+const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-tbanks")
 // Add class mobile
 const add_class_page_tbanks = () => header_logo.classList.add("on-scroll-mobile-tbanks")
 // Change search icon color
-const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer_purple.svg)' 
+const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer_purple.svg)'
 // Change hamburguer icon color
-const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-purple.svg'); 
+const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-purple.svg');
 // Remove class on scroll
-const remove_class_on_scroll_tbanks = () => header.classList.remove("on-scroll-tbanks") 
+const remove_class_on_scroll_tbanks = () => header.classList.remove("on-scroll-tbanks")
 // Change logo on scroll desktop
 const change_logo_on_scroll_desktop = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo-red.png');
 const change_logo_on_scroll_desktop_original = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo.svg');
@@ -44,42 +44,33 @@ const remove_class_on_scroll_global = () => header.classList.remove("on-scroll-g
  */
 
 // Add class on scroll Tdx
-const add_class_on_scroll_tdx = () => header.classList.add("on-scroll-tdx") 
+const add_class_on_scroll_tdx = () => header.classList.add("on-scroll-tdx")
 // Add class mobile
 const add_class_page_tdx = () => header_logo.classList.add("on-scroll-mobile-tdx")
 // Change search icon color
-const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-orange.svg)' 
+const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-orange.svg)'
 // Change hamburguer icon color
-const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-orange.svg'); 
+const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-orange.svg');
 // Remove class on scroll
-const remove_class_on_scroll_tdx = () => header.classList.remove("on-scroll-tdx") 
+const remove_class_on_scroll_tdx = () => header.classList.remove("on-scroll-tdx")
 
 // Check if is mobile and page is tbanks or tdx
-if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tbanks/") { 
-   add_class_page_tbanks();     
-   change_icon_search_color_tbanks(); 
-   change_icon_hamburguer_color_tbanks();  
+if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tbanks/") {
+   add_class_page_tbanks();
+   change_icon_search_color_tbanks();
+   change_icon_hamburguer_color_tbanks();
 }else if(window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tdx/"){
    add_class_page_tdx();
-   change_icon_search_color_tdx(); 
-   change_icon_hamburguer_color_tdx(); 
+   change_icon_search_color_tdx();
+   change_icon_hamburguer_color_tdx();
 }
-
-
 
 // Executes after DOM loads
 jQuery(document).ready(function($) {
 
-   /**
-    * Slider Effect Counter
-    */
-   
-   /*
-   ** When has only one element
-   */
    var totalItems = $('.heroslide').length;
    var currentIndex = $('.heroslide.active').index() + 1;
-   
+
    // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
    $('.numactive').html( currentIndex );
    $('.numseparation').html('  /  ');
@@ -97,61 +88,46 @@ jQuery(document).ready(function($) {
       $('.numtotal').html( totalItems );
    });
 
-   /*
-   ** When has two elements
-   */
-
-   var totalItems2 = $('.heroslide2').length;
-   var currentIndex2 = $('.heroslide2.active').index() + 1;
-   
-   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
-   $('.numactive2').html( currentIndex2 );
-   $('.numseparation2').html('  /  ');
-   $('.numtotal2').html( totalItems2 );
-
-   $('#esg').carousel({
-      interval: 4000
-    });
-
-   $('#esg').bind('slid.bs.carousel', function() {
-      currentIndex2 = $('.heroslide2.active').index() + 1;
-      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
-      $('.numactive2').html( currentIndex2 );
-      $('.numseparation2').html('  /  ');
-      $('.numtotal2').html( totalItems2 );
-   });
-
-
 })
 
 // JS executes after DOM loads
 document.addEventListener("DOMContentLoaded", function(){
-   // var menus = document.querySelectorAll('#bs-example-navbar-collapse-1 .menu-item')
-   // for (let i = 0; i < menus.length; i++) {
-   //    menus[i].addEventListener('click', function() { 
-   //       cleanMenu();
-   //    }, false);
-   //  }
-   // function cleanMenu(){
-   //    for (let i = 0; i < menus.length; i++) {
-   //       menus[i].classList.contains('active')? menus[i].classList.remove('active') : ''
-   //       console.log(menus[i])
-   //     }
-   // }
+   var items = document.querySelectorAll('.txt > a > p')
+
+   for(i=0; i < items.length; i++){
+      items[i].addEventListener("mouseover", test, false);
+   }
+
+   function test(event){
+      cleanHover();
+      console.log(event);
+      // console.log(event.target);
+      // console.log(event.explicitOriginalTarget);
+      // console.log(event.explicitOriginalTarget.data);
+      event.path[0].innerHTML === 'Meios de pagamento' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg);') : ''
+      event.path[0].innerHTML === 'Serviços financeiros' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
+      event.path[0].innerHTML === 'Manufatura' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg);') : ''
+      event.path[0].innerHTML === 'Utilities' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg);') : ''
+      event.path[0].innerHTML === 'Varejo' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
+   }
+   function cleanHover(){
+      for (let i = 0; i <= 0; i++) {
+         items[i].classList.contains('active')? items[i].classList.remove('active') : ''
+      }
+  }
 });
 
 // Add class on scroll
-window.addEventListener('scroll', function() { 
-   scrollpos = window.scrollY;
+window.addEventListener('scroll', function() {
+  scrollpos = window.scrollY;
 
   //transition vars
-  if(window.location.pathname == "/staged/tivit/"){
-   var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
-   var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
-   var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
-   var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
-   var offsetsPessoas = document.querySelector('.pessoasCarreiras').getBoundingClientRect();
-   var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
+  var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
+  var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
+  var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
+  var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
+  var offsetsPessoas = document.querySelector('.pessoasCarreiras').getBoundingClientRect();
+  var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
 
   //Effect Intro
   if(scrollpos > offsetsIntro.top + -300){
@@ -210,51 +186,16 @@ window.addEventListener('scroll', function() {
    document.querySelector('.transCarreiras').classList.remove('deactive')
   }
 
-   //Effect Partners
-   if(scrollpos > offsetsPartners.top + 3460){
-      document.querySelector('.partners').classList.add('active')
-      // document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
-   } else {
-      document.querySelector('.partners').classList.remove('active')
-      // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
-   }
-}
-
-  document.querySelectorAll('.txt > p')[0].addEventListener("mouseover", func1, false);
-  document.querySelectorAll('.txt > p')[1].addEventListener("mouseover", func2, false);
-  document.querySelectorAll('.txt > p')[2].addEventListener("mouseover", func3, false);
-  document.querySelectorAll('.txt > p')[3].addEventListener("mouseover", func4, false);
-  document.querySelectorAll('.txt > p')[4].addEventListener("mouseover", func5, false);
-  var items = document.querySelectorAll('.txt > p')
-
-  function func1(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;');
-  }
-  function func2(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;');
-  }
-  function func3(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;');
-  }
-  function func4(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
-  }
-  function func5(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
-  }
-  
-  function cleanHover(){
-      for (let i = 0; i <= 0; i++) {
-         items[i].classList.contains('active')? items[i].classList.remove('active') : ''
-      }
+  //Effect Partners
+  if(scrollpos > offsetsPartners.top + 3460){
+   document.querySelector('.partners').classList.add('active')
+   // document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
+  } else {
+   document.querySelector('.partners').classList.remove('active')
+   // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
   }
 
-   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
+   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") {
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){
       add_class_on_scroll_tdx();
@@ -262,11 +203,13 @@ window.addEventListener('scroll', function() {
    else if(scrollpos >= header_height && window.location.pathname != "/staged/tivit/" || scrollpos >= header_height && window.location.pathname != "/staged/tdx/"){
       add_class_on_scroll_global();
    }
-   else { 
-      remove_class_on_scroll_tbanks(); 
+   else {
+      remove_class_on_scroll_tbanks();
       remove_class_on_scroll_tdx();
       remove_class_on_scroll_global();
    }
+
+
 
    if(scrollpos >= header_height && window.innerWidth > 768 && window.location.pathname === "/staged/tivit/tbanks/" || window.location.pathname === "/staged/tivit/tdx/")
       change_logo_on_scroll_desktop();

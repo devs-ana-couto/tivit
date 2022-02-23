@@ -69,7 +69,7 @@
   max-height: 0%;
   opacity: 1;
   // transition: max-height 0.25s ease-in;
-  transition: all 0.4s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .imgtransition{
@@ -77,7 +77,7 @@
   width: 100vw;
   opacity: 1;
   // transition: max-height 0.25s ease-in;
-  transition: all 0.4s ease-out;
+  transition: all 0.6s ease-in;
   width: 100% !important;
   z-index: 5500;
   @media(max-width:759px){
@@ -89,12 +89,12 @@
 // Intro
 .home-intro.active{
   background: white;
-  transition: all 0.4s linear;
+  transition: all 0.6s ease-in;
 }
 .home-intro{
   position: relative;
   background: #990017;
-  transition: all 0.3s linear;
+  transition: all 0.35s ease-in;
   p{
     font-size: 38px;
     line-height: 38px;
@@ -122,41 +122,48 @@
 
 // Portifolio
 .home-portifolio{
-  background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
   height: 580px;
   margin-bottom: 140px;
   @media(max-width: 760px){
     display: 50px;
   }
-  .home-portifolio-content{
-    margin-top: 150px;
-    .hide-arrow{
-      opacity: 0;
-      @media(max-width: 760px){
-        display: none;
+  .home-portifolio-imagem {
+    background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
+    height: 580px;
+    margin-bottom: 140px;
+    @media(max-width: 760px){
+      display: 50px;
+    }
+    .home-portifolio-content{
+      margin-top: 150px;
+      .hide-arrow{
+        opacity: 0;
+        @media(max-width: 760px){
+          display: none;
+        }
       }
-    }
-    h3, p{
-      color: white;
-      text-transform: uppercase;
-      text-align: center;
-    }
-    h3{
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: bold;
-      margin-bottom: 24px;
-    }
-    p{
-      font-size: 26px;
-      line-height: 30px;
-      font-weight: 400;
-      margin-bottom: 15px;
+      h3, p{
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      h3{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+      p{
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
 
-    }
-    .red{
-      color: $vermelho-tivit;
-      font-weight: 600;
+      }
+      .red{
+        color: $vermelho-tivit;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -164,7 +171,7 @@
 //Home Content
 .home-content.active{
   opacity: 1;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-out;
 }
 
 .home-content{
@@ -173,21 +180,21 @@
   display: flex;
   justify-content: center;
   opacity: 0;
-  transition: all 0.55s linear;
+  transition: all 0.35s ease-in;
   .transitionContent{
     background: url('../../assets/images/home/trans3flp2.svg') no-repeat bottom center;
     background-size: cover;
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.7s ease-out;
     z-index: 4999;
     top: 0;
     }
   .transitionContent.active{
     opacity: 1;
     height: 0%;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.45s ease-in;
   }
   #triangle-down{
     position: absolute;
@@ -316,7 +323,7 @@
 // Cases
 .home-cases.active{
   background-color: black;
-  transition: background-color 0.35s linear;
+  transition: background-color 0.3s ease-ou;
 }
 .home-cases{
   .bgtriangulo{
@@ -325,11 +332,11 @@
     height: 100%;
     opacity: 0;
     z-index: 0 !important;
-    transition: all 0.55s linear;
+    transition: all 0.5s linear;
   }
   .bgtriangulo.active{
     opacity: 1;
-    transition: all 0.55s linear;
+    transition: all 0.5s linear;
   }
   .transitionCases{
     background: url('../../assets/images/home/trans4flp2.svg') no-repeat bottom center;
@@ -339,20 +346,20 @@
     max-height: 100%;
     width: 100%;
     z-index: 4998;
-    transition: all 0.55s linear;
+    transition: all 0.5s ease-in;
   }
   .transitionCases.active{
     opacity: 1;
     width: 100%;
     max-height: 100%;
     background-size: cover;
-    transition: all 0.55s linear;
+    transition: all 0.6s ease-out;
   }
   .transitionCases.deactive{
     opacity: 1;
     max-height: 0%;
     width: 100%;
-    transition: all 0.55s linear;
+    transition: all 0.4s linear;
   }
   background-color: white;
   transition: background-color 0.35s linear;
@@ -384,8 +391,8 @@
           color: $vermelho-tivit;
           font-size: 24px;
           line-height: 28px;
-          font-weight: bold;       
-          text-transform: uppercase;   
+          font-weight: bold;
+          text-transform: uppercase;
         }
         p{
           font-size: 18px;
@@ -574,11 +581,11 @@
     .botao{
       margin-bottom: 0;
       a{
-        border: red solid 1px; 
+        border: red solid 1px;
         &:hover{
           background: white;
           color: $vermelho-tivit;
-          border: red solid 1px;          
+          border: red solid 1px;
         }
       }
     }
@@ -609,78 +616,96 @@
       transition: all 0.4s linear 0.2s;
     }
   }
-  
+
   .home-portifolio{
-    background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
     // position: absolute;
     width: 100%;
     height: 700px;
     // bottom: 0;
     opacity: 0;
-    transition: all 0.6s ease-in;
+    // transition: all 0.6s ease-in;
     @media(min-width: 760px){
       .customposition{
         position: absolute;
       }
     }
-    #triangle-down{
-      border-left: 48.84px solid transparent !important;
-      border-right: 48.84px solid transparent !important;
-      border-top: 40px solid white !important;
-      position: absolute;
-    }
-    .mascaraDobra3{
-      left: 19%;
-      // position: absolute;
-      top: 0;
-    }
-    .home-portifolio-content{
-      .txt{
-        margin-top: 150px;
-        margin-left: 150px;
-        .active{
-          .hide-arrow{
-            opacity: 1;
-          }
-          color: $vermelho-tivit;
-          transition: all 0.25s linear;
-        }
+    .home-portifolio-imagem {
+      background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
+      width: 100%;
+      height: 700px;
+      // bottom: 0;
+      // opacity: 0;
+      transition: all 0.4s ease-in;
+      #triangle-down{
+        border-left: 48.84px solid transparent !important;
+        border-right: 48.84px solid transparent !important;
+        border-top: 40px solid white !important;
+        position: absolute;
       }
-      h3, p, a{
-        text-align: left;
+      .mascaraDobra3{
+        left: 19%;
+        // position: absolute;
+        top: 0;
       }
-      h3{
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 600;
-      }
-      p{
-        font-size: 36px;
-        line-height: 56px;
-        margin-bottom: 0;
-        color: white;
-        transition: all 0.25s linear;
-        &:hover{
-          .hide-arrow{
-            opacity: 1;
-          }
-          color: $vermelho-tivit;
-          transition: all 0.25s linear;
-        }
-      }
-      .botao{
-        margin: 40px 0 0 0;
-        text-align: left;
-        transition: all 0.4s linear;
-        &:hover{
-          a{
-            background: white;
+      .home-portifolio-content{
+        .txt{
+          margin-top: 150px;
+          margin-left: 150px;
+          .active{
+            .hide-arrow{
+              opacity: 1;
+            }
             color: $vermelho-tivit;
-            transition: all 0.4s linear;
+            transition: all 0.25s linear;
+          }
+          p.active:after{
+            content: url('../../assets/images/home/icons/arrow-right-red.svg');
+            margin-left: 15px;
           }
         }
-      }
+        h3, p, a{
+          text-align: left;
+        }
+        h3{
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 600;
+        }
+        a{
+          text-decoration: unset;
+        }
+        p{
+          font-size: 36px;
+          line-height: 56px;
+          margin-bottom: 0;
+          color: white;
+          transition: all 0.25s linear;
+          &:hover{
+            // .hide-arrow{
+            //   opacity: 1;
+            // }
+            color: $vermelho-tivit;
+            transition: all 0.25s linear;
+            &:after{
+              content: url('../../assets/images/home/icons/arrow-right-red.svg');
+              margin-left: 15px;
+            }
+          }
+        }
+        .botao{
+          margin: 40px 0 0 0;
+          text-align: left;
+          transition: all 0.4s linear;
+          &:hover{
+            a{
+              background: white;
+              color: $vermelho-tivit;
+              transition: all 0.4s linear;
+            }
+          }
+        }
 
+      }
     }
   }
 
@@ -688,7 +713,7 @@
     background-color: black;
     transition: background-color 0.35s linear;
   }
-  .home-cases{  
+  .home-cases{
     background-color: #262626;
     transition: background-color 0.35s linear;
     .divOpacity{
@@ -767,8 +792,8 @@
           color: $vermelho-tivit;
           font-size: 24px;
           line-height: 28px;
-          font-weight: bold;       
-          text-transform: uppercase;   
+          font-weight: bold;
+          text-transform: uppercase;
         }
         p{
           font-size: 18px;
@@ -776,17 +801,17 @@
           font-weight: 400;
           color: white;
         }
-      } 
+      }
       .botao{
         a{
           background: transparent;
           border: 1px solid $vermelho-tivit;
-          &:hover{            
+          &:hover{
             background: white;
             color: $vermelho-tivit;
             border: white solid 1px;
-          }       
-        } 
+          }
+        }
       }
     }
     .home-cases-content.left{
@@ -795,7 +820,7 @@
 
       h3,p, .botao{
         text-align: left;
-        
+
       }
     }
     .home-cases-content.right{
