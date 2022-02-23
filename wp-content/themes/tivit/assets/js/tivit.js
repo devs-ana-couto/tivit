@@ -195,11 +195,7 @@ window.addEventListener('scroll', function() {
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
   }
 
-<<<<<<< HEAD
-   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") {
-=======
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
->>>>>>> a0cc4188e38e77a272b705796c3acc561f1f8895
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){
       add_class_on_scroll_tdx();
