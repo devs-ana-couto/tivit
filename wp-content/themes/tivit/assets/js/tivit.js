@@ -161,7 +161,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Cases
-  if(scrollpos > offsetsCases.top + 2050){
+  if(scrollpos > offsetsCases.top + 1950){
    document.querySelector('.transitionCases').classList.add('deactive')
    document.querySelector('.home-cases').classList.add('active')
    document.querySelector('.divOpacity').classList.add('active')
@@ -176,7 +176,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Pessoas e Carreiras
-  if(scrollpos > offsetsPessoas.top + 3550){
+  if(scrollpos > offsetsPessoas.top + 3050){
    document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
    document.querySelector('.pessoasCarreiras').classList.add('active')
    document.querySelector('.transCarreiras').classList.add('deactive')
@@ -195,7 +195,11 @@ window.addEventListener('scroll', function() {
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
   }
 
+<<<<<<< HEAD
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") {
+=======
+   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
+>>>>>>> a0cc4188e38e77a272b705796c3acc561f1f8895
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){
       add_class_on_scroll_tdx();

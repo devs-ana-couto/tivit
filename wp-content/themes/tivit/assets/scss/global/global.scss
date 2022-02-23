@@ -260,6 +260,9 @@ html, body, * {
 
 // Header Desktop
 @media (min-width: 769px){
+  // .btn{
+  //   padding: 0.08rem 0.75rem !important;
+  // }
   .header .header-menu ul li.active{
     border: 1px solid white;
     border-radius: 50px;
@@ -366,6 +369,7 @@ html, body, * {
         border: 1px solid white;
         box-sizing: border-box;
         border-radius: 50px;
+        padding: 0.08rem 0.75rem !important;
         transition: all .2s linear;
         &:hover{
           background-color: transparent;
@@ -521,7 +525,15 @@ html, body, * {
       padding-left: 0;
       ul{
         li{
-          margin-right: 20px;
+          margin-right: 0px;
+          border: 1px solid transparent;
+          border-radius: 50px;
+          padding: 0px 15px 0px 15px;
+          transition: all .15s linear;
+          &:hover{
+            border-color: #454D54;
+            transition: all .2s linear;
+          }
           a{
             font-size: 14px;
             line-height: 24.34px;
@@ -529,8 +541,10 @@ html, body, * {
             color: $cinza-dark-tivit;
             text-transform: uppercase;
             text-decoration: none;
+            transition: all .15s linear;
             &:hover{
               opacity: 0.8;
+              transition: all .15s linear;
             }
           }
         }
@@ -572,6 +586,7 @@ html, body, * {
         text-decoration: none;
         border: 1px solid $vermelho-tivit;
         background: $vermelho-tivit;
+        padding: 0.08rem 0.75rem !important;
         box-sizing: border-box;
         border-radius: 50px;
         &:hover{
@@ -649,6 +664,7 @@ html, body, * {
 
     .nav{
       margin-bottom: 0px;
+      justify-content: flex-start !important;
     }
     .footer-ac{
       display: flex;
