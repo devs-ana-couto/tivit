@@ -1022,8 +1022,9 @@ html, body, * {
       .home-portifolio .home-portifolio-content p:hover {
         color: #F20024;
         transition: all 0.25s linear; }
-        .home-portifolio .home-portifolio-content p:hover .hide-arrow {
-          opacity: 1; }
+        .home-portifolio .home-portifolio-content p:hover:after {
+          content: url("../../assets/images/home/icons/arrow-right-red.svg");
+          margin-left: 15px; }
     .home-portifolio .home-portifolio-content .botao {
       margin: 40px 0 0 0;
       text-align: left;

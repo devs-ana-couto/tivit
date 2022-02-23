@@ -668,11 +668,15 @@
         color: white;
         transition: all 0.25s linear;
         &:hover{
-          .hide-arrow{
-            opacity: 1;
-          }
+          // .hide-arrow{
+          //   opacity: 1;
+          // }
           color: $vermelho-tivit;
           transition: all 0.25s linear;
+          &:after{
+            content: url('../../assets/images/home/icons/arrow-right-red.svg');
+            margin-left: 15px;
+          }
         }
       }
       .botao{
