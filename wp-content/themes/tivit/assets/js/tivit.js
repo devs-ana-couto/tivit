@@ -99,8 +99,6 @@ document.addEventListener("DOMContentLoaded", function(){
    }
    
    function test(event){
-      console.log(event)
-      console.log(event.path[0].innerHTML)
       cleanHover();
       event.path[0].innerHTML === 'Meios de pagamento'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;') : ''
       event.path[0].innerHTML === 'Serviços financeiros'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;') : ''
