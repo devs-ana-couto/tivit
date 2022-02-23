@@ -737,11 +737,12 @@ html, body, * {
       .home-content .acessar a:hover {
         color: white;
         transition: all 0.3s linear; }
-        .home-content .acessar a:hover img {
-          margin-left: 15px;
+        .home-content .acessar a:hover:after {
+          margin-left: 20px;
           transition: all 0.2s linear; }
-      .home-content .acessar a img {
-        margin-left: 5px;
+      .home-content .acessar a:after {
+        content: url("../../assets/images/home/icons/arrowred.svg");
+        margin-left: 10px;
         transition: all 0.2s linear; }
   .home-content div.btn {
     padding-top: 75px; }
@@ -763,7 +764,7 @@ html, body, * {
 .home-cases {
   background-color: white;
   transition: background-color 0.35s linear;
-  height: 860px; }
+  height: 930px; }
   .home-cases .bgtriangulo {
     background: url("../../assets/images/home/triangulocinza.svg") no-repeat top center;
     width: 100%;
@@ -841,19 +842,24 @@ html, body, * {
       color: white;
       margin-bottom: 27px; }
   .home-pessoas-e-carreiras .botao {
-    margin-top: 27px; }
+    margin-top: 47px; }
     .home-pessoas-e-carreiras .botao a {
       color: white;
       background: transparent;
       text-decoration-line: unset !important;
       font-weight: 600;
       text-transform: uppercase;
-      font-size: 16px; }
-      .home-pessoas-e-carreiras .botao a img {
-        margin-left: 10px;
-        margin-bottom: 2px; }
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 50px;
+      transition: all .2s linear; }
       .home-pessoas-e-carreiras .botao a:hover {
-        color: #c4c4c4; }
+        background: #F20024;
+        transition: all .2s linear;
+        border: 2px solid #990017; }
+      .home-pessoas-e-carreiras .botao a:after {
+        content: url("../../assets/images/a-tivit/arrow.svg");
+        margin-left: 10px; }
 
 .lr {
   left: 0;
@@ -1086,12 +1092,13 @@ html, body, * {
         .home-cases .home-cases-content .textCase a:hover {
           color: white;
           transition: all .3s linear; }
-          .home-cases .home-cases-content .textCase a:hover img {
-            margin-left: 15px;
-            transition: all .2s linear; }
-        .home-cases .home-cases-content .textCase a img {
-          margin-left: 5px;
-          transition: all .2s linear; }
+          .home-cases .home-cases-content .textCase a:hover:after {
+            margin-left: 20px;
+            transition: all 0.2s linear; }
+        .home-cases .home-cases-content .textCase a:after {
+          content: url("../../assets/images/home/icons/arrowred.svg");
+          margin-left: 10px;
+          transition: all 0.2s linear; }
     .home-cases .home-cases-content .home-cases-autor {
       width: 450px; }
       .home-cases .home-cases-content .home-cases-autor h3 {

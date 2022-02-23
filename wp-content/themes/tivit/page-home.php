@@ -159,7 +159,7 @@
             <p>6 minutos de leitura</p>
           </div>
           <div class="acessar">
-            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+            <a href="#">acessar artigo</a>
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@
             <p>6 minutos de leitura</p>
           </div>
           <div class="acessar">
-            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+            <a href="#">acessar artigo</a>
           </div>
         </div>
       </div>
@@ -218,7 +218,7 @@
             <p>6 minutos de leitura</p>
           </div>
           <div class="acessar">
-            <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+            <a href="#">acessar artigo</a>
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@
                     <h3> NOME DO CLIENTE 1 </h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
                       <div class="w-100 d-flex text-left">
-                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                        <a>VER CASE</a>
                       </div>
                     </div>
                   </div>
@@ -327,7 +327,7 @@
                     <h3> NOME DO CLIENTE 2 </h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
                       <div class="w-100 d-flex text-left">
-                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                        <a>VER CASE</a>
                       </div>
                     </div>
                   </div>
@@ -340,14 +340,14 @@
                     <h3> NOME DO CLIENTE 3 </h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
                       <div class="w-100 d-flex text-left">
-                        <a>VER CASE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrowred.svg" alt="Saiba Mais"></a>
+                        <a>VER CASE</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-12">
-                <div class="d-flex justify-content-center align-items-center btn">
+                <div class="d-flex justify-content-center align-items-center btn mt-4">
                   <button class="btncontent">VER TODOS OS CASES</button>
                 </div>
               </div>
@@ -373,7 +373,7 @@
             </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
           </div>
           <div class="botao">
-            <a href="#">Saiba mais <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" alt="Saiba Mais"></a>
+            <a href="#">Saiba mais</a>
           </div>
         </div>
       </div>

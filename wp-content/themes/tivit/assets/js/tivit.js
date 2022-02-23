@@ -157,7 +157,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Cases
-  if(scrollpos > offsetsCases.top + 2050){
+  if(scrollpos > offsetsCases.top + 1950){
    document.querySelector('.transitionCases').classList.add('deactive')
    document.querySelector('.home-cases').classList.add('active')
    document.querySelector('.divOpacity').classList.add('active')
@@ -172,7 +172,7 @@ window.addEventListener('scroll', function() {
   }
 
   //Effect Pessoas e Carreiras
-  if(scrollpos > offsetsPessoas.top + 3550){
+  if(scrollpos > offsetsPessoas.top + 3050){
    document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
    document.querySelector('.pessoasCarreiras').classList.add('active')
    document.querySelector('.transCarreiras').classList.add('deactive')
