@@ -69,7 +69,7 @@
   max-height: 0%;
   opacity: 1;
   // transition: max-height 0.25s ease-in;
-  transition: all 0.4s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .imgtransition{
@@ -89,12 +89,12 @@
 // Intro
 .home-intro.active{
   background: white;
-  transition: all 0.6s linear;
+  transition: all 0.6s ease-in;
 }
 .home-intro{
   position: relative;
   background: #990017;
-  transition: all 0.3s ease-in;
+  transition: all 0.35s ease-in;
   p{
     font-size: 38px;
     line-height: 38px;
@@ -164,7 +164,7 @@
 //Home Content
 .home-content.active{
   opacity: 1;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-out;
 }
 
 .home-content{
@@ -173,21 +173,21 @@
   display: flex;
   justify-content: center;
   opacity: 0;
-  transition: all 0.55s linear;
+  transition: all 0.35s ease-in;
   .transitionContent{
     background: url('../../assets/images/home/trans3flp2.svg') no-repeat bottom center;
     background-size: cover;
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.7s ease-out;
     z-index: 4999;
     top: 0;
     }
   .transitionContent.active{
     opacity: 1;
     height: 0%;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.45s ease-in;
   }
   #triangle-down{
     position: absolute;
@@ -316,7 +316,7 @@
 // Cases
 .home-cases.active{
   background-color: black;
-  transition: background-color 0.35s linear;
+  transition: background-color 0.3s ease-ou;
 }
 .home-cases{
   .bgtriangulo{
@@ -325,11 +325,11 @@
     height: 100%;
     opacity: 0;
     z-index: 0 !important;
-    transition: all 0.55s linear;
+    transition: all 0.5s linear;
   }
   .bgtriangulo.active{
     opacity: 1;
-    transition: all 0.55s linear;
+    transition: all 0.5s linear;
   }
   .transitionCases{
     background: url('../../assets/images/home/trans4flp2.svg') no-repeat bottom center;
@@ -339,20 +339,20 @@
     max-height: 100%;
     width: 100%;
     z-index: 4998;
-    transition: all 0.55s linear;
+    transition: all 0.5s ease-in;
   }
   .transitionCases.active{
     opacity: 1;
     width: 100%;
     max-height: 100%;
     background-size: cover;
-    transition: all 0.55s linear;
+    transition: all 0.6s ease-out;
   }
   .transitionCases.deactive{
     opacity: 1;
     max-height: 0%;
     width: 100%;
-    transition: all 0.55s linear;
+    transition: all 0.4s linear;
   }
   background-color: white;
   transition: background-color 0.35s linear;
@@ -645,6 +645,10 @@
           color: $vermelho-tivit;
           transition: all 0.25s linear;
         }
+        p.active:after{
+          content: url('../../assets/images/home/icons/arrow-right-red.svg');
+          margin-left: 15px;
+        }
       }
       h3, p, a{
         text-align: left;
@@ -653,6 +657,9 @@
         font-size: 18px;
         line-height: 30px;
         font-weight: 600;
+      }
+      a{
+        text-decoration: unset;
       }
       p{
         font-size: 36px;

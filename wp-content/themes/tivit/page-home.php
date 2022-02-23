@@ -109,11 +109,13 @@
           <div class="home-portifolio-content">
               <div class="txt">
                 <h3>Possuímos um portfolio diverso</h3>
-                <p class="active">Meios de pagamento <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Meios de pagamento"></p>
-                <p>Serviços financeiros <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Serviços financeiros"></p>
-                <p>Manufatura <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Manufatura"></p>
-                <p>Utilities <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Utilities"></p>
-                <p>Varejo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/arrow-right-red.svg" class="hide-arrow" alt="Varejo"></p>
+                <a href="#"><p class="active">Meios de pagamento</p></a>
+                <a href="#">
+                  <p>Serviços financeiros</p>
+                </a>
+                <a href="#"><p>Manufatura</p></a>
+                <a href="#"><p>Utilities</p></a>
+                <a href="#"><p>Varejo</p></a>
                 <div class="botao">
                   <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
                 </div>

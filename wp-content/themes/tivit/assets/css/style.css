@@ -208,6 +208,7 @@ html, body, * {
         border: 1px solid white;
         box-sizing: border-box;
         border-radius: 50px;
+        padding: 0.08rem 0.75rem !important;
         transition: all .2s linear; }
         .header .header-options .btn.btn-contact:hover {
           background-color: transparent;
@@ -295,16 +296,25 @@ html, body, * {
     align-items: center;
     padding-left: 0; }
     .footer .footer-menu ul li {
-      margin-right: 20px; }
+      margin-right: 0px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      padding: 0px 15px 0px 15px;
+      transition: all .15s linear; }
+      .footer .footer-menu ul li:hover {
+        border-color: #454D54;
+        transition: all .2s linear; }
       .footer .footer-menu ul li a {
         font-size: 14px;
         line-height: 24.34px;
         font-weight: 600;
         color: #454D54;
         text-transform: uppercase;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .15s linear; }
         .footer .footer-menu ul li a:hover {
-          opacity: 0.8; }
+          opacity: 0.8;
+          transition: all .15s linear; }
   .footer .footer-logo {
     display: flex;
     align-items: center;
@@ -334,6 +344,7 @@ html, body, * {
       text-decoration: none;
       border: 1px solid #F20024;
       background: #F20024;
+      padding: 0.08rem 0.75rem !important;
       box-sizing: border-box;
       border-radius: 50px; }
       .footer .footer-options .btn.btn-contact:hover {
@@ -383,7 +394,8 @@ html, body, * {
         padding: 16px 0;
         text-decoration: none; }
   .footer .nav {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    justify-content: flex-start !important; }
   .footer .footer-ac {
     display: flex;
     align-items: center;
@@ -550,7 +562,7 @@ html, body, * {
 .imgtransition.active {
   max-height: 0%;
   opacity: 1;
-  transition: all 0.4s ease-out; }
+  transition: all 0.6s ease-out; }
 
 .imgtransition {
   max-height: 1725px;
@@ -566,12 +578,12 @@ html, body, * {
 
 .home-intro.active {
   background: white;
-  transition: all 0.6s linear; }
+  transition: all 0.6s ease-in; }
 
 .home-intro {
   position: relative;
   background: #990017;
-  transition: all 0.3s ease-in; }
+  transition: all 0.35s ease-in; }
   .home-intro p {
     font-size: 38px;
     line-height: 38px;
@@ -625,7 +637,7 @@ html, body, * {
 
 .home-content.active {
   opacity: 1;
-  transition: all 0.5s linear; }
+  transition: all 0.5s ease-out; }
 
 .home-content {
   position: relative;
@@ -633,20 +645,20 @@ html, body, * {
   display: flex;
   justify-content: center;
   opacity: 0;
-  transition: all 0.55s linear; }
+  transition: all 0.35s ease-in; }
   .home-content .transitionContent {
     background: url("../../assets/images/home/trans3flp2.svg") no-repeat bottom center;
     background-size: cover;
     height: 100%;
     width: 100%;
     opacity: 1;
-    transition: all 0.4s linear 0.2s;
+    transition: all 0.7s ease-out;
     z-index: 4999;
     top: 0; }
   .home-content .transitionContent.active {
     opacity: 1;
     height: 0%;
-    transition: all 0.4s linear 0.2s; }
+    transition: all 0.45s ease-in; }
   .home-content #triangle-down {
     position: absolute;
     top: 0; }
@@ -746,7 +758,7 @@ html, body, * {
 
 .home-cases.active {
   background-color: black;
-  transition: background-color 0.35s linear; }
+  transition: background-color 0.3s ease-ou; }
 
 .home-cases {
   background-color: white;
@@ -758,10 +770,10 @@ html, body, * {
     height: 100%;
     opacity: 0;
     z-index: 0 !important;
-    transition: all 0.55s linear; }
+    transition: all 0.5s linear; }
   .home-cases .bgtriangulo.active {
     opacity: 1;
-    transition: all 0.55s linear; }
+    transition: all 0.5s linear; }
   .home-cases .transitionCases {
     background: url("../../assets/images/home/trans4flp2.svg") no-repeat bottom center;
     background-size: cover;
@@ -770,18 +782,18 @@ html, body, * {
     max-height: 100%;
     width: 100%;
     z-index: 4998;
-    transition: all 0.55s linear; }
+    transition: all 0.5s ease-in; }
   .home-cases .transitionCases.active {
     opacity: 1;
     width: 100%;
     max-height: 100%;
     background-size: cover;
-    transition: all 0.55s linear; }
+    transition: all 0.6s ease-out; }
   .home-cases .transitionCases.deactive {
     opacity: 1;
     max-height: 0%;
     width: 100%;
-    transition: all 0.55s linear; }
+    transition: all 0.4s linear; }
   .home-cases .divOpacity {
     opacity: 0;
     transition: all 0.55s linear; }
@@ -990,12 +1002,17 @@ html, body, * {
         transition: all 0.25s linear; }
         .home-portifolio .home-portifolio-content .txt .active .hide-arrow {
           opacity: 1; }
+      .home-portifolio .home-portifolio-content .txt p.active:after {
+        content: url("../../assets/images/home/icons/arrow-right-red.svg");
+        margin-left: 15px; }
     .home-portifolio .home-portifolio-content h3, .home-portifolio .home-portifolio-content p, .home-portifolio .home-portifolio-content a {
       text-align: left; }
     .home-portifolio .home-portifolio-content h3 {
       font-size: 18px;
       line-height: 30px;
       font-weight: 600; }
+    .home-portifolio .home-portifolio-content a {
+      text-decoration: unset; }
     .home-portifolio .home-portifolio-content p {
       font-size: 36px;
       line-height: 56px;

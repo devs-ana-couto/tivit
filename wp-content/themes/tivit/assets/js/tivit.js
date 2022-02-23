@@ -92,18 +92,27 @@ jQuery(document).ready(function($) {
 
 // JS executes after DOM loads
 document.addEventListener("DOMContentLoaded", function(){
-   // var menus = document.querySelectorAll('#bs-example-navbar-collapse-1 .menu-item')
-   // for (let i = 0; i < menus.length; i++) {
-   //    menus[i].addEventListener('click', function() { 
-   //       cleanMenu();
-   //    }, false);
-   //  }
-   // function cleanMenu(){
-   //    for (let i = 0; i < menus.length; i++) {
-   //       menus[i].classList.contains('active')? menus[i].classList.remove('active') : ''
-   //       console.log(menus[i])
-   //     }
-   // }
+   var items = document.querySelectorAll('.txt > a > p')
+
+   for(i=0; i < items.length; i++){
+      items[i].addEventListener("mouseover", test, false);
+   }
+   
+   function test(event){
+      console.log(event)
+      console.log(event.path[0].innerHTML)
+      cleanHover();
+      event.path[0].innerHTML === 'Meios de pagamento'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;') : ''
+      event.path[0].innerHTML === 'Serviços financeiros'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;') : ''
+      event.path[0].innerHTML === 'Manufatura'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;') : ''
+      event.path[0].innerHTML === 'Utilities'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      event.path[0].innerHTML === 'Varejo'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+   }
+   function cleanHover(){
+      for (let i = 0; i <= 0; i++) {
+         items[i].classList.contains('active')? items[i].classList.remove('active') : ''
+      }
+  }
 });
 
 // Add class on scroll
@@ -182,45 +191,6 @@ window.addEventListener('scroll', function() {
   } else {
    document.querySelector('.partners').classList.remove('active')
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
-  }
-
-  document.querySelectorAll('.txt > p')[0].addEventListener("mouseover", func1, false);
-  document.querySelectorAll('.txt > p')[0].addEventListener("mouseout", func1, false);
-  document.querySelectorAll('.txt > p')[1].addEventListener("mouseover", func2, false);
-  document.querySelectorAll('.txt > p')[1].addEventListener("mouseout", func2, false);
-  document.querySelectorAll('.txt > p')[2].addEventListener("mouseover", func3, false);
-  document.querySelectorAll('.txt > p')[2].addEventListener("mouseout", func3, false);
-  document.querySelectorAll('.txt > p')[3].addEventListener("mouseover", func4, false);
-  document.querySelectorAll('.txt > p')[3].addEventListener("mouseout", func4, false);
-  document.querySelectorAll('.txt > p')[4].addEventListener("mouseover", func5, false);
-  document.querySelectorAll('.txt > p')[4].addEventListener("mouseout", func5, false);
-  var items = document.querySelectorAll('.txt > p')
-
-  function func1(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;');
-  }
-  function func2(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;');
-  }
-  function func3(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;');
-  }
-  function func4(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
-  }
-  function func5(){
-   cleanHover()
-   document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;');
-  }
-  
-  function cleanHover(){
-      for (let i = 0; i <= 0; i++) {
-         items[i].classList.contains('active')? items[i].classList.remove('active') : ''
-      }
   }
 
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-4 hide-mobile footer-menu">
+        <div class="col-5 hide-mobile footer-menu">
           <?php
             wp_nav_menu(
               array(
@@ -15,11 +15,11 @@
           ?>
         </div>  
 
-        <div class="col-12 col-md-4 footer-logo">
+        <div class="col-12 col-md-2 footer-logo">
           <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-red.png" width="148px" height="21px" alt="Logo Tivit"></a>
         </div>
 
-        <div class="col-md-4 footer-options hide-mobile">
+        <div class="col-md-5 footer-options hide-mobile">
 
           <div class="footer-people-and-careers">
             <p>Pessoas e Carreiras</p>
