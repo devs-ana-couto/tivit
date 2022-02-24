@@ -122,11 +122,13 @@
 
 // Portifolio
 .home-portifolio{
-  background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
   height: 580px;
   margin-bottom: 140px;
   @media(max-width: 760px){
     display: 50px;
+  }
+  .home-portifolio-image{
+    background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
   }
   .home-portifolio-content{
     margin-top: 150px;
@@ -617,7 +619,6 @@
   }
   
   .home-portifolio{
-    background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
     // position: absolute;
     width: 100%;
     height: 700px;
@@ -628,6 +629,11 @@
       .customposition{
         position: absolute;
       }
+    }
+    .home-portifolio-image{
+      background: url('../../assets/images/home/img_banner1.jpg') no-repeat center center;
+      background-size: contain;
+      transition: background .4s linear;
     }
     #triangle-down{
       border-left: 48.84px solid transparent !important;

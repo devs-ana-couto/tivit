@@ -97,15 +97,26 @@ document.addEventListener("DOMContentLoaded", function(){
    for(i=0; i < items.length; i++){
       items[i].addEventListener("mouseover", test, false);
    }
-   
+
    function test(event){
       cleanHover();
-      event.path[0].innerHTML === 'Meios de pagamento'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;') : ''
-      event.path[0].innerHTML === 'Serviços financeiros'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;') : ''
-      event.path[0].innerHTML === 'Manufatura'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;') : ''
-      event.path[0].innerHTML === 'Utilities'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
-      event.path[0].innerHTML === 'Varejo'? document.querySelector('.home-portifolio').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      try{
+         event.path[0].innerHTML === 'Meios de pagamento'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Serviços financeiros'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Manufatura'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Utilities'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Varejo'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      } catch(err){}
    }
+   
    function cleanHover(){
       for (let i = 0; i <= 0; i++) {
          items[i].classList.contains('active')? items[i].classList.remove('active') : ''
