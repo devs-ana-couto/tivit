@@ -2430,9 +2430,23 @@ html, body, * {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px; }
-  .contato-formulario input {
+  .contato-formulario input, .contato-formulario select {
     width: 100%;
     border: none;
     border-bottom: 1px solid #CAD2D8;
     padding: 0 0 5px 0;
     margin-bottom: 30px; }
+  .contato-formulario textarea {
+    width: 100%; }
+  .contato-formulario .aceite span label {
+    display: flex; }
+    .contato-formulario .aceite span label input {
+      width: 15%;
+      margin-right: 10px;
+      border: 1px solid #F20024;
+      border-radius: 0; }
+
+.home-pessoas-e-carreiras #triangle-down {
+  border-left: 48.84px solid transparent;
+  border-right: 48.84px solid transparent;
+  border-top: 40px solid #262626; }

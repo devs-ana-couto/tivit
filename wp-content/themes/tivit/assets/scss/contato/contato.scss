@@ -60,12 +60,40 @@
         margin-bottom: 20px;
     }
 
-    input{
+    input, select{
         width: 100%;
         border: none;
         border-bottom: 1px solid $cinza-light-tivit;
         padding: 0 0 5px 0;
         margin-bottom: 30px;
     }
+    textarea{
+        width: 100%;
+    }
 
+    .aceite{
+        span{
+            label{
+                display: flex;
+                input{
+                    width: 15%;
+                    margin-right: 10px;
+                    border: 1px solid $vermelho-tivit;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// Pessoas e Carreiras
+.home-pessoas-e-carreiras{
+    #triangle-down{
+      border-left: 48.84px solid transparent;
+      border-right: 48.84px solid transparent;
+      border-top: 40px solid $cinza-dark-cyber-tivit;
+    }
 }
