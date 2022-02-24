@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12">
           <h1>Contato</h1>
-          <h2 class="hide-mobile"></h2>
+          <h2 class="hide-mobile">Comece a transformar o seu negócio</h2>
         </div>
       </div>
     </div>
@@ -30,7 +30,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p>Entre em contato com a <span>TIVIT</span> para solicitar um orçamento ou tirar dúvidas sobre nossas soluções</p>
+        <p class="hide-desktop">Entre em contato com a <span>TIVIT</span> para solicitar um orçamento ou tirar dúvidas sobre nossas soluções</p>
+        <p class="hide-mobile">Compartilhe seu desafio e receba uma solução personalizada.</p>
       </div>
     </div>
   </div>
@@ -63,5 +64,19 @@
       </div>
     </div>
   </div>
-</div>
+</div>  
+
+<!-- Canais
+<div class="contato-canais">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>ou entre em contato pelos nossos canais:</h2>
+      </div>
+      <div class="col-6"></div>
+      <div class="col-6"></div>
+    </div>
+  </div>
+</div> -->
+
 <?php get_footer(); ?>
