@@ -72,6 +72,7 @@
     }
 
     .aceite{
+        font-size: 12px;
         span{
             label{
                 display: flex;
@@ -83,6 +84,22 @@
                 }
             }
         }
+    }
+    .privacidade{
+        font-size: 10px;
+    }
+    .wpcf7-form-control.has-spinner.wpcf7-submit{
+        margin-top: 20px;
+        background: $vermelho-tivit;
+        font-weight: bold;
+        color: #fff;
+        height: 50px;
+        width: 152px;
+        margin: 20px auto 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
     }
 
 }
