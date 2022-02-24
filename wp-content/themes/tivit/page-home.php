@@ -142,7 +142,7 @@
     <div class="row">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="p-1"> 
+        <div class="cardContent p-1"> 
           <div class="img">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
           </div>
@@ -169,7 +169,7 @@
 
       <!-- content 2 -->
       <div class="col-12 col-md-4">
-        <div class="p-1">
+        <div class="cardContent p-1">
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
@@ -198,7 +198,7 @@
       <!-- // content 2 -->
       <!-- content 3 -->
       <div class="col-12 col-md-4">
-        <div class="p-1">
+        <div class="cardContent p-1">
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
@@ -309,7 +309,7 @@
           <div class="row d-flex justify-content-center">
             <div class="d-flex customContainer">
               <div class="col-md-4">
-                  <div class="bg1 m-3">
+                  <div class="cardCases bg1 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
                     <div class="textCase">
@@ -322,7 +322,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="bg2 m-3">
+                  <div class="cardCases bg2 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg2.png" alt="backgroundcase2">
                     <div class="textCase">
@@ -335,7 +335,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="bg3 m-3">
+                  <div class="cardCases bg3 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg3.png" alt="backgroundcase3">
                     <div class="textCase">

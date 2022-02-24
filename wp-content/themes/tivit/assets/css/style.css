@@ -142,6 +142,30 @@ html, body, * {
   #menu-header-menu {
     flex-wrap: wrap; }
 
+  .header-people-and-careers > p {
+    font-weight: 500; }
+
+  .language {
+    display: flex; }
+    .language a {
+      color: white;
+      text-decoration: unset; }
+      .language a:hover {
+        color: white; }
+      .language a .en, .language a .es {
+        border: 1px solid transparent;
+        border-radius: 50px;
+        padding: 2px 7px 2px 7px;
+        transition: all .15s linear;
+        font-weight: 500; }
+        .language a .en:hover, .language a .es:hover {
+          border-color: white;
+          transition: all .2s linear; }
+      .language a .es {
+        margin-left: 20px; }
+      .language a .en {
+        margin: 0 !important; }
+
   .navbar-expand-md {
     background: transparent;
     height: 70px;
@@ -173,7 +197,7 @@ html, body, * {
         .header .header-menu ul li a {
           font-size: 14px;
           line-height: 24.34px;
-          font-weight: 600;
+          font-weight: 500;
           color: white !important;
           text-transform: uppercase;
           text-decoration: none; }
@@ -535,7 +559,7 @@ html, body, * {
     text-transform: uppercase;
     background: #F20024;
     border: 0;
-    border-radius: 0;
+    border-radius: 50px;
     padding: 15px 40px; }
 
 .home-hero .content {
@@ -562,7 +586,7 @@ html, body, * {
 .imgtransition.active {
   max-height: 0%;
   opacity: 1;
-  transition: all 0.6s ease-out; }
+  transition: all 0.55s ease-out; }
 
 .imgtransition {
   max-height: 1725px;
@@ -583,7 +607,7 @@ html, body, * {
 .home-intro {
   position: relative;
   background: #990017;
-  transition: all 0.35s ease-in; }
+  transition: all 0.3s ease-in; }
   .home-intro p {
     font-size: 38px;
     line-height: 38px;
@@ -674,6 +698,17 @@ html, body, * {
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 75px; }
+  .home-content .cardContent {
+    cursor: pointer; }
+    .home-content .cardContent:hover h3 {
+      color: #F20024;
+      transition: all 0.2s linear; }
+    .home-content .cardContent:hover .acessar a {
+      color: white;
+      transition: all 0.3s linear; }
+      .home-content .cardContent:hover .acessar a:after {
+        margin-left: 20px;
+        transition: all 0.2s linear; }
   .home-content .img img {
     width: 100%;
     cursor: pointer; }
@@ -689,9 +724,6 @@ html, body, * {
     color: white;
     text-transform: uppercase;
     transition: all 0.2s linear; }
-    .home-content h3:hover {
-      color: #F20024;
-      transition: all 0.2s linear; }
   .home-content p {
     color: white; }
   .home-content .autor-time {
@@ -738,9 +770,6 @@ html, body, * {
       .home-content .acessar a:hover {
         color: white;
         transition: all 0.3s linear; }
-        .home-content .acessar a:hover:after {
-          margin-left: 20px;
-          transition: all 0.2s linear; }
       .home-content .acessar a:after {
         content: url("../../assets/images/home/icons/arrowred.svg");
         margin-left: 10px;
@@ -751,6 +780,7 @@ html, body, * {
       background: transparent;
       border: 1px solid #F20024;
       padding: 20px 35px 20px 35px;
+      border-radius: 50px;
       color: white;
       text-transform: uppercase;
       transition: all 0.4s linear; }
@@ -851,13 +881,10 @@ html, body, * {
       font-weight: 600;
       text-transform: uppercase;
       font-size: 16px;
-      border: 1px solid white;
-      border-radius: 50px;
       transition: all .2s linear; }
       .home-pessoas-e-carreiras .botao a:hover {
-        background: #F20024;
-        transition: all .2s linear;
-        border: 2px solid #990017; }
+        color: #c4c4c4;
+        transition: all .2s linear; }
       .home-pessoas-e-carreiras .botao a:after {
         content: url("../../assets/images/a-tivit/arrow.svg");
         margin-left: 10px; }
@@ -875,6 +902,7 @@ html, body, * {
   background: transparent;
   border: 1px solid #F20024;
   padding: 20px 35px 20px 35px;
+  border-radius: 50px;
   color: white;
   text-transform: uppercase;
   transition: all 0.4s linear; }
@@ -1041,6 +1069,7 @@ html, body, * {
       transition: all 0.4s linear; }
       .home-portifolio .home-portifolio-content .botao:hover a {
         background: white;
+        border-radius: 50px;
         color: #F20024;
         transition: all 0.4s linear; }
 
@@ -1070,6 +1099,16 @@ html, body, * {
       position: absolute;
       height: 100%;
       width: 100%; }
+    .home-cases .home-cases-content .cardCases {
+      cursor: pointer; }
+      .home-cases .home-cases-content .cardCases:hover h3 {
+        color: #F20024;
+        transition: all 0.2s linear; }
+      .home-cases .home-cases-content .cardCases:hover a {
+        color: white; }
+        .home-cases .home-cases-content .cardCases:hover a:after {
+          margin-left: 20px;
+          transition: all 0.2s linear; }
     .home-cases .home-cases-content .textCase {
       position: absolute;
       top: 55%;
@@ -1080,9 +1119,6 @@ html, body, * {
         text-align: left;
         font-size: 24px;
         transition: all 0.2s linear; }
-        .home-cases .home-cases-content .textCase h3:hover {
-          color: #F20024;
-          transition: all 0.2s linear; }
       .home-cases .home-cases-content .textCase p {
         color: white;
         text-align: left;
@@ -1096,9 +1132,6 @@ html, body, * {
         .home-cases .home-cases-content .textCase a:hover {
           color: white;
           transition: all .3s linear; }
-          .home-cases .home-cases-content .textCase a:hover:after {
-            margin-left: 20px;
-            transition: all 0.2s linear; }
         .home-cases .home-cases-content .textCase a:after {
           content: url("../../assets/images/home/icons/arrowred.svg");
           margin-left: 10px;
@@ -1118,7 +1151,8 @@ html, body, * {
         color: white; }
     .home-cases .home-cases-content .botao a {
       background: transparent;
-      border: 1px solid #F20024; }
+      border: 1px solid #F20024;
+      border-radius: 50px; }
       .home-cases .home-cases-content .botao a:hover {
         background: white;
         color: #F20024;
@@ -1137,10 +1171,10 @@ html, body, * {
 
   .home-pessoas-e-carreiras {
     background: url("../../assets/images/home/carreiras.png") no-repeat center center;
-    height: 860px;
+    height: 690px;
     background-size: cover; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
-      margin-top: 417px; }
+      margin-top: 317px; }
       .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title p {
         font-size: 24px;
         line-height: 1.3;
