@@ -122,48 +122,41 @@
 
 // Portifolio
 .home-portifolio{
+  background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
   height: 580px;
   margin-bottom: 140px;
   @media(max-width: 760px){
     display: 50px;
   }
-  .home-portifolio-imagem {
-    background: url('../../assets/images/home/portifolio-mobile.png') no-repeat center center;
-    height: 580px;
-    margin-bottom: 140px;
-    @media(max-width: 760px){
-      display: 50px;
+  .home-portifolio-content{
+    margin-top: 150px;
+    .hide-arrow{
+      opacity: 0;
+      @media(max-width: 760px){
+        display: none;
+      }
     }
-    .home-portifolio-content{
-      margin-top: 150px;
-      .hide-arrow{
-        opacity: 0;
-        @media(max-width: 760px){
-          display: none;
-        }
-      }
-      h3, p{
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-      }
-      h3{
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: bold;
-        margin-bottom: 24px;
-      }
-      p{
-        font-size: 26px;
-        line-height: 30px;
-        font-weight: 400;
-        margin-bottom: 15px;
+    h3, p{
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    h3{
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: 15px;
 
-      }
-      .red{
-        color: $vermelho-tivit;
-        font-weight: 600;
-      }
+    }
+    .red{
+      color: $vermelho-tivit;
+      font-weight: 600;
     }
   }
 }
@@ -292,14 +285,13 @@
       &:hover{
         color: white;
         transition: all 0.3s linear;
-        &:after{
-          margin-left: 20px;
+        img{
+          margin-left: 15px;
           transition: all 0.2s linear;
         }
       }
-      &:after{
-        content: url('../../assets/images/home/icons/arrowred.svg');
-        margin-left: 10px;
+      img{
+        margin-left: 5px;
         transition: all 0.2s linear;
       }
     }
@@ -392,8 +384,8 @@
           color: $vermelho-tivit;
           font-size: 24px;
           line-height: 28px;
-          font-weight: bold;
-          text-transform: uppercase;
+          font-weight: bold;       
+          text-transform: uppercase;   
         }
         p{
           font-size: 18px;
@@ -442,15 +434,15 @@
       border: 1px solid white;
       border-radius: 50px;
       transition: all .2s linear;
+      img{
+        margin-left: 10px;
+        margin-bottom: 2px;
+      }
       &:hover{
+        color: white;
         background: $vermelho-tivit;
         transition: all .2s linear;
-        border: 2px solid $vermelho-dark-tivit;
       }
-      &:after{
-        content: url('../../assets/images/a-tivit/arrow.svg');
-        margin-left: 10px;
-      }   
     }
   }
 }
@@ -587,11 +579,11 @@
     .botao{
       margin-bottom: 0;
       a{
-        border: red solid 1px;
+        border: red solid 1px; 
         &:hover{
           background: white;
           color: $vermelho-tivit;
-          border: red solid 1px;
+          border: red solid 1px;          
         }
       }
     }
@@ -622,33 +614,20 @@
       transition: all 0.4s linear 0.2s;
     }
   }
-
+  
   .home-portifolio{
+    background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
     // position: absolute;
     width: 100%;
     height: 700px;
     // bottom: 0;
     opacity: 0;
-    // transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
     @media(min-width: 760px){
       .customposition{
         position: absolute;
       }
     }
-<<<<<<< HEAD
-    .home-portifolio-imagem {
-      background: url('../../assets/images/home/img_banner1.jpg') no-repeat top center;
-      width: 100%;
-      height: 700px;
-      // bottom: 0;
-      // opacity: 0;
-      transition: all 0.4s ease-in;
-      #triangle-down{
-        border-left: 48.84px solid transparent !important;
-        border-right: 48.84px solid transparent !important;
-        border-top: 40px solid white !important;
-        position: absolute;
-=======
     #triangle-down{
       border-left: 48.84px solid transparent !important;
       border-right: 48.84px solid transparent !important;
@@ -675,23 +654,10 @@
           content: url('../../assets/images/home/icons/arrow-right-red.svg');
           margin-left: 15px;
         }
->>>>>>> a0cc4188e38e77a272b705796c3acc561f1f8895
       }
-      .mascaraDobra3{
-        left: 19%;
-        // position: absolute;
-        top: 0;
+      h3, p, a{
+        text-align: left;
       }
-<<<<<<< HEAD
-      .home-portifolio-content{
-        .txt{
-          margin-top: 150px;
-          margin-left: 150px;
-          .active{
-            .hide-arrow{
-              opacity: 1;
-            }
-=======
       h3{
         font-size: 18px;
         line-height: 30px;
@@ -725,58 +691,12 @@
         &:hover{
           a{
             background: white;
->>>>>>> a0cc4188e38e77a272b705796c3acc561f1f8895
             color: $vermelho-tivit;
-            transition: all 0.25s linear;
-          }
-          p.active:after{
-            content: url('../../assets/images/home/icons/arrow-right-red.svg');
-            margin-left: 15px;
+            transition: all 0.4s linear;
           }
         }
-        h3, p, a{
-          text-align: left;
-        }
-        h3{
-          font-size: 18px;
-          line-height: 30px;
-          font-weight: 600;
-        }
-        a{
-          text-decoration: unset;
-        }
-        p{
-          font-size: 36px;
-          line-height: 56px;
-          margin-bottom: 0;
-          color: white;
-          transition: all 0.25s linear;
-          &:hover{
-            // .hide-arrow{
-            //   opacity: 1;
-            // }
-            color: $vermelho-tivit;
-            transition: all 0.25s linear;
-            &:after{
-              content: url('../../assets/images/home/icons/arrow-right-red.svg');
-              margin-left: 15px;
-            }
-          }
-        }
-        .botao{
-          margin: 40px 0 0 0;
-          text-align: left;
-          transition: all 0.4s linear;
-          &:hover{
-            a{
-              background: white;
-              color: $vermelho-tivit;
-              transition: all 0.4s linear;
-            }
-          }
-        }
-
       }
+
     }
   }
 
@@ -784,7 +704,7 @@
     background-color: black;
     transition: background-color 0.35s linear;
   }
-  .home-cases{
+  .home-cases{  
     background-color: #262626;
     transition: background-color 0.35s linear;
     .divOpacity{
@@ -846,15 +766,14 @@
           &:hover{
             color: white;
             transition: all .3s linear;
-            &:after{
-              margin-left: 20px;
-              transition: all 0.2s linear;
+            img{
+              margin-left: 15px;
+              transition: all .2s linear;
             }
           }
-          &:after{
-            content: url('../../assets/images/home/icons/arrowred.svg');
-            margin-left: 10px;
-            transition: all 0.2s linear;
+          img{
+            margin-left: 5px;
+            transition: all .2s linear;
           }
         }
       }
@@ -864,8 +783,8 @@
           color: $vermelho-tivit;
           font-size: 24px;
           line-height: 28px;
-          font-weight: bold;
-          text-transform: uppercase;
+          font-weight: bold;       
+          text-transform: uppercase;   
         }
         p{
           font-size: 18px;
@@ -873,22 +792,17 @@
           font-weight: 400;
           color: white;
         }
-      }
+      } 
       .botao{
         a{
           background: transparent;
           border: 1px solid $vermelho-tivit;
-          &:hover{
+          &:hover{            
             background: white;
             color: $vermelho-tivit;
             border: white solid 1px;
-<<<<<<< HEAD
-          }
-        }
-=======
-          } 
+          }       
         } 
->>>>>>> a0cc4188e38e77a272b705796c3acc561f1f8895
       }
     }
     .home-cases-content.left{
@@ -897,7 +811,7 @@
 
       h3,p, .botao{
         text-align: left;
-
+        
       }
     }
     .home-cases-content.right{

@@ -104,11 +104,11 @@ document.addEventListener("DOMContentLoaded", function(){
       // console.log(event.target);
       // console.log(event.explicitOriginalTarget);
       // console.log(event.explicitOriginalTarget.data);
-      event.path[0].innerHTML === 'Meios de pagamento' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg);') : ''
-      event.path[0].innerHTML === 'Serviços financeiros' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
-      event.path[0].innerHTML === 'Manufatura' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg);') : ''
-      event.path[0].innerHTML === 'Utilities' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg);') : ''
-      event.path[0].innerHTML === 'Varejo' ? document.querySelector('.home-portifolio-imagem').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
+      event.path[0].innerHTML === 'Meios de pagamento' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg);') : ''
+      event.path[0].innerHTML === 'Serviços financeiros' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
+      event.path[0].innerHTML === 'Manufatura' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg);') : ''
+      event.path[0].innerHTML === 'Utilities' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg);') : ''
+      event.path[0].innerHTML === 'Varejo' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
    }
    function cleanHover(){
       for (let i = 0; i <= 0; i++) {

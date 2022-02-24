@@ -100,32 +100,30 @@
   <div class="d-flex justify-content-center bgport position-absolute">
   </div>
   <div class="home-portifolio">
-    <div class="home-portifolio-imagem">
-      <div class="container">
-        <div class="d-flex justify-content-center w-100">
-          <div id="triangle-down"></div>
-        </div>
-        <div class="row customposition">
-          <div class="col-12">
-            <div class="home-portifolio-content">
-                <div class="txt">
-                  <h3>Possuímos um portfolio diverso</h3>
-                  <a href="#"><p class="active">Meios de pagamento</p></a>
-                  <a href="#"><p>Serviços financeiros</p></a>
-                  <a href="#"><p>Manufatura</p></a>
-                  <a href="#"><p>Utilities</p></a>
-                  <a href="#"><p>Varejo</p></a>
-                  <div class="botao">
-                    <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="d-flex justify-content-center w-100">
+        <div id="triangle-down"></div>
+      </div>
+      <div class="row customposition">
+        <div class="col-12">
+          <div class="home-portifolio-content">
+              <div class="txt">
+                <h3>Possuímos um portfolio diverso</h3>
+                <a href="#"><p class="active">Meios de pagamento</p></a>
+                <a href="#"><p>Serviços financeiros</p></a>
+                <a href="#"><p>Manufatura</p></a>
+                <a href="#"><p>Utilities</p></a>
+                <a href="#"><p>Varejo</p></a>
+                <div class="botao">
+                  <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+                </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
-      </div>
+    </div>
+    <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
     </div>
   </div>
 </section>
