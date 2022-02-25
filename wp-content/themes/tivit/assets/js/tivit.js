@@ -100,16 +100,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
    function test(event){
       cleanHover();
-      console.log(event);
-      // console.log(event.target);
-      // console.log(event.explicitOriginalTarget);
-      // console.log(event.explicitOriginalTarget.data);
-      event.path[0].innerHTML === 'Meios de pagamento' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg);') : ''
-      event.path[0].innerHTML === 'Serviços financeiros' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
-      event.path[0].innerHTML === 'Manufatura' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg);') : ''
-      event.path[0].innerHTML === 'Utilities' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg);') : ''
-      event.path[0].innerHTML === 'Varejo' ? document.querySelector('.home-portifolio').setAttribute('style', 'background-image:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg);') : ''
+      try{
+         event.path[0].innerHTML === 'Meios de pagamento'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner1.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Serviços financeiros'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner2.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Manufatura'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner3.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Utilities'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      } catch(err){}
+      try{
+         event.path[0].innerHTML === 'Varejo'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
+      } catch(err){}
    }
+   
    function cleanHover(){
       for (let i = 0; i <= 0; i++) {
          items[i].classList.contains('active')? items[i].classList.remove('active') : ''
@@ -135,9 +142,9 @@ window.addEventListener('scroll', function() {
    document.querySelector('.home-intro').classList.add('active')
    document.querySelector('.pcustom').classList.add('active')
   } else {
-   document.querySelector('.imgtransition').classList.remove('active')
-   document.querySelector('.home-intro').classList.remove('active')
-   document.querySelector('.pcustom').classList.remove('active')
+   // document.querySelector('.imgtransition').classList.remove('active')
+   // document.querySelector('.home-intro').classList.remove('active')
+   // document.querySelector('.pcustom').classList.remove('active')
   }
 
   //Effect portifolio
@@ -145,8 +152,8 @@ window.addEventListener('scroll', function() {
    document.querySelector('.home-portifolio').classList.add('active')
    document.querySelector('.bgport').classList.add('active')
   } else {
-   document.querySelector('.home-portifolio').classList.remove('active')
-   document.querySelector('.bgport').classList.remove('active')
+   // document.querySelector('.home-portifolio').classList.remove('active')
+   // document.querySelector('.bgport').classList.remove('active')
   }
 
   //Effect Content
@@ -155,9 +162,9 @@ window.addEventListener('scroll', function() {
    document.querySelector('.transitionContent').classList.add('active')
    document.querySelector('.transitionCases').classList.add('active')
   } else {
-   document.querySelector('.home-content').classList.remove('active')
-   document.querySelector('.transitionContent').classList.remove('active')
-   document.querySelector('.transitionCases').classList.remove('active')
+   // document.querySelector('.home-content').classList.remove('active')
+   // document.querySelector('.transitionContent').classList.remove('active')
+   // document.querySelector('.transitionCases').classList.remove('active')
   }
 
   //Effect Cases
@@ -168,11 +175,11 @@ window.addEventListener('scroll', function() {
    document.querySelector('.bgtriangulo').classList.add('active')
    document.querySelector('.transCarreiras').classList.add('active')
   } else {
-   document.querySelector('.transitionCases').classList.remove('deactive')
-   document.querySelector('.home-cases').classList.remove('active')
-   document.querySelector('.divOpacity').classList.remove('active')
-   document.querySelector('.bgtriangulo').classList.remove('active')
-   document.querySelector('.transCarreiras').classList.remove('active')
+   // document.querySelector('.transitionCases').classList.remove('deactive')
+   // document.querySelector('.home-cases').classList.remove('active')
+   // document.querySelector('.divOpacity').classList.remove('active')
+   // document.querySelector('.bgtriangulo').classList.remove('active')
+   // document.querySelector('.transCarreiras').classList.remove('active')
   }
 
   //Effect Pessoas e Carreiras
@@ -181,9 +188,9 @@ window.addEventListener('scroll', function() {
    document.querySelector('.pessoasCarreiras').classList.add('active')
    document.querySelector('.transCarreiras').classList.add('deactive')
   } else {
-   document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
-   document.querySelector('.pessoasCarreiras').classList.remove('active')
-   document.querySelector('.transCarreiras').classList.remove('deactive')
+   // document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
+   // document.querySelector('.pessoasCarreiras').classList.remove('active')
+   // document.querySelector('.transCarreiras').classList.remove('deactive')
   }
 
   //Effect Partners
@@ -191,7 +198,7 @@ window.addEventListener('scroll', function() {
    document.querySelector('.partners').classList.add('active')
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
   } else {
-   document.querySelector('.partners').classList.remove('active')
+   // document.querySelector('.partners').classList.remove('active')
    // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
   }
 

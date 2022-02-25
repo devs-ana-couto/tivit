@@ -101,29 +101,33 @@
   </div>
   <div class="home-portifolio">
     <div class="container">
-      <div class="d-flex justify-content-center w-100">
-        <div id="triangle-down"></div>
-      </div>
-      <div class="row customposition">
-        <div class="col-12">
-          <div class="home-portifolio-content">
-              <div class="txt">
-                <h3>Possuímos um portfolio diverso</h3>
-                <a href="#"><p class="active">Meios de pagamento</p></a>
-                <a href="#"><p>Serviços financeiros</p></a>
-                <a href="#"><p>Manufatura</p></a>
-                <a href="#"><p>Utilities</p></a>
-                <a href="#"><p>Varejo</p></a>
-                <div class="botao">
-                  <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                </div>
+      <div class="home-portifolio-image">
+        <div class="d-flex justify-content-center w-100">
+          <div id="triangle-down"></div>
+        </div>
+        <div class="row customposition">
+          <div class="col-12">
+            <div class="home-portifolio-content">
+                <div class="txt">
+                  <h3>Possuímos um portfolio diverso</h3>
+                  <a href="#"><p class="active">Meios de pagamento</p></a>
+                  <a href="#">
+                    <p>Serviços financeiros</p>
+                  </a>
+                  <a href="#"><p>Manufatura</p></a>
+                  <a href="#"><p>Utilities</p></a>
+                  <a href="#"><p>Varejo</p></a>
+                  <div class="botao">
+                    <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
+        </div>
       </div>
-    </div>
-    <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
     </div>
   </div>
 </section>
@@ -138,7 +142,7 @@
     <div class="row">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="p-1">
+        <div class="cardContent p-1"> 
           <div class="img">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
           </div>
@@ -165,7 +169,7 @@
 
       <!-- content 2 -->
       <div class="col-12 col-md-4">
-        <div class="p-1">
+        <div class="cardContent p-1">
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
@@ -194,7 +198,7 @@
       <!-- // content 2 -->
       <!-- content 3 -->
       <div class="col-12 col-md-4">
-        <div class="p-1">
+        <div class="cardContent p-1">
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
@@ -305,7 +309,7 @@
           <div class="row d-flex justify-content-center">
             <div class="d-flex customContainer">
               <div class="col-md-4">
-                  <div class="bg1 m-3">
+                  <div class="cardCases bg1 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
                     <div class="textCase">
@@ -318,7 +322,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="bg2 m-3">
+                  <div class="cardCases bg2 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg2.png" alt="backgroundcase2">
                     <div class="textCase">
@@ -331,7 +335,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="bg3 m-3">
+                  <div class="cardCases bg3 m-3">
                     <div class="overlay"></div>
                     <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg3.png" alt="backgroundcase3">
                     <div class="textCase">

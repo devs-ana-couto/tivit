@@ -56,7 +56,8 @@
           </div>
 
           <div class="language">
-            <p>EN/ES</p>
+            <a href="#"><p class="en">EN</p></a>
+            <a href="#"><p class="es">ES</p></a>
           </div>
 
           <div class="search">
