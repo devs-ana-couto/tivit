@@ -561,7 +561,7 @@ html, body, * {
     text-transform: uppercase;
     background: #F20024;
     border: 0;
-    padding: 0; }
+    padding: 10px 40px; }
 
 .home-hero .content {
   background-size: cover;
