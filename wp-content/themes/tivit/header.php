@@ -52,7 +52,7 @@
           </div>
 
           <div class="header-contact">
-            <p><a href="#" class="btn btn-contact">Contato</a></p>
+            <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
           </div>
 
           <div class="language">
