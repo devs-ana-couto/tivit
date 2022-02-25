@@ -1,3 +1,4 @@
+<?php /* Template Name: A Tivit */ ?>
 <?php get_header(); ?>
 
 <div class="a-tivit-hero">

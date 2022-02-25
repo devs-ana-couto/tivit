@@ -1767,6 +1767,7 @@ html, body, * {
     justify-content: center;
     bottom: 36px;
     left: 30px;
+    right: unset;
     margin: 0 auto;
     width: 110px; }
     #esg .navigation a {

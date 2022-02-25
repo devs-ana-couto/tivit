@@ -1,3 +1,4 @@
+<?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
 <div class="cases-hero">
@@ -6,8 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Cases</h1>
-          <h2 class="hide-mobile">A TIVIT transforma pessoas e tecnologia com expertise em soluções de ponta a ponta.</h2>
+          <h1><?=get_post_meta( get_the_ID(), 'cases_pre-chamada', true );?></h1>
+          <h2 class="hide-mobile"><?=get_post_meta( get_the_ID(), 'cases_chamada', true );?></h2>
         </div>
       </div>
     </div>
@@ -31,16 +32,16 @@
   <div class="container">
     <div class="row">
       <div class="img">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/depoimento.svg" alt="Depoimento">
+        <img src="<?=get_post_meta( get_the_ID(), 'depoimento_imagem-da-pessoa', true );?>" alt="Depoimento">
       </div>
       <div class="title-autor">
-          <h3>Courtney Hawkins</h3>
+          <h3><?=get_post_meta( get_the_ID(), 'depoimento_nome', true );?></h3>
       </div>
       <div class="desc-autor">
-          <p>Ex-Diretora do Departamento de Serviços Humanos</p>
+          <p><?=get_post_meta( get_the_ID(), 'depoimento_funcao', true );?></p>
       </div>
       <div class="depoimento">
-          <p><span>”</span>A solução TIVIT nos permitiu criar uma estrutura que podemos dimensionar para ser maior ou menor, dependendo do que está acontecendo e o que aprendemos sobre COVID-19.<span>”</span></p>
+          <p><span>”</span><?=get_post_meta( get_the_ID(), 'depoimento_depoimento', true );?><span>”</span></p>
       </div>
     </div>
   </div>
