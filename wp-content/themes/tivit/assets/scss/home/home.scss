@@ -29,8 +29,7 @@
     text-transform: uppercase;
     background: $vermelho-tivit;
     border: 0;
-    border-radius: 50px;
-    padding: 15px 40px;
+    padding: 0;
   }
 }
 
@@ -218,8 +217,6 @@
         transition: all 0.2s linear;
       }
       .acessar a{
-        color: white;
-        transition: all 0.3s linear;
         &:after{
           margin-left: 20px;
           transition: all 0.2s linear;
@@ -436,7 +433,9 @@
     }
   }
   .botao{
-    margin-top: 47px;
+    margin-top: 37px;
+    width: 100%;
+    position: relative;
     a{
       color: white;
       background: transparent;
@@ -448,10 +447,17 @@
       &:hover{
         color: #c4c4c4;
         transition: all .2s linear;
+        &:after{
+          margin-left: 20px;
+          transition: all .2s linear;
+        } 
       }
       &:after{
         content: url('../../assets/images/a-tivit/arrow.svg');
         margin-left: 10px;
+        transition: all .2s linear;
+        position: absolute;
+        top: 3px;
       }   
     }
   }
@@ -761,7 +767,6 @@
             transition: all 0.2s linear;
           }
           a{
-            color: white;
             &:after{
               margin-left: 20px;
               transition: all 0.2s linear;
@@ -853,10 +858,10 @@
 
   .home-pessoas-e-carreiras{
     background: url('../../assets/images/home/carreiras.png') no-repeat center center;
-    height: 690px;
+    height: 790px;
     background-size: cover;
     .home-pessoas-e-carreiras-title{
-      margin-top: 317px;
+      margin-top: 400px;
       p{
         font-size: 24px;
         line-height: 1.3;
@@ -875,7 +880,7 @@
   .pessoasCarreiras{
     position: relative;
     background: black;
-    transition: all 0.6s ease-in;
+    transition: all 0.6s ease-out;
     #triangle-down{
       border-left: 72.84px solid transparent !important;
       border-right: 72.84px solid transparent !important;
