@@ -1,0 +1,224 @@
+// Banner
+.contato-hero{
+    height: 580px;
+    background: url('../../assets/images/contato/banner-mobile.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .contato-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .contato-hero-content{
+        h2{
+            font-size: 34px;
+            line-height: 34px;
+            text-align: center;
+            font-weight: 400;
+            width: 320px;
+            margin: 198px auto 0 auto;
+        }
+    }
+    .arrow{
+    margin-top: 0;
+    }
+}
+
+// Intro
+.contato-intro{
+    p{
+        font-size: 26px;
+        line-height: 34px;
+        text-align: center;
+        max-width: 320px;
+        margin: 0 auto;
+        span{
+            color: $vermelho-tivit;
+        }
+    }
+}
+
+// Contato Formulário
+.contato-formulario{
+    padding: 50px 0;
+
+    h2{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: bold;
+        color: $vermelho-tivit;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input, select{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $cinza-light-tivit;
+        padding: 0 0 5px 0;
+        height: 30px;
+        margin-bottom: 30px;
+        color: $cinza-dark-cyber-tivit;
+        &::placeholder{
+            color: $cinza-dark-cyber-tivit;
+        }
+    }
+    input{
+        padding-left: 5px;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    .quebra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .wpcf7-form-control-wrap.aceite{
+            width: unset!important;
+        }
+        span{
+            width: 100%;
+        }
+        .wpcf7-spinner{
+            display: none;
+        }
+        br{
+            display: none;
+        }
+        .wpcf7-list-item{
+            margin: 0;
+            input{
+                height: 15px;
+            }
+        }
+    }
+
+    .aceite{
+        font-size: 12px;
+        span{
+            label{
+                display: flex;
+                input{
+                    width: 15%;
+                    margin-right: 10px;
+                    border: 1px solid $vermelho-tivit;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .privacidade{
+        font-size: 10px;
+    }
+
+    .wpcf7-form-control.has-spinner.wpcf7-submit{
+        background: $vermelho-tivit;
+        font-weight: bold;
+        color: #fff;
+        height: 50px;
+        width: 152px;
+        margin: 30px auto 30px auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+}
+
+// Pessoas e Carreiras
+.home-pessoas-e-carreiras{
+    #triangle-down{
+      border-left: 48.84px solid transparent;
+      border-right: 48.84px solid transparent;
+      border-top: 40px solid $cinza-dark-cyber-tivit;
+    }
+}
+
+// // Canais
+// .contato-canais{
+
+// }
+
+// Desktop
+@media(min-width: 760px){
+    // Banner
+    .contato-hero{
+        background: url('../../assets/images/contato/banner.png') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        .contato-hero-title{
+            h1, h2{
+                text-align: center;
+                color: white;
+                }
+            h1{
+                margin-top: 243px;
+            }
+        }
+    }
+
+    // Intro
+    .contato-intro{
+        p{
+            font-size: 48px;
+            line-height: 54px;
+            text-align: center;
+            max-width: 830px;
+            margin: 0 auto;
+        }
+    }
+
+    // Contato Formulário
+    .contato-formulario{
+        width: 829px;
+        margin: 0 auto;
+        h2{
+            text-align: left;
+        }
+        input{
+            margin-bottom: 0;
+        }
+        .quebra{
+            margin-bottom: 30px;
+            flex-direction: row;
+            span{
+                width: 48%;
+            }
+            .wpcf7-form-control.has-spinner.wpcf7-submit{
+                margin: 0 0 0 auto;
+            }
+            .wpcf7-list-item{
+                margin: 0;
+            }
+            .wpcf7-spinner{
+                display: none;
+            }
+            .wpcf7-form-control-wrap.aceite{
+                width: 100%;
+            }
+            .aceite{
+                span{
+                    width: 100%;
+                    label{
+                        input{
+                            width: 5%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

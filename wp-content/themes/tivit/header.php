@@ -14,11 +14,11 @@
 ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="fixed-top header">
+<header class="fixed-top header frontpage">
   <nav class="navbar navbar-expand-md navbar-light" role="navigation"> 
     <div class="container">
       <div class="row">
-        <div class="col-2 col-md-4 header-menu">
+        <div class="col-2 col-md-5 header-menu">
           <div class="hide-mobile">
           <?php
             wp_nav_menu( array(
@@ -39,13 +39,13 @@
 
         </div>  
 
-        <div class="col-8 col-md-4 header-logo">
+        <div class="col-8 col-md-2 header-logo">
           <a class="navbar-brand" href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-tivit.png" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
           </a>
         </div>
 
-        <div class="col-4 col-md-4 header-options hide-mobile">
+        <div class="col-4 col-md-5 header-options hide-mobile">
 
           <div class="header-people-and-careers">
             <p>Pessoas e Carreiras</p>
@@ -56,7 +56,8 @@
           </div>
 
           <div class="language">
-            <p>EN/ES</p>
+            <a href="#"><p class="en">EN</p></a>
+            <a href="#"><p class="es">ES</p></a>
           </div>
 
           <div class="search">
