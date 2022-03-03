@@ -61,18 +61,69 @@
 #ventures{
   background: #F4F6F7;
   padding-top: 128px;
-  padding-bottom: 128px;
+  padding-bottom: 105px;
+  position: relative;
   h2{
     color: $cinza-dark-cyber-tivit;
     font-weight: 600;
     font-size: 36px;
   }
-  p{
+  p, .textAbove{
     color: $cinza-dark-cyber-tivit;
     font-weight: lighter;
     font-size: 18px;
     max-width: 860px;
   }
+  .aboveBlock{
+    margin-top: 133px;
+  }
+  div.box{
+    padding: 35px;
+    border: 1px solid $cinza-light-tivit;
+    height: 200px;
+    img{
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+      width: 200px;
+      transition: all .2s;
+      &:hover{
+        -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+        transition: all .2s;
+      }
+    }
+  }
+  .services{
+    flex-wrap: wrap;
+    em{
+      color: $vermelho-tivit;
+      font-size: 36px;
+      font-weight: 500;
+      font-style: normal;
+      margin-right: 50px;
+    }
+  }
+  a.button{
+    background: $vermelho-tivit;
+    font-size: 14px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: unset;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #triangle-down{
+    border-top: 40px solid #F4F6F7 !important;
+    position: absolute;
+    right: 48%;
+    bottom: -10px;
+  }
+}
+
+#tivitLabs{
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
 
 @media(min-width: 760px){
