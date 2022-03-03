@@ -1180,7 +1180,7 @@ html, body, * {
     height: 790px;
     background-size: cover; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
-      margin-top: 400px; }
+      margin-top: 370px; }
       .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title p {
         font-size: 24px;
         line-height: 1.3;
@@ -2192,6 +2192,47 @@ html, body, * {
           background: transparent; }
           .cases-recentes .filtros .select select option {
             color: black; } }
+.inovacao-hero {
+  height: 580px;
+  background: url("../../assets/images/inovacao/banner-mobile.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .inovacao-hero .inovacao-hero-title {
+    margin: 0 auto; }
+    .inovacao-hero .inovacao-hero-title h1 {
+      margin-top: 162px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase; }
+  .inovacao-hero .inovacao-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+  .inovacao-hero .botao {
+    margin-bottom: 30px; }
+    .inovacao-hero .botao a {
+      background: transparent;
+      color: #F20024;
+      border: solid 1px #F20024; }
+  .inovacao-hero .arrow {
+    margin-top: 0; }
+
+@media (min-width: 760px) {
+  .inovacao-hero {
+    background: url("../../assets/images/inovacao/banner.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh; }
+    .inovacao-hero .inovacao-hero-title h1, .inovacao-hero .inovacao-hero-title h2 {
+      text-align: center;
+      color: white; }
+    .inovacao-hero .inovacao-hero-title h1 {
+      margin-top: 243px; } }
 /*
  * Páginas: TbankS & TDX
  **/

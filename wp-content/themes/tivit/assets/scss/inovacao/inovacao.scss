@@ -1,0 +1,58 @@
+// Banner
+.inovacao-hero{
+    height: 580px;
+    background: url('../../assets/images/inovacao/banner-mobile.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .inovacao-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+    .inovacao-hero-content{
+    h2{
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+        width: 320px;
+        margin: 198px auto 0 auto;
+    }
+    }
+    .botao{
+      margin-bottom: 30px;
+      a{
+        background: transparent;
+        color: $vermelho-tivit;
+        border: solid 1px $vermelho-tivit;        
+      }
+    }
+    .arrow{
+    margin-top: 0;
+    }
+}
+
+@media(min-width: 760px){
+
+    .inovacao-hero{
+      background: url('../../assets/images/inovacao/banner.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      .inovacao-hero-title{
+        h1, h2{
+          text-align: center;
+          color: white;
+        }
+        h1{
+          margin-top: 243px;
+        }
+      }
+    }
+}
