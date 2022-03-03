@@ -13,19 +13,27 @@
       </div>
     </div>
   </div>
-
-  <div class="inovacao-hero-content hide-desktop">
-    <h2>Nome do cliente videocase Lorem ipsum</h2>
-  </div>
-
-  <div class="botao hide-desktop">
-    <a href="#" class="btn btn-primary">Assista ao Reel</a>
-  </div>
-
-  <div class="arrow text-center hide-desktop">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" class="bounce" alt="Saiba Mais">
-  </div>
   
+</div>
+
+<div class="inovacao-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>
+          Inovação para a <span>TIVIT</span> é se reinventar sem nunca se perder.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ventures">
+  <div class="d-flex flex-column container w-100 text-center justify-content-center align-items-center">
+    <h2>VENTURES</h2>
+    <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
+      investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
+  </div>
 </div>
 
 <?php get_footer(); ?>
