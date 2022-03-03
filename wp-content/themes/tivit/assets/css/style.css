@@ -94,6 +94,9 @@ html, body, * {
 /**
  * Header Global
  **/
+.frontpage {
+  z-index: 9030 !important; }
+
 @media (max-width: 768px) {
   .header {
     background: white;
@@ -124,10 +127,49 @@ html, body, * {
       border: solid 1px white; } }
 
 @media (min-width: 769px) {
+  .header .header-menu ul li.active {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0px 15px 0px 15px; }
+  .header .header-menu ul li {
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 0px 15px 0px 15px;
+    transition: all .15s linear; }
+  .header .header-menu ul li:hover {
+    border-color: white;
+    transition: all .2s linear; }
+  #menu-header-menu {
+    flex-wrap: wrap; }
+  .header-people-and-careers > p {
+    font-weight: 500; }
+  .language {
+    display: flex; }
+    .language a {
+      color: white;
+      text-decoration: unset; }
+      .language a:hover {
+        color: white; }
+      .language a .en, .language a .es {
+        border: 1px solid transparent;
+        border-radius: 50px;
+        padding: 2px 7px 2px 7px;
+        transition: all .15s linear;
+        font-weight: 500; }
+        .language a .en:hover, .language a .es:hover {
+          border-color: white;
+          transition: all .2s linear; }
+      .language a .es {
+        margin-left: 20px; }
+      .language a .en {
+        margin: 0 !important; }
   .navbar-expand-md {
-    height: 70px; }
+    background: transparent;
+    height: 70px;
+    transition: all .33s linear; }
   .on-scroll-global {
-    background: #990017; }
+    background: #990017;
+    transition: all .33s linear; }
   .header {
     background-color: transparent;
     display: flex;
@@ -146,11 +188,11 @@ html, body, * {
       align-items: center;
       padding-left: 0; }
       .header .header-menu ul li {
-        margin-right: 20px; }
+        margin-right: 0px; }
         .header .header-menu ul li a {
           font-size: 14px;
           line-height: 24.34px;
-          font-weight: 600;
+          font-weight: 500;
           color: white !important;
           text-transform: uppercase;
           text-decoration: none; }
@@ -184,10 +226,13 @@ html, body, * {
         text-decoration: none;
         border: 1px solid white;
         box-sizing: border-box;
-        border-radius: 50px; }
+        border-radius: 50px;
+        padding: 0.08rem 0.75rem !important;
+        transition: all .2s linear; }
         .header .header-options .btn.btn-contact:hover {
           background-color: transparent;
-          color: white; }
+          color: white;
+          transition: all .2s linear; }
     .header .nav {
       margin-bottom: 0px; }
   .on-scroll-tbanks {
@@ -269,16 +314,25 @@ html, body, * {
     align-items: center;
     padding-left: 0; }
     .footer .footer-menu ul li {
-      margin-right: 20px; }
+      margin-right: 0px;
+      border: 1px solid transparent;
+      border-radius: 50px;
+      padding: 0px 15px 0px 15px;
+      transition: all .15s linear; }
+      .footer .footer-menu ul li:hover {
+        border-color: #454D54;
+        transition: all .2s linear; }
       .footer .footer-menu ul li a {
         font-size: 14px;
         line-height: 24.34px;
         font-weight: 600;
         color: #454D54;
         text-transform: uppercase;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .15s linear; }
         .footer .footer-menu ul li a:hover {
-          opacity: 0.8; }
+          opacity: 0.8;
+          transition: all .15s linear; }
   .footer .footer-logo {
     display: flex;
     align-items: center;
@@ -308,6 +362,7 @@ html, body, * {
       text-decoration: none;
       border: 1px solid #F20024;
       background: #F20024;
+      padding: 0.08rem 0.75rem !important;
       box-sizing: border-box;
       border-radius: 50px; }
       .footer .footer-options .btn.btn-contact:hover {
@@ -357,7 +412,8 @@ html, body, * {
         padding: 16px 0;
         text-decoration: none; }
   .footer .nav {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    justify-content: flex-start !important; }
   .footer .footer-ac {
     display: flex;
     align-items: center;
@@ -508,7 +564,7 @@ html, body, * {
     text-transform: uppercase;
     background: #F20024;
     border: 0;
-    border-radius: 0;
+    border-radius: 50px;
     padding: 15px 40px; }
 
 .home-hero .content {
@@ -519,7 +575,8 @@ html, body, * {
   justify-content: center; }
   @media (max-width: 759px) {
     .home-hero .content {
-      background: url("../../assets/images/home/slider-1-mobile.png") no-repeat center center; } }
+      background: url("../../assets/images/home/slider-1-mobile.png") no-repeat center center;
+      background-size: cover; } }
   .home-hero .content .title {
     max-width: 320px;
     margin: 0 auto; }
@@ -533,20 +590,29 @@ html, body, * {
 
 .imgtransition.active {
   max-height: 0%;
-  opacity: 0;
-  transition: all 0.3s ease-out; }
+  opacity: 1;
+  transition: all 0.55s ease-out; }
 
 .imgtransition {
-  max-height: 100vh;
+  max-height: 1725px;
+  width: 100vw;
   opacity: 1;
-  transition: all 0.3s ease-out;
-  width: 100% !important; }
+  transition: all 0.6s ease-in;
+  width: 100% !important;
+  z-index: 5500; }
   @media (max-width: 759px) {
     .imgtransition {
-      height: 500px !important; } }
+      height: 500px !important;
+      margin-top: -1px; } }
+
+.home-intro.active {
+  background: white;
+  transition: all 0.6s ease-in; }
 
 .home-intro {
-  position: relative; }
+  position: relative;
+  background: #990017;
+  transition: all 0.3s ease-in; }
   .home-intro p {
     font-size: 38px;
     line-height: 38px;
@@ -561,20 +627,21 @@ html, body, * {
     margin-top: 30px; }
   .home-intro .pcustom {
     opacity: 0;
-    transition: all 0.2s ease-out; }
+    transition: all 0.3s ease-out; }
   .home-intro .pcustom.active {
     opacity: 1;
-    transition: all 1s ease-out; }
+    transition: all 1.05s ease-out; }
 
 .home-portifolio {
-  background: url("../../assets/images/home/portifolio-mobile.png") no-repeat center center;
   height: 580px;
   margin-bottom: 140px; }
   @media (max-width: 760px) {
     .home-portifolio {
       display: 50px; } }
+  .home-portifolio .home-portifolio-image {
+    background: url("../../assets/images/home/portifolio-mobile.png") no-repeat center center; }
   .home-portifolio .home-portifolio-content {
-    margin-top: 200px; }
+    margin-top: 150px; }
     .home-portifolio .home-portifolio-content .hide-arrow {
       opacity: 0; }
       @media (max-width: 760px) {
@@ -598,14 +665,178 @@ html, body, * {
       color: #F20024;
       font-weight: 600; }
 
+.home-content.active {
+  opacity: 1;
+  transition: all 0.5s ease-out; }
+
+.home-content {
+  position: relative;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.35s ease-in; }
+  .home-content .transitionContent {
+    background: url("../../assets/images/home/trans3flp2.svg") no-repeat bottom center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.7s ease-out;
+    z-index: 4999;
+    top: 0; }
+  .home-content .transitionContent.active {
+    opacity: 1;
+    height: 0%;
+    transition: all 0.45s ease-in; }
+  .home-content #triangle-down {
+    position: absolute;
+    top: 0; }
+  .home-content .pd {
+    padding-bottom: 140px;
+    padding-top: 140px; }
+    .home-content .pd .title .titleText {
+      font-size: 28px;
+      line-height: 24px;
+      font-weight: 600;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 75px; }
+  .home-content .cardContent {
+    cursor: pointer; }
+    .home-content .cardContent:hover h3 {
+      color: #F20024;
+      transition: all 0.2s linear; }
+    .home-content .cardContent:hover .acessar a:after {
+      margin-left: 20px;
+      transition: all 0.2s linear; }
+  .home-content .img img {
+    width: 100%;
+    cursor: pointer; }
+  .home-content .content {
+    width: 371px;
+    margin-top: 12px; }
+  .home-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.2s linear; }
+  .home-content p {
+    color: white; }
+  .home-content .autor-time {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .home-content .autor-time p {
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px;
+      font-weight: 400;
+      margin: 0; }
+    .home-content .autor-time a:first-child {
+      margin-right: 5px; }
+    .home-content .autor-time a {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      border-radius: 50px;
+      border: solid 1px white;
+      text-transform: uppercase;
+      padding: 4px 10px; }
+  .home-content .detalhes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .home-content .detalhes span {
+      color: white;
+      font-size: 12px;
+      line-height: 18.25px; }
+  .home-content .acessar {
+    font-size: 14px;
+    line-height: 21.29px;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: unset !important; }
+    .home-content .acessar a {
+      text-decoration: unset !important;
+      transition: all 0.3s linear; }
+      .home-content .acessar a:hover {
+        color: white;
+        transition: all 0.3s linear; }
+      .home-content .acessar a img {
+        margin-left: 5px;
+        transition: all 0.2s linear; }
+  .home-content div.btn {
+    padding-top: 75px; }
+    .home-content div.btn .btncontent {
+      background: transparent;
+      border: 1px solid #F20024;
+      padding: 20px 35px 20px 35px;
+      border-radius: 50px;
+      color: white;
+      text-transform: uppercase;
+      transition: all 0.4s linear; }
+      .home-content div.btn .btncontent:hover {
+        background: #F20024;
+        transition: all 0.4s linear; }
+
+.home-cases.active {
+  background-color: black;
+  transition: background-color 0.3s ease-ou; }
+
 .home-cases {
-  background: url("../../assets/images/home/cases-mobile.png") no-repeat center center;
-  background-size: cover;
-  height: 700px; }
+  background-color: white;
+  transition: background-color 0.35s linear;
+  height: 930px; }
+  .home-cases .bgtriangulo {
+    background: url("../../assets/images/home/triangulocinza.svg") no-repeat top center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0 !important;
+    transition: all 0.5s linear; }
+  .home-cases .bgtriangulo.active {
+    opacity: 1;
+    transition: all 0.5s linear; }
+  .home-cases .transitionCases {
+    background: url("../../assets/images/home/trans4flp2.svg") no-repeat bottom center;
+    background-size: cover;
+    opacity: 0;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    z-index: 4998;
+    transition: all 0.5s ease-in; }
+  .home-cases .transitionCases.active {
+    opacity: 1;
+    width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    transition: all 0.6s ease-out; }
+  .home-cases .transitionCases.deactive {
+    opacity: 1;
+    max-height: 0%;
+    width: 100%;
+    transition: all 0.4s linear; }
+  .home-cases .divOpacity {
+    opacity: 0;
+    transition: all 0.55s linear; }
+  .home-cases .divOpacity.active {
+    opacity: 1;
+    transition: all 0.55s linear; }
   .home-cases .home-cases-title h2 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -635,22 +866,61 @@ html, body, * {
   .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
     margin-top: 187px; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title h2 {
-      font-size: 24px;
+      font-size: 36px;
       line-height: 28px;
-      font-weight: bold;
+      font-weight: 600;
       text-transform: uppercase;
       text-align: center;
-      color: white; }
+      color: white;
+      margin-bottom: 27px; }
   .home-pessoas-e-carreiras .botao {
-    margin-top: 24px; }
+    margin-top: 37px;
+    width: 100%;
+    position: relative; }
     .home-pessoas-e-carreiras .botao a {
-      background: white;
-      color: #F20024;
-      border: solid 1px #F20024;
-      padding: 15px 11px; }
+      color: white;
+      background: transparent;
+      text-decoration-line: unset !important;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: all .2s linear; }
+      .home-pessoas-e-carreiras .botao a img {
+        margin-left: 10px;
+        margin-bottom: 2px; }
       .home-pessoas-e-carreiras .botao a:hover {
-        background: #F20024;
-        color: white; }
+        color: #c4c4c4;
+        transition: all .2s linear; }
+        .home-pessoas-e-carreiras .botao a:hover:after {
+          margin-left: 20px;
+          transition: all .2s linear; }
+      .home-pessoas-e-carreiras .botao a:after {
+        content: url("../../assets/images/a-tivit/arrow.svg");
+        margin-left: 10px;
+        transition: all .2s linear;
+        position: absolute;
+        top: 3px; }
+
+.lr {
+  left: 0;
+  right: 0; }
+
+.customContainer {
+  max-width: 1320px !important;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5); }
+
+.home-cases-content .row .btncontent {
+  background: transparent;
+  border: 1px solid #F20024;
+  padding: 20px 35px 20px 35px;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.4s linear; }
+  .home-cases-content .row .btncontent:hover {
+    background: #F20024;
+    transition: all 0.4s linear; }
 
 /**
  *  Desktop
@@ -658,12 +928,20 @@ html, body, * {
 @media (min-width: 760px) {
   .home-hero {
     margin-bottom: 0px; }
+    .home-hero .carousel-inner {
+      height: 865px; }
+    .home-hero .mask {
+      z-index: 200;
+      position: absolute; }
+    .home-hero .maskImg {
+      z-index: 100; }
     .home-hero #hero {
       background-color: #990017; }
     .home-hero .content {
       height: 100%; }
       .home-hero .content .title {
-        max-width: 100%; }
+        max-width: 900px;
+        z-index: 300; }
     .home-hero .container {
       position: relative; }
       .home-hero .container .redes {
@@ -672,9 +950,11 @@ html, body, * {
         display: flex;
         flex-direction: column;
         right: 0;
-        bottom: 40px; }
+        bottom: 90px; }
         .home-hero .container .redes img {
           margin-bottom: 5px; }
+          .home-hero .container .redes img:hover {
+            filter: invert(18%) sepia(8%) saturate(0%) hue-rotate(143deg) brightness(97%) contrast(89%); }
     .home-hero .container {
       position: relative; }
       .home-hero .container .navigation {
@@ -682,7 +962,7 @@ html, body, * {
         display: flex;
         flex-direction: row;
         left: 0;
-        bottom: 50px; }
+        bottom: 100px; }
         .home-hero .container .navigation a {
           color: white; }
         .home-hero .container .navigation .carousel-indicators {
@@ -723,58 +1003,143 @@ html, body, * {
         color: #F20024;
         border: red solid 1px; }
   .home-portifolio.active {
-    transition: all 0.3s linear; }
+    opacity: 1;
+    transition: all 0.7s linear; }
   section.port {
     height: 900px;
     position: relative; }
     section.port .bgport {
-      background: url("../../assets/images/home/portfolio.png") no-repeat top center;
-      height: 40px;
-      margin-top: 640px;
+      background: url("../../assets/images/home/trans2flp.svg") no-repeat bottom center;
+      height: 100%;
       width: 100%;
-      transition: all 0.3s linear; }
+      opacity: 1;
+      transition: all 0.4s linear 0.2s;
+      z-index: 5000; }
     section.port .bgport.active {
-      margin-top: 0px;
-      height: 700px;
-      transition: all 0.3s linear; }
+      opacity: 1;
+      height: 0%;
+      transition: all 0.4s linear 0.2s; }
   .home-portifolio {
-    background: url("../../assets/images/home/portfolio.png") no-repeat top center;
     width: 100%;
     height: 700px;
-    opacity: 1;
-    transition: all 0.3s linear; }
+    opacity: 0;
+    transition: all 0.6s ease-in; } }
+  @media (min-width: 760px) and (min-width: 760px) {
+    .home-portifolio .customposition {
+      position: absolute; } }
+
+@media (min-width: 760px) {
+    .home-portifolio .home-portifolio-image {
+      background: url("../../assets/images/home/img_banner1.jpg") no-repeat center center;
+      background-size: contain;
+      transition: background .4s linear; }
+    .home-portifolio #triangle-down {
+      border-left: 48.84px solid transparent !important;
+      border-right: 48.84px solid transparent !important;
+      border-top: 40px solid white !important;
+      position: absolute; }
+    .home-portifolio .mascaraDobra3 {
+      left: 19%;
+      top: 0; }
     .home-portifolio .home-portifolio-content .txt {
       margin-top: 150px;
       margin-left: 150px; }
+      .home-portifolio .home-portifolio-content .txt .active {
+        color: #F20024;
+        transition: all 0.25s linear; }
+        .home-portifolio .home-portifolio-content .txt .active .hide-arrow {
+          opacity: 1; }
+      .home-portifolio .home-portifolio-content .txt p.active:after {
+        content: url("../../assets/images/home/icons/arrow-right-red.svg");
+        margin-left: 15px; }
     .home-portifolio .home-portifolio-content h3, .home-portifolio .home-portifolio-content p, .home-portifolio .home-portifolio-content a {
       text-align: left; }
     .home-portifolio .home-portifolio-content h3 {
-      font-size: 20px;
-      line-height: 30px; }
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 600; }
+    .home-portifolio .home-portifolio-content a {
+      text-decoration: unset; }
     .home-portifolio .home-portifolio-content p {
       font-size: 36px;
       line-height: 56px;
       margin-bottom: 0;
-      color: white; }
+      color: white;
+      transition: all 0.25s linear; }
       .home-portifolio .home-portifolio-content p:hover {
-        color: #F20024; }
-        .home-portifolio .home-portifolio-content p:hover .hide-arrow {
-          opacity: 1; }
+        color: #F20024;
+        transition: all 0.25s linear; }
+        .home-portifolio .home-portifolio-content p:hover:after {
+          content: url("../../assets/images/home/icons/arrow-right-red.svg");
+          margin-left: 15px; }
     .home-portifolio .home-portifolio-content .botao {
       margin: 40px 0 0 0;
-      text-align: left; }
+      text-align: left;
+      transition: all 0.4s linear; }
       .home-portifolio .home-portifolio-content .botao:hover a {
         background: white;
-        color: #F20024; }
+        border-radius: 50px;
+        color: #F20024;
+        transition: all 0.4s linear; }
+  .home-cases.active {
+    background-color: black;
+    transition: background-color 0.35s linear; }
   .home-cases {
-    background: url("../../assets/images/home/cases.png") no-repeat center center;
-    background-size: cover; }
+    background-color: #262626;
+    transition: background-color 0.35s linear; }
+    .home-cases .divOpacity {
+      opacity: 0;
+      transition: all 0.55s linear; }
+    .home-cases .divOpacity.active {
+      opacity: 1;
+      transition: all 0.55s linear; }
     .home-cases .home-cases-title h2 {
       margin-top: 100px; }
     .home-cases .home-cases-title p {
       text-align: center;
       color: white;
-      margin-top: 5px; }
+      margin-top: 25px; }
+    .home-cases .home-cases-content .bg1, .home-cases .home-cases-content .bg2, .home-cases .home-cases-content .bg3 {
+      position: relative; }
+    .home-cases .home-cases-content .overlay {
+      background: linear-gradient(to top, black, RGBA(0, 0, 0, 0.1));
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+    .home-cases .home-cases-content .cardCases {
+      cursor: pointer; }
+      .home-cases .home-cases-content .cardCases:hover h3 {
+        color: #F20024;
+        transition: all 0.2s linear; }
+      .home-cases .home-cases-content .cardCases:hover a:after {
+        margin-left: 20px;
+        transition: all 0.2s linear; }
+    .home-cases .home-cases-content .textCase {
+      position: absolute;
+      top: 55%;
+      margin: 20px; }
+      .home-cases .home-cases-content .textCase h3 {
+        color: white;
+        font-weight: 600;
+        text-align: left;
+        font-size: 24px;
+        transition: all 0.2s linear; }
+      .home-cases .home-cases-content .textCase p {
+        color: white;
+        text-align: left;
+        font-weight: lighter; }
+      .home-cases .home-cases-content .textCase a {
+        color: #F20024;
+        text-transform: uppercase;
+        text-align: left;
+        transition: all .3s linear;
+        cursor: pointer; }
+        .home-cases .home-cases-content .textCase a:hover {
+          color: white;
+          transition: all .3s linear; }
+        .home-cases .home-cases-content .textCase a img {
+          margin-left: 5px;
+          transition: all .2s linear; }
     .home-cases .home-cases-content .home-cases-autor {
       width: 450px; }
       .home-cases .home-cases-content .home-cases-autor h3 {
@@ -790,13 +1155,14 @@ html, body, * {
         color: white; }
     .home-cases .home-cases-content .botao a {
       background: transparent;
-      border: 1px solid #F20024; }
+      border: 1px solid #F20024;
+      border-radius: 50px; }
       .home-cases .home-cases-content .botao a:hover {
         background: white;
         color: #F20024;
         border: white solid 1px; }
     .home-cases .home-cases-content.left {
-      margin-top: 205px; }
+      margin-top: 50px; }
       .home-cases .home-cases-content.left h3, .home-cases .home-cases-content.left p, .home-cases .home-cases-content.left .botao {
         text-align: left; }
     .home-cases .home-cases-content.right {
@@ -808,15 +1174,78 @@ html, body, * {
         text-align: right; }
   .home-pessoas-e-carreiras {
     background: url("../../assets/images/home/carreiras.png") no-repeat center center;
-    height: 760px; }
+    height: 790px;
+    background-size: cover; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
-      margin-top: 317px; }
+      margin-top: 370px; }
       .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title p {
         font-size: 24px;
-        line-height: 28px;
-        font-weight: 600;
+        line-height: 1.3;
+        font-weight: lighter;
         text-align: center;
-        color: white; } }
+        color: white; }
+  .pessoasCarreiras.active {
+    background: white;
+    transition: all 0.7s ease-in; }
+  .pessoasCarreiras {
+    position: relative;
+    background: black;
+    transition: all 0.6s ease-out; }
+    .pessoasCarreiras #triangle-down {
+      border-left: 72.84px solid transparent !important;
+      border-right: 72.84px solid transparent !important;
+      border-top: 55px solid black !important;
+      position: absolute;
+      opacity: 1;
+      transition: all 0.4s linear 0.2s; }
+    .pessoasCarreiras #triangle-down.active {
+      opacity: 1;
+      transition: all 0.4s linear 0.2s; }
+    .pessoasCarreiras .transCarreiras.active {
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: all 0.4s linear 0.2s; }
+    .pessoasCarreiras .transCarreiras {
+      background: url("../../assets/images/home/trans6flp.svg") no-repeat bottom center;
+      background-size: cover;
+      max-height: 0%;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.3s linear 0.2s;
+      z-index: 4997; }
+    .pessoasCarreiras .transCarreiras.deactive {
+      height: 0%;
+      max-height: 0%;
+      width: 100%;
+      opacity: 1;
+      transition: all 0.4s linear 0.2s; }
+    .pessoasCarreiras .home-pessoas-e-carreiras {
+      opacity: 0;
+      transition: all 0.3s linear 0.2s; }
+    .pessoasCarreiras .home-pessoas-e-carreiras.active {
+      opacity: 1;
+      transition: all 0.3s linear 0.2s; }
+  .partners {
+    padding-bottom: 140px;
+    transition: all 0.4s linear 0.2s;
+    opacity: 0; }
+    .partners .title {
+      margin-bottom: 35px; }
+      .partners .title h2 {
+        color: #262626;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600; } }
+      @media (min-width: 760px) and (max-width: 760px) {
+        .partners .title h2 {
+          font-size: 24px; } }
+
+@media (min-width: 760px) {
+  .partners.active {
+    opacity: 1;
+    transition: all 0.4s linear 0.2s; } }
 
 .pessoas-e-carreiras-hero {
   height: 580px;
