@@ -81,9 +81,25 @@
 
     .quebra{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        .wpcf7-form-control-wrap.aceite{
+            width: unset!important;
+        }
         span{
-            width: 48%;
+            width: 100%;
+        }
+        .wpcf7-spinner{
+            display: none;
+        }
+        br{
+            display: none;
+        }
+        .wpcf7-list-item{
+            margin: 0;
+            input{
+                height: 15px;
+            }
         }
     }
 
@@ -107,13 +123,12 @@
     }
 
     .wpcf7-form-control.has-spinner.wpcf7-submit{
-        margin-top: 20px;
         background: $vermelho-tivit;
         font-weight: bold;
         color: #fff;
         height: 50px;
         width: 152px;
-        margin: 20px auto 0 auto;
+        margin: 30px auto 30px auto;
         padding: 0;
         display: flex;
         justify-content: center;
@@ -167,8 +182,43 @@
 
     // Contato Formulário
     .contato-formulario{
+        width: 829px;
+        margin: 0 auto;
         h2{
             text-align: left;
+        }
+        input{
+            margin-bottom: 0;
+        }
+        .quebra{
+            margin-bottom: 30px;
+            flex-direction: row;
+            span{
+                width: 48%;
+            }
+            .wpcf7-form-control.has-spinner.wpcf7-submit{
+                margin: 0 0 0 auto;
+            }
+            .wpcf7-list-item{
+                margin: 0;
+            }
+            .wpcf7-spinner{
+                display: none;
+            }
+            .wpcf7-form-control-wrap.aceite{
+                width: 100%;
+            }
+            .aceite{
+                span{
+                    width: 100%;
+                    label{
+                        input{
+                            width: 5%;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

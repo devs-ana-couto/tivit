@@ -2446,9 +2446,20 @@ html, body, * {
     width: 100%; }
   .contato-formulario .quebra {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
+    .contato-formulario .quebra .wpcf7-form-control-wrap.aceite {
+      width: unset !important; }
     .contato-formulario .quebra span {
-      width: 48%; }
+      width: 100%; }
+    .contato-formulario .quebra .wpcf7-spinner {
+      display: none; }
+    .contato-formulario .quebra br {
+      display: none; }
+    .contato-formulario .quebra .wpcf7-list-item {
+      margin: 0; }
+      .contato-formulario .quebra .wpcf7-list-item input {
+        height: 15px; }
   .contato-formulario .aceite {
     font-size: 12px; }
     .contato-formulario .aceite span label {
@@ -2461,13 +2472,12 @@ html, body, * {
   .contato-formulario .privacidade {
     font-size: 10px; }
   .contato-formulario .wpcf7-form-control.has-spinner.wpcf7-submit {
-    margin-top: 20px;
     background: #F20024;
     font-weight: bold;
     color: #fff;
     height: 50px;
     width: 152px;
-    margin: 20px auto 0 auto;
+    margin: 30px auto 30px auto;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -2494,5 +2504,27 @@ html, body, * {
     text-align: center;
     max-width: 830px;
     margin: 0 auto; }
-  .contato-formulario h2 {
-    text-align: left; } }
+  .contato-formulario {
+    width: 829px;
+    margin: 0 auto; }
+    .contato-formulario h2 {
+      text-align: left; }
+    .contato-formulario input {
+      margin-bottom: 0; }
+    .contato-formulario .quebra {
+      margin-bottom: 30px;
+      flex-direction: row; }
+      .contato-formulario .quebra span {
+        width: 48%; }
+      .contato-formulario .quebra .wpcf7-form-control.has-spinner.wpcf7-submit {
+        margin: 0 0 0 auto; }
+      .contato-formulario .quebra .wpcf7-list-item {
+        margin: 0; }
+      .contato-formulario .quebra .wpcf7-spinner {
+        display: none; }
+      .contato-formulario .quebra .wpcf7-form-control-wrap.aceite {
+        width: 100%; }
+      .contato-formulario .quebra .aceite span {
+        width: 100%; }
+        .contato-formulario .quebra .aceite span label input {
+          width: 5%; } }
