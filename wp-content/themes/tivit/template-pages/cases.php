@@ -7,8 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1><?=get_post_meta( get_the_ID(), 'cases_pre-chamada', true );?></h1>
-          <h2 class="hide-mobile"><?=get_post_meta( get_the_ID(), 'cases_chamada', true );?></h2>
+          <h1><?=get_post_meta( get_the_ID(), 'casesHero_pre-chamada', true );?></h1>
+          <h2 class="hide-mobile"><?=get_post_meta( get_the_ID(), 'casesHero_chamada', true );?></h2>
         </div>
       </div>
     </div>
