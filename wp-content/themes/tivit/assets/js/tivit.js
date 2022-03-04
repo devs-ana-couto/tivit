@@ -87,6 +87,8 @@ jQuery(document).ready(function($) {
       $('.numseparation').html('  /  ');
       $('.numtotal').html( totalItems );
    });
+   
+   
 
 })
 
@@ -204,7 +206,9 @@ window.addEventListener('scroll', function() {
       }
    }
  
-
+   if(window.location.pathname === '/staged/tivit/inovacao' || window.location.pathname === '/staged/tivit/inovacao/'){
+      
+   }
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){

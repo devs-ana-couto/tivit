@@ -109,8 +109,19 @@
 </div>
 
 <!-- Bloco TivitLabs -->
-<div id="tivitLabs">
-
+<div id="tivitLabs" class="container">
+  <div class="w-100 margin-auto text-center">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/labs.svg" alt="Tivit Labs">
+  </div>
+  <div class="d-flex justify-content-center subText">
+    <p class="text-center">
+     O TIVIT Labs é o nosso cérebro de inovação. Com ele, ajudamos clientes a desenvolverem novas tecnologias e soluções personalizadas. 
+      Para que a aprendizagem seja contínua, lançamos mão do Labs Academy, programa que fomenta ainda mais esse ecossistema de ideias.
+    </p>
+  </div>
 </div>
+
+<!-- Bloco Carrossel Infinito -->
+
 
 <?php get_footer(); ?>

@@ -1,3 +1,5 @@
+$itemGrow: 1.2;
+$duration: 250ms;
 // Banner
 .inovacao-hero{
     height: 580px;
@@ -68,10 +70,16 @@
     font-weight: 600;
     font-size: 36px;
   }
-  p, .textAbove{
+  p{
     color: $cinza-dark-cyber-tivit;
     font-weight: lighter;
     font-size: 18px;
+    max-width: 860px;
+  }
+  .textAbove > p{
+    color: $cinza-dark-cyber-tivit;
+    font-weight: lighter;
+    font-size: 24px !important;
     max-width: 860px;
   }
   .aboveBlock{
@@ -124,7 +132,18 @@
 #tivitLabs{
   margin-top: 80px;
   margin-bottom: 120px;
+  .subText{
+    margin-top: 12px;
+    p{
+      color: $cinza-dark-cyber-tivit;
+      font-weight: lighter;
+      font-size: 18px;
+      max-width: 730px;
+    }
+  }
 }
+
+
 
 @media(min-width: 760px){
 

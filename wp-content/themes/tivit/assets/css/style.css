@@ -2248,10 +2248,15 @@ html, body, * {
     color: #262626;
     font-weight: 600;
     font-size: 36px; }
-  #ventures p, #ventures .textAbove {
+  #ventures p {
     color: #262626;
     font-weight: lighter;
     font-size: 18px;
+    max-width: 860px; }
+  #ventures .textAbove > p {
+    color: #262626;
+    font-weight: lighter;
+    font-size: 24px !important;
     max-width: 860px; }
   #ventures .aboveBlock {
     margin-top: 133px; }
@@ -2298,6 +2303,13 @@ html, body, * {
 #tivitLabs {
   margin-top: 80px;
   margin-bottom: 120px; }
+  #tivitLabs .subText {
+    margin-top: 12px; }
+    #tivitLabs .subText p {
+      color: #262626;
+      font-weight: lighter;
+      font-size: 18px;
+      max-width: 730px; }
 
 @media (min-width: 760px) {
   .inovacao-hero {
