@@ -131,7 +131,7 @@ $duration: 250ms;
 
 #tivitLabs{
   margin-top: 80px;
-  margin-bottom: 120px;
+  margin-bottom: 56px;
   .subText{
     margin-top: 12px;
     p{
@@ -142,8 +142,114 @@ $duration: 250ms;
     }
   }
 }
+#carouselCustom.container{
+  max-width: 1650px !important;
+}
+#carouselCustom{
+  padding-bottom: 192px;
+  .carousel{
+    overflow: hidden;
+    padding: 0;
+  }
+  .carousel-inner{
+    right: -15%;
+  }
+  .card{
+    border-color: transparent;
+    margin: 10px;
+    .card-img{
+      img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    .content{
+      border: 1px solid #CAD2D8;
+      padding: 30px;
+      height: 280px;
+      h2{
+        color: $vermelho-tivit;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: left;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        color: black;
+        margin-top: 15px;
+        text-align: left;
+      }
+    }
+  }
+  .counterInovacao{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactiveinovacao{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparationinovacao, .numtotalinovacao{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparationinovacao{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+  }
 
-
+  .carousel-control-prev, .carousel-control-next{
+    filter: invert(13%) sepia(99%) saturate(6196%) hue-rotate(343deg) brightness(88%) contrast(118%);
+    position: relative;
+  }
+  .carousel-control-prev-icon{
+    background-image: url('../../assets/icons/navegacao/arrow-left-red.svg') !important;
+    width: 16px;
+    margin-right: 10px;
+  }
+  .carousel-control-next-icon{
+    background-image: url('../../assets/icons/navegacao/arrow-right-red.svg') !important;
+    width: 16px;
+    margin-left: 10px;
+  }
+}
 
 @media(min-width: 760px){
 

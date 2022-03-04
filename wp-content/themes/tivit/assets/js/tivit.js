@@ -67,7 +67,7 @@ if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tban
 
 // Executes after DOM loads
 jQuery(document).ready(function($) {
-
+   // Slider home counter
    var totalItems = $('.heroslide').length;
    var currentIndex = $('.heroslide.active').index() + 1;
 
@@ -86,6 +86,25 @@ jQuery(document).ready(function($) {
       $('.numactive').html( currentIndex );
       $('.numseparation').html('  /  ');
       $('.numtotal').html( totalItems );
+   });
+
+   // Slider Inovação counter
+   var totalItemsInovacao = $('.heroinovacao').length;
+   var currentIndexInovacao = $('.heroinovacao.active').index() + 1;
+
+   $('.numactiveinovacao').html( currentIndexInovacao );
+   $('.numseparationinovacao').html('  /  ');
+   $('.numtotalinovacao').html( totalItemsInovacao );
+
+   $('#recipeCarousel').carousel({
+      interval: 4000
+    });
+
+   $('#recipeCarousel').bind('slid.bs.carousel', function() {
+      currentIndexInovacao = $('.heroinovacao.active').index() + 1;
+      $('.numactiveinovacao').html( currentIndexInovacao );
+      $('.numseparationinovacao').html('  /  ');
+      $('.numtotalinovacao').html( totalItemsInovacao );
    });
    
    
@@ -124,6 +143,24 @@ document.addEventListener("DOMContentLoaded", function(){
          items[i].classList.contains('active')? items[i].classList.remove('active') : ''
       }
   }
+
+   if(window.location.pathname === '/staged/tivit/inovacao' || window.location.pathname === '/staged/tivit/inovacao/'){
+      let items = document.querySelectorAll('.carousel .carousel-item')
+      console.log('this is the pagsse');
+      items.forEach((el) => {
+         const minPerSlide = 4
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
 });
 
 // Add class on scroll
@@ -205,10 +242,7 @@ window.addEventListener('scroll', function() {
       // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
       }
    }
- 
-   if(window.location.pathname === '/staged/tivit/inovacao' || window.location.pathname === '/staged/tivit/inovacao/'){
-      
-   }
+
    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){

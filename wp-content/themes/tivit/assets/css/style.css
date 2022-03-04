@@ -2302,7 +2302,7 @@ html, body, * {
 
 #tivitLabs {
   margin-top: 80px;
-  margin-bottom: 120px; }
+  margin-bottom: 56px; }
   #tivitLabs .subText {
     margin-top: 12px; }
     #tivitLabs .subText p {
@@ -2310,6 +2310,84 @@ html, body, * {
       font-weight: lighter;
       font-size: 18px;
       max-width: 730px; }
+
+#carouselCustom.container {
+  max-width: 1650px !important; }
+
+#carouselCustom {
+  padding-bottom: 192px;
+  /* medium and up screens */ }
+  #carouselCustom .carousel {
+    overflow: hidden;
+    padding: 0; }
+  #carouselCustom .carousel-inner {
+    right: -15%; }
+  #carouselCustom .card {
+    border-color: transparent;
+    margin: 10px; }
+    #carouselCustom .card .card-img img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    #carouselCustom .card .content {
+      border: 1px solid #CAD2D8;
+      padding: 30px;
+      height: 280px; }
+      #carouselCustom .card .content h2 {
+        color: #F20024;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: left; }
+      #carouselCustom .card .content p {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: black;
+        margin-top: 15px;
+        text-align: left; }
+  #carouselCustom .counterInovacao {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #carouselCustom .counterInovacao .numactiveinovacao {
+      color: #F20024;
+      font-weight: 700; }
+    #carouselCustom .counterInovacao .numseparationinovacao, #carouselCustom .counterInovacao .numtotalinovacao {
+      color: #F20024;
+      font-weight: 300; }
+    #carouselCustom .counterInovacao .numseparationinovacao {
+      margin-left: 10px;
+      margin-right: 10px; }
+  @media (max-width: 767px) {
+    #carouselCustom .carousel-inner .carousel-item > div {
+      display: none; }
+    #carouselCustom .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #carouselCustom .carousel-inner .carousel-item.active,
+  #carouselCustom .carousel-inner .carousel-item-next,
+  #carouselCustom .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #carouselCustom .carousel-inner .carousel-item-end.active,
+    #carouselCustom .carousel-inner .carousel-item-next {
+      transform: translateX(25%); }
+    #carouselCustom .carousel-inner .carousel-item-start.active,
+    #carouselCustom .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%); } }
+  #carouselCustom .carousel-inner .carousel-item-end,
+  #carouselCustom .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #carouselCustom .carousel-control-prev, #carouselCustom .carousel-control-next {
+    filter: invert(13%) sepia(99%) saturate(6196%) hue-rotate(343deg) brightness(88%) contrast(118%);
+    position: relative; }
+  #carouselCustom .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 16px;
+    margin-right: 10px; }
+  #carouselCustom .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 16px;
+    margin-left: 10px; }
 
 @media (min-width: 760px) {
   .inovacao-hero {

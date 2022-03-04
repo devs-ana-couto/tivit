@@ -122,6 +122,89 @@
 </div>
 
 <!-- Bloco Carrossel Infinito -->
-
+<div id="carouselCustom" class="container-fluid text-center my-3">
+  <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item heroinovacao active">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-img">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog1.jpg" alt="Blog 1" class="img-fluid w-100">
+                      </div>
+                      <div class="content">
+                        <h2>Produtização</h2>
+                        <p>Desenvolvimento, teste e validação de novas soluções de acordo com as demandas dos clientes e tendências de mercado.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item heroinovacao">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
+                      </div>
+                      <div class="content">
+                        <h2>Meetups</h2>
+                        <p>Realização de eventos e encontros para criar uma comunidade de executivos, profissionais de tecnologia e pesquisadores com ideias e objetivos comuns.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item heroinovacao">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
+                      </div>
+                      <div class="content">
+                        <h2>Hackatons</h2>
+                        <p>Promoção de maratonas de desenvolvimento para resolução de problemas de negócio, geração de novas ideias e compartilhamento de conhecimento junto ao público externo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item heroinovacao">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
+                      </div>
+                      <div class="content">
+                        <h2>Startup</h2>
+                        <p>Aproximação do ecossistema de startups para apresentação e análise de novas propostas de negócio, com potencial de aceleração pela TIVIT.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item heroinovacao">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
+                      </div>
+                      <div class="content">
+                        <h2>Produtização</h2>
+                        <p>Desenvolvimento, teste e validação de novas soluções de acordo com as demandas dos clientes e tendências de mercado.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <div class="d-flex flex-row counterInovacao hide-mobile">
+          <div class="numactiveinovacao"></div><div class="numseparationinovacao"></div><div class="numtotalinovacao"></div>
+        </div>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>
