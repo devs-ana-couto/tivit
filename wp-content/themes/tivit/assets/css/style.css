@@ -3008,4 +3008,8 @@ html, body, * {
       .contato-formulario .quebra .aceite span {
         width: 100%; }
         .contato-formulario .quebra .aceite span label input {
-          width: 5%; } }
+          width: 5%; }
+  .contato-canais h2 {
+    width: 506px; }
+  .contato-canais .borda {
+    height: 131px; } }
