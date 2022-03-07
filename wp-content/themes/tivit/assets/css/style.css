@@ -1505,26 +1505,26 @@ html, body, * {
     .a-tivit-experts .a-tivit-experts-desc p {
       margin-bottom: 0; }
 
-#esg {
+.esg {
   margin-top: 50px; }
-  #esg .lp-tbanks-confira .lp-tbanks-confira-content {
+  .esg .lp-tbanks-confira .lp-tbanks-confira-content {
     padding: 30px; }
-  #esg .lp-tbanks-confira .lp-tdx-confira-bg-right {
+  .esg .lp-tbanks-confira .lp-tdx-confira-bg-right {
     background-color: #454D54; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
       font-size: 30px;
       line-height: 40px; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
       font-size: 24px;
       line-height: 28px; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right p {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right p {
       font-size: 18px;
       line-height: 24px;
       width: 320px;
       margin: 0 auto; }
-  #esg .lp-tbanks-confira .col-md-6 {
+  .esg .lp-tbanks-confira .col-md-6 {
     justify-content: unset; }
-  #esg .navigation {
+  .esg .navigation {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -1534,26 +1534,26 @@ html, body, * {
     left: 0;
     margin: 0 auto;
     width: 110px; }
-    #esg .navigation a {
+    .esg .navigation a {
       color: white; }
-    #esg .navigation .carousel-indicators {
+    .esg .navigation .carousel-indicators {
       top: 25px;
       margin: 0; }
-      #esg .navigation .carousel-indicators button {
+      .esg .navigation .carousel-indicators button {
         height: 1px;
         margin-left: 0;
         margin-right: 0; }
-    #esg .navigation .counter2 {
+    .esg .navigation .counter2 {
       margin-left: 27px;
       margin-right: 27px;
       z-index: 1; }
-      #esg .navigation .counter2 .numactive2 {
+      .esg .navigation .counter2 .numactive2 {
         color: white;
         font-weight: 700; }
-      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+      .esg .navigation .counter2 .numseparation2, .esg .navigation .counter2 .numtotal2 {
         color: white;
         font-weight: 300; }
-      #esg .navigation .counter2 .numseparation2 {
+      .esg .navigation .counter2 .numseparation2 {
         margin-left: 5px;
         margin-right: 5px; }
 
@@ -1729,20 +1729,20 @@ html, body, * {
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
 
-  #esg .row > * {
+  .esg .row > * {
     padding-left: 0;
     padding-right: 0 !important; }
-  #esg .lp-tbanks-confira.lp-tdx {
+  .esg .lp-tbanks-confira.lp-tdx {
     background-color: #454D54; }
-    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
+    .esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
       font-size: 48px;
       line-height: 54px; }
-    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+    .esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
       background-color: unset;
       padding: 50px 40px 50px 40px; }
-    #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
+    .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
       display: unset; }
-      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
+      .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
         height: 599px;
         display: flex;
         align-items: flex-end;
@@ -1750,19 +1750,19 @@ html, body, * {
         text-align: right;
         padding-right: 50px;
         padding-bottom: 60px; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
+        .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
           font-size: 36px;
           line-height: 42px;
           font-weight: 700; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
+        .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
           width: 419px;
           margin: 0 auto;
           color: white;
           max-width: 100%; }
-      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
+      .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
         background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
         background-size: cover; }
-  #esg .navigation {
+  .esg .navigation {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -1772,26 +1772,26 @@ html, body, * {
     right: unset;
     margin: 0 auto;
     width: 110px; }
-    #esg .navigation a {
+    .esg .navigation a {
       color: white; }
-    #esg .navigation .carousel-indicators {
+    .esg .navigation .carousel-indicators {
       top: 25px;
       margin: 0; }
-      #esg .navigation .carousel-indicators button {
+      .esg .navigation .carousel-indicators button {
         height: 1px;
         margin-left: 0;
         margin-right: 0; }
-    #esg .navigation .counter2 {
+    .esg .navigation .counter2 {
       margin-left: 27px;
       margin-right: 27px;
       z-index: 1; }
-      #esg .navigation .counter2 .numactive2 {
+      .esg .navigation .counter2 .numactive2 {
         color: white;
         font-weight: 700; }
-      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+      .esg .navigation .counter2 .numseparation2, .esg .navigation .counter2 .numtotal2 {
         color: white;
         font-weight: 300; }
-      #esg .navigation .counter2 .numseparation2 {
+      .esg .navigation .counter2 .numseparation2 {
         margin-left: 5px;
         margin-right: 5px; }
 
@@ -2430,8 +2430,7 @@ html, body, * {
       transition: .2s all; }
 
 #tdx {
-  margin-bottom: 125px;
-  margin-top: 25px; }
+  margin-bottom: 125px; }
   #tdx .subtitle {
     max-width: 625px;
     margin-top: 25px; }
