@@ -1456,13 +1456,17 @@ html, body, * {
     .a-tivit-inovacao .card .card-content {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      transition: 1.2s; }
+      .a-tivit-inovacao .card .card-content p, .a-tivit-inovacao .card .card-content img {
+        transition: 1.2s; }
       .a-tivit-inovacao .card .card-content a {
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
-        margin-top: 20px; }
+        margin-top: 20px;
+        transition: 1.2s; }
         .a-tivit-inovacao .card .card-content a:hover {
           color: #F20024; }
   .a-tivit-inovacao .botao {
@@ -1684,7 +1688,7 @@ html, body, * {
           margin-top: -65px;
           mix-blend-mode: unset; }
         .a-tivit-inovacao .card:hover a, .a-tivit-inovacao .card:hover p, .a-tivit-inovacao .card:hover .card-content.card1, .a-tivit-inovacao .card:hover .card-content.card2, .a-tivit-inovacao .card:hover .card {
-          transition: 2s;
+          transition: 1.2s;
           opacity: 1; }
       .a-tivit-inovacao .card p {
         font-size: 16px;

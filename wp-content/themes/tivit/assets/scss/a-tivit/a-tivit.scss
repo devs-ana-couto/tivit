@@ -225,12 +225,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: 1.2s;
+            p, img{
+                transition: 1.2s;
+            }
             a{
                 font-size: 14px;
                 font-weight: bold;
                 text-transform: uppercase;
                 text-decoration: none;
                 margin-top: 20px;
+                transition: 1.2s;
                 &:hover{
                     color: $vermelho-tivit;
                 }
@@ -547,7 +552,7 @@
                     mix-blend-mode: unset;
                 }
                 a, p, .card-content.card1, .card-content.card2, .card{
-                    transition: 2s;
+                    transition: 1.2s;
                     opacity: 1;
                 }
             }
