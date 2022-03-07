@@ -20,7 +20,9 @@
             a{
                 border: solid 1px transparent;
                 padding: 0;
+                text-transform: initial;
                 text-decoration: none;
+                font-weight: 400;
             }
         }
     }
@@ -111,8 +113,8 @@
     height: 100%!important;
     .title{
         h2{
-            font-size: 28px;
-            line-height: 34px;
+            font-size: 24px;
+            line-height: 30px;
             font-weight: 700;
             margin-bottom: 38px;
             color: $cinza-dark-cyber-tivit;
@@ -295,6 +297,7 @@
 // Carousel
 #esg{
     margin-top: 50px;
+
     .lp-tbanks-confira {
 
         .lp-tbanks-confira-content{
@@ -409,7 +412,7 @@
         position: relative;
 
         .a-tivit-hero-title{
-            margin-top: 196px;
+            margin-top: 18%;
             h1{
                font-size: 14px;
                line-height: 21.29px;
@@ -506,7 +509,7 @@
                 padding: 20px 10px;
                 width: 160px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
             }
         }
     }
@@ -599,6 +602,7 @@
     }
    
     #esg{
+        background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important;
         .row > *{
             padding-left: 0;
             padding-right: 0!important;
@@ -656,7 +660,7 @@
             bottom: 36px;
             left: 30px;
             right: unset;
-            margin: 0 auto;
+            margin: 0 0 0 30px;
             width: 110px;
             a{
               color: white;
