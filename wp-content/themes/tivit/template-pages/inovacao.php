@@ -207,4 +207,291 @@
   </div>
 </div>
 
+<!-- Bloco CTA Tour -->
+<div id="tour">
+  <div class="image-background position-relative">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100">
+    <!-- <div class="position-absolute w-100">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/maskinovation.svg" alt="mask" class="img-fluid w-100">
+    </div> -->
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 txt position-absolute">
+      <h2 class="textLabs">
+        Conheça o LABS
+      </h2>
+      <p>
+        Faça um tour 3D na nossa incubadora de ideias!
+      </p>
+      <a>
+        começar o tour
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Bloco de labs -->
+<!-- <div id="esg" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="container">
+    <div class="row">
+      <div class="lp-tbanks-confira lp-tdx">
+
+        <div id="triangle-down"></div>
+
+        <div class="carousel-inner">
+        
+          <div class="row">
+            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
+              <div class="lp-tbanks-confira-content">
+                <h3>
+                <strong>ESG:</strong></br>
+                sustentabilidade, diversidade e responsabilidade.
+              </h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+
+              <div class="carousel-item heroslide2 active">
+                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>MASP SP</h2>
+                    <p class="paragrafo3">
+                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div>
+              </div>
+
+              <div class="carousel-item heroslide2">
+                <div class="col-12 lp-tbanks-confira-bg-left  hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>MASP SP</h2>
+                    <p class="paragrafo3">
+                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div>
+              </div>
+
+              <div class="carousel-item heroslide2">
+                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>MASP SP</h2>
+                    <p class="paragrafo3">
+                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="navigation">
+                <button class="carousel-control-prev" type="button" data-bs-target="#esg" data-bs-slide="prev">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+                </button>
+                <div class="d-flex flex-row counter2">
+                  <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#esg" data-bs-slide="next">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+                </button>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="1" aria-label="Content 2"></button>
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="2" aria-label="Content 3"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- TDX -->
+<div id="tdx">
+  <div class="container">
+    <div class="w-100 text-center m-auto">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tdx.svg" alt="tdx">
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column w-100">
+      <p class="subtitle text-center"> 
+        Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
+      </p>
+    </div>
+    <div class="row mt-2">
+      <div class="col-sm-12 col-md-3">
+        <div class="box">
+          <div class="w-100">
+            <div class="w-100 m-auto text-center">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icodesign.svg" alt="design">
+            </div>
+            <h2>
+              Design, Produtos e Plataformas
+            </h2>
+            <p>
+              Ampliamos horizontes e garantimos a travessia do início ao fim da jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="box">
+          <div class="w-100">
+            <div class="w-100 m-auto text-center">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icografico.svg" alt="grafico">
+            </div>
+            <h2>
+              Data & Analytics
+            </h2>
+            <p>
+              Democratizamos tecnologias e inovações do mercado em contextos reais.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="box">
+          <div class="w-100">
+            <div class="w-100 m-auto text-center">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
+            </div>
+            <h2>
+              Modernização e Otimização de Legado
+            </h2>
+            <p>
+              Mudar é difícil, contudo, para tornar o processo simples, apoiamos e direcionamos pessoas e negócios durante toda a jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="box">
+          <div class="w-100">
+            <div class="w-100 m-auto text-center">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icogrow.svg" alt="grow">
+            </div>
+            <h2>
+              Sustentação e Crescimento
+            </h2>
+            <p>
+              Oferecemos serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta w-100 d-flex align-items-center justify-content-center">
+      <a class="button">CONHEÇA A TDX</a>
+    </div>
+  </div>
+</div>
+
+<!-- Bloco de Conteúdos -->
+<div class="home-content content-inovacao">
+  <div class="container pd">
+    <div class="title">
+      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+    </div>
+    <div class="row">
+      <!-- content 1 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1"> 
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 1 -->
+
+      <!-- content 2 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 2 -->
+      <!-- content 3 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row align-items-center">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 3 -->
+    </div>
+  </div>
+</div>
+
 <?php get_footer(); ?>
