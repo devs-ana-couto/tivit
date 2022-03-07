@@ -146,10 +146,21 @@
     }
 }
 
-// // Canais
-// .contato-canais{
-
-// }
+// Canais
+.contato-canais{
+    background: $cinza-dark-cyber-tivit;
+    padding: 60px 0;
+    h2{
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 322px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 
 // Desktop
 @media(min-width: 760px){

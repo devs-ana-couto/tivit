@@ -2917,6 +2917,19 @@ html, body, * {
   border-right: 48.84px solid transparent;
   border-top: 40px solid #262626; }
 
+.contato-canais {
+  background: #262626;
+  padding: 60px 0; }
+  .contato-canais h2 {
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 322px;
+    margin: 0 auto;
+    text-align: center; }
+
 @media (min-width: 760px) {
   .contato-hero {
     background: url("../../assets/images/contato/banner.png") no-repeat center center;
