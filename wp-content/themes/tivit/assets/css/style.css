@@ -1294,7 +1294,9 @@ html, body, * {
     .a-tivit-hero .a-tivit-hero-title .botao a {
       border: solid 1px transparent;
       padding: 0;
-      text-decoration: none; }
+      text-transform: initial;
+      text-decoration: none;
+      font-weight: 400; }
   .a-tivit-hero .a-tivit-hero-content h2 {
     font-size: 34px;
     line-height: 34px;
@@ -1364,8 +1366,8 @@ html, body, * {
   background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important;
   height: 100% !important; }
   .a-tivit-cases.ctivit .title h2 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
     margin-bottom: 38px;
     color: #262626;
@@ -1585,7 +1587,7 @@ html, body, * {
     height: 100vh;
     position: relative; }
     .a-tivit-hero .a-tivit-hero-title {
-      margin-top: 196px; }
+      margin-top: 18%; }
       .a-tivit-hero .a-tivit-hero-title h1 {
         font-size: 14px;
         line-height: 21.29px;
@@ -1655,7 +1657,7 @@ html, body, * {
       padding: 20px 10px;
       width: 160px;
       display: flex;
-      justify-content: center; }
+      justify-content: flex-start; }
   .a-tivit-inovacao {
     padding: 100px 0 30px 0; }
     .a-tivit-inovacao .content {
@@ -1721,71 +1723,73 @@ html, body, * {
       margin: 0 auto; }
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
-  #esg .row > * {
-    padding-left: 0;
-    padding-right: 0 !important; }
-  #esg .lp-tbanks-confira.lp-tdx {
-    background-color: #454D54; }
-    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
-      font-size: 48px;
-      line-height: 54px; }
-    #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
-      background-color: unset;
-      padding: 50px 40px 50px 40px; }
-    #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
-      display: unset; }
-      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
-        height: 599px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        text-align: right;
-        padding-right: 50px;
-        padding-bottom: 60px; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
-          font-size: 36px;
-          line-height: 42px;
-          font-weight: 700; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
-          width: 419px;
-          margin: 0 auto;
+  #esg {
+    background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important; }
+    #esg .row > * {
+      padding-left: 0;
+      padding-right: 0 !important; }
+    #esg .lp-tbanks-confira.lp-tdx {
+      background-color: #454D54; }
+      #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
+        font-size: 48px;
+        line-height: 54px; }
+      #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+        background-color: unset;
+        padding: 50px 40px 50px 40px; }
+      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
+        display: unset; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
+          height: 599px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          text-align: right;
+          padding-right: 50px;
+          padding-bottom: 60px; }
+          #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 700; }
+          #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
+            width: 419px;
+            margin: 0 auto;
+            color: white;
+            max-width: 100%; }
+        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
+          background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
+          background-size: cover; }
+    #esg .navigation {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      bottom: 36px;
+      left: 30px;
+      right: unset;
+      margin: 0 0 0 30px;
+      width: 110px; }
+      #esg .navigation a {
+        color: white; }
+      #esg .navigation .carousel-indicators {
+        top: 25px;
+        margin: 0; }
+        #esg .navigation .carousel-indicators button {
+          height: 1px;
+          margin-left: 0;
+          margin-right: 0; }
+      #esg .navigation .counter2 {
+        margin-left: 27px;
+        margin-right: 27px;
+        z-index: 1; }
+        #esg .navigation .counter2 .numactive2 {
           color: white;
-          max-width: 100%; }
-      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
-        background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
-        background-size: cover; }
-  #esg .navigation {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    bottom: 36px;
-    left: 30px;
-    right: unset;
-    margin: 0 0 0 30px;
-    width: 110px; }
-    #esg .navigation a {
-      color: white; }
-    #esg .navigation .carousel-indicators {
-      top: 25px;
-      margin: 0; }
-      #esg .navigation .carousel-indicators button {
-        height: 1px;
-        margin-left: 0;
-        margin-right: 0; }
-    #esg .navigation .counter2 {
-      margin-left: 27px;
-      margin-right: 27px;
-      z-index: 1; }
-      #esg .navigation .counter2 .numactive2 {
-        color: white;
-        font-weight: 700; }
-      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
-        color: white;
-        font-weight: 300; }
-      #esg .navigation .counter2 .numseparation2 {
-        margin-left: 5px;
-        margin-right: 5px; }
+          font-weight: 700; }
+        #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+          color: white;
+          font-weight: 300; }
+        #esg .navigation .counter2 .numseparation2 {
+          margin-left: 5px;
+          margin-right: 5px; }
   .a-tivit-certificacoes {
     background: rgba(202, 210, 216, 0.2); }
     .a-tivit-certificacoes .desc {
@@ -1812,14 +1816,15 @@ html, body, * {
   display: flex;
   flex-direction: column; }
   .cases-hero .cases-hero-title {
-    margin: 0 auto; }
+    margin: 18% auto 0 auto; }
     .cases-hero .cases-hero-title h1 {
-      margin-top: 162px;
       font-size: 16px;
       line-height: 22px;
       font-weight: bold;
       color: #fff;
       text-transform: uppercase; }
+    .cases-hero .cases-hero-title h2 {
+      font-weight: 400; }
   .cases-hero .cases-hero-content h2 {
     font-size: 34px;
     line-height: 34px;
@@ -2042,16 +2047,14 @@ html, body, * {
     .cases-hero .cases-hero-title h1, .cases-hero .cases-hero-title h2 {
       text-align: center;
       color: white; }
-    .cases-hero .cases-hero-title h1 {
-      margin-top: 243px; }
   .cases-depoimentos .img {
     margin-top: 0; }
   .cases-depoimentos .depoimento p {
-    width: 1092px;
+    width: 798px;
     max-width: 100%;
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 700; }
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 300; }
   .a-tivit-cases.cases {
     height: 580px; }
     .a-tivit-cases.cases .autor-time {
@@ -2086,12 +2089,16 @@ html, body, * {
       .a-tivit-cases.cases .acessar a {
         color: #F20024;
         border: none;
-        width: 101px;
+        width: 160px;
         padding-left: 0;
-        margin-left: 0; }
+        margin-left: 0;
+        display: flex;
+        align-items: center; }
         .a-tivit-cases.cases .acessar a:hover {
           color: #F20024;
           background: none; }
+        .a-tivit-cases.cases .acessar a img {
+          height: 16px; }
     .a-tivit-cases.cases .detalhes {
       width: 480.36px;
       margin-top: 160px; }
@@ -2822,14 +2829,15 @@ html, body, * {
   display: flex;
   flex-direction: column; }
   .contato-hero .contato-hero-title {
-    margin: 0 auto; }
+    margin: 18% auto 0 auto; }
     .contato-hero .contato-hero-title h1 {
-      margin-top: 162px;
       font-size: 16px;
       line-height: 22px;
       font-weight: bold;
       color: #fff;
       text-transform: uppercase; }
+    .contato-hero .contato-hero-title h2 {
+      font-weight: 400; }
   .contato-hero .contato-hero-content h2 {
     font-size: 34px;
     line-height: 34px;
@@ -2925,14 +2933,14 @@ html, body, * {
     .contato-hero .contato-hero-title h1, .contato-hero .contato-hero-title h2 {
       text-align: center;
       color: white; }
-    .contato-hero .contato-hero-title h1 {
-      margin-top: 243px; }
-  .contato-intro p {
-    font-size: 48px;
-    line-height: 54px;
-    text-align: center;
-    max-width: 830px;
-    margin: 0 auto; }
+  .contato-intro {
+    margin-top: 50px; }
+    .contato-intro p {
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      max-width: 551px;
+      margin: 0 auto; }
   .contato-formulario {
     width: 829px;
     margin: 0 auto; }

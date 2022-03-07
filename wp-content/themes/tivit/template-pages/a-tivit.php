@@ -101,11 +101,11 @@
                 <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
               </div>
               <div class="tag">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
+                <a>conta híbrida</a>
+                <a>varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -120,11 +120,11 @@
                 <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
               </div>
               <div class="tag">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
+                <a>conta híbrida</a>
+                <a>varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -139,11 +139,11 @@
                 <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
               </div>
               <div class="tag">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
+                <a>conta híbrida</a>
+                <a>varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -158,11 +158,11 @@
                 <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
               </div>
               <div class="tag">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
+                <a>conta híbrida</a>
+                <a>varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -207,7 +207,8 @@
 
         <div class="row">
 
-          <div class="col-12 col-md-6">
+          <div class="col-md-1"></div>
+          <div class="col-12 col-md-5">
             <div class="card">
               <div class="card-content card1">
                 <p class="hide-mobile">O TIVIT Labs é o hub de inovação da TIVIT.</p>
@@ -217,7 +218,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-5">
             <div class="card">
               <div class="card-content card2">
                 <p class="hide-mobile">A Ventures é a vertical de investimentos e aquisições da TIVIT.</p>
@@ -411,7 +412,7 @@
 
               </div>
 
-            </div>
+            </div> 
 
             <div class="col-12 col-md-6">
               <div class="navigation">
@@ -487,5 +488,6 @@
     </div>
   </div>
 </div>
+
 
 <?php get_footer(); ?>
