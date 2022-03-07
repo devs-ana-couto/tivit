@@ -860,15 +860,15 @@ html, body, * {
 
 .home-pessoas-e-carreiras {
   background: url("../../assets/images/home/carreiras-mobile.png") no-repeat center center;
-  height: 350px;
+  height: 381px;
   margin-bottom: 38px;
   background-size: cover; }
   .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title {
-    margin-top: 187px; }
+    margin-top: 152px; }
     .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title h2 {
-      font-size: 36px;
+      font-size: 24px;
       line-height: 28px;
-      font-weight: 600;
+      font-weight: bold;
       text-transform: uppercase;
       text-align: center;
       color: white;
@@ -884,7 +884,8 @@ html, body, * {
       font-weight: 600;
       text-transform: uppercase;
       font-size: 16px;
-      transition: all .2s linear; }
+      transition: all .2s linear;
+      padding: unset; }
       .home-pessoas-e-carreiras .botao a img {
         margin-left: 10px;
         margin-bottom: 2px; }
@@ -2829,7 +2830,7 @@ html, body, * {
   display: flex;
   flex-direction: column; }
   .contato-hero .contato-hero-title {
-    margin: 18% auto 0 auto; }
+    margin: 162px auto 0 auto; }
     .contato-hero .contato-hero-title h1 {
       font-size: 16px;
       line-height: 22px;
@@ -2930,9 +2931,11 @@ html, body, * {
     background: url("../../assets/images/contato/banner.png") no-repeat center center;
     background-size: cover;
     height: 100vh; }
-    .contato-hero .contato-hero-title h1, .contato-hero .contato-hero-title h2 {
-      text-align: center;
-      color: white; }
+    .contato-hero .contato-hero-title {
+      margin: 18% auto 0 auto; }
+      .contato-hero .contato-hero-title h1, .contato-hero .contato-hero-title h2 {
+        text-align: center;
+        color: white; }
   .contato-intro {
     margin-top: 50px; }
     .contato-intro p {
