@@ -1821,7 +1821,7 @@ html, body, * {
   display: flex;
   flex-direction: column; }
   .cases-hero .cases-hero-title {
-    margin: 18% auto 0 auto; }
+    margin: 162px auto 0 auto; }
     .cases-hero .cases-hero-title h1 {
       font-size: 16px;
       line-height: 22px;
@@ -3017,3 +3017,10 @@ html, body, * {
     width: 506px; }
   .contato-canais .borda {
     height: 131px; } }
+
+.a-tivit-cases.cases.conteudos {
+  background: url("../../assets/images/conteudos/banner.png") no-repeat center center;
+  margin-top: 0;
+  background-size: cover; }
+  .a-tivit-cases.cases.conteudos .carousel-inner {
+    height: 580px; }

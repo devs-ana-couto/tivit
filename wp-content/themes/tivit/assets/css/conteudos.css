@@ -1,0 +1,6 @@
+.a-tivit-cases.cases.conteudos {
+  background: url("../../assets/images/conteudos/banner.png") no-repeat center center;
+  margin-top: 0;
+  background-size: cover; }
+  .a-tivit-cases.cases.conteudos .carousel-inner {
+    height: 580px; }
