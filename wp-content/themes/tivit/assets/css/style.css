@@ -2928,7 +2928,7 @@ html, body, * {
 
 .contato-canais {
   background: #262626;
-  padding: 60px 0; }
+  padding: 70px 0; }
   .contato-canais h2 {
     color: white;
     font-size: 24px;
@@ -2936,8 +2936,36 @@ html, body, * {
     font-weight: bold;
     text-transform: uppercase;
     width: 322px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     text-align: center; }
+  .contato-canais .borda {
+    border: 1px solid white;
+    height: 80px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contato-canais .borda .contato-canais-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .contato-canais .borda .contato-canais-item p {
+        display: flex;
+        font-size: 14px;
+        color: white;
+        margin: 0;
+        text-transform: uppercase; }
+        .contato-canais .borda .contato-canais-item p img:first-child {
+          margin-right: 8px; }
+        .contato-canais .borda .contato-canais-item p img:last-child {
+          margin-left: 8px; }
+  .contato-canais .borda.socials img {
+    height: 35px;
+    width: 35px;
+    margin-right: 30px; }
+    .contato-canais .borda.socials img:last-child {
+      margin-right: 0; }
 
 @media (min-width: 760px) {
   .contato-hero {

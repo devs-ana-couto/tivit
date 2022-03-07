@@ -73,8 +73,19 @@
       <div class="col-12">
         <h2>ou entre em contato pelos nossos canais:</h2>
       </div>
-      <div class="col-12 col-md-6"></div>
-      <div class="col-12 col-md-6"></div>
+      <div class="col-12 col-md-6">
+        <div class="borda">
+          <div class="contato-canais-item">
+            <p><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/phone.svg" alt="Telefone"> +55 (11) 3757-2222</p>
+            <p><strong>Ligar</strong> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/arrow_forward.svg" alt="Ligar"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="borda socials">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Ligar">
+        </div>
+      </div>
     </div>
   </div>
 </div>
