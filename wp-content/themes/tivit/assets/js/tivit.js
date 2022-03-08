@@ -109,25 +109,6 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
-   // // Slider Inovação counter
-   // var totalItemsInovacao = $('.heroinovacao').length;
-   // var currentIndexInovacao = $('.heroinovacao.active').index() + 1;
-
-   // $('.numactiveinovacao').html( currentIndexInovacao );
-   // $('.numseparationinovacao').html('  /  ');
-   // $('.numtotalinovacao').html( totalItemsInovacao );
-
-   // $('#recipeCarousel').carousel({
-   //    interval: 4000
-   //  });
-
-   // $('#recipeCarousel').bind('slid.bs.carousel', function() {
-   //    currentIndexInovacao = $('.heroinovacao.active').index() + 1;
-   //    $('.numactiveinovacao').html( currentIndexInovacao );
-   //    $('.numseparationinovacao').html('  /  ');
-   //    $('.numtotalinovacao').html( totalItemsInovacao );
-   // });   
-
 })
 
 // JS executes after DOM loads
