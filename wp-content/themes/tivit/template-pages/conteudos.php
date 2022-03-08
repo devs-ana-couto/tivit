@@ -29,11 +29,11 @@
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">
-                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                  <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
                 </div>
               </div>
               <div class="content">
-                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
@@ -48,11 +48,11 @@
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">
-                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                  <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
                 </div>
               </div>
               <div class="content">
-                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
@@ -67,11 +67,11 @@
             <div class="col-12 col-md-6">
               <div class="detalhes">
                 <div class="autor-time">
-                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                  <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
                 </div>
               </div>
               <div class="content">
-                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
