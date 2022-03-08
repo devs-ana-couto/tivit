@@ -7,8 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1><?=get_post_meta( get_the_ID(), 'inovacao_pre-chamada', true );?></h1>
-          <h2 class="hide-mobile"><?=get_post_meta( get_the_ID(), 'inovacao_chamada', true );?></h2>
+          <h1>INOVAÇÃO</h1>
+          <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
         </div>
       </div>
     </div>
