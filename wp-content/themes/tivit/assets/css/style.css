@@ -14,11 +14,11 @@ html, body, * {
       display: none !important; } }
   html h1, body h1, * h1 {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 91.26px; }
   html h2, body h2, * h2 {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 54px; }
   html h3, body h3, * h3 {
     font-size: 36px;
@@ -135,7 +135,8 @@ html, body, * {
     border: 1px solid transparent;
     border-radius: 50px;
     padding: 0px 15px 0px 15px;
-    transition: all .15s linear; }
+    transition: all .15s linear;
+    margin: 4px; }
   .header .header-menu ul li:hover {
     border-color: white;
     transition: all .2s linear; }
@@ -318,6 +319,7 @@ html, body, * {
       border: 1px solid transparent;
       border-radius: 50px;
       padding: 0px 15px 0px 15px;
+      margin: 4px;
       transition: all .15s linear; }
       .footer .footer-menu ul li:hover {
         border-color: #454D54;
@@ -1510,26 +1512,26 @@ html, body, * {
     .a-tivit-experts .a-tivit-experts-desc p {
       margin-bottom: 0; }
 
-#esg {
+.esg {
   margin-top: 50px; }
-  #esg .lp-tbanks-confira .lp-tbanks-confira-content {
+  .esg .lp-tbanks-confira .lp-tbanks-confira-content {
     padding: 30px; }
-  #esg .lp-tbanks-confira .lp-tdx-confira-bg-right {
+  .esg .lp-tbanks-confira .lp-tdx-confira-bg-right {
     background-color: #454D54; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right h3 {
       font-size: 30px;
       line-height: 40px; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right h2 {
       font-size: 24px;
       line-height: 28px; }
-    #esg .lp-tbanks-confira .lp-tdx-confira-bg-right p {
+    .esg .lp-tbanks-confira .lp-tdx-confira-bg-right p {
       font-size: 18px;
       line-height: 24px;
       width: 320px;
       margin: 0 auto; }
-  #esg .lp-tbanks-confira .col-md-6 {
+  .esg .lp-tbanks-confira .col-md-6 {
     justify-content: unset; }
-  #esg .navigation {
+  .esg .navigation {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -1539,26 +1541,26 @@ html, body, * {
     left: 0;
     margin: 0 auto;
     width: 110px; }
-    #esg .navigation a {
+    .esg .navigation a {
       color: white; }
-    #esg .navigation .carousel-indicators {
+    .esg .navigation .carousel-indicators {
       top: 25px;
       margin: 0; }
-      #esg .navigation .carousel-indicators button {
+      .esg .navigation .carousel-indicators button {
         height: 1px;
         margin-left: 0;
         margin-right: 0; }
-    #esg .navigation .counter2 {
+    .esg .navigation .counter2 {
       margin-left: 27px;
       margin-right: 27px;
       z-index: 1; }
-      #esg .navigation .counter2 .numactive2 {
+      .esg .navigation .counter2 .numactive2 {
         color: white;
         font-weight: 700; }
-      #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+      .esg .navigation .counter2 .numseparation2, .esg .navigation .counter2 .numtotal2 {
         color: white;
         font-weight: 300; }
-      #esg .navigation .counter2 .numseparation2 {
+      .esg .navigation .counter2 .numseparation2 {
         margin-left: 5px;
         margin-right: 5px; }
 
@@ -1728,22 +1730,22 @@ html, body, * {
       margin: 0 auto; }
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
-  #esg {
+  .esg {
     background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important; }
-    #esg .row > * {
+    .esg .row > * {
       padding-left: 0;
       padding-right: 0 !important; }
-    #esg .lp-tbanks-confira.lp-tdx {
+    .esg .lp-tbanks-confira.lp-tdx {
       background-color: #454D54; }
-      #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
+      .esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-content h3 {
         font-size: 48px;
         line-height: 54px; }
-      #esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
+      .esg .lp-tbanks-confira.lp-tdx .lp-tbanks-confira-bg-right.lp-tdx-confira-bg-right {
         background-color: unset;
         padding: 50px 40px 50px 40px; }
-      #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
+      .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 {
         display: unset; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
+        .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left {
           height: 599px;
           display: flex;
           align-items: flex-end;
@@ -1751,19 +1753,19 @@ html, body, * {
           text-align: right;
           padding-right: 50px;
           padding-bottom: 60px; }
-          #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
+          .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
             font-size: 36px;
             line-height: 42px;
             font-weight: 700; }
-          #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
+          .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
             width: 419px;
             margin: 0 auto;
             color: white;
             max-width: 100%; }
-        #esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
+        .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .slide1 {
           background: url("../../assets/images/a-tivit/slider-02.png") no-repeat;
           background-size: cover; }
-    #esg .navigation {
+    .esg .navigation {
       position: absolute;
       display: flex;
       flex-direction: row;
@@ -1773,26 +1775,26 @@ html, body, * {
       right: unset;
       margin: 0 0 0 30px;
       width: 110px; }
-      #esg .navigation a {
+      .esg .navigation a {
         color: white; }
-      #esg .navigation .carousel-indicators {
+      .esg .navigation .carousel-indicators {
         top: 25px;
         margin: 0; }
-        #esg .navigation .carousel-indicators button {
+        .esg .navigation .carousel-indicators button {
           height: 1px;
           margin-left: 0;
           margin-right: 0; }
-      #esg .navigation .counter2 {
+      .esg .navigation .counter2 {
         margin-left: 27px;
         margin-right: 27px;
         z-index: 1; }
-        #esg .navigation .counter2 .numactive2 {
+        .esg .navigation .counter2 .numactive2 {
           color: white;
           font-weight: 700; }
-        #esg .navigation .counter2 .numseparation2, #esg .navigation .counter2 .numtotal2 {
+        .esg .navigation .counter2 .numseparation2, .esg .navigation .counter2 .numtotal2 {
           color: white;
           font-weight: 300; }
-        #esg .navigation .counter2 .numseparation2 {
+        .esg .navigation .counter2 .numseparation2 {
           margin-left: 5px;
           margin-right: 5px; }
   .a-tivit-certificacoes {
@@ -2194,6 +2196,338 @@ html, body, * {
           background: transparent; }
           .cases-recentes .filtros .select select option {
             color: black; } }
+
+.inovacao-hero {
+  height: 580px;
+  background: url("../../assets/images/inovacao/banner-mobile.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .inovacao-hero .inovacao-hero-title {
+    margin: 0 auto; }
+    .inovacao-hero .inovacao-hero-title h1 {
+      margin-top: 162px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase; }
+    .inovacao-hero .inovacao-hero-title h2 {
+      font-weight: 500 !important; }
+  .inovacao-hero .inovacao-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+  .inovacao-hero .botao {
+    margin-bottom: 30px; }
+    .inovacao-hero .botao a {
+      background: transparent;
+      color: #F20024;
+      border: solid 1px #F20024; }
+  .inovacao-hero .arrow {
+    margin-top: 0; }
+
+.inovacao-intro {
+  position: relative;
+  margin-top: 121px;
+  margin-bottom: 121px; }
+  .inovacao-intro p {
+    font-size: 36px;
+    line-height: 42px;
+    color: #262626;
+    font-weight: 500;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto; }
+    .inovacao-intro p span {
+      font-weight: 600;
+      color: #F20024; }
+
+#ventures {
+  background: #F4F6F7;
+  padding-top: 128px;
+  padding-bottom: 105px;
+  position: relative; }
+  #ventures h2 {
+    color: #262626;
+    font-weight: 600;
+    font-size: 36px; }
+  #ventures p {
+    color: #262626;
+    font-weight: lighter;
+    font-size: 18px;
+    max-width: 860px; }
+  #ventures .textAbove > p {
+    color: #262626;
+    font-weight: lighter;
+    font-size: 24px !important;
+    max-width: 860px; }
+  #ventures .aboveBlock {
+    margin-top: 133px; }
+  #ventures div.box {
+    padding: 35px;
+    border: 1px solid #CAD2D8;
+    height: 200px; }
+    #ventures div.box img {
+      -webkit-filter: grayscale(1);
+      /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1);
+      /* Microsoft Edge and Firefox 35+ */
+      width: 200px;
+      transition: all .2s; }
+      #ventures div.box img:hover {
+        -webkit-filter: grayscale(0);
+        /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(0);
+        /* Microsoft Edge and Firefox 35+ */
+        transition: all .2s; }
+  #ventures .services {
+    flex-wrap: wrap; }
+    #ventures .services em {
+      color: #F20024;
+      font-size: 36px;
+      font-weight: 500;
+      font-style: normal;
+      margin-right: 50px; }
+  #ventures a.button {
+    background: #F20024;
+    font-size: 14px;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid #F20024;
+    text-decoration: unset;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s; }
+    #ventures a.button:hover {
+      background: white;
+      color: black;
+      border: 1px solid #F20024;
+      transition: all .2s; }
+  #ventures #triangle-down {
+    border-top: 40px solid #F4F6F7 !important;
+    position: absolute;
+    right: 48%;
+    bottom: -10px; }
+
+#tivitLabs {
+  margin-top: 80px;
+  margin-bottom: 56px; }
+  #tivitLabs .subText {
+    margin-top: 12px; }
+    #tivitLabs .subText p {
+      color: #262626;
+      font-weight: lighter;
+      font-size: 18px;
+      max-width: 730px; }
+
+#carouselCustom.container {
+  max-width: 1650px !important; }
+
+#carouselCustom {
+  padding-bottom: 120px;
+  /* medium and up screens */ }
+  #carouselCustom .carousel {
+    overflow: hidden;
+    padding: 0; }
+  #carouselCustom .carousel-inner {
+    right: -13%; }
+  #carouselCustom .card {
+    border-color: transparent;
+    margin: 10px; }
+    #carouselCustom .card .card-img img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    #carouselCustom .card .content {
+      border: 1px solid #CAD2D8;
+      padding: 30px;
+      height: 280px; }
+      #carouselCustom .card .content h2 {
+        color: #F20024;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: left;
+        text-transform: uppercase; }
+      #carouselCustom .card .content p {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: black;
+        margin-top: 15px;
+        text-align: left; }
+  #carouselCustom .counter {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #carouselCustom .counter .numactive {
+      color: #F20024;
+      font-weight: 700; }
+    #carouselCustom .counter .numseparation, #carouselCustom .counter .numtotal {
+      color: #F20024;
+      font-weight: 300; }
+    #carouselCustom .counter .numseparation {
+      margin-left: 10px;
+      margin-right: 10px; }
+  @media (max-width: 767px) {
+    #carouselCustom .carousel-inner .carousel-item > div {
+      display: none; }
+    #carouselCustom .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #carouselCustom .carousel-inner .carousel-item.active,
+  #carouselCustom .carousel-inner .carousel-item-next,
+  #carouselCustom .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #carouselCustom .carousel-inner .carousel-item-end.active,
+    #carouselCustom .carousel-inner .carousel-item-next {
+      transform: translateX(25%); }
+    #carouselCustom .carousel-inner .carousel-item-start.active,
+    #carouselCustom .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%); } }
+  #carouselCustom .carousel-inner .carousel-item-end,
+  #carouselCustom .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #carouselCustom .carousel-control-prev, #carouselCustom .carousel-control-next {
+    filter: invert(13%) sepia(99%) saturate(6196%) hue-rotate(343deg) brightness(88%) contrast(118%);
+    position: relative; }
+  #carouselCustom .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 16px;
+    margin-right: 10px; }
+  #carouselCustom .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 16px;
+    margin-left: 10px; }
+
+#tour {
+  margin-bottom: 120px; }
+  #tour .image-background div {
+    top: 0; }
+  #tour .txt .textLabs {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    font-size: 36px;
+    font-weight: lighter; }
+  #tour .txt p {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white; }
+  #tour .txt a {
+    margin-top: 22px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    border: 1px solid #F20024;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px 40px 15px 40px;
+    transition: .2s all; }
+    #tour .txt a:hover {
+      background: #F20024;
+      transition: .2s all; }
+
+#labs.esg {
+  background: unset !important; }
+
+#labs .lp-tdx-confira-bg-right {
+  background: #0085BD; }
+  #labs .lp-tdx-confira-bg-right .button {
+    border: 1px solid white;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px; }
+
+#labs .lp-tbanks-confira-content {
+  width: 420px; }
+
+#labs .slide1 {
+  background: url("../../assets/images/inovacao/sliderperson.png") no-repeat;
+  background-size: cover; }
+
+#labs .counter2 {
+  margin-left: 27px;
+  margin-right: 27px;
+  z-index: 1; }
+  #labs .counter2 .numactive2 {
+    color: white;
+    font-weight: 700; }
+  #labs .counter2 .numseparation2, #labs .counter2 .numtotal2 {
+    color: white;
+    font-weight: 300; }
+  #labs .counter2 .numseparation2 {
+    margin-left: 5px;
+    margin-right: 5px; }
+
+#tdx {
+  margin-bottom: 125px;
+  margin-top: 134px; }
+  #tdx .subtitle {
+    max-width: 625px;
+    margin-top: 25px; }
+    #tdx .subtitle p {
+      color: #454D54;
+      font-size: 18px;
+      font-weight: lighter; }
+  #tdx .box {
+    padding: 30px;
+    border: 1px solid #CAD2D8;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #tdx .box h2 {
+      margin-top: 22px;
+      color: #F20024;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.3; }
+    #tdx .box p {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #454D54;
+      font-weight: lighter;
+      text-align: center; }
+  #tdx .cta {
+    margin-top: 50px; }
+    #tdx .cta .button {
+      background: #F20024;
+      text-decoration: unset;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border: 1px solid #F20024;
+      color: white;
+      padding: 15px 40px 15px 40px;
+      border-radius: 50px;
+      transition: .2s all; }
+      #tdx .cta .button:hover {
+        background: white;
+        color: #454D54;
+        transition: .2s all; }
+
+.content-inovacao {
+  opacity: 1 !important; }
+
+@media (min-width: 760px) {
+  .inovacao-hero {
+    background: url("../../assets/images/inovacao/banner.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh; }
+    .inovacao-hero .inovacao-hero-title h1, .inovacao-hero .inovacao-hero-title h2 {
+      text-align: center;
+      color: white; }
+    .inovacao-hero .inovacao-hero-title h1 {
+      margin-top: 243px; } }
 
 /*
  * Páginas: TbankS & TDX

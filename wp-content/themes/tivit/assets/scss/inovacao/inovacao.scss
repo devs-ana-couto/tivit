@@ -1,0 +1,423 @@
+$itemGrow: 1.2;
+$duration: 250ms;
+// Banner
+.inovacao-hero{
+    height: 580px;
+    background: url('../../assets/images/inovacao/banner-mobile.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .inovacao-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        h2{
+          font-weight: 500 !important; 
+        }
+    }
+    .inovacao-hero-content{
+    h2{
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+        width: 320px;
+        margin: 198px auto 0 auto;
+    }
+    }
+    .botao{
+      margin-bottom: 30px;
+      a{
+        background: transparent;
+        color: $vermelho-tivit;
+        border: solid 1px $vermelho-tivit;        
+      }
+    }
+    .arrow{
+    margin-top: 0;
+    }
+}
+
+.inovacao-intro{
+  position: relative;
+  margin-top: 121px;
+  margin-bottom: 121px;
+  p{
+    font-size: 36px;
+    line-height: 42px;
+    color: #262626;
+    font-weight: 500;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+    span{
+      font-weight: 600;
+      color: $vermelho-tivit;
+    }
+  }
+}
+
+#ventures{
+  background: #F4F6F7;
+  padding-top: 128px;
+  padding-bottom: 105px;
+  position: relative;
+  h2{
+    color: $cinza-dark-cyber-tivit;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  p{
+    color: $cinza-dark-cyber-tivit;
+    font-weight: lighter;
+    font-size: 18px;
+    max-width: 860px;
+  }
+  .textAbove > p{
+    color: $cinza-dark-cyber-tivit;
+    font-weight: lighter;
+    font-size: 24px !important;
+    max-width: 860px;
+  }
+  .aboveBlock{
+    margin-top: 133px;
+  }
+  div.box{
+    padding: 35px;
+    border: 1px solid $cinza-light-tivit;
+    height: 200px;
+    img{
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+      width: 200px;
+      transition: all .2s;
+      &:hover{
+        -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+        transition: all .2s;
+      }
+    }
+  }
+  .services{
+    flex-wrap: wrap;
+    em{
+      color: $vermelho-tivit;
+      font-size: 36px;
+      font-weight: 500;
+      font-style: normal;
+      margin-right: 50px;
+    }
+  }
+  a.button{
+    background: $vermelho-tivit;
+    font-size: 14px;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid $vermelho-tivit;
+    text-decoration: unset;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s;
+    &:hover{
+      background: white;
+      color: black;
+      border: 1px solid $vermelho-tivit;
+      transition: all .2s;
+    }
+  }
+  #triangle-down{
+    border-top: 40px solid #F4F6F7 !important;
+    position: absolute;
+    right: 48%;
+    bottom: -10px;
+  }
+}
+
+#tivitLabs{
+  margin-top: 80px;
+  margin-bottom: 56px;
+  .subText{
+    margin-top: 12px;
+    p{
+      color: $cinza-dark-cyber-tivit;
+      font-weight: lighter;
+      font-size: 18px;
+      max-width: 730px;
+    }
+  }
+}
+#carouselCustom.container{
+  max-width: 1650px !important;
+}
+#carouselCustom{
+  padding-bottom: 120px;
+  .carousel{
+    overflow: hidden;
+    padding: 0;
+  }
+  .carousel-inner{
+    right: -13%;
+  }
+  .card{
+    border-color: transparent;
+    margin: 10px;
+    .card-img{
+      img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    .content{
+      border: 1px solid #CAD2D8;
+      padding: 30px;
+      height: 280px;
+      h2{
+        color: $vermelho-tivit;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        color: black;
+        margin-top: 15px;
+        text-align: left;
+      }
+    }
+  }
+  .counter{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactive{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparation, .numtotal{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparation{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    filter: invert(13%) sepia(99%) saturate(6196%) hue-rotate(343deg) brightness(88%) contrast(118%);
+    position: relative;
+  }
+  .carousel-control-prev-icon{
+    background-image: url('../../assets/icons/navegacao/arrow-left-red.svg') !important;
+    width: 16px;
+    margin-right: 10px;
+  }
+  .carousel-control-next-icon{
+    background-image: url('../../assets/icons/navegacao/arrow-right-red.svg') !important;
+    width: 16px;
+    margin-left: 10px;
+  }
+}
+
+#tour{
+  margin-bottom: 120px;
+  .image-background{
+    div{
+      top: 0;
+    }
+  }
+  .txt{
+    .textLabs{
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 11px;
+      font-size: 36px;
+      font-weight: lighter;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: lighter;
+      color: white;
+    }
+    a{
+      margin-top: 22px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 14px;
+      border: 1px solid $vermelho-tivit;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 15px 40px 15px 40px;
+      transition: .2s all;
+      &:hover{
+        background: $vermelho-tivit;
+        transition: .2s all;
+      }
+    }
+  }
+}
+#labs.esg{
+  background: unset !important;
+}
+#labs{
+  .lp-tdx-confira-bg-right{
+    background: #0085BD;
+    .button{
+      border: 1px solid white;
+      padding: 15px 40px 15px 40px;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  .lp-tbanks-confira-content{
+    width: 420px;
+  }
+  .slide1{
+    background: url('../../assets/images/inovacao/sliderperson.png') no-repeat;
+    background-size: cover;
+  }
+  .counter2{
+    margin-left: 27px;
+    margin-right: 27px;
+    z-index: 1;
+    .numactive2{
+      color: white;
+      font-weight: 700;
+    }
+    .numseparation2, .numtotal2{
+      color: white;
+      font-weight: 300;
+    }
+    .numseparation2{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+#tdx{
+  margin-bottom: 125px;
+  margin-top: 134px;
+  .subtitle{
+    max-width: 625px;
+    margin-top: 25px;
+    p{
+      color: $cinza-dark-tivit;
+      font-size: 18px;
+      font-weight: lighter;
+    }
+  }
+  .box{
+    padding: 30px;
+    border: 1px solid $cinza-light-tivit;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+      margin-top: 22px;
+      color: $vermelho-tivit;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.3;
+    }
+    p{
+      margin-top: 12px;
+      font-size: 16px;
+      color: $cinza-dark-tivit;
+      font-weight: lighter;
+      text-align: center;
+    }
+  }
+  .cta{
+    margin-top: 50px;
+    .button{
+      background: $vermelho-tivit;
+      text-decoration: unset;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border: 1px solid $vermelho-tivit;
+      color: white;
+      padding: 15px 40px 15px 40px;
+      border-radius: 50px;;
+      transition: .2s all;
+      &:hover{
+        background: white;
+        color: $cinza-dark-tivit;
+        transition: .2s all;
+      }
+    }
+  }
+}
+
+.content-inovacao{
+  opacity: 1 !important;
+}
+
+@media(min-width: 760px){
+
+    .inovacao-hero{
+      background: url('../../assets/images/inovacao/banner.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      .inovacao-hero-title{
+        h1, h2{
+          text-align: center;
+          color: white;
+        }
+        h1{
+          margin-top: 243px;
+        }
+      }
+    }
+
+}

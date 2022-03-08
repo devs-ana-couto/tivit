@@ -351,7 +351,7 @@
 </div>
 
 
-<div id="esg" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="esg" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
