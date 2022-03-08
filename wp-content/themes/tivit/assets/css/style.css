@@ -2439,19 +2439,9 @@ html, body, * {
     font-size: 14px; }
 #labs .lp-tbanks-confira-content {
   width: 420px; }
-#labs .counter3 {
-  margin-left: 27px;
-  margin-right: 27px;
-  z-index: 1; }
-  #labs .counter3 .numactive3 {
-    color: white;
-    font-weight: 700; }
-  #labs .counter3 .numseparation3, #labs .counter3 .numtotal3 {
-    color: white;
-    font-weight: 300; }
-  #labs .counter3 .numseparation3 {
-    margin-left: 5px;
-    margin-right: 5px; }
+#labs .slide1 {
+  background: url("../../assets/images/inovacao/sliderperson.png") no-repeat;
+  background-size: cover; }
 
 #tdx {
   margin-bottom: 125px;

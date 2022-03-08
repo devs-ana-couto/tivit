@@ -314,22 +314,9 @@ $duration: 250ms;
   .lp-tbanks-confira-content{
     width: 420px;
   }
-  .counter3{
-    margin-left: 27px;
-    margin-right: 27px;
-    z-index: 1;
-    .numactive3{
-      color: white;
-      font-weight: 700;
-    }
-    .numseparation3, .numtotal3{
-      color: white;
-      font-weight: 300;
-    }
-    .numseparation3{
-      margin-left: 5px;
-      margin-right: 5px;
-    }
+  .slide1{
+    background: url('../../assets/images/inovacao/sliderperson.svg') no-repeat;
+    background-size: cover;
   }
 }
 
