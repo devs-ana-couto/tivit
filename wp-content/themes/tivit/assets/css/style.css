@@ -2451,6 +2451,9 @@ html, body, * {
     font-size: 14px; }
 #labs .lp-tbanks-confira-content {
   width: 420px; }
+#labs .slide1 {
+  background: url("../../assets/images/inovacao/sliderperson.png") no-repeat;
+  background-size: cover; }
 #labs .counter2 {
   margin-left: 27px;
   margin-right: 27px;
