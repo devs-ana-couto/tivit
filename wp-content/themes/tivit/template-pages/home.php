@@ -366,7 +366,6 @@
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute"></div>
   <div class="d-flex justify-content-center home-pessoas-e-carreiras">
-  <div id="triangle-down" class=""></div>
     <div class="container">
       <div class="row">
         <div class="col-12">
