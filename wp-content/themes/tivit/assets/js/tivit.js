@@ -88,6 +88,14 @@ jQuery(document).ready(function($) {
       $('.numtotal').html( totalItems );
    });
 
+   $('#recipeCarousel').bind('slid.bs.carousel', function() {
+      currentIndex = $('.heroslide.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive').html( currentIndex );
+      $('.numseparation').html('  /  ');
+      $('.numtotal').html( totalItems );
+   });
+
    // Permite 2 carrossel na mesma página
    var totalItems2 = $('.heroslide2').length;
    var currentIndex2 = $('.heroslide2.active').index() + 1;
@@ -97,11 +105,15 @@ jQuery(document).ready(function($) {
    $('.numseparation2').html('  /  ');
    $('.numtotal2').html( totalItems2 );
 
-   $('#esg').carousel({
-      interval: 4000
-    });
-
    $('#esg').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
+   $('#labs').bind('slid.bs.carousel', function() {
       currentIndex2 = $('.heroslide2.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
       $('.numactive2').html( currentIndex2 );
