@@ -109,43 +109,24 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
-   // Slider Inovação counter
-   var totalItemsInovacao = $('.heroinovacao').length;
-   var currentIndexInovacao = $('.heroinovacao.active').index() + 1;
+   // // Slider Inovação counter
+   // var totalItemsInovacao = $('.heroinovacao').length;
+   // var currentIndexInovacao = $('.heroinovacao.active').index() + 1;
 
-   $('.numactiveinovacao').html( currentIndexInovacao );
-   $('.numseparationinovacao').html('  /  ');
-   $('.numtotalinovacao').html( totalItemsInovacao );
+   // $('.numactiveinovacao').html( currentIndexInovacao );
+   // $('.numseparationinovacao').html('  /  ');
+   // $('.numtotalinovacao').html( totalItemsInovacao );
 
-   $('#recipeCarousel').carousel({
-      interval: 4000
-    });
+   // $('#recipeCarousel').carousel({
+   //    interval: 4000
+   //  });
 
-   $('#recipeCarousel').bind('slid.bs.carousel', function() {
-      currentIndexInovacao = $('.heroinovacao.active').index() + 1;
-      $('.numactiveinovacao').html( currentIndexInovacao );
-      $('.numseparationinovacao').html('  /  ');
-      $('.numtotalinovacao').html( totalItemsInovacao );
-   });
-
-   // Slider inovacao Labs counter
-   var totalItems3 = $('.heroslide3').length;
-   var currentIndex3 = $('.heroslide3.active').index() + 1;
-
-   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
-   $('.numactive3').html( currentIndex3 );
-   $('.numseparation3').html('  /  ');
-   $('.numtota3l').html( totalItems3 );
-
-   $('#labs').bind('slid.bs.carousel', function() {
-      currentIndex3 = $('.heroslide3.active').index() + 1;
-      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
-      $('.numactive3').html( currentIndex3 );
-      $('.numseparation3').html('  /  ');
-      $('.numtotal3').html( totalItems3 );
-   });
-   
-   
+   // $('#recipeCarousel').bind('slid.bs.carousel', function() {
+   //    currentIndexInovacao = $('.heroinovacao.active').index() + 1;
+   //    $('.numactiveinovacao').html( currentIndexInovacao );
+   //    $('.numseparationinovacao').html('  /  ');
+   //    $('.numtotalinovacao').html( totalItemsInovacao );
+   // });   
 
 })
 
@@ -183,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
    if(window.location.pathname === '/staged/tivit/inovacao' || window.location.pathname === '/staged/tivit/inovacao/'){
-      let items = document.querySelectorAll('.carousel .heroinovacao')
+      let items = document.querySelectorAll('.carousel .heroslide')
       items.forEach((el) => {
          const minPerSlide = 4
          let next = el.nextElementSibling

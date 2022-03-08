@@ -2365,19 +2365,19 @@ html, body, * {
         color: black;
         margin-top: 15px;
         text-align: left; }
-  #carouselCustom .counterInovacao {
+  #carouselCustom .counter {
     margin-left: 15px;
     margin-right: 15px;
     justify-content: center;
     align-items: center;
     z-index: 2; }
-    #carouselCustom .counterInovacao .numactiveinovacao {
+    #carouselCustom .counter .numactive {
       color: #F20024;
       font-weight: 700; }
-    #carouselCustom .counterInovacao .numseparationinovacao, #carouselCustom .counterInovacao .numtotalinovacao {
+    #carouselCustom .counter .numseparation, #carouselCustom .counter .numtotal {
       color: #F20024;
       font-weight: 300; }
-    #carouselCustom .counterInovacao .numseparationinovacao {
+    #carouselCustom .counter .numseparation {
       margin-left: 10px;
       margin-right: 10px; }
   @media (max-width: 767px) {
@@ -2451,17 +2451,17 @@ html, body, * {
     font-size: 14px; }
 #labs .lp-tbanks-confira-content {
   width: 420px; }
-#labs .counter3 {
+#labs .counter2 {
   margin-left: 27px;
   margin-right: 27px;
   z-index: 1; }
-  #labs .counter3 .numactive3 {
+  #labs .counter2 .numactive2 {
     color: white;
     font-weight: 700; }
-  #labs .counter3 .numseparation3, #labs .counter3 .numtotal3 {
+  #labs .counter2 .numseparation2, #labs .counter2 .numtotal2 {
     color: white;
     font-weight: 300; }
-  #labs .counter3 .numseparation3 {
+  #labs .counter2 .numseparation2 {
     margin-left: 5px;
     margin-right: 5px; }
 
