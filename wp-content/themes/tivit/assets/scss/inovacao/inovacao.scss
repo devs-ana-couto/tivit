@@ -160,7 +160,7 @@ $duration: 250ms;
     padding: 0;
   }
   .carousel-inner{
-    right: -15%;
+    right: -13%;
   }
   .card{
     border-color: transparent;
@@ -300,8 +300,42 @@ $duration: 250ms;
   }
 }
 
+#labs{
+  .lp-tdx-confira-bg-right{
+    background: #0085BD;
+    .button{
+      border: 1px solid white;
+      padding: 15px 40px 15px 40px;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  .lp-tbanks-confira-content{
+    width: 420px;
+  }
+  .counter3{
+    margin-left: 27px;
+    margin-right: 27px;
+    z-index: 1;
+    .numactive3{
+      color: white;
+      font-weight: 700;
+    }
+    .numseparation3, .numtotal3{
+      color: white;
+      font-weight: 300;
+    }
+    .numseparation3{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
 #tdx{
   margin-bottom: 125px;
+  margin-top: 134px;
   .subtitle{
     max-width: 625px;
     margin-top: 25px;

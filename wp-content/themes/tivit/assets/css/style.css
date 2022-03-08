@@ -2330,7 +2330,7 @@ html, body, * {
     overflow: hidden;
     padding: 0; }
   #carouselCustom .carousel-inner {
-    right: -15%; }
+    right: -13%; }
   #carouselCustom .card {
     border-color: transparent;
     margin: 10px; }
@@ -2429,8 +2429,33 @@ html, body, * {
       background: #F20024;
       transition: .2s all; }
 
+#labs .lp-tdx-confira-bg-right {
+  background: #0085BD; }
+  #labs .lp-tdx-confira-bg-right .button {
+    border: 1px solid white;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px; }
+#labs .lp-tbanks-confira-content {
+  width: 420px; }
+#labs .counter3 {
+  margin-left: 27px;
+  margin-right: 27px;
+  z-index: 1; }
+  #labs .counter3 .numactive3 {
+    color: white;
+    font-weight: 700; }
+  #labs .counter3 .numseparation3, #labs .counter3 .numtotal3 {
+    color: white;
+    font-weight: 300; }
+  #labs .counter3 .numseparation3 {
+    margin-left: 5px;
+    margin-right: 5px; }
+
 #tdx {
-  margin-bottom: 125px; }
+  margin-bottom: 125px;
+  margin-top: 134px; }
   #tdx .subtitle {
     max-width: 625px;
     margin-top: 25px; }

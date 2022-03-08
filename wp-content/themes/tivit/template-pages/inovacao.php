@@ -229,12 +229,10 @@
 </div>
 
 <!-- Bloco de labs -->
-<!-- <div class="esg carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="labs" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
-
-        <div id="triangle-down"></div>
 
         <div class="carousel-inner">
         
@@ -242,51 +240,53 @@
             <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
               <div class="lp-tbanks-confira-content">
                 <h3>
-                <strong>ESG:</strong></br>
-                sustentabilidade, diversidade e responsabilidade.
-              </h3>
+                Conheça os projetos em destaque da <strong>TIVIT Labs</strong>
+                </h3>
+                <a class="button">
+                    CONHEÇA MAIS SOBRE A TIVIT LABS
+                </a>
               </div>
             </div>
 
             <div class="col-12 col-md-6">
 
-              <div class="carousel-item heroslide2 active">
+              <div class="carousel-item heroslide3 active">
                 <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
                   <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
+                    <h2>IVI Virtual Employee</h2>
                     <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
                     </p>
                   </div>
                 </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
               </div>
 
-              <div class="carousel-item heroslide2">
+              <div class="carousel-item heroslide3">
                 <div class="col-12 lp-tbanks-confira-bg-left  hide-mobile">
                   <div class="lp-tbanks-confira-carousel">
                     <h2>MASP SP</h2>
                     <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
                     </p>
                   </div>
                 </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
               </div>
 
-              <div class="carousel-item heroslide2">
+              <div class="carousel-item heroslide3">
                 <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
                   <div class="lp-tbanks-confira-carousel">
                     <h2>MASP SP</h2>
                     <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
+                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
                     </p>
                   </div>
                 </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
 
               </div>
 
@@ -294,13 +294,13 @@
 
             <div class="col-12 col-md-6">
               <div class="navigation">
-                <button class="carousel-control-prev" type="button" data-bs-target="#esg" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
                 </button>
-                <div class="d-flex flex-row counter2">
-                  <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+                <div class="d-flex flex-row counter3">
+                  <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
                 </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#esg" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
                 </button>
                 <div class="carousel-indicators">
@@ -317,7 +317,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- TDX -->
 <div id="tdx">

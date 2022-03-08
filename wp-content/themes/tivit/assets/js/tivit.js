@@ -106,6 +106,23 @@ jQuery(document).ready(function($) {
       $('.numseparationinovacao').html('  /  ');
       $('.numtotalinovacao').html( totalItemsInovacao );
    });
+
+   // Slider inovacao Labs counter
+   var totalItems3 = $('.heroslide3').length;
+   var currentIndex3 = $('.heroslide3.active').index() + 1;
+
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive3').html( currentIndex3 );
+   $('.numseparation3').html('  /  ');
+   $('.numtota3l').html( totalItems3 );
+
+   $('#labs').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
    
    
 
@@ -145,8 +162,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
    if(window.location.pathname === '/staged/tivit/inovacao' || window.location.pathname === '/staged/tivit/inovacao/'){
-      let items = document.querySelectorAll('.carousel .carousel-item')
-      console.log('this is the pagsse');
+      let items = document.querySelectorAll('.carousel .heroinovacao')
       items.forEach((el) => {
          const minPerSlide = 4
          let next = el.nextElementSibling
