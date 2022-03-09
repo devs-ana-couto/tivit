@@ -4,7 +4,7 @@
 
 //  Hero
 .lp-tbanks-hero{
-    background-image: url('../images/landing/tbanks/hero.png');
+    background-image: url('../images/landing/tbanks/hero.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,6 +23,11 @@
         margin: 10px 0 0 0;
       }
     }
+    .grafismos{
+      top: 9%;
+      right: 9%;
+      width: 200px;
+    }
   }
   
   .lp-tdx-hero{
@@ -31,16 +36,16 @@
   
   // Conheça a TBankS 
   .lp-tbanks-conheca{
-    padding: 110px 0 126px 0;
+    padding: 118px 0 140px 0;
     @media(max-width: 768px){
       padding: 44px 0 34px 0;
     }
     .lp-tbanks-conheca-content{
       p{
-        font-size: 38px;
+        font-size: 36px;
         line-height: 50px;
         font-weight: 400;
-        max-width: 1051px;
+        max-width: 785px;
         margin: 0 auto;
         text-align: center;
         color: $cinza-dark-cyber-tivit;
@@ -58,6 +63,20 @@
     }  
     .lp-tbanks-services{
       margin-top: 100px;
+      h2{
+        color: #262626;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .sub{
+        max-width: 1000px;
+      }
+      span.subtitle{
+        color: #262626;
+        font-size: 20px;
+        font-weight: lighter;
+      }
       h3{
         font-size: 22px;
         line-height: 33.46px;
@@ -75,28 +94,39 @@
       }
       .bg-white{
         background-color: white;
-        border: 2px solid #582689;
+        border-bottom: 1px solid #CAD2D8;
+        border-right: 1px solid #CAD2D8;
+        border-top: 1px solid #CAD2D8;
+        border-left: 3px solid #582689;
         padding: 38px 21px;
-        height: 216px;
+        height: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         h3{
+          max-width: 140px;
+          font-size: 24px;
+          text-transform: uppercase;
           color: #582689;
+          text-align: left;
+        }
+        p{
+          margin-top: 40px;
+          text-align: left;
         }
       }
-      .bg-purple{
-        background-color: #582689;
-        border: 2px solid #582689;
-        padding: 38px 21px;
-        height: 216px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h3, p{
-          color: white;
-        }
-      }
+      // .bg-purple{
+      //   background-color: #582689;
+      //   border: 2px solid #582689;
+      //   padding: 38px 21px;
+      //   height: 216px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   h3, p{
+      //     color: white;
+      //   }
+      // }
       .img{
         margin-top: 50px;
         background: #F4F6F7;

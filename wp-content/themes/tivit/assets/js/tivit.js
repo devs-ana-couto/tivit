@@ -16,7 +16,7 @@ const header_logo_desktop = document.querySelector(".logo-brand")
 
 const header_height = header.offsetHeight
 // Add class on scroll
-const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-tbanks")
+const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-global")
 // Add class mobile
 const add_class_page_tbanks = () => header_logo.classList.add("on-scroll-mobile-tbanks")
 // Change search icon color
@@ -26,7 +26,7 @@ const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('sr
 // Remove class on scroll
 const remove_class_on_scroll_tbanks = () => header.classList.remove("on-scroll-tbanks")
 // Change logo on scroll desktop
-const change_logo_on_scroll_desktop = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo-red.png');
+const change_logo_on_scroll_desktop = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo.svg');
 const change_logo_on_scroll_desktop_original = () => header_logo_desktop.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/logo.svg');
 
 /*

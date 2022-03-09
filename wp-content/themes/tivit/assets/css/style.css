@@ -2538,7 +2538,7 @@ html, body, * {
  * Páginas: TbankS & TDX
  **/
 .lp-tbanks-hero {
-  background-image: url("../images/landing/tbanks/hero.png");
+  background-image: url("../images/landing/tbanks/hero.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2553,20 +2553,24 @@ html, body, * {
     color: white;
     text-align: center;
     margin: 10px 0 0 0; }
+  .lp-tbanks-hero .grafismos {
+    top: 9%;
+    right: 9%;
+    width: 200px; }
 
 .lp-tdx-hero {
   background-image: url("../images/landing/tdx/hero.png"); }
 
 .lp-tbanks-conheca {
-  padding: 110px 0 126px 0; }
+  padding: 118px 0 140px 0; }
   @media (max-width: 768px) {
     .lp-tbanks-conheca {
       padding: 44px 0 34px 0; } }
   .lp-tbanks-conheca .lp-tbanks-conheca-content p {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 50px;
     font-weight: 400;
-    max-width: 1051px;
+    max-width: 785px;
     margin: 0 auto;
     text-align: center;
     color: #262626; }
@@ -2576,6 +2580,17 @@ html, body, * {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
     margin-top: 100px; }
+    .lp-tbanks-conheca .lp-tbanks-services h2 {
+      color: #262626;
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .lp-tbanks-conheca .lp-tbanks-services .sub {
+      max-width: 1000px; }
+    .lp-tbanks-conheca .lp-tbanks-services span.subtitle {
+      color: #262626;
+      font-size: 20px;
+      font-weight: lighter; }
     .lp-tbanks-conheca .lp-tbanks-services h3 {
       font-size: 22px;
       line-height: 33.46px; }
@@ -2590,24 +2605,24 @@ html, body, * {
       justify-content: center; }
     .lp-tbanks-conheca .lp-tbanks-services .bg-white {
       background-color: white;
-      border: 2px solid #582689;
+      border-bottom: 1px solid #CAD2D8;
+      border-right: 1px solid #CAD2D8;
+      border-top: 1px solid #CAD2D8;
+      border-left: 3px solid #582689;
       padding: 38px 21px;
-      height: 216px;
+      height: 300px;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: start; }
       .lp-tbanks-conheca .lp-tbanks-services .bg-white h3 {
-        color: #582689; }
-    .lp-tbanks-conheca .lp-tbanks-services .bg-purple {
-      background-color: #582689;
-      border: 2px solid #582689;
-      padding: 38px 21px;
-      height: 216px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      .lp-tbanks-conheca .lp-tbanks-services .bg-purple h3, .lp-tbanks-conheca .lp-tbanks-services .bg-purple p {
-        color: white; }
+        max-width: 140px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #582689;
+        text-align: left; }
+      .lp-tbanks-conheca .lp-tbanks-services .bg-white p {
+        margin-top: 40px;
+        text-align: left; }
     .lp-tbanks-conheca .lp-tbanks-services .img {
       margin-top: 50px;
       background: #F4F6F7;

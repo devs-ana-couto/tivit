@@ -1,12 +1,15 @@
 <?php /* Template Name: Landing Tbanks */ ?>
 <?php get_header(); ?>
 
-<div class="lp-tbanks-hero">
+<div class="lp-tbanks-hero position-relative">
   <div class="container">
     <div class="row">
       <div class="col-md-12 lp-banks-hero-content text-center">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/tbankslogo.svg" alt="Tbanks powered by TIVIT">
         <h1 class="fade-in-bottom">Simples, fácil e sem burocracia</h1>
+      </div>
+      <div>
+        <img class="grafismos position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/grafismos.svg" alt="Graf">
       </div>
     </div>
   </div>
@@ -14,6 +17,9 @@
 
 <div class="lp-tbanks-conheca">
   <div class="container">
+    <div class="lp-tbanks-arrow text-center mb-5">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/seta-purple.svg" class="bounce" alt="Tbanks Saiba Mais">
+    </div>
     <div class="row">
       <div class="col-12">
 
@@ -23,44 +29,52 @@
           </p>
         </div>
 
-        <div class="lp-tbanks-arrow text-center">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/seta-purple.svg" class="bounce" alt="Tbanks Saiba Mais">
-        </div>
+
 
       </div>
 
       <div class="lp-tbanks-services text-center">      
         <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-5">
+            <h2 class="title text-center">
+              Nossas plataformas
+            </h2>
+            <div class="sub d-flex flex-column justify-content-center align-items-center w-100">
+              <span class="subtitle">
+                Com um mindset ágil vamos transformar a TIVIT, reconhecida muitas vezes por excelência em infraestrutura e terceirização de TI, para plataformas digitais com serviços financeiros para os nossos Clientes B2B. 
+              </span>
+            </div>
+          </div>
           <div class="row">
 
             <div class="col-12 col-md-3">
               <div class="bg-white">
-                <h3>API Gateway</h3>
-                <p>Plataforma de integração financeira e open banking.</p>
+                <h3 class="mb-5">PSTI</h3>
+                <p>Provedor de Serviços de Tecnologia da Informação homologado pelo Banco Central.</p>
               </div>
             </div>
             <div class="col-12 col-md-3">
-              <div class="bg-purple">
+              <div class="bg-white">
+                <h3>API Gateway</h3>
+                <p>Plataforma de integração financeira e Open Banking.</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <div class="bg-white">
                 <h3>TBanks Payments</h3>
-                <p>Conta digital da TIVIT para pagamentos de contas, utilities e PIX.</p>
+                <p>Conta Digital da TIVIT para pagamentos de contas, Utilities e PIX.</p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
               <div class="bg-white">
                 <h3>Banking as a Service</h3>
-                <p>Oferta completa de serviços financeiros.</p>
+                <p>Oferta completa de Serviços Financeiros.</p>
               </div>
             </div>
 
-            <div class="col-12 col-md-3">
-              <div class="bg-purple">
-                <h3>API Gateway</h3>
-                <p>Provedor de serviços de tecnologia homologado pelo Banco Central.</p>
-              </div>
-            </div>
-
-            <div class="col-12 mt-5">
+            <!-- <div class="col-12 mt-5">
               <p>
                 Integre todos os seus recebimentos de arrecadação em um só lugar.<br/>
                 Você não precisa mais trabalhar com vários bancos.
@@ -68,7 +82,7 @@
               <div class="img">
                 <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/integre.svg" alt="Tbanks powered by TIVIT">
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -77,7 +91,7 @@
   </div>
 </div>
 
-<div class="lp-tbanks-beneficios text-center">
+<!-- <div class="lp-tbanks-beneficios text-center">
   <div class="container">
     <div class="triangle">
       <div id="triangle-down-1" class="col-4"></div>
@@ -126,7 +140,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="lp-tbanks-pix">
   <div class="container">
