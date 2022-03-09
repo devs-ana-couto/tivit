@@ -21,7 +21,7 @@
                 <a href="#">varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@
                 <a href="#">varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
                 <a href="#">varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
                 <a href="#">varejo</a>
               </div>
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -110,5 +110,7 @@
 
   </div>
 </div>
+
+
 
 <?php get_footer(); ?>

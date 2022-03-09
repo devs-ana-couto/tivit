@@ -4,3 +4,7 @@
   background-size: cover; }
   .a-tivit-cases.cases.conteudos .carousel-inner {
     height: 580px; }
+  .a-tivit-cases.cases.conteudos .tag {
+    margin-top: 19px; }
+  .a-tivit-cases.cases.conteudos .acessar a {
+    margin-top: 26px; }

@@ -3356,5 +3356,26 @@ html, body, * {
   background: url("../../assets/images/conteudos/banner.png") no-repeat center center;
   margin-top: 0;
   background-size: cover; }
+  .a-tivit-cases.cases.conteudos .content h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    width: 298px; }
+  .a-tivit-cases.cases.conteudos .detalhes {
+    margin-top: 200px; }
   .a-tivit-cases.cases.conteudos .carousel-inner {
     height: 580px; }
+  .a-tivit-cases.cases.conteudos .tag {
+    margin-top: 19px; }
+  .a-tivit-cases.cases.conteudos .acessar a {
+    margin-top: 26px;
+    color: #F20024;
+    font-weight: bold;
+    display: flex;
+    align-items: center; }
+    .a-tivit-cases.cases.conteudos .acessar a img {
+      height: 16px; }
+  .a-tivit-cases.cases.conteudos .navigation {
+    right: unset;
+    left: 47px;
+    bottom: 50px; }

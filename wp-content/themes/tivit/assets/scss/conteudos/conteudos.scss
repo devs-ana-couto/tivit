@@ -3,7 +3,41 @@
     background: url('../../assets/images/conteudos/banner.png') no-repeat center center;
     margin-top: 0;
     background-size: cover;
+    .content{
+        h2{
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            width: 298px;
+        }
+    }
+    .detalhes{
+        margin-top: 200px;
+    }
     .carousel-inner{
         height: 580px;
     }
+    .tag{
+       margin-top: 19px; 
+    }
+    .acessar{
+        a{
+            margin-top: 26px;
+            color: $vermelho-tivit;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            img{
+                height: 16px;
+            }
+        }
+    }
+
+    .navigation{
+        right: unset;
+        left: 47px;
+        bottom: 50px;
+    }
+
 }
