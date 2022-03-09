@@ -1963,19 +1963,47 @@ html, body, * {
   background: #262626;
   padding-top: 60px;
   margin-top: -1px; }
-  .cases-recentes .title h2 {
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0.03em; }
   .cases-recentes .img {
     margin: 40px auto 0 auto;
     width: 284px; }
+  .cases-recentes .filtros {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 34px; }
+    .cases-recentes .filtros .divisao {
+      margin-top: 24px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between; }
+      .cases-recentes .filtros .divisao .select {
+        width: 167px; }
+        .cases-recentes .filtros .divisao .select select {
+          font-size: 12px;
+          width: 167px; }
+      .cases-recentes .filtros .divisao .search a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px; }
+        .cases-recentes .filtros .divisao .search a img {
+          margin-left: 5px; }
+    .cases-recentes .filtros .select {
+      width: 100%; }
+      .cases-recentes .filtros .select select {
+        font-size: 12px;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent; }
+        .cases-recentes .filtros .select select option {
+          color: black; }
   .cases-recentes .detalhes {
-    margin: 20px auto 0 auto;
+    margin: 18px auto 21px auto;
     width: 284px; }
     .cases-recentes .detalhes a {
       font-size: 12px;
@@ -2001,12 +2029,12 @@ html, body, * {
     .cases-recentes .content h3 {
       font-size: 20px;
       line-height: 28px;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
-      color: #F20024;
+      color: white;
       text-transform: uppercase; }
   .cases-recentes .autor-time {
-    margin: 10px auto 0 auto;
+    margin: 28px auto 10px auto;
     width: 284px; }
     .cases-recentes .autor-time p {
       color: white;
@@ -2022,9 +2050,11 @@ html, body, * {
       line-height: 21.29px;
       text-transform: uppercase;
       text-decoration: none;
-      display: flex; }
-    .cases-recentes .acessar img {
-      margin-left: 5px; }
+      display: flex;
+      align-items: center; }
+      .cases-recentes .acessar a img {
+        margin-left: 5px;
+        height: 16px; }
   .cases-recentes .slider-cases .carousel-indicators {
     bottom: 50px !important; }
     .cases-recentes .slider-cases .carousel-indicators button {
@@ -3379,3 +3409,25 @@ html, body, * {
     right: unset;
     left: 47px;
     bottom: 50px; }
+
+.cases-recentes.conteudos {
+  padding: 60px 0 20px 0;
+  background: white; }
+  .cases-recentes.conteudos .filtros .select select {
+    color: #3A3A3A;
+    border-bottom: 1px solid #3A3A3A; }
+  .cases-recentes.conteudos .autor-time p {
+    color: #262626; }
+  .cases-recentes.conteudos .content h3 {
+    color: #262626; }
+  .cases-recentes.conteudos .detalhes a {
+    color: #262626;
+    border: solid 1px #262626; }
+  .cases-recentes.conteudos .acessar {
+    margin: 10px auto 50px auto; }
+  .cases-recentes.conteudos .slider-cases .carousel-indicators {
+    bottom: 0 !important; }
+    .cases-recentes.conteudos .slider-cases .carousel-indicators .active {
+      color: #F20024; }
+    .cases-recentes.conteudos .slider-cases .carousel-indicators button {
+      color: #262626; }

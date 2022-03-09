@@ -41,3 +41,46 @@
     }
 
 }
+
+.cases-recentes.conteudos{
+    padding: 60px 0 20px 0;
+    background: white;
+    .filtros{
+        .select{
+            select{
+                color: $cinza-cyber-tivit;
+                border-bottom: 1px solid $cinza-cyber-tivit;
+            }
+        }
+    }
+    .autor-time{
+        p{
+            color: $cinza-dark-cyber-tivit;
+        }
+    }
+    .content{
+        h3{
+            color: $cinza-dark-cyber-tivit;
+        }
+    }
+    .detalhes{
+        a{
+            color: $cinza-dark-cyber-tivit;
+            border: solid 1px $cinza-dark-cyber-tivit;
+        }
+    }
+    .acessar{
+        margin: 10px auto 50px auto        
+    }
+    .slider-cases{
+        .carousel-indicators{
+            bottom: 0!important;
+            .active{
+                color: $vermelho-tivit;
+            }
+            button{
+                color: $cinza-dark-cyber-tivit;
+            }
+        }
+    } 
+}

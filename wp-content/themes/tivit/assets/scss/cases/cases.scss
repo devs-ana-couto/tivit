@@ -193,25 +193,60 @@
   padding-top: 60px;
   margin-top: -1px;
 
-  .title{
-    h2{
-      font-size: 24px;
-      line-height: 24px;
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: white;
-      letter-spacing: 0.03em;
-    }
-  }
-
   .img{
     margin: 40px auto 0 auto;
     width: 284px;
   }
+  .filtros{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 34px;
+    .divisao{
+      margin-top: 24px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .select{
+        width: 167px;
+        select{
+          font-size: 12px;
+          width: 167px;
+        }
+      }
+      .search{
+        a{
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #fff; 
+          font-size: 12px;
 
+          img{
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .select{
+      width: 100%;
+      select{
+        font-size: 12px;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        option{
+          color: black;
+        }
+      }
+    }
+  }
   .detalhes{
-    margin: 20px auto 0 auto;
+    margin: 18px auto 21px auto;
     width: 284px;
     a{
       font-size: 12px;
@@ -242,15 +277,15 @@
     h3{
       font-size: 20px;
       line-height: 28px;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
-      color: $vermelho-tivit;
+      color: white;
       text-transform: uppercase;
     }
   }
 
   .autor-time{
-    margin: 10px auto 0 auto;
+    margin: 28px auto 10px auto;
     width: 284px;
     p{
       color: white;
@@ -270,10 +305,13 @@
       text-transform: uppercase;
       text-decoration: none;
       display: flex;
+      align-items: center;
+      img{
+        margin-left: 5px;
+        height: 16px;
+      }
     }
-    img{
-      margin-left: 5px;
-    }
+
   }
 
   .slider-cases{
@@ -427,7 +465,6 @@
     .acessar{
       width: 100%;
       margin: 20px auto 10px auto;
-
     }
 
     .img{
@@ -492,7 +529,7 @@
         border: 1px solid red;
       }
     }
-
+    
     .col-5{
       display: flex;
       justify-content: center;
