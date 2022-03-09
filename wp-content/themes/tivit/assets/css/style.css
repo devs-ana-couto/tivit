@@ -2727,7 +2727,7 @@ html, body, * {
     text-transform: uppercase;
     font-size: 28px;
     line-height: 44px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     text-align: center; }
     @media (max-width: 768px) {
       .lp-tbanks-tecnologia-pagamentos h2 {
@@ -2739,17 +2739,19 @@ html, body, * {
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
-    max-width: 240px;
+    max-width: auto;
     margin: 0 auto;
+    color: #582689;
     text-transform: uppercase; }
   .lp-tbanks-tecnologia-pagamentos .col-12 {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
     @media (max-width: 768px) {
       .lp-tbanks-tecnologia-pagamentos .col-12 {
         margin-bottom: 40px; } }
   .lp-tbanks-tecnologia-pagamentos .border-tec {
-    border-right: 1px solid #CAD2D8 !important;
-    border-left: 1px solid #CAD2D8 !important; }
+    border: 1px solid #CAD2D8 !important;
+    padding: 60px;
+    height: 300px; }
 
 .lp-tdx-conheca {
   padding: 0px 0 150px 0; }

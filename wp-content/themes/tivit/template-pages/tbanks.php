@@ -173,56 +173,68 @@
       </div>
 
       <div class="col-12 col-md-4">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
-        </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Taxas de transação mais baratas</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 border-tec">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
-        </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Informações em tempo real das operações</p>
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Taxas de transação mais baratas</p>
+          </div>
         </div>
       </div>
 
       <div class="col-12 col-md-4">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
-        </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Avisos de movimentações bancárias</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
-        </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Faturamento em tempo real</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 border-tec">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
-        </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Dashboard de gestão de operações</p>
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Informações em tempo real das operações</p>
+          </div>
         </div>
       </div>
 
       <div class="col-12 col-md-4">
-        <div class="lp-tbanks-tecnologia-pagamentos-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Avisos de movimentações bancárias</p>
+          </div>
         </div>
-        <div class="lp-tbanks-tecnologia-pagamentos-content">
-          <p>Sistema intuitivo e unificado</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Faturamento em <br> tempo real</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Dashboard de gestão de operações</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="border-tec">
+          <div class="lp-tbanks-tecnologia-pagamentos-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
+          </div>
+          <div class="lp-tbanks-tecnologia-pagamentos-content">
+            <p>Sistema intuitivo <br> e unificado</p>
+          </div>
         </div>
       </div>
 
