@@ -14,7 +14,7 @@
                 </div>
               </div>
               <div class="content">
-                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h2>Será que sua empresa está pronta para um futuro hiperconectado?</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
@@ -33,7 +33,7 @@
                 </div>
               </div>
               <div class="content">
-                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h2>Será que sua empresa está pronta para um futuro hiperconectado?</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="content">
-                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h2>Será que sua empresa está pronta para um futuro hiperconectado?</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
@@ -71,7 +71,7 @@
                 </div>
               </div>
               <div class="content">
-                <h2>título do artigo destaque Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h2>Será que sua empresa está pronta para um futuro hiperconectado?</h2>
               </div>
               <div class="tag">
                 <a href="#">conta híbrida</a>
