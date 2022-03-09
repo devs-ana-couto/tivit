@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 lp-banks-hero-content text-center">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/tbanks-white.png" alt="Tbanks powered by TIVIT">
+        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/tbankslogo.svg" alt="Tbanks powered by TIVIT">
         <h1 class="fade-in-bottom">Simples, fácil e sem burocracia</h1>
       </div>
     </div>
