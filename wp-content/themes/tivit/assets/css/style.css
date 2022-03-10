@@ -2614,6 +2614,9 @@ html, body, * {
       display: flex;
       flex-direction: column;
       justify-content: start; }
+      @media (max-width: 768px) {
+        .lp-tbanks-conheca .lp-tbanks-services .bg-white {
+          margin-bottom: 15px; } }
       .lp-tbanks-conheca .lp-tbanks-services .bg-white h3 {
         max-width: 140px;
         font-size: 24px;
@@ -2912,7 +2915,9 @@ html, body, * {
       border: 1px solid #FE4817; }
 
 .lp-tbanks-depoimentos {
-  height: 580px;
+  height: 100%;
+  margin-top: 130px;
+  margin-bottom: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -2934,19 +2939,42 @@ html, body, * {
     line-height: 21.29px;
     font-weight: 400;
     color: #000000; }
-  .lp-tbanks-depoimentos P {
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 700;
-    max-width: 970px;
+  .lp-tbanks-depoimentos p {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+    max-width: 770px;
     margin: 0 auto; }
+  .lp-tbanks-depoimentos .carousel-control-prev-icon {
+    background-image: url("../../assets/images/landing/tbanks/arrow-gray-left.svg") !important;
+    width: 13px; }
+  .lp-tbanks-depoimentos .carousel-control-next-icon {
+    background-image: url("../../assets/images/landing/tbanks/arrow-gray-right.svg") !important;
+    width: 13px; }
+  .lp-tbanks-depoimentos .carousel-control-prev {
+    left: 20%; }
+    @media (max-width: 768px) {
+      .lp-tbanks-depoimentos .carousel-control-prev {
+        left: 0; } }
+  .lp-tbanks-depoimentos .carousel-control-next {
+    right: 20%; }
+    @media (max-width: 768px) {
+      .lp-tbanks-depoimentos .carousel-control-next {
+        right: 0; } }
+  .lp-tbanks-depoimentos .numseparation {
+    margin-left: 5px;
+    margin-right: 5px; }
 
 .lp-tbanks-logo-clientes {
-  height: 355px; }
+  height: 100%;
+  margin-bottom: 150px;
+  /* medium and up screens */ }
   @media (max-width: 768px) {
     .lp-tbanks-logo-clientes {
       height: unset;
       padding: 70px 0 50px 0; } }
+  .lp-tbanks-logo-clientes .container {
+    max-width: 1420px !important; }
   .lp-tbanks-logo-clientes h2 {
     font-size: 24px;
     line-height: 30px;
@@ -2958,6 +2986,64 @@ html, body, * {
     display: flex;
     align-items: center;
     justify-content: center; }
+  @media (max-width: 767px) {
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item > div {
+      display: none; }
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  .lp-tbanks-logo-clientes .carousel-inner .carousel-item.active,
+  .lp-tbanks-logo-clientes .carousel-inner .carousel-item-next,
+  .lp-tbanks-logo-clientes .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item-end.active,
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item-next {
+      transform: translateX(16.6%); }
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item-start.active,
+    .lp-tbanks-logo-clientes .carousel-inner .carousel-item-prev {
+      transform: translateX(-16.6%); } }
+  .lp-tbanks-logo-clientes .carousel-inner .carousel-item-end,
+  .lp-tbanks-logo-clientes .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  .lp-tbanks-logo-clientes .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 13px; }
+  .lp-tbanks-logo-clientes .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 13px; }
+  .lp-tbanks-logo-clientes .carousel-control-prev {
+    left: 45%; }
+    @media (max-width: 768px) {
+      .lp-tbanks-logo-clientes .carousel-control-prev {
+        left: 28%; } }
+  .lp-tbanks-logo-clientes .carousel-control-next {
+    right: 45%; }
+    @media (max-width: 768px) {
+      .lp-tbanks-logo-clientes .carousel-control-next {
+        right: 28%; } }
+  .lp-tbanks-logo-clientes .counter2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    .lp-tbanks-logo-clientes .counter2 .numactive2 {
+      color: #F20024;
+      font-weight: 700; }
+    .lp-tbanks-logo-clientes .counter2 .numseparation2, .lp-tbanks-logo-clientes .counter2 .numtotal2 {
+      color: #F20024;
+      font-weight: 300; }
+    .lp-tbanks-logo-clientes .counter2 .numseparation2 {
+      margin-left: 10px;
+      margin-right: 10px; }
+  .lp-tbanks-logo-clientes #customerCarousel {
+    margin-top: 60px; }
+    .lp-tbanks-logo-clientes #customerCarousel .customers img {
+      filter: grayscale(1);
+      transition: all .2s; }
+      .lp-tbanks-logo-clientes #customerCarousel .customers img:hover {
+        filter: grayscale(0);
+        transition: all .2s; }
 
 .lp-tbanks-form {
   background-color: #F4F6F7;
@@ -2969,10 +3055,11 @@ html, body, * {
     .lp-tbanks-form {
       background-color: #F4F6F7; } }
   .lp-tbanks-form .lp-tbanks-title h2 {
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 36px;
+    line-height: 1.2;
     font-weight: 400;
-    color: #262626; }
+    color: #262626;
+    margin-bottom: 90px; }
   .lp-tbanks-form .lp-tbanks-title .paragrafo2 {
     margin-bottom: 61px; }
   .lp-tbanks-form .form {
@@ -2984,7 +3071,7 @@ html, body, * {
       line-height: 28px;
       letter-spacing: 2%;
       font-weight: 700;
-      color: #582689;
+      color: #262626;
       text-transform: uppercase;
       margin: 50px 0 43px 0; }
       @media (max-width: 760px) {
@@ -3044,7 +3131,8 @@ html, body, * {
         .lp-tbanks-form .form .grupo-5 .wpcf7-form-control.has-spinner.wpcf7-submit:hover {
           opacity: 0.8; }
       .lp-tbanks-form .form .grupo-5 .tbanks-form .wpcf7-form-control.has-spinner.wpcf7-submit {
-        background: #582689; }
+        background: #582689;
+        border-radius: 50px; }
       .lp-tbanks-form .form .grupo-5 .wpcf7-list-item-label {
         font-size: 12px;
         line-height: 18.25px; }
@@ -3144,7 +3232,7 @@ html, body, * {
     .lp-tbanks-depoimentos .lp-tbanks-depoimentos-autor p {
       font-size: 20px;
       line-height: 24px;
-      font-weight: 700;
+      font-weight: 400;
       padding: 0 20px; }
 
   .lp-tdx-metodologia {

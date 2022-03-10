@@ -9,7 +9,7 @@
         <h1 class="fade-in-bottom">Simples, fácil e sem burocracia</h1>
       </div>
       <div>
-        <img class="grafismos position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/grafismos.svg" alt="Graf">
+        <img class="grafismos position-absolute hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/grafismos.svg" alt="Graf">
       </div>
     </div>
   </div>
@@ -246,9 +246,9 @@
   <div class="lp-tbanks-depoimentos-title">
     <h2>Benefícios para clientes</h2>
   </div>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item heroslide active">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -258,7 +258,7 @@
                   <h3>André Correia</h3>
                   <h4>Diretor da Tivit</h4>
                   <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para o desenvolvimento de projetos voltados para a renovação do sistema financeiro brasileiro”
+                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
                   </p>
                 </div>
               </div>
@@ -266,7 +266,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item heroslide">
       <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -276,7 +276,7 @@
                   <h3>André Correia</h3>
                   <h4>Diretor da Tivit</h4>
                   <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para o desenvolvimento de projetos voltados para a renovação do sistema financeiro brasileiro”
+                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
                   </p>
                 </div>
               </div>
@@ -284,7 +284,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item heroslide">
       <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -294,7 +294,7 @@
                   <h3>André Correia</h3>
                   <h4>Diretor da Tivit</h4>
                   <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para o desenvolvimento de projetos voltados para a renovação do sistema financeiro brasileiro”
+                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
                   </p>
                 </div>
               </div>
@@ -303,14 +303,17 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+    <div class="d-flex flex-row justify-content-center counter mt-3">
+      <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+    </div>
   </div>
 </div>
 
@@ -320,45 +323,122 @@
       <div class="col-12">
         <div class="lp-tbanks-logo-clientes-content text-center">
           <h2>Nossos Clientes</h2>
-          <div class="row">
-            <div class="col-4 col-md-1">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/brf.svg" alt="Logo BRF">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/notre-dame.svg" alt="Logo Notredame">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/zurich.svg" alt="Logo Zurich">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/banco-bv.svg" alt="Logo Banco BV">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/ipiranga.svg" alt="Logo Ipiranga">
-            </div>
-            <div class="col-4 col-md-1">
-            </div>
-          </div>
-          <div class="row">
-           <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-boticario.svg" alt="Logo Boticario">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/sem-parar.svg" alt="Logo Sem Parar">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-energisa.svg" alt="Logo Energisa">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/porto-seguro.svg" alt="Logo Porto Seguro">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/fmc.svg" alt="Logo FMC">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/cnh-industrial.svg" alt="Logo CNH Industrial">
+          <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item heroslide2 customers active">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/brf.svg" alt="Logo BRF">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/notre-dame.svg" alt="Logo Notredame">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/zurich.svg" alt="Logo Zurich">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/banco-bv.svg" alt="Logo Banco BV">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/ipiranga.svg" alt="Logo Ipiranga">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-boticario.svg" alt="Logo Boticario">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/sem-parar.svg" alt="Logo Sem Parar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-energisa.svg" alt="Logo Energisa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/porto-seguro.svg" alt="Logo Porto Seguro">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/fmc.svg" alt="Logo FMC">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/cnh-industrial.svg" alt="Logo CNH Industrial">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 position-relative mt-5">
+                      <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>  
+                      <div class="d-flex flex-row justify-content-center counter2 mt-3">
+                        <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+                      </div>
+                      <a class="carousel-control-next bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -374,8 +454,8 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tbanks-title text-center">
-          <h2>O sucesso da TBankS está apenas<br/> começando. Junte-se a nós.</h2>
-          <p class="paragrafo2">Solicite um contato dos nossos especialistas sem compromisso ainda hoje.</p>
+          <h2>Reduza custos e fuja da burocracia.<br>Fale com nossos especialistas.</h2>
+          <!-- <p class="paragrafo2">Solicite um contato dos nossos especialistas sem compromisso ainda hoje.</p> -->
         </div>
         <div class="form">
           <?php echo do_shortcode('[contact-form-7 id="25" title="Contato TbankS"]'); ?>

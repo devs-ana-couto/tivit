@@ -121,6 +121,14 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
+   $('#customerCarousel').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
 })
 
 // JS executes after DOM loads
@@ -172,6 +180,24 @@ document.addEventListener("DOMContentLoaded", function(){
          }
       })
    }
+   if(window.location.pathname === '/staged/tivit/tbanks' || window.location.pathname === '/staged/tivit/tbanks/'){
+      let items = document.querySelectorAll('.carousel .customers')
+
+      items.forEach((el) => {
+         const minPerSlide = 6
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
 });
 
 // Add class on scroll
