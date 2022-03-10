@@ -4,7 +4,7 @@
 
 //  Hero
 .lp-tbanks-hero{
-    background-image: url('../images/landing/tbanks/hero.png');
+    background-image: url('../images/landing/tbanks/hero.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,6 +23,11 @@
         margin: 10px 0 0 0;
       }
     }
+    .grafismos{
+      top: 9%;
+      right: 9%;
+      width: 200px;
+    }
   }
   
   .lp-tdx-hero{
@@ -31,16 +36,16 @@
   
   // Conheça a TBankS 
   .lp-tbanks-conheca{
-    padding: 110px 0 126px 0;
+    padding: 118px 0 140px 0;
     @media(max-width: 768px){
       padding: 44px 0 34px 0;
     }
     .lp-tbanks-conheca-content{
       p{
-        font-size: 38px;
+        font-size: 36px;
         line-height: 50px;
         font-weight: 400;
-        max-width: 1051px;
+        max-width: 785px;
         margin: 0 auto;
         text-align: center;
         color: $cinza-dark-cyber-tivit;
@@ -58,6 +63,20 @@
     }  
     .lp-tbanks-services{
       margin-top: 100px;
+      h2{
+        color: #262626;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .sub{
+        max-width: 1000px;
+      }
+      span.subtitle{
+        color: #262626;
+        font-size: 20px;
+        font-weight: lighter;
+      }
       h3{
         font-size: 22px;
         line-height: 33.46px;
@@ -75,28 +94,42 @@
       }
       .bg-white{
         background-color: white;
-        border: 2px solid #582689;
+        border-bottom: 1px solid #CAD2D8;
+        border-right: 1px solid #CAD2D8;
+        border-top: 1px solid #CAD2D8;
+        border-left: 3px solid #582689;
         padding: 38px 21px;
-        height: 216px;
+        height: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
+        @media(max-width: 768px){
+          margin-bottom: 15px;
+        }
         h3{
+          max-width: 140px;
+          font-size: 24px;
+          text-transform: uppercase;
           color: #582689;
+          text-align: left;
+        }
+        p{
+          margin-top: 40px;
+          text-align: left;
         }
       }
-      .bg-purple{
-        background-color: #582689;
-        border: 2px solid #582689;
-        padding: 38px 21px;
-        height: 216px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h3, p{
-          color: white;
-        }
-      }
+      // .bg-purple{
+      //   background-color: #582689;
+      //   border: 2px solid #582689;
+      //   padding: 38px 21px;
+      //   height: 216px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   h3, p{
+      //     color: white;
+      //   }
+      // }
       .img{
         margin-top: 50px;
         background: #F4F6F7;
@@ -250,7 +283,7 @@
       text-transform: uppercase;
       font-size: 28px;
       line-height: 44px;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
       text-align: center;
       @media(max-width: 768px){
         margin-bottom: 40px;
@@ -264,19 +297,21 @@
       font-size: 20px;
       line-height: 28px;
       font-weight: 600;
-      max-width: 240px;
+      max-width: auto;
       margin: 0 auto;
+      color: #582689;
       text-transform: uppercase;
     }
     .col-12{
-      margin-bottom: 100px;
+      margin-bottom: 30px;
       @media(max-width: 768px){
         margin-bottom: 40px;
       }
     }
     .border-tec{
-      border-right: 1px solid #CAD2D8!important;
-      border-left: 1px solid #CAD2D8!important;
+      border: 1px solid #CAD2D8!important;
+      padding: 60px;
+      height: 300px;
     }
   }
   
@@ -431,7 +466,41 @@
       width: 100%;
     }
   }
-  
+
+  //TBANKS PIX
+  #tbanks-pix{
+    .tbanks-bg-pix{
+      background: #582689;
+      height: auto;
+      padding: 50px;
+    }
+    .pix-text{
+      h3, p{
+        color: white;
+      }
+      h3{
+        font-size: 28px;
+      }
+      p{
+        font-size: 18px;
+      }
+      a{
+        color: white;
+        font-size: 14px;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+          background: white;
+          color: #582689;
+          transition: all .2s;
+        }
+      }
+    }
+  } 
+   
   // Metodologia TDX
   .lp-tdx-metodologia{
     padding: 100px 0 130px 0;
@@ -490,7 +559,9 @@
   
   // Depoimentos
   .lp-tbanks-depoimentos{
-    height: 580px;
+    height: 100%;
+    margin-top: 130px;
+    margin-bottom: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -516,21 +587,49 @@
       font-weight: 400;
       color: #000000;
     }
-    P{
-      font-size: 38px;
-      line-height: 48px;
-      font-weight: 700;
-      max-width: 970px;
+    p{
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 770px;
       margin: 0 auto;
+    }
+    .carousel-control-prev-icon{
+      background-image: url('../../assets/images/landing/tbanks/arrow-gray-left.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url('../../assets/images/landing/tbanks/arrow-gray-right.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-prev{
+      left: 20%;
+      @media(max-width: 768px){
+        left: 0;
+      }
+    }
+    .carousel-control-next{
+      right: 20%;
+      @media(max-width: 768px){
+        right: 0;
+      }
+    }
+    .numseparation{
+      margin-left: 5px;
+      margin-right: 5px;
     }
   }
   
   // Clientes Logos
   .lp-tbanks-logo-clientes{
-    height: 355px;
+    height: 100%;
+    margin-bottom: 150px;
     @media(max-width: 768px){
       height: unset;
       padding: 70px 0 50px 0;
+    }
+    .container{
+      max-width: 1420px !important;
     }
     h2{
       font-size: 24px;
@@ -545,6 +644,91 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+          display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+          display: block;
+      }
+  }
+  
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(16.6%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-16.6%);
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+      transform: translateX(0);
+    }
+    .carousel-control-prev-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-left-red.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-right-red.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-prev{
+      left: 45%;
+      @media(max-width: 768px){
+        left: 28%;
+      }
+    }
+    .carousel-control-next{
+      right: 45%;
+      @media(max-width: 768px){
+        right: 28%;
+      }
+    }
+    .counter2{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive2{
+        color: $vermelho-tivit;
+        font-weight: 700;
+      }
+      .numseparation2, .numtotal2{
+        color: $vermelho-tivit;
+        font-weight: 300;
+      }
+      .numseparation2{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    #customerCarousel{
+      margin-top: 60px;
+      .customers{
+        img{
+          filter: grayscale(1);
+          transition: all .2s;
+          &:hover{
+            filter: grayscale(0);
+            transition: all .2s;
+          }
+        }
       }
     }
   }
@@ -562,10 +746,11 @@
     }
     .lp-tbanks-title{
       h2{
-        font-size: 48px;
-        line-height: 54px;
+        font-size: 36px;
+        line-height: 1.2;
         font-weight: 400;
         color: $cinza-dark-cyber-tivit;
+        margin-bottom: 90px;
       }
       .paragrafo2{
         margin-bottom: 61px;
@@ -581,7 +766,7 @@
         line-height: 28px;
         letter-spacing: 2%;
         font-weight: 700;
-        color: #582689;
+        color: #262626;
         text-transform: uppercase;
         margin: 50px 0 43px 0;
         @media(max-width: 760px){
@@ -663,6 +848,7 @@
         .tbanks-form{
           .wpcf7-form-control.has-spinner.wpcf7-submit{
             background: #582689;
+            border-radius: 50px;
           }
         }
         .wpcf7-list-item-label{
@@ -816,7 +1002,7 @@
         p{
           font-size: 20px;
           line-height: 24px;
-          font-weight: 700;
+          font-weight: 400;
           padding: 0 20px;
         }
       }
