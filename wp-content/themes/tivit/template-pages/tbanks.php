@@ -142,7 +142,7 @@
   </div>
 </div> -->
 
-<div class="lp-tbanks-pix">
+<!-- <div class="lp-tbanks-pix">
   <div class="container">
     <div class="row">
       <div class="col-1 col-md-1 hide-mobile">
@@ -157,6 +157,29 @@
       </div>
       <div class="col-2 col-md-2 text-center hide-mobile">
         <img class="ab2" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/retangle2.svg" alt="Tbanks">
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="tbanks-pix">
+  <div class="container tbanks-bg-pix position-relative">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="pix"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/pix.svg" alt="Tbanks PIX"></div>
+        <div class="fclass position-relative mt-5"><img class="grafismo hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/gh.svg" alt="Tbanks"></div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="pix-text w-100">
+          <h3>Não espere mais para receber pagamentos.</h3>
+          <p>Com o TBankS, a empresa recebe e administra pagamentos em tempo real, com PIX Cobrança e PIX Varejo.</p>
+          <div class="mt-5 pt-3">
+            <a> Conheça toda a ação </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="grafismo-vert d-flex justify-content-end hide-mobile"><img class="text-right" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/grafismopix.svg" alt="Tbanks Grafismo Vertical"></div>
       </div>
     </div>
   </div>

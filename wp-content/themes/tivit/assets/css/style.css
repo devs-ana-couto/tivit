@@ -2873,6 +2873,29 @@ html, body, * {
     margin-top: 80px;
     width: 100%; }
 
+#tbanks-pix .tbanks-bg-pix {
+  background: #582689;
+  height: auto;
+  padding: 50px; }
+#tbanks-pix .pix-text h3, #tbanks-pix .pix-text p {
+  color: white; }
+#tbanks-pix .pix-text h3 {
+  font-size: 28px; }
+#tbanks-pix .pix-text p {
+  font-size: 18px; }
+#tbanks-pix .pix-text a {
+  color: white;
+  font-size: 14px;
+  padding: 15px 40px 15px 40px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s; }
+  #tbanks-pix .pix-text a:hover {
+    background: white;
+    color: #582689;
+    transition: all .2s; }
+
 .lp-tdx-metodologia {
   padding: 100px 0 130px 0; }
   .lp-tdx-metodologia .col-12.bl {

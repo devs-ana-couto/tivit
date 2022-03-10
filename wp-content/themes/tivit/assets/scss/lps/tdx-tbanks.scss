@@ -466,7 +466,41 @@
       width: 100%;
     }
   }
-  
+
+  //TBANKS PIX
+  #tbanks-pix{
+    .tbanks-bg-pix{
+      background: #582689;
+      height: auto;
+      padding: 50px;
+    }
+    .pix-text{
+      h3, p{
+        color: white;
+      }
+      h3{
+        font-size: 28px;
+      }
+      p{
+        font-size: 18px;
+      }
+      a{
+        color: white;
+        font-size: 14px;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+          background: white;
+          color: #582689;
+          transition: all .2s;
+        }
+      }
+    }
+  } 
+   
   // Metodologia TDX
   .lp-tdx-metodologia{
     padding: 100px 0 130px 0;
