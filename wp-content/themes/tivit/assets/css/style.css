@@ -3681,4 +3681,9 @@ html, body, * {
     margin-bottom: 40px;
     text-transform: uppercase; }
   .tdx.ventures .box h2 {
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+  #ventures div.box {
+    height: auto;
+    text-align: center; }
+    #ventures div.box p {
+      margin-top: 40px; } }

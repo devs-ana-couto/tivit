@@ -120,4 +120,66 @@
   </div>
 </div>
 
+
+<!-- Bloco Ventures -->
+<div id="ventures">
+  <div class="d-flex flex-column container w-100 text-center justify-content-center align-items-center">
+    <h2>EMPRESAS NA VENTURES</h2>
+    <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
+      investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
+  </div>
+  <div class="container mt-5 mb-5">
+    <!-- first row -->
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
+          </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sec row -->
+    <div class="row mt-4">
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="box">
+          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="triangle-down"></div>
+  </div>
+</div>
 <?php get_footer(); ?>
