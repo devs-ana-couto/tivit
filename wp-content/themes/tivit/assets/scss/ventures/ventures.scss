@@ -98,4 +98,23 @@
             color: $vermelho-tivit;
         }
     }
+
+
+    // tdx ventures
+
+    .tdx.ventures{
+        .title{
+            h2{
+                font-size: 28px;
+                line-height: 44px;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+            }
+        }
+        .box{
+            h2{
+                text-transform: uppercase;
+            }
+        }
+    }
 }

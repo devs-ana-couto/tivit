@@ -3674,4 +3674,11 @@ html, body, * {
   .a-tivit-sobre.ventures p {
     font-weight: 300; }
   .a-tivit-sobre.ventures .red {
-    color: #F20024; } }
+    color: #F20024; }
+  .tdx.ventures .title h2 {
+    font-size: 28px;
+    line-height: 44px;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+  .tdx.ventures .box h2 {
+    text-transform: uppercase; } }
