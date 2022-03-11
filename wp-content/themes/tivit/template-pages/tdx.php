@@ -5,8 +5,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 lp-banks-hero-content text-center">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/tdx-white.png" alt="Tdx powered by TIVIT">
-        <h1 class="fade-in-bottom">Abrindo caminhos </br>para <b>negócios extraordinários</b>
+        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/tdxlogo.svg" alt="Tdx powered by TIVIT">
+        <h1 class="fade-in-bottom">Juntos, rumo ao </br><b>extraordinário</b>
 </h1>
       </div>
     </div>
@@ -20,7 +20,7 @@
 
         <div class="lp-tbanks-conheca-content lp-tdx-conheca-content">
           <p>
-            Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma para seu negócio ser digital. Conte com nossa consultoria de desenvolvimento de software e transforme sua operação.
+            <b>Soluções inovadoras na prática.</b><br>Desafiamos e encorajamos a transformação, porque acreditamos que o plano no papel não muda o mundo
           </p>
         </div>
 
@@ -68,9 +68,31 @@
       <div class="col-12 col-md-6">
         <div class="lp-tdx-conheca-content">
           <h2>Conheça a TDX</h2>
-          <p class="paragrafo2">Focados em acelerar resultados de negócios, solucionamos desafios com uma abordagem diferenciada e assertiva. Valorizamos uma combinação de colaboração e criatividade, cultura empreendedora, autonomia e agilidade nos processos.<br/><br/>
+          <p class="paragrafo2">
+          Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
+          <br><br>
+          Além de ferramentas que facilitam o processo e métodos simples e ágeis, também fomentamos a transformação das pessoas.
+          <br><br>
+          Por isso orientamos a todos e seus ecossistemas, através de uma experiência fim a fim. Mostramos as soluções inovadoras na prática, sem deixar de estar presentes no processo.
+          </p>
+          <div class="mt-0 mt-md-5">
+            <a class="buttoncta"> CONHEÇA A TDX </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-          Um plano no papel não muda o mundo. Com a Tdx, sua transformação digital se torna realidade. 
+<div class="lp-tdx-parceiros text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lp-tdx-parceiros-content">
+          <h2>Parceiros</h2>
+        </div>
+        <div class="mt-5">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/partnerslogo.svg" alt="Parceiros">
         </div>
       </div>
     </div>
@@ -169,7 +191,7 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-como-fazemos-content">
-          <h2>entrega de valor</h2>
+          <h2>como fazemos</h2>
           <p class="paragrafo2">
             Atuamos desde a descoberta do desafio do cliente, estudando a operação e elaborando hipóteses, para então desenvolver soluções customizadas. Construímos as fundações para seu negócio crescer e prosperar, em um ciclo virtuoso.
           </p>
@@ -185,28 +207,30 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-metodologia-content">
-          <h2>Nossa metodologia de trabalho</h2>
+          <h2>Entrega de valor</h2>
           <p class="paragrafo2">
           Desenhamos, desenvolvemos e otimizamos softwares customizados para cada negócio.
           </p>
         </div>
       </div>
-      <div class="col-12 col-md-3 bl">
+      <div class="col-12 col-md-6 bl">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
         <h3>Design, Produtos & Plataformas</h3>
-        <p class="paragrafo3">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Experiências extraordinárias</li>
-          <li>Design de produtos e serviços</li>
-          <li>Estratégia digital</li>
-          <li>Transformação digital</li>
-          <li>Desenvolvimento Ágil e DevOps</li>
-          <li>Evolução de produtos digitais</li>
-        </ul>
+        <div class="d-flex justify-content-center align-items-center w-100">
+         <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
+        </div>
+        <div class="paragrafo3 list text-center">
+          Experiências extraordinárias<br>
+          Design de produtos e serviços<br>
+          Estratégia digital<br>
+          Transformação digital<br>
+          Desenvolvimento Ágil e DevOps<br>
+          Evolução de produtos digitais<br>
+        </div>
         <!-- Divisor -->
         <div class="divisor"></div>
       </div>
-      <div class="col-12 col-md-3 bl">
+      <div class="col-12 col-md-6 bl">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
         <h3>Data &<br/> Analytics</h3>
         <p class="paragrafo3">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
@@ -220,7 +244,7 @@
         <!-- Divisor -->
         <div class="divisor"></div>
       </div>
-      <div class="col-12 col-md-3 bl">
+      <div class="col-12 col-md-6 bl">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
         <h3>Modernização & Otimização</h3>
         <p class="paragrafo3">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
@@ -235,7 +259,7 @@
         <!-- Divisor -->
         <div class="divisor"></div>
       </div>
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-6">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
         <h3>Sustentação & Crescimento</h3>
         <p class="paragrafo3">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>

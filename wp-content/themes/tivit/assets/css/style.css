@@ -255,11 +255,11 @@ html, body, * {
         color: #951B81 !important; }
 
   .on-scroll-tdx {
-    background: white; }
+    background: #990017; }
     .on-scroll-tdx .header-menu ul li a {
-      color: #454D54 !important; }
+      color: white !important; }
     .on-scroll-tdx .header-options p {
-      color: #454D54 !important; }
+      color: white !important; }
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
@@ -2589,23 +2589,27 @@ html, body, * {
     width: 200px; }
 
 .lp-tdx-hero {
-  background-image: url("../images/landing/tdx/hero.png"); }
+  background-image: url("../images/landing/tdx/bannerherotdx.jpg"); }
 
 .lp-tbanks-conheca {
-  padding: 118px 0 140px 0; }
+  padding: 127px 0 140px 0; }
   @media (max-width: 768px) {
     .lp-tbanks-conheca {
       padding: 44px 0 34px 0; } }
-  .lp-tbanks-conheca .lp-tbanks-conheca-content p {
-    font-size: 36px;
-    line-height: 50px;
-    font-weight: 400;
-    max-width: 785px;
-    margin: 0 auto;
-    text-align: center;
-    color: #262626; }
-    .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
-      color: #582689; }
+  .lp-tbanks-conheca .lp-tbanks-conheca-content {
+    margin-bottom: 50px; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content b {
+      font-weight: 600; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content p {
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 400;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+      color: #262626; }
+      .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
+        color: #582689; }
   .lp-tbanks-conheca .lp-tdx-conheca-content p span {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
@@ -2666,6 +2670,7 @@ html, body, * {
           margin-bottom: 40px; } }
   .lp-tbanks-conheca .lp-tbanks-credibilidade {
     margin-top: 64px;
+    margin-bottom: 34px;
     color: #262626; }
     .lp-tbanks-conheca .lp-tbanks-credibilidade p {
       font-size: 18px;
@@ -2793,8 +2798,38 @@ html, body, * {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
-      color: #FE4817; }
+    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
+        color: #FE4817; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content .paragrafo2 {
+        max-width: 500px; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta {
+        margin-top: 15px;
+        background: #FE4817;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #FE4817;
+        transition: all .2s;
+        color: white;
+        text-decoration: unset;
+        cursor: pointer;
+        font-size: 14px; }
+        .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta:hover {
+          background: white;
+          color: #262626;
+          transition: all .2s; }
+
+.lp-tdx-parceiros {
+  margin-top: 60px;
+  margin-bottom: 160px; }
+  .lp-tdx-parceiros .lp-tdx-parceiros-content h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 600; }
 
 #triangle-down, #triangle-down-1, #triangle-down-2 {
   width: 0;
@@ -2947,11 +2982,18 @@ html, body, * {
     color: #FE4817;
     font-weight: 600;
     text-transform: uppercase;
-    width: 270px;
+    width: auto;
     margin: 0 auto; }
   .lp-tdx-metodologia .paragrafo3 {
-    max-width: 270px;
-    margin: 28px 0 0 0; }
+    max-width: auto;
+    margin: 18px 0 0 0; }
+  .lp-tdx-metodologia .paragrafo3.mx {
+    max-width: 450px; }
+  .lp-tdx-metodologia .paragrafo3.list {
+    margin-top: 28px !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase; }
   .lp-tdx-metodologia ul li {
     width: 290px;
     text-align: left; }
@@ -3114,6 +3156,7 @@ html, body, * {
     color: #262626;
     margin-bottom: 90px; }
   .lp-tbanks-form .lp-tbanks-title .paragrafo2 {
+    margin-top: 22px;
     margin-bottom: 61px; }
   .lp-tbanks-form .form {
     width: 830px;
@@ -3250,7 +3293,7 @@ html, body, * {
       line-height: 80px; }
 
   .lp-tdx-conheca {
-    padding: 0 0 23px 0; }
+    padding: 0 0 100px 0; }
     .lp-tdx-conheca img {
       width: 100%;
       margin-bottom: 23px; }
