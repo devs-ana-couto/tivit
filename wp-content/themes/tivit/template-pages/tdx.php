@@ -214,62 +214,78 @@
         </div>
       </div>
       <div class="col-12 col-md-6 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Design, Produtos & Plataformas</h3>
-        <div class="d-flex justify-content-center align-items-center w-100">
-         <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Design, Produtos & Plataformas</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+          <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Experiências extraordinárias<br>
+            Design de produtos e serviços<br>
+            Estratégia digital<br>
+            Transformação digital<br>
+            Desenvolvimento Ágil e DevOps<br>
+            Evolução de produtos digitais<br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
         </div>
-        <div class="paragrafo3 list text-center">
-          Experiências extraordinárias<br>
-          Design de produtos e serviços<br>
-          Estratégia digital<br>
-          Transformação digital<br>
-          Desenvolvimento Ágil e DevOps<br>
-          Evolução de produtos digitais<br>
-        </div>
-        <!-- Divisor -->
-        <div class="divisor"></div>
       </div>
       <div class="col-12 col-md-6 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Data &<br/> Analytics</h3>
-        <p class="paragrafo3">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Estratégia e inteligência</li>
-          <li>Arquitetura e infraestrutura de recursos</li>
-          <li>Fluxo e processamento de informações</li>
-          <li>Insights para negócios</li>
-          <li>Governança, política e segurança</li>
-        </ul>
-        <!-- Divisor -->
-        <div class="divisor"></div>
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Data & Analytics</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Estratégia e inteligência<br>
+            Arquitetura e infraestrutura de recursos<br>
+            Fluxo e processamento de informações<br>
+            Insights para negócios<br>
+            Governança, política e segurança<br>
+            <br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
+        </div>
       </div>
       <div class="col-12 col-md-6 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Modernização & Otimização</h3>
-        <p class="paragrafo3">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Descoberta e estratégia</li>
-          <li>Modernização de aplicações</li>
-          <li>Otimização de ambientes em nuvem</li>
-          <li>Integrações estratégicas</li>
-          <li>Digitalização e transformação de processos</li>
-          <li>Digital Workplace</li>
-        </ul>
-        <!-- Divisor -->
-        <div class="divisor"></div>
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Modernização & Otimização</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Descoberta e estratégia<br>
+            Modernização de aplicações<br>
+            Otimização de ambientes em nuvem<br>
+            Integrações estratégicas<br>
+            Digitalização e transformação de processos<br>
+            Digital Workplace<br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Sustentação & Crescimento</h3>
-        <p class="paragrafo3">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Sustentação de operações 24/7</li>
-          <li>Sustentação de ambientes legados</li>
-          <li>Modelos de operação inteligentes</li>
-          <li>Evolução e continuidade de negócios estratégicos</li>
-          <li>Centro de Excelência SAP</li>
-        </ul>
+      <div class="col-12 col-md-6 bl">
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Sustentação & Crescimento</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Sustentação de operações 24/7<br>
+            Sustentação de ambientes legados<br>
+            Modelos de operação inteligentes<br>
+            Evolução e continuidade de negócios estratégicos<br>
+            Centro de Excelência SAP<br>
+            <Br>
+          </div>
+        </div>
         <a href="#" class="btn btn-conheca hide-desktop">Conheça a TDX</a>
       </div>
       <div class="col-12 hide-mobile">

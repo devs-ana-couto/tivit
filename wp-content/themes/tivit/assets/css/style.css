@@ -2964,14 +2964,17 @@ html, body, * {
 .lp-tdx-metodologia {
   padding: 100px 0 130px 0; }
   .lp-tdx-metodologia .col-12.bl {
-    border-right: 1px solid #E6E6E6; }
+    padding: 30px; }
+    .lp-tdx-metodologia .col-12.bl .card {
+      border: 1px solid #E6E6E6;
+      padding: 50px; }
   .lp-tdx-metodologia h2 {
     font-size: 28px;
     line-height: 44px;
     letter-spacing: 0.03em;
     text-transform: uppercase; }
   .lp-tdx-metodologia p {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
   .lp-tdx-metodologia img {
     max-width: 100%;
     height: 90px;
@@ -3003,11 +3006,14 @@ html, body, * {
     border-radius: 0;
     text-transform: uppercase;
     padding: 15px 38px;
-    margin-top: 60px; }
+    border-radius: 50px;
+    margin-top: 60px;
+    transition: all .2s; }
     .lp-tdx-metodologia .btn-conheca:hover {
       background-color: white;
       color: #FE4817;
-      border: 1px solid #FE4817; }
+      border: 1px solid #FE4817;
+      transition: all .2s; }
 
 .lp-tbanks-depoimentos {
   height: 100%;

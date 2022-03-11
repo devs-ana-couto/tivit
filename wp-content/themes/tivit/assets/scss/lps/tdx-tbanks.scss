@@ -547,7 +547,11 @@
   .lp-tdx-metodologia{
     padding: 100px 0 130px 0;
     .col-12.bl{
-      border-right: 1px solid #E6E6E6;
+      padding: 30px;
+      .card{
+        border: 1px solid #E6E6E6;
+        padding: 50px;
+      }
     }
     h2{
       font-size: 28px;
@@ -556,7 +560,7 @@
       text-transform: uppercase;
     }
     p{
-      margin-bottom: 100px;
+      margin-bottom: 30px;
     }
     img{
       max-width: 100%;
@@ -599,11 +603,14 @@
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
+      border-radius: 50px;
       margin-top: 60px;
+      transition: all .2s;
       &:hover{
         background-color: white;
         color: #FE4817;
         border: 1px solid #FE4817;
+        transition: all .2s;
       }
     }
   
@@ -1102,6 +1109,7 @@
         text-transform: uppercase;
         padding: 15px 38px;
         margin-top: 60px;
+        border-radius: 50px;
       }
     }
   
