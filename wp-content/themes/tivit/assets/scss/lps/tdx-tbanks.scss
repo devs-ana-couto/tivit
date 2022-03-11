@@ -478,6 +478,9 @@
         .paragrafo3{
           color: white;
         }
+        strong{
+          font-weight: 600;
+        }
       }
     }
   }
@@ -491,7 +494,8 @@
   
   // Como fazemos
   .lp-tdx-como-fazemos{
-    padding: 122px 0 60px 0;
+    padding: 122px 0 130px 0;
+    background: #F4F6F7;
   
     .lp-tdx-como-fazemos-content{
       width: 721px;
@@ -545,7 +549,7 @@
    
   // Metodologia TDX
   .lp-tdx-metodologia{
-    padding: 100px 0 130px 0;
+    padding: 123px 0 130px 0;
     .col-12.bl{
       padding: 30px;
       .card{
@@ -695,7 +699,7 @@
       font-size: 24px;
       line-height: 30px;
       letter-spacing: 3%;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 40px;
       text-transform: uppercase;
     }
@@ -951,6 +955,32 @@
   
     }
   
+  }
+
+  // Cases TDX
+  #cases{
+    .lp-tdx-confira-bg-right{
+      background: #F14517;
+    }
+    .counter{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive{
+        color: white;
+        font-weight: 700;
+      }
+      .numseparation, .numtotal{
+        color: white;
+        font-weight: 300;
+      }
+      .numseparation{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
   }
   
   

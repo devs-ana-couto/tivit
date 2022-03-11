@@ -234,6 +234,8 @@
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
 
+      <div id="triangle-down"></div>
+
         <div class="carousel-inner">
         
           <div class="row">

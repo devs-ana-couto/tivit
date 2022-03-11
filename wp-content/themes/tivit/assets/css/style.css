@@ -1762,7 +1762,8 @@ html, body, * {
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
             font-size: 36px;
             line-height: 42px;
-            font-weight: 700; }
+            font-weight: 700;
+            text-transform: uppercase; }
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
             width: 419px;
             margin: 0 auto;
@@ -2917,6 +2918,8 @@ html, body, * {
         margin-bottom: 19px; }
       .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content .paragrafo3, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel .paragrafo3 {
         color: white; }
+      .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content strong, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel strong {
+        font-weight: 600; }
 
 .lp-tbanks-confira .lp-tdx-confira-bg-right {
   background-color: #FE4817; }
@@ -2925,7 +2928,8 @@ html, body, * {
       height: 440px; } }
 
 .lp-tdx-como-fazemos {
-  padding: 122px 0 60px 0; }
+  padding: 122px 0 130px 0;
+  background: #F4F6F7; }
   .lp-tdx-como-fazemos .lp-tdx-como-fazemos-content {
     width: 721px;
     max-width: 100%;
@@ -2962,7 +2966,7 @@ html, body, * {
     transition: all .2s; }
 
 .lp-tdx-metodologia {
-  padding: 100px 0 130px 0; }
+  padding: 123px 0 130px 0; }
   .lp-tdx-metodologia .col-12.bl {
     padding: 30px; }
     .lp-tdx-metodologia .col-12.bl .card {
@@ -3080,7 +3084,7 @@ html, body, * {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 3%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 40px;
     text-transform: uppercase; }
   .lp-tbanks-logo-clientes .lp-tbanks-logo-clientes-content .col-4 {
@@ -3262,6 +3266,24 @@ html, body, * {
         .lp-tbanks-form .form .privacidade {
           margin-top: 30px; } }
 
+#cases .lp-tdx-confira-bg-right {
+  background: #F14517; }
+#cases .counter {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #cases .counter .numactive {
+    color: white;
+    font-weight: 700; }
+  #cases .counter .numseparation, #cases .counter .numtotal {
+    color: white;
+    font-weight: 300; }
+  #cases .counter .numseparation {
+    margin-left: 10px;
+    margin-right: 10px; }
+
 @media (max-width: 768px) {
   .on-scroll-mobile-tbanks {
     background-color: #582689 !important; }
@@ -3369,7 +3391,8 @@ html, body, * {
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
-      margin-top: 60px; }
+      margin-top: 60px;
+      border-radius: 50px; }
 
   .lp-tbanks-form .lp-tbanks-title h2 {
     font-size: 22px;
