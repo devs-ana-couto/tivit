@@ -255,11 +255,11 @@ html, body, * {
         color: #951B81 !important; }
 
   .on-scroll-tdx {
-    background: white; }
+    background: #990017; }
     .on-scroll-tdx .header-menu ul li a {
-      color: #454D54 !important; }
+      color: white !important; }
     .on-scroll-tdx .header-options p {
-      color: #454D54 !important; }
+      color: white !important; }
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
@@ -1762,7 +1762,8 @@ html, body, * {
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
             font-size: 36px;
             line-height: 42px;
-            font-weight: 700; }
+            font-weight: 700;
+            text-transform: uppercase; }
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
             width: 419px;
             margin: 0 auto;
@@ -2589,23 +2590,27 @@ html, body, * {
     width: 200px; }
 
 .lp-tdx-hero {
-  background-image: url("../images/landing/tdx/hero.png"); }
+  background-image: url("../images/landing/tdx/bannerherotdx.jpg"); }
 
 .lp-tbanks-conheca {
-  padding: 118px 0 140px 0; }
+  padding: 127px 0 140px 0; }
   @media (max-width: 768px) {
     .lp-tbanks-conheca {
       padding: 44px 0 34px 0; } }
-  .lp-tbanks-conheca .lp-tbanks-conheca-content p {
-    font-size: 36px;
-    line-height: 50px;
-    font-weight: 400;
-    max-width: 785px;
-    margin: 0 auto;
-    text-align: center;
-    color: #262626; }
-    .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
-      color: #582689; }
+  .lp-tbanks-conheca .lp-tbanks-conheca-content {
+    margin-bottom: 50px; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content b {
+      font-weight: 600; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content p {
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 400;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+      color: #262626; }
+      .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
+        color: #582689; }
   .lp-tbanks-conheca .lp-tdx-conheca-content p span {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
@@ -2666,6 +2671,7 @@ html, body, * {
           margin-bottom: 40px; } }
   .lp-tbanks-conheca .lp-tbanks-credibilidade {
     margin-top: 64px;
+    margin-bottom: 34px;
     color: #262626; }
     .lp-tbanks-conheca .lp-tbanks-credibilidade p {
       font-size: 18px;
@@ -2793,8 +2799,38 @@ html, body, * {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
-      color: #FE4817; }
+    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
+        color: #FE4817; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content .paragrafo2 {
+        max-width: 500px; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta {
+        margin-top: 15px;
+        background: #FE4817;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #FE4817;
+        transition: all .2s;
+        color: white;
+        text-decoration: unset;
+        cursor: pointer;
+        font-size: 14px; }
+        .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta:hover {
+          background: white;
+          color: #262626;
+          transition: all .2s; }
+
+.lp-tdx-parceiros {
+  margin-top: 60px;
+  margin-bottom: 160px; }
+  .lp-tdx-parceiros .lp-tdx-parceiros-content h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 600; }
 
 #triangle-down, #triangle-down-1, #triangle-down-2 {
   width: 0;
@@ -2882,6 +2918,8 @@ html, body, * {
         margin-bottom: 19px; }
       .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content .paragrafo3, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel .paragrafo3 {
         color: white; }
+      .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content strong, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel strong {
+        font-weight: 600; }
 
 .lp-tbanks-confira .lp-tdx-confira-bg-right {
   background-color: #FE4817; }
@@ -2890,7 +2928,8 @@ html, body, * {
       height: 440px; } }
 
 .lp-tdx-como-fazemos {
-  padding: 122px 0 60px 0; }
+  padding: 122px 0 130px 0;
+  background: #F4F6F7; }
   .lp-tdx-como-fazemos .lp-tdx-como-fazemos-content {
     width: 721px;
     max-width: 100%;
@@ -2927,16 +2966,19 @@ html, body, * {
     transition: all .2s; }
 
 .lp-tdx-metodologia {
-  padding: 100px 0 130px 0; }
+  padding: 123px 0 130px 0; }
   .lp-tdx-metodologia .col-12.bl {
-    border-right: 1px solid #E6E6E6; }
+    padding: 30px; }
+    .lp-tdx-metodologia .col-12.bl .card {
+      border: 1px solid #E6E6E6;
+      padding: 50px; }
   .lp-tdx-metodologia h2 {
     font-size: 28px;
     line-height: 44px;
     letter-spacing: 0.03em;
     text-transform: uppercase; }
   .lp-tdx-metodologia p {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
   .lp-tdx-metodologia img {
     max-width: 100%;
     height: 90px;
@@ -2947,11 +2989,18 @@ html, body, * {
     color: #FE4817;
     font-weight: 600;
     text-transform: uppercase;
-    width: 270px;
+    width: auto;
     margin: 0 auto; }
   .lp-tdx-metodologia .paragrafo3 {
-    max-width: 270px;
-    margin: 28px 0 0 0; }
+    max-width: auto;
+    margin: 18px 0 0 0; }
+  .lp-tdx-metodologia .paragrafo3.mx {
+    max-width: 450px; }
+  .lp-tdx-metodologia .paragrafo3.list {
+    margin-top: 28px !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase; }
   .lp-tdx-metodologia ul li {
     width: 290px;
     text-align: left; }
@@ -2961,11 +3010,14 @@ html, body, * {
     border-radius: 0;
     text-transform: uppercase;
     padding: 15px 38px;
-    margin-top: 60px; }
+    border-radius: 50px;
+    margin-top: 60px;
+    transition: all .2s; }
     .lp-tdx-metodologia .btn-conheca:hover {
       background-color: white;
       color: #FE4817;
-      border: 1px solid #FE4817; }
+      border: 1px solid #FE4817;
+      transition: all .2s; }
 
 .lp-tbanks-depoimentos {
   height: 100%;
@@ -3032,7 +3084,7 @@ html, body, * {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 3%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 40px;
     text-transform: uppercase; }
   .lp-tbanks-logo-clientes .lp-tbanks-logo-clientes-content .col-4 {
@@ -3114,6 +3166,7 @@ html, body, * {
     color: #262626;
     margin-bottom: 90px; }
   .lp-tbanks-form .lp-tbanks-title .paragrafo2 {
+    margin-top: 22px;
     margin-bottom: 61px; }
   .lp-tbanks-form .form {
     width: 830px;
@@ -3213,6 +3266,24 @@ html, body, * {
         .lp-tbanks-form .form .privacidade {
           margin-top: 30px; } }
 
+#cases .lp-tdx-confira-bg-right {
+  background: #F14517; }
+#cases .counter {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #cases .counter .numactive {
+    color: white;
+    font-weight: 700; }
+  #cases .counter .numseparation, #cases .counter .numtotal {
+    color: white;
+    font-weight: 300; }
+  #cases .counter .numseparation {
+    margin-left: 10px;
+    margin-right: 10px; }
+
 @media (max-width: 768px) {
   .on-scroll-mobile-tbanks {
     background-color: #582689 !important; }
@@ -3250,7 +3321,7 @@ html, body, * {
       line-height: 80px; }
 
   .lp-tdx-conheca {
-    padding: 0 0 23px 0; }
+    padding: 0 0 100px 0; }
     .lp-tdx-conheca img {
       width: 100%;
       margin-bottom: 23px; }
@@ -3320,7 +3391,8 @@ html, body, * {
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
-      margin-top: 60px; }
+      margin-top: 60px;
+      border-radius: 50px; }
 
   .lp-tbanks-form .lp-tbanks-title h2 {
     font-size: 22px;
