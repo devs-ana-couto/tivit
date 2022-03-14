@@ -136,7 +136,6 @@ jQuery(document).ready(function($) {
       $('.numseparation2').html('  /  ');
       $('.numtotal2').html( totalItems2 );
    });
-   
 
 })
 
