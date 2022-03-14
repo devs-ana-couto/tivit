@@ -132,4 +132,45 @@
             }
         }
     }
+
+    // Apresentações
+    .apresentacoes{
+        padding: 140px;
+        h2{
+            font-size: 28px;
+            line-height: 44px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $cinza-dark-cyber-tivit;
+        }
+        .box{
+            padding: 35px 30px;
+            border: 1px solid $cinza-light-tivit;
+            h3{
+                font-size: 28px;
+                line-height: 32px;
+                margin-bottom: 17px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $vermelho-tivit;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+
+    .a-tivit-cases.ventures{
+        padding-bottom: 140px;
+        background: none;
+        .title{
+            h2{
+                font-size: 28px;
+                line-height: 50px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
 }

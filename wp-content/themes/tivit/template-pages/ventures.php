@@ -288,12 +288,38 @@
 
 
 <!-- Próximas apresentações -->
-<section class="apresentacoes">
+<section class="apresentacoes text-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h2>prÓximas apresentaçÕes de startups</h2>
-        <p>Conheça ainda mais de perto o que fazemos. Marque na sua agenda os nossos próximos encontros para inovar.</p>
+        <p class="paragrafo2">Conheça ainda mais de perto o que fazemos. Marque na sua agenda os nossos próximos encontros para inovar.</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+    <div class="col-4">
+        <div class="box">
+          <h3>
+            10/10/2021
+          </h3>
+          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <h3>
+            15/10/2021
+          </h3>
+          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <h3>
+            02/11/2021
+          </h3>
+          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -301,7 +327,7 @@
 
 
 <!-- Cases -->
-<div class="a-tivit-cases cases ctivit">
+<div class="a-tivit-cases cases ventures">
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="container">
       <div class="row">
@@ -414,4 +440,21 @@
   </div>
 </div>
 
+
+<!-- Pornto para Inovar? -->
+<div class="home-pessoas-e-carreiras inovar">
+  <div id="triangle-down"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="home-pessoas-e-carreiras-title">
+          <h2>pronto para inovar?</h2>
+        </div>
+        <div class="botao">
+          <a href="#" class="btn btn-primary">Fale com a gente!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
