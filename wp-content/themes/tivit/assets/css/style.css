@@ -125,25 +125,29 @@ html, body, * {
       align-items: center;
       justify-content: center;
       border: solid 1px white; } }
-
 @media (min-width: 769px) {
   .header .header-menu ul li.active {
     border: 1px solid white;
     border-radius: 50px;
     padding: 0px 15px 0px 15px; }
+
   .header .header-menu ul li {
     border: 1px solid transparent;
     border-radius: 50px;
     padding: 0px 15px 0px 15px;
     transition: all .15s linear;
     margin: 4px; }
+
   .header .header-menu ul li:hover {
     border-color: white;
     transition: all .2s linear; }
+
   #menu-header-menu {
     flex-wrap: wrap; }
+
   .header-people-and-careers > p {
     font-weight: 500; }
+
   .language {
     display: flex; }
     .language a {
@@ -164,13 +168,16 @@ html, body, * {
         margin-left: 20px; }
       .language a .en {
         margin: 0 !important; }
+
   .navbar-expand-md {
     background: transparent;
     height: 70px;
     transition: all .33s linear; }
+
   .on-scroll-global {
     background: #990017;
     transition: all .33s linear; }
+
   .header {
     background-color: transparent;
     display: flex;
@@ -236,6 +243,7 @@ html, body, * {
           transition: all .2s linear; }
     .header .nav {
       margin-bottom: 0px; }
+
   .on-scroll-tbanks {
     background: white; }
     .on-scroll-tbanks .header-menu ul li a {
@@ -245,6 +253,7 @@ html, body, * {
       .on-scroll-tbanks .header-options p a {
         border: 1px solid #951B81 !important;
         color: #951B81 !important; }
+
   .on-scroll-tdx {
     background: #990017; }
     .on-scroll-tdx .header-menu ul li a {
@@ -254,7 +263,6 @@ html, body, * {
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
-
 /*
  * Footer
  **/
@@ -421,7 +429,6 @@ html, body, * {
     align-items: center;
     justify-content: right;
     padding: 0; } }
-
 .fade-in-left {
   -webkit-animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
@@ -450,7 +457,6 @@ html, body, * {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; } }
-
 @keyframes fade-in-left {
   0% {
     -webkit-transform: translateX(-500px);
@@ -460,12 +466,10 @@ html, body, * {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; } }
-
 @property --num {
   syntax: "<integer>";
   initial-value: 0;
   inherits: false; }
-
 /**
  * ----------------------------------------
  * animation fade-in-bottom
@@ -480,7 +484,6 @@ html, body, * {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-
 @keyframes fade-in-bottom {
   0% {
     -webkit-transform: translateY(350px);
@@ -490,7 +493,6 @@ html, body, * {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
-
 .numbers {
   animation: counter 5s infinite alternate ease-in-out;
   counter-reset: num var(--num); }
@@ -503,7 +505,6 @@ html, body, * {
     --num: 0; }
   to {
     --num: 78; } }
-
 .box-carousel {
   position: relative; }
   .box-carousel .container-fluid {
@@ -533,7 +534,6 @@ html, body, * {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite; }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); }
@@ -541,18 +541,15 @@ html, body, * {
     transform: translateY(-30px); }
   60% {
     transform: translateY(-15px); } }
-
 /**
   *  Hide desktop and mobile
   */
 @media (max-width: 760px) {
   .hide-mobile {
     display: none; } }
-
 @media (min-width: 760px) {
   .hide-desktop {
     display: none; } }
-
 /**
  *  Mobile
  */
@@ -988,6 +985,7 @@ html, body, * {
           .home-hero .container .navigation .counter .numseparation {
             margin-left: 5px;
             margin-right: 5px; }
+
   .home-intro .pcustom {
     padding: 140px 0 140px 0; }
   .home-intro p {
@@ -1005,9 +1003,11 @@ html, body, * {
         background: white;
         color: #F20024;
         border: red solid 1px; }
+
   .home-portifolio.active {
     opacity: 1;
     transition: all 0.7s linear; }
+
   section.port {
     height: 900px;
     position: relative; }
@@ -1022,6 +1022,7 @@ html, body, * {
       opacity: 1;
       height: 0%;
       transition: all 0.4s linear 0.2s; }
+
   .home-portifolio {
     width: 100%;
     height: 700px;
@@ -1030,7 +1031,6 @@ html, body, * {
   @media (min-width: 760px) and (min-width: 760px) {
     .home-portifolio .customposition {
       position: absolute; } }
-
 @media (min-width: 760px) {
     .home-portifolio .home-portifolio-image {
       background: url("../../assets/images/home/img_banner1.jpg") no-repeat center center;
@@ -1084,9 +1084,11 @@ html, body, * {
         border-radius: 50px;
         color: #F20024;
         transition: all 0.4s linear; }
+
   .home-cases.active {
     background-color: black;
     transition: background-color 0.35s linear; }
+
   .home-cases {
     background-color: #262626;
     transition: background-color 0.35s linear; }
@@ -1175,6 +1177,7 @@ html, body, * {
       align-items: flex-end; }
       .home-cases .home-cases-content.right h3, .home-cases .home-cases-content.right p, .home-cases .home-cases-content.right .botao {
         text-align: right; }
+
   .home-pessoas-e-carreiras {
     background: url("../../assets/images/home/carreiras.png") no-repeat center center;
     height: 790px;
@@ -1187,9 +1190,11 @@ html, body, * {
         font-weight: lighter;
         text-align: center;
         color: white; }
+
   .pessoasCarreiras.active {
     background: white;
     transition: all 0.7s ease-in; }
+
   .pessoasCarreiras {
     position: relative;
     background: black;
@@ -1230,6 +1235,7 @@ html, body, * {
     .pessoasCarreiras .home-pessoas-e-carreiras.active {
       opacity: 1;
       transition: all 0.3s linear 0.2s; }
+
   .partners {
     padding-bottom: 140px;
     transition: all 0.4s linear 0.2s;
@@ -1249,7 +1255,6 @@ html, body, * {
   .partners.active {
     opacity: 1;
     transition: all 0.4s linear 0.2s; } }
-
 .pessoas-e-carreiras-hero {
   height: 580px;
   background: url("../../assets/images/pessoas-e-carreiras/banner.png") no-repeat center center;
@@ -1326,22 +1331,18 @@ html, body, * {
 .a-tivit-carousel .arrow-slider {
   position: absolute;
   z-index: -1; }
-
 .a-tivit-carousel .mask-slider {
   position: absolute;
   z-index: 1;
   width: 600px;
   bottom: 172px; }
-
 .a-tivit-carousel .carousel-indicators {
   background: black;
   bottom: unset !important;
   margin: 0;
   height: 73px; }
-
 .a-tivit-carousel .carousel-indicators .active {
   font-weight: bold !important; }
-
 .a-tivit-carousel .carousel-indicators [data-bs-target] {
   margin: auto 3px;
   height: 50px;
@@ -1353,7 +1354,6 @@ html, body, * {
   font-size: 24px;
   font-weight: 400;
   opacity: 1; }
-
 .a-tivit-carousel .content {
   background: black;
   height: 172px;
@@ -1625,6 +1625,7 @@ html, body, * {
           .a-tivit-hero .a-tivit-hero-title .botao a:hover {
             background: transparent;
             border: none; }
+
   .a-tivit-sobre {
     margin: 77px 0 149px 0; }
     .a-tivit-sobre p {
@@ -1633,8 +1634,10 @@ html, body, * {
       text-align: center;
       width: 749px;
       margin: 0 auto; }
+
   .a-tivit-carousel {
     display: none; }
+
   .a-tivit-cases {
     height: 700px; }
     .a-tivit-cases .confira {
@@ -1665,6 +1668,7 @@ html, body, * {
       width: 160px;
       display: flex;
       justify-content: flex-start; }
+
   .a-tivit-inovacao {
     padding: 100px 0 30px 0; }
     .a-tivit-inovacao .content {
@@ -1720,6 +1724,7 @@ html, body, * {
         opacity: 0.3; }
     .a-tivit-inovacao .botao {
       margin-top: 60px; }
+
   .a-tivit-experts {
     margin-bottom: 100px; }
     .a-tivit-experts img {
@@ -1730,6 +1735,7 @@ html, body, * {
       margin: 0 auto; }
       .a-tivit-experts .a-tivit-experts-desc h3 {
         margin-top: 30px; }
+
   .esg {
     background: linear-gradient(to top, rgba(202, 210, 216, 0.2) 50%, white 50%) !important; }
     .esg .row > * {
@@ -1798,6 +1804,7 @@ html, body, * {
         .esg .navigation .counter2 .numseparation2 {
           margin-left: 5px;
           margin-right: 5px; }
+
   .a-tivit-certificacoes {
     background: rgba(202, 210, 216, 0.2); }
     .a-tivit-certificacoes .desc {
@@ -1810,13 +1817,13 @@ html, body, * {
         font-weight: bold;
         color: #454D54;
         text-transform: uppercase; }
+
   .home-pessoas-e-carreiras.inovar {
     background: url("../../assets/images/a-tivit/inovar-bg.png") no-repeat center center;
     height: 675px;
     background-size: cover; }
     .home-pessoas-e-carreiras.inovar .home-pessoas-e-carreiras-title {
       margin-top: 217px; } }
-
 .cases-hero {
   height: 580px;
   background: url("../../assets/images/cases/banner-mobile.png") no-repeat center center;
@@ -2087,6 +2094,7 @@ html, body, * {
       .cases-hero .cases-hero-title h1, .cases-hero .cases-hero-title h2 {
         text-align: center;
         color: white; }
+
   .cases-depoimentos .img {
     margin-top: 0; }
   .cases-depoimentos .depoimento p {
@@ -2095,6 +2103,7 @@ html, body, * {
     font-size: 28px;
     line-height: 34px;
     font-weight: 300; }
+
   .a-tivit-cases.cases .autor-time {
     width: 480.36px; }
     .a-tivit-cases.cases .autor-time p {
@@ -2159,6 +2168,7 @@ html, body, * {
     background-image: url("../../assets/images/cases/bg-cases-desktop3.png"), linear-gradient(to top, #262626 50%, white 50%);
     /* W3C */
     height: 560px; }
+
   .cases-recentes {
     padding-bottom: 100px; }
     .cases-recentes .acessar {
@@ -2227,7 +2237,6 @@ html, body, * {
           background: transparent; }
           .cases-recentes .filtros .select select option {
             color: black; } }
-
 .inovacao-hero {
   height: 580px;
   background: url("../../assets/images/inovacao/banner-mobile.png") no-repeat center center;
@@ -2476,14 +2485,11 @@ html, body, * {
     color: white;
     font-weight: 600;
     font-size: 14px; }
-
 #labs .lp-tbanks-confira-content {
   width: 420px; }
-
 #labs .slide1 {
   background: url("../../assets/images/inovacao/sliderperson.png") no-repeat;
   background-size: cover; }
-
 #labs .counter2 {
   margin-left: 27px;
   margin-right: 27px;
@@ -2559,7 +2565,6 @@ html, body, * {
       color: white; }
     .inovacao-hero .inovacao-hero-title h1 {
       margin-top: 243px; } }
-
 /*
  * Páginas: TbankS & TDX
  **/
@@ -2683,40 +2688,33 @@ html, body, * {
   @media (max-width: 768px) {
     .lp-tbanks-beneficios .triangle {
       display: none; } }
-
 .lp-tbanks-beneficios #triangle-down-1 {
   border-top: 24px solid #FFD847;
   margin: 0 -57px 0 auto; }
-
 .lp-tbanks-beneficios #triangle-down-2 {
   border-top: 24px solid #FFD847;
   margin: 0 auto 0 0; }
-
 .lp-tbanks-beneficios .lp-tbanks-beneficios-title h2 {
   text-transform: uppercase;
   font-size: 28px;
   line-height: 44px;
   letter-spacing: 3%;
   margin-bottom: 94.4px; }
-
 .lp-tbanks-beneficios .lp-tbanks-beneficios-content .col-md-4, .lp-tbanks-beneficios .lp-tbanks-beneficios-content .col-12 {
   padding: 65px 20px;
   border: 1px solid #582689;
   transition: 0.4s; }
-
 .lp-tbanks-beneficios .lp-tbanks-beneficios-content .col-md-4.hover:hover {
   background-color: #582689; }
   .lp-tbanks-beneficios .lp-tbanks-beneficios-content .col-md-4.hover:hover .lp-tbanks-beneficios-content-box-title p {
     color: #fff; }
   .lp-tbanks-beneficios .lp-tbanks-beneficios-content .col-md-4.hover:hover .lp-tbanks-beneficios-content-box-content p {
     color: #fff; }
-
 .lp-tbanks-beneficios .lp-tbanks-beneficios-content .lp-tbanks-beneficios-content-box-title p {
   font-size: 100px;
   line-height: 80px;
   font-weight: 700;
   color: #582689; }
-
 .lp-tbanks-beneficios .lp-tbanks-beneficios-content .lp-tbanks-beneficios-content-box-content p {
   font-size: 20px;
   font-weight: 600;
@@ -2948,16 +2946,12 @@ html, body, * {
   background: #582689;
   height: auto;
   padding: 50px; }
-
 #tbanks-pix .pix-text h3, #tbanks-pix .pix-text p {
   color: white; }
-
 #tbanks-pix .pix-text h3 {
   font-size: 28px; }
-
 #tbanks-pix .pix-text p {
   font-size: 18px; }
-
 #tbanks-pix .pix-text a {
   color: white;
   font-size: 14px;
@@ -3294,8 +3288,10 @@ html, body, * {
 @media (max-width: 768px) {
   .on-scroll-mobile-tbanks {
     background-color: #582689 !important; }
+
   .on-scroll-mobile-tdx {
     background-color: #FE4817 !important; }
+
   .lp-tbanks-hero {
     background-image: url("../images/landing/tbanks/hero-mobile.png");
     align-items: flex-end;
@@ -3303,8 +3299,10 @@ html, body, * {
     .lp-tbanks-hero .lp-banks-hero-content h1 {
       font-size: 24px;
       line-height: 32px; }
+
   .lp-tdx-hero {
     background-image: url("../images/landing/tdx/hero-mobile.png"); }
+
   .lp-tbanks-conheca .col-12 {
     padding-right: calc(var(--bs-gutter-x) * 0.7);
     padding-left: calc(var(--bs-gutter-x) * 0.7); }
@@ -3315,7 +3313,6 @@ html, body, * {
     .lp-tbanks-conheca .lp-tbanks-conheca-content p {
       font-size: 22px;
       line-height: 28px; } }
-
 @media (max-width: 768px) {
   .lp-tbanks-conheca .lp-tbanks-credibilidade p {
     font-size: 18px;
@@ -3323,6 +3320,7 @@ html, body, * {
     .lp-tbanks-conheca .lp-tbanks-credibilidade p span {
       font-size: 80px;
       line-height: 80px; }
+
   .lp-tdx-conheca {
     padding: 0 0 100px 0; }
     .lp-tdx-conheca img {
@@ -3335,14 +3333,17 @@ html, body, * {
       color: #FE4817; }
     .lp-tdx-conheca .lp-tdx-conheca-content .paragrafo2 {
       margin-bottom: 32px; }
+
   .lp-tbanks-confira .lp-tbanks-confira-bg-mobile {
     background: url("../images/home/lentes.png");
     height: 180px; }
   .lp-tbanks-confira h2 {
     font-size: 24px;
     line-height: 28px; }
+
   .lp-tdx .row {
     flex-direction: column-reverse; }
+
   .lp-tbanks-depoimentos {
     height: unset; }
     .lp-tbanks-depoimentos .lp-tbanks-depoimentos-autor h3 {
@@ -3358,6 +3359,7 @@ html, body, * {
       line-height: 24px;
       font-weight: 400;
       padding: 0 20px; }
+
   .lp-tdx-metodologia {
     padding: 64px 0 30px 0; }
     .lp-tdx-metodologia h2 {
@@ -3396,7 +3398,6 @@ html, body, * {
   .lp-tbanks-form .lp-tbanks-title h2 {
     font-size: 22px;
     line-height: 28px; } }
-
 .contato-hero {
   height: 580px;
   background: url("../../assets/images/contato/banner-mobile.png") no-repeat center center;
@@ -3551,6 +3552,7 @@ html, body, * {
       .contato-hero .contato-hero-title h1, .contato-hero .contato-hero-title h2 {
         text-align: center;
         color: white; }
+
   .contato-intro {
     margin-top: 50px; }
     .contato-intro p {
@@ -3559,6 +3561,7 @@ html, body, * {
       text-align: center;
       max-width: 551px;
       margin: 0 auto; }
+
   .contato-formulario {
     width: 829px;
     margin: 0 auto; }
@@ -3583,10 +3586,70 @@ html, body, * {
         width: 100%; }
         .contato-formulario .quebra .aceite span label input {
           width: 5%; }
+
   .contato-canais h2 {
     width: 506px; }
   .contato-canais .borda {
     height: 131px; } }
+.esg-hero {
+  height: 580px;
+  background: url("../../assets/images/esg/banneresg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .esg-hero .zindex {
+    z-index: 50; }
+  .esg-hero .esg-hero-title {
+    margin: 0 auto; }
+    .esg-hero .esg-hero-title h1 {
+      margin-top: 200px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center; }
+    .esg-hero .esg-hero-title h2 {
+      font-weight: 500 !important;
+      color: white;
+      text-align: center; }
+  .esg-hero .esg-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+  .esg-hero .botao {
+    margin-bottom: 30px; }
+    .esg-hero .botao a {
+      background: transparent;
+      color: #F20024;
+      border: solid 1px #F20024; }
+  .esg-hero .arrow {
+    margin-top: 0; }
+  .esg-hero .mask {
+    max-width: 1400px; }
+
+#esgCounter {
+  padding: 127px 0 0 0; }
+  @media (max-width: 760px) {
+    #esgCounter {
+      padding: 0px 0 0 0; } }
+  #esgCounter .lp-tbanks-credibilidade p span {
+    color: black; }
+  #esgCounter .lp-tbanks-credibilidade small {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 5px; }
+  #esgCounter .lp-tbanks-credibilidade .custom-text {
+    max-width: 195px; }
+
+#esgConheca {
+  padding: 100px 0 140px 0; }
+  @media (max-width: 760px) {
+    #esgConheca {
+      padding: 57px 0 0 0; } }
 
 .a-tivit-cases.cases.conteudos {
   background: url("../../assets/images/conteudos/banner.png") no-repeat center center;
@@ -3666,13 +3729,13 @@ html, body, * {
       left: unset; }
     .a-tivit-cases.cases.conteudos .detalhes {
       margin: 150px 0 0 0; }
+
   .cases-recentes.conteudos .assuntos h4, .cases-recentes.conteudos .assuntos a {
     color: #262626; }
   .cases-recentes.conteudos .assuntos a {
     border: 1px solid #262626; }
   .cases-recentes.conteudos .assuntos a.active, .cases-recentes.conteudos .assuntos a:hover {
     color: white; } }
-
 .ventures-hero {
   height: 580px;
   background: url("../../assets/images/ventures/banner-mobile.png") no-repeat center center;
@@ -3743,10 +3806,12 @@ html, body, * {
           .ventures-hero .ventures-hero-title .botao a:hover {
             background: transparent;
             border: none; }
+
   .a-tivit-sobre.ventures p {
     font-weight: 300; }
   .a-tivit-sobre.ventures .red {
     color: #F20024; }
+
   .tdx.ventures .title h2 {
     font-size: 28px;
     line-height: 44px;
@@ -3754,6 +3819,7 @@ html, body, * {
     text-transform: uppercase; }
   .tdx.ventures .box h2 {
     text-transform: uppercase; }
+
   #ventures div.box {
     height: 370px;
     text-align: center; }
@@ -3762,6 +3828,7 @@ html, body, * {
       height: 100px; }
     #ventures div.box p {
       margin-top: 40px; }
+
   .apresentacoes {
     padding: 140px; }
     .apresentacoes h2 {
@@ -3783,6 +3850,7 @@ html, body, * {
         color: #F20024; }
       .apresentacoes .box p {
         margin: 0; }
+
   .a-tivit-cases.ventures {
     padding-bottom: 140px;
     background: none; }
@@ -3791,3 +3859,5 @@ html, body, * {
       line-height: 50px;
       font-weight: bold;
       text-transform: uppercase; } }
+
+/*# sourceMappingURL=style.css.map */

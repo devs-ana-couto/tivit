@@ -1,0 +1,79 @@
+// Banner
+.esg-hero{
+    height: 580px;
+    background: url('../../assets/images/esg/banneresg.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .zindex{
+        z-index: 50;
+    }
+    .esg-hero-title{
+        margin: 0 auto;
+        h1{
+            margin-top: 200px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2{
+          font-weight: 500 !important; 
+          color: white;
+          text-align: center;
+        }
+    }
+    .esg-hero-content{
+    h2{
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-weight: 400;
+        width: 320px;
+        margin: 198px auto 0 auto;
+    }
+    }
+    .botao{
+      margin-bottom: 30px;
+      a{
+        background: transparent;
+        color: $vermelho-tivit;
+        border: solid 1px $vermelho-tivit;        
+      }
+    }
+    .arrow{
+    margin-top: 0;
+    }
+    .mask{
+        max-width: 1400px;
+    }
+}
+
+#esgCounter {
+    padding: 127px 0 0 0;
+    @media(max-width: 760px){
+        padding: 0px 0 0 0;
+    }
+    .lp-tbanks-credibilidade{
+        p span{
+            color: black;
+        }
+        small{
+            font-size: 32px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        .custom-text{
+            max-width: 195px;
+        }
+    }
+}
+
+#esgConheca{
+    padding: 100px 0 140px 0;
+    @media(max-width: 760px){
+        padding: 57px 0 0 0;
+    }
+}
