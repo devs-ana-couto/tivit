@@ -225,6 +225,26 @@ document.addEventListener("DOMContentLoaded", function(){
       })
    }
 
+   // Scroll smooth effect
+   // const bodypage = document.body,
+   // bodyHeight = bodypage.getBoundingClientRect().height - 1,
+   // speed = 0.03;
+
+   // var offsetscroll = 0
+
+   // // bodypage.style.height = Math.floor(bodyHeight) + "px";
+
+   // function smothScroll() {
+   //    offsetscroll += (window.pageYOffset - offsetscroll) * speed;
+
+   //    var scroll = "translateY(-" + offsetscroll + "px) translateZ(0)";
+   //    bodypage.style.transform = scroll;
+
+   //    callScroll = requestAnimationFrame(smothScroll)
+   // }
+
+   // smothScroll();
+
 });
 
 // Add class on scroll
