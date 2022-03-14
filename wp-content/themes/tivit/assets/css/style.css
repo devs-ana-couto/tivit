@@ -93,7 +93,7 @@ html, body, * {
 
 /**
  * Header Global
- **/ 
+ **/
 .frontpage {
   z-index: 9030 !important; }
 
@@ -3254,7 +3254,8 @@ html, body, * {
         max-width: 152px;
         margin: 0 auto; }
     .lp-tbanks-form .form .tdx-form .wpcf7-form-control.has-spinner.wpcf7-submit {
-      background: #FE4817; }
+      background: #FE4817;
+      border-radius: 50px; }
     .lp-tbanks-form .form .tdx-form h3 {
       color: #FE4817; }
     .lp-tbanks-form .form .privacidade {
