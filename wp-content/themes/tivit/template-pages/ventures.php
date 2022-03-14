@@ -133,7 +133,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
           </div>
           <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
@@ -141,16 +141,18 @@
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
           </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
           </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
       </div>
     </div>
@@ -158,23 +160,26 @@
     <div class="row mt-4">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
           </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
           </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
           </div>
+          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
       </div>
     </div>
@@ -182,4 +187,231 @@
     <div id="triangle-down"></div>
   </div>
 </div>
+
+
+
+<!-- Bloco de Conteúdos -->
+<div class="home-content content-inovacao">
+  <div class="container pd">
+    <div class="title">
+      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+    </div>
+    <div class="row">
+      <!-- content 1 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1"> 
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 1 -->
+
+      <!-- content 2 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 2 -->
+      <!-- content 3 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row align-items-center">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 3 -->
+    </div>
+  </div>
+</div>
+
+
+<!-- Próximas apresentações -->
+<section class="apresentacoes">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>prÓximas apresentaçÕes de startups</h2>
+        <p>Conheça ainda mais de perto o que fazemos. Marque na sua agenda os nossos próximos encontros para inovar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Cases -->
+<div class="a-tivit-cases cases ctivit">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h2 class="text-center">A atuação da Ventures empreende com e para você. Conheça nossos cases:</h2>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item heroslide active fundo1">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a>conta híbrida</a>
+                <a>varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo2">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a>conta híbrida</a>
+                <a>varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo3">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a>conta híbrida</a>
+                <a>varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide fundo3">
+            <div class="col-12 col-md-6">
+              <div class="detalhes">
+                <div class="autor-time">
+                  <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
+                </div>
+              </div>
+              <div class="content">
+                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
+              </div>
+              <div class="tag">
+                <a>conta híbrida</a>
+                <a>varejo</a>
+              </div>
+              <div class="acessar">
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="navigation">
+              <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+              </button>
+              <div class="d-flex flex-row counter">
+                <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+              </button>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#content" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="1" aria-label="Content 2"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="2" aria-label="Content 3"></button>
+                <button type="button" data-bs-target="#content" data-bs-slide-to="3" aria-label="Content 4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
 <?php get_footer(); ?>

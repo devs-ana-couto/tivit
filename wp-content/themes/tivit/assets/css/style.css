@@ -3683,7 +3683,10 @@ html, body, * {
   .tdx.ventures .box h2 {
     text-transform: uppercase; }
   #ventures div.box {
-    height: auto;
+    height: 370px;
     text-align: center; }
+    #ventures div.box img {
+      width: 100%;
+      height: 100px; }
     #ventures div.box p {
       margin-top: 40px; } }
