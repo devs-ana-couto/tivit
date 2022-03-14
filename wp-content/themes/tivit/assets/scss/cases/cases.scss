@@ -92,7 +92,7 @@
   background-size: contain;
   background-position: center;
 
-  height: 580px;  
+  height: 100%;  
 
   #hero{
     max-width: 1170px;
@@ -355,6 +355,7 @@
     background-size: cover;
     height: 100vh;
     .cases-hero-title{
+      margin-top: 15%;
       h1, h2{
         text-align: center;
         color: white;
@@ -378,7 +379,6 @@
   }
 
   .a-tivit-cases.cases{
-    height: 580px;
     .autor-time {
       width: 480.36px;
       p{
