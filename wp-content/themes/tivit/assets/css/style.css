@@ -263,6 +263,16 @@ html, body, * {
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
+.tagContent {
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 600;
+  background: #F20024;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 23px 5px 23px; }
+
 /*
  * Footer
  **/
@@ -3650,6 +3660,126 @@ html, body, * {
   @media (max-width: 760px) {
     #esgConheca {
       padding: 57px 0 0 0; } }
+
+#projetos {
+  padding: 0px 0 120px 0;
+  background: #F5F6F7; }
+  #projetos .text {
+    padding-top: 120px; }
+    #projetos .text h2 {
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.3;
+      text-align: center; }
+  #projetos .tab {
+    margin-top: 60px; }
+    #projetos .tab .nav {
+      justify-content: space-around; }
+    #projetos .tab .nav-tabs .nav-link.active {
+      border-bottom: 2px solid #F20024 !important;
+      padding-bottom: 15px;
+      color: #F20024;
+      font-weight: 600;
+      font-size: 18px;
+      background-color: transparent;
+      border-color: transparent;
+      text-transform: uppercase; }
+    #projetos .tab .nav-tabs .nav-link {
+      border-bottom: 1px solid transparent; }
+    #projetos .tab .nav-link {
+      color: #262626;
+      text-transform: uppercase; }
+    #projetos .tab .carousel-control-prev-icon {
+      background-image: url("../../assets/images/esg/arrow-white-left.svg") !important;
+      width: 13px; }
+    #projetos .tab .carousel-control-next-icon {
+      background-image: url("../../assets/images/esg/arrow-white-right.svg") !important;
+      width: 13px; }
+    #projetos .tab .carousel-indicators [data-bs-target] {
+      margin-right: 0;
+      margin-left: 0;
+      width: 38px; }
+    #projetos .tab .carousel-control-prev {
+      left: 10%;
+      margin-top: 15px; }
+      @media (max-width: 768px) {
+        #projetos .tab .carousel-control-prev {
+          left: 0; } }
+    #projetos .tab .carousel-control-next {
+      right: 10%;
+      margin-top: 15px; }
+      @media (max-width: 768px) {
+        #projetos .tab .carousel-control-next {
+          right: 0; } }
+    #projetos .tab .carousel-indicators {
+      left: 80.5%;
+      margin-right: 0;
+      margin-left: 0; }
+    #projetos .tab .custom {
+      bottom: 8%;
+      right: 4%;
+      width: 150px; }
+    #projetos .tab .counter {
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2; }
+      #projetos .tab .counter .numactive {
+        color: white;
+        font-weight: 700; }
+      #projetos .tab .counter .numseparation, #projetos .tab .counter .numtotal {
+        color: white;
+        font-weight: 300; }
+      #projetos .tab .counter .numseparation {
+        margin-left: 10px;
+        margin-right: 10px; }
+    #projetos .tab .textslide {
+      padding: 50px; }
+      #projetos .tab .textslide p, #projetos .tab .textslide small, #projetos .tab .textslide h2 {
+        color: white; }
+      #projetos .tab .textslide small {
+        font-size: 12px; }
+      #projetos .tab .textslide p {
+        font-size: 18px;
+        max-width: 320px; }
+      #projetos .tab .textslide h2 {
+        margin-top: 17px;
+        font-size: 28px;
+        text-transform: uppercase; }
+      #projetos .tab .textslide span.tag {
+        border: 1px solid white;
+        padding: 4px 10px 4px 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        border-radius: 50px;
+        text-transform: uppercase; }
+      #projetos .tab .textslide span.info {
+        color: white;
+        font-size: 12px;
+        margin-left: 10px; }
+      #projetos .tab .textslide a {
+        color: #F20024;
+        text-transform: uppercase; }
+        #projetos .tab .textslide a:after {
+          content: url("../../assets/images/esg/arrow-red-content.svg");
+          margin-left: 5px;
+          transition: all .2s linear; }
+
+#cultura {
+  background: #F5F6F7;
+  padding-bottom: 116px; }
+  #cultura .text h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center; }
+
+#esgContent #triangle-down {
+  border-top: 28px solid #F5F6F7; }
 
 .a-tivit-cases.cases.conteudos {
   background: url("../../assets/images/conteudos/banner.png") no-repeat center center;

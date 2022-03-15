@@ -457,8 +457,9 @@
       <!-- content 1 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1"> 
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
@@ -487,8 +488,9 @@
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+            <div class="position-absolute tagContent">press release</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
@@ -516,8 +518,9 @@
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>

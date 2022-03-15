@@ -77,3 +77,158 @@
         padding: 57px 0 0 0;
     }
 }
+
+#projetos{
+    padding: 0px 0 120px 0;
+    background: #F5F6F7;
+    .text{
+        padding-top: 120px;
+        h2{
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+        }
+    }
+    .tab{
+        margin-top: 60px;
+        .nav{
+            justify-content: space-around;
+        }
+        .nav-tabs .nav-link.active{
+            border-bottom: 2px solid #F20024 !important;
+            padding-bottom: 15px;
+            color: #F20024;
+            font-weight: 600;
+            font-size: 18px;
+            background-color: transparent;
+            border-color: transparent;
+            text-transform: uppercase;
+        }
+        .nav-tabs .nav-link{
+            border-bottom: 1px solid transparent;
+        }
+        .nav-link{
+            color: #262626;
+            text-transform: uppercase;
+        }
+        .carousel-control-prev-icon{
+            background-image: url('../../assets/images/esg/arrow-white-left.svg') !important;
+            width: 13px;
+          }
+          .carousel-control-next-icon{
+            background-image: url('../../assets/images/esg/arrow-white-right.svg') !important;
+            width: 13px;
+          }
+          .carousel-indicators [data-bs-target]{
+              margin-right: 0;
+              margin-left: 0;
+              width: 38px;
+          }
+          .carousel-control-prev{
+            left: 10%;
+            margin-top: 15px;
+            @media(max-width: 768px){
+              left: 0;
+            }
+          }
+          .carousel-control-next{
+            right: 10%;
+            margin-top: 15px;
+            @media(max-width: 768px){
+              right: 0;
+            }
+          }
+          .carousel-indicators{
+              left: 80.5%;
+              margin-right: 0;
+              margin-left: 0;
+          }
+          .custom{
+              bottom: 8%;
+              right: 4%;
+              width: 150px;
+          }
+          .counter{
+            margin-left: 15px;
+            margin-right: 15px;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            .numactive{
+              color: white;
+              font-weight: 700;
+            }
+            .numseparation, .numtotal{
+              color: white;
+              font-weight: 300;
+            }
+            .numseparation{
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
+          .textslide{
+              padding: 50px;
+              p, small, h2{
+                  color: white;
+              }
+              small{
+                  font-size: 12px;
+              }
+              p{
+                  font-size: 18px;
+                  max-width: 320px;
+              }
+              h2{
+                  margin-top: 17px;
+                  font-size: 28px;
+                  text-transform: uppercase;
+              }
+              span.tag{
+                  border: 1px solid white;
+                  padding: 4px 10px 4px 10px;
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  color: white;
+                  border-radius: 50px;
+                  text-transform: uppercase;
+              }
+              span.info{
+                  color: white;
+                  font-size: 12px;
+                  margin-left: 10px;
+              }
+              a{
+                  color: #F20024;
+                  text-transform: uppercase;
+                  &:after{
+                    content: url('../../assets/images/esg/arrow-red-content.svg');
+                    margin-left: 5px;
+                    transition: all .2s linear;
+                  }
+              }
+          }
+    }
+}
+
+#cultura{
+    background: #F5F6F7;
+    padding-bottom: 116px;
+    .text{
+        h2{
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.3;
+            text-align: center;
+        }
+    }
+}
+
+#esgContent{
+    #triangle-down{
+        border-top: 28px solid #F5F6F7;
+    }
+}

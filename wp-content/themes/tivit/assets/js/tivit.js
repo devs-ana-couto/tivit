@@ -104,6 +104,14 @@ jQuery(document).ready(function($) {
       $('.numtotal').html( totalItems );
    });
 
+   $('#carouselProjetos').bind('slid.bs.carousel', function() {
+      currentIndex = $('.heroslide.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive').html( currentIndex );
+      $('.numseparation').html('  /  ');
+      $('.numtotal').html( totalItems );
+   });
+
    // Permite 2 carrossel na mesma página
    var totalItems2 = $('.heroslide2').length;
    var currentIndex2 = $('.heroslide2.active').index() + 1;
