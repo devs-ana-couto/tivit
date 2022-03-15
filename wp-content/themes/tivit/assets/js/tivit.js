@@ -104,6 +104,14 @@ jQuery(document).ready(function($) {
       $('.numtotal').html( totalItems );
    });
 
+   $('#carouselProjetos').bind('slid.bs.carousel', function() {
+      currentIndex = $('.heroslide.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive').html( currentIndex );
+      $('.numseparation').html('  /  ');
+      $('.numtotal').html( totalItems );
+   });
+
    // Permite 2 carrossel na mesma página
    var totalItems2 = $('.heroslide2').length;
    var currentIndex2 = $('.heroslide2.active').index() + 1;
@@ -130,6 +138,14 @@ jQuery(document).ready(function($) {
    });
 
    $('#customerCarousel').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
+   $('#cultureCarousel').bind('slid.bs.carousel', function() {
       currentIndex2 = $('.heroslide2.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
       $('.numactive2').html( currentIndex2 );
@@ -212,6 +228,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
       items.forEach((el) => {
          const minPerSlide = 6
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
+   if(window.location.pathname === '/staged/tivit/esg' || window.location.pathname === '/staged/tivit/esg/'){
+      let items = document.querySelectorAll('.carousel .heroslide2')
+      items.forEach((el) => {
+         const minPerSlide = 4
          let next = el.nextElementSibling
          for (var i=1; i<minPerSlide; i++) {
             if (!next) {
