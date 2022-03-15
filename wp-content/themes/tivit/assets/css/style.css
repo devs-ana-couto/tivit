@@ -3770,13 +3770,79 @@ html, body, * {
 
 #cultura {
   background: #F5F6F7;
-  padding-bottom: 116px; }
-  #cultura .text h2 {
+  padding-bottom: 116px;
+  /* medium and up screens */ }
+  #cultura .text h2.text {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 600;
     line-height: 1.3;
     text-align: center; }
+  #cultura #cultureCarousel h2 {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #F20024;
+    font-weight: 600;
+    text-transform: uppercase; }
+  #cultura #cultureCarousel p {
+    font-size: 16px;
+    line-height: 1.3; }
+  #cultura #cultureCarousel a.cta {
+    color: #F20024;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: unset; }
+    #cultura #cultureCarousel a.cta:after {
+      content: url("../../assets/images/esg/arrow-red-content.svg");
+      margin-left: 5px;
+      margin-top: 1px;
+      transition: all .2s linear; }
+  #cultura .counter2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #cultura .counter2 .numactive2 {
+      color: #F20024;
+      font-weight: 700; }
+    #cultura .counter2 .numseparation2, #cultura .counter2 .numtotal2 {
+      color: #F20024;
+      font-weight: 300; }
+    #cultura .counter2 .numseparation2 {
+      margin-left: 10px;
+      margin-right: 10px; }
+  @media (max-width: 767px) {
+    #cultura .carousel-inner .carousel-item > div {
+      display: none; }
+    #cultura .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #cultura .carousel-inner .carousel-item.active,
+  #cultura .carousel-inner .carousel-item-next,
+  #cultura .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #cultura .carousel-inner .carousel-item-end.active,
+    #cultura .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%); }
+    #cultura .carousel-inner .carousel-item-start.active,
+    #cultura .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%); } }
+  #cultura .carousel-inner .carousel-item-end,
+  #cultura .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #cultura .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 16px;
+    margin-right: 10px; }
+  #cultura .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 16px;
+    margin-left: 10px; }
+  #cultura .carousel-control-prev {
+    left: 45%; }
+  #cultura .carousel-control-next {
+    right: 45%; }
 
 #esgContent #triangle-down {
   border-top: 28px solid #F5F6F7; }

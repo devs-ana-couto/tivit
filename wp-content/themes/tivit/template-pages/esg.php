@@ -185,7 +185,94 @@
 <div id="cultura">
   <div class="container">
     <div class="text">
-      <h2>outros projetos de cultura e responsabilidade social</h2>
+      <h2 class="text">outros projetos de cultura e responsabilidade social</h2>
+    </div>
+    <div class="row mx-auto my-auto justify-content-center mt-4">
+      <div id="cultureCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item heroslide2 active">
+                <div class="col-md-4">
+                    <div class="w-100 p-3">
+                        <div class="card-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/group1.jpg" alt="Blog 1" class="img-fluid w-100">
+                        </div>
+                        <div class="content">
+                          <h2>exposição (im)permanência</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                          <a class="cta">conheça a ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide2">
+                <div class="col-md-4">
+                    <div class="w-100 p-3">
+                        <div class="card-img">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/group2.jpg" alt="Blog 2" class="img-fluid w-100">
+                        </div>
+                        <div class="content">
+                          <h2>piaf e brecht, a vida em vermelho</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                          <a class="cta">conheça a ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide2">
+                <div class="col-md-4">
+                    <div class="w-100 p-3">
+                        <div class="card-img">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/group3.jpg" alt="Blog 3" class="img-fluid w-100">
+                        </div>
+                        <div class="content">
+                          <h2>festival hackatudo</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                          <a class="cta">conheça a ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide2">
+                <div class="col-md-4">
+                    <div class="w-100 p-3">
+                        <div class="card-img">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/group2.jpg" alt="Blog 2" class="img-fluid w-100">
+                        </div>
+                        <div class="content">
+                          <h2>piaf e brecht, a vida em vermelho</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                          <a class="cta">conheça a ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide2">
+                <div class="col-md-4">
+                    <div class="w-100 p-3">
+                        <div class="card-img">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/group3.jpg" alt="Blog 3" class="img-fluid w-100">
+                        </div>
+                        <div class="content">
+                          <h2>festival hackatudo</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                          <a class="cta">conheça a ação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative d-flex justify-content-center mt-5">
+          <a class="carousel-control-prev bg-transparent w-aut" href="#cultureCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <div class="d-flex flex-row counter2 hide-mobile">
+            <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+          </div>
+          <a class="carousel-control-next bg-transparent w-aut" href="#cultureCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
