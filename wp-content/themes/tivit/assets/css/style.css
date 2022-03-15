@@ -3841,8 +3841,14 @@ html, body, * {
     margin-left: 10px; }
   #cultura .carousel-control-prev {
     left: 45%; }
+    @media (max-width: 768px) {
+      #cultura .carousel-control-prev {
+        left: 28%; } }
   #cultura .carousel-control-next {
     right: 45%; }
+    @media (max-width: 768px) {
+      #cultura .carousel-control-next {
+        right: 28%; } }
 
 #esgContent #triangle-down {
   border-top: 28px solid #F5F6F7; }

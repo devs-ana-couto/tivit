@@ -265,7 +265,7 @@
           <a class="carousel-control-prev bg-transparent w-aut" href="#cultureCarousel" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           </a>
-          <div class="d-flex flex-row counter2 hide-mobile">
+          <div class="d-flex flex-row counter2">
             <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
           </div>
           <a class="carousel-control-next bg-transparent w-aut" href="#cultureCarousel" role="button" data-bs-slide="next">

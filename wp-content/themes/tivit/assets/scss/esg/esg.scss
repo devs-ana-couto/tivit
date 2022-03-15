@@ -314,9 +314,15 @@
       }
       .carousel-control-prev{
         left: 45%;
+        @media(max-width: 768px){
+            left: 28%;
+          }
       }
       .carousel-control-next{
         right: 45%;
+        @media(max-width: 768px){
+            right: 28%;
+          }
       }
 }
 
