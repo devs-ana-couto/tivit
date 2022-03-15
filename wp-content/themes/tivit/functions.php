@@ -54,4 +54,5 @@ register_nav_menus(
 );
 
 // Inclui os arquivos de meta box
-include_once( get_template_directory() . '/inc/cases.php' );
+include_once( get_template_directory() . '/inc/pages/cases.php' );
+include_once( get_template_directory() . '/inc/post-types/post-types.php' );
