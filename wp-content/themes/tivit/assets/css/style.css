@@ -1265,33 +1265,76 @@ html, body, * {
   .partners.active {
     opacity: 1;
     transition: all 0.4s linear 0.2s; } }
-.pessoas-e-carreiras-hero {
+.pec-hero {
   height: 580px;
-  background: url("../../assets/images/pessoas-e-carreiras/banner.png") no-repeat center center;
+  background: url("../../assets/images/pessoas-e-carreiras/banner.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title {
+  .pec-hero .zindex {
+    z-index: 50; }
+  .pec-hero .pec-hero-title {
     margin: 0 auto; }
-    .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title h1 {
-      margin-top: 162px;
+    .pec-hero .pec-hero-title h1 {
+      margin-top: 200px;
       font-size: 16px;
       line-height: 22px;
-      font-weight: bold;
+      font-weight: 600;
       color: #fff;
-      text-transform: uppercase; }
-  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-content h2 {
-    font-size: 34px;
-    line-height: 34px;
+      text-transform: uppercase;
+      text-align: center; }
+    .pec-hero .pec-hero-title h2 {
+      font-weight: 500 !important;
+      color: white;
+      text-align: center; }
+  .pec-hero .buttoncta {
     text-align: center;
-    font-weight: 400;
-    margin-top: 198px; }
-  .pessoas-e-carreiras-hero .botao a {
-    background: transparent;
-    color: #F20024;
-    border: solid 1px #F20024; }
-  .pessoas-e-carreiras-hero .arrow {
+    margin-top: 27px; }
+    .pec-hero .buttoncta a {
+      color: white !important;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .pec-hero .buttoncta a:after {
+        content: url("../../assets/images/esg/arrow-white-right.svg");
+        margin-left: 9px;
+        margin-top: 2px;
+        width: 16px;
+        transition: all .2s linear; }
+  .pec-hero .arrow {
     margin-top: 0; }
+  .pec-hero .customMargin {
+    margin-top: -50px; }
+  .pec-hero .mask {
+    max-width: 1400px; }
+  .pec-hero .customNumbers {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: -30px; }
+
+#pecCounter {
+  padding: 127px 0 100px 0; }
+  @media (max-width: 768px) {
+    #pecCounter {
+      padding: 0px 0 0px 0; }
+      #pecCounter .col-12 {
+        margin-bottom: 50px; } }
+  #pecCounter .lp-tbanks-credibilidade p span {
+    color: #262626; }
+  #pecCounter .lp-tbanks-credibilidade p .tag {
+    right: 18%;
+    margin-top: -30px; }
+  #pecCounter .lp-tbanks-credibilidade .custom-text {
+    max-width: 230px; }
+
+#pecConheca {
+  padding: 0 0 140px 0; }
+  #pecConheca .lp-tbanks-conheca-content p {
+    max-width: 850px; }
 
 .a-tivit-hero {
   height: 580px;
@@ -3638,6 +3681,8 @@ html, body, * {
       border: solid 1px #F20024; }
   .esg-hero .arrow {
     margin-top: 0; }
+  .esg-hero .customMargin {
+    margin-top: -50px; }
   .esg-hero .mask {
     max-width: 1400px; }
 
@@ -3645,9 +3690,11 @@ html, body, * {
   padding: 127px 0 0 0; }
   @media (max-width: 760px) {
     #esgCounter {
-      padding: 0px 0 0 0; } }
+      padding: 0px 0 0 0; }
+      #esgCounter .col-12 {
+        margin-bottom: 50px; } }
   #esgCounter .lp-tbanks-credibilidade p span {
-    color: black; }
+    color: #262626; }
   #esgCounter .lp-tbanks-credibilidade small {
     font-size: 32px;
     font-weight: 600;

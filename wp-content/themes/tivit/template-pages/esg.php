@@ -11,7 +11,7 @@
                 <h1>ESG</h1>
                 <h2 class="">ESG: um compromisso TIVIT.</h2>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="customMargin d-flex justify-content-center align-items-center">
                 <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
             </div>
         </div>

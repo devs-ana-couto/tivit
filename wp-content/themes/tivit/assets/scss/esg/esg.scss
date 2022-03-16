@@ -46,6 +46,9 @@
     .arrow{
     margin-top: 0;
     }
+    .customMargin{
+      margin-top: -50px;
+    }
     .mask{
         max-width: 1400px;
     }
@@ -55,10 +58,13 @@
     padding: 127px 0 0 0;
     @media(max-width: 760px){
         padding: 0px 0 0 0;
+        .col-12{
+          margin-bottom: 50px;
+        }
     }
     .lp-tbanks-credibilidade{
         p span{
-            color: black;
+            color: #262626;
         }
         small{
             font-size: 32px;

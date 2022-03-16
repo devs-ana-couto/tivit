@@ -1,37 +1,96 @@
-.pessoas-e-carreiras-hero{
+// Banner
+.pec-hero{
   height: 580px;
-  background: url('../../assets/images/pessoas-e-carreiras/banner.png') no-repeat center center;
+  background: url('../../assets/images/pessoas-e-carreiras/banner.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  .pessoas-e-carreiras-hero-title{
+  .zindex{
+      z-index: 50;
+  }
+  .pec-hero-title{
       margin: 0 auto;
       h1{
-          margin-top: 162px;
+          margin-top: 200px;
           font-size: 16px;
           line-height: 22px;
-          font-weight: bold;
+          font-weight: 600;
           color: #fff;
           text-transform: uppercase;
+          text-align: center;
+      }
+      h2{
+        font-weight: 500 !important; 
+        color: white;
+        text-align: center;
       }
   }
-  .pessoas-e-carreiras-hero-content{
-    h2{
-      font-size: 34px;
-      line-height: 34px;
-      text-align: center;
-      font-weight: 400;
-      margin-top: 198px;
-    }
-  }
-  .botao{
+  .buttoncta{
+    text-align: center;
+    margin-top: 27px;
     a{
-      background: transparent;
-      color: $vermelho-tivit;
-      border: solid 1px $vermelho-tivit;
+      color: white !important; 
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      &:after{
+        content: url('../../assets/images/esg/arrow-white-right.svg');
+        margin-left: 9px;
+        margin-top: 2px;
+        width: 16px;
+        transition: all .2s linear;
+      }
     }
   }
   .arrow{
-    margin-top: 0;
+  margin-top: 0;
+  }
+  .customMargin{
+    margin-top: -50px;
+  }
+  .mask{
+      max-width: 1400px;
+  }
+  .customNumbers{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: -30px;
+  }
+}
+
+#pecCounter{
+  padding: 127px 0 100px 0;
+  @media (max-width: 768px){
+    padding: 0px 0 0px 0;
+    .col-12{
+      margin-bottom: 50px;
+    }
+  }
+  .lp-tbanks-credibilidade{
+    p span{
+        color: #262626;
+    }
+    p{
+      .tag{
+        right: 18%;
+        margin-top: -30px;
+      }
+    }
+    .custom-text{
+        max-width: 230px;
+    }
+}
+}
+
+#pecConheca{
+  padding: 0 0 140px 0;
+  .lp-tbanks-conheca-content{
+    p{
+      max-width: 850px;
+    }
   }
 }
