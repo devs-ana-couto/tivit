@@ -3725,7 +3725,7 @@ html, body, * {
   padding-top: 219px;
   font-size: 12px;
   line-height: 18.25px;
-  font-weight: bold;
+  font-weight: 400;
   color: white;
   text-transform: uppercase; }
 
@@ -3745,6 +3745,41 @@ html, body, * {
       border-right: solid 1px white; }
     .banner-cases-item .case-item-logos .row .col-7 {
       text-align: center; }
+
+.empresa-cases-item {
+  padding: 30px 0; }
+  .empresa-cases-item .vermelho {
+    color: #F20024;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700; }
+  .empresa-cases-item .col-8 {
+    display: flex;
+    align-items: flex-end; }
+  .empresa-cases-item h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0; }
+  .empresa-cases-item .btn-entre-em-contato, .empresa-cases-item .btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 21.30px;
+    font-weight: 700;
+    margin-bottom: 17px; }
+  .empresa-cases-item .btn-entre-em-contato {
+    background: #F20024;
+    color: white; }
+  .empresa-cases-item .btn-download {
+    background: white;
+    color: #F20024;
+    border: 1px solid #F20024; }
 
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {

@@ -10,7 +10,7 @@
             padding-top: 219px;
             font-size: 12px;
             line-height: 18.25px;
-            font-weight: bold;
+            font-weight: 400;
             color: white;
             text-transform: uppercase;
         }
@@ -34,6 +34,50 @@
                 text-align: center;
             }
         }
+    }
+}
+
+// Section Empresa
+.empresa-cases-item{
+    padding: 30px 0;
+    .vermelho{
+        color: $vermelho-tivit;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+    .col-8{
+        display: flex;
+        align-items: flex-end;
+    }
+    h2{
+        font-size: 26px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .btn-entre-em-contato, .btn-download{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 21.30px;
+        font-weight: 700;
+        margin-bottom: 17px;
+    }
+    .btn-entre-em-contato{
+        background: $vermelho-tivit;
+        color: white;
+    }
+    .btn-download{
+        background: white;
+        color: $vermelho-tivit;
+        border: 1px solid $vermelho-tivit;
     }
 }
 
