@@ -1,0 +1,48 @@
+// Cases Item (Custom Post Type)
+
+// Section Banner
+.banner-cases-item{
+    .case-item-background{
+        height: 530px;
+    }
+    .case-item-content{
+        h2{
+            padding-top: 219px;
+            font-size: 12px;
+            line-height: 18.25px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            max-width: 298px;
+        }
+    }
+    .case-item-logos{
+        margin-top: 65px;
+        .row{
+            align-items: center;
+            .col-4{
+                border-right: solid 1px white;
+            }
+            .col-7{
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+// Desktop
+@media(min-width: 991px){
+    .banner-cases-item{
+        .case-item-background{
+            height: 520px;
+        }
+    }
+}
