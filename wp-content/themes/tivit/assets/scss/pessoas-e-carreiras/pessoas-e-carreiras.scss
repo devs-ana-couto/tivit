@@ -413,6 +413,9 @@
       text-transform: uppercase;
     }
     .items{
+      .col-sm-12{
+        margin-bottom: 30px;
+      }
       .card{
         border: 1px solid #CAD2D8;
         padding: 25px;
