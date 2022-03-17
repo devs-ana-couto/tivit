@@ -1336,6 +1336,280 @@ html, body, * {
   #pecConheca .lp-tbanks-conheca-content p {
     max-width: 850px; }
 
+#pecPort .home-portifolio {
+  opacity: 1; }
+  @media (max-width: 760px) {
+    #pecPort .home-portifolio {
+      margin-bottom: 0px !important; } }
+  #pecPort .home-portifolio .home-portifolio-image {
+    background: url("../../assets/images/pessoas-e-carreiras/programas.jpg") no-repeat center center; }
+  #pecPort .home-portifolio .home-portifolio-content .txt {
+    max-width: 500px; }
+  #pecPort .home-portifolio .home-portifolio-content a:hover .desc {
+    opacity: 1;
+    transition: 2s all; }
+  #pecPort .home-portifolio .desc {
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    bottom: 5%;
+    right: 10%;
+    max-width: 420px;
+    opacity: 0;
+    transition: 2s all; }
+
+.valorizacao {
+  margin: 0 !important; }
+  .valorizacao h2.title {
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+  .valorizacao .box {
+    padding: 110px !important;
+    height: 310px !important; }
+    @media (max-width: 760px) {
+      .valorizacao .box {
+        margin-bottom: 30px; } }
+
+#pecDepoimentos {
+  margin-top: 147px; }
+  #pecDepoimentos .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 13px; }
+  #pecDepoimentos .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 13px; }
+  #pecDepoimentos .counter {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #pecDepoimentos .counter .numactive {
+      color: #F20024;
+      font-weight: 700; }
+    #pecDepoimentos .counter .numseparation, #pecDepoimentos .counter .numtotal {
+      color: #F20024;
+      font-weight: 300; }
+    #pecDepoimentos .counter .numseparation {
+      margin-left: 10px;
+      margin-right: 10px; }
+  #pecDepoimentos .carousel-control-prev, #pecDepoimentos .carousel-control-next {
+    top: 35%; }
+  #pecDepoimentos .redes {
+    margin: 10px 0 15px 0; }
+    #pecDepoimentos .redes img {
+      width: 30px; }
+    #pecDepoimentos .redes img:first-child, #pecDepoimentos .redes img:nth-child(2n) {
+      margin-right: 10px; }
+
+#pecOferece.lp-tbanks-conheca {
+  padding: 0 !important; }
+
+#pecOferece {
+  background: #F5F6F7; }
+  #pecOferece .container {
+    padding-top: 88px;
+    padding-bottom: 107px; }
+  #pecOferece h2.title {
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  #pecOferece .lp-tbanks-services .bg-white {
+    border-left: 3px solid #F20024;
+    height: 100%; }
+    #pecOferece .lp-tbanks-services .bg-white h3 {
+      color: #F20024;
+      height: 110px;
+      max-width: 170px; }
+    #pecOferece .lp-tbanks-services .bg-white p {
+      margin-top: 0px; }
+  #pecOferece .lp-tbanks-services .marginC {
+    margin-top: 25px; }
+  #pecOferece .insiderBlock {
+    padding-top: 100px; }
+    @media (max-width: 760px) {
+      #pecOferece .insiderBlock {
+        padding-top: 50px; } }
+  #pecOferece div.box {
+    padding: 35px;
+    border: 1px solid #CAD2D8;
+    text-align: center;
+    height: 100%; }
+  #pecOferece div.content {
+    max-width: 265px; }
+    #pecOferece div.content h2 {
+      color: #F20024;
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 20px; }
+    #pecOferece div.content p {
+      font-size: 18px; }
+  #pecOferece .row > .col-sm-12, #pecOferece .row > .col-12 {
+    margin-bottom: 30px; }
+
+#pecConheca {
+  padding: 0;
+  /* medium and up screens */ }
+  #pecConheca #triangle-down {
+    border-top: 28px solid #F5F6F7; }
+  #pecConheca .container {
+    padding: 110px 0px 72px 0; }
+  #pecConheca h2.title {
+    font-size: 36px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  #pecConheca #carouselCustom {
+    padding-bottom: 0; }
+    #pecConheca #carouselCustom .carousel-inner {
+      right: 0 !important; }
+    #pecConheca #carouselCustom .card .content {
+      border: unset;
+      height: auto; }
+      #pecConheca #carouselCustom .card .content h2 {
+        font-size: 18px;
+        line-height: 1.3;
+        text-align: center; }
+      #pecConheca #carouselCustom .card .content p {
+        text-align: center; }
+    #pecConheca #carouselCustom .card .redes-sociais img:first-child {
+      margin-right: 25px; }
+  @media (max-width: 767px) {
+    #pecConheca .carousel-inner .carousel-item > div {
+      display: none; }
+    #pecConheca .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #pecConheca .carousel-inner .carousel-item.active,
+  #pecConheca .carousel-inner .carousel-item-next,
+  #pecConheca .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #pecConheca .carousel-inner .carousel-item-end.active,
+    #pecConheca .carousel-inner .carousel-item-next {
+      transform: translateX(25%); }
+    #pecConheca .carousel-inner .carousel-item-start.active,
+    #pecConheca .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%); } }
+  #pecConheca .carousel-inner .carousel-item-end,
+  #pecConheca .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #pecConheca .counter2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #pecConheca .counter2 .numactive2 {
+      color: #F20024;
+      font-weight: 700; }
+    #pecConheca .counter2 .numseparation2, #pecConheca .counter2 .numtotal2 {
+      color: #F20024;
+      font-weight: 300; }
+    #pecConheca .counter2 .numseparation2 {
+      margin-left: 10px;
+      margin-right: 10px; }
+
+#pecInterno #pecInternoDepoimentos {
+  margin-top: 120px; }
+#pecInterno .counter3 {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #pecInterno .counter3 .numactive3 {
+    color: #F20024;
+    font-weight: 700; }
+  #pecInterno .counter3 .numseparation3, #pecInterno .counter3 .numtotal3 {
+    color: #F20024;
+    font-weight: 300; }
+  #pecInterno .counter3 .numseparation3 {
+    margin-left: 10px;
+    margin-right: 10px; }
+#pecInterno .carousel-control-prev-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+  width: 13px; }
+#pecInterno .carousel-control-next-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+  width: 13px; }
+#pecInterno .redes {
+  margin: 10px 0 15px 0; }
+  #pecInterno .redes img {
+    width: 30px; }
+  #pecInterno .redes img:first-child, #pecInterno .redes img:nth-child(2n) {
+    margin-right: 10px; }
+#pecInterno .carousel-control-prev, #pecInterno .carousel-control-next {
+  top: 35%; }
+
+#pecVagas {
+  background: #262626; }
+  #pecVagas .container {
+    padding: 110px 0 105px 0; }
+    #pecVagas .container h2.title {
+      font-size: 36px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 50px;
+      text-transform: uppercase; }
+    #pecVagas .container .items .card {
+      border: 1px solid #CAD2D8;
+      padding: 25px;
+      background: transparent; }
+      #pecVagas .container .items .card small {
+        font-size: 12px;
+        color: #FFFFFF;
+        font-weight: lighter; }
+      #pecVagas .container .items .card h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 7px; }
+      #pecVagas .container .items .card p {
+        font-size: 16px;
+        color: white;
+        font-weight: lighter;
+        line-height: 1.3;
+        margin-top: 6px; }
+      #pecVagas .container .items .card a {
+        color: #F20024;
+        text-decoration: unset;
+        transition: all .2s linear;
+        margin-top: 50px;
+        text-transform: uppercase;
+        cursor: pointer; }
+        #pecVagas .container .items .card a:hover:after {
+          margin-left: 16px; }
+        #pecVagas .container .items .card a:after {
+          content: url("../../assets/images/pessoas-e-carreiras/arrow_red_forward.svg");
+          margin-left: 9px;
+          margin-top: 6px;
+          width: 10px;
+          transition: all .2s linear; }
+    #pecVagas .container .btnCta {
+      margin-top: 50px; }
+      #pecVagas .container .btnCta a {
+        color: white;
+        font-weight: 600;
+        text-decoration: unset;
+        cursor: pointer;
+        background: #F20024;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        transition: all .2s linear;
+        border: 1px solid #F20024; }
+        #pecVagas .container .btnCta a:hover {
+          background: transparent;
+          transition: all .2s linear; }
+
 .a-tivit-hero {
   height: 580px;
   background: url("../../assets/images/a-tivit/banner.png") no-repeat center center;

@@ -152,6 +152,23 @@ jQuery(document).ready(function($) {
       $('.numseparation2').html('  /  ');
       $('.numtotal2').html( totalItems2 );
    });
+
+   // Permite 3 carrosseis na mesma página
+   var totalItems3 = $('.heroslide3').length;
+   var currentIndex3 = $('.heroslide3.active').index() + 1;
+
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive3').html( currentIndex3 );
+   $('.numseparation3').html('  /  ');
+   $('.numtotal3').html( totalItems3 );
+
+   $('#recipeCarouselInterno').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
    
 
 })
@@ -242,6 +259,23 @@ document.addEventListener("DOMContentLoaded", function(){
    }
 
    if(window.location.pathname === '/staged/tivit/esg' || window.location.pathname === '/staged/tivit/esg/'){
+      let items = document.querySelectorAll('.carousel .heroslide2')
+      items.forEach((el) => {
+         const minPerSlide = 4
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
+   if(window.location.pathname === '/staged/tivit/pessoas-e-carreiras' || window.location.pathname === '/staged/tivit/pessoas-e-carreiras/'){
       let items = document.querySelectorAll('.carousel .heroslide2')
       items.forEach((el) => {
          const minPerSlide = 4
