@@ -33,12 +33,20 @@
       font-size: 16px;
       text-transform: uppercase;
       font-weight: 600;
+      cursor: pointer;
+      transition: all .2s linear;
+      position: relative;
+      &:hover{
+        &:after{
+          margin-left: 18px;
+        }
+      }
       &:after{
         content: url('../../assets/images/esg/arrow-white-right.svg');
         margin-left: 9px;
-        margin-top: 2px;
         width: 16px;
         transition: all .2s linear;
+        position: absolute;
       }
     }
   }
@@ -447,17 +455,18 @@
           margin-top: 50px;
           text-transform: uppercase;
           cursor: pointer;
+          position: relative;
           &:hover{
             &:after{
-              margin-left: 16px;
+              margin-left: 18px;
             }
           }
           &:after{
             content: url('../../assets/images/pessoas-e-carreiras/arrow_red_forward.svg');
             margin-left: 9px;
-            margin-top: 6px;
             width: 10px;
             transition: all .2s linear;
+            position: absolute;
           }
         }
       }
