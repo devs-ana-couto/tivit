@@ -45,7 +45,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         </div>
         <div class="row mt-4">
             <div class="col-12">
-                <p><? the_field('descricao'); ?></p>
+                <p class="paragrafo3"><? the_field('descricao'); ?></p>
             </div>
         </div>
         <div class="row mt-3">
@@ -53,12 +53,34 @@ if(have_posts()) : while(have_posts()) : the_post();
                 <a href="contato" class="btn-entre-em-contato">Entre em Contato</a>
             </div>
             <div class="col-12">
-                <a href="<? the_field('download'); ?>" class="btn-download">Download <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/save_alt.svg" alt="...">
-</a>
+                <a href="<? the_field('download'); ?>" class="btn-download">Download <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/save_alt.svg" alt="..."></a>
             </div>
         </div>
     </div>
 </section>
+
+
+<?php
+
+// Check rows exists.
+if( have_rows('adicione_seus_destaques') ):
+
+    // Loop through rows.
+    while( have_rows('adicione_seus_destaques') ) : the_row();
+
+        // Load sub field value.
+        
+        // Do something...
+        echo '<pre>' . get_sub_field('icone') . '</pre>';
+    // End loop.
+    endwhile;
+
+// No value.
+else :
+    // Do something...
+endif;
+
+?>
 
 <?php
 endwhile; endif;
