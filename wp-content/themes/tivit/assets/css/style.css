@@ -3781,6 +3781,62 @@ html, body, * {
     color: #F20024;
     border: 1px solid #F20024; }
 
+.destaques-item-cases .box {
+  border: 1px solid #CAD2D8;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0; }
+  .destaques-item-cases .box h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #262626;
+    text-transform: uppercase;
+    width: 206px; }
+  .destaques-item-cases .box .row {
+    width: 100%;
+    margin: 0 auto; }
+
+.desafio-cases-item {
+  margin-top: 53px; }
+  .desafio-cases-item h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #262626;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .desafio-cases-item .box {
+    background: #454D54;
+    padding: 30px 20px; }
+    .desafio-cases-item .box p {
+      color: white;
+      margin: 0; }
+  .desafio-cases-item .depoimento {
+    padding: 40px 0; }
+    .desafio-cases-item .depoimento img {
+      margin-bottom: 17px; }
+    .desafio-cases-item .depoimento p {
+      margin: 0 0 23px 0;
+      font-size: 14px;
+      line-height: 21.30px;
+      font-weight: 400;
+      font-style: italic; }
+    .desafio-cases-item .depoimento h3 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      color: #262626;
+      margin: 0 0 6px 0; }
+    .desafio-cases-item .depoimento h4 {
+      font-size: 14px;
+      line-height: 21.30px;
+      font-weight: 400;
+      color: #262626;
+      margin: 0; }
+
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
     height: 520px; } }

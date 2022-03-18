@@ -565,7 +565,7 @@ html, body, * {
           margin: 4px;
           transition: all .15s linear;
           &:hover{
-            border-color: #454D54;
+            border-color: $cinza-dark-tivit;
             transition: all .2s linear;
           }
           a{

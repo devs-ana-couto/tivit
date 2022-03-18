@@ -59,28 +59,79 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </section>
 
-
+<!-- Section Destaques -->
 <?php
-
 // Check rows exists.
-if( have_rows('adicione_seus_destaques') ):
-
+    if( have_rows('adicione_seus_destaques') ):
     // Loop through rows.
-    while( have_rows('adicione_seus_destaques') ) : the_row();
-
-        // Load sub field value.
-        
-        // Do something...
-        echo '<pre>' . get_sub_field('icone') . '</pre>';
+    for($i=0; have_rows('adicione_seus_destaques'); $i++) : the_row();
+        $icon_url[$i] = get_sub_field('icone');
+        $description[$i] = get_sub_field('texto');
+    ?>
+        <section class="destaques-item-cases">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <img src="<?=$icon_url[$i];?>" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h3><?=$description[$i];?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php
     // End loop.
-    endwhile;
-
-// No value.
-else :
-    // Do something...
-endif;
+    endfor;
+    // No value.
+    else :
+        // Do something...
+    endif;
 
 ?>
+
+<!-- Section Desafio -->
+<section class="desafio-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Desafio</h2>
+            </div>
+            <div class="box">
+                <p class="paragrafo2"><?the_field('texto_desafio');?></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <?php 
+                    if(have_rows('depoimento')) :
+                        while(have_rows('depoimento')) : the_row();
+                            $texto = get_sub_field('texto');
+                            $autor = get_sub_field('autor');
+                            $funcao = get_sub_field('funcao');
+                        ?>
+
+                        <div class="depoimento">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/aspas.svg" alt="...">
+                            <p><?=$texto;?></p>
+                            <h3><?=$autor;?></h3>
+                            <h4><?=$funcao;?></h4>
+                        </div>
+
+                        <?
+                        endwhile;
+                    endif;
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php
 endwhile; endif;
