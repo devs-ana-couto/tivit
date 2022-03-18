@@ -162,6 +162,35 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </section>
 
+<!-- Section Diferenciais e Beneficios -->
+<section class="diferenciais-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>DIFERENCIAIS E BENEFÍCIOS</h2>
+                <?php
+                // Check rows exists.
+                if( have_rows('diferenciais_e_beneficios') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('diferenciais_e_beneficios'); $i++) : the_row();
+                        $icon_url[$i] = get_sub_field('icone');
+                        $description[$i] = get_sub_field('texto');
+                    ?>
+                <div class="box">
+                    <p class="paragrafo3">
+                        <?=$description[$i];?>
+                    </p>
+                </div>
+                <?php
+                    // End loop.
+                    endfor;
+                    endif;
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 endwhile; endif;
 get_footer();

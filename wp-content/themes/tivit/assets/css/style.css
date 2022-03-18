@@ -4587,6 +4587,21 @@ html, body, * {
     border-top: solid 3px #F20024;
     margin-bottom: 33px; }
 
+.diferenciais-cases-item h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #262626;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.diferenciais-cases-item .box {
+  border: 1px solid #CAD2D8;
+  border-left: 3px solid #F20024;
+  padding: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
     height: 520px; } }
