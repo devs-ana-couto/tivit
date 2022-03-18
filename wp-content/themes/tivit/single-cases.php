@@ -60,41 +60,38 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Destaques -->
-<?php
-// Check rows exists.
-    if( have_rows('adicione_seus_destaques') ):
-    // Loop through rows.
-    for($i=0; have_rows('adicione_seus_destaques'); $i++) : the_row();
-        $icon_url[$i] = get_sub_field('icone');
-        $description[$i] = get_sub_field('texto');
-    ?>
-        <section class="destaques-item-cases">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="box">
-                            <div class="row">
-                                <div class="col-3 text-center">
-                                    <img src="<?=$icon_url[$i];?>" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h3><?=$description[$i];?></h3>
-                                </div>
-                            </div>
+<section class="destaques-item-cases">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Destaques do projeto</h2>
+                <?php
+                // Check rows exists.
+                if( have_rows('adicione_seus_destaques') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('adicione_seus_destaques'); $i++) : the_row();
+                        $icon_url[$i] = get_sub_field('icone');
+                        $description[$i] = get_sub_field('texto');
+                    ?>
+                <div class="box">
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <img src="<?=$icon_url[$i];?>" alt="">
+                        </div>
+                        <div class="col-9">
+                            <h3><?=$description[$i];?></h3>
                         </div>
                     </div>
                 </div>
+                <?php
+                    // End loop.
+                    endfor;
+                    endif;
+                ?>
             </div>
-        </section>
-    <?php
-    // End loop.
-    endfor;
-    // No value.
-    else :
-        // Do something...
-    endif;
-
-?>
+        </div>
+    </div>
+</section>
 
 <!-- Section Desafio -->
 <section class="desafio-cases-item">
@@ -126,6 +123,38 @@ if(have_posts()) : while(have_posts()) : the_post();
 
                         <?
                         endwhile;
+                    endif;
+                ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Serviços Nuvem -->
+<section class="nuvem-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Serviços gerenciados na nuvem</h2>
+                <?php
+                // Check rows exists.
+                if( have_rows('servico_nuvem') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('servico_nuvem'); $i++) : the_row();
+                        $icon_url[$i] = get_sub_field('icone');
+                        $description[$i] = get_sub_field('texto');
+                    ?>
+                <div class="logo text-center">
+                    <img src="<?=$icon_url[$i];?>" alt="..."></a>
+                </div>
+                <div class="box">
+                    <p class="paragrafo3">
+                        <?=$description[$i];?>
+                    </p>
+                </div>
+                <?php
+                    // End loop.
+                    endfor;
                     endif;
                 ?>
             </div>
