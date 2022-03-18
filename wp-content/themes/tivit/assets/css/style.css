@@ -246,14 +246,24 @@ html, body, * {
         border: 1px solid #951B81 !important;
         color: #951B81 !important; }
   .on-scroll-tdx {
-    background: white; }
+    background: #990017; }
     .on-scroll-tdx .header-menu ul li a {
-      color: #454D54 !important; }
+      color: white !important; }
     .on-scroll-tdx .header-options p {
-      color: #454D54 !important; }
+      color: white !important; }
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
+
+.tagContent {
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 600;
+  background: #F20024;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 23px 5px 23px; }
 
 /*
  * Footer
@@ -1250,33 +1260,417 @@ html, body, * {
     opacity: 1;
     transition: all 0.4s linear 0.2s; } }
 
-.pessoas-e-carreiras-hero {
+.pec-hero {
   height: 580px;
-  background: url("../../assets/images/pessoas-e-carreiras/banner.png") no-repeat center center;
+  background: url("../../assets/images/pessoas-e-carreiras/banner.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title {
+  .pec-hero .zindex {
+    z-index: 50; }
+  .pec-hero .pec-hero-title {
     margin: 0 auto; }
-    .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title h1 {
-      margin-top: 162px;
+    .pec-hero .pec-hero-title h1 {
+      margin-top: 200px;
       font-size: 16px;
       line-height: 22px;
-      font-weight: bold;
+      font-weight: 600;
       color: #fff;
-      text-transform: uppercase; }
-  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-content h2 {
-    font-size: 34px;
-    line-height: 34px;
+      text-transform: uppercase;
+      text-align: center; }
+    .pec-hero .pec-hero-title h2 {
+      font-weight: 500 !important;
+      color: white;
+      text-align: center; }
+  .pec-hero .buttoncta {
     text-align: center;
-    font-weight: 400;
-    margin-top: 198px; }
-  .pessoas-e-carreiras-hero .botao a {
-    background: transparent;
-    color: #F20024;
-    border: solid 1px #F20024; }
-  .pessoas-e-carreiras-hero .arrow {
+    margin-top: 27px; }
+    .pec-hero .buttoncta a {
+      color: white !important;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s linear;
+      position: relative; }
+      .pec-hero .buttoncta a:hover:after {
+        margin-left: 18px; }
+      .pec-hero .buttoncta a:after {
+        content: url("../../assets/images/esg/arrow-white-right.svg");
+        margin-left: 9px;
+        width: 16px;
+        transition: all .2s linear;
+        position: absolute; }
+  .pec-hero .arrow {
     margin-top: 0; }
+  .pec-hero .customMargin {
+    margin-top: -50px; }
+  .pec-hero .mask {
+    max-width: 1400px; }
+  .pec-hero .customNumbers {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: -30px; }
+
+#pecCounter {
+  padding: 127px 0 100px 0; }
+  @media (max-width: 768px) {
+    #pecCounter {
+      padding: 0px 0 0px 0; }
+      #pecCounter .col-12:first-child, #pecCounter .col-12:nth-child(2n) {
+        margin-bottom: 50px; } }
+  #pecCounter .lp-tbanks-credibilidade p span {
+    color: #262626; }
+  #pecCounter .lp-tbanks-credibilidade p .tag {
+    right: 18%;
+    margin-top: -30px; }
+  #pecCounter .lp-tbanks-credibilidade .custom-text {
+    max-width: 230px; }
+
+#pecConheca {
+  padding: 0 0 140px 0; }
+  #pecConheca .lp-tbanks-conheca-content p {
+    max-width: 850px; }
+
+#pecPort .home-portifolio {
+  opacity: 1; }
+  @media (max-width: 760px) {
+    #pecPort .home-portifolio {
+      margin-bottom: 0px !important; } }
+  #pecPort .home-portifolio .home-portifolio-image {
+    background: url("../../assets/images/pessoas-e-carreiras/programas.jpg") no-repeat center center; }
+  #pecPort .home-portifolio .home-portifolio-content .txt {
+    max-width: 500px; }
+  #pecPort .home-portifolio .home-portifolio-content a:hover .desc {
+    opacity: 1;
+    transition: 2s all; }
+  #pecPort .home-portifolio .desc {
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    bottom: 5%;
+    right: 10%;
+    max-width: 420px;
+    opacity: 0;
+    transition: 2s all; }
+
+.valorizacao {
+  margin: 0 !important; }
+  .valorizacao h2.title {
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+  .valorizacao .box {
+    padding: 110px !important;
+    height: 310px !important; }
+    @media (max-width: 760px) {
+      .valorizacao .box {
+        margin-bottom: 30px; } }
+
+#pecDepoimentos {
+  margin-top: 147px; }
+  #pecDepoimentos .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 13px; }
+  #pecDepoimentos .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 13px; }
+  #pecDepoimentos .counter {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #pecDepoimentos .counter .numactive {
+      color: #F20024;
+      font-weight: 700; }
+    #pecDepoimentos .counter .numseparation, #pecDepoimentos .counter .numtotal {
+      color: #F20024;
+      font-weight: 300; }
+    #pecDepoimentos .counter .numseparation {
+      margin-left: 10px;
+      margin-right: 10px; }
+  #pecDepoimentos .carousel-control-prev, #pecDepoimentos .carousel-control-next {
+    top: 35%; }
+  #pecDepoimentos .redes {
+    margin: 10px 0 15px 0; }
+    #pecDepoimentos .redes img {
+      width: 30px; }
+    #pecDepoimentos .redes img:first-child, #pecDepoimentos .redes img:nth-child(2n) {
+      margin-right: 10px; }
+
+#pecOferece.lp-tbanks-conheca {
+  padding: 0 !important; }
+
+#pecOferece {
+  background: #F5F6F7; }
+  #pecOferece .container {
+    padding-top: 88px;
+    padding-bottom: 107px; }
+  #pecOferece h2.title {
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  #pecOferece .lp-tbanks-services .bg-white {
+    border-left: 3px solid #F20024;
+    height: 100%; }
+    #pecOferece .lp-tbanks-services .bg-white h3 {
+      color: #F20024;
+      height: 110px;
+      max-width: 170px; }
+    #pecOferece .lp-tbanks-services .bg-white p {
+      margin-top: 0px; }
+  #pecOferece .lp-tbanks-services .marginC {
+    margin-top: 25px; }
+  #pecOferece .insiderBlock {
+    padding-top: 100px; }
+    @media (max-width: 760px) {
+      #pecOferece .insiderBlock {
+        padding-top: 50px; } }
+  #pecOferece div.box {
+    padding: 35px;
+    border: 1px solid #CAD2D8;
+    text-align: center;
+    height: 100%; }
+  #pecOferece div.content {
+    max-width: 265px; }
+    #pecOferece div.content h2 {
+      color: #F20024;
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 20px; }
+    #pecOferece div.content p {
+      font-size: 18px; }
+  #pecOferece .row > .col-sm-12, #pecOferece .row > .col-12 {
+    margin-bottom: 30px; }
+
+#pecConheca {
+  padding: 0;
+  /* medium and up screens */ }
+  #pecConheca #triangle-down {
+    border-top: 28px solid #F5F6F7; }
+  #pecConheca .container {
+    padding: 0px 0px 72px 0; }
+    @media (min-width: 768px) {
+      #pecConheca .container {
+        padding: 110px 0px 72px 0; } }
+  #pecConheca h2.title {
+    font-size: 36px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase; }
+  #pecConheca #carouselCustom {
+    padding-bottom: 0; }
+    @media (min-width: 768px) {
+      #pecConheca #carouselCustom .carousel-inner {
+        right: 0 !important; } }
+    #pecConheca #carouselCustom .card .card-img img {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px; }
+    #pecConheca #carouselCustom .card .card-img .tagIn {
+      background: #F20024;
+      padding: 22px;
+      top: 0;
+      left: 0; }
+    #pecConheca #carouselCustom .card .card-img .imgIn {
+      top: 11px;
+      left: 11px; }
+    #pecConheca #carouselCustom .card .content {
+      border: unset;
+      height: auto; }
+      #pecConheca #carouselCustom .card .content h2 {
+        font-size: 18px;
+        line-height: 1.3;
+        text-align: center; }
+      #pecConheca #carouselCustom .card .content p {
+        text-align: center; }
+    #pecConheca #carouselCustom .card .redes-sociais img:first-child {
+      margin-right: 25px; }
+  @media (max-width: 767px) {
+    #pecConheca .carousel-inner .carousel-item > div {
+      display: none; }
+    #pecConheca .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #pecConheca .carousel-inner .carousel-item.active,
+  #pecConheca .carousel-inner .carousel-item-next,
+  #pecConheca .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #pecConheca .carousel-inner .carousel-item-end.active,
+    #pecConheca .carousel-inner .carousel-item-next {
+      transform: translateX(25%); }
+    #pecConheca .carousel-inner .carousel-item-start.active,
+    #pecConheca .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%); } }
+  #pecConheca .carousel-inner .carousel-item-end,
+  #pecConheca .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #pecConheca .counter2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #pecConheca .counter2 .numactive2 {
+      color: #F20024;
+      font-weight: 700; }
+    #pecConheca .counter2 .numseparation2, #pecConheca .counter2 .numtotal2 {
+      color: #F20024;
+      font-weight: 300; }
+    #pecConheca .counter2 .numseparation2 {
+      margin-left: 10px;
+      margin-right: 10px; }
+
+#pecInterno #pecInternoDepoimentos {
+  margin-top: 120px; }
+
+#pecInterno .counter3 {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #pecInterno .counter3 .numactive3 {
+    color: #F20024;
+    font-weight: 700; }
+  #pecInterno .counter3 .numseparation3, #pecInterno .counter3 .numtotal3 {
+    color: #F20024;
+    font-weight: 300; }
+  #pecInterno .counter3 .numseparation3 {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+#pecInterno .carousel-control-prev-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+  width: 13px; }
+
+#pecInterno .carousel-control-next-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+  width: 13px; }
+
+#pecInterno .redes {
+  margin: 10px 0 15px 0; }
+  #pecInterno .redes img {
+    width: 30px; }
+  #pecInterno .redes img:first-child, #pecInterno .redes img:nth-child(2n) {
+    margin-right: 10px; }
+
+#pecInterno .carousel-control-prev, #pecInterno .carousel-control-next {
+  top: 35%; }
+
+#pecVagas {
+  background: #262626; }
+  #pecVagas .container {
+    padding: 110px 0 105px 0; }
+    #pecVagas .container h2.title {
+      font-size: 36px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 50px;
+      text-transform: uppercase; }
+    #pecVagas .container .items .col-sm-12 {
+      margin-bottom: 30px; }
+    #pecVagas .container .items .card {
+      border: 1px solid #CAD2D8;
+      padding: 25px;
+      background: transparent; }
+      #pecVagas .container .items .card small {
+        font-size: 12px;
+        color: #FFFFFF;
+        font-weight: lighter; }
+      #pecVagas .container .items .card h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 7px; }
+      #pecVagas .container .items .card p {
+        font-size: 16px;
+        color: white;
+        font-weight: lighter;
+        line-height: 1.3;
+        margin-top: 6px; }
+      #pecVagas .container .items .card a {
+        color: #F20024;
+        text-decoration: unset;
+        transition: all .2s linear;
+        margin-top: 50px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative; }
+        #pecVagas .container .items .card a:hover:after {
+          margin-left: 18px; }
+        #pecVagas .container .items .card a:after {
+          content: url("../../assets/images/pessoas-e-carreiras/arrow_red_forward.svg");
+          margin-left: 9px;
+          width: 10px;
+          transition: all .2s linear;
+          position: absolute; }
+    #pecVagas .container .btnCta {
+      margin-top: 50px; }
+      #pecVagas .container .btnCta a {
+        color: white;
+        font-weight: 600;
+        text-decoration: unset;
+        cursor: pointer;
+        background: #F20024;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        transition: all .2s linear;
+        border: 1px solid #F20024; }
+        #pecVagas .container .btnCta a:hover {
+          background: transparent;
+          transition: all .2s linear; }
+    #pecVagas .container #faq {
+      margin-top: 110px; }
+      #pecVagas .container #faq h2.title {
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 60px;
+        text-transform: uppercase; }
+      #pecVagas .container #faq .block {
+        max-width: 900px; }
+      @media (max-width: 768px) {
+        #pecVagas .container #faq .accordion {
+          margin: 10px; } }
+      #pecVagas .container #faq .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: white;
+        box-shadow: unset;
+        border-bottom: 1px solid;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4; }
+      #pecVagas .container #faq .accordion-item {
+        background-color: transparent; }
+      #pecVagas .container #faq .accordion-body {
+        color: white; }
+      #pecVagas .container #faq .accordion-flush .accordion-item .accordion-button {
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4; }
+      #pecVagas .container #faq .accordion-button {
+        padding: 1rem 0rem; }
+        #pecVagas .container #faq .accordion-button:focus {
+          border-color: unset;
+          box-shadow: unset; }
+      #pecVagas .container #faq .accordion-button::after {
+        background-image: url("../../assets/images/pessoas-e-carreiras/add.svg"); }
 
 .a-tivit-hero {
   height: 580px;
@@ -1756,7 +2150,8 @@ html, body, * {
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left h2 {
             font-size: 36px;
             line-height: 42px;
-            font-weight: 700; }
+            font-weight: 700;
+            text-transform: uppercase; }
           .esg .lp-tbanks-confira.lp-tdx .col-12.col-md-6 .lp-tbanks-confira-bg-left p {
             width: 419px;
             margin: 0 auto;
@@ -2584,23 +2979,27 @@ html, body, * {
     width: 200px; }
 
 .lp-tdx-hero {
-  background-image: url("../images/landing/tdx/hero.png"); }
+  background-image: url("../images/landing/tdx/bannerherotdx.jpg"); }
 
 .lp-tbanks-conheca {
-  padding: 118px 0 140px 0; }
+  padding: 127px 0 140px 0; }
   @media (max-width: 768px) {
     .lp-tbanks-conheca {
       padding: 44px 0 34px 0; } }
-  .lp-tbanks-conheca .lp-tbanks-conheca-content p {
-    font-size: 36px;
-    line-height: 50px;
-    font-weight: 400;
-    max-width: 785px;
-    margin: 0 auto;
-    text-align: center;
-    color: #262626; }
-    .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
-      color: #582689; }
+  .lp-tbanks-conheca .lp-tbanks-conheca-content {
+    margin-bottom: 50px; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content b {
+      font-weight: 600; }
+    .lp-tbanks-conheca .lp-tbanks-conheca-content p {
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 400;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+      color: #262626; }
+      .lp-tbanks-conheca .lp-tbanks-conheca-content p span {
+        color: #582689; }
   .lp-tbanks-conheca .lp-tdx-conheca-content p span {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
@@ -2661,6 +3060,7 @@ html, body, * {
           margin-bottom: 40px; } }
   .lp-tbanks-conheca .lp-tbanks-credibilidade {
     margin-top: 64px;
+    margin-bottom: 34px;
     color: #262626; }
     .lp-tbanks-conheca .lp-tbanks-credibilidade p {
       font-size: 18px;
@@ -2795,8 +3195,38 @@ html, body, * {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
-      color: #FE4817; }
+    .lp-tdx-conheca .col-12 .lp-tdx-conheca-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content h2 {
+        color: #FE4817; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content .paragrafo2 {
+        max-width: 500px; }
+      .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta {
+        margin-top: 15px;
+        background: #FE4817;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        border: 1px solid #FE4817;
+        transition: all .2s;
+        color: white;
+        text-decoration: unset;
+        cursor: pointer;
+        font-size: 14px; }
+        .lp-tdx-conheca .col-12 .lp-tdx-conheca-content a.buttoncta:hover {
+          background: white;
+          color: #262626;
+          transition: all .2s; }
+
+.lp-tdx-parceiros {
+  margin-top: 60px;
+  margin-bottom: 160px; }
+  .lp-tdx-parceiros .lp-tdx-parceiros-content h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 600; }
 
 #triangle-down, #triangle-down-1, #triangle-down-2 {
   width: 0;
@@ -2884,6 +3314,8 @@ html, body, * {
         margin-bottom: 19px; }
       .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content .paragrafo3, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel .paragrafo3 {
         color: white; }
+      .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-content strong, .lp-tbanks-confira .lp-tbanks-confira-bg-right .lp-tbanks-confira-carousel strong {
+        font-weight: 600; }
 
 .lp-tbanks-confira .lp-tdx-confira-bg-right {
   background-color: #FE4817; }
@@ -2892,7 +3324,8 @@ html, body, * {
       height: 440px; } }
 
 .lp-tdx-como-fazemos {
-  padding: 122px 0 60px 0; }
+  padding: 122px 0 130px 0;
+  background: #F4F6F7; }
   .lp-tdx-como-fazemos .lp-tdx-como-fazemos-content {
     width: 721px;
     max-width: 100%;
@@ -2933,16 +3366,19 @@ html, body, * {
     transition: all .2s; }
 
 .lp-tdx-metodologia {
-  padding: 100px 0 130px 0; }
+  padding: 123px 0 130px 0; }
   .lp-tdx-metodologia .col-12.bl {
-    border-right: 1px solid #E6E6E6; }
+    padding: 30px; }
+    .lp-tdx-metodologia .col-12.bl .card {
+      border: 1px solid #E6E6E6;
+      padding: 50px; }
   .lp-tdx-metodologia h2 {
     font-size: 28px;
     line-height: 44px;
     letter-spacing: 0.03em;
     text-transform: uppercase; }
   .lp-tdx-metodologia p {
-    margin-bottom: 100px; }
+    margin-bottom: 30px; }
   .lp-tdx-metodologia img {
     max-width: 100%;
     height: 90px;
@@ -2953,11 +3389,18 @@ html, body, * {
     color: #FE4817;
     font-weight: 600;
     text-transform: uppercase;
-    width: 270px;
+    width: auto;
     margin: 0 auto; }
   .lp-tdx-metodologia .paragrafo3 {
-    max-width: 270px;
-    margin: 28px 0 0 0; }
+    max-width: auto;
+    margin: 18px 0 0 0; }
+  .lp-tdx-metodologia .paragrafo3.mx {
+    max-width: 450px; }
+  .lp-tdx-metodologia .paragrafo3.list {
+    margin-top: 28px !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase; }
   .lp-tdx-metodologia ul li {
     width: 290px;
     text-align: left; }
@@ -2967,11 +3410,14 @@ html, body, * {
     border-radius: 0;
     text-transform: uppercase;
     padding: 15px 38px;
-    margin-top: 60px; }
+    border-radius: 50px;
+    margin-top: 60px;
+    transition: all .2s; }
     .lp-tdx-metodologia .btn-conheca:hover {
       background-color: white;
       color: #FE4817;
-      border: 1px solid #FE4817; }
+      border: 1px solid #FE4817;
+      transition: all .2s; }
 
 .lp-tbanks-depoimentos {
   height: 100%;
@@ -3038,7 +3484,7 @@ html, body, * {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 3%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 40px;
     text-transform: uppercase; }
   .lp-tbanks-logo-clientes .lp-tbanks-logo-clientes-content .col-4 {
@@ -3120,6 +3566,7 @@ html, body, * {
     color: #262626;
     margin-bottom: 90px; }
   .lp-tbanks-form .lp-tbanks-title .paragrafo2 {
+    margin-top: 22px;
     margin-bottom: 61px; }
   .lp-tbanks-form .form {
     width: 830px;
@@ -3207,7 +3654,8 @@ html, body, * {
         max-width: 152px;
         margin: 0 auto; }
     .lp-tbanks-form .form .tdx-form .wpcf7-form-control.has-spinner.wpcf7-submit {
-      background: #FE4817; }
+      background: #FE4817;
+      border-radius: 50px; }
     .lp-tbanks-form .form .tdx-form h3 {
       color: #FE4817; }
     .lp-tbanks-form .form .privacidade {
@@ -3218,6 +3666,25 @@ html, body, * {
       @media (max-width: 760px) {
         .lp-tbanks-form .form .privacidade {
           margin-top: 30px; } }
+
+#cases .lp-tdx-confira-bg-right {
+  background: #F14517; }
+
+#cases .counter {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #cases .counter .numactive {
+    color: white;
+    font-weight: 700; }
+  #cases .counter .numseparation, #cases .counter .numtotal {
+    color: white;
+    font-weight: 300; }
+  #cases .counter .numseparation {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 @media (max-width: 768px) {
   .on-scroll-mobile-tbanks {
@@ -3252,7 +3719,7 @@ html, body, * {
       font-size: 80px;
       line-height: 80px; }
   .lp-tdx-conheca {
-    padding: 0 0 23px 0; }
+    padding: 0 0 100px 0; }
     .lp-tdx-conheca img {
       width: 100%;
       margin-bottom: 23px; }
@@ -3318,7 +3785,8 @@ html, body, * {
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
-      margin-top: 60px; }
+      margin-top: 60px;
+      border-radius: 50px; }
   .lp-tbanks-form .lp-tbanks-title h2 {
     font-size: 22px;
     line-height: 28px; } }
@@ -3513,6 +3981,262 @@ html, body, * {
     width: 506px; }
   .contato-canais .borda {
     height: 131px; } }
+
+.esg-hero {
+  height: 580px;
+  background: url("../../assets/images/esg/banneresg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .esg-hero .zindex {
+    z-index: 50; }
+  .esg-hero .esg-hero-title {
+    margin: 0 auto; }
+    .esg-hero .esg-hero-title h1 {
+      margin-top: 200px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center; }
+    .esg-hero .esg-hero-title h2 {
+      font-weight: 500 !important;
+      color: white;
+      text-align: center; }
+  .esg-hero .esg-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+  .esg-hero .botao {
+    margin-bottom: 30px; }
+    .esg-hero .botao a {
+      background: transparent;
+      color: #F20024;
+      border: solid 1px #F20024; }
+  .esg-hero .arrow {
+    margin-top: 0; }
+  .esg-hero .customMargin {
+    margin-top: -50px; }
+  .esg-hero .mask {
+    max-width: 1400px; }
+
+#esgCounter {
+  padding: 127px 0 0 0; }
+  @media (max-width: 760px) {
+    #esgCounter {
+      padding: 0px 0 0 0; }
+      #esgCounter .col-12 {
+        margin-bottom: 50px; } }
+  #esgCounter .lp-tbanks-credibilidade p span {
+    color: #262626; }
+  #esgCounter .lp-tbanks-credibilidade small {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 5px; }
+  #esgCounter .lp-tbanks-credibilidade .custom-text {
+    max-width: 195px; }
+
+#esgConheca {
+  padding: 100px 0 140px 0; }
+  @media (max-width: 760px) {
+    #esgConheca {
+      padding: 57px 0 0 0; } }
+
+#projetos {
+  padding: 0px 0 120px 0;
+  background: #F5F6F7; }
+  #projetos .text {
+    padding-top: 120px; }
+    #projetos .text h2 {
+      text-transform: uppercase;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.3;
+      text-align: center; }
+  #projetos .tab {
+    margin-top: 60px; }
+    #projetos .tab .nav {
+      justify-content: space-around; }
+    #projetos .tab .nav-tabs .nav-link.active {
+      border-bottom: 2px solid #F20024 !important;
+      padding-bottom: 15px;
+      color: #F20024;
+      font-weight: 600;
+      font-size: 18px;
+      background-color: transparent;
+      border-color: transparent;
+      text-transform: uppercase; }
+    #projetos .tab .nav-tabs .nav-link {
+      border-bottom: 1px solid transparent; }
+    #projetos .tab .nav-link {
+      color: #262626;
+      text-transform: uppercase; }
+    #projetos .tab .carousel-control-prev-icon {
+      background-image: url("../../assets/images/esg/arrow-white-left.svg") !important;
+      width: 13px; }
+    #projetos .tab .carousel-control-next-icon {
+      background-image: url("../../assets/images/esg/arrow-white-right.svg") !important;
+      width: 13px; }
+    #projetos .tab .carousel-indicators [data-bs-target] {
+      margin-right: 0;
+      margin-left: 0;
+      width: 38px; }
+    #projetos .tab .carousel-control-prev {
+      left: 10%;
+      margin-top: 15px; }
+      @media (max-width: 768px) {
+        #projetos .tab .carousel-control-prev {
+          left: 0; } }
+    #projetos .tab .carousel-control-next {
+      right: 10%;
+      margin-top: 15px; }
+      @media (max-width: 768px) {
+        #projetos .tab .carousel-control-next {
+          right: 0; } }
+    #projetos .tab .carousel-indicators {
+      left: 80.5%;
+      margin-right: 0;
+      margin-left: 0; }
+    #projetos .tab .custom {
+      bottom: 8%;
+      right: 4%;
+      width: 150px; }
+    #projetos .tab .counter {
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2; }
+      #projetos .tab .counter .numactive {
+        color: white;
+        font-weight: 700; }
+      #projetos .tab .counter .numseparation, #projetos .tab .counter .numtotal {
+        color: white;
+        font-weight: 300; }
+      #projetos .tab .counter .numseparation {
+        margin-left: 10px;
+        margin-right: 10px; }
+    #projetos .tab .textslide {
+      padding: 50px; }
+      #projetos .tab .textslide p, #projetos .tab .textslide small, #projetos .tab .textslide h2 {
+        color: white; }
+      #projetos .tab .textslide small {
+        font-size: 12px; }
+      #projetos .tab .textslide p {
+        font-size: 18px;
+        max-width: 320px; }
+      #projetos .tab .textslide h2 {
+        margin-top: 17px;
+        font-size: 28px;
+        text-transform: uppercase; }
+      #projetos .tab .textslide span.tag {
+        border: 1px solid white;
+        padding: 4px 10px 4px 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        border-radius: 50px;
+        text-transform: uppercase; }
+      #projetos .tab .textslide span.info {
+        color: white;
+        font-size: 12px;
+        margin-left: 10px; }
+      #projetos .tab .textslide a {
+        color: #F20024;
+        text-transform: uppercase; }
+        #projetos .tab .textslide a:after {
+          content: url("../../assets/images/esg/arrow-red-content.svg");
+          margin-left: 5px;
+          transition: all .2s linear; }
+
+#cultura {
+  background: #F5F6F7;
+  padding-bottom: 116px;
+  /* medium and up screens */ }
+  #cultura .text h2.text {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center; }
+  #cultura #cultureCarousel h2 {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #F20024;
+    font-weight: 600;
+    text-transform: uppercase; }
+  #cultura #cultureCarousel p {
+    font-size: 16px;
+    line-height: 1.3; }
+  #cultura #cultureCarousel a.cta {
+    color: #F20024;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: unset; }
+    #cultura #cultureCarousel a.cta:after {
+      content: url("../../assets/images/esg/arrow-red-content.svg");
+      margin-left: 5px;
+      margin-top: 1px;
+      transition: all .2s linear; }
+  #cultura .counter2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #cultura .counter2 .numactive2 {
+      color: #F20024;
+      font-weight: 700; }
+    #cultura .counter2 .numseparation2, #cultura .counter2 .numtotal2 {
+      color: #F20024;
+      font-weight: 300; }
+    #cultura .counter2 .numseparation2 {
+      margin-left: 10px;
+      margin-right: 10px; }
+  @media (max-width: 767px) {
+    #cultura .carousel-inner .carousel-item > div {
+      display: none; }
+    #cultura .carousel-inner .carousel-item > div:first-child {
+      display: block; } }
+  #cultura .carousel-inner .carousel-item.active,
+  #cultura .carousel-inner .carousel-item-next,
+  #cultura .carousel-inner .carousel-item-prev {
+    display: flex; }
+  @media (min-width: 768px) {
+    #cultura .carousel-inner .carousel-item-end.active,
+    #cultura .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%); }
+    #cultura .carousel-inner .carousel-item-start.active,
+    #cultura .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%); } }
+  #cultura .carousel-inner .carousel-item-end,
+  #cultura .carousel-inner .carousel-item-start {
+    transform: translateX(0); }
+  #cultura .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 16px;
+    margin-right: 10px; }
+  #cultura .carousel-control-next-icon {
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 16px;
+    margin-left: 10px; }
+  #cultura .carousel-control-prev {
+    left: 45%; }
+    @media (max-width: 768px) {
+      #cultura .carousel-control-prev {
+        left: 28%; } }
+  #cultura .carousel-control-next {
+    right: 45%; }
+    @media (max-width: 768px) {
+      #cultura .carousel-control-next {
+        right: 28%; } }
+
+#esgContent #triangle-down {
+  border-top: 28px solid #F5F6F7; }
 
 .a-tivit-cases.cases.conteudos {
   background: url("../../assets/images/conteudos/banner.png") no-repeat center center;

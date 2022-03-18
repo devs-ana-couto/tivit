@@ -5,8 +5,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 lp-banks-hero-content text-center">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/tdx-white.png" alt="Tdx powered by TIVIT">
-        <h1 class="fade-in-bottom">Abrindo caminhos </br>para <b>negócios extraordinários</b>
+        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/tdxlogo.svg" alt="Tdx powered by TIVIT">
+        <h1 class="fade-in-bottom">Juntos, rumo ao </br><b>extraordinário</b>
 </h1>
       </div>
     </div>
@@ -20,7 +20,7 @@
 
         <div class="lp-tbanks-conheca-content lp-tdx-conheca-content">
           <p>
-            Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma para seu negócio ser digital. Conte com nossa consultoria de desenvolvimento de software e transforme sua operação.
+            <b>Soluções inovadoras na prática.</b><br>Desafiamos e encorajamos a transformação, porque acreditamos que o plano no papel não muda o mundo
           </p>
         </div>
 
@@ -68,96 +68,122 @@
       <div class="col-12 col-md-6">
         <div class="lp-tdx-conheca-content">
           <h2>Conheça a TDX</h2>
-          <p class="paragrafo2">Focados em acelerar resultados de negócios, solucionamos desafios com uma abordagem diferenciada e assertiva. Valorizamos uma combinação de colaboração e criatividade, cultura empreendedora, autonomia e agilidade nos processos.<br/><br/>
-
-          Um plano no papel não muda o mundo. Com a Tdx, sua transformação digital se torna realidade. 
+          <p class="paragrafo2">
+          Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
+          <br><br>
+          Além de ferramentas que facilitam o processo e métodos simples e ágeis, também fomentamos a transformação das pessoas.
+          <br><br>
+          Por isso orientamos a todos e seus ecossistemas, através de uma experiência fim a fim. Mostramos as soluções inovadoras na prática, sem deixar de estar presentes no processo.
+          </p>
+          <div class="mt-0 mt-md-5">
+            <a class="buttoncta"> CONHEÇA A TDX </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="lp-tbanks-confira lp-tdx">
-        <div class="container-fluid">
-          <div id="triangle-down"></div>
-          <div class="row">
-            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right text-left">
-              <div class="lp-tbanks-confira-content">
-                <h3>Cases de sucesso da <span>Tdx</span></h3>
-              </div>
-              <div class="lp-tbanks-confira-carousel">
-                <h2>cnh industrial</h2>
-                <p class="paragrafo3">
-                Plataforma digital mobile desenvolvida de ponta a ponta, com serviços para concessionárias: simulações de crédito, captação, envio e aprovação de documentos.
-                </p>
-              </div>
-            </div>
-            <div class="col-6 lp-tbanks-confira-bg-left hide-mobile"></div>
-            <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop"></div>
-          </div>
+<div class="lp-tdx-parceiros text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="lp-tdx-parceiros-content">
+          <h2>Parceiros</h2>
         </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="lp-tbanks-confira lp-tdx">
-        <div class="container-fluid">
-          <div id="triangle-down"></div>
-          <div class="row">
-            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right text-left">
-              <div class="lp-tbanks-confira-content">
-                <h3>Cases de sucesso da <span>Tdx</span></h3>
-              </div>
-              <div class="lp-tbanks-confira-carousel">
-                <h2>banco privado</h2>
-                <p class="paragrafo3">
-                <span>Squads Ágeis</span> para redução, em 12 meses, de 40% do número total de chamados de atendimento, com altos índices de NPS.
-                </p>
-              </div>
-            </div>
-            <div class="col-6 lp-tbanks-confira-bg-left hide-mobile bg-2"></div>
-            <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="lp-tbanks-confira lp-tdx">
-        <div class="container-fluid">
-          <div id="triangle-down"></div>
-          <div class="row">
-            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right text-left">
-              <div class="lp-tbanks-confira-content">
-                <h3>Cases de sucesso da <span>Tdx</span></h3>
-              </div>
-              <div class="lp-tbanks-confira-carousel">
-              <h2>Indústria de Alimentos</h2>
-                <p class="paragrafo3">
-                  <span>Solução completa de otimização logística:</span> Control Tower (Centro de Logística) para controle e geração de insights.
-                </p>
-              </div>
-            </div>
-            <div class="col-6 lp-tbanks-confira-bg-left hide-mobile bg-3"></div>
-            <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop"></div>
-          </div>
+        <div class="mt-5">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/partnerslogo.svg" alt="Parceiros">
         </div>
       </div>
     </div>
   </div>
-  <div class="box-carousel">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6">
-          <div class="alinhamento-box">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+
+<!-- Bloco de Cases -->
+<div id="cases" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="container">
+    <div class="row">
+      <div class="lp-tbanks-confira lp-tdx">
+
+        <div id="triangle-down"></div>
+
+        <div class="carousel-inner">
+        
+          <div class="row">
+            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
+              <div class="lp-tbanks-confira-content">
+                <h3>
+                Cases de <br> sucesso da <strong>Tdx</strong>
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+
+              <div class="carousel-item heroslide active">
+                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>cnh industrial</h2>
+                    <p class="paragrafo3">
+                      Plataforma digital mobile desenvolvida de ponta a ponta, com serviços para concessionárias: simulações de crédito, captação, envio e aprovação de documentos.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
+              </div>
+
+              <div class="carousel-item heroslide">
+                <div class="col-12 lp-tbanks-confira-bg-left  hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>cnh industrial</h2>
+                    <p class="paragrafo3">
+                      Plataforma digital mobile desenvolvida de ponta a ponta, com serviços para concessionárias: simulações de crédito, captação, envio e aprovação de documentos.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
+              </div>
+
+              <div class="carousel-item heroslide">
+                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
+                  <div class="lp-tbanks-confira-carousel">
+                    <h2>cnh industrial</h2>
+                    <p class="paragrafo3">
+                      Plataforma digital mobile desenvolvida de ponta a ponta, com serviços para concessionárias: simulações de crédito, captação, envio e aprovação de documentos.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
+                </div> -->
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="navigation">
+                <button class="carousel-control-prev" type="button" data-bs-target="#cases" data-bs-slide="prev">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+                </button>
+                <div class="d-flex flex-row counter">
+                  <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#cases" data-bs-slide="next">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+                </button>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="1" aria-label="Content 2"></button>
+                  <button type="button" data-bs-target="#esg" data-bs-slide-to="2" aria-label="Content 3"></button>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
@@ -169,7 +195,7 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-como-fazemos-content">
-          <h2>entrega de valor</h2>
+          <h2>como fazemos</h2>
           <p class="paragrafo2">
             Atuamos desde a descoberta do desafio do cliente, estudando a operação e elaborando hipóteses, para então desenvolver soluções customizadas. Construímos as fundações para seu negócio crescer e prosperar, em um ciclo virtuoso.
           </p>
@@ -185,67 +211,85 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-metodologia-content">
-          <h2>Nossa metodologia de trabalho</h2>
+          <h2>Entrega de valor</h2>
           <p class="paragrafo2">
           Desenhamos, desenvolvemos e otimizamos softwares customizados para cada negócio.
           </p>
         </div>
       </div>
-      <div class="col-12 col-md-3 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Design, Produtos & Plataformas</h3>
-        <p class="paragrafo3">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Experiências extraordinárias</li>
-          <li>Design de produtos e serviços</li>
-          <li>Estratégia digital</li>
-          <li>Transformação digital</li>
-          <li>Desenvolvimento Ágil e DevOps</li>
-          <li>Evolução de produtos digitais</li>
-        </ul>
-        <!-- Divisor -->
-        <div class="divisor"></div>
+      <div class="col-12 col-md-6 bl">
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Design, Produtos & Plataformas</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+          <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Experiências extraordinárias<br>
+            Design de produtos e serviços<br>
+            Estratégia digital<br>
+            Transformação digital<br>
+            Desenvolvimento Ágil e DevOps<br>
+            Evolução de produtos digitais<br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
+        </div>
       </div>
-      <div class="col-12 col-md-3 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Data &<br/> Analytics</h3>
-        <p class="paragrafo3">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Estratégia e inteligência</li>
-          <li>Arquitetura e infraestrutura de recursos</li>
-          <li>Fluxo e processamento de informações</li>
-          <li>Insights para negócios</li>
-          <li>Governança, política e segurança</li>
-        </ul>
-        <!-- Divisor -->
-        <div class="divisor"></div>
+      <div class="col-12 col-md-6 bl">
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Data & Analytics</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Estratégia e inteligência<br>
+            Arquitetura e infraestrutura de recursos<br>
+            Fluxo e processamento de informações<br>
+            Insights para negócios<br>
+            Governança, política e segurança<br>
+            <br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
+        </div>
       </div>
-      <div class="col-12 col-md-3 bl">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Modernização & Otimização</h3>
-        <p class="paragrafo3">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Descoberta e estratégia</li>
-          <li>Modernização de aplicações</li>
-          <li>Otimização de ambientes em nuvem</li>
-          <li>Integrações estratégicas</li>
-          <li>Digitalização e transformação de processos</li>
-          <li>Digital Workplace</li>
-        </ul>
-        <!-- Divisor -->
-        <div class="divisor"></div>
+      <div class="col-12 col-md-6 bl">
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Modernização & Otimização</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Descoberta e estratégia<br>
+            Modernização de aplicações<br>
+            Otimização de ambientes em nuvem<br>
+            Integrações estratégicas<br>
+            Digitalização e transformação de processos<br>
+            Digital Workplace<br>
+          </div>
+          <!-- Divisor -->
+          <div class="divisor"></div>
+        </div>
       </div>
-      <div class="col-12 col-md-3">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
-        <h3>Sustentação & Crescimento</h3>
-        <p class="paragrafo3">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
-        <ul class="paragrafo3 text-left">
-          <li>Sustentação de operações 24/7</li>
-          <li>Sustentação de ambientes legados</li>
-          <li>Modelos de operação inteligentes</li>
-          <li>Evolução e continuidade de negócios estratégicos</li>
-          <li>Centro de Excelência SAP</li>
-        </ul>
+      <div class="col-12 col-md-6 bl">
+        <div class=" card">
+          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
+          <h3>Sustentação & Crescimento</h3>
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <p class="paragrafo3 mx">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
+          </div>
+          <div class="paragrafo3 list text-center">
+            Sustentação de operações 24/7<br>
+            Sustentação de ambientes legados<br>
+            Modelos de operação inteligentes<br>
+            Evolução e continuidade de negócios estratégicos<br>
+            Centro de Excelência SAP<br>
+            <Br>
+          </div>
+        </div>
         <a href="#" class="btn btn-conheca hide-desktop">Conheça a TDX</a>
       </div>
       <div class="col-12 hide-mobile">
@@ -255,58 +299,134 @@
   </div>
 </div>
 
-<div class="lp-tbanks-logo-clientes">
+<div class="lp-tbanks-logo-clientes mt-5 mb-5 pb-5">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="lp-tbanks-logo-clientes-content text-center">
-          <h2>Já trabalhamos com</h2>
-          <div class="row">
-            <div class="col-4 col-md-1">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/brf.svg" alt="Logo BRF">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/notre-dame.svg" alt="Logo Notredame">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/zurich.svg" alt="Logo Zurich">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/banco-bv.svg" alt="Logo Banco BV">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/ipiranga.svg" alt="Logo Ipiranga">
-            </div>
-            <div class="col-4 col-md-1">
-            </div>
-          </div>
-          <div class="row">
-           <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-boticario.svg" alt="Logo Boticario">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/sem-parar.svg" alt="Logo Sem Parar">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-energisa.svg" alt="Logo Energisa">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/porto-seguro.svg" alt="Logo Porto Seguro">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/fmc.svg" alt="Logo FMC">
-            </div>
-            <div class="col-4 col-md-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/cnh-industrial.svg" alt="Logo CNH Industrial">
+          <h2>Nossos Clientes</h2>
+          <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item heroslide2 customers active">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/brf.svg" alt="Logo BRF">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/notre-dame.svg" alt="Logo Notredame">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/zurich.svg" alt="Logo Zurich">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/banco-bv.svg" alt="Logo Banco BV">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/ipiranga.svg" alt="Logo Ipiranga">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-boticario.svg" alt="Logo Boticario">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/sem-parar.svg" alt="Logo Sem Parar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-energisa.svg" alt="Logo Energisa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/porto-seguro.svg" alt="Logo Porto Seguro">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/fmc.svg" alt="Logo FMC">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item heroslide2 customers">
+                            <div class="col-12 col-md-2">
+                                <div class="h-100">
+                                    <div class="m-3">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/cnh-industrial.svg" alt="Logo CNH Industrial">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 position-relative mt-5">
+                      <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>  
+                      <div class="d-flex flex-row justify-content-center counter2 mt-3">
+                        <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+                      </div>
+                      <a class="carousel-control-next bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 
 <div class="lp-tbanks-form">
@@ -314,7 +434,7 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tbanks-title text-center">
-          <h2>O sucesso da TBankS está apenas<br/> começando. Junte-se a nós.</h2>
+          <h2>Dê o primeiro passo para sua transformação digital. <br> Fale com nossos especialistas.</h2>
           <p class="paragrafo2">Solicite um contato dos nossos especialistas sem compromisso ainda hoje.</p>
         </div>
         <div class="form">
@@ -322,6 +442,106 @@
           <div class="privacidade">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações pessoais somente para fornecer os produtos e serviços que você solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira nossa Política de Privacidade.</div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bloco de Conteúdos -->
+<div class="home-content content-inovacao">
+<div id="triangle-down"></div>
+  <div class="container pd">
+    <div class="title">
+      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+    </div>
+    <div class="row">
+      <!-- content 1 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1"> 
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 1 -->
+
+      <!-- content 2 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+            <div class="position-absolute tagContent">press release</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 2 -->
+      <!-- content 3 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row align-items-center">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 3 -->
     </div>
   </div>
 </div>
