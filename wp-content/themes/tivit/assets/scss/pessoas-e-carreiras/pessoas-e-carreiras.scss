@@ -75,7 +75,7 @@
   padding: 127px 0 100px 0;
   @media (max-width: 768px){
     padding: 0px 0 0px 0;
-    .col-12{
+    .col-12:first-child, .col-12:nth-child(2n){
       margin-bottom: 50px;
     }
   }
@@ -273,7 +273,10 @@
     border-top: 28px solid #F5F6F7;
   }
   .container{
-    padding: 110px 0px 72px 0;
+    @media (min-width: 768px){
+      padding: 110px 0px 72px 0;
+    }
+    padding: 0px 0px 72px 0;
   }
   h2.title{
     font-size: 36px !important;
@@ -286,9 +289,27 @@
   #carouselCustom {
     padding-bottom: 0;
     .carousel-inner{
-      right: 0 !important;
+      @media (min-width: 768px){
+        right: 0 !important;
+      }
     }
     .card{
+      .card-img{
+        img{
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+        .tagIn{
+          background: $vermelho-tivit;
+          padding: 22px;
+          top: 0;
+          left: 0;
+        }
+        .imgIn{
+          top: 11px;
+          left: 11px;
+        }
+      }
       .content{
         border: unset;
         height: auto;
@@ -487,6 +508,57 @@
           background: transparent;
           transition: all .2s linear;
         }
+      }
+    }
+    #faq{
+      margin-top: 110px;
+      h2.title{
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+      }
+      .block{
+        max-width: 900px;
+      }
+      .accordion{
+        @media (max-width: 768px){
+          margin: 10px;
+        }
+      }
+      .accordion-button:not(.collapsed){
+        background-color: transparent;
+        color: white;
+        box-shadow: unset;
+        border-bottom: 1px solid;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .accordion-item{
+        background-color: transparent;
+      }
+      .accordion-body{
+        color: white;
+      }
+      .accordion-flush .accordion-item .accordion-button{
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .accordion-button{
+        padding: 1rem 0rem;
+        &:focus{
+          border-color: unset;
+          box-shadow: unset;
+        }
+      }
+      .accordion-button::after{
+        background-image: url('../../assets/images/pessoas-e-carreiras/add.svg')
       }
     }
   }

@@ -1326,7 +1326,7 @@ html, body, * {
   @media (max-width: 768px) {
     #pecCounter {
       padding: 0px 0 0px 0; }
-      #pecCounter .col-12 {
+      #pecCounter .col-12:first-child, #pecCounter .col-12:nth-child(2n) {
         margin-bottom: 50px; } }
   #pecCounter .lp-tbanks-credibilidade p span {
     color: #262626; }
@@ -1464,7 +1464,10 @@ html, body, * {
   #pecConheca #triangle-down {
     border-top: 28px solid #F5F6F7; }
   #pecConheca .container {
-    padding: 110px 0px 72px 0; }
+    padding: 0px 0px 72px 0; }
+    @media (min-width: 768px) {
+      #pecConheca .container {
+        padding: 110px 0px 72px 0; } }
   #pecConheca h2.title {
     font-size: 36px !important;
     font-weight: 600;
@@ -1473,8 +1476,20 @@ html, body, * {
     text-transform: uppercase; }
   #pecConheca #carouselCustom {
     padding-bottom: 0; }
-    #pecConheca #carouselCustom .carousel-inner {
-      right: 0 !important; }
+    @media (min-width: 768px) {
+      #pecConheca #carouselCustom .carousel-inner {
+        right: 0 !important; } }
+    #pecConheca #carouselCustom .card .card-img img {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px; }
+    #pecConheca #carouselCustom .card .card-img .tagIn {
+      background: #F20024;
+      padding: 22px;
+      top: 0;
+      left: 0; }
+    #pecConheca #carouselCustom .card .card-img .imgIn {
+      top: 11px;
+      left: 11px; }
     #pecConheca #carouselCustom .card .content {
       border: unset;
       height: auto; }
@@ -1617,6 +1632,45 @@ html, body, * {
         #pecVagas .container .btnCta a:hover {
           background: transparent;
           transition: all .2s linear; }
+    #pecVagas .container #faq {
+      margin-top: 110px; }
+      #pecVagas .container #faq h2.title {
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 60px;
+        text-transform: uppercase; }
+      #pecVagas .container #faq .block {
+        max-width: 900px; }
+      @media (max-width: 768px) {
+        #pecVagas .container #faq .accordion {
+          margin: 10px; } }
+      #pecVagas .container #faq .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: white;
+        box-shadow: unset;
+        border-bottom: 1px solid;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4; }
+      #pecVagas .container #faq .accordion-item {
+        background-color: transparent; }
+      #pecVagas .container #faq .accordion-body {
+        color: white; }
+      #pecVagas .container #faq .accordion-flush .accordion-item .accordion-button {
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4; }
+      #pecVagas .container #faq .accordion-button {
+        padding: 1rem 0rem; }
+        #pecVagas .container #faq .accordion-button:focus {
+          border-color: unset;
+          box-shadow: unset; }
+      #pecVagas .container #faq .accordion-button::after {
+        background-image: url("../../assets/images/pessoas-e-carreiras/add.svg"); }
 
 .a-tivit-hero {
   height: 580px;

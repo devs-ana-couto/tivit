@@ -427,8 +427,9 @@
               <div class="carousel-item heroslide2 active">
                   <div class="col-md-3">
                       <div class="card">
-                          <div class="card-img">
+                          <div class="card-img position-relative">
                               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer1.svg" alt="Blog 1" class="img-fluid w-100">
+                              <div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>
                           </div>
                           <div class="content">
                             <h2>fulano de tal da silva</h2>
@@ -444,8 +445,9 @@
               <div class="carousel-item heroslide2">
                   <div class="col-md-3">
                       <div class="card">
-                          <div class="card-img">
+                          <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer2.svg" alt="Blog 2" class="img-fluid w-100">
+                            <div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>
                           </div>
                           <div class="content">
                             <h2>fulano de tal da silva</h2>
@@ -461,8 +463,9 @@
               <div class="carousel-item heroslide2">
                   <div class="col-md-3">
                       <div class="card">
-                          <div class="card-img">
+                          <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer3.svg" alt="Blog 3" class="img-fluid w-100">
+                            <div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>
                           </div>
                           <div class="content">
                             <h2>fulano de tal da silva</h2>
@@ -478,8 +481,9 @@
               <div class="carousel-item heroslide2">
                   <div class="col-md-3">
                       <div class="card">
-                          <div class="card-img">
+                          <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer4.svg" alt="Blog 2" class="img-fluid w-100">
+                            <div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>
                           </div>
                           <div class="content">
                             <h2>fulano de tal da silva</h2>
@@ -495,8 +499,9 @@
               <div class="carousel-item heroslide2">
                   <div class="col-md-3">
                       <div class="card">
-                          <div class="card-img">
+                          <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer1.svg" alt="Blog 3" class="img-fluid w-100">
+                            <div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>
                           </div>
                           <div class="content">
                             <h2>fulano de tal da silva</h2>
@@ -514,7 +519,7 @@
             <a class="carousel-control-prev bg-transparent w-aut" href="#esg" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <div class="d-flex flex-row counter2 hide-mobile">
+            <div class="d-flex flex-row counter2">
               <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
             </div>
             <a class="carousel-control-next bg-transparent w-aut" href="#esg" role="button" data-bs-slide="next">
@@ -659,6 +664,60 @@
       <a>
         Ver todas AS VAGAS
       </a>
+    </div>
+
+    <div id="faq" class="d-flex flex-column align-items-center justify-content-center insiderBlock">
+      <div class="d-flex justify-content-center align-items-center flex-column w-100">
+        <h2 class="title text-center"> 
+          ainda tem dúvidas? veja as perguntas frequentes:
+        </h2>
+      </div>
+
+      <div class="w-100 block">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Plano de carreira, regime de trabalho e benefícios?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Com o que a TIVIT trabalha?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Onde ficam os escritórios da TIVIT?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Quais são as unidades de negócios (BUs) da TIVIT?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
