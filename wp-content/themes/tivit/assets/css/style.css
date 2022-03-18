@@ -1467,7 +1467,7 @@ html, body, * {
     padding: 0px 0px 72px 0; }
     @media (min-width: 768px) {
       #pecConheca .container {
-        padding: 110px 0px 72px 0; } }
+        padding: 0px 0px 72px 0; } }
   #pecConheca h2.title {
     font-size: 36px !important;
     font-weight: 600;
@@ -2637,40 +2637,34 @@ html, body, * {
             color: black; } }
 .inovacao-hero {
   height: 580px;
-  background: url("../../assets/images/inovacao/banner-mobile.png") no-repeat center center;
+  background: url("../../assets/images/inovacao/bannerinovacao.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column; }
+  .inovacao-hero .zindex {
+    z-index: 50; }
   .inovacao-hero .inovacao-hero-title {
     margin: 0 auto; }
     .inovacao-hero .inovacao-hero-title h1 {
-      margin-top: 162px;
+      margin-top: 200px;
       font-size: 16px;
       line-height: 22px;
       font-weight: 600;
       color: #fff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
     .inovacao-hero .inovacao-hero-title h2 {
-      font-weight: 500 !important; }
-  .inovacao-hero .inovacao-hero-content h2 {
-    font-size: 34px;
-    line-height: 34px;
-    text-align: center;
-    font-weight: 400;
-    width: 320px;
-    margin: 198px auto 0 auto; }
-  .inovacao-hero .botao {
-    margin-bottom: 30px; }
-    .inovacao-hero .botao a {
-      background: transparent;
-      color: #F20024;
-      border: solid 1px #F20024; }
+      font-weight: 500 !important;
+      color: white;
+      text-align: center; }
   .inovacao-hero .arrow {
     margin-top: 0; }
+  .inovacao-hero .mask {
+    max-width: 1400px; }
 
 .inovacao-intro {
   position: relative;
-  margin-top: 121px;
+  margin-top: 191px;
   margin-bottom: 121px; }
   .inovacao-intro p {
     font-size: 36px;
@@ -2955,14 +2949,29 @@ html, body, * {
 
 @media (min-width: 760px) {
   .inovacao-hero {
-    background: url("../../assets/images/inovacao/banner.png") no-repeat center center;
+    height: 580px;
+    background: url("../../assets/images/inovacao/bannerinovacao.png") no-repeat center center;
     background-size: cover;
-    height: 100vh; }
-    .inovacao-hero .inovacao-hero-title h1, .inovacao-hero .inovacao-hero-title h2 {
-      text-align: center;
-      color: white; }
-    .inovacao-hero .inovacao-hero-title h1 {
-      margin-top: 243px; } }
+    display: flex;
+    flex-direction: column; }
+    .inovacao-hero .inovacao-hero-title {
+      margin: 0 auto; }
+      .inovacao-hero .inovacao-hero-title h1 {
+        margin-top: 200px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center; }
+      .inovacao-hero .inovacao-hero-title h2 {
+        font-weight: 500 !important;
+        color: white;
+        text-align: center; }
+    .inovacao-hero .arrow {
+      margin-top: 0; }
+    .inovacao-hero .mask {
+      max-width: 1400px; } }
 /*
  * Páginas: TbankS & TDX
  **/

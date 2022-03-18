@@ -2,51 +2,42 @@ $itemGrow: 1.2;
 $duration: 250ms;
 // Banner
 .inovacao-hero{
-    height: 580px;
-    background: url('../../assets/images/inovacao/banner-mobile.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    .inovacao-hero-title{
-        margin: 0 auto;
-        h1{
-            margin-top: 162px;
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 600;
-            color: #fff;
-            text-transform: uppercase;
-        }
-        h2{
-          font-weight: 500 !important; 
-        }
-    }
-    .inovacao-hero-content{
-    h2{
-        font-size: 34px;
-        line-height: 34px;
-        text-align: center;
-        font-weight: 400;
-        width: 320px;
-        margin: 198px auto 0 auto;
-    }
-    }
-    .botao{
-      margin-bottom: 30px;
-      a{
-        background: transparent;
-        color: $vermelho-tivit;
-        border: solid 1px $vermelho-tivit;        
+  height: 580px;
+  background: url('../../assets/images/inovacao/bannerinovacao.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .zindex{
+      z-index: 50;
+  }
+  .inovacao-hero-title{
+      margin: 0 auto;
+      h1{
+          margin-top: 200px;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 600;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
       }
-    }
-    .arrow{
-    margin-top: 0;
-    }
+      h2{
+        font-weight: 500 !important; 
+        color: white;
+        text-align: center;
+      }
+  }
+  .arrow{
+  margin-top: 0;
+  }
+  .mask{
+      max-width: 1400px;
+  }
 }
 
 .inovacao-intro{
   position: relative;
-  margin-top: 121px;
+  margin-top: 191px;
   margin-bottom: 121px;
   p{
     font-size: 36px;
@@ -406,18 +397,34 @@ $duration: 250ms;
 @media(min-width: 760px){
 
     .inovacao-hero{
-      background: url('../../assets/images/inovacao/banner.png') no-repeat center center;
+      height: 580px;
+      background: url('../../assets/images/inovacao/bannerinovacao.png') no-repeat center center;
       background-size: cover;
-      height: 100vh;
+      display: flex;
+      flex-direction: column;
       .inovacao-hero-title{
-        h1, h2{
-          text-align: center;
-          color: white;
-        }
+        margin: 0 auto;
         h1{
-          margin-top: 243px;
+            margin-top: 200px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
         }
-      }
+        h2{
+          font-weight: 500 !important; 
+          color: white;
+          text-align: center;
+        }
     }
+    .arrow{
+    margin-top: 0;
+    }
+    .mask{
+        max-width: 1400px;
+    }
+  }
 
 }
