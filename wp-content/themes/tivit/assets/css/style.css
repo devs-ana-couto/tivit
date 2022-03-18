@@ -2702,7 +2702,8 @@ html, body, * {
   #ventures div.box {
     padding: 35px;
     border: 1px solid #CAD2D8;
-    height: 200px; }
+    height: 200px;
+    transition: .5s all; }
     #ventures div.box img {
       -webkit-filter: grayscale(1);
       /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -2711,6 +2712,15 @@ html, body, * {
       width: 200px;
       transition: all .2s; }
       #ventures div.box img:hover {
+        -webkit-filter: grayscale(0);
+        /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(0);
+        /* Microsoft Edge and Firefox 35+ */
+        transition: all .2s; }
+    #ventures div.box:hover {
+      background: white;
+      transition: .5s all; }
+      #ventures div.box:hover img {
         -webkit-filter: grayscale(0);
         /* Google Chrome, Safari 6+ & Opera 15+ */
         filter: grayscale(0);
