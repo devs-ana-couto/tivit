@@ -4602,6 +4602,20 @@ html, body, * {
   text-transform: uppercase;
   margin-bottom: 10px; }
 
+.citacao-cases-item {
+  margin-top: 60px; }
+  .citacao-cases-item .col-12 {
+    padding: 0; }
+    .citacao-cases-item .col-12 .box {
+      background: #cad2d833;
+      padding: 60px 0px; }
+      .citacao-cases-item .col-12 .box p {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0; }
+
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
     height: 520px; } }

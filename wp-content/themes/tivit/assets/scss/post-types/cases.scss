@@ -113,6 +113,7 @@
     }
 }
 
+// Section Desafio
 .desafio-cases-item{
     margin-top: 53px;
     h2{
@@ -160,6 +161,7 @@
     }
 }
 
+// Section Nuvem
 .nuvem-cases-item{
     padding-top: 40px;
     h2{
@@ -182,6 +184,7 @@
     }
 }
 
+// Section Diferenciais
 .diferenciais-cases-item{
     h2{
         font-size: 28px;
@@ -199,6 +202,27 @@
         margin-bottom: 10px;
     }
 }
+
+// Section 
+.citacao-cases-item{
+    margin-top: 60px;
+    .col-12{
+        padding: 0;
+        .box{
+            background: #cad2d833;
+            padding: 60px 0px;
+            p{
+                font-size: 28px;
+                line-height: 36px;
+                font-weight: 600;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+
+}
+
 
 // Desktop
 @media(min-width: 991px){
