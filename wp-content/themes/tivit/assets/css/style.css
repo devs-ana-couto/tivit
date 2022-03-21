@@ -4620,6 +4620,27 @@ html, body, * {
   width: 100%;
   height: 100%; }
 
+.depoimento-item-case .box {
+  margin: 55px 0; }
+  .depoimento-item-case .box .red {
+    color: #F20024; }
+  .depoimento-item-case .box h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0; }
+  .depoimento-item-case .box h5 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0 0 15px 0; }
+  .depoimento-item-case .box p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 300px; }
+
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
     height: 520px; } }
