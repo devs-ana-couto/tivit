@@ -99,8 +99,8 @@ html, body, * {
 
 @media (max-width: 768px) {
   .header {
-    background: white;
-    max-width: 95%;
+    background: #990017;
+    max-width: 100%;
     margin: 0 auto; }
     .header .navbar {
       padding: 0; }
@@ -112,7 +112,7 @@ html, body, * {
       .header .navbar .container {
         display: block; }
     .header .header-logo {
-      background-color: #F20024;
+      background-color: #990017;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -124,7 +124,7 @@ html, body, * {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: solid 1px white; } }
+      background: #990017; } }
 @media (min-width: 769px) {
   .header .header-menu ul li.active {
     border: 1px solid white;
@@ -2579,7 +2579,8 @@ html, body, * {
   .lp-tbanks-conheca .lp-tdx-conheca-content p span {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
-    margin-top: 100px; }
+    margin-top: 100px;
+    /* medium and up screens */ }
     .lp-tbanks-conheca .lp-tbanks-services h2 {
       color: #262626;
       font-size: 28px;
@@ -2591,6 +2592,9 @@ html, body, * {
       color: #262626;
       font-size: 20px;
       font-weight: lighter; }
+      @media (max-width: 768px) {
+        .lp-tbanks-conheca .lp-tbanks-services span.subtitle {
+          font-size: 16px; } }
     .lp-tbanks-conheca .lp-tbanks-services h3 {
       font-size: 22px;
       line-height: 33.46px; }
@@ -2634,6 +2638,40 @@ html, body, * {
         .lp-tbanks-conheca .lp-tbanks-services .img {
           padding: 10px 0;
           margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div {
+        display: none; }
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div:first-child {
+        display: block; } }
+    .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item.active,
+    .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-next,
+    .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-prev {
+      display: flex; }
+    @media (min-width: 768px) {
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-end.active,
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-next {
+        transform: translateX(16.6%); }
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-start.active,
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-prev {
+        transform: translateX(-16.6%); } }
+    .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-end,
+    .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-start {
+      transform: translateX(0); }
+    .lp-tbanks-conheca .lp-tbanks-services .counter3 {
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2; }
+      .lp-tbanks-conheca .lp-tbanks-services .counter3 .numactive3 {
+        color: #F20024;
+        font-weight: 700; }
+      .lp-tbanks-conheca .lp-tbanks-services .counter3 .numseparation3, .lp-tbanks-conheca .lp-tbanks-services .counter3 .numtotal3 {
+        color: #F20024;
+        font-weight: 300; }
+      .lp-tbanks-conheca .lp-tbanks-services .counter3 .numseparation3 {
+        margin-left: 10px;
+        margin-right: 10px; }
   .lp-tbanks-conheca .lp-tbanks-credibilidade {
     margin-top: 64px;
     color: #262626; }
@@ -3185,18 +3223,19 @@ html, body, * {
 
 @media (max-width: 768px) {
   .on-scroll-mobile-tbanks {
-    background-color: #582689 !important; }
+    background-color: #990017 !important; }
 
   .on-scroll-mobile-tdx {
-    background-color: #FE4817 !important; }
+    background-color: #990017 !important; }
 
   .lp-tbanks-hero {
     background-image: url("../images/landing/tbanks/hero-mobile.png");
     align-items: flex-end;
-    padding-bottom: 50px; }
+    padding-bottom: 0px; }
     .lp-tbanks-hero .lp-banks-hero-content h1 {
-      font-size: 24px;
-      line-height: 32px; }
+      font-size: 28px;
+      line-height: 32px;
+      max-width: 250px; }
 
   .lp-tdx-hero {
     background-image: url("../images/landing/tdx/hero-mobile.png"); }
@@ -3209,8 +3248,8 @@ html, body, * {
     line-height: 34px; } }
   @media (max-width: 768px) and (max-width: 760px) {
     .lp-tbanks-conheca .lp-tbanks-conheca-content p {
-      font-size: 22px;
-      line-height: 28px; } }
+      font-size: 28px;
+      line-height: 1.4; } }
 @media (max-width: 768px) {
   .lp-tbanks-conheca .lp-tbanks-credibilidade p {
     font-size: 18px;

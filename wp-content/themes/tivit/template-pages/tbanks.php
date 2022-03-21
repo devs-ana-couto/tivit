@@ -4,11 +4,12 @@
 <div class="lp-tbanks-hero position-relative">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 lp-banks-hero-content text-center">
+      <div class="col-md-12 d-flex flex-column align-items-center lp-banks-hero-content text-center">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/tbankslogo.svg" alt="Tbanks powered by TIVIT">
         <h1 class="fade-in-bottom">Simples, fácil e sem burocracia</h1>
       </div>
       <div>
+        <div class="position-relative mt-5"><img class="d-flex m-auto grafismo w-100 hide-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/mobgraf.svg" alt="Tbanks"></div>
         <img class="grafismos position-absolute hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/grafismos.svg" alt="Graf">
       </div>
     </div>
@@ -45,7 +46,7 @@
               </span>
             </div>
           </div>
-          <div class="row">
+          <div class="row hide-mobile">
 
             <div class="col-12 col-md-3">
               <div class="bg-white">
@@ -85,6 +86,58 @@
             </div> -->
 
           </div>
+
+          <!-- mobile slide -->
+          <div class="row mx-auto my-auto justify-content-center hide-desktop">
+            <div id="serviceMobileCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item heroslide3 services active">
+                        <div class="col-12">
+                          <div class="bg-white">
+                            <h3 class="mb-5">PSTI</h3>
+                            <p>Provedor de Serviços de Tecnologia da Informação homologado pelo Banco Central.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item heroslide3 services">
+                        <div class="col-12">
+                          <div class="bg-white">
+                            <h3>API Gateway</h3>
+                            <p>Plataforma de integração financeira e Open Banking.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item heroslide3 services">
+                        <div class="col-12">
+                          <div class="bg-white">
+                            <h3>TBanks Payments</h3>
+                            <p>Conta Digital da TIVIT para pagamentos de contas, Utilities e PIX.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item heroslide3 services">
+                        <div class="col-12">
+                          <div class="bg-white">
+                            <h3>Banking as a Service</h3>
+                            <p>Oferta completa de Serviços Financeiros.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 position-relative mt-5">
+                  <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </a>  
+                  <div class="d-flex flex-row justify-content-center counter3 mt-3">
+                    <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
+                  </div>
+                  <a class="carousel-control-next bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </a>
+                </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
