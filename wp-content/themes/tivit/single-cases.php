@@ -249,6 +249,31 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </div>
 
+<!-- Section Conteúdo -->
+<div class="conteudo-item-case">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <?php
+                // Check rows exists.   
+                if( have_rows('conteudo') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('conteudo'); $i++) : the_row();
+                        $text[$i] = get_sub_field('texto');
+                ?>
+                <div class="box">
+                    <?=$text[$i];?>      
+                </div>
+            <?php
+                // End loop.
+                endfor;
+                endif;
+            ?>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 endwhile; endif;
 get_footer();

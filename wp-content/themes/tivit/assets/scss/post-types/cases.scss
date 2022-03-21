@@ -260,6 +260,20 @@
     }
 }
 
+// Section Conteúdo
+.conteudo-item-case{
+    .box{
+        margin-top: 72px;
+        h2{
+            font-size: 28px;
+            line-height: 34px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $vermelho-tivit;
+        }    
+    }
+}
+
 // Desktop
 @media(min-width: 991px){
     .banner-cases-item{
