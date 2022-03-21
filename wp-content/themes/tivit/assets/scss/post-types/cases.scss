@@ -203,7 +203,7 @@
     }
 }
 
-// Section 
+// Section Citação
 .citacao-cases-item{
     margin-top: 60px;
     .col-12{
@@ -221,6 +221,14 @@
         }
     }
 
+}
+
+// Section Vídeo
+.video-cases-item{
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 

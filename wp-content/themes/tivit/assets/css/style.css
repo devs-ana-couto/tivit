@@ -4616,6 +4616,10 @@ html, body, * {
         text-align: center;
         margin: 0; }
 
+.video-cases-item iframe {
+  width: 100%;
+  height: 100%; }
+
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
     height: 520px; } }
