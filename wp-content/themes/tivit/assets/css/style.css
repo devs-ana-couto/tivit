@@ -3003,8 +3003,7 @@ html, body, * {
   .lp-tbanks-conheca .lp-tdx-conheca-content p span {
     color: #FE4817; }
   .lp-tbanks-conheca .lp-tbanks-services {
-    margin-top: 100px;
-    /* medium and up screens */ }
+    margin-top: 100px; }
     @media (max-width: 768px) {
       .lp-tbanks-conheca .lp-tbanks-services {
         margin-top: 80px; } }
@@ -3047,7 +3046,8 @@ html, body, * {
       justify-content: start; }
       @media (max-width: 768px) {
         .lp-tbanks-conheca .lp-tbanks-services .bg-white {
-          margin-bottom: 15px; } }
+          margin-bottom: 15px;
+          margin-right: 30px; } }
       .lp-tbanks-conheca .lp-tbanks-services .bg-white h3 {
         max-width: 140px;
         font-size: 24px;
@@ -3068,28 +3068,18 @@ html, body, * {
     @media (max-width: 767px) {
       .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div {
         display: none; }
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div {
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div:first-child {
         display: block; }
       .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div:nth-child(2n) {
         display: block; }
       .lp-tbanks-conheca .lp-tbanks-services .carousel-item-prev:not(.carousel-item-end), .lp-tbanks-conheca .lp-tbanks-services .active.carousel-item-start {
-        transform: translateX(-100%); }
+        transform: translateX(-92%); }
       .lp-tbanks-conheca .lp-tbanks-services .carousel-item-next:not(.carousel-item-start), .lp-tbanks-conheca .lp-tbanks-services .active.carousel-item-end {
-        transform: translateX(100%); } }
+        transform: translateX(92%); } }
     .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item.active,
     .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-next,
     .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-prev {
       display: flex; }
-    @media (min-width: 768px) {
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-end.active,
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-next {
-        transform: translateX(16.6%); }
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-start.active,
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-prev {
-        transform: translateX(-16.6%); }
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-end,
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item-start {
-        transform: translateX(0); } }
     .lp-tbanks-conheca .lp-tbanks-services .carousel-control-prev-icon {
       background-image: url("../../assets/icons/navegacao/arrow-foward-dark-left.svg") !important;
       width: 13px; }
@@ -3241,6 +3231,9 @@ html, body, * {
     border: 1px solid #CAD2D8 !important;
     padding: 60px;
     height: 300px; }
+    @media (max-width: 768px) {
+      .lp-tbanks-tecnologia-pagamentos .border-tec {
+        margin-right: 30px; } }
   .lp-tbanks-tecnologia-pagamentos .counter4 {
     margin-left: 15px;
     margin-right: 15px;
@@ -3270,7 +3263,13 @@ html, body, * {
     .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item > div {
       display: none; }
     .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item > div:first-child {
-      display: block; } }
+      display: block; }
+    .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block; }
+    .lp-tbanks-tecnologia-pagamentos .carousel-item-prev:not(.carousel-item-end), .lp-tbanks-tecnologia-pagamentos .active.carousel-item-start {
+      transform: translateX(-83.5%); }
+    .lp-tbanks-tecnologia-pagamentos .carousel-item-next:not(.carousel-item-start), .lp-tbanks-tecnologia-pagamentos .active.carousel-item-end {
+      transform: translateX(83.5%); } }
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item.active,
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item-next,
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item-prev {
