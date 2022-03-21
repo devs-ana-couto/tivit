@@ -92,7 +92,7 @@
             <div id="serviceMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item heroslide3 services active">
-                        <div class="col-12 m-0 p-0">
+                        <div class="col-11 m-0 p-0">
                           <div class="bg-white">
                             <h3 class="mb-5">PSTI</h3>
                             <p>Provedor de Serviços de Tecnologia da Informação homologado pelo Banco Central.</p>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12 m-0 p-0">
+                        <div class="col-11 m-0 p-0">
                           <div class="bg-white">
                             <h3>API Gateway</h3>
                             <p>Plataforma de integração financeira e Open Banking.</p>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12 m-0 p-0">
+                        <div class="col-11 m-0 p-0">
                           <div class="bg-white">
                             <h3>TBanks Payments</h3>
                             <p>Conta Digital da TIVIT para pagamentos de contas, Utilities e PIX.</p>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12 m-0 p-0">
+                        <div class="col-11 m-0 p-0">
                           <div class="bg-white">
                             <h3>Banking as a Service</h3>
                             <p>Oferta completa de Serviços Financeiros.</p>
@@ -321,7 +321,7 @@
       <div id="paymentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide4 payment active">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
@@ -333,7 +333,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide4 payment">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
@@ -345,7 +345,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide4 payment">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
@@ -357,7 +357,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide4 payment">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
@@ -369,7 +369,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide4 payment">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
@@ -381,7 +381,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide4 payment">
-                  <div class="col-12 m-0 p-0">
+                  <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
