@@ -35,7 +35,7 @@
       </div>
 
       <div class="lp-tbanks-services text-center">      
-        <div class="container">
+        <div class="">
           <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-5">
             <h2 class="title text-center">
               Nossas plataformas
