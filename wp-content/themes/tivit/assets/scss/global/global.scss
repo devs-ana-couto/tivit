@@ -58,7 +58,7 @@
 
 
 // Fontes
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Viga&display=swap');
 html, body, * {
   font-family: 'Titillium Web', sans-serif;
   p{
@@ -438,19 +438,19 @@ html, body, * {
     }
   }
   .on-scroll-tdx{
-    background: white;
+    background: $vermelho-dark-tivit;
     .header-menu{
       ul{
         li{
           a{
-            color: $cinza-dark-tivit!important;
+            color: white !important;
           }
         }
       }
     }
     .header-options{
       p{
-        color: $cinza-dark-tivit!important;
+        color: white !important;
         a{
           border: 1px solid #FE4817!important;
           color: #FE4817!important;
@@ -460,6 +460,18 @@ html, body, * {
   }
 }
   
+
+//Content TAG
+.tagContent{
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 600;
+  background: #F20024;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 23px 5px 23px;
+}
 
 /*
  * Footer
@@ -565,7 +577,7 @@ html, body, * {
           margin: 4px;
           transition: all .15s linear;
           &:hover{
-            border-color: #454D54;
+            border-color: $cinza-dark-tivit;
             transition: all .2s linear;
           }
           a{

@@ -1,37 +1,565 @@
-.pessoas-e-carreiras-hero{
+// Banner
+.pec-hero{
   height: 580px;
-  background: url('../../assets/images/pessoas-e-carreiras/banner.png') no-repeat center center;
+  background: url('../../assets/images/pessoas-e-carreiras/banner.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  .pessoas-e-carreiras-hero-title{
+  .zindex{
+      z-index: 50;
+  }
+  .pec-hero-title{
       margin: 0 auto;
       h1{
-          margin-top: 162px;
+          margin-top: 200px;
           font-size: 16px;
           line-height: 22px;
-          font-weight: bold;
+          font-weight: 600;
           color: #fff;
           text-transform: uppercase;
+          text-align: center;
+      }
+      h2{
+        font-weight: 500 !important; 
+        color: white;
+        text-align: center;
       }
   }
-  .pessoas-e-carreiras-hero-content{
-    h2{
-      font-size: 34px;
-      line-height: 34px;
-      text-align: center;
-      font-weight: 400;
-      margin-top: 198px;
-    }
-  }
-  .botao{
+  .buttoncta{
+    text-align: center;
+    margin-top: 27px;
     a{
-      background: transparent;
-      color: $vermelho-tivit;
-      border: solid 1px $vermelho-tivit;
+      color: white !important; 
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s linear;
+      position: relative;
+      &:hover{
+        &:after{
+          margin-left: 18px;
+        }
+      }
+      &:after{
+        content: url('../../assets/images/esg/arrow-white-right.svg');
+        margin-left: 9px;
+        width: 16px;
+        transition: all .2s linear;
+        position: absolute;
+      }
     }
   }
   .arrow{
-    margin-top: 0;
+  margin-top: 0;
+  }
+  .customMargin{
+    margin-top: -50px;
+  }
+  .mask{
+      max-width: 1400px;
+  }
+  .customNumbers{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: -30px;
+  }
+}
+
+//Numeros counter
+#pecCounter{
+  padding: 127px 0 100px 0;
+  @media (max-width: 768px){
+    padding: 0px 0 0px 0;
+    .col-12:first-child, .col-12:nth-child(2n){
+      margin-bottom: 50px;
+    }
+  }
+  .lp-tbanks-credibilidade{
+    p span{
+        color: #262626;
+    }
+    p{
+      .tag{
+        right: 18%;
+        margin-top: -30px;
+      }
+    }
+    .custom-text{
+        max-width: 230px;
+    }
+}
+}
+
+//Conheça
+#pecConheca{
+  padding: 0 0 140px 0;
+  .lp-tbanks-conheca-content{
+    p{
+      max-width: 850px;
+    }
+  }
+}
+
+//Portfolio
+#pecPort{
+  .home-portifolio{
+    opacity: 1;
+    @media(max-width: 760px){
+      margin-bottom: 0px !important;
+    }
+    .home-portifolio-image{
+      background: url('../../assets/images/pessoas-e-carreiras/programas.jpg') no-repeat center center;
+    }
+    .home-portifolio-content{
+      .txt{
+        max-width: 500px;
+      }
+      a{
+        &:hover{
+          .desc{
+            opacity: 1;
+            transition: 2s all;
+          }
+        }
+      }
+    }
+    .desc{
+      color: white;
+      font-size: 18px;
+      font-weight: lighter;
+      line-height: 1.5;
+      bottom: 5%;
+      right: 10%;
+      max-width: 420px;
+      opacity: 0;
+      transition: 2s all;
+    }
+  }
+}
+
+//Valorizacao
+.valorizacao{
+  margin: 0 !important;
+  h2.title{
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  .box{
+    padding: 110px !important;
+    height: 310px !important;
+    @media(max-width: 760px){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+//Depoimentos
+#pecDepoimentos{
+  margin-top: 147px;
+  .carousel-control-prev-icon{
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 13px;
+  }
+  .carousel-control-next-icon{
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 13px;
+  }
+  .counter{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactive{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparation, .numtotal{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparation{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .carousel-control-prev, .carousel-control-next{
+    top: 35%;
+  }
+  .redes{
+    margin: 10px 0 15px 0;
+    img{
+      width: 30px;
+    }
+    img:first-child, img:nth-child(2n){
+      margin-right: 10px;
+    }
+  }
+}
+
+#pecOferece.lp-tbanks-conheca{
+  padding: 0 !important;
+}
+#pecOferece{
+  background: #F5F6F7;
+  .container{
+    padding-top: 88px;
+    padding-bottom: 107px;
+  }
+  h2.title{
+    font-size: 28px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  .lp-tbanks-services{
+    .bg-white{
+      border-left: 3px solid $vermelho-tivit;
+      height: 100%;
+      h3{
+        color: $vermelho-tivit;
+        height: 110px;
+        max-width: 170px;
+      }
+      p{
+        margin-top: 0px;
+      }
+    }
+    .marginC{
+      margin-top: 25px;
+    }
+  }
+  .insiderBlock{
+    padding-top: 100px;
+    @media(max-width: 760px){
+      padding-top: 50px;
+    }
+  }
+  div.box{
+    padding: 35px;
+    border: 1px solid #CAD2D8;
+    text-align: center;
+    height: 100%;
+  }
+  div.content{
+    max-width: 265px;
+    h2{
+      color: $vermelho-tivit;
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  .row > .col-sm-12, .row > .col-12{
+    margin-bottom: 30px;
+  }
+}
+
+#pecConheca{
+  padding: 0;
+  #triangle-down{
+    border-top: 28px solid #F5F6F7;
+  }
+  .container{
+    @media (min-width: 768px){
+      padding: 110px 0px 72px 0;
+    }
+    padding: 0px 0px 72px 0;
+  }
+  h2.title{
+    font-size: 36px !important;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  #carouselCustom {
+    padding-bottom: 0;
+    .carousel-inner{
+      @media (min-width: 768px){
+        right: 0 !important;
+      }
+    }
+    .card{
+      .card-img{
+        img{
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }
+        .tagIn{
+          background: $vermelho-tivit;
+          padding: 22px;
+          top: 0;
+          left: 0;
+        }
+        .imgIn{
+          top: 11px;
+          left: 11px;
+        }
+      }
+      .content{
+        border: unset;
+        height: auto;
+        h2{
+          font-size: 18px;
+          line-height: 1.3;
+          text-align: center;
+        }
+        p{
+          text-align: center;
+        }
+      }
+      .redes-sociais{
+        img:first-child{
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+  }
+
+  .counter2{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactive2{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparation2, .numtotal2{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparation2{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+#pecInterno{
+  #pecInternoDepoimentos{
+    margin-top: 120px;
+  }
+  .counter3{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactive3{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparation3, .numtotal3{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparation3{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .carousel-control-prev-icon{
+    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+    width: 13px;
+  }
+  .carousel-control-next-icon{
+    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+    width: 13px;
+  }
+  .redes{
+    margin: 10px 0 15px 0;
+    img{
+      width: 30px;
+    }
+    img:first-child, img:nth-child(2n){
+      margin-right: 10px;
+    }
+  }
+  .carousel-control-prev, .carousel-control-next{
+    top: 35%;
+  }
+}
+
+#pecVagas{
+  background: #262626;
+  .container{
+    padding: 110px 0 105px 0;
+    h2.title{
+      font-size: 36px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+    .items{
+      .col-sm-12{
+        margin-bottom: 30px;
+      }
+      .card{
+        border: 1px solid #CAD2D8;
+        padding: 25px;
+        background: transparent;
+        small{
+          font-size: 12px;
+          color: #FFFFFF;
+          font-weight: lighter;
+        }
+        h2{
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1.3;
+          color: white;
+          text-transform: uppercase;
+          margin-top: 7px;
+        }
+        p{
+          font-size: 16px;
+          color: white;
+          font-weight: lighter;
+          line-height: 1.3;
+          margin-top: 6px;
+        }
+        a{
+          color: $vermelho-tivit;
+          text-decoration: unset;
+          transition: all .2s linear;
+          margin-top: 50px;
+          text-transform: uppercase;
+          cursor: pointer;
+          position: relative;
+          &:hover{
+            &:after{
+              margin-left: 18px;
+            }
+          }
+          &:after{
+            content: url('../../assets/images/pessoas-e-carreiras/arrow_red_forward.svg');
+            margin-left: 9px;
+            width: 10px;
+            transition: all .2s linear;
+            position: absolute;
+          }
+        }
+      }
+    }
+    .btnCta{
+      margin-top: 50px;
+      a{
+        color: white;
+        font-weight: 600;
+        text-decoration: unset;
+        cursor: pointer;
+        background: $vermelho-tivit;
+        padding: 15px 30px 15px 30px;
+        border-radius: 50px;
+        transition: all .2s linear;
+        border: 1px solid $vermelho-tivit;
+        &:hover{
+          background: transparent;
+          transition: all .2s linear;
+        }
+      }
+    }
+    #faq{
+      margin-top: 110px;
+      h2.title{
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+      }
+      .block{
+        max-width: 900px;
+      }
+      .accordion{
+        @media (max-width: 768px){
+          margin: 10px;
+        }
+      }
+      .accordion-button:not(.collapsed){
+        background-color: transparent;
+        color: white;
+        box-shadow: unset;
+        border-bottom: 1px solid;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .accordion-item{
+        background-color: transparent;
+      }
+      .accordion-body{
+        color: white;
+      }
+      .accordion-flush .accordion-item .accordion-button{
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .accordion-button{
+        padding: 1rem 0rem;
+        &:focus{
+          border-color: unset;
+          box-shadow: unset;
+        }
+      }
+      .accordion-button::after{
+        background-image: url('../../assets/images/pessoas-e-carreiras/add.svg')
+      }
+    }
   }
 }

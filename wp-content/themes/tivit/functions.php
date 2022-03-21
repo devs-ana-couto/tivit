@@ -53,5 +53,14 @@ register_nav_menus(
   )
 );
 
-// Inclui os arquivos de meta box
-include_once( get_template_directory() . '/inc/cases.php' );
+// Include Meta Boxes
+require_once( get_template_directory() . '/inc/pages/cases.php' );
+require_once( get_template_directory() . '/inc/post-types/post-types.php' );
+
+
+// Include ACF (Metabox & Options Pages)
+require_once( get_template_directory() . '/inc/theme.options.php' );
+
+
+// Include Page.Builders Functions
+require_once( get_template_directory() . '/inc/page.builder/page.builder.php' );

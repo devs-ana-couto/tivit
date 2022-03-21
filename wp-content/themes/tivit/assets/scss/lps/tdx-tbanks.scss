@@ -31,21 +31,25 @@
   }
   
   .lp-tdx-hero{
-    background-image: url('../images/landing/tdx/hero.png');
+    background-image: url('../images/landing/tdx/bannerherotdx.jpg');
   }
   
   // Conheça a TBankS 
   .lp-tbanks-conheca{
-    padding: 118px 0 140px 0;
+    padding: 127px 0 140px 0;
     @media(max-width: 768px){
       padding: 44px 0 34px 0;
     }
     .lp-tbanks-conheca-content{
+      margin-bottom: 50px;
+      b{
+        font-weight: 600;
+      }
       p{
         font-size: 36px;
         line-height: 50px;
         font-weight: 400;
-        max-width: 785px;
+        max-width: 820px;
         margin: 0 auto;
         text-align: center;
         color: $cinza-dark-cyber-tivit;
@@ -198,6 +202,7 @@
     
     .lp-tbanks-credibilidade{
       margin-top: 64px;
+      margin-bottom: 34px;
       color: $cinza-dark-cyber-tivit;
       p{
         span{
@@ -379,12 +384,49 @@
       align-items: center;
       justify-content: center;
       .lp-tdx-conheca-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         h2{
           color: #FE4817;
+        }
+        .paragrafo2{
+          max-width: 500px;
+        }
+        a.buttoncta{
+          margin-top: 15px;
+          background: #FE4817;
+          padding: 15px 30px 15px 30px;
+          border-radius: 50px;
+          border: 1px solid #FE4817;
+          transition: all .2s;
+          color: white;
+          text-decoration: unset;
+          cursor: pointer;
+          font-size: 14px;
+          &:hover{
+            background: white;
+            color: $cinza-dark-cyber-tivit;
+            transition: all .2s;
+          }
         }
       }
     }
   
+  }
+
+  //TDX Parceiros
+  .lp-tdx-parceiros{
+    margin-top: 60px;
+    margin-bottom: 160px;
+    .lp-tdx-parceiros-content{
+      h2{
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 44px;
+        font-weight: 600;
+      }
+    }
   }
   
   // TBanks Confira
@@ -491,6 +533,9 @@
         .paragrafo3{
           color: white;
         }
+        strong{
+          font-weight: 600;
+        }
       }
     }
   }
@@ -504,7 +549,8 @@
   
   // Como fazemos
   .lp-tdx-como-fazemos{
-    padding: 122px 0 60px 0;
+    padding: 122px 0 130px 0;
+    background: #F4F6F7;
   
     .lp-tdx-como-fazemos-content{
       width: 721px;
@@ -558,9 +604,13 @@
    
   // Metodologia TDX
   .lp-tdx-metodologia{
-    padding: 100px 0 130px 0;
+    padding: 123px 0 130px 0;
     .col-12.bl{
-      border-right: 1px solid #E6E6E6;
+      padding: 30px;
+      .card{
+        border: 1px solid #E6E6E6;
+        padding: 50px;
+      }
     }
     h2{
       font-size: 28px;
@@ -569,7 +619,7 @@
       text-transform: uppercase;
     }
     p{
-      margin-bottom: 100px;
+      margin-bottom: 30px;
     }
     img{
       max-width: 100%;
@@ -582,12 +632,23 @@
       color: #FE4817;
       font-weight: 600;
       text-transform: uppercase;
-      width: 270px;
+      width: auto;
       margin: 0 auto;
     }
     .paragrafo3{
-      max-width: 270px;
-      margin: 28px 0 0 0;
+      max-width: auto;
+      margin: 18px 0 0 0;
+    }
+
+    .paragrafo3.mx{
+      max-width: 450px;
+    }
+
+    .paragrafo3.list{
+      margin-top: 28px !important;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
     }
   
     ul li{
@@ -601,11 +662,14 @@
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
+      border-radius: 50px;
       margin-top: 60px;
+      transition: all .2s;
       &:hover{
         background-color: white;
         color: #FE4817;
         border: 1px solid #FE4817;
+        transition: all .2s;
       }
     }
   
@@ -690,7 +754,7 @@
       font-size: 24px;
       line-height: 30px;
       letter-spacing: 3%;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 40px;
       text-transform: uppercase;
     }
@@ -808,6 +872,7 @@
         margin-bottom: 90px;
       }
       .paragrafo2{
+        margin-top: 22px;
         margin-bottom: 61px;
       }
     }
@@ -928,6 +993,7 @@
       .tdx-form{
         .wpcf7-form-control.has-spinner.wpcf7-submit{
           background: #FE4817;
+          border-radius: 50px;
         }
         h3{
           color: #FE4817;
@@ -945,6 +1011,32 @@
   
     }
   
+  }
+
+  // Cases TDX
+  #cases{
+    .lp-tdx-confira-bg-right{
+      background: #F14517;
+    }
+    .counter{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive{
+        color: white;
+        font-weight: 700;
+      }
+      .numseparation, .numtotal{
+        color: white;
+        font-weight: 300;
+      }
+      .numseparation{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
   }
   
   
@@ -1005,7 +1097,7 @@
     }
   
     .lp-tdx-conheca{
-      padding: 0 0 23px 0;
+      padding: 0 0 100px 0;
       img{
         width: 100%;
         margin-bottom: 23px;
@@ -1104,6 +1196,7 @@
         text-transform: uppercase;
         padding: 15px 38px;
         margin-top: 60px;
+        border-radius: 50px;
       }
     }
   
