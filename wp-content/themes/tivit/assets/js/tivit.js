@@ -169,6 +169,31 @@ jQuery(document).ready(function($) {
       $('.numseparation3').html('  /  ');
       $('.numtotal3').html( totalItems3 );
    });
+
+   $('#serviceMobileCarousel').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
+
+   // Permite 4 carrosseis na mesma página
+   var totalItems4 = $('.heroslide4').length;
+   var currentIndex4 = $('.heroslide4.active').index() + 1;
+
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive4').html( currentIndex4 );
+   $('.numseparation4').html('  /  ');
+   $('.numtotal4').html( totalItems4 );
+
+   $('#paymentMobileCarousel').bind('slid.bs.carousel', function() {
+      currentIndex4 = $('.heroslide4.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive4').html( currentIndex4 );
+      $('.numseparation4').html('  /  ');
+      $('.numtotal4').html( totalItems4 );
+   });
    
 
 })

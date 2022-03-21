@@ -89,10 +89,10 @@
 
           <!-- mobile slide -->
           <div class="row mx-auto my-auto justify-content-center hide-desktop">
-            <div id="serviceMobileCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="serviceMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item heroslide3 services active">
-                        <div class="col-12">
+                        <div class="col-12 m-0 p-0">
                           <div class="bg-white">
                             <h3 class="mb-5">PSTI</h3>
                             <p>Provedor de Serviços de Tecnologia da Informação homologado pelo Banco Central.</p>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12">
+                        <div class="col-12 m-0 p-0">
                           <div class="bg-white">
                             <h3>API Gateway</h3>
                             <p>Plataforma de integração financeira e Open Banking.</p>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12">
+                        <div class="col-12 m-0 p-0">
                           <div class="bg-white">
                             <h3>TBanks Payments</h3>
                             <p>Conta Digital da TIVIT para pagamentos de contas, Utilities e PIX.</p>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="carousel-item heroslide3 services">
-                        <div class="col-12">
+                        <div class="col-12 m-0 p-0">
                           <div class="bg-white">
                             <h3>Banking as a Service</h3>
                             <p>Oferta completa de Serviços Financeiros.</p>
@@ -124,14 +124,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-100 position-relative mt-5">
-                  <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
+                <div class="w-100 position-relative">
+                  <a class="carousel-control-prev bg-transparent w-aut" href="#serviceMobileCarousel" role="button" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   </a>  
                   <div class="d-flex flex-row justify-content-center counter3 mt-3">
                     <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
                   </div>
-                  <a class="carousel-control-next bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="next">
+                  <a class="carousel-control-next bg-transparent w-aut" href="#serviceMobileCarousel" role="button" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   </a>
                 </div>
@@ -220,14 +220,17 @@
     <div class="row">
       <div class="col-12 col-md-4">
         <div class="pix"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/pix.svg" alt="Tbanks PIX"></div>
-        <div class="fclass position-relative mt-5"><img class="grafismo hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/gh.svg" alt="Tbanks"></div>
+        <div class="fclass position-relative mt-4 mb-4 mt-md-5 mb-md-0"><img class="grafismo" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/gh.svg" alt="Tbanks"></div>
       </div>
       <div class="col-12 col-md-5">
         <div class="pix-text w-100">
           <h3>Não espere mais para receber pagamentos.</h3>
           <p>Com o TBankS, a empresa recebe e administra pagamentos em tempo real, com PIX Cobrança e PIX Varejo.</p>
-          <div class="mt-5 pt-3">
-            <a> Conheça toda a ação </a>
+          <div>
+            <div class="custom-w-mobile mt-0 mt-md-5 pt-3">
+              <a> Conheça toda a ação </a>
+              <div class="position-relative mt-4 mb-0"><img class="grafismo hide-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/gh.svg" alt="Tbanks"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,13 +243,10 @@
 
 <div class="lp-tbanks-tecnologia-pagamentos">
   <div class="container">
-    <div class="row">
-
-      <div class="col-12">
-        <div class="lp-tbanks-tecnologia-pagamentos-title">
-          <h2>Última tecnologia em pagamentos</h2>
-        </div>
-      </div>
+    <div class="lp-tbanks-tecnologia-pagamentos-title">
+      <h2>Última tecnologia em pagamentos</h2>
+    </div>
+    <div class="row hide-mobile">
 
       <div class="col-12 col-md-4">
         <div class="border-tec">
@@ -315,11 +315,103 @@
       </div>
 
     </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center hide-desktop">
+      <div id="paymentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide4 payment active">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Taxas de transação mais baratas</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 payment">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Informações em tempo real das operações</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 payment">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Avisos de movimentações bancárias</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 payment">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Faturamento em <br> tempo real</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 payment">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Dashboard de gestão de operações</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 payment">
+                  <div class="col-12 m-0 p-0">
+                    <div class="border-tec">
+                      <div class="lp-tbanks-tecnologia-pagamentos-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
+                      </div>
+                      <div class="lp-tbanks-tecnologia-pagamentos-content">
+                        <p>Sistema intuitivo <br> e unificado</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="w-100 position-relative mt-4">
+            <a class="carousel-control-prev bg-transparent w-aut" href="#paymentMobileCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>  
+            <div class="d-flex flex-row justify-content-center counter4 mt-3">
+              <div class="numactive4"></div><div class="numseparation4"></div><div class="numtotal4"></div>
+            </div>
+            <a class="carousel-control-next bg-transparent w-aut" href="#paymentMobileCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<div class="lp-tbanks-depoimentos">
-  <div class="lp-tbanks-depoimentos-title">
+<div class="lp-tbanks-depoimentos container">
+  <div class="lp-tbanks-depoimentos-title hide-mobile">
     <h2>Benefícios para clientes</h2>
   </div>
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -379,21 +471,23 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <div class="d-flex flex-row justify-content-center counter mt-3">
-      <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+    <div class="mobile-relative">
+      <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="d-flex flex-row justify-content-center counter mt-3">
+        <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="lp-tbanks-logo-clientes mt-5">
+<div class="lp-tbanks-logo-clientes mt-0 mt-md-5">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -404,7 +498,7 @@
                 <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item heroslide2 customers active">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/brf.svg" alt="Logo BRF">
@@ -413,7 +507,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/notre-dame.svg" alt="Logo Notredame">
@@ -422,7 +516,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/zurich.svg" alt="Logo Zurich">
@@ -431,7 +525,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/banco-bv.svg" alt="Logo Banco BV">
@@ -440,7 +534,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/ipiranga.svg" alt="Logo Ipiranga">
@@ -449,7 +543,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-boticario.svg" alt="Logo Boticario">
@@ -458,7 +552,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/sem-parar.svg" alt="Logo Sem Parar">
@@ -467,7 +561,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/grupo-energisa.svg" alt="Logo Energisa">
@@ -476,7 +570,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/porto-seguro.svg" alt="Logo Porto Seguro">
@@ -485,7 +579,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/fmc.svg" alt="Logo FMC">
@@ -494,7 +588,7 @@
                             </div>
                         </div>
                         <div class="carousel-item heroslide2 customers">
-                            <div class="col-12 col-md-2">
+                            <div class="col-6 col-md-2">
                                 <div class="h-100">
                                     <div class="m-3">
                                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/logos/cnh-industrial.svg" alt="Logo CNH Industrial">
@@ -503,7 +597,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 position-relative mt-5">
+                    <div class="w-100 position-relative mt-2">
                       <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       </a>  
