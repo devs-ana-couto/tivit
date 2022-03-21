@@ -3233,7 +3233,7 @@ html, body, * {
     height: 300px; }
     @media (max-width: 768px) {
       .lp-tbanks-tecnologia-pagamentos .border-tec {
-        margin-right: 30px; } }
+        margin-right: 15px; } }
   .lp-tbanks-tecnologia-pagamentos .counter4 {
     margin-left: 15px;
     margin-right: 15px;
@@ -3267,9 +3267,9 @@ html, body, * {
     .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item > div:nth-child(2n) {
       display: block; }
     .lp-tbanks-tecnologia-pagamentos .carousel-item-prev:not(.carousel-item-end), .lp-tbanks-tecnologia-pagamentos .active.carousel-item-start {
-      transform: translateX(-83.5%); }
+      transform: translateX(-92%); }
     .lp-tbanks-tecnologia-pagamentos .carousel-item-next:not(.carousel-item-start), .lp-tbanks-tecnologia-pagamentos .active.carousel-item-end {
-      transform: translateX(83.5%); } }
+      transform: translateX(92%); } }
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item.active,
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item-next,
   .lp-tbanks-tecnologia-pagamentos .carousel-inner .carousel-item-prev {
