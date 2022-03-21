@@ -3068,7 +3068,7 @@ html, body, * {
     @media (max-width: 767px) {
       .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div {
         display: none; }
-      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div:first-child {
+      .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div {
         display: block; }
       .lp-tbanks-conheca .lp-tbanks-services .carousel-inner .carousel-item > div:nth-child(2n) {
         display: block; }
