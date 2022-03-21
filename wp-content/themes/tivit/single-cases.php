@@ -191,6 +191,31 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </section>
 
+<!-- Section Citação -->
+<section class="citacao-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div id="triangle-down"></div>
+                <div class="box">
+                    <p><? the_field('texto_de_citacao'); ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Vídeo -->
+<section class="video-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <? the_field('video'); ?>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 endwhile; endif;
 get_footer();
