@@ -4484,11 +4484,15 @@ html, body, * {
     font-size: 26px;
     line-height: 30px;
     margin: 0; }
+  .empresa-cases-item p {
+    font-size: 16px;
+    margin-top: 1rem; }
   .empresa-cases-item .btn-entre-em-contato, .empresa-cases-item .btn-download {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 57px;
     padding: 15px 50px;
     text-transform: uppercase;
     text-decoration: none;
@@ -4519,6 +4523,9 @@ html, body, * {
   display: flex;
   align-items: center;
   margin: 0 0 10px 0; }
+  .destaques-item-cases .box img {
+    height: 40px;
+    width: 40px; }
   .destaques-item-cases .box h3 {
     margin: 0;
     font-size: 18px;
@@ -4652,7 +4659,7 @@ html, body, * {
 
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
-    height: 520px; }
+    min-height: 520px; }
   .banner-cases-item .case-item-content h1, .banner-cases-item .case-item-content h2 {
     max-width: unset; }
   .banner-cases-item .case-item-content h1 {
@@ -4660,4 +4667,34 @@ html, body, * {
     line-height: 42px;
     font-weight: 600; }
   .banner-cases-item .case-item-content h2 {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .empresa-cases-item {
+    padding: 100px 0; }
+    .empresa-cases-item .col-12 {
+      display: flex;
+      align-items: center; }
+  .destaques-item-cases {
+    margin-top: 70px; }
+    .destaques-item-cases h2 {
+      text-align: center; }
+    .destaques-item-cases .box {
+      height: 266px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .destaques-item-cases .box img {
+        height: 80px;
+        width: 80px; }
+      .destaques-item-cases .box h3 {
+        text-align: center;
+        width: 203px;
+        margin: 25px auto 0 auto; }
+  .desafio-cases-item .box {
+    padding-top: 55px;
+    padding-bottom: 55px; }
+    .desafio-cases-item .box .offset-md-1 {
+      padding-right: 8.33333%; }
+      .desafio-cases-item .box .offset-md-1 p {
+        margin-left: 20px; }
+  .desafio-cases-item .depoimento {
+    padding: 0; } }

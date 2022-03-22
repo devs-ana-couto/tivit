@@ -36,23 +36,24 @@ if(have_posts()) : while(have_posts()) : the_post();
 <section class="empresa-cases-item">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 offset-md-1">
                 <h2>Sobre o cliente</h2>
             </div>
-            <div class="col-4">
+            <div class="col-4 hide-desktop">
                 <img src="<? the_field('logo_da_empresa'); ?>" alt="">
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-12">
-                <p class="paragrafo3"><? the_field('descricao'); ?></p>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-1">
+                <p class="paragrafo2"><? the_field('descricao'); ?></p>
             </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-12">
+            <div class="col-4 hide-mobile offset-md-1">
+                <img src="<? the_field('logo_da_empresa'); ?>" alt="">
+            </div>
+            <div class="col-12 col-md-3 offset-md-1">
                 <a href="contato" class="btn-entre-em-contato">Entre em Contato</a>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-3">
                 <a href="<? the_field('download'); ?>" class="btn-download">Download <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/save_alt.svg" alt="..."></a>
             </div>
         </div>
@@ -63,31 +64,35 @@ if(have_posts()) : while(have_posts()) : the_post();
 <section class="destaques-item-cases">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-10 offset-md-1">
                 <h2>Destaques do projeto</h2>
-                <?php
-                // Check rows exists.
-                if( have_rows('adicione_seus_destaques') ):
-                    // Loop through rows.
-                    for($i=0; have_rows('adicione_seus_destaques'); $i++) : the_row();
-                        $icon_url[$i] = get_sub_field('icone');
-                        $description[$i] = get_sub_field('texto');
+                <div class="row">   
+                    <?php
+                    // Check rows exists.
+                    if( have_rows('adicione_seus_destaques') ):
+                        // Loop through rows.
+                        for($i=0; have_rows('adicione_seus_destaques'); $i++) : the_row();
+                            $icon_url[$i] = get_sub_field('icone');
+                            $description[$i] = get_sub_field('texto');
+                        ?>
+
+
+                        <div class="col-12 col-md-4">
+                            <div class="box">
+                                <div class="col-3 text-center">
+                                    <img src="<?=$icon_url[$i];?>" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h3><?=$description[$i];?></h3>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                        // End loop.
+                        endfor;
+                        endif;
                     ?>
-                <div class="box">
-                    <div class="row">
-                        <div class="col-3 text-center">
-                            <img src="<?=$icon_url[$i];?>" alt="">
-                        </div>
-                        <div class="col-9">
-                            <h3><?=$description[$i];?></h3>
-                        </div>
-                    </div>
                 </div>
-                <?php
-                    // End loop.
-                    endfor;
-                    endif;
-                ?>
             </div>
         </div>
     </div>
@@ -97,36 +102,42 @@ if(have_posts()) : while(have_posts()) : the_post();
 <section class="desafio-cases-item">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-11 offset-md-1">
                 <h2>Desafio</h2>
             </div>
-            <div class="box">
-                <p class="paragrafo2"><?the_field('texto_desafio');?></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <?php 
-                    if(have_rows('depoimento')) :
-                        while(have_rows('depoimento')) : the_row();
-                            $texto = get_sub_field('texto');
-                            $autor = get_sub_field('autor');
-                            $funcao = get_sub_field('funcao');
-                        ?>
-
-                        <div class="depoimento">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/aspas.svg" alt="...">
-                            <p><?=$texto;?></p>
-                            <h3><?=$autor;?></h3>
-                            <h4><?=$funcao;?></h4>
+            <div class="col-12 col-md-8">
+                <div class="box">
+                    <div class="row">
+                        <div class="col-md-11 offset-md-1">
+                            <p class="paragrafo2"><?the_field('texto_desafio');?></p>
                         </div>
-
-                        <?
-                        endwhile;
-                    endif;
-                ?>
+                    </div>
+                </div>
             </div>
+            
+        <div class="col-12 col-md-3 offset-md-1">
+            <?php 
+                if(have_rows('depoimento')) :
+                    while(have_rows('depoimento')) : the_row();
+                        $texto = get_sub_field('texto');
+                        $autor = get_sub_field('autor');
+                        $funcao = get_sub_field('funcao');
+                    ?>
+
+                    <div class="depoimento">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-post-types/cases/aspas.svg" alt="...">
+                        <p><?=$texto;?></p>
+                        <h3><?=$autor;?></h3>
+                        <h4><?=$funcao;?></h4>
+                    </div>
+
+                    <?
+                    endwhile;
+                endif;
+            ?>
         </div>
+        </div>
+
     </div>
 </section>
 
