@@ -335,6 +335,7 @@
     }
 
     .desafio-cases-item{
+        margin: 130px 0;
         .box{
             padding-top: 55px;
             padding-bottom: 55px;
@@ -347,6 +348,27 @@
         }
         .depoimento{
             padding: 0;
+        }
+    }
+
+    .nuvem-cases-item{
+        margin-bottom: 150px;
+        h2{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .box{
+            border-top: none;
+            border-left: solid 3px $vermelho-tivit;
+        }
+        .servico-item{
+            .col-md-2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 33px;
+            }
         }
     }
 }
