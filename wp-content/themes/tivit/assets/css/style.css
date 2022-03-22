@@ -4652,4 +4652,12 @@ html, body, * {
 
 @media (min-width: 991px) {
   .banner-cases-item .case-item-background {
-    height: 520px; } }
+    height: 520px; }
+  .banner-cases-item .case-item-content h1, .banner-cases-item .case-item-content h2 {
+    max-width: unset; }
+  .banner-cases-item .case-item-content h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600; }
+  .banner-cases-item .case-item-content h2 {
+    font-size: 14px; } }

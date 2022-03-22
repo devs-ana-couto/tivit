@@ -280,5 +280,18 @@
         .case-item-background{
             height: 520px;
         }
+        .case-item-content{
+            h1, h2{
+                max-width: unset;
+            }
+            h1{
+               font-size: 36px;
+                line-height: 42px;
+                font-weight: 600;
+            }
+            h2{
+                font-size: 14px;
+            }
+        }
     }
 }
