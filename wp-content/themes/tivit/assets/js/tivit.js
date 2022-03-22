@@ -48,9 +48,9 @@ const add_class_on_scroll_tdx = () => header.classList.add("on-scroll-tdx")
 // Add class mobile
 const add_class_page_tdx = () => header_logo.classList.add("on-scroll-mobile-tdx")
 // Change search icon color
-const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-orange.svg)'
+const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-white.svg)'
 // Change hamburguer icon color
-const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-orange.svg');
+const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-white.svg');
 // Remove class on scroll
 const remove_class_on_scroll_tdx = () => header.classList.remove("on-scroll-tdx")
 
@@ -307,6 +307,38 @@ document.addEventListener("DOMContentLoaded", function(){
             if (!next) {
                   // wrap carousel by using first child
                next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .values')
+
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .content')
+
+      items3.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
                }
             let cloneChild = next.cloneNode(true)
             el.appendChild(cloneChild.children[0])
