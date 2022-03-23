@@ -38,7 +38,7 @@
   .lp-tbanks-conheca{
     padding: 127px 0 140px 0;
     @media(max-width: 768px){
-      padding: 44px 0 34px 0;
+      padding: 52px 0 50px 0;
     }
     .lp-tbanks-conheca-content{
       margin-bottom: 50px;
@@ -67,6 +67,9 @@
     }  
     .lp-tbanks-services{
       margin-top: 100px;
+      @media(max-width: 768px){
+        margin-top: 80px;
+      }
       h2{
         color: #262626;
         font-size: 28px;
@@ -80,6 +83,9 @@
         color: #262626;
         font-size: 20px;
         font-weight: lighter;
+        @media(max-width: 768px){
+          font-size: 16px;
+        }
       }
       h3{
         font-size: 22px;
@@ -109,6 +115,7 @@
         justify-content: start;
         @media(max-width: 768px){
           margin-bottom: 15px;
+          margin-right: 30px;
         }
         h3{
           max-width: 140px;
@@ -141,6 +148,64 @@
         @media(max-width: 768px){
           padding: 10px 0;
           margin-bottom: 40px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+        .carousel-inner .carousel-item > div:nth-child(2n) {
+          display: block;
+      }
+      .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+        transform: translateX(-92%);
+      }
+      .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+        transform: translateX(92%);
+      }
+    }
+    
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+          display: flex;
+      }
+ 
+      .carousel-control-prev-icon{
+        background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+        width: 13px;
+      }
+      .carousel-control-next-icon{
+        background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+        width: 13px;
+      }
+      .carousel-control-next{
+        right: 21%;
+      }
+      .carousel-control-prev{
+        left: 20%;
+      }
+      .counter3{
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .numactive3{
+          color: $vermelho-tivit;
+          font-weight: 700;
+        }
+        .numseparation3, .numtotal3{
+          color: $cinza-dark-cyber-tivit;
+          font-weight: 300;
+        }
+        .numseparation3{
+          margin-left: 10px;
+          margin-right: 10px;
         }
       }
     }
@@ -284,14 +349,17 @@
   .lp-tbanks-tecnologia-pagamentos{
     padding: 160px 0 0 0;
     text-align: center;
+    @media(max-width: 768px){
+      padding: 60px 0 0 0;
+    }
     h2{
       text-transform: uppercase;
       font-size: 28px;
       line-height: 44px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       text-align: center;
       @media(max-width: 768px){
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
     }
     img{
@@ -317,6 +385,79 @@
       border: 1px solid #CAD2D8!important;
       padding: 60px;
       height: 300px;
+      @media(max-width: 768px){
+        margin-right: 15px;
+      }
+    }
+    .counter4{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive4{
+        color: $vermelho-tivit;
+        font-weight: 700;
+      }
+      .numseparation4, .numtotal4{
+        color: $cinza-dark-cyber-tivit;
+        font-weight: 300;
+      }
+      .numseparation4{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .carousel-control-prev-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next{
+      right: 21%;
+    }
+    .carousel-control-prev{
+      left: 20%;
+    }
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+          display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+          display: block;
+      }
+      .carousel-inner .carousel-item > div:nth-child(2n) {
+        display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-92%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(92%);
+    }
+  }
+  
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(16.6%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-16.6%);
+        }
     }
   }
   
@@ -338,21 +479,27 @@
         .paragrafo2{
           max-width: 500px;
         }
-        a.buttoncta{
-          margin-top: 15px;
-          background: #FE4817;
-          padding: 15px 30px 15px 30px;
-          border-radius: 50px;
-          border: 1px solid #FE4817;
-          transition: all .2s;
-          color: white;
-          text-decoration: unset;
-          cursor: pointer;
-          font-size: 14px;
-          &:hover{
-            background: white;
-            color: $cinza-dark-cyber-tivit;
+        div{
+          @media(max-width: 768px){
+            text-align: center;
+            margin-top: 25px;
+          }
+          a.buttoncta{
+            margin-top: 15px;
+            background: #FE4817;
+            padding: 15px 30px 15px 30px;
+            border-radius: 50px;
+            border: 1px solid #FE4817;
             transition: all .2s;
+            color: white;
+            text-decoration: unset;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover{
+              background: white;
+              color: $cinza-dark-cyber-tivit;
+              transition: all .2s;
+            }
           }
         }
       }
@@ -388,7 +535,7 @@
   
   .lp-tbanks-confira{
     height: 600px;
-    background-color: white;
+    background-color: #F4F6F7;
     h2{
       font-size: 48px;
       line-height: 50px;
@@ -455,7 +602,7 @@
         }
         h3{
           font-size: 28px;
-          line-height: 50px;
+          line-height: 1.3;
           font-weight: 400;
           color: white;
           margin-bottom: 87px;
@@ -483,12 +630,42 @@
         }
       }
     }
+    .lp-tbanks-confira-carousel{
+      @media(max-width: 768px){
+        top: 0 !important;
+        padding: 28px;
+        h2{
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 1.3;
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 16px;
+          color: white;
+          line-height: 1.8;
+        }
+        a{
+          text-decoration: unset;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 14px;
+          color: white !important;
+          margin-top: 18px;
+          &:after{
+            content: url('../../assets/images/landing/tdx/arrow-forward-white.svg');
+            margin-left: 10px;
+          }
+        }
+      }
+    }
   }
   
   .lp-tbanks-confira .lp-tdx-confira-bg-right{
     background-color: #FE4817;
     @media(max-width: 760px){
-      height: 440px;
+      height: auto;
     }
   }
   
@@ -496,7 +673,9 @@
   .lp-tdx-como-fazemos{
     padding: 122px 0 130px 0;
     background: #F4F6F7;
-  
+    @media(max-width: 760px){
+      padding: 150px 0 130px 0;
+    }
     .lp-tdx-como-fazemos-content{
       width: 721px;
       max-width: 100%;
@@ -510,6 +689,9 @@
     img{
       margin-top: 80px;
       width: 100%;
+      @media(max-width: 760px){
+        margin-top: 30px;
+      }
     }
   }
 
@@ -519,31 +701,61 @@
       background: #582689;
       height: auto;
       padding: 50px;
+      @media(max-width: 768px){
+        padding: 50px 35px 0px 35px;
+      }
     }
     .pix-text{
       h3, p{
         color: white;
+        @media(max-width: 768px){
+          text-align: center;
+        }
       }
       h3{
         font-size: 28px;
+        @media(max-width: 768px){
+          font-size: 24px;
+        }
       }
       p{
         font-size: 18px;
-      }
-      a{
-        color: white;
-        font-size: 14px;
-        padding: 15px 40px 15px 40px;
-        border: 1px solid white;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all .2s;
-        &:hover{
-          background: white;
-          color: #582689;
-          transition: all .2s;
+        @media(max-width: 768px){
+          font-size: 16px;
         }
       }
+      div{
+        @media(max-width: 768px){
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .custom-w-mobile{
+          @media(max-width: 768px){
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        a{
+          color: white;
+          font-size: 14px;
+          padding: 15px 40px 15px 40px;
+          border: 1px solid white;
+          border-radius: 50px;
+          text-transform: uppercase;
+          text-align: center;
+          cursor: pointer;
+          transition: all .2s;
+          &:hover{
+            background: white;
+            color: #582689;
+            transition: all .2s;
+          }
+        }
+      }
+      
     }
   } 
    
@@ -629,6 +841,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media(max-width: 768px){
+      margin-top: 70px;
+      margin-bottom: 0px;
+    }
     img{
       border-radius: 50%;
     }
@@ -659,28 +875,55 @@
       margin: 0 auto;
     }
     .carousel-control-prev-icon{
-      background-image: url('../../assets/images/landing/tbanks/arrow-gray-left.svg') !important;
+      background-image: url("../../assets/icons/navegacao/arrow-foward-dark-left.svg") !important;
       width: 13px;
     }
     .carousel-control-next-icon{
-      background-image: url('../../assets/images/landing/tbanks/arrow-gray-right.svg') !important;
+      background-image: url("../../assets/icons/navegacao/arrow-foward-dark-right.svg") !important;
       width: 13px;
     }
     .carousel-control-prev{
-      left: 20%;
+      left: 10%;
       @media(max-width: 768px){
-        left: 0;
+        left: 25%;
       }
     }
     .carousel-control-next{
-      right: 20%;
+      right: 10%;
       @media(max-width: 768px){
-        right: 0;
+        right: 25%;
+      }
+    }
+    @media(max-width: 768px){
+      .counter{
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .numactive{
+          color: $vermelho-tivit;
+          font-weight: 700;
+        }
+        .numseparation, .numtotal{
+          color: $cinza-dark-cyber-tivit;
+          font-weight: 300;
+        }
+        .numseparation{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
       }
     }
     .numseparation{
       margin-left: 5px;
       margin-right: 5px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .mobile-relative{
+      position: relative;
     }
   }
   
@@ -691,6 +934,7 @@
     @media(max-width: 768px){
       height: unset;
       padding: 70px 0 50px 0;
+      margin-bottom: 0px;
     }
     .container{
       max-width: 1420px !important;
@@ -702,6 +946,9 @@
       font-weight: 600;
       margin-bottom: 40px;
       text-transform: uppercase;
+      @media(max-width: 768px){
+        margin-bottom: 0px;
+      }
     }
     .lp-tbanks-logo-clientes-content{
       .col-4{
@@ -717,6 +964,15 @@
       .carousel-inner .carousel-item > div:first-child {
           display: block;
       }
+      .carousel-inner .carousel-item > div:nth-child(2n) {
+        display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-50%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(50%);
+    }
   }
   
     .carousel-inner .carousel-item.active,
@@ -737,12 +993,14 @@
         .carousel-inner .carousel-item-prev {
           transform: translateX(-16.6%);
         }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start { 
+          transform: translateX(0);
+        }
     }
     
-    .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start { 
-      transform: translateX(0);
-    }
+    
     .carousel-control-prev-icon{
       background-image: url('../../assets/icons/navegacao/arrow-left-red.svg') !important;
       width: 13px;
@@ -754,13 +1012,13 @@
     .carousel-control-prev{
       left: 45%;
       @media(max-width: 768px){
-        left: 28%;
+        left: 20%;
       }
     }
     .carousel-control-next{
       right: 45%;
       @media(max-width: 768px){
-        right: 28%;
+        right: 20%;
       }
     }
     .counter2{
@@ -784,10 +1042,24 @@
     }
     #customerCarousel{
       margin-top: 60px;
+      @media(max-width: 760px){
+        margin-top: 40px;
+      }
+      .col-6{
+        @media(max-width: 760px){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+        }
+      }
       .customers{
         img{
           filter: grayscale(1);
           transition: all .2s;
+          @media(max-width: 760px){
+            filter: grayscale(0);
+          }
           &:hover{
             filter: grayscale(0);
             transition: all .2s;
@@ -829,6 +1101,7 @@
       h3{
         font-size: 18px;
         line-height: 28px;
+        text-align: center;
         letter-spacing: 2%;
         font-weight: 700;
         color: #262626;
@@ -841,6 +1114,7 @@
       .mensagem{
         h3{
           margin-bottom: 10px;
+          text-align: center;
         }
       }
       .nome-completo, .email, .empresa{
@@ -991,25 +1265,32 @@
   
     // on scroll
     .on-scroll-mobile-tbanks{
-      background-color: #582689!important;
+      background-color: $vermelho-dark-tivit !important;
     }
     .on-scroll-mobile-tdx{
-      background-color: #FE4817!important;
+      background-color: $vermelho-dark-tivit !important;
     }
   
     .lp-tbanks-hero {
       background-image: url('../images/landing/tbanks/hero-mobile.png');
       align-items: flex-end;
-      padding-bottom: 50px;
+      padding-bottom: 0px;
       .lp-banks-hero-content{
         h1{
-          font-size: 24px;
+          font-size: 28px;
           line-height: 32px;
+          max-width: 250px;
         }
       }
     }
     .lp-tdx-hero {
-      background-image: url('../images/landing/tdx/hero-mobile.png');
+      background-image: url('../images/landing/tdx/mobbanner.jpg');
+      align-items: center;
+      .alignBannerText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   
     // Conheça
@@ -1023,8 +1304,8 @@
           font-size: 26px;
           line-height: 34px;
           @media(max-width: 760px){
-            font-size: 22px;
-            line-height: 28px;
+            font-size: 28px;
+            line-height: 1.4;
           }
         }
       }
@@ -1032,6 +1313,10 @@
         p{
           font-size: 18px;
           line-height: 24px;
+          @media(max-width: 760px){
+            display: flex;
+            justify-content: space-evenly;
+          }
           span{
             font-size: 80px;
             line-height: 80px;
@@ -1061,10 +1346,13 @@
   
     // Confira
     .lp-tbanks-confira{
-        
+      .columnReverseMobile{
+        @media(max-width: 760px){
+          flex-direction: column !important;
+        }
+      }
       .lp-tbanks-confira-bg-mobile{
-        background: url('../images/home/lentes.png');
-        height: 180px;
+        height: auto
       }
       h2{
         font-size: 24px;
@@ -1096,12 +1384,32 @@
           line-height: 24px;
           font-weight: 400;
           padding: 0 20px;
+          @media(max-width: 760px){
+            font-size: 24px;
+            line-height: 1.4;
+            padding: 0px;
+          }
         }
       }
     }
   
     .lp-tdx-metodologia{
-      padding: 64px 0 30px 0;
+      padding: 90px 0 30px 0;
+      .card{
+        margin-right: 15px;
+        padding: 20px;
+        height: 100%;
+      }
+      .btn{
+        background: #FE4817;
+        color: white;
+        border-radius: 50px;
+        padding: 10px 35px 15px 35px;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: unset;
+        text-transform: uppercase;
+      }
       h2{
         font-size: 24px;
         line-height: 30px;
@@ -1142,15 +1450,101 @@
         margin-top: 60px;
         border-radius: 50px;
       }
+
+        .carousel-inner .carousel-item > div {
+            display: none;
+          }
+          .carousel-inner .carousel-item > div:first-child {
+              display: block;
+          }
+          .carousel-inner .carousel-item > div:nth-child(2n) {
+            display: block;
+        }
+        .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+          transform: translateX(-92%);
+        }
+        .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+          transform: translateX(92%);
+        }
+
+        .counter4{
+          margin-left: 15px;
+          margin-right: 15px;
+          justify-content: center;
+          align-items: center;
+          z-index: 2;
+          .numactive4{
+            color: $vermelho-tivit;
+            font-weight: 700;
+          }
+          .numseparation4, .numtotal4{
+            color: $cinza-dark-cyber-tivit;
+            font-weight: 300;
+          }
+          .numseparation4{
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+        .carousel-control-prev-icon{
+          background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+          width: 13px;
+        }
+        .carousel-control-next-icon{
+          background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+          width: 13px;
+        }
+        .carousel-control-next{
+          right: 21%;
+        }
+        .carousel-control-prev{
+          left: 20%;
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
     }
   
     // Form
     .lp-tbanks-form{
       .lp-tbanks-title{
         h2{
-          font-size: 22px;
-          line-height: 28px ;
+          font-size: 28px;
+          line-height: 1.3;
         }
+      }
+    }
+
+    //Content TDX
+    #contentTdx{
+      @media(max-width: 760px){
+        
+        .carousel-inner .carousel-item > div {
+          display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+        .carousel-inner .carousel-item > div:nth-child(2n) {
+          display: block;
+        }
+        .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+          transform: translateX(-92%);
+        }
+        .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+          transform: translateX(92%);
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
       }
     }
   
