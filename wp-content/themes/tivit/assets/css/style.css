@@ -4740,4 +4740,8 @@ html, body, * {
     .depoimento-item-case .box p {
       width: 763px;
       font-size: 28px;
-      line-height: 34px; } }
+      line-height: 34px; }
+  .conteudo-item-case .box {
+    margin-top: 150px; }
+  .conteudo-item-case h2 {
+    margin-bottom: 50px; } }
