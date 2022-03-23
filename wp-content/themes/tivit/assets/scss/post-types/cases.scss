@@ -371,4 +371,24 @@
             }
         }
     }
+
+    .diferenciais-cases-item{
+        h2{
+            text-align: center;
+        }
+        .box{
+            min-height: 100px;
+            padding: 18px 20px;
+            display: flex;
+             align-items: center;
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+    
+    .citacao-cases-item{
+        margin-top: 80px;
+    }
 }

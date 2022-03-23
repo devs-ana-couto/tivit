@@ -4713,4 +4713,15 @@ html, body, * {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 33px; } }
+      margin-bottom: 33px; }
+  .diferenciais-cases-item h2 {
+    text-align: center; }
+  .diferenciais-cases-item .box {
+    min-height: 100px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center; }
+    .diferenciais-cases-item .box p {
+      margin: 0; }
+  .citacao-cases-item {
+    margin-top: 80px; } }
