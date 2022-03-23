@@ -227,6 +227,12 @@
   </div>
 </div>
 
+<div class="btnLabsCta">
+  <div class="cta">
+    <a>Conheça mais sobre TIVIT LABS</a>
+  </div>
+</div>
+
 <!-- Bloco CTA Tour -->
 <div id="tour">
   <div class="image-background position-relative">

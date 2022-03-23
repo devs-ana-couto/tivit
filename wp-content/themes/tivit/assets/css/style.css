@@ -2984,6 +2984,27 @@ html, body, * {
     margin-left: 5px;
     margin-right: 5px; }
 
+.btnLabsCta .cta {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center; }
+  .btnLabsCta .cta a {
+    background: #F20024;
+    text-decoration: unset;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #F20024;
+    color: white !important;
+    padding: 15px 40px 15px 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: .2s all; }
+    .btnLabsCta .cta a:hover {
+      background: white;
+      color: #454D54;
+      transition: .2s all; }
+
 #tdx {
   margin-bottom: 125px;
   margin-top: 134px; }
