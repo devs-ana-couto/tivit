@@ -2,25 +2,31 @@
 <?php get_header(); ?>
 
 <!-- Banner -->
-<div class="contato-hero">
 
-  <div class="contato-hero-title">
+<!-- Hero banner-->
+<div class="esg-hero contato-hero position-relative">
+  <div class="esg-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Contato</h1>
-          <h2 class="hide-mobile">Comece a transformar o seu negócio</h2>
+            <div class="zindex position-relative">
+                <h1>Contato</h1>
+                <h2 class="hide-mobile">Comece a transformar o seu negócio</h2>
+            </div>
+            <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
+                <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
+            </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="contato-hero-content hide-desktop">
-    <h2>Chamada contato lorem ipsum</h2>
+    <h2>Comece a transformar o seu negócio</h2>
   </div>
 
-  <div class="arrow text-center mt-5 hide-desktop">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" class="bounce" alt="Saiba Mais">
+  <div class="maskDiv text-center hide-desktop">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
   </div>
 
 </div>
@@ -30,8 +36,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="hide-desktop">Entre em contato com a <span>TIVIT</span> para solicitar um orçamento ou tirar dúvidas sobre nossas soluções</p>
-        <p class="hide-mobile">Compartilhe seu desafio e receba uma solução personalizada.</p>
+        <!-- <p class="hide-desktop">Entre em contato com a <span>TIVIT</span> para solicitar um orçamento ou tirar dúvidas sobre nossas soluções</p> -->
+        <p>Compartilhe seu desafio e receba uma solução personalizada.</p>
       </div>
     </div>
   </div>
@@ -54,12 +60,11 @@
     <div class="row">
       <div class="col-12">
         <div class="home-pessoas-e-carreiras-title">
-          <h2>Pessoas e Carreiras</h2>
-          <p class="hide-mobile">Você está preparado para o futuro? 
-          </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
+          <h2>TRABALHE CONOSCO</h2>
+          <p>Para envio de CV, veja nossa área de carreiras</p>
         </div>
         <div class="botao">
-          <a href="#" class="btn btn-primary">Acesse para saber mais</a>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
         </div>
       </div>
     </div>
@@ -77,13 +82,17 @@
         <div class="borda">
           <div class="contato-canais-item">
             <p><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/phone.svg" alt="Telefone"> +55 (11) 3757-2222</p>
-            <p class="hide-desktop"><strong>Ligar</strong> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/arrow_forward.svg" alt="Ligar"></p>
+            <!-- <p class="hide-desktop"><strong>Ligar</strong> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/arrow_forward.svg" alt="Ligar"></p> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="borda socials">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Ligar"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Ligar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Ligar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Ligar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Ligar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg" alt="Ligar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Ligar">
         </div>
       </div>
     </div>

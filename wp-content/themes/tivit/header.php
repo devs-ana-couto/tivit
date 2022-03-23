@@ -52,7 +52,7 @@
           </div>
 
           <div class="header-contact">
-            <p><a href="#" class="btn btn-contact">Contato</a></p>
+            <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
           </div>
 
           <div class="language">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-2 hide-desktop search">
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-red.svg" class="search-ico" alt="Search Tivit"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit"></a>
         </div>
       </div>
 
