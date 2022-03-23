@@ -4,7 +4,7 @@
 
 //  Hero
 .lp-tbanks-hero{
-    background-image: url('../images/landing/tbanks/hero.png');
+    background-image: url('../images/landing/tbanks/hero.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,24 +23,33 @@
         margin: 10px 0 0 0;
       }
     }
+    .grafismos{
+      top: 9%;
+      right: 9%;
+      width: 200px;
+    }
   }
   
   .lp-tdx-hero{
-    background-image: url('../images/landing/tdx/hero.png');
+    background-image: url('../images/landing/tdx/bannerherotdx.jpg');
   }
   
   // Conheça a TBankS 
   .lp-tbanks-conheca{
-    padding: 110px 0 126px 0;
+    padding: 127px 0 140px 0;
     @media(max-width: 768px){
-      padding: 44px 0 34px 0;
+      padding: 52px 0 50px 0;
     }
     .lp-tbanks-conheca-content{
+      margin-bottom: 50px;
+      b{
+        font-weight: 600;
+      }
       p{
-        font-size: 38px;
+        font-size: 36px;
         line-height: 50px;
         font-weight: 400;
-        max-width: 1051px;
+        max-width: 820px;
         margin: 0 auto;
         text-align: center;
         color: $cinza-dark-cyber-tivit;
@@ -58,6 +67,26 @@
     }  
     .lp-tbanks-services{
       margin-top: 100px;
+      @media(max-width: 768px){
+        margin-top: 80px;
+      }
+      h2{
+        color: #262626;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .sub{
+        max-width: 1000px;
+      }
+      span.subtitle{
+        color: #262626;
+        font-size: 20px;
+        font-weight: lighter;
+        @media(max-width: 768px){
+          font-size: 16px;
+        }
+      }
       h3{
         font-size: 22px;
         line-height: 33.46px;
@@ -75,28 +104,43 @@
       }
       .bg-white{
         background-color: white;
-        border: 2px solid #582689;
+        border-bottom: 1px solid #CAD2D8;
+        border-right: 1px solid #CAD2D8;
+        border-top: 1px solid #CAD2D8;
+        border-left: 3px solid #582689;
         padding: 38px 21px;
-        height: 216px;
+        height: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
+        @media(max-width: 768px){
+          margin-bottom: 15px;
+          margin-right: 30px;
+        }
         h3{
+          max-width: 140px;
+          font-size: 24px;
+          text-transform: uppercase;
           color: #582689;
+          text-align: left;
+        }
+        p{
+          margin-top: 40px;
+          text-align: left;
         }
       }
-      .bg-purple{
-        background-color: #582689;
-        border: 2px solid #582689;
-        padding: 38px 21px;
-        height: 216px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h3, p{
-          color: white;
-        }
-      }
+      // .bg-purple{
+      //   background-color: #582689;
+      //   border: 2px solid #582689;
+      //   padding: 38px 21px;
+      //   height: 216px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   h3, p{
+      //     color: white;
+      //   }
+      // }
       .img{
         margin-top: 50px;
         background: #F4F6F7;
@@ -106,10 +150,69 @@
           margin-bottom: 40px;
         }
       }
+
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+        .carousel-inner .carousel-item > div:nth-child(2n) {
+          display: block;
+      }
+      .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+        transform: translateX(-92%);
+      }
+      .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+        transform: translateX(92%);
+      }
+    }
+    
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+          display: flex;
+      }
+ 
+      .carousel-control-prev-icon{
+        background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+        width: 13px;
+      }
+      .carousel-control-next-icon{
+        background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+        width: 13px;
+      }
+      .carousel-control-next{
+        right: 21%;
+      }
+      .carousel-control-prev{
+        left: 20%;
+      }
+      .counter3{
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .numactive3{
+          color: $vermelho-tivit;
+          font-weight: 700;
+        }
+        .numseparation3, .numtotal3{
+          color: $cinza-dark-cyber-tivit;
+          font-weight: 300;
+        }
+        .numseparation3{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
     }
     
     .lp-tbanks-credibilidade{
       margin-top: 64px;
+      margin-bottom: 34px;
       color: $cinza-dark-cyber-tivit;
       p{
         span{
@@ -246,14 +349,17 @@
   .lp-tbanks-tecnologia-pagamentos{
     padding: 160px 0 0 0;
     text-align: center;
+    @media(max-width: 768px){
+      padding: 60px 0 0 0;
+    }
     h2{
       text-transform: uppercase;
       font-size: 28px;
       line-height: 44px;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
       text-align: center;
       @media(max-width: 768px){
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
     }
     img{
@@ -264,19 +370,94 @@
       font-size: 20px;
       line-height: 28px;
       font-weight: 600;
-      max-width: 240px;
+      max-width: auto;
       margin: 0 auto;
+      color: #582689;
       text-transform: uppercase;
     }
     .col-12{
-      margin-bottom: 100px;
+      margin-bottom: 30px;
       @media(max-width: 768px){
         margin-bottom: 40px;
       }
     }
     .border-tec{
-      border-right: 1px solid #CAD2D8!important;
-      border-left: 1px solid #CAD2D8!important;
+      border: 1px solid #CAD2D8!important;
+      padding: 60px;
+      height: 300px;
+      @media(max-width: 768px){
+        margin-right: 15px;
+      }
+    }
+    .counter4{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive4{
+        color: $vermelho-tivit;
+        font-weight: 700;
+      }
+      .numseparation4, .numtotal4{
+        color: $cinza-dark-cyber-tivit;
+        font-weight: 300;
+      }
+      .numseparation4{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .carousel-control-prev-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next{
+      right: 21%;
+    }
+    .carousel-control-prev{
+      left: 20%;
+    }
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+          display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+          display: block;
+      }
+      .carousel-inner .carousel-item > div:nth-child(2n) {
+        display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-92%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(92%);
+    }
+  }
+  
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(16.6%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-16.6%);
+        }
     }
   }
   
@@ -289,12 +470,55 @@
       align-items: center;
       justify-content: center;
       .lp-tdx-conheca-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         h2{
           color: #FE4817;
+        }
+        .paragrafo2{
+          max-width: 500px;
+        }
+        div{
+          @media(max-width: 768px){
+            text-align: center;
+            margin-top: 25px;
+          }
+          a.buttoncta{
+            margin-top: 15px;
+            background: #FE4817;
+            padding: 15px 30px 15px 30px;
+            border-radius: 50px;
+            border: 1px solid #FE4817;
+            transition: all .2s;
+            color: white;
+            text-decoration: unset;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover{
+              background: white;
+              color: $cinza-dark-cyber-tivit;
+              transition: all .2s;
+            }
+          }
         }
       }
     }
   
+  }
+
+  //TDX Parceiros
+  .lp-tdx-parceiros{
+    margin-top: 60px;
+    margin-bottom: 160px;
+    .lp-tdx-parceiros-content{
+      h2{
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 44px;
+        font-weight: 600;
+      }
+    }
   }
   
   // TBanks Confira
@@ -311,7 +535,7 @@
   
   .lp-tbanks-confira{
     height: 600px;
-    background-color: white;
+    background-color: #F4F6F7;
     h2{
       font-size: 48px;
       line-height: 50px;
@@ -378,7 +602,7 @@
         }
         h3{
           font-size: 28px;
-          line-height: 50px;
+          line-height: 1.3;
           font-weight: 400;
           color: white;
           margin-bottom: 87px;
@@ -401,6 +625,39 @@
         .paragrafo3{
           color: white;
         }
+        strong{
+          font-weight: 600;
+        }
+      }
+    }
+    .lp-tbanks-confira-carousel{
+      @media(max-width: 768px){
+        top: 0 !important;
+        padding: 28px;
+        h2{
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 1.3;
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 16px;
+          color: white;
+          line-height: 1.8;
+        }
+        a{
+          text-decoration: unset;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 14px;
+          color: white !important;
+          margin-top: 18px;
+          &:after{
+            content: url('../../assets/images/landing/tdx/arrow-forward-white.svg');
+            margin-left: 10px;
+          }
+        }
       }
     }
   }
@@ -408,14 +665,17 @@
   .lp-tbanks-confira .lp-tdx-confira-bg-right{
     background-color: #FE4817;
     @media(max-width: 760px){
-      height: 440px;
+      height: auto;
     }
   }
   
   // Como fazemos
   .lp-tdx-como-fazemos{
-    padding: 122px 0 60px 0;
-  
+    padding: 122px 0 130px 0;
+    background: #F4F6F7;
+    @media(max-width: 760px){
+      padding: 150px 0 130px 0;
+    }
     .lp-tdx-como-fazemos-content{
       width: 721px;
       max-width: 100%;
@@ -429,14 +689,85 @@
     img{
       margin-top: 80px;
       width: 100%;
+      @media(max-width: 760px){
+        margin-top: 30px;
+      }
     }
   }
-  
+
+  //TBANKS PIX
+  #tbanks-pix{
+    .tbanks-bg-pix{
+      background: #582689;
+      height: auto;
+      padding: 50px;
+      @media(max-width: 768px){
+        padding: 50px 35px 0px 35px;
+      }
+    }
+    .pix-text{
+      h3, p{
+        color: white;
+        @media(max-width: 768px){
+          text-align: center;
+        }
+      }
+      h3{
+        font-size: 28px;
+        @media(max-width: 768px){
+          font-size: 24px;
+        }
+      }
+      p{
+        font-size: 18px;
+        @media(max-width: 768px){
+          font-size: 16px;
+        }
+      }
+      div{
+        @media(max-width: 768px){
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .custom-w-mobile{
+          @media(max-width: 768px){
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        a{
+          color: white;
+          font-size: 14px;
+          padding: 15px 40px 15px 40px;
+          border: 1px solid white;
+          border-radius: 50px;
+          text-transform: uppercase;
+          text-align: center;
+          cursor: pointer;
+          transition: all .2s;
+          &:hover{
+            background: white;
+            color: #582689;
+            transition: all .2s;
+          }
+        }
+      }
+      
+    }
+  } 
+   
   // Metodologia TDX
   .lp-tdx-metodologia{
-    padding: 100px 0 130px 0;
+    padding: 123px 0 130px 0;
     .col-12.bl{
-      border-right: 1px solid #E6E6E6;
+      padding: 30px;
+      .card{
+        border: 1px solid #E6E6E6;
+        padding: 50px;
+      }
     }
     h2{
       font-size: 28px;
@@ -445,7 +776,7 @@
       text-transform: uppercase;
     }
     p{
-      margin-bottom: 100px;
+      margin-bottom: 30px;
     }
     img{
       max-width: 100%;
@@ -458,12 +789,23 @@
       color: #FE4817;
       font-weight: 600;
       text-transform: uppercase;
-      width: 270px;
+      width: auto;
       margin: 0 auto;
     }
     .paragrafo3{
-      max-width: 270px;
-      margin: 28px 0 0 0;
+      max-width: auto;
+      margin: 18px 0 0 0;
+    }
+
+    .paragrafo3.mx{
+      max-width: 450px;
+    }
+
+    .paragrafo3.list{
+      margin-top: 28px !important;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
     }
   
     ul li{
@@ -477,11 +819,14 @@
       border-radius: 0;
       text-transform: uppercase;
       padding: 15px 38px;
+      border-radius: 50px;
       margin-top: 60px;
+      transition: all .2s;
       &:hover{
         background-color: white;
         color: #FE4817;
         border: 1px solid #FE4817;
+        transition: all .2s;
       }
     }
   
@@ -490,10 +835,16 @@
   
   // Depoimentos
   .lp-tbanks-depoimentos{
-    height: 580px;
+    height: 100%;
+    margin-top: 130px;
+    margin-bottom: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media(max-width: 768px){
+      margin-top: 70px;
+      margin-bottom: 0px;
+    }
     img{
       border-radius: 50%;
     }
@@ -516,35 +867,204 @@
       font-weight: 400;
       color: #000000;
     }
-    P{
-      font-size: 38px;
-      line-height: 48px;
-      font-weight: 700;
-      max-width: 970px;
+    p{
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 770px;
       margin: 0 auto;
+    }
+    .carousel-control-prev-icon{
+      background-image: url("../../assets/icons/navegacao/arrow-foward-dark-left.svg") !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url("../../assets/icons/navegacao/arrow-foward-dark-right.svg") !important;
+      width: 13px;
+    }
+    .carousel-control-prev{
+      left: 10%;
+      @media(max-width: 768px){
+        left: 25%;
+      }
+    }
+    .carousel-control-next{
+      right: 10%;
+      @media(max-width: 768px){
+        right: 25%;
+      }
+    }
+    @media(max-width: 768px){
+      .counter{
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .numactive{
+          color: $vermelho-tivit;
+          font-weight: 700;
+        }
+        .numseparation, .numtotal{
+          color: $cinza-dark-cyber-tivit;
+          font-weight: 300;
+        }
+        .numseparation{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .numseparation{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .mobile-relative{
+      position: relative;
     }
   }
   
   // Clientes Logos
   .lp-tbanks-logo-clientes{
-    height: 355px;
+    height: 100%;
+    margin-bottom: 150px;
     @media(max-width: 768px){
       height: unset;
       padding: 70px 0 50px 0;
+      margin-bottom: 0px;
+    }
+    .container{
+      max-width: 1420px !important;
     }
     h2{
       font-size: 24px;
       line-height: 30px;
       letter-spacing: 3%;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 40px;
       text-transform: uppercase;
+      @media(max-width: 768px){
+        margin-bottom: 0px;
+      }
     }
     .lp-tbanks-logo-clientes-content{
       .col-4{
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item > div {
+          display: none;
+      }
+      .carousel-inner .carousel-item > div:first-child {
+          display: block;
+      }
+      .carousel-inner .carousel-item > div:nth-child(2n) {
+        display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-50%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(50%);
+    }
+  }
+  
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(16.6%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-16.6%);
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start { 
+          transform: translateX(0);
+        }
+    }
+    
+    
+    .carousel-control-prev-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-left-red.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-next-icon{
+      background-image: url('../../assets/icons/navegacao/arrow-right-red.svg') !important;
+      width: 13px;
+    }
+    .carousel-control-prev{
+      left: 45%;
+      @media(max-width: 768px){
+        left: 20%;
+      }
+    }
+    .carousel-control-next{
+      right: 45%;
+      @media(max-width: 768px){
+        right: 20%;
+      }
+    }
+    .counter2{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive2{
+        color: $vermelho-tivit;
+        font-weight: 700;
+      }
+      .numseparation2, .numtotal2{
+        color: $vermelho-tivit;
+        font-weight: 300;
+      }
+      .numseparation2{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    #customerCarousel{
+      margin-top: 60px;
+      @media(max-width: 760px){
+        margin-top: 40px;
+      }
+      .col-6{
+        @media(max-width: 760px){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+        }
+      }
+      .customers{
+        img{
+          filter: grayscale(1);
+          transition: all .2s;
+          @media(max-width: 760px){
+            filter: grayscale(0);
+          }
+          &:hover{
+            filter: grayscale(0);
+            transition: all .2s;
+          }
+        }
       }
     }
   }
@@ -562,12 +1082,14 @@
     }
     .lp-tbanks-title{
       h2{
-        font-size: 48px;
-        line-height: 54px;
+        font-size: 36px;
+        line-height: 1.2;
         font-weight: 400;
         color: $cinza-dark-cyber-tivit;
+        margin-bottom: 90px;
       }
       .paragrafo2{
+        margin-top: 22px;
         margin-bottom: 61px;
       }
     }
@@ -579,9 +1101,10 @@
       h3{
         font-size: 18px;
         line-height: 28px;
+        text-align: center;
         letter-spacing: 2%;
         font-weight: 700;
-        color: #582689;
+        color: #262626;
         text-transform: uppercase;
         margin: 50px 0 43px 0;
         @media(max-width: 760px){
@@ -591,6 +1114,7 @@
       .mensagem{
         h3{
           margin-bottom: 10px;
+          text-align: center;
         }
       }
       .nome-completo, .email, .empresa{
@@ -663,6 +1187,7 @@
         .tbanks-form{
           .wpcf7-form-control.has-spinner.wpcf7-submit{
             background: #582689;
+            border-radius: 50px;
           }
         }
         .wpcf7-list-item-label{
@@ -687,6 +1212,7 @@
       .tdx-form{
         .wpcf7-form-control.has-spinner.wpcf7-submit{
           background: #FE4817;
+          border-radius: 50px;
         }
         h3{
           color: #FE4817;
@@ -705,6 +1231,32 @@
     }
   
   }
+
+  // Cases TDX
+  #cases{
+    .lp-tdx-confira-bg-right{
+      background: #F14517;
+    }
+    .counter{
+      margin-left: 15px;
+      margin-right: 15px;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      .numactive{
+        color: white;
+        font-weight: 700;
+      }
+      .numseparation, .numtotal{
+        color: white;
+        font-weight: 300;
+      }
+      .numseparation{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
   
   
   // Mobile
@@ -713,25 +1265,32 @@
   
     // on scroll
     .on-scroll-mobile-tbanks{
-      background-color: #582689!important;
+      background-color: $vermelho-dark-tivit !important;
     }
     .on-scroll-mobile-tdx{
-      background-color: #FE4817!important;
+      background-color: $vermelho-dark-tivit !important;
     }
   
     .lp-tbanks-hero {
       background-image: url('../images/landing/tbanks/hero-mobile.png');
       align-items: flex-end;
-      padding-bottom: 50px;
+      padding-bottom: 0px;
       .lp-banks-hero-content{
         h1{
-          font-size: 24px;
+          font-size: 28px;
           line-height: 32px;
+          max-width: 250px;
         }
       }
     }
     .lp-tdx-hero {
-      background-image: url('../images/landing/tdx/hero-mobile.png');
+      background-image: url('../images/landing/tdx/mobbanner.jpg');
+      align-items: center;
+      .alignBannerText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   
     // Conheça
@@ -745,8 +1304,8 @@
           font-size: 26px;
           line-height: 34px;
           @media(max-width: 760px){
-            font-size: 22px;
-            line-height: 28px;
+            font-size: 28px;
+            line-height: 1.4;
           }
         }
       }
@@ -754,6 +1313,10 @@
         p{
           font-size: 18px;
           line-height: 24px;
+          @media(max-width: 760px){
+            display: flex;
+            justify-content: space-evenly;
+          }
           span{
             font-size: 80px;
             line-height: 80px;
@@ -763,7 +1326,7 @@
     }
   
     .lp-tdx-conheca{
-      padding: 0 0 23px 0;
+      padding: 0 0 100px 0;
       img{
         width: 100%;
         margin-bottom: 23px;
@@ -783,10 +1346,13 @@
   
     // Confira
     .lp-tbanks-confira{
-        
+      .columnReverseMobile{
+        @media(max-width: 760px){
+          flex-direction: column !important;
+        }
+      }
       .lp-tbanks-confira-bg-mobile{
-        background: url('../images/home/lentes.png');
-        height: 180px;
+        height: auto
       }
       h2{
         font-size: 24px;
@@ -816,14 +1382,34 @@
         p{
           font-size: 20px;
           line-height: 24px;
-          font-weight: 700;
+          font-weight: 400;
           padding: 0 20px;
+          @media(max-width: 760px){
+            font-size: 24px;
+            line-height: 1.4;
+            padding: 0px;
+          }
         }
       }
     }
   
     .lp-tdx-metodologia{
-      padding: 64px 0 30px 0;
+      padding: 90px 0 30px 0;
+      .card{
+        margin-right: 15px;
+        padding: 20px;
+        height: 100%;
+      }
+      .btn{
+        background: #FE4817;
+        color: white;
+        border-radius: 50px;
+        padding: 10px 35px 15px 35px;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: unset;
+        text-transform: uppercase;
+      }
       h2{
         font-size: 24px;
         line-height: 30px;
@@ -862,16 +1448,103 @@
         text-transform: uppercase;
         padding: 15px 38px;
         margin-top: 60px;
+        border-radius: 50px;
       }
+
+        .carousel-inner .carousel-item > div {
+            display: none;
+          }
+          .carousel-inner .carousel-item > div:first-child {
+              display: block;
+          }
+          .carousel-inner .carousel-item > div:nth-child(2n) {
+            display: block;
+        }
+        .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+          transform: translateX(-92%);
+        }
+        .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+          transform: translateX(92%);
+        }
+
+        .counter4{
+          margin-left: 15px;
+          margin-right: 15px;
+          justify-content: center;
+          align-items: center;
+          z-index: 2;
+          .numactive4{
+            color: $vermelho-tivit;
+            font-weight: 700;
+          }
+          .numseparation4, .numtotal4{
+            color: $cinza-dark-cyber-tivit;
+            font-weight: 300;
+          }
+          .numseparation4{
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+        .carousel-control-prev-icon{
+          background-image: url('../../assets/icons/navegacao/arrow-foward-dark-left.svg') !important;
+          width: 13px;
+        }
+        .carousel-control-next-icon{
+          background-image: url('../../assets/icons/navegacao/arrow-foward-dark-right.svg') !important;
+          width: 13px;
+        }
+        .carousel-control-next{
+          right: 21%;
+        }
+        .carousel-control-prev{
+          left: 20%;
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
     }
   
     // Form
     .lp-tbanks-form{
       .lp-tbanks-title{
         h2{
-          font-size: 22px;
-          line-height: 28px ;
+          font-size: 28px;
+          line-height: 1.3;
         }
+      }
+    }
+
+    //Content TDX
+    #contentTdx{
+      @media(max-width: 760px){
+        
+        .carousel-inner .carousel-item > div {
+          display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+        .carousel-inner .carousel-item > div:nth-child(2n) {
+          display: block;
+        }
+        .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+          transform: translateX(-92%);
+        }
+        .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+          transform: translateX(92%);
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
       }
     }
   

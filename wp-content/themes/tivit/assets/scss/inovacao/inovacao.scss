@@ -16,12 +16,18 @@ $duration: 250ms;
             font-weight: 600;
             color: #fff;
             text-transform: uppercase;
+            @media (max-width: 767px){
+              margin-top: 200px;
+            }
         }
         h2{
           font-weight: 500 !important; 
         }
     }
     .inovacao-hero-content{
+      @media (max-width: 767px){
+        z-index: 100;
+      }
     h2{
         font-size: 34px;
         line-height: 34px;
@@ -29,6 +35,13 @@ $duration: 250ms;
         font-weight: 400;
         width: 320px;
         margin: 198px auto 0 auto;
+        @media (max-width: 767px){
+          color: white;
+          font-size: 28px;
+          font-weight: lighter;
+          text-align: center;
+          margin: 5px auto 0 auto;
+        }
     }
     }
     .botao{
@@ -42,12 +55,29 @@ $duration: 250ms;
     .arrow{
     margin-top: 0;
     }
+    .zindex{
+      z-index: 100;
+    }
+    .mask{
+      max-width: 1400px;
+    }
+    .maskDiv{
+      img{
+          top: 10%;
+          left: 0;
+          width: 100%;
+      }
+  }
 }
 
 .inovacao-intro{
   position: relative;
-  margin-top: 121px;
+  margin-top: 230px;
   margin-bottom: 121px;
+  @media (max-width: 767px){
+    margin-top: 20px;
+    margin-bottom: 75px;
+  }
   p{
     font-size: 36px;
     line-height: 42px;
@@ -68,6 +98,9 @@ $duration: 250ms;
   padding-top: 128px;
   padding-bottom: 105px;
   position: relative;
+  @media (max-width: 767px){
+    padding-top: 50px;
+  }
   h2{
     color: $cinza-dark-cyber-tivit;
     font-weight: 600;
@@ -84,6 +117,10 @@ $duration: 250ms;
     font-weight: lighter;
     font-size: 24px !important;
     max-width: 860px;
+    @media (max-width: 767px){
+      font-size: 18px !important;
+      text-align: center;
+    }
   }
   .aboveBlock{
     margin-top: 133px;
@@ -92,6 +129,15 @@ $duration: 250ms;
     padding: 35px;
     border: 1px solid $cinza-light-tivit;
     height: 200px;
+    .justify-content-custom{
+      justify-content: center;
+      @media (max-width: 767px){
+        justify-content: space-between;
+      }
+    }
+    @media (max-width: 767px){
+      padding: 28px;
+    }
     img{
       -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
       filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
@@ -103,6 +149,28 @@ $duration: 250ms;
         transition: all .2s;
       }
     }
+    @media (max-width: 767px){
+      background: white;
+      margin-bottom: 15px;
+      img{
+        -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
+      }
+      a{
+        position: relative;
+        color: $vermelho-tivit;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: unset;
+        &:after{
+          content: url('../../assets/images/esg/arrow-red-content.svg');
+          margin-left: 9px;
+          width: 16px;
+          position: relative;
+        }
+      }
+    }
   }
   .services{
     flex-wrap: wrap;
@@ -112,6 +180,13 @@ $duration: 250ms;
       font-weight: 500;
       font-style: normal;
       margin-right: 50px;
+      @media (max-width: 767px){
+        margin-right: 0px;
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 15px;
+      }
     }
   }
   a.button{
@@ -137,6 +212,9 @@ $duration: 250ms;
     position: absolute;
     right: 48%;
     bottom: -10px;
+    @media (max-width: 767px){
+      right: 41%;
+    }
   }
 }
 
@@ -164,6 +242,9 @@ $duration: 250ms;
   }
   .carousel-inner{
     right: -13%;
+    @media (max-width: 767px){
+      right: 0;
+    }
   }
   .card{
     border-color: transparent;
@@ -220,6 +301,15 @@ $duration: 250ms;
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
+    .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-92%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(92%);
+    }
   }
   
   .carousel-inner .carousel-item.active,
@@ -240,12 +330,14 @@ $duration: 250ms;
     .carousel-inner .carousel-item-prev {
       transform: translateX(-25%);
     }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+    }
   }
   
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-  }
+  
 
   .carousel-control-prev, .carousel-control-next{
     filter: invert(13%) sepia(99%) saturate(6196%) hue-rotate(343deg) brightness(88%) contrast(118%);
@@ -408,7 +500,7 @@ $duration: 250ms;
     .inovacao-hero{
       background: url('../../assets/images/inovacao/banner.png') no-repeat center center;
       background-size: cover;
-      height: 100vh;
+      height: 580px;
       .inovacao-hero-title{
         h1, h2{
           text-align: center;

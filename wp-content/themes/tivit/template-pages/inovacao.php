@@ -7,12 +7,26 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>INOVAÇÃO</h1>
-          <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
+          <div class="position-relative zindex">
+            <h1>INOVAÇÃO</h1>
+            <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
+          </div>
+          <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
+              <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="inovacao-hero-content hide-desktop">
+    <h2>TIVIT: a sua referência em inovação.</h2>
+  </div>
+
+  <div class="maskDiv text-center hide-desktop">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
+  </div>
+
 </div>
 
 <!-- Introdução abaixo do Hero-->
@@ -35,51 +49,57 @@
     <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
       investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
   </div>
-  <div class="container mt-5 mb-5">
+  <div class="container mt-3 mb-3 mt-md-5 mb-md-5">
     <!-- first row -->
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
     </div>
     <!-- sec row -->
-    <div class="row mt-4">
+    <div class="row mt-0 mt-md-4">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
@@ -122,12 +142,12 @@
 </div>
 
 <!-- Bloco Carrossel Infinito -->
-<div id="carouselCustom" class="container-fluid text-center my-3">
+<div id="carouselCustom" class="container-fluid p-0 text-center my-3">
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item heroslide active">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog1.jpg" alt="Blog 1" class="img-fluid w-100">
@@ -140,7 +160,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
@@ -153,7 +173,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
@@ -166,7 +186,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
@@ -179,7 +199,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
@@ -192,11 +212,11 @@
               </div>
           </div>
       </div>
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center mt-3 mt-md-5">
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <div class="d-flex flex-row counter hide-mobile">
+        <div class="d-flex flex-row counter">
           <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
         </div>
         <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
@@ -233,6 +253,8 @@
   <div class="container">
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
+
+      <div id="triangle-down"></div>
 
         <div class="carousel-inner">
         
@@ -408,8 +430,9 @@
       <!-- content 1 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1"> 
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
@@ -438,8 +461,9 @@
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+            <div class="position-absolute tagContent">press release</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
@@ -467,8 +491,9 @@
           <div class="title">
             <h2 class="hide-desktop">cases mais recentes</h2>
           </div>
-          <div class="img">
+          <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>

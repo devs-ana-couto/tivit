@@ -157,7 +157,7 @@
   </div>
 </div>
 
-<div class="cases-recentes"> 
+<div class="cases-recentes">
   <!--- Desktop -->
   <div class="container hide-mobile">
 
@@ -201,142 +201,155 @@
 
 
 
-  <div class="row">
+    <div class="row">
+      <?php
 
-    <?php
-
-    for($i = 0; $i < 6; $i++){
-    ?>
-      <div class="col-12 col-md-4">
-        <div class="img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
-        </div>
-        <div class="autor-time">
-          <p>Cliente: <b>Nome cliente</b></p>
-        </div>
-        <div class="content">
-          <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-        <div class="detalhes">
-          <a href="#">conta híbrida</a>
-          <a href="#">varejo</a>
-        </div>
-        <div class="acessar">
-          <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-        </div>
-      </div>    
-    <?php
-    }
-    ?>
-
-  </div>
+      for($i = 0; $i < 6; $i++){
+      ?>
+        <div class="col-12 col-md-4">
+          <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
+          </div>
+          <div class="autor-time">
+            <p>Cliente: <b>Nome cliente</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="detalhes">
+            <a href="#">conta híbrida</a>
+            <a href="#">varejo</a>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+          </div>
+        </div>    
+      <?php
+      }
+      ?>
+    </div>
 
 
   </div>
-  <!--- End Mobile -->
+  <!--- End Desktop -->
 
   <!--- Mobile -->
   <div id="cases" class="carousel slide carousel-fade hide-desktop" data-bs-ride="carousel">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <div class="filtros">
+            
+            <div class="select">
+              <select name="">
+                <option value="">escolha um ou mais assuntos</option>
+                <option value="">Mais recentes</option>
+                <option value="">Mais antigos</option>
+                <option value="">A-Z</option>
+                <option value="">Z-A</option>
+              </select>
+            </div>          
+
+            <div class="divisao">
+              <div class="select">
+                <select name="">
+                  <option value="">Filtrar por</option>
+                  <option value="">Mais recentes</option>
+                  <option value="">Mais antigos</option>
+                  <option value="">A-Z</option>
+                  <option value="">Z-A</option>
+                </select>
+              </div>
+
+              <div class="search">
+                <a href="#">Buscar <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="col-12 col-md-4">
-              <div class="title">
-                <h2 class="hide-desktop">cases mais recentes</h2>
-              </div>
               <div class="img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
               </div>
-              <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
+              <div class="autor-time">
+                <p>Cliente: <strong>Nome do cliente</strong></p>
               </div>
               <div class="content">
                 <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
               </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
               </div>
+
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="col-12 col-md-4">
-              <div class="title">
-                <h2 class="hide-desktop">cases mais recentes</h2>
-              </div>
               <div class="img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
               </div>
-              <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
+              <div class="autor-time">
+                <p>Cliente: <strong>Nome do cliente</strong></p>
               </div>
               <div class="content">
                 <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
               </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
               </div>
+
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="col-12 col-md-4">
-              <div class="title">
-                <h2 class="hide-desktop">cases mais recentes</h2>
-              </div>
               <div class="img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
               </div>
-              <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
+              <div class="autor-time">
+                <p>Cliente: <strong>Nome do cliente</strong></p>
               </div>
               <div class="content">
                 <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
               </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
               </div>
+
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="col-12 col-md-4">
-              <div class="title">
-                <h2 class="hide-desktop">cases mais recentes</h2>
-              </div>
               <div class="img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cases/cases/01.svg" alt="Depoimento">
               </div>
-              <div class="detalhes">
-                <a href="#">conta híbrida</a>
-                <a href="#">varejo</a>
-                <span>01/01/2021</span>
+              <div class="autor-time">
+                <p>Cliente: <strong>Nome do cliente</strong></p>
               </div>
               <div class="content">
                 <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
               </div>
-              <div class="autor-time">
-                <p>Escrito por <b>Ana Helena Lazaroni</b></p>
-                <p>Tempo de leitura: <b>6 minutos</b></p>
+              <div class="detalhes">
+                <a href="#">conta híbrida</a>
+                <a href="#">varejo</a>
               </div>
+
               <div class="acessar">
-                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
+                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
