@@ -283,6 +283,24 @@
     }
 }
 
+.links-externos-item-case{
+    margin: 70px 0 150px 0;
+    .box{
+        border: 1px solid $cinza-light-tivit;
+        padding: 20px 30px;
+        min-height: 230px;
+        span{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        h3{
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+    }
+}
+
 // Desktop
 @media(min-width: 991px){
     .banner-cases-item{
@@ -420,10 +438,16 @@
 
     .conteudo-item-case{
         .box{
-            margin-top: 150px;
+            margin: 50px 0 50px 0;
+            p{
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
         h2{
             margin-bottom: 50px;
         }
     }
+
+    
 }
