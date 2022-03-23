@@ -230,7 +230,8 @@
 <!-- Bloco CTA Tour -->
 <div id="tour">
   <div class="image-background position-relative">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100 hide-mobile">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tour-mobile.svg" alt="background" class="img-fluid w-100 hide-desktop">
     <!-- <div class="position-absolute w-100">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/maskinovation.svg" alt="mask" class="img-fluid w-100">
     </div> -->
@@ -249,7 +250,7 @@
 </div>
 
 <!-- Bloco de labs -->
-<div id="labs" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="labs" class="esg carousel slide carousel-fade hide-mobile" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
@@ -352,7 +353,8 @@
         Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
       </p>
     </div>
-    <div class="row mt-2">
+
+    <div class="row mt-2 hide-mobile">
       <div class="col-sm-12 col-md-3">
         <div class="box">
           <div class="w-100">
@@ -414,8 +416,85 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center mt-3 mt-md-0 hide-desktop">
+      <div id="tdxMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide3 tdx active">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icodesign.svg" alt="design">
+                        </div>
+                        <h2>
+                          Design, Produtos e Plataformas
+                        </h2>
+                        <p>
+                          Ampliamos horizontes e garantimos a travessia do início ao fim da jornada.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icografico.svg" alt="grafico">
+                        </div>
+                        <h2>
+                          Data & Analytics
+                        </h2>
+                        <p>
+                          Democratizamos tecnologias e inovações do mercado em contextos reais.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
+                        </div>
+                        <h2>
+                          Modernização e Otimização de Legado
+                        </h2>
+                        <p>
+                          Mudar é difícil, contudo, para tornar o processo simples, apoiamos e direcionamos pessoas e negócios durante toda a jornada.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icogrow.svg" alt="grow">
+                        </div>
+                        <h2>
+                          Sustentação e Crescimento
+                        </h2>
+                        <p>
+                          Oferecemos serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
     <div class="cta w-100 d-flex align-items-center justify-content-center">
-      <a class="button">CONHEÇA A TDX</a>
+      <a class="button">Conheça MAIS sobre a tdx</a>
     </div>
   </div>
 </div>

@@ -2915,6 +2915,9 @@ html, body, * {
 
 #tour {
   margin-bottom: 120px; }
+  @media (max-width: 767px) {
+    #tour {
+      margin-bottom: 0px; } }
   #tour .image-background div {
     top: 0; }
   #tour .txt .textLabs {
@@ -2923,11 +2926,19 @@ html, body, * {
     letter-spacing: 11px;
     font-size: 36px;
     font-weight: lighter; }
+    @media (max-width: 767px) {
+      #tour .txt .textLabs {
+        text-align: center;
+        font-size: 28px; } }
   #tour .txt p {
     margin-bottom: 0;
     font-size: 20px;
     font-weight: lighter;
     color: white; }
+    @media (max-width: 767px) {
+      #tour .txt p {
+        text-align: center;
+        font-size: 16px; } }
   #tour .txt a {
     margin-top: 22px;
     text-transform: uppercase;
@@ -2976,6 +2987,9 @@ html, body, * {
 #tdx {
   margin-bottom: 125px;
   margin-top: 134px; }
+  @media (max-width: 767px) {
+    #tdx {
+      margin-top: 0px; } }
   #tdx .subtitle {
     max-width: 625px;
     margin-top: 25px; }
@@ -2990,6 +3004,9 @@ html, body, * {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 767px) {
+      #tdx .box {
+        margin-right: 18px; } }
     #tdx .box h2 {
       margin-top: 22px;
       color: #F20024;
@@ -3015,11 +3032,27 @@ html, body, * {
       color: white;
       padding: 15px 40px 15px 40px;
       border-radius: 50px;
+      text-transform: uppercase;
       transition: .2s all; }
       #tdx .cta .button:hover {
         background: white;
         color: #454D54;
         transition: .2s all; }
+  @media (max-width: 767px) {
+    #tdx .carousel-inner .carousel-item > div {
+      display: none; }
+    #tdx .carousel-inner .carousel-item > div:first-child {
+      display: block; }
+    #tdx .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block; }
+    #tdx .carousel-item-prev:not(.carousel-item-end), #tdx .active.carousel-item-start {
+      transform: translateX(-92%); }
+    #tdx .carousel-item-next:not(.carousel-item-start), #tdx .active.carousel-item-end {
+      transform: translateX(92%); } }
+  #tdx .carousel-inner .carousel-item.active,
+  #tdx .carousel-inner .carousel-item-next,
+  #tdx .carousel-inner .carousel-item-prev {
+    display: flex; }
 
 .content-inovacao {
   opacity: 1 !important; }

@@ -357,6 +357,9 @@ $duration: 250ms;
 
 #tour{
   margin-bottom: 120px;
+  @media (max-width: 767px) {
+    margin-bottom: 0px;
+  }
   .image-background{
     div{
       top: 0;
@@ -369,12 +372,20 @@ $duration: 250ms;
       letter-spacing: 11px;
       font-size: 36px;
       font-weight: lighter;
+      @media (max-width: 767px) {
+        text-align: center;
+        font-size: 28px;
+      }
     }
     p{
       margin-bottom: 0;
       font-size: 20px;
       font-weight: lighter;
       color: white;
+      @media (max-width: 767px) {
+        text-align: center;
+        font-size: 16px;
+      }
     }
     a{
       margin-top: 22px;
@@ -437,6 +448,9 @@ $duration: 250ms;
 #tdx{
   margin-bottom: 125px;
   margin-top: 134px;
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
   .subtitle{
     max-width: 625px;
     margin-top: 25px;
@@ -453,6 +467,9 @@ $duration: 250ms;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 767px) {
+      margin-right: 18px;
+    }
     h2{
       margin-top: 22px;
       color: $vermelho-tivit;
@@ -480,7 +497,8 @@ $duration: 250ms;
       border: 1px solid $vermelho-tivit;
       color: white;
       padding: 15px 40px 15px 40px;
-      border-radius: 50px;;
+      border-radius: 50px;
+      text-transform: uppercase;
       transition: .2s all;
       &:hover{
         background: white;
@@ -489,6 +507,31 @@ $duration: 250ms;
       }
     }
   }
+
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-92%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(92%);
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
 }
 
 .content-inovacao{
