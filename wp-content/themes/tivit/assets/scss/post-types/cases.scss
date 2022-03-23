@@ -272,7 +272,7 @@
 // Section Conteúdo
 .conteudo-item-case{
     .box{
-        margin-top: 72px;
+        margin: 72px 0;
         h2{
             font-size: 28px;
             line-height: 34px;
@@ -284,7 +284,7 @@
 }
 
 .links-externos-item-case{
-    margin: 70px 0 150px 0;
+    margin: 0px 0 50px 0;
     .box{
         border: 1px solid $cinza-light-tivit;
         padding: 20px 30px;
@@ -309,6 +309,60 @@
             padding: 0;
             margin-top: 30px;
         }
+    }
+}
+
+.newsletter-item-case{
+    background: #cad2d833;
+    padding: 40px 0;
+
+    h2{
+        color: $vermelho-tivit;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    label, .nome, .email, .celular, .segmento{
+        display: flex;
+        width: 100%;
+    }
+    p{
+        margin: 0;
+    }
+    input, select{
+        border: 0;
+        border-bottom: 1px solid $cinza-light-tivit;
+        background: none;
+        padding: 0;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        color: $cinza-dark-cyber-tivit;
+        font-size: 14px;
+        line-height: 21.29px;
+    }
+    input:focus, select:focus, textarea:focus{
+        outline: none;
+    }
+    .wpcf7-form-control.has-spinner.wpcf7-submit{
+        padding: 14px 67px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background: $vermelho-tivit;
+        border-radius: 30px;
+        width: 240px;
+        margin: 20px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -449,7 +503,7 @@
 
     .conteudo-item-case{
         .box{
-            margin: 50px 0 50px 0;
+            margin: 50px 0 120px 0;
             p{
                 font-size: 18px;
                 line-height: 24px;
@@ -460,5 +514,4 @@
         }
     }
 
-    
 }

@@ -299,7 +299,6 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Links Externos -->
-
 <section class="links-externos-item-case">
     <div class="container">
         <?php
@@ -372,12 +371,21 @@ if(have_posts()) : while(have_posts()) : the_post();
             }else{
                 echo '</div>';
             }
-        ?>
-        
-            
+        ?>            
     </div>
 </section>
 
+
+<!-- Section Newsletter -->
+<section class="newsletter-item-case">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <?=do_shortcode('[contact-form-7 id="220" title="Newsletter"]');?>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Section Cases Recentes -->
 <section class="cases-recentes">
