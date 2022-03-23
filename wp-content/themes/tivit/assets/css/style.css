@@ -4724,4 +4724,14 @@ html, body, * {
     .diferenciais-cases-item .box p {
       margin: 0; }
   .citacao-cases-item {
-    margin-top: 80px; } }
+    margin: 144px 0;
+    background: #cad2d833; }
+    .citacao-cases-item .col-12 .box {
+      background: unset; }
+      .citacao-cases-item .col-12 .box p {
+        width: 771px;
+        margin: 0 auto;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        padding: 30px; } }
