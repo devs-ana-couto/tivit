@@ -22,7 +22,7 @@
 
         <div class="lp-tbanks-conheca-content lp-tdx-conheca-content">
           <p>
-            <b>Soluções inovadoras na prática.</b><br>Desafiamos e encorajamos a transformação, porque acreditamos que o plano no papel não muda o mundo
+            <? the_field('conteudo'); ?>
           </p>
         </div>
 
@@ -31,7 +31,7 @@
             <div class="col-12 col-md-4">
               <p>
                 <span>
-                  <b>10</b>
+                  <strong><? the_field('paises'); ?></strong>
                 </span>
                 </br>
                 Países
@@ -40,7 +40,7 @@
 
             <div class="col-12 col-md-4">
               <p>
-                <span>+500</span>
+                <span>+<? the_field('pessoas'); ?></span>
                 </br>
                 Pessoas
               </p>
@@ -48,7 +48,7 @@
 
             <div class="col-12 col-md-4">
               <p>
-                <span>+50</span>
+                <span>+<? the_field('clientes'); ?></span>
                 </br>
                 Clientes
               </p>
@@ -69,14 +69,8 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="lp-tdx-conheca-content">
-          <h2>Conheça a TDX</h2>
-          <p class="paragrafo2">
-          Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
-          <br><br>
-          Além de ferramentas que facilitam o processo e métodos simples e ágeis, também fomentamos a transformação das pessoas.
-          <br><br>
-          Por isso orientamos a todos e seus ecossistemas, através de uma experiência fim a fim. Mostramos as soluções inovadoras na prática, sem deixar de estar presentes no processo.
-          </p>
+          <h2><? the_field('titulo_conheca'); ?></h2>
+          <? the_field('texto_conheca'); ?>
           <div class="mt-0 mt-md-5">
             <a class="buttoncta"> CONHEÇA A TDX </a>
           </div>
@@ -95,18 +89,22 @@
         </div>
         <div class="mt-5">
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-3 mt-5 mt-md-0">
-              <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/1.svg" alt="Parceiros">
-            </div>
-            <div class="col-12 col-md-3 mt-5 mt-md-0">
-              <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/2.svg" alt="Parceiros">
-            </div>
-            <div class="col-12 col-md-3 mt-5 mt-md-0">
-              <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/3.svg" alt="Parceiros">
-            </div>
-            <div class="col-12 col-md-3 mt-5 mt-md-0">
-              <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/4.svg" alt="Parceiros">
-            </div>
+            <?php
+                // Check rows exists.   
+                if( have_rows('parceiros_tdx') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('parceiros_tdx'); $i++) : the_row();
+                        $imagem_url[$i] = get_sub_field('imagem');
+                ?>
+                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                    <img class="fade-in-bottom" src="<?=$imagem_url[$i];?>" alt="Parceiros">
+                </div>
+
+            <?php
+                // End loop.
+                endfor;
+                endif;
+            ?>
           </div>
         </div>
       </div>
@@ -234,19 +232,15 @@
   </div>
 </div>
 
-
 <div class="lp-tdx-como-fazemos text-center">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-como-fazemos-content">
-          <h2>como fazemos</h2>
-          <p class="paragrafo2">
-            Atuamos desde a descoberta do desafio do cliente, estudando a operação e elaborando hipóteses, para então desenvolver soluções customizadas. Construímos as fundações para seu negócio crescer e prosperar, em um ciclo virtuoso.
-          </p>
+            <h2><? the_field('titulo_como_fazemos'); ?></h2>          
+            <? the_field('texto_como_fazemos'); ?>
         </div>
-        <img class="fade-in-bottom hide-mobile" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/como-fazemos.svg" alt="Como fazemos TDX">
-        <img class="fade-in-bottom hide-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/graficomob.svg" alt="Como fazemos TDX">
+        <img class="fade-in-bottom" src="<?= $detect->isMobile() ? the_field('grafico_mobile_como_fazemos') : the_field('grafico_desktop_como_fazemos');?>" alt="Como fazemos TDX">
       </div>
     </div>
   </div>
@@ -593,7 +587,7 @@
 
 <!-- Bloco de Conteúdos -->
 <div id="contentTdx" class="home-content content-inovacao">
-<div id="triangle-down"></div>
+  <div id="triangle-down"></div>
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
@@ -609,7 +603,7 @@
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+            <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
           </div>
           <div class="content">
             <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -640,7 +634,7 @@
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+            <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
           </div>
           <div class="content">
             <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -670,7 +664,7 @@
           </div>
           <div class="detalhes">
             <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+            <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
           </div>
           <div class="content">
             <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -703,7 +697,7 @@
                       </div>
                       <div class="detalhes">
                         <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                        <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
                       </div>
                       <div class="content">
                         <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -730,7 +724,7 @@
                       </div>
                       <div class="detalhes">
                         <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                        <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
                       </div>
                       <div class="content">
                         <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -757,7 +751,7 @@
                       </div>
                       <div class="detalhes">
                         <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                        <p class="m-0 h-100">Por <strong>Ana Helena Lazaroni</strong></p>
                       </div>
                       <div class="content">
                         <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
