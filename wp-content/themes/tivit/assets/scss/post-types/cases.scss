@@ -87,7 +87,7 @@
 }
 
 // Section Destaques
-.destaques-item-cases{
+.destaques-cases-item{
     h2{
         font-size: 28px;
         line-height: 32px;
@@ -241,7 +241,7 @@
 }
 
 // Section Depoimento
-.depoimento-item-case{
+.depoimento-cases-item{
     .box{
         margin: 55px 0;
         .red{
@@ -270,9 +270,9 @@
 }
 
 // Section Conteúdo
-.conteudo-item-case{
+.conteudo-cases-item{
     .box{
-        margin-top: 72px;
+        margin: 72px 0;
         h2{
             font-size: 28px;
             line-height: 34px;
@@ -280,6 +280,89 @@
             text-transform: uppercase;
             color: $vermelho-tivit;
         }    
+    }
+}
+
+.links-externos-cases-item{
+    margin: 0px 0 50px 0;
+    .box{
+        border: 1px solid $cinza-light-tivit;
+        padding: 20px 30px;
+        min-height: 230px;
+        margin-bottom: 20px;
+        span{
+            font-size: 12px;
+            line-height: 16px;
+        }
+        h3{
+            font-size: 20px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+        a{
+            background: none;
+            border: none;
+            color: $vermelho-tivit;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+}
+
+.newsletter-cases-item{
+    background: #cad2d833;
+    padding: 40px 0;
+
+    h2{
+        color: $vermelho-tivit;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    label, .nome, .email, .celular, .segmento{
+        display: flex;
+        width: 100%;
+    }
+    p{
+        margin: 0;
+    }
+    input, select{
+        border: 0;
+        border-bottom: 1px solid $cinza-light-tivit;
+        background: none;
+        padding: 0;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        color: $cinza-dark-cyber-tivit;
+        font-size: 14px;
+        line-height: 21.29px;
+    }
+    input:focus, select:focus, textarea:focus{
+        outline: none;
+    }
+    .wpcf7-form-control.has-spinner.wpcf7-submit{
+        padding: 14px 67px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background: $vermelho-tivit;
+        border-radius: 30px;
+        width: 240px;
+        margin: 20px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -312,7 +395,7 @@
         }
     }
 
-    .destaques-item-cases{
+    .destaques-cases-item{
         margin-top: 70px;
         h2{
             text-align: center;
@@ -407,7 +490,7 @@
         }
     }
 
-    .depoimento-item-case{
+    .depoimento-cases-item{
         margin: 100px 0 50px 0;
         .box{
             p{
@@ -417,4 +500,18 @@
             }
         }
     }
+
+    .conteudo-cases-item{
+        .box{
+            margin: 50px 0 120px 0;
+            p{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        h2{
+            margin-bottom: 50px;
+        }
+    }
+
 }

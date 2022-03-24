@@ -61,7 +61,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Destaques -->
-<section class="destaques-item-cases">
+<section class="destaques-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
@@ -241,7 +241,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Depoimento -->
-<section class="depoimento-item-case">
+<section class="depoimento-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -274,10 +274,10 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Conteúdo -->
-<section class="conteudo-item-case">
+<section class="conteudo-cases-item">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-10 offset-md-1">
             <?php
                 // Check rows exists.   
                 if( have_rows('conteudo') ):
@@ -293,6 +293,94 @@ if(have_posts()) : while(have_posts()) : the_post();
                 endfor;
                 endif;
             ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Links Externos -->
+<section class="links-externos-cases-item">
+    <div class="container">
+        <?php
+            if($detect->isMobile()){
+                echo '<div class="row mx-auto my-auto justify-content-center">
+                        <div id="paymentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">';
+
+            }else{
+                echo '<div class="row">';
+            }
+
+            // Check rows exists.   
+            if( have_rows('links_externos') ):
+                // Loop through rows.
+                for($i=0; have_rows('links_externos'); $i++) : the_row();
+                    $link_category[$i] = get_sub_field('categoria');
+                    $link_title[$i] = get_sub_field('titulo');
+                    $link_description[$i] = get_sub_field('descricao');
+                    $link_url[$i] = get_sub_field('url_do_link');
+            ?>
+        
+            <!-- Desktop -->
+            <div class="col-12 col-md-4 hide-mobile">
+                <div class="box">
+                    <div class="category">
+                        <span><?=$link_category[$i]?></span>
+                    </div>
+                    <div class="title">
+                        <h3><?=$link_title[$i]?></h3>
+                    </div>
+                    <div class="description">
+                        <p><?=$link_description[$i]?></p>
+                    </div>
+                    <div class="button">
+                        <a href="<?=$link_url[$i]?>" target="_blank" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile slide -->
+            <div class="carousel-item col-md-4 hide-desktop heroslide4 payment <?=$i == 0 ? 'active' : '';?>">
+                <div class="col-11 m-0 p-0">
+                    <div class="box">
+                        <div class="category">
+                            <span><?=$link_category[$i]?></span>
+                        </div>
+                        <div class="title">
+                            <h3><?=$link_title[$i]?></h3>
+                        </div>
+                        <div class="description">
+                            <p><?=$link_description[$i]?></p>
+                        </div>
+                        <div class="button">
+                            <a href="<?=$link_url[$i]?>" target="_blank" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+            <?php
+                // End loop.
+                endfor;
+                endif;
+            
+            if($detect->isMobile()){
+                echo '</div>
+                    </div>
+                </div>';
+            }else{
+                echo '</div>';
+            }
+        ?>            
+    </div>
+</section>
+
+<!-- Section Newsletter -->
+<section class="newsletter-cases-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <?=do_shortcode('[contact-form-7 id="220" title="Newsletter"]');?>
             </div>
         </div>
     </div>
@@ -529,7 +617,6 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
   </div>
 </section>
-
 
 <?php
 endwhile; endif;
