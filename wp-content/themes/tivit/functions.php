@@ -64,3 +64,9 @@ require_once( get_template_directory() . '/inc/theme.options.php' );
 
 // Include Page.Builders Functions
 require_once( get_template_directory() . '/inc/page.builder/page.builder.php' );
+
+
+// Mobile Detect
+require_once( get_template_directory() . '/libs/Mobile_Detect.php' );
+
+$detect = new Mobile_Detect;

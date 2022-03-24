@@ -1,13 +1,14 @@
 <?php /* Template Name: Landing TDX */ ?>
-<?php get_header(); ?>
+<?php get_header(); 
+?>
 
-<div class="lp-tbanks-hero lp-tdx-hero">
+<div class="lp-tbanks-hero lp-tdx-hero" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile') : the_field('banner_desktop'); ?>') no-repeat center center; background-size: cover;">
   <div class="container">
     <div class="row">
       <div class="col-md-12 lp-banks-hero-content text-center">
         <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/tdxlogo.svg" alt="Tdx powered by TIVIT">
         <div class="alignBannerText">
-          <h1 class="fade-in-bottom">Juntos, rumo ao </br><b>extraordinário</b></h1>
+          <h1 class="fade-in-bottom"><? the_field('chamada'); ?></h1>
         </div>
       </div>
     </div>

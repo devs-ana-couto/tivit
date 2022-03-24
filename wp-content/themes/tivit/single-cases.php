@@ -1,7 +1,5 @@
 <?php
 get_header();
-require_once 'libs/Mobile_Detect.php';
-$detect = new Mobile_Detect;
 
 if(have_posts()) : while(have_posts()) : the_post();
 ?>
