@@ -87,7 +87,7 @@
 }
 
 // Section Destaques
-.destaques-item-cases{
+.destaques-cases-item{
     h2{
         font-size: 28px;
         line-height: 32px;
@@ -241,7 +241,7 @@
 }
 
 // Section Depoimento
-.depoimento-item-case{
+.depoimento-cases-item{
     .box{
         margin: 55px 0;
         .red{
@@ -270,7 +270,7 @@
 }
 
 // Section Conteúdo
-.conteudo-item-case{
+.conteudo-cases-item{
     .box{
         margin: 72px 0;
         h2{
@@ -283,7 +283,7 @@
     }
 }
 
-.links-externos-item-case{
+.links-externos-cases-item{
     margin: 0px 0 50px 0;
     .box{
         border: 1px solid $cinza-light-tivit;
@@ -312,7 +312,7 @@
     }
 }
 
-.newsletter-item-case{
+.newsletter-cases-item{
     background: #cad2d833;
     padding: 40px 0;
 
@@ -395,7 +395,7 @@
         }
     }
 
-    .destaques-item-cases{
+    .destaques-cases-item{
         margin-top: 70px;
         h2{
             text-align: center;
@@ -490,7 +490,7 @@
         }
     }
 
-    .depoimento-item-case{
+    .depoimento-cases-item{
         margin: 100px 0 50px 0;
         .box{
             p{
@@ -501,7 +501,7 @@
         }
     }
 
-    .conteudo-item-case{
+    .conteudo-cases-item{
         .box{
             margin: 50px 0 120px 0;
             p{

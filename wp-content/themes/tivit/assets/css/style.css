@@ -4845,7 +4845,7 @@ html, body, * {
     color: #F20024;
     border: 1px solid #F20024; }
 
-.destaques-item-cases h2 {
+.destaques-cases-item h2 {
   font-size: 28px;
   line-height: 32px;
   font-weight: 700;
@@ -4853,16 +4853,16 @@ html, body, * {
   text-transform: uppercase;
   margin-bottom: 30px; }
 
-.destaques-item-cases .box {
+.destaques-cases-item .box {
   border: 1px solid #CAD2D8;
   height: 100px;
   display: flex;
   align-items: center;
   margin: 0 0 10px 0; }
-  .destaques-item-cases .box img {
+  .destaques-cases-item .box img {
     height: 40px;
     width: 40px; }
-  .destaques-item-cases .box h3 {
+  .destaques-cases-item .box h3 {
     margin: 0;
     font-size: 18px;
     line-height: 24px;
@@ -4870,7 +4870,7 @@ html, body, * {
     color: #262626;
     text-transform: uppercase;
     width: 206px; }
-  .destaques-item-cases .box .row {
+  .destaques-cases-item .box .row {
     width: 100%;
     margin: 0 auto; }
 
@@ -4963,51 +4963,51 @@ html, body, * {
   width: 100%;
   height: 100%; }
 
-.depoimento-item-case .box {
+.depoimento-cases-item .box {
   margin: 55px 0; }
-  .depoimento-item-case .box .red {
+  .depoimento-cases-item .box .red {
     color: #F20024; }
-  .depoimento-item-case .box h4 {
+  .depoimento-cases-item .box h4 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     margin: 0; }
-  .depoimento-item-case .box h5 {
+  .depoimento-cases-item .box h5 {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     margin: 0 0 15px 0; }
-  .depoimento-item-case .box p {
+  .depoimento-cases-item .box p {
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
     margin: 0 auto;
     width: 300px; }
 
-.conteudo-item-case .box {
+.conteudo-cases-item .box {
   margin: 72px 0; }
-  .conteudo-item-case .box h2 {
+  .conteudo-cases-item .box h2 {
     font-size: 28px;
     line-height: 34px;
     font-weight: 700;
     text-transform: uppercase;
     color: #F20024; }
 
-.links-externos-item-case {
+.links-externos-cases-item {
   margin: 0px 0 50px 0; }
-  .links-externos-item-case .box {
+  .links-externos-cases-item .box {
     border: 1px solid #CAD2D8;
     padding: 20px 30px;
     min-height: 230px;
     margin-bottom: 20px; }
-    .links-externos-item-case .box span {
+    .links-externos-cases-item .box span {
       font-size: 12px;
       line-height: 16px; }
-    .links-externos-item-case .box h3 {
+    .links-externos-cases-item .box h3 {
       font-size: 20px;
       line-height: 24px;
       text-transform: uppercase; }
-    .links-externos-item-case .box a {
+    .links-externos-cases-item .box a {
       background: none;
       border: none;
       color: #F20024;
@@ -5017,10 +5017,10 @@ html, body, * {
       padding: 0;
       margin-top: 30px; }
 
-.newsletter-item-case {
+.newsletter-cases-item {
   background: #cad2d833;
   padding: 40px 0; }
-  .newsletter-item-case h2 {
+  .newsletter-cases-item h2 {
     color: #F20024;
     font-size: 24px;
     line-height: 28px;
@@ -5028,25 +5028,25 @@ html, body, * {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-bottom: 10px; }
-  .newsletter-item-case label, .newsletter-item-case .nome, .newsletter-item-case .email, .newsletter-item-case .celular, .newsletter-item-case .segmento {
+  .newsletter-cases-item label, .newsletter-cases-item .nome, .newsletter-cases-item .email, .newsletter-cases-item .celular, .newsletter-cases-item .segmento {
     display: flex;
     width: 100%; }
-  .newsletter-item-case p {
+  .newsletter-cases-item p {
     margin: 0; }
-  .newsletter-item-case input, .newsletter-item-case select {
+  .newsletter-cases-item input, .newsletter-cases-item select {
     border: 0;
     border-bottom: 1px solid #CAD2D8;
     background: none;
     padding: 0;
     width: 100%;
     margin: 20px 0 20px 0; }
-  .newsletter-item-case input::placeholder, .newsletter-item-case select::placeholder, .newsletter-item-case textarea::placeholder {
+  .newsletter-cases-item input::placeholder, .newsletter-cases-item select::placeholder, .newsletter-cases-item textarea::placeholder {
     color: #262626;
     font-size: 14px;
     line-height: 21.29px; }
-  .newsletter-item-case input:focus, .newsletter-item-case select:focus, .newsletter-item-case textarea:focus {
+  .newsletter-cases-item input:focus, .newsletter-cases-item select:focus, .newsletter-cases-item textarea:focus {
     outline: none; }
-  .newsletter-item-case .wpcf7-form-control.has-spinner.wpcf7-submit {
+  .newsletter-cases-item .wpcf7-form-control.has-spinner.wpcf7-submit {
     padding: 14px 67px;
     text-transform: uppercase;
     font-size: 14px;
@@ -5077,19 +5077,19 @@ html, body, * {
     .empresa-cases-item .col-12 {
       display: flex;
       align-items: center; }
-  .destaques-item-cases {
+  .destaques-cases-item {
     margin-top: 70px; }
-    .destaques-item-cases h2 {
+    .destaques-cases-item h2 {
       text-align: center; }
-    .destaques-item-cases .box {
+    .destaques-cases-item .box {
       height: 266px;
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .destaques-item-cases .box img {
+      .destaques-cases-item .box img {
         height: 80px;
         width: 80px; }
-      .destaques-item-cases .box h3 {
+      .destaques-cases-item .box h3 {
         text-align: center;
         width: 203px;
         margin: 25px auto 0 auto; }
@@ -5139,16 +5139,16 @@ html, body, * {
         line-height: 44px;
         font-weight: 600;
         padding: 30px; }
-  .depoimento-item-case {
+  .depoimento-cases-item {
     margin: 100px 0 50px 0; }
-    .depoimento-item-case .box p {
+    .depoimento-cases-item .box p {
       width: 763px;
       font-size: 28px;
       line-height: 34px; }
-  .conteudo-item-case .box {
+  .conteudo-cases-item .box {
     margin: 50px 0 120px 0; }
-    .conteudo-item-case .box p {
+    .conteudo-cases-item .box p {
       font-size: 18px;
       line-height: 24px; }
-  .conteudo-item-case h2 {
+  .conteudo-cases-item h2 {
     margin-bottom: 50px; } }

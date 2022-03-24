@@ -61,7 +61,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Destaques -->
-<section class="destaques-item-cases">
+<section class="destaques-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
@@ -241,7 +241,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Depoimento -->
-<section class="depoimento-item-case">
+<section class="depoimento-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -274,7 +274,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Conteúdo -->
-<section class="conteudo-item-case">
+<section class="conteudo-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
@@ -299,7 +299,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Links Externos -->
-<section class="links-externos-item-case">
+<section class="links-externos-cases-item">
     <div class="container">
         <?php
             if($detect->isMobile()){
@@ -375,9 +375,8 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </section>
 
-
 <!-- Section Newsletter -->
-<section class="newsletter-item-case">
+<section class="newsletter-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -618,7 +617,6 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
   </div>
 </section>
-
 
 <?php
 endwhile; endif;
