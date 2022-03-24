@@ -248,192 +248,104 @@
 
 <div class="lp-tdx-metodologia text-center">
   <div class="container">
-    <div class="lp-tdx-metodologia-content">
-      <h2>Entrega de valor</h2>
-      <p class="paragrafo2">
-      Desenhamos, desenvolvemos e otimizamos softwares customizados para cada negócio.
-      </p>
-    </div>
-    <div class="row hide-mobile">
-      <div class="col-12 col-md-6 bl">
-        <div class=" card">
-          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
-          <h3>Design, Produtos & Plataformas</h3>
-          <div class="d-flex justify-content-center align-items-center w-100">
-          <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
-          </div>
-          <div class="paragrafo3 list text-center">
-            Experiências extraordinárias<br>
-            Design de produtos e serviços<br>
-            Estratégia digital<br>
-            Transformação digital<br>
-            Desenvolvimento Ágil e DevOps<br>
-            Evolução de produtos digitais<br>
-          </div>
-          <!-- Divisor -->
-          <div class="divisor"></div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 bl">
-        <div class=" card">
-          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
-          <h3>Data & Analytics</h3>
-          <div class="d-flex justify-content-center align-items-center w-100">
-            <p class="paragrafo3 mx">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
-          </div>
-          <div class="paragrafo3 list text-center">
-            Estratégia e inteligência<br>
-            Arquitetura e infraestrutura de recursos<br>
-            Fluxo e processamento de informações<br>
-            Insights para negócios<br>
-            Governança, política e segurança<br>
-            <br>
-          </div>
-          <!-- Divisor -->
-          <div class="divisor"></div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 bl">
-        <div class=" card">
-          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
-          <h3>Modernização & Otimização</h3>
-          <div class="d-flex justify-content-center align-items-center w-100">
-            <p class="paragrafo3 mx">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
-          </div>
-          <div class="paragrafo3 list text-center">
-            Descoberta e estratégia<br>
-            Modernização de aplicações<br>
-            Otimização de ambientes em nuvem<br>
-            Integrações estratégicas<br>
-            Digitalização e transformação de processos<br>
-            Digital Workplace<br>
-          </div>
-          <!-- Divisor -->
-          <div class="divisor"></div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 bl">
-        <div class=" card">
-          <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
-          <h3>Sustentação & Crescimento</h3>
-          <div class="d-flex justify-content-center align-items-center w-100">
-            <p class="paragrafo3 mx">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
-          </div>
-          <div class="paragrafo3 list text-center">
-            Sustentação de operações 24/7<br>
-            Sustentação de ambientes legados<br>
-            Modelos de operação inteligentes<br>
-            Evolução e continuidade de negócios estratégicos<br>
-            Centro de Excelência SAP<br>
-            <Br>
-          </div>
-        </div>
-        <a href="#" class="btn btn-conheca hide-desktop">Conheça a TDX</a>
-      </div>
-      <div class="col-12 hide-mobile">
-        <a href="#" class="btn btn-conheca">Conheça todas nossas soluções</a>
-      </div>
-    </div>
 
-    <!-- mobile slide -->
-    <div class="row mx-auto my-auto justify-content-center hide-desktop">
-      <div id="valuesMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-              <div class="carousel-item heroslide4 values active">
-                  <div class="col-11 m-0 p-0">
-                    <div class=" card">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/pc-icon.svg" alt="Tdx powered by TIVIT">
-                      <h3>Design, Produtos & Plataformas</h3>
-                      <div class="d-flex justify-content-center align-items-center w-100">
-                      <p class="paragrafo3 mx">Soluções digitais inovadoras na prática: desenvolvemos plataformas completas, que priorizam a experiência do usuário (UX) e a potencialização dos resultados.</p>
-                      </div>
-                      <div class="paragrafo3 list text-center">
-                        Experiências extraordinárias<br>
-                        Design de produtos e serviços<br>
-                        Estratégia digital<br>
-                        Transformação digital<br>
-                        Desenvolvimento Ágil e DevOps<br>
-                        Evolução de produtos digitais<br>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 values">
-                  <div class="col-11 m-0 p-0">
-                    <div class=" card">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico2-icon.svg" alt="Tdx powered by TIVIT">
-                      <h3>Data & Analytics</h3>
-                      <div class="d-flex justify-content-center align-items-center w-100">
-                        <p class="paragrafo3 mx">Tecnologias, referências e práticas direcionadas para liberar todo o potencial dos dados e gerar relevância para negócios extraordinários.</p>
-                      </div>
-                      <div class="paragrafo3 list text-center">
-                        Estratégia e inteligência<br>
-                        Arquitetura e infraestrutura de recursos<br>
-                        Fluxo e processamento de informações<br>
-                        Insights para negócios<br>
-                        Governança, política e segurança<br>
-                        <br>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 values">
-                  <div class="col-11 m-0 p-0">
-                    <div class=" card">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/codigo-icon.svg" alt="Tdx powered by TIVIT">
-                      <h3>Modernização & Otimização</h3>
-                      <div class="d-flex justify-content-center align-items-center w-100">
-                        <p class="paragrafo3 mx">Digitalização e transformação de aplicações legadas e ambientes ultrapassados para habilitar a escalada sustentável do negócio.</p>
-                      </div>
-                      <div class="paragrafo3 list text-center">
-                        Descoberta e estratégia<br>
-                        Modernização de aplicações<br>
-                        Otimização de ambientes em nuvem<br>
-                        Integrações estratégicas<br>
-                        Digitalização e transformação de processos<br>
-                        Digital Workplace<br>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 values">
-                  <div class="col-11 m-0 p-0">
-                    <div class=" card">
-                      <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/icons/grafico-icon.svg" alt="Tdx powered by TIVIT">
-                      <h3>Sustentação & Crescimento</h3>
-                      <div class="d-flex justify-content-center align-items-center w-100">
-                        <p class="paragrafo3 mx">Serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.</p>
-                      </div>
-                      <div class="paragrafo3 list text-center">
-                        Sustentação de operações 24/7<br>
-                        Sustentação de ambientes legados<br>
-                        Modelos de operação inteligentes<br>
-                        Evolução e continuidade de negócios estratégicos<br>
-                        Centro de Excelência SAP<br>
-                        <Br>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="w-100 position-relative mt-4">
-            <a class="carousel-control-prev bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>  
-            <div class="d-flex flex-row justify-content-center counter4 mt-3">
-              <div class="numactive4"></div><div class="numseparation4"></div><div class="numtotal4"></div>
+    <div class="lp-tdx-metodologia-content">
+        
+      <? 
+      $entrega_de_valor = get_field('entrega_de_valor');
+      if($entrega_de_valor): ?>
+      <h2><?=$entrega_de_valor['titulo'] ?></h2>
+      <p class="paragrafo2">
+      <?=$entrega_de_valor['descricao'] ?>
+      </p>
+      
+    </div>
+    <?php
+        if($detect->isMobile()){
+            echo '<div class="row mx-auto my-auto justify-content-center"><div id="valuesMobileCarousel" class="carousel slide p-0 hide-desktop" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">';
+        }else{
+            echo '<div class="row">';
+        }
+
+        $count = count($entrega_de_valor['item']);
+        if($entrega_de_valor['item']):
+            // Loop through rows.
+            for($i=0; $i < $count; $i++) : the_row();
+                $icone_entrega[$i] = $entrega_de_valor['item'][$i]['icone'];
+                $title_entrega[$i] = $entrega_de_valor['item'][$i]['titulo'];
+                $description_entrega[$i] = $entrega_de_valor['item'][$i]['descricao'];
+                $itens_entrega[$i] = $entrega_de_valor['item'][$i]['itens'];
+      ?>
+        <div class="col-12 col-md-6 bl hide-mobile">
+            <div class="card">
+                <img class="fade-in-bottom" src="<?=$icone_entrega[$i]?>" alt="Tdx powered by TIVIT">
+
+                <h3> <?=$title_entrega[$i]?> </h3>
+                <div class="d-flex justify-content-center align-items-center w-100">
+                <p class="paragrafo3 mx"><?=$description_entrega[$i]?></p>
+                </div>
+                <div class="paragrafo3 list text-center">
+                <?=$itens_entrega[$i]?>
+                </div>
+                <!-- Divisor -->
+                <div class="divisor"></div>
             </div>
-            <a class="carousel-control-next bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-          </div>
-      </div>
+        </div>
+
+        <!-- mobile slide -->
+        <div class="carousel-item heroslide4 hide-desktop values <?=$i == 0 ? 'active' : '';?>">
+            <div class="col-11 m-0 p-0">
+                <div class="card">
+                    <img class="fade-in-bottom" src="<?=$icone_entrega[$i]?>" alt="Tdx powered by TIVIT">
+                    <h3> <?=$title_entrega[$i]?> </h3>
+                    <div class="d-flex justify-content-center align-items-center w-100">
+                    <p class="paragrafo3 mx"><?=$description_entrega[$i]?></p>
+                    </div>
+                    <div class="paragrafo3 list text-center">
+                    <?=$itens_entrega[$i]?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <? 
+            endfor;
+            endif;
+            endif; 
+
+            if($detect->isMobile()){
+                echo '</div>
+                    </div>
+                </div>';
+            }else{
+                echo '</div>';
+            }
+        ?>
+    
+    <div class="w-100 position-relative mt-4">
+        <a class="carousel-control-prev bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>  
+        <div class="d-flex flex-row justify-content-center counter4 mt-3">
+            <div class="numactive4"></div>
+            <div class="numseparation4"></div>
+            <div class="numtotal4"></div>
+        </div>
+        <a class="carousel-control-next bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
     </div>
 
     <div class="hide-desktop mt-4">
       <a class="btn">Conheça todas nossas soluções</a>
     </div>
 
+    <div class="col-12 hide-mobile">
+        <a href="#" class="btn btn-conheca">Conheça todas nossas soluções</a>
+    </div>
+
+            
   </div>
 </div>
 
