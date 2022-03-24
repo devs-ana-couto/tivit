@@ -655,10 +655,13 @@ html, body, * {
     transition: all 1.05s ease-out; }
 
 .home-portifolio {
-  height: 640px;
+  height: 100%;
   margin-bottom: 150px; }
   .home-portifolio .row {
-    height: 640px; }
+    height: 680px; }
+    @media (max-width: 760px) {
+      .home-portifolio .row {
+        height: 640px; } }
   .home-portifolio .home-portifolio-image {
     background: url("../../assets/images/home/mobileportpicture.jpg") no-repeat center top;
     background-size: contain; }
@@ -1163,7 +1166,9 @@ html, body, * {
       border-top: 40px solid white !important;
       position: absolute; }
     .home-portifolio .mascaraDobra3 {
-      left: 19%;
+      left: 0;
+      right: 0;
+      position: absolute;
       top: 0; }
     .home-portifolio .home-portifolio-content .txt {
       margin-top: 150px;

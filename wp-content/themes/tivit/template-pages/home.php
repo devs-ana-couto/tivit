@@ -128,9 +128,9 @@
             <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/portmaskmobile.svg" alt="mask">
           </div>
         </div>
-        <!-- <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
+        <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="mask">
-        </div> -->
+        </div>
       </div>
     </div>
   </div>

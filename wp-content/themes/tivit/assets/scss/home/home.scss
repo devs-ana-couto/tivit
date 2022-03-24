@@ -136,10 +136,13 @@
 
 // Portifolio
 .home-portifolio{
-  height: 640px;
+  height: 100%;
   margin-bottom: 150px;
   .row{
-    height: 640px;
+    height: 680px;
+    @media(max-width: 760px){
+      height: 640px;
+    }
   }
   .home-portifolio-image{
     background: url('../../assets/images/home/mobileportpicture.jpg') no-repeat center top;
@@ -799,8 +802,9 @@
       position: absolute;
     }
     .mascaraDobra3{
-      left: 19%;
-      // position: absolute;
+      left: 0;
+      right: 0;
+      position: absolute;
       top: 0;
     }
     .home-portifolio-content{
