@@ -1,7 +1,7 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
-<div class="home-hero">
+<section class="home-hero">
 
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -74,9 +74,9 @@
     </div>
   </div>
 
-</div>
+</section>
 
-<div class="home-intro">
+<section class="home-intro">
   <div class="w-100 transition">
     <img class="imgtransition position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/trans1flp.svg" alt="transition1">
   </div>
@@ -95,7 +95,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <section class="port">
   <div class="d-flex justify-content-center bgport position-absolute">
@@ -133,9 +133,9 @@
   </div>
 </section>
 
-<div class="home-content">
-<div class="d-flex justify-content-center transitionContent position-absolute"></div>
-<div id="triangle-down"></div>
+<section class="home-content">
+  <div class="d-flex justify-content-center transitionContent position-absolute"></div>
+  <div id="triangle-down"></div>
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
@@ -234,9 +234,9 @@
       <button class="btncontent">VER TODOS OS NOSSOS CONTEÚDOS</button>
     </div>
   </div>
-</div>
+</section>
 
-<div class="home-cases">
+<section class="home-cases">
   <div class="d-flex justify-content-center transitionCases position-absolute"></div>
   <div class="d-flex justify-content-center bgtriangulo position-absolute"></div>
   <div class="container divOpacity">
@@ -364,7 +364,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute"></div>

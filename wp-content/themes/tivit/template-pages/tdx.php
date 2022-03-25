@@ -323,6 +323,9 @@
             }
         ?>
     
+   
+
+    <div class="hide-desktop mt-4">
     <div class="w-100 position-relative mt-4">
         <a class="carousel-control-prev bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -336,8 +339,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
     </div>
-
-    <div class="hide-desktop mt-4">
       <a class="btn">Conheça todas nossas soluções</a>
     </div>
 
