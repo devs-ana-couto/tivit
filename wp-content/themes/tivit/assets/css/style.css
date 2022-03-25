@@ -1518,7 +1518,7 @@ html, body, * {
         text-align: left; } }
 
 #pecConheca {
-  padding: 0 0 140px 0; }
+  padding: 0px 140px 0; }
   #pecConheca .lp-tbanks-conheca-content p {
     max-width: 850px; }
 
@@ -1718,6 +1718,7 @@ html, body, * {
     font-weight: 600;
     color: #262626;
     margin-bottom: 50px;
+    margin-top: 120px;
     text-transform: uppercase; }
     @media (max-width: 768px) {
       #pecConheca h2.title {

@@ -628,7 +628,7 @@
     </div>
 
     <!-- Bloco Mobile Carrossel -->
-    <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
+    <div id="carouselCustom" class="container-fluid p-0 text-center my-3 hide-desktop">
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
