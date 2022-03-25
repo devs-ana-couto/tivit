@@ -523,7 +523,7 @@
     </div>
 
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
-      <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="customerCarouselHome" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide3 customers active">
                   <div class="col-6 col-md-2">
@@ -581,13 +581,13 @@
             </div>
           </div>
           <div class="w-100 position-relative mt-2">
-            <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>  
             <div class="d-flex flex-row justify-content-center counter3 mt-3">
               <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
             </div>
-            <a class="carousel-control-next bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="next">
+            <a class="carousel-control-next bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
           </div>
