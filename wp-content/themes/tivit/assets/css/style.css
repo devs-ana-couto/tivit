@@ -1477,6 +1477,10 @@ html, body, * {
     margin-top: -50px; }
   .pec-hero .mask {
     max-width: 1400px; }
+  .pec-hero .maskDiv img {
+    top: 10%;
+    left: 0;
+    width: 100%; }
   .pec-hero .customNumbers {
     position: absolute;
     color: white;
@@ -1493,13 +1497,25 @@ html, body, * {
       padding: 0px 0 0px 0; }
       #pecCounter .col-12:first-child, #pecCounter .col-12:nth-child(2n) {
         margin-bottom: 50px; } }
+  #pecCounter .numberMobile {
+    text-align: center; }
+    #pecCounter .numberMobile small {
+      color: #F20024;
+      font-size: 14px;
+      font-weight: lighter; }
   #pecCounter .lp-tbanks-credibilidade p span {
     color: #262626; }
   #pecCounter .lp-tbanks-credibilidade p .tag {
     right: 18%;
     margin-top: -30px; }
+    @media (max-width: 768px) {
+      #pecCounter .lp-tbanks-credibilidade p .tag {
+        right: -9%; } }
   #pecCounter .lp-tbanks-credibilidade .custom-text {
     max-width: 230px; }
+    @media (max-width: 768px) {
+      #pecCounter .lp-tbanks-credibilidade .custom-text {
+        text-align: left; } }
 
 #pecConheca {
   padding: 0 0 140px 0; }
@@ -1513,11 +1529,21 @@ html, body, * {
       margin-bottom: 0px !important; } }
   #pecPort .home-portifolio .home-portifolio-image {
     background: url("../../assets/images/pessoas-e-carreiras/programas.jpg") no-repeat center center; }
+    @media (max-width: 760px) {
+      #pecPort .home-portifolio .home-portifolio-image {
+        background: url("../../assets/images/pessoas-e-carreiras/portmobile.jpg") no-repeat center center;
+        background-size: cover; } }
   #pecPort .home-portifolio .home-portifolio-content .txt {
     max-width: 500px; }
-  #pecPort .home-portifolio .home-portifolio-content a:hover .desc {
-    opacity: 1;
-    transition: 2s all; }
+  #pecPort .home-portifolio .home-portifolio-content .cta {
+    text-align: center;
+    width: 250px;
+    margin-top: 50px; }
+    #pecPort .home-portifolio .home-portifolio-content .cta small {
+      font-size: 16px;
+      color: white;
+      font-weight: lighter;
+      line-height: 1.3; }
   #pecPort .home-portifolio .desc {
     color: white;
     font-size: 18px;
@@ -1526,7 +1552,8 @@ html, body, * {
     bottom: 5%;
     right: 10%;
     max-width: 420px;
-    opacity: 0;
+    opacity: 1;
+    z-index: 50;
     transition: 2s all; }
 
 .valorizacao {
@@ -1537,15 +1564,43 @@ html, body, * {
     color: #262626;
     margin-bottom: 40px;
     text-transform: uppercase; }
+    @media (max-width: 760px) {
+      .valorizacao h2.title {
+        margin-top: 200px; } }
   .valorizacao .box {
     padding: 110px !important;
     height: 310px !important; }
     @media (max-width: 760px) {
       .valorizacao .box {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        margin-right: 18px !important;
+        padding: 60px !important; } }
+  @media (max-width: 767px) {
+    .valorizacao .carousel-inner .carousel-item > div {
+      display: none; }
+    .valorizacao .carousel-inner .carousel-item > div:first-child {
+      display: block; }
+    .valorizacao .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block; }
+    .valorizacao .carousel-item-prev:not(.carousel-item-end), .valorizacao .active.carousel-item-start {
+      transform: translateX(-91.7%) !important; }
+    .valorizacao .carousel-item-next:not(.carousel-item-start), .valorizacao .active.carousel-item-end {
+      transform: translateX(91.7%) !important; }
+    .valorizacao .carousel-inner .carousel-item.active,
+    .valorizacao .carousel-inner .carousel-item-next,
+    .valorizacao .carousel-inner .carousel-item-prev {
+      display: flex; } }
 
 #pecDepoimentos {
   margin-top: 147px; }
+  @media (max-width: 767px) {
+    #pecDepoimentos {
+      margin-top: 70px;
+      margin-bottom: 50px; }
+      #pecDepoimentos .mobileRelative {
+        display: flex;
+        position: relative;
+        justify-content: center; } }
   #pecDepoimentos .carousel-control-prev-icon {
     background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
     width: 13px; }
@@ -1590,9 +1645,16 @@ html, body, * {
     color: #262626;
     margin-bottom: 50px;
     text-transform: uppercase; }
+    @media (max-width: 760px) {
+      #pecOferece h2.title {
+        margin-bottom: 30px; } }
   #pecOferece .lp-tbanks-services .bg-white {
     border-left: 3px solid #F20024;
     height: 100%; }
+    @media (max-width: 760px) {
+      #pecOferece .lp-tbanks-services .bg-white {
+        height: 400px;
+        margin-right: 20px; } }
     #pecOferece .lp-tbanks-services .bg-white h3 {
       color: #F20024;
       height: 110px;
@@ -1611,6 +1673,9 @@ html, body, * {
     border: 1px solid #CAD2D8;
     text-align: center;
     height: 100%; }
+    @media (max-width: 760px) {
+      #pecOferece div.box {
+        margin-right: 20px; } }
   #pecOferece div.content {
     max-width: 265px; }
     #pecOferece div.content h2 {
@@ -1622,6 +1687,21 @@ html, body, * {
       font-size: 18px; }
   #pecOferece .row > .col-sm-12, #pecOferece .row > .col-12 {
     margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    #pecOferece .carousel-inner .carousel-item > div {
+      display: none; }
+    #pecOferece .carousel-inner .carousel-item > div:first-child {
+      display: block; }
+    #pecOferece .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block; }
+    #pecOferece .carousel-item-prev:not(.carousel-item-end), #pecOferece .active.carousel-item-start {
+      transform: translateX(-91.7%) !important; }
+    #pecOferece .carousel-item-next:not(.carousel-item-start), #pecOferece .active.carousel-item-end {
+      transform: translateX(91.7%) !important; }
+    #pecOferece .carousel-inner .carousel-item.active,
+    #pecOferece .carousel-inner .carousel-item-next,
+    #pecOferece .carousel-inner .carousel-item-prev {
+      display: flex; } }
 
 #pecConheca {
   padding: 0;
@@ -1629,16 +1709,21 @@ html, body, * {
   #pecConheca #triangle-down {
     border-top: 28px solid #F5F6F7; }
   #pecConheca .container {
-    padding: 0px 0px 72px 0; }
+    padding: 0px 0px 0px 0; }
     @media (min-width: 768px) {
       #pecConheca .container {
-        padding: 110px 0px 72px 0; } }
+        padding: 0px 0px 72px 0; } }
   #pecConheca h2.title {
-    font-size: 36px !important;
+    font-size: 36px;
     font-weight: 600;
     color: #262626;
     margin-bottom: 50px;
     text-transform: uppercase; }
+    @media (max-width: 768px) {
+      #pecConheca h2.title {
+        font-size: 28px;
+        margin-top: 80px;
+        margin-bottom: 30px; } }
   #pecConheca #carouselCustom {
     padding-bottom: 0; }
     @media (min-width: 768px) {
@@ -1703,6 +1788,10 @@ html, body, * {
 
 #pecInterno #pecInternoDepoimentos {
   margin-top: 120px; }
+  @media (max-width: 768px) {
+    #pecInterno #pecInternoDepoimentos {
+      margin-top: 90px;
+      margin-bottom: 80px; } }
 #pecInterno .counter3 {
   margin-left: 15px;
   margin-right: 15px;
@@ -1732,11 +1821,17 @@ html, body, * {
     margin-right: 10px; }
 #pecInterno .carousel-control-prev, #pecInterno .carousel-control-next {
   top: 35%; }
+  @media (max-width: 768px) {
+    #pecInterno .carousel-control-prev, #pecInterno .carousel-control-next {
+      top: 0; } }
 
 #pecVagas {
   background: #262626; }
   #pecVagas .container {
     padding: 110px 0 105px 0; }
+    @media (max-width: 768px) {
+      #pecVagas .container {
+        padding: 80px 0 70px 0; } }
     #pecVagas .container h2.title {
       font-size: 36px;
       font-weight: 600;
@@ -1774,6 +1869,9 @@ html, body, * {
         text-transform: uppercase;
         cursor: pointer;
         position: relative; }
+        @media (max-width: 768px) {
+          #pecVagas .container .items .card a {
+            margin-top: 20px; } }
         #pecVagas .container .items .card a:hover:after {
           margin-left: 18px; }
         #pecVagas .container .items .card a:after {
@@ -1784,6 +1882,9 @@ html, body, * {
           position: absolute; }
     #pecVagas .container .btnCta {
       margin-top: 50px; }
+      @media (max-width: 768px) {
+        #pecVagas .container .btnCta {
+          margin-top: 30px; } }
       #pecVagas .container .btnCta a {
         color: white;
         font-weight: 600;
@@ -1799,17 +1900,25 @@ html, body, * {
           transition: all .2s linear; }
     #pecVagas .container #faq {
       margin-top: 110px; }
+      @media (max-width: 768px) {
+        #pecVagas .container #faq {
+          margin-top: 80px; } }
       #pecVagas .container #faq h2.title {
         font-size: 28px;
         font-weight: 600;
         color: white;
         margin-bottom: 60px;
         text-transform: uppercase; }
+        @media (max-width: 768px) {
+          #pecVagas .container #faq h2.title {
+            line-height: 1.3;
+            max-width: 310px;
+            margin-bottom: 50px; } }
       #pecVagas .container #faq .block {
         max-width: 900px; }
       @media (max-width: 768px) {
         #pecVagas .container #faq .accordion {
-          margin: 10px; } }
+          margin: 20px; } }
       #pecVagas .container #faq .accordion-button:not(.collapsed) {
         background-color: transparent;
         color: white;
@@ -1820,6 +1929,9 @@ html, body, * {
         line-height: 1.4; }
       #pecVagas .container #faq .accordion-item {
         background-color: transparent; }
+        @media (max-width: 768px) {
+          #pecVagas .container #faq .accordion-item {
+            margin-bottom: 20px; } }
       #pecVagas .container #faq .accordion-body {
         color: white; }
       #pecVagas .container #faq .accordion-flush .accordion-item .accordion-button {
@@ -3408,6 +3520,9 @@ html, body, * {
     margin-top: 64px;
     margin-bottom: 34px;
     color: #262626; }
+    @media (max-width: 767px) {
+      .lp-tbanks-conheca .lp-tbanks-credibilidade {
+        margin-bottom: 0px; } }
     .lp-tbanks-conheca .lp-tbanks-credibilidade p {
       font-size: 18px;
       line-height: 24px; }

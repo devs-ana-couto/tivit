@@ -59,6 +59,13 @@
   .mask{
       max-width: 1400px;
   }
+  .maskDiv{
+    img{
+        top: 10%;
+        left: 0;
+        width: 100%;
+    }
+  }
   .customNumbers{
     position: absolute;
     color: white;
@@ -79,6 +86,14 @@
       margin-bottom: 50px;
     }
   }
+  .numberMobile{
+    text-align: center;
+    small{
+      color: $vermelho-tivit;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+  }
   .lp-tbanks-credibilidade{
     p span{
         color: #262626;
@@ -87,10 +102,16 @@
       .tag{
         right: 18%;
         margin-top: -30px;
+        @media (max-width: 768px){
+          right: -9%;
+        }
       }
     }
     .custom-text{
-        max-width: 230px;
+      max-width: 230px;
+      @media (max-width: 768px){
+        text-align: left;
+      }
     }
 }
 }
@@ -114,17 +135,24 @@
     }
     .home-portifolio-image{
       background: url('../../assets/images/pessoas-e-carreiras/programas.jpg') no-repeat center center;
+      @media(max-width: 760px){
+        background: url('../../assets/images/pessoas-e-carreiras/portmobile.jpg') no-repeat center center;
+        background-size: cover;
+      }
     }
     .home-portifolio-content{
       .txt{
         max-width: 500px;
       }
-      a{
-        &:hover{
-          .desc{
-            opacity: 1;
-            transition: 2s all;
-          }
+      .cta{
+        text-align: center;
+        width: 250px;
+        margin-top: 50px;
+        small{
+          font-size: 16px;
+          color: white;
+          font-weight: lighter;
+          line-height: 1.3;
         }
       }
     }
@@ -136,7 +164,8 @@
       bottom: 5%;
       right: 10%;
       max-width: 420px;
-      opacity: 0;
+      opacity: 1;
+      z-index: 50;
       transition: 2s all;
     }
   }
@@ -151,19 +180,57 @@
     color: #262626;
     margin-bottom: 40px;
     text-transform: uppercase;
+    @media(max-width: 760px){
+      margin-top: 200px;
+    }
   }
   .box{
     padding: 110px !important;
     height: 310px !important;
     @media(max-width: 760px){
       margin-bottom: 30px;
+      margin-right: 18px !important;
+      padding: 60px !important;
     }
   }
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-91.7%) !important;
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(91.7%) !important;
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+  }
+  
 }
 
 //Depoimentos
 #pecDepoimentos{
   margin-top: 147px;
+  @media (max-width: 767px) {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    .mobileRelative{
+      display: flex;
+      position: relative;
+      justify-content: center;
+    }
+  }
   .carousel-control-prev-icon{
     background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
     width: 13px;
@@ -220,11 +287,18 @@
     color: #262626;
     margin-bottom: 50px;
     text-transform: uppercase;
+    @media(max-width: 760px){
+      margin-bottom: 30px;
+    }
   }
   .lp-tbanks-services{
     .bg-white{
       border-left: 3px solid $vermelho-tivit;
       height: 100%;
+      @media(max-width: 760px){
+        height: 400px;
+        margin-right: 20px;
+      }
       h3{
         color: $vermelho-tivit;
         height: 110px;
@@ -249,6 +323,9 @@
     border: 1px solid #CAD2D8;
     text-align: center;
     height: 100%;
+    @media(max-width: 760px){
+      margin-right: 20px;
+    }
   }
   div.content{
     max-width: 265px;
@@ -265,6 +342,30 @@
   .row > .col-sm-12, .row > .col-12{
     margin-bottom: 30px;
   }
+
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-91.7%) !important;
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(91.7%) !important;
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+  }
 }
 
 #pecConheca{
@@ -274,16 +375,21 @@
   }
   .container{
     @media (min-width: 768px){
-      padding: 110px 0px 72px 0;
+      padding: 0px 0px 72px 0;
     }
-    padding: 0px 0px 72px 0;
+    padding: 0px 0px 0px 0;
   }
   h2.title{
-    font-size: 36px !important;
+    font-size: 36px;
     font-weight: 600;
     color: #262626;
     margin-bottom: 50px;
     text-transform: uppercase;
+    @media (max-width: 768px){
+      font-size: 28px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
   }
 
   #carouselCustom {
@@ -388,6 +494,10 @@
 #pecInterno{
   #pecInternoDepoimentos{
     margin-top: 120px;
+    @media (max-width: 768px) {
+      margin-top: 90px;
+      margin-bottom: 80px;
+    }
   }
   .counter3{
     margin-left: 15px;
@@ -427,6 +537,9 @@
   }
   .carousel-control-prev, .carousel-control-next{
     top: 35%;
+    @media (max-width: 768px) {
+      top: 0;
+    }
   }
 }
 
@@ -434,6 +547,9 @@
   background: #262626;
   .container{
     padding: 110px 0 105px 0;
+    @media (max-width: 768px) {
+      padding: 80px 0 70px 0;
+    }
     h2.title{
       font-size: 36px;
       font-weight: 600;
@@ -477,6 +593,9 @@
           text-transform: uppercase;
           cursor: pointer;
           position: relative;
+          @media (max-width: 768px) {
+            margin-top: 20px;
+          }
           &:hover{
             &:after{
               margin-left: 18px;
@@ -494,6 +613,9 @@
     }
     .btnCta{
       margin-top: 50px;
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
       a{
         color: white;
         font-weight: 600;
@@ -512,19 +634,27 @@
     }
     #faq{
       margin-top: 110px;
+      @media (max-width: 768px) {
+        margin-top: 80px;
+      }
       h2.title{
         font-size: 28px;
         font-weight: 600;
         color: white;
         margin-bottom: 60px;
         text-transform: uppercase;
+        @media (max-width: 768px) {
+          line-height: 1.3;
+          max-width: 310px;
+          margin-bottom: 50px;
+        }
       }
       .block{
         max-width: 900px;
       }
       .accordion{
         @media (max-width: 768px){
-          margin: 10px;
+          margin: 20px;
         }
       }
       .accordion-button:not(.collapsed){
@@ -538,6 +668,9 @@
       }
       .accordion-item{
         background-color: transparent;
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
       }
       .accordion-body{
         color: white;

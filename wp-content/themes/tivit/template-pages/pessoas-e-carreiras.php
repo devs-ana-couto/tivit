@@ -14,9 +14,12 @@
                   <a>Quero ver as vagas</a>
                 </div>
             </div>
-            <div class="customMargin d-flex justify-content-center align-items-center">
+            <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
                 <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
                 <p class="customNumbers">Números de <br /> setembro de 2021</p>
+            </div>
+            <div class="maskDiv text-center hide-desktop">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
             </div>
         </div>
       </div>
@@ -29,9 +32,13 @@
     <div class="row">
       <div class="col-12">
 
+      <div class="numberMobile hide-desktop">
+        <small>Números de Setembro 2021</small>
+      </div>
+
         <div class="lp-tbanks-credibilidade text-center">
           <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
                 <span>
                   <b>3,8</b>
@@ -45,7 +52,29 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <!-- Mobile section -->
+            <div class="col-12 col-md-4 hide-desktop">
+              <div class="row">
+                <div class="col-6">
+                  <p class="w-100 position-relative">
+                    <span>
+                      <b>3,8</b>
+                    </span>
+                    <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/glassdoor.svg" width="60" alt="Glass Door" />
+                  </p>
+                </div>
+                <div class="col-6">
+                  <div class="w-100 h-100 d-flex justify-content-start align-items-center">
+                      <p class="custom-text">
+                        Nota Glassdoor
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //// Mobile section -->
+
+            <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
                 <span>78%</span>
                 <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
@@ -57,7 +86,29 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-4">
+            <!-- Mobile section -->
+            <div class="col-12 col-md-4 hide-desktop">
+              <div class="row">
+                <div class="col-6">
+                  <p class="w-100 position-relative">
+                    <span>
+                      <b>78%</b>
+                    </span>
+                    <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
+                  </p>
+                </div>
+                <div class="col-6">
+                  <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                      <p class="custom-text">
+                        Recomendaria para um amigo
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //// Mobile section -->
+
+            <div class="col-12 col-md-4 hide-mobile">
               <p>
                 <span>50%</span>
               </p>
@@ -67,6 +118,27 @@
                   </p>
               </div>
             </div>  
+
+            <!-- Mobile section -->
+            <div class="col-12 col-md-4 hide-desktop">
+              <div class="row">
+                <div class="col-6">
+                  <p class="w-100 position-relative">
+                    <span>
+                      <b>50%</b>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-6">
+                  <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                      <p class="custom-text">
+                        Das vagas preenchidas com promoção interna
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //// Mobile section -->
 
           </div>
         </div>
@@ -97,30 +169,40 @@
 <section id="pecPort" class="port">
   <div class="home-portifolio">
     <div class="container">
-      <div class="position-relative home-portifolio-image">
+      <div class="home-portifolio-image">
         <div class="d-flex justify-content-center w-100">
           <div id="triangle-down"></div>
         </div>
-        <div class="row customposition">
+        <div class="row customposition position-relative">
           <div class="col-12">
             <div class="home-portifolio-content">
                 <div class="txt">
-                  <h3>conheça nossos programas</h3>
+                  <h3 class="hide-mobile">conheça nossos programas</h3>
                   <a href="#"><p class="active">TIVIT MULTICLOUD</p></a>
                   <a href="#"><p>ACELERA DEVS</p></a>
                   <a href="#"><p>Programa de Aceleração de Carreira + MOMENTO UP</p></a>
                   <a href="#"><p>Instituto TIVIT</p></a>
+                  <div class="d-flex justify-content-center align-items-center flex-column hide-desktop">
+                    <div class="cta">
+                      <small>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
+                      foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
+                      profissionalmente dentro da TIVIT. </small>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
+          <div class="col-12 hide-mobile">
+            <p class="position-absolute desc"> Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
+              foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
+              profissionalmente dentro da TIVIT. </p>
         </div>
-        <div class="col-12">
-          <p class="position-absolute desc"> Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
-            foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
-            profissionalmente dentro da TIVIT. </p>
+          <div class="d-flex justify-content-center mascaraDobra3 position-absolute hide-desktop">
+            <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/portmaskmobile.svg" alt="mask">
+          </div>
         </div>
         <div class="d-flex justify-content-center mascaraDobra3 hide-mobile">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="banner">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_banner.svg" alt="mask">
         </div>
       </div>
     </div>
@@ -135,7 +217,8 @@
         O QUE VALORIZAMOS E VIVENCIAMOS
       </h2>
     </div>
-    <div class="row mt-2">
+
+    <div class="row hide-mobile mt-2">
       <div class="col-sm-12 col-md-4">
         <div class="box">
           <div class="w-100">
@@ -182,6 +265,66 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center hide-desktop">
+      <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide4 content active">
+                <div class="col-11 m-0 p-0">
+                  <div class="box">
+                    <div class="w-100">
+                      <div class="w-100 m-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/atendente-icon.svg" alt="design">
+                      </div>
+                      <h2>
+                        Carreira e Reconhecimento
+                      </h2>
+                      <p>
+                        Aqui as oportunidades são reais e acontecem! 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide4 content">
+                <div class="col-11 m-0 p-0">
+                  <div class="box">
+                    <div class="w-100">
+                      <div class="w-100 m-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mouse-icon.svg" alt="grafico">
+                      </div>
+                      <h2>
+                        Desenvolvimento e Aprendizagem
+                      </h2>
+                      <p>
+                        Seu desenvolvimento é prioridade para nós!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item heroslide4 content">
+                <div class="col-11 m-0 p-0">
+                  <div class="box">
+                    <div class="w-100">
+                      <div class="w-100 m-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/like-icon.svg" alt="code">
+                      </div>
+                      <h2>
+                        Clima e Engajamento
+                      </h2>
+                      <p>
+                        Aqui o Clima é leve e descontraído!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -259,16 +402,18 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <div class="d-flex flex-row justify-content-center counter mt-3">
-      <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+    <div class="mobileRelative">
+      <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="d-flex flex-row justify-content-center counter mt-3">
+        <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -282,7 +427,7 @@
       </h2>
     </div>
 
-    <div class="lp-tbanks-services text-center m-0">      
+    <div class="lp-tbanks-services text-center m-0 hide-mobile">      
  
       <div class="row">
 
@@ -348,6 +493,82 @@
 
     </div>
 
+    <!-- Bloco Mobile Carrossel -->
+    <div class="lp-tbanks-services text-center m-0 hide-desktop"> 
+      <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item heroslide6 active">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>Plano de carreira</h3>
+                      <p>Valorizamos e proporcionamos o seu desenvolvimento.Conte com a gente para que você decole na sua carreira.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>Pulses e Avaliação & Feedback 360°</h3>
+                      <p>Saber onde está e onde quer chegar é fundamental em nossa vida. Por isso, a avaliação, comunicação e feedback estão em nosso DNA para evolução e crescimento profissional.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>Comitês da Janela de Mérito</h3>
+                      <p>Comitê semestral dedicado a falar sobre quem está se destacando para aplicação de um mérito finaceiro, afinal, queremos ver seu crescimento aqui dentro.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>TechnoTIVIT</h3>
+                      <p>Com mais de 400 cursos disponíveis, aprendizado, certificação e desenvolvimento profissional estão em nosso dia a dia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>TIVIT Community</h3>
+                      <p>Nossa Comunidade Técnica para incentivo a inovação e o crescimento coletivo, compartilhando conhecimentos dentro de uma comunidade orgânica e diversa.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>TIVIT CLUB</h3>
+                      <p>Programa de parcerias de benefícios com descontos exclusivos em vários segmentos para os nossos colaboradores.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>Vivaz</h3>
+                      <p>O programa de Qualidade de Vida de A a Z, com lives voltadas para a qualidade de vida, Newsletters mensais , informes médicos semanais em nossos canais de comunicação.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide6">
+                  <div class="col-11 col-md-3">
+                    <div class="bg-white">
+                      <h3>Trabalho Remoto</h3>
+                      <p>Se o seu trabalho pode ser feito de casa, estaremos conectados, mesmo que distantes, mas com o mesmo propósito.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="insiderBlock d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center"> 
         Nossos Benefícios
@@ -355,7 +576,7 @@
     </div>
 
     <!-- first row -->
-    <div class="row">
+    <div class="row hide-mobile">
       <div class="col-sm-12 col-md-4">
         <div class="box">
           <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
@@ -406,6 +627,70 @@
       </div>
     </div>
 
+    <!-- Bloco Mobile Carrossel -->
+    <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item heroslide5 active">
+                  <div class="col-11 col-md-3">
+                    <div class="box">
+                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/heart.svg" alt="Privally">
+                        <div class="content">
+                          <h2>CESTA DE BENEFÍCIOS</h2>
+                          <p>
+                            Vale Refeição/Alimentação<br>
+                            Vale transporte<br>
+                            Estacionamento
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide5">
+                  <div class="col-11 col-md-3">
+                    <div class="box">
+                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/hand-heart.svg" alt="Iambda">
+                        <div class="content">
+                          <h2>CUIDADO & APOIO</h2>
+                          <p>
+                            Auxílio Creche<br>
+                            Auxílio Home Office<br>
+                            Parcerias com Universidades e Escolas de Idioma<br>
+                            Campanha #EUINDICO<br>
+                            PPR - Programa de Participação nos Resultados
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item heroslide5">
+                  <div class="col-11 col-md-3">
+                    <div class="box">
+                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/shield.svg" alt="Stone Age">
+                        <div class="content">
+                          <h2>SAÚDE & VIDA</h2>
+                          <p>
+                            Plano de Saúde<br>
+                            Plano Odontológico<br>
+                            Convênio Farmácia<br>
+                            Seguro de Vida
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>
 
@@ -425,7 +710,7 @@
           <div id="esg" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide2 active">
-                  <div class="col-md-3">
+                  <div class="col-11 col-md-3">
                       <div class="card">
                           <div class="card-img position-relative">
                               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer1.svg" alt="Blog 1" class="img-fluid w-100">
@@ -443,7 +728,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide2">
-                  <div class="col-md-3">
+                  <div class="col-11 col-md-3">
                       <div class="card">
                           <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer2.svg" alt="Blog 2" class="img-fluid w-100">
@@ -461,7 +746,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide2">
-                  <div class="col-md-3">
+                  <div class="col-11 col-md-3">
                       <div class="card">
                           <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer3.svg" alt="Blog 3" class="img-fluid w-100">
@@ -479,7 +764,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide2">
-                  <div class="col-md-3">
+                  <div class="col-11 col-md-3">
                       <div class="card">
                           <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer4.svg" alt="Blog 2" class="img-fluid w-100">
@@ -497,7 +782,7 @@
                   </div>
               </div>
               <div class="carousel-item heroslide2">
-                  <div class="col-md-3">
+                  <div class="col-11 col-md-3">
                       <div class="card">
                           <div class="card-img position-relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/customer1.svg" alt="Blog 3" class="img-fluid w-100">
@@ -610,7 +895,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row justify-content-center counter3 mt-3">
+      <div class="d-flex flex-row justify-content-center counter3 mt-3 mobileRelative position-relative">
         <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
         <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarouselInterno" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -634,7 +919,7 @@
         VAGAS
       </h2>
     </div>
-    <div class="row items">
+    <div class="row items m-0 m-md-auto">
       <div class="col-sm-12 col-md-4">
         <div class="card">
           <small>Profissional iniciante</small>
