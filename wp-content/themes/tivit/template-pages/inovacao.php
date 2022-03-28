@@ -11,14 +11,13 @@
             <h1>INOVAÇÃO</h1>
             <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
           </div>
-          <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
-              <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
-          </div>
         </div>
       </div>
     </div>
   </div>
-
+  <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
+      <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
+  </div>
   <div class="inovacao-hero-content hide-desktop">
     <h2>TIVIT: a sua referência em inovação.</h2>
   </div>

@@ -129,6 +129,14 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
+   $('#esgTivit').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
    $('#labs').bind('slid.bs.carousel', function() {
       currentIndex2 = $('.heroslide2.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
@@ -163,6 +171,14 @@ jQuery(document).ready(function($) {
    $('.numtotal3').html( totalItems3 );
 
    $('#recipeCarouselInterno').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
+
+   $('#ativitCustomerCarousel').bind('slid.bs.carousel', function() {
       currentIndex3 = $('.heroslide3.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
       $('.numactive3').html( currentIndex3 );
@@ -293,6 +309,54 @@ document.addEventListener("DOMContentLoaded", function(){
          }
       })
    }
+
+   if(window.location.pathname === '/staged/tivit/a-tivit' || window.location.pathname === '/staged/tivit/a-tivit/'){
+      let items = document.querySelectorAll('.carousel .heroslide4')
+      items.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .heroslide2')
+      items2.forEach((el) => {
+         const minPerSlide = 1
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .heroslide3')
+      items3.forEach((el) => {
+         const minPerSlide = 4
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
    if(window.location.pathname === '/staged/tivit/tbanks' || window.location.pathname === '/staged/tivit/tbanks/'){
       let items = document.querySelectorAll('.carousel .customers')
 
