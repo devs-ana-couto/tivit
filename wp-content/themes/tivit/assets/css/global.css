@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Viga&display=swap");
 html, body, * {
   font-family: 'Titillium Web', sans-serif; }
   html p, body p, * p {
@@ -13,11 +13,11 @@ html, body, * {
       display: none !important; } }
   html h1, body h1, * h1 {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 91.26px; }
   html h2, body h2, * h2 {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 54px; }
   html h3, body h3, * h3 {
     font-size: 36px;
@@ -98,8 +98,8 @@ html, body, * {
 
 @media (max-width: 768px) {
   .header {
-    background: white;
-    max-width: 95%;
+    background: #990017;
+    max-width: 100%;
     margin: 0 auto; }
     .header .navbar {
       padding: 0; }
@@ -107,11 +107,11 @@ html, body, * {
         color: white;
         border-color: rgba(0, 0, 0, 0); }
       .header .navbar .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 0, 36, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+        background-image: url("../../assets/icons/nav/hamburguer-white.svg"); }
       .header .navbar .container {
         display: block; }
     .header .header-logo {
-      background-color: #F20024;
+      background-color: #990017;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -123,7 +123,7 @@ html, body, * {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: solid 1px white; } }
+      background: #990017; } }
 
 @media (min-width: 769px) {
   .header .header-menu ul li.active {
@@ -134,7 +134,8 @@ html, body, * {
     border: 1px solid transparent;
     border-radius: 50px;
     padding: 0px 15px 0px 15px;
-    transition: all .15s linear; }
+    transition: all .15s linear;
+    margin: 4px; }
   .header .header-menu ul li:hover {
     border-color: white;
     transition: all .2s linear; }
@@ -244,14 +245,24 @@ html, body, * {
         border: 1px solid #951B81 !important;
         color: #951B81 !important; }
   .on-scroll-tdx {
-    background: white; }
+    background: #990017; }
     .on-scroll-tdx .header-menu ul li a {
-      color: #454D54 !important; }
+      color: white !important; }
     .on-scroll-tdx .header-options p {
-      color: #454D54 !important; }
+      color: white !important; }
       .on-scroll-tdx .header-options p a {
         border: 1px solid #FE4817 !important;
         color: #FE4817 !important; } }
+
+.tagContent {
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 600;
+  background: #F20024;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 23px 5px 23px; }
 
 /*
  * Footer
@@ -317,6 +328,7 @@ html, body, * {
       border: 1px solid transparent;
       border-radius: 50px;
       padding: 0px 15px 0px 15px;
+      margin: 4px;
       transition: all .15s linear; }
       .footer .footer-menu ul li:hover {
         border-color: #454D54;

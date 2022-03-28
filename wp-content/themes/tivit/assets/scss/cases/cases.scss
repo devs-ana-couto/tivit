@@ -6,14 +6,16 @@
     display: flex;
     flex-direction: column;
     .cases-hero-title{
-        margin: 0 auto;
+        margin: 162px auto 0 auto;
         h1{
-            margin-top: 162px;
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: bold;
-            color: #fff;
-            text-transform: uppercase;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: bold;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        h2{
+          font-weight: 400;
         }
     }
     .cases-hero-content{
@@ -90,7 +92,7 @@
   background-size: contain;
   background-position: center;
 
-  height: 580px;  
+  height: 100%;  
 
   #hero{
     max-width: 1170px;
@@ -191,25 +193,60 @@
   padding-top: 60px;
   margin-top: -1px;
 
-  .title{
-    h2{
-      font-size: 24px;
-      line-height: 24px;
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: white;
-      letter-spacing: 0.03em;
-    }
-  }
-
   .img{
     margin: 40px auto 0 auto;
     width: 284px;
   }
+  .filtros{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 34px;
+    .divisao{
+      margin-top: 24px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .select{
+        width: 167px;
+        select{
+          font-size: 12px;
+          width: 167px;
+        }
+      }
+      .search{
+        a{
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #fff; 
+          font-size: 12px;
 
+          img{
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .select{
+      width: 100%;
+      select{
+        font-size: 12px;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        option{
+          color: black;
+        }
+      }
+    }
+  }
   .detalhes{
-    margin: 20px auto 0 auto;
+    margin: 18px auto 21px auto;
     width: 284px;
     a{
       font-size: 12px;
@@ -240,15 +277,15 @@
     h3{
       font-size: 20px;
       line-height: 28px;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
-      color: $vermelho-tivit;
+      color: white;
       text-transform: uppercase;
     }
   }
 
   .autor-time{
-    margin: 10px auto 0 auto;
+    margin: 28px auto 10px auto;
     width: 284px;
     p{
       color: white;
@@ -268,10 +305,13 @@
       text-transform: uppercase;
       text-decoration: none;
       display: flex;
+      align-items: center;
+      img{
+        margin-left: 5px;
+        height: 16px;
+      }
     }
-    img{
-      margin-left: 5px;
-    }
+
   }
 
   .slider-cases{
@@ -315,12 +355,10 @@
     background-size: cover;
     height: 100vh;
     .cases-hero-title{
+      margin-top: 15%;
       h1, h2{
         text-align: center;
         color: white;
-      }
-      h1{
-        margin-top: 243px;
       }
     }
   }
@@ -331,17 +369,16 @@
     }
     .depoimento{
       p{
-        width: 1092px;
+        width: 798px;
         max-width: 100%;
-        font-size: 38px;
-        line-height: 48px;
-        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 300;
       }
     }
   }
 
   .a-tivit-cases.cases{
-    height: 580px;
     .autor-time {
       width: 480.36px;
       p{
@@ -382,12 +419,17 @@
       a{
         color: $vermelho-tivit;
         border: none;
-        width: 101px;
+        width: 160px;
         padding-left: 0;
         margin-left: 0;
+        display: flex;
+        align-items: center;
         &:hover{
           color: $vermelho-tivit;
           background: none;
+        }
+        img{
+          height: 16px;
         }
       }
     }
@@ -423,18 +465,17 @@
     .acessar{
       width: 100%;
       margin: 20px auto 10px auto;
-
     }
 
     .img{
       img{
-          width: 371px;
+          width: 100%;
       }
       width: 100%;
     }
 
     .content{
-      width: 371px;
+      width: 100%;
       margin-left: 0;
       max-width: 100%;
       h3{
@@ -488,7 +529,7 @@
         border: 1px solid red;
       }
     }
-
+    
     .col-5{
       display: flex;
       justify-content: center;

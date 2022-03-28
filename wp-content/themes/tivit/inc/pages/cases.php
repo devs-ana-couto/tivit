@@ -131,15 +131,24 @@ class Depoimento {
 	}
 
 	public function add_meta_boxes() {
-		foreach ( $this->config['post-type'] as $screen ) {
-			add_meta_box(
-				sanitize_title( $this->config['title'] ),
-				$this->config['title'],
-				[ $this, 'add_meta_box_callback' ],
-				$screen,
-				$this->config['context'],
-				$this->config['priority']
-			);
+		global $post;
+
+		if(!empty($post)){
+
+			$pageTemplate = get_post_meta($post->ID, '_wp_page_template', true);
+
+			if($pageTemplate == 'template-pages/cases.php' ){
+				foreach ( $this->config['post-type'] as $screen ) {
+					add_meta_box(
+						sanitize_title( $this->config['title'] ),
+						$this->config['title'],
+						[ $this, 'add_meta_box_callback' ],
+						$screen,
+						$this->config['context'],
+						$this->config['priority']
+					);
+				}
+			}
 		}
 	}
 
