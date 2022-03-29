@@ -87,11 +87,11 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="borda socials">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Ligar">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Ligar">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Ligar">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg" alt="Ligar">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Ligar">
+          <a href="<? the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Instagram"></a>
+          <a href="<? the_field('linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Linkedin"></a>
+          <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Facebook"></a>
+          <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg" alt="Twitter"></a>
+          <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Youtube"></a>
         </div>
       </div>
     </div>
