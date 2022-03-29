@@ -232,75 +232,28 @@
 <div class="lp-tbanks-tecnologia-pagamentos">
   <div class="container">
     <div class="lp-tbanks-tecnologia-pagamentos-title">
-      <h2>Última tecnologia em pagamentos</h2>
+      <h2><? the_field('titulo_tecnologias_tbanks');?></h2>
     </div>
     <div class="row hide-mobile">
-
+      
+      <?php
+        if( have_rows('tecnologias') ):
+        // Loop through rows.
+        for($i=0; have_rows('tecnologias'); $i++) : the_row();
+            $logo_tec[$i] = get_sub_field('logo');
+            $title_tec[$i] = get_sub_field('texto');
+      ?>
       <div class="col-12 col-md-4">
         <div class="border-tec">
           <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
+            <img src="<?=$logo_tec[$i]?>" alt="Tbanks">
           </div>
           <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Taxas de transação mais baratas</p>
+            <p><?=$title_tec[$i]?></p>
           </div>
         </div>
       </div>
-
-      <div class="col-12 col-md-4">
-        <div class="border-tec">
-          <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
-          </div>
-          <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Informações em tempo real das operações</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="border-tec">
-          <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
-          </div>
-          <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Avisos de movimentações bancárias</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="border-tec">
-          <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
-          </div>
-          <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Faturamento em <br> tempo real</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="border-tec">
-          <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
-          </div>
-          <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Dashboard de gestão de operações</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="border-tec">
-          <div class="lp-tbanks-tecnologia-pagamentos-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
-          </div>
-          <div class="lp-tbanks-tecnologia-pagamentos-content">
-            <p>Sistema intuitivo <br> e unificado</p>
-          </div>
-        </div>
-      </div>
+      <? endfor; endif; ?>
 
     </div>
 
@@ -308,78 +261,26 @@
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="paymentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
-              <div class="carousel-item heroslide4 payment active">
+            <?php
+                if( have_rows('tecnologias') ):
+                // Loop through rows.
+                for($i=0; have_rows('tecnologias'); $i++) : the_row();
+                    $logo_tec[$i] = get_sub_field('logo');
+                    $title_tec[$i] = get_sub_field('texto');
+            ?>
+              <div class="carousel-item heroslide4 payment <?= $i==0 ? 'active' : '';?>">
                   <div class="col-11 m-0 p-0">
                     <div class="border-tec">
                       <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/taxas.svg" alt="Tbanks">
+                        <img src="<?=$logo_tec[$i]?>" alt="Tbanks">
                       </div>
                       <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Taxas de transação mais baratas</p>
+                        <p><?=$title_tec[$i]?></p>
                       </div>
                     </div>
                   </div>
               </div>
-              <div class="carousel-item heroslide4 payment">
-                  <div class="col-11 m-0 p-0">
-                    <div class="border-tec">
-                      <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/relogio.svg" alt="Tbanks">
-                      </div>
-                      <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Informações em tempo real das operações</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 payment">
-                  <div class="col-11 m-0 p-0">
-                    <div class="border-tec">
-                      <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/aviso.svg" alt="Tbanks">
-                      </div>
-                      <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Avisos de movimentações bancárias</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 payment">
-                  <div class="col-11 m-0 p-0">
-                    <div class="border-tec">
-                      <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/faturamento.svg" alt="Tbanks">
-                      </div>
-                      <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Faturamento em <br> tempo real</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 payment">
-                  <div class="col-11 m-0 p-0">
-                    <div class="border-tec">
-                      <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/dashboard.svg" alt="Tbanks">
-                      </div>
-                      <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Dashboard de gestão de operações</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 payment">
-                  <div class="col-11 m-0 p-0">
-                    <div class="border-tec">
-                      <div class="lp-tbanks-tecnologia-pagamentos-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/sistema.svg" alt="Tbanks">
-                      </div>
-                      <div class="lp-tbanks-tecnologia-pagamentos-content">
-                        <p>Sistema intuitivo <br> e unificado</p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+            <? endfor; endif; ?>
           </div>
           <div class="w-100 position-relative mt-4">
             <a class="carousel-control-prev bg-transparent w-aut" href="#paymentMobileCarousel" role="button" data-bs-slide="prev">
