@@ -1,38 +1,34 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
-<div class="home-hero">
+<section class="home-hero">
 
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner text-center">
-      <div class="carousel-item heroslide active">
-        <div class="content">
-          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider1.jpg" alt="slide1" />
-          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
-          <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio</h1>
-          </div>
+        <?php
+            // Check rows exists.   
+            if( have_rows('slider_hero') ):
+                // Loop through rows.
+                for($i=0; have_rows('slider_hero'); $i++) : the_row();
+                    $banner_desktop_url[$i] = get_sub_field('banner_desktop');
+                    $banner_mobile_url[$i] = get_sub_field('banner_mobile');
+                    $chamada[$i] = get_sub_field('chamada');
+        ?>
+        <div class="carousel-item heroslide <?=$i==0 ? 'active' : ''?>">
+            <div class="content">
+                <img class="hide-mobile maskImg" src="<?=$banner_desktop_url[$i]?>" alt="Imagem do Slider" />
+                <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
+                <div class="title position-absolute">
+                    <h1><?=$chamada[$i]?></h1>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item heroslide">
-        <div class="content">
-          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider2.jpg" alt="slide2" />
-          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
-          <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio(2)</h1>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-        <div class="content">
-          <img class="hide-mobile maskImg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/img_slider3.jpg" alt="slide3" />
-          <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
-          <div class="title position-absolute">
-            <h1>Seu futuro, nosso desafio(3)</h1>
-          </div>
-        </div>
-      </div>
+        <?php
+            // End loop.
+            endfor;
+            endif;
+        ?>
     </div>
 
     <div class="container">
@@ -43,15 +39,22 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
             </button>
             <div class="d-flex flex-row counter hide-mobile">
-              <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+              <div class="numactive"></div>
+              <div class="numseparation"></div>
+              <div class="numtotal"></div>
             </div>
             <button class="carousel-control-next hide-mobile" type="button" data-bs-target="#hero" data-bs-slide="next">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
             </button>
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Hero 1"></button>
-              <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Hero 2"></button>
-              <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Hero 3"></button>
+                <?php 
+                    if( have_rows('slider_hero') ):
+                    // Loop through rows.
+                        for($i=0; have_rows('slider_hero'); $i++) : the_row();
+                ?>
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="<?=$i?>" <?=$i==0 ? 'class="active" aria-current="true"' : 'class=""' ?> aria-label="Hero"></button>
+              <?php
+                endfor; endif;  ?>
             </div>
           </div>
         </div>
@@ -74,7 +77,7 @@
     </div>
   </div>
 
-</div>
+</section>
 
 <div class="home-intro">
   <div class="w-100 transition">
@@ -87,7 +90,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
         </div>
         <p class="mt-3">
-          Dentre as maiores empresas do Brasil, a <span>TIVIT</span> proporciona soluções flexíveis para 8 a cada 10.
+          <? the_field('texto_de_introducao') ?>
         </p>
         <div class="botao">
           <a href="#" class="btn btn-primary">Saiba Mais</a>
@@ -137,8 +140,11 @@
 </section>
 
 <div class="home-content">
-<div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
-<div id="triangle-down"></div>
+
+  <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
+  <div id="triangle-down"></div>
+
+
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
@@ -400,6 +406,7 @@
                 </div>
               </div>
               
+
             </div>
           </div>
 
@@ -416,6 +423,7 @@
               </button>
             </div>
           </div>
+
 
         </div>
 
