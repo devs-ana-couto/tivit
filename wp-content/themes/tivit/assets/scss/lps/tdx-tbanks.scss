@@ -213,6 +213,9 @@
     .lp-tbanks-credibilidade{
       margin-top: 64px;
       margin-bottom: 34px;
+      @media (max-width: 767px) {
+        margin-bottom: 0px;
+      }
       color: $cinza-dark-cyber-tivit;
       p{
         span{
