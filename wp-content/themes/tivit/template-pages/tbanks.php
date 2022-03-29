@@ -229,7 +229,7 @@
   </div>
 </div>
 
-<div class="lp-tbanks-tecnologia-pagamentos">
+<div class="lp-tbanks-tecnologia-pagamentos">   
   <div class="container">
     <div class="lp-tbanks-tecnologia-pagamentos-title">
       <h2><? the_field('titulo_tecnologias_tbanks');?></h2>
@@ -300,80 +300,54 @@
 </div>
 
 <div class="lp-tbanks-depoimentos container">
-  <div class="lp-tbanks-depoimentos-title hide-mobile">
-    <h2>Benefícios para clientes</h2>
-  </div>
-  <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item heroslide active">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>André Correia</h3>
-                  <h4>Diretor da Tivit</h4>
-                  <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-            <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>André Correia</h3>
-                  <h4>Diretor da Tivit</h4>
-                  <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>André Correia</h3>
-                  <h4>Diretor da Tivit</h4>
-                  <p>
-                  ”A chegada do Open Banking traz uma grande oportunidade para a renovação do sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de tecnologia do país, usa sua expertise para ser protagonista neste mercado.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="lp-tbanks-depoimentos-title hide-mobile">
+        <h2><?the_field('titulo_depoimentos_tbanks');?></h2>
     </div>
-    <div class="mobile-relative">
-      <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div class="d-flex flex-row justify-content-center counter mt-3">
-        <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
-      </div>
-    </div>
-  </div>
+    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+                if( have_rows('depoimento_tbanks') ):
+                // Loop through rows.
+                for($i=0; have_rows('depoimento_tbanks'); $i++) : the_row();
+                    $logo_depoimento[$i] = get_sub_field('logo');
+                    $name_depoimento[$i] = get_sub_field('nome');
+                    $role_depoimento[$i] = get_sub_field('cargo');
+                    $text_depoimento[$i] = get_sub_field('texto_de_depoimento');
+            ?>
+            <div class="carousel-item heroslide <?= $i==0 ? 'active' : ''; ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="lp-tbanks-depoimentos-content text-center ">
+                                <div class="lp-tbanks-depoimentos-autor">
+                                    <img src="<?=$logo_depoimento[$i]?>" alt="Tbanks Saiba Mais">
+                                    <h3><?=$name_depoimento[$i]?></h3>
+                                    <h4><?=$role_depoimento[$i]?></h4>
+                                    <p>
+                                    <?=$text_depoimento[$i]?>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <? endfor; endif; ?>
+        </div>
+        <div class="mobile-relative">
+                <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="d-flex flex-row justify-content-center counter mt-3">
+                    <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+                </div>
+            </div>
+    </div> 
 </div>
 
 <div class="lp-tbanks-logo-clientes mt-0 mt-md-5">
