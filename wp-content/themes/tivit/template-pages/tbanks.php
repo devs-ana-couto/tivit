@@ -1,12 +1,12 @@
 <?php /* Template Name: Landing Tbanks */ ?>
 <?php get_header(); ?>
 
-<div class="lp-tbanks-hero position-relative">
+<div class="lp-tbanks-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_tbanks') : the_field('banner_desktop_tbanks'); ?>') no-repeat center center; background-size: cover;">
   <div class="container">
     <div class="row">
       <div class="col-md-12 d-flex flex-column align-items-center lp-banks-hero-content text-center">
-        <img class="fade-in-bottom" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/tbankslogo.svg" alt="Tbanks powered by TIVIT">
-        <h1 class="fade-in-bottom">Simples, fácil e sem burocracia</h1>
+        <img class="fade-in-bottom" src="<? the_field('logo_tbanks') ?>" alt="Tbanks powered by TIVIT">
+        <h1 class="fade-in-bottom"><? the_field('chamada_tbanks') ?></h1>
       </div>
       <div>
         <div class="position-relative mt-5"><img class="d-flex m-auto grafismo w-100 hide-desktop" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/mobgraf.svg" alt="Tbanks"></div>
@@ -18,19 +18,19 @@
 
 <div class="lp-tbanks-conheca">
   <div class="container">
+
     <div class="lp-tbanks-arrow text-center mb-5">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/seta-purple.svg" class="bounce" alt="Tbanks Saiba Mais">
     </div>
+    
     <div class="row">
       <div class="col-12">
 
         <div class="lp-tbanks-conheca-content">
           <p>
-            Nosso DNA combina tecnologia e mais de 20 anos de experiência no mercado financeiro. Com a TBanks, nasce uma plataforma inovadora, modular e estruturada em APIs para você se conectar a uma solução completa de Banking as a Service.
+            <?the_field('introducao_tbanks')?>
           </p>
         </div>
-
-
 
       </div>
 
@@ -38,42 +38,30 @@
         <div class="">
           <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-5">
             <h2 class="title text-center">
-              Nossas plataformas
+              <? the_field('chamada_nossas_plataformas') ?>
             </h2>
             <div class="sub d-flex flex-column justify-content-center align-items-center w-100">
               <span class="subtitle">
-                Com um mindset ágil vamos transformar a TIVIT, reconhecida muitas vezes por excelência em infraestrutura e terceirização de TI, para plataformas digitais com serviços financeiros para os nossos Clientes B2B. 
+                <? the_field('descricao_nossas_plataformas') ?>
               </span>
             </div>
           </div>
           <div class="row hide-mobile">
-
+          <?php
+          // Check rows exists.
+          if( have_rows('plataformas') ):
+              // Loop through rows.
+              for($i=0; have_rows('plataformas'); $i++) : the_row();
+                  $title_plataforma[$i] = get_sub_field('titulo');
+                  $description_plataforma[$i] = get_sub_field('descricao');
+              ?>
             <div class="col-12 col-md-3">
               <div class="bg-white">
-                <h3 class="mb-5">PSTI</h3>
-                <p>Provedor de Serviços de Tecnologia da Informação homologado pelo Banco Central.</p>
+                <h3 class="mb-5"><?=$title_plataforma[$i]?></h3>
+                <p><?=$description_plataforma[$i] ?></p>
               </div>
             </div>
-            <div class="col-12 col-md-3">
-              <div class="bg-white">
-                <h3>API Gateway</h3>
-                <p>Plataforma de integração financeira e Open Banking.</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-3">
-              <div class="bg-white">
-                <h3>TBanks Payments</h3>
-                <p>Conta Digital da TIVIT para pagamentos de contas, Utilities e PIX.</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-3">
-              <div class="bg-white">
-                <h3>Banking as a Service</h3>
-                <p>Oferta completa de Serviços Financeiros.</p>
-              </div>
-            </div>
+            <? endfor; endif; ?>
 
             <!-- <div class="col-12 mt-5">
               <p>
@@ -219,13 +207,13 @@
   <div class="container tbanks-bg-pix position-relative">
     <div class="row">
       <div class="col-12 col-md-4">
-        <div class="pix"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/pix.svg" alt="Tbanks PIX"></div>
+        <div class="pix"><img src="<? the_field('imagem_pix'); ?>" alt="Tbanks PIX"></div>
         <div class="fclass position-relative mt-4 mb-4 mt-md-5 mb-md-0"><img class="grafismo" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/gh.svg" alt="Tbanks"></div>
       </div>
       <div class="col-12 col-md-5">
         <div class="pix-text w-100">
-          <h3>Não espere mais para receber pagamentos.</h3>
-          <p>Com o TBankS, a empresa recebe e administra pagamentos em tempo real, com PIX Cobrança e PIX Varejo.</p>
+          <h3><? the_field('titulo_pix'); ?></h3>
+          <p><? the_field('texto_pix'); ?></p>
           <div>
             <div class="custom-w-mobile mt-0 mt-md-5 pt-3">
               <a> Conheça toda a ação </a>
@@ -617,7 +605,6 @@
   </div>
 
 </div>
-
 
 <div class="lp-tbanks-form">
   <div class="container">

@@ -140,8 +140,8 @@
 </section>
 
 <div class="home-content">
-<div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
-<div id="triangle-down"></div>
+  <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
+  <div id="triangle-down"></div>
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
