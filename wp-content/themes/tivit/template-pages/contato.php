@@ -80,7 +80,7 @@
       <div class="col-12 col-md-6">
         <div class="borda">
           <div class="contato-canais-item">
-            <p><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/phone.svg" alt="Telefone"> +55 (11) 3757-2222</p>
+            <p><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/phone.svg" alt="Telefone"><? the_field('telefone', 'option'); ?></p>
             <!-- <p class="hide-desktop"><strong>Ligar</strong> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/arrow_forward.svg" alt="Ligar"></p> -->
           </div>
         </div>
