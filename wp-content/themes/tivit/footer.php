@@ -38,7 +38,7 @@
         <div class="col-12 col-md-3 footer-phone">
           <p>
             <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/phone.svg" alt="Phone Tivit"> <span>+55 (11)</span> 3757-2222
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/phone.svg" alt="Phone Tivit"> <? the_field('telefone', 'option'); ?>
             </a>
           </p>
         </div>
@@ -50,25 +50,11 @@
         <div class="col-12 col-md-3 footer-socials hide-mobile">
           <p>
 
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-red.svg" alt="Linkedin Tivit">
-            </a>
-
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-red.svg" alt="Instagram Tivit">
-            </a>
-
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-red.svg" alt="Twitter Tivit">
-            </a>
-
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube Tivit">
-            </a>
-
-            <a href="#">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-red.svg" alt="Facebook Tivit">
-            </a>
+          <a href="<? the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-red.svg" alt="Instagram"></a>
+          <a href="<? the_field('linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-red.svg" alt="Linkedin"></a>
+          <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-red.svg" alt="Facebook"></a>
+          <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-red.svg" alt="Twitter"></a>
+          <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube"></a>
 
           </p>
             
