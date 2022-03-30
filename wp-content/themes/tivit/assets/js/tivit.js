@@ -491,6 +491,23 @@ document.addEventListener("DOMContentLoaded", function(){
       })
    }
 
+   if(window.location.pathname === '/staged/tivit/solucoes' || window.location.pathname === '/staged/tivit/solucoes/'){
+      let items = document.querySelectorAll('.carousel .heroslide4')
+      items.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
    if(window.location.pathname === '/staged/tivit/pessoas-e-carreiras' || window.location.pathname === '/staged/tivit/pessoas-e-carreiras/'){
       let items = document.querySelectorAll('.carousel .heroslide2')
       items.forEach((el) => {
