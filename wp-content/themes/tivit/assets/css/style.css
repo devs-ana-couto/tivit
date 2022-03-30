@@ -2113,7 +2113,10 @@ html, body, * {
 
 .a-tivit-cases {
   height: 580px;
-  margin-top: 50px; }
+  margin-top: 200px; }
+  @media (max-width: 760px) {
+    .a-tivit-cases {
+      margin-top: 50px; } }
   .a-tivit-cases .detalhes {
     width: 284px;
     margin: 250px auto 0 auto; }
@@ -2387,8 +2390,7 @@ html, body, * {
       text-align: center;
       width: 749px;
       margin: 0 auto; }
-  .a-tivit-carousel {
-    display: none; }
+
   .a-tivit-cases {
     height: 700px; }
     .a-tivit-cases .confira {

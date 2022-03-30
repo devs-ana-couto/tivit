@@ -227,6 +227,23 @@ jQuery(document).ready(function($) {
       $('.numtotal4').html( totalItems4 );
    });
    
+   //Carousel slick
+   $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      arrows: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
 
 })
 

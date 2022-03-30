@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<div class="a-tivit-carousel">
+<div class="a-tivit-carousel hide-desktop">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
 
@@ -83,6 +83,41 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="a-tivit-carousel-desktop" class=" position-relative hide-mobile">
+  <div class="slider-for">
+    <div class="sliderimage">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/picture1.jpg" class="d-block w-100" alt="...">
+      <div class="overlay"></div>
+    </div>
+    <div class="sliderimage">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/picture2.jpg" class="d-block w-100" alt="...">
+      <div class="overlay"></div>
+    </div>
+    <div class="sliderimage">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/picture1.jpg" class="d-block w-100" alt="...">
+      <div class="overlay"></div>
+    </div>
+    <div class="sliderimage">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/picture2.jpg" class="d-block w-100" alt="...">
+      <div class="overlay"></div>
+    </div>
+    <div class="sliderimage">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/picture1.jpg" class="d-block w-100" alt="...">
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="maskCarousel position-absolute w-100">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/slidermask.svg" class="d-block" alt="...">
+  </div>
+  <div class="slider-nav">
+    <div>1998</div>
+    <div>2000</div>
+    <div>2004</div>
+    <div>2009</div>
+    <div>2010</div>
   </div>
 </div>
 
