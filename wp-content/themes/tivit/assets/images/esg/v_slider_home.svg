@@ -1,16 +1,7 @@
 <svg width="1773" height="960" viewBox="0 0 1773 960" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g style="mix-blend-mode:multiply" opacity="0.8">
-<path d="M0.625977 0C205.701 300.356 581.703 703.067 886.703 960L888.962 958.015C1173.81 714.856 1554.15 321.162 1772.72 0C1186.12 0 614.059 0 0.625977 0Z" fill="url(#paint0_linear_4110_28119)"/>
-</g>
-<g style="mix-blend-mode:multiply" opacity="0.8">
-<g style="mix-blend-mode:multiply" opacity="0.8">
-<path d="M886.599 640.71C663.727 436.43 459.593 207.489 298.252 0H0.625977C205.701 300.356 581.703 703.067 886.703 960L888.962 958.015C1173.81 714.856 1554.15 321.162 1772.72 0H1475.06C1313.73 207.5 1109.64 436.426 886.599 640.71Z" fill="#F20024"/>
+<g style="mix-blend-mode:multiply">
+<path d="M886.598 640.71C663.726 436.43 459.592 207.489 298.251 0H0.625C205.7 300.356 581.702 703.067 886.702 960L888.961 958.015C1173.81 714.856 1554.15 321.162 1772.72 0H1475.06C1313.73 207.5 1109.64 436.426 886.598 640.71Z" fill="#F20024"/>
 </g>
 </g>
-<defs>
-<linearGradient id="paint0_linear_4110_28119" x1="886.673" y1="0" x2="886.673" y2="960" gradientUnits="userSpaceOnUse">
-<stop stop-opacity="0.2"/>
-<stop offset="1"/>
-</linearGradient>
-</defs>
 </svg>

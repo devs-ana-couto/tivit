@@ -20,9 +20,9 @@ const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-global"
 // Add class mobile
 const add_class_page_tbanks = () => header_logo.classList.add("on-scroll-mobile-tbanks")
 // Change search icon color
-const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer_purple.svg)'
+const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-white.svg)'
 // Change hamburguer icon color
-const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-purple.svg');
+const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-white.svg');
 // Remove class on scroll
 const remove_class_on_scroll_tbanks = () => header.classList.remove("on-scroll-tbanks")
 // Change logo on scroll desktop
@@ -48,9 +48,9 @@ const add_class_on_scroll_tdx = () => header.classList.add("on-scroll-tdx")
 // Add class mobile
 const add_class_page_tdx = () => header_logo.classList.add("on-scroll-mobile-tdx")
 // Change search icon color
-const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-orange.svg)'
+const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/hamburguer-white.svg)'
 // Change hamburguer icon color
-const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-orange.svg');
+const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', 'https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/icons/nav/search-white.svg');
 // Remove class on scroll
 const remove_class_on_scroll_tdx = () => header.classList.remove("on-scroll-tdx")
 
@@ -129,6 +129,14 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
+   $('#esgTivit').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
    $('#labs').bind('slid.bs.carousel', function() {
       currentIndex2 = $('.heroslide2.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
@@ -169,7 +177,73 @@ jQuery(document).ready(function($) {
       $('.numseparation3').html('  /  ');
       $('.numtotal3').html( totalItems3 );
    });
+
+   $('#ativitCustomerCarousel').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
+
+   $('#customerCarouselHome').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
+
+   $('#serviceMobileCarousel').bind('slid.bs.carousel', function() {
+      currentIndex3 = $('.heroslide3.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive3').html( currentIndex3 );
+      $('.numseparation3').html('  /  ');
+      $('.numtotal3').html( totalItems3 );
+   });
+
+   // Permite 4 carrosseis na mesma página
+   var totalItems4 = $('.heroslide4').length;
+   var currentIndex4 = $('.heroslide4.active').index() + 1;
+
+   // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+   $('.numactive4').html( currentIndex4 );
+   $('.numseparation4').html('  /  ');
+   $('.numtotal4').html( totalItems4 );
+
+   $('#paymentMobileCarousel').bind('slid.bs.carousel', function() {
+      currentIndex4 = $('.heroslide4.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive4').html( currentIndex4 );
+      $('.numseparation4').html('  /  ');
+      $('.numtotal4').html( totalItems4 );
+   });
+
+   $('#valuesMobileCarousel').bind('slid.bs.carousel', function() {
+      currentIndex4 = $('.heroslide4.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive4').html( currentIndex4 );
+      $('.numseparation4').html('  /  ');
+      $('.numtotal4').html( totalItems4 );
+   });
    
+   //Carousel slick
+   $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      arrows: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
 
 })
 
@@ -221,7 +295,85 @@ document.addEventListener("DOMContentLoaded", function(){
             next = next.nextElementSibling
          }
       })
+
+      let items2 = document.querySelectorAll('.carousel .heroslide3')
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .heroslide4')
+      items3.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
    }
+
+   if(window.location.pathname === '/staged/tivit/a-tivit' || window.location.pathname === '/staged/tivit/a-tivit/'){
+      let items = document.querySelectorAll('.carousel .heroslide4')
+      items.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .heroslide2')
+      items2.forEach((el) => {
+         const minPerSlide = 1
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .heroslide3')
+      items3.forEach((el) => {
+         const minPerSlide = 4
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
    if(window.location.pathname === '/staged/tivit/tbanks' || window.location.pathname === '/staged/tivit/tbanks/'){
       let items = document.querySelectorAll('.carousel .customers')
 
@@ -232,6 +384,38 @@ document.addEventListener("DOMContentLoaded", function(){
             if (!next) {
                   // wrap carousel by using first child
                next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .services')
+
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .payment')
+
+      items3.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
                }
             let cloneChild = next.cloneNode(true)
             el.appendChild(cloneChild.children[0])
@@ -250,6 +434,38 @@ document.addEventListener("DOMContentLoaded", function(){
             if (!next) {
                   // wrap carousel by using first child
                next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .values')
+
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .content')
+
+      items3.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
                }
             let cloneChild = next.cloneNode(true)
             el.appendChild(cloneChild.children[0])
@@ -290,6 +506,85 @@ document.addEventListener("DOMContentLoaded", function(){
             next = next.nextElementSibling
          }
       })
+
+      let items2 = document.querySelectorAll('.carousel .heroslide4')
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items3 = document.querySelectorAll('.carousel .heroslide6')
+      items3.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items3[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items4 = document.querySelectorAll('.carousel .heroslide5')
+      items4.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items4[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+   }
+
+   if(window.location.pathname === '/staged/tivit' || window.location.pathname === '/staged/tivit/'){
+      
+      let items = document.querySelectorAll('.carousel .heroslide4')
+      items.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
+      let items2 = document.querySelectorAll('.carousel .heroslide3')
+      items2.forEach((el) => {
+         const minPerSlide = 2
+         let next = el.nextElementSibling
+         for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                  // wrap carousel by using first child
+               next = items2[0]
+               }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+         }
+      })
+
    }
 
 });

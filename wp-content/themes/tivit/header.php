@@ -5,6 +5,10 @@
 <title>Tivit</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <!-- Bootstrap -->
 <!-- CSS -->
 
@@ -67,7 +71,7 @@
         </div>
 
         <div class="col-2 hide-desktop search">
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-red.svg" class="search-ico" alt="Search Tivit"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit"></a>
         </div>
       </div>
 

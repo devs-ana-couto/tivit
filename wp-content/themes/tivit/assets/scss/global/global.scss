@@ -61,6 +61,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Viga&display=swap');
 html, body, * {
   font-family: 'Titillium Web', sans-serif;
+  background-color: transparent;
   p{
     max-width: 100%;
   }
@@ -221,17 +222,17 @@ html, body, * {
 // Header Mobile
 @media (max-width: 768px) {
   .header{
-    background: white;
-    max-width: 95%;
+    background: #990017;
+    max-width: 100%;
     margin: 0 auto;
-    .navbar {    
+    .navbar {
       padding: 0;
       .navbar-toggler {
         color: rgb(255, 255, 255);  
         border-color: rgba(0, 0, 0, 0);
       }
       .navbar-toggler-icon{
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 0, 36, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        background-image: url("../../assets/icons/nav/hamburguer-white.svg");
 
       }
       .container{
@@ -239,7 +240,7 @@ html, body, * {
       }
     }
     .header-logo{
-      background-color: $vermelho-tivit;
+      background-color: $vermelho-dark-tivit;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -253,7 +254,7 @@ html, body, * {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: solid 1px white;
+      background: $vermelho-dark-tivit;
     }
   }  
 }
@@ -577,7 +578,7 @@ html, body, * {
           margin: 4px;
           transition: all .15s linear;
           &:hover{
-            border-color: #454D54;
+            border-color: $cinza-dark-tivit;
             transition: all .2s linear;
           }
           a{

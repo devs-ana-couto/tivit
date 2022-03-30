@@ -7,17 +7,25 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-            <div class="zindex position-relative">
-                <h1>INOVAÇÃO</h1>
-                <h2 class="">TIVIT: a sua referência em inovação.</h2>
-            </div>
-            <div class="customMargin d-flex justify-content-center align-items-center">
-                <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
-            </div>
+          <div class="position-relative zindex">
+            <h1>INOVAÇÃO</h1>
+            <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
+      <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
+  </div>
+  <div class="inovacao-hero-content hide-desktop">
+    <h2>TIVIT: a sua referência em inovação.</h2>
+  </div>
+
+  <div class="maskDiv text-center hide-desktop">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
+  </div>
+
 </div>
  
 <!-- Introdução abaixo do Hero-->
@@ -40,51 +48,57 @@
     <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
       investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
   </div>
-  <div class="container mt-5 mb-5">
+  <div class="container mt-3 mb-3 mt-md-5 mb-md-5">
     <!-- first row -->
     <div class="row">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
     </div>
     <!-- sec row -->
-    <div class="row mt-4">
+    <div class="row mt-0 mt-md-4">
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
         <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100 h-100 margin-auto text-center">
+          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
+            <a class="hide-desktop">CONHEÇA</a>
           </div>
         </div>
       </div>
@@ -127,12 +141,12 @@
 </div>
 
 <!-- Bloco Carrossel Infinito -->
-<div id="carouselCustom" class="container-fluid text-center my-3">
+<div id="carouselCustom" class="container-fluid p-0 text-center my-3">
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item heroslide active">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog1.jpg" alt="Blog 1" class="img-fluid w-100">
@@ -145,7 +159,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
@@ -158,7 +172,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
@@ -171,7 +185,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
@@ -184,7 +198,7 @@
               </div>
           </div>
           <div class="carousel-item heroslide">
-              <div class="col-md-3">
+              <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
@@ -197,11 +211,11 @@
               </div>
           </div>
       </div>
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center mt-3 mt-md-5">
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <div class="d-flex flex-row counter hide-mobile">
+        <div class="d-flex flex-row counter">
           <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
         </div>
         <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
@@ -212,10 +226,17 @@
   </div>
 </div>
 
+<div class="btnLabsCta">
+  <div class="cta">
+    <a>Conheça mais sobre TIVIT LABS</a>
+  </div>
+</div>
+
 <!-- Bloco CTA Tour -->
 <div id="tour">
   <div class="image-background position-relative">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100 hide-mobile">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tour-mobile.svg" alt="background" class="img-fluid w-100 hide-desktop">
     <!-- <div class="position-absolute w-100">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/maskinovation.svg" alt="mask" class="img-fluid w-100">
     </div> -->
@@ -234,7 +255,7 @@
 </div>
 
 <!-- Bloco de labs -->
-<div id="labs" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="labs" class="esg carousel slide carousel-fade hide-mobile" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
       <div class="lp-tbanks-confira lp-tdx">
@@ -337,7 +358,8 @@
         Nascida da tecnologia, a Tdx veio trazer mais. Pesquisamos, investigamos e nos atualizamos o tempo todo para encontrar a melhor forma do seu negócio ser digital.
       </p>
     </div>
-    <div class="row mt-2">
+
+    <div class="row mt-2 hide-mobile">
       <div class="col-sm-12 col-md-3">
         <div class="box">
           <div class="w-100">
@@ -399,20 +421,98 @@
         </div>
       </div>
     </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center mt-3 mt-md-0 hide-desktop">
+      <div id="tdxMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide3 tdx active">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icodesign.svg" alt="design">
+                        </div>
+                        <h2>
+                          Design, Produtos e Plataformas
+                        </h2>
+                        <p>
+                          Ampliamos horizontes e garantimos a travessia do início ao fim da jornada.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icografico.svg" alt="grafico">
+                        </div>
+                        <h2>
+                          Data & Analytics
+                        </h2>
+                        <p>
+                          Democratizamos tecnologias e inovações do mercado em contextos reais.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
+                        </div>
+                        <h2>
+                          Modernização e Otimização de Legado
+                        </h2>
+                        <p>
+                          Mudar é difícil, contudo, para tornar o processo simples, apoiamos e direcionamos pessoas e negócios durante toda a jornada.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide3 tdx">
+                  <div class="col-11 m-0 p-0">
+                    <div class="box">
+                      <div class="w-100">
+                        <div class="w-100 m-auto text-center">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icogrow.svg" alt="grow">
+                        </div>
+                        <h2>
+                          Sustentação e Crescimento
+                        </h2>
+                        <p>
+                          Oferecemos serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
     <div class="cta w-100 d-flex align-items-center justify-content-center">
-      <a class="button">CONHEÇA A TDX</a>
+      <a class="button">Conheça MAIS sobre a tdx</a>
     </div>
   </div>
 </div>
 
 <!-- Bloco de Conteúdos -->
-<div class="home-content content-inovacao">
+<div id="contentTdx" class="home-content content-inovacao">
 <div id="triangle-down"></div>
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
     </div>
-    <div class="row">
+
+    <div class="row hide-mobile">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1"> 
@@ -502,6 +602,96 @@
       </div>
       <!-- // content 3 -->
     </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center hide-desktop">
+      <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide4 content active">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2"> 
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">artigo</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row aaa">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 content">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2">
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">press release</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 content">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2">
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">artigo</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row align-items-center">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
   </div>
 </div>
 

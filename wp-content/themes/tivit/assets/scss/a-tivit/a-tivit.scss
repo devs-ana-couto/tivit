@@ -5,58 +5,127 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    .zindex{
+        z-index: 50;
+        position: relative;
+    }
     .a-tivit-hero-title{
         margin: 0 auto;
         h1{
-            margin-top: 162px;
+            margin-top: 200px;
             font-size: 16px;
             line-height: 22px;
-            font-weight: bold;
+            font-weight: 600;
             color: #fff;
             text-transform: uppercase;
             text-align: center;
         }
-        .botao{
-            a{
-                border: solid 1px transparent;
-                padding: 0;
-                text-transform: initial;
-                text-decoration: none;
-                font-weight: 400;
-            }
+        h2{
+          font-weight: 500 !important; 
+          color: white;
+          text-align: center;
+          @media (max-width: 768px){
+              font-size: 28px;
+              line-height: 1.4;
+              position: relative;
+              max-width: 315px;
+          }
+          strong{
+              font-weight: 600;
+          }
         }
     }
-    .a-tivit-hero-content{
-      h2{
-        font-size: 34px;
-        line-height: 34px;
-        text-align: center;
-        font-weight: 400;
-        margin: 23px 0 40px 0;
-      }
-    }
-    .botao{
-        margin-bottom: 30px;
+    .buttoncta{
+      text-align: center;
+      margin-top: 27px;
       a{
-        background: transparent;
-        color: $vermelho-tivit;
-        border: solid 1px $vermelho-tivit;
-        
+        color: white !important; 
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .2s linear;
+        position: relative;
+        &:hover{
+          &:after{
+            margin-left: 18px;
+          }
+        }
+        &:after{
+          content: url('../../assets/images/esg/arrow-white-right.svg');
+          margin-left: 9px;
+          width: 16px;
+          transition: all .2s linear;
+          position: absolute;
+        }
       }
     }
     .arrow{
-      margin-top: 0;
+    margin-top: 0;
     }
-}
+    .customMargin{
+      margin-top: -50px;
+    }
+    .mask{
+        max-width: 90%;
+        @media (max-width: 768px){
+            max-width: 100%;
+        }
+        mix-blend-mode: multiply;
+    }
+    .maskDiv{
+      img{
+          top: 15%;
+          left: 0;
+          width: 100%;
+          mix-blend-mode: multiply;
+      }
+    }
+    .customNumbers{
+      position: absolute;
+      color: white;
+      bottom: 0;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: -30px;
+    }
+
+    @media(max-width: 760px){
+        .botaoReels{
+            // position: absolute;
+            // left: 0;
+            // right: 0;
+            position: relative;
+            bottom: -6%;
+            text-align: center;
+            p{
+                margin-bottom: 5px;
+            }
+            a{
+                color: white;
+                font-weight: lighter;
+                font-size: 14px;
+                text-decoration: unset;
+            }
+        }
+    }
+  }
 
 // Sobre
 .a-tivit-sobre{
     margin: 40px 0 40px 0;
+    @media(max-width: 760px){
+        margin: 32px 0 40px 0;
+    }
     p{
         font-size: 26px;
         line-height: 34px;
         text-align: center;
         font-weight: 400;
+        @media(max-width: 760px){
+            font-size: 28px;
+        }
     }
 }
 
@@ -124,7 +193,10 @@
 }
 .a-tivit-cases{   
     height: 580px;
-    margin-top: 50px;
+    margin-top: 200px;
+    @media(max-width: 760px){
+        margin-top: 50px;
+    }
     .detalhes{
         width: 284px;
         margin: 250px auto 0 auto;
@@ -222,7 +294,7 @@
         background: #fff;
         height: 160px;
         justify-content: center;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
         .card-content{
             display: flex;
             flex-direction: column;
@@ -236,7 +308,7 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 text-decoration: none;
-                margin-top: 20px;
+                margin-top: 10px;
                 transition: 1.2s;
                 &:hover{
                     color: $vermelho-tivit;
@@ -265,6 +337,9 @@
     padding-top: 60px;
     .a-tivit-experts-title{
         margin-bottom: 40px;
+        @media(max-width: 760px){
+            margin-bottom: 20px;
+        }
         h2{
             font-size: 24px;
             line-height: 24px;
@@ -300,8 +375,16 @@
 }
 
 // Carousel
-.esg{
+#esgTivit{
     margin-top: 50px;
+    @media(max-width: 760px){
+        height: 800px;
+    }
+    .columnReverseMobile{
+        @media(max-width: 760px){
+            flex-direction: column;
+        }
+    }
 
     .lp-tbanks-confira {
 
@@ -381,7 +464,11 @@
         h2{
             font-size: 24px;
             line-height: 24px;
-            color: $cinza-dark-tivit;
+            color: $cinza-dark-cyber-tivit;
+            text-transform: uppercase;
+            @media(max-width: 760px){
+                font-size: 24px;
+            }
         }
     }
     .desc{
@@ -413,15 +500,21 @@
     .a-tivit-hero{
         background: url('../../assets/images/a-tivit/banner-desktop.png') no-repeat center center;
         background-size: cover;
-        height: 100vh;
+        height: 580px;
         position: relative;
 
         .a-tivit-hero-title{
-            margin-top: 15%;
+            margin-top: 200px;
+            z-index: 100;
+            .textBanner{
+                position: relative;
+                left: 0;
+                right: 0;
+            }
             h1{
                font-size: 14px;
                line-height: 21.29px;
-               font-weight: 700; 
+               font-weight: 600; 
                text-align: center;
                margin: 0;
       
@@ -435,24 +528,27 @@
                 max-width: 960px;
                 margin: 0 auto;
             }
-            .botao{
-                position: absolute;
-                bottom: 20px;
-                right: 0;
-                left: 0;
-                a{                
-                    text-decoration: none;
-                    border: none;
-                    padding: 0;
-                    color: white;
-                    background-color: transparent;
-                    p{
-                        margin-top: 10px;
-                    }
-                    &:hover{
-                        background: transparent;
-                        border:none;
-                    }
+        }
+
+        .botaoReels{
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -10%;
+            z-index: 100;
+            text-align: center;
+            a{                
+                text-decoration: none;
+                border: none;
+                padding: 0;
+                color: white;
+                background-color: transparent;
+                p{
+                    margin-top: 10px;
+                }
+                &:hover{
+                    background: transparent;
+                    border:none;
                 }
             }
         }
@@ -460,7 +556,7 @@
     }
     // Sobre
     .a-tivit-sobre{
-        margin: 77px 0 149px 0;
+        margin: 184px 0 149px 0;
         p{
             font-size: 36px;
             line-height: 42px;
@@ -470,8 +566,48 @@
         }
     }
     // Carousel
-    .a-tivit-carousel{
-        display: none;
+    #a-tivit-carousel-desktop{
+        .overlay{
+            background: linear-gradient(to top, rgba(0, 0, 0, 1) 300px, RGBA(0, 0, 0,0.0) 600px);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+        }
+        .maskCarousel{
+            top: 0;
+            z-index: 2;
+            img{
+                width: 100%;
+                mix-blend-mode: multiply;
+            }
+        }
+        .slider-nav{
+            margin-top: -80px;
+            z-index: 5;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: row;
+        }
+        .slick-slide{
+            color: white;
+            text-align: center;
+        }
+        .slider-nav{
+            .slick-track{
+                max-width: 600px;
+                display: flex;
+            }
+        }
+        .slick-prev:before, .slick-next:before{
+            color: white;
+            left: 0;
+            right: 0;
+        }
+        // .slick-list{
+        //     width: 600px;
+        // }
     }
     // Cases
     .a-tivit-cases{
@@ -717,6 +853,7 @@
             }
         }
     }
+    
     // Inovar
     .home-pessoas-e-carreiras.inovar{
         background: url('../../assets/images/a-tivit/inovar-bg.png') no-repeat center center;
@@ -727,3 +864,57 @@
         }
     }
 }
+
+//Clientes
+#ativitClientes{
+    /* medium and up screens */
+     @media (min-width: 768px) {
+         
+         .carousel-inner .carousel-item-end.active,
+         .carousel-inner .carousel-item-next {
+         transform: translateX(25%);
+         }
+         
+         .carousel-inner .carousel-item-start.active, 
+         .carousel-inner .carousel-item-prev {
+         transform: translateX(-25%);
+         }
+
+         .carousel-inner .carousel-item-end,
+         .carousel-inner .carousel-item-start { 
+         transform: translateX(0);
+         }
+     }
+     
+       #ativitCustomerCarousel{
+         @media(max-width: 760px){
+             .col-6{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                flex-direction: column;
+             }
+           }
+           .counter3{
+            margin-left: 15px;
+            margin-right: 15px;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            .numactive3{
+              color: $vermelho-tivit;
+              font-weight: 700;
+            }
+            .numseparation3, .numtotal3{
+              color: $vermelho-tivit;
+              font-weight: 300;
+            }
+            .numseparation3{
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
+       }
+       
+ }
