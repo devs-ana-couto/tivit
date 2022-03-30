@@ -193,7 +193,10 @@
 }
 .a-tivit-cases{   
     height: 580px;
-    margin-top: 50px;
+    margin-top: 200px;
+    @media(max-width: 760px){
+        margin-top: 50px;
+    }
     .detalhes{
         width: 284px;
         margin: 250px auto 0 auto;
@@ -563,8 +566,48 @@
         }
     }
     // Carousel
-    .a-tivit-carousel{
-        display: none;
+    #a-tivit-carousel-desktop{
+        .overlay{
+            background: linear-gradient(to top, rgba(0, 0, 0, 1) 300px, RGBA(0, 0, 0,0.0) 600px);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+        }
+        .maskCarousel{
+            top: 0;
+            z-index: 2;
+            img{
+                width: 100%;
+                mix-blend-mode: multiply;
+            }
+        }
+        .slider-nav{
+            margin-top: -80px;
+            z-index: 5;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: row;
+        }
+        .slick-slide{
+            color: white;
+            text-align: center;
+        }
+        .slider-nav{
+            .slick-track{
+                max-width: 600px;
+                display: flex;
+            }
+        }
+        .slick-prev:before, .slick-next:before{
+            color: white;
+            left: 0;
+            right: 0;
+        }
+        // .slick-list{
+        //     width: 600px;
+        // }
     }
     // Cases
     .a-tivit-cases{

@@ -2106,7 +2106,10 @@ html, body, * {
 
 .a-tivit-cases {
   height: 580px;
-  margin-top: 50px; }
+  margin-top: 200px; }
+  @media (max-width: 760px) {
+    .a-tivit-cases {
+      margin-top: 50px; } }
   .a-tivit-cases .detalhes {
     width: 284px;
     margin: 250px auto 0 auto; }
@@ -2382,8 +2385,31 @@ html, body, * {
       width: 749px;
       margin: 0 auto; }
 
-  .a-tivit-carousel {
-    display: none; }
+  #a-tivit-carousel-desktop .overlay {
+    background: linear-gradient(to top, black 300px, RGBA(0, 0, 0, 0) 600px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; }
+  #a-tivit-carousel-desktop .maskCarousel {
+    top: 0;
+    z-index: 2; }
+    #a-tivit-carousel-desktop .maskCarousel img {
+      width: 100%;
+      mix-blend-mode: multiply; }
+  #a-tivit-carousel-desktop .slider-nav {
+    margin-top: -80px;
+    z-index: 5; }
+  #a-tivit-carousel-desktop .slick-slide {
+    color: white;
+    text-align: center; }
+  #a-tivit-carousel-desktop .slider-nav .slick-track {
+    max-width: 600px;
+    display: flex; }
+  #a-tivit-carousel-desktop .slick-prev:before, #a-tivit-carousel-desktop .slick-next:before {
+    color: white;
+    left: 0;
+    right: 0; }
 
   .a-tivit-cases {
     height: 700px; }
