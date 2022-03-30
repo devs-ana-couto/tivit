@@ -5,6 +5,10 @@
 <title>Tivit</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <!-- Bootstrap -->
 <!-- CSS -->
 
