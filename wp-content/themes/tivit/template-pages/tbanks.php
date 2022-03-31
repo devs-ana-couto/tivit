@@ -1,7 +1,7 @@
 <?php /* Template Name: Landing Tbanks */ ?>
 <?php get_header(); ?>
 
-<div class="lp-tbanks-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_tbanks') : the_field('banner_desktop_tbanks'); ?>') no-repeat center center; background-size: cover;">
+<div class="lp-tbanks-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_tbanks') : the_field('banner_desktop_tbanks'); ?>')">
   <div class="container">
     <div class="row">
       <div class="col-md-12 d-flex flex-column align-items-center lp-banks-hero-content text-center">

@@ -2283,8 +2283,6 @@ html, body, * {
     flex-direction: row;
     justify-content: center;
     bottom: 36px;
-    right: 0;
-    left: 0;
     margin: 0 auto;
     width: 110px; }
     #esgTivit .navigation a {
@@ -2390,7 +2388,31 @@ html, body, * {
       text-align: center;
       width: 749px;
       margin: 0 auto; }
-
+  #a-tivit-carousel-desktop .overlay {
+    background: linear-gradient(to top, black 300px, RGBA(0, 0, 0, 0) 600px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; }
+  #a-tivit-carousel-desktop .maskCarousel {
+    top: 0;
+    z-index: 2; }
+    #a-tivit-carousel-desktop .maskCarousel img {
+      width: 100%;
+      mix-blend-mode: multiply; }
+  #a-tivit-carousel-desktop .slider-nav {
+    margin-top: -80px;
+    z-index: 5; }
+  #a-tivit-carousel-desktop .slick-slide {
+    color: white;
+    text-align: center; }
+  #a-tivit-carousel-desktop .slider-nav .slick-track {
+    max-width: 600px;
+    display: flex; }
+  #a-tivit-carousel-desktop .slick-prev:before, #a-tivit-carousel-desktop .slick-next:before {
+    color: white;
+    left: 0;
+    right: 0; }
   .a-tivit-cases {
     height: 700px; }
     .a-tivit-cases .confira {
@@ -2432,48 +2454,30 @@ html, body, * {
     .a-tivit-inovacao .card {
       width: 467px;
       height: 220px;
+      max-width: 100%;
       background: unset;
       box-shadow: unset;
       justify-content: center;
       align-items: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      max-width: 100% !important; }
       .a-tivit-inovacao .card a {
         margin-top: 0 !important;
         opacity: 0; }
       .a-tivit-inovacao .card:hover {
-        transition: 1.2s; }
-        .a-tivit-inovacao .card:hover .card-content.card1 {
-          margin-top: -65px;
-          mix-blend-mode: unset; }
-        .a-tivit-inovacao .card:hover .card-content.card2 {
-          margin-top: -65px;
-          mix-blend-mode: unset; }
-        .a-tivit-inovacao .card:hover a, .a-tivit-inovacao .card:hover p, .a-tivit-inovacao .card:hover .card-content.card1, .a-tivit-inovacao .card:hover .card-content.card2, .a-tivit-inovacao .card:hover .card {
-          transition: 1.2s;
-          opacity: 1; }
+        transition: 1.2s !important; }
+        .a-tivit-inovacao .card:hover .card-content {
+          margin-top: -65px !important;
+          mix-blend-mode: unset !important; }
+        .a-tivit-inovacao .card:hover a, .a-tivit-inovacao .card:hover p, .a-tivit-inovacao .card:hover .card-content, .a-tivit-inovacao .card:hover .card {
+          transition: 1.2s !important;
+          opacity: 1 !important; }
       .a-tivit-inovacao .card p {
         font-size: 16px;
         line-height: 24px;
         margin-top: 80px;
         text-align: center;
         opacity: 0; }
-      .a-tivit-inovacao .card .card-content.card1 {
-        background-image: url("../../assets/images/a-tivit/labs1.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 85px;
-        mix-blend-mode: luminosity;
-        opacity: 0.3;
-        width: 413px; }
-      .a-tivit-inovacao .card .card-content.card2 {
-        background-image: url("../../assets/images/a-tivit/labs2.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 50px;
-        mix-blend-mode: luminosity;
-        opacity: 0.3; }
     .a-tivit-inovacao .botao {
       margin-top: 60px; }
   .a-tivit-experts {

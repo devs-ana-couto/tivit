@@ -1,14 +1,14 @@
 <?php /* Template Name: A Tivit */ ?>
 <?php get_header(); ?>
 
-<div class="a-tivit-hero position-relative">
+<div class="a-tivit-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); ?>') no-repeat center center; background-size: cover;">
   <div class="a-tivit-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
             <div class="zindex textBanner">
-              <h1>Quem Somos</h1>
-              <h2>A TIVIT transforma pessoas e tecnologia com expertise em <strong>soluções de ponta a ponta.</strong></h2>
+              <h1><? the_field('pre_chamada_ativit');?></h1>
+              <h2><? the_field('chamada_ativit');?></h2>
             </div>
             <div class="maskDiv text-center hide-desktop">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
@@ -39,7 +39,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-        Somos uma multinacional brasileira one-stop-shop que não abre mão da flexibilidade e da agilidade em todos os nossos processos. 
+        <? the_field('introducao_ativit');?>
         </p>
       </div>
     </div>
@@ -249,9 +249,16 @@
           <div class="col-md-1"></div>
           <div class="col-12 col-md-5">
             <div class="card">
-              <div class="card-content card1">
+              <div class="card-content" style="
+                background: url('<? $detect->isMobile() ? '' : the_field('logo_1_ativit'); ?>');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 85px;
+                mix-blend-mode: luminosity;
+                max-width: 100%;">
                 <p class="hide-mobile">O TIVIT Labs é o hub de inovação da TIVIT.</p>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/labs1.svg" class="hide-desktop" alt="Tivit Inovação">
+                <img src="<? the_field('logo_1_ativit'); ?>" class="hide-desktop" alt="Tivit Inovação">
                 <a href="#">conheça a tivit labs <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a>
               </div>
             </div>
@@ -259,9 +266,16 @@
 
           <div class="col-12 col-md-5">
             <div class="card">
-              <div class="card-content card2">
+              <div class="card-content" style="
+                background: url('<? $detect->isMobile() ? '' : the_field('logo_2_ativit'); ?>');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 85px;
+                mix-blend-mode: luminosity;
+                max-width: 100%;">
                 <p class="hide-mobile">A Ventures é a vertical de investimentos e aquisições da TIVIT.</p>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/labs2.svg" class="hide-desktop" alt="Tivit Experts">
+                <img src="<? the_field('logo_2_ativit'); ?>" class="hide-desktop" alt="Tivit Experts">
                 <div class="pt-4 pt-md-0"><a href="#">conheça a ventures <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a></div>
               </div>
             </div>
@@ -279,7 +293,7 @@
 </div>
 
 <div class="a-tivit-experts hide-desktop">
-  <div class="container p-0 p-md-auto">
+  <div class="container  p-md-auto">
 
     <div class="row">
       <div class="col-12">
@@ -507,7 +521,6 @@
   </div>
 </div>
 
-
 <div id="esgTivit" class="esg carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
@@ -541,7 +554,7 @@
                 <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
                   <div class="position-relative">
                     <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/mobileslide1.svg" alt="Mobile Slide 1">
-                    <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center h-100 position-absolute">
+                    <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center">
                       <h2>MASP SP</h2>
                       <p class="paragrafo3">
                         Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
@@ -622,7 +635,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="a-tivit-certificacoes text-center">
   <div class="container">
@@ -720,6 +732,5 @@
     </div>
   </div>
 </div>
-
 
 <?php get_footer(); ?>
