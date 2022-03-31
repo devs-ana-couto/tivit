@@ -73,6 +73,29 @@
   }
 }
 
+//Related mobile (this one is not within the banner)
+@media (max-width: 1024px){
+    .related{
+        margin: 25px 0px 50px 0px;
+        p{
+            font-size: 12px;
+            color: $cinza-dark-cyber-tivit;
+            font-weight: lighter;
+            line-height: 1.2;
+            margin-bottom: 5px;
+        }
+        span{
+            border: 1px solid $cinza-dark-cyber-tivit;
+            font-size: 12px;
+            border-radius: 50px;
+            padding: 3px 8px 3px 8px;
+            color: $cinza-dark-cyber-tivit;
+            text-transform: uppercase;
+            margin: 5px 5px 0 5px;
+        }
+    }
+}
+
 //Services Intro
 #services-intro{
     margin: 100px 0px 100px 0px;
@@ -182,7 +205,7 @@
 //Middle Content
 #middleContent{
     background: #F5F6F7;
-    padding: 100px 0 0 0;
+    padding: 100px 0 80px 0;
     .title{
         font-size: 28px;
         text-transform: uppercase;
@@ -287,6 +310,172 @@
             }
         }
     }
+
+    .publiccloud{
+        #triangle-down{
+            border-top: 28px solid #F5F6F7;
+        }
+        .customCloudPosition{
+            top: 40%;
+            @media(max-width: 1024px){
+                top: 22%;
+            }
+        }
+        .mask{
+            top: 22%;
+            position: absolute;
+        }
+        .mainImage{
+            max-width: 1110px;
+            position: relative;
+        }
+        .row{
+            @media(max-width: 1024px){
+                flex-direction: column-reverse;
+            }
+            .col-md-6{
+                div{
+                    margin-left: 100px;
+                    @media(max-width: 1024px){
+                        margin-left: 0px;
+                        margin: auto;
+                        text-align: center;
+                    }
+                    img{
+                        margin-top: -50px;
+                        @media(max-width: 1024px){
+                            margin-top: 0px;
+                            width: 120px !important;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 36px;
+            color: white;
+            font-weight: 600;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+        p{
+            color: white;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: lighter;
+            margin-top: 8px;
+            max-width: 350px;
+        }
+    }
+}
+
+//estratégia
+#strategy{
+    margin: 120px 0px 120px 0;
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        h2{
+            font-size: 36px;
+            font-weight: lighter;
+            line-height: 1.3;
+            text-align: center;
+            color: $vermelho-tivit;
+            @media (max-width: 1024px){
+                font-size: 24px;
+            }
+        }
+        p{
+            font-size: 24px;
+            font-weight: 600;
+            color: $cinza-dark-cyber-tivit;
+            line-height: 1.3;
+            margin-top: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            max-width: 750px;
+            @media (max-width: 1024px){
+                font-size: 18px;
+                margin-top: 30px;
+            }
+        }
+    }
+    .cards{
+        margin-top: 50px;
+        .intro{
+            h3{
+                font-size: 28px;
+                color: $vermelho-tivit;
+                line-height: 1.3;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+        }
+        .card{
+            margin: 20px;
+            padding: 20px;
+            height: 180px;
+            border-left: 4px solid $vermelho-tivit;
+            border-top: 1px solid $cinza-light-tivit;
+            border-right: 1px solid $cinza-light-tivit;
+            border-bottom: 1px solid $cinza-light-tivit;
+            @media(max-width: 1024px){
+                margin: 20px 0 20px 0;
+                padding: 20px;
+            }
+            p{
+                font-size: 16px;
+                color: $cinza-dark-cyber-tivit;
+                line-height: 1.5;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .accordion{
+        margin: 50px 0 50px 0;
+        .card{
+            margin: 20px 0 20px 0;
+            padding: 20px;
+            border-left: 4px solid $vermelho-tivit;
+            border-top: 1px solid $cinza-light-tivit;
+            border-right: 1px solid $cinza-light-tivit;
+            border-bottom: 1px solid $cinza-light-tivit;
+            p{
+                font-size: 16px;
+                color: $cinza-dark-cyber-tivit;
+                line-height: 1.5;
+                text-transform: uppercase;
+            }
+        }
+        .accordion-button::after{
+            background-image: url('../../assets/images/solucoes/expand-down.svg');
+            width: 18px;
+        }
+    }
+    .accordion-button{
+        color: $vermelho-tivit;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        line-height: 1.3;
+    }
+    .accordion-item{
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        border-left: unset;
+        border-bottom: unset;
+        border-right: unset;
+    }
+}
+
+//custom margin on depoiments
+.mx-custom{
+    margin-bottom: 50px;
 }
 
 #contentServices{
@@ -348,5 +537,31 @@
         max-width: 1235px;
     }
   }
-
+  .related{
+      position: absolute;
+      bottom: 15%;
+      width: 100%;
+      p{
+          font-size: 16px;
+          color: white;
+          font-weight: lighter;
+          line-height: 1.2;
+          margin: 0;
+      }
+      span{
+          border: 1px solid white;
+          font-size: 12px;
+          border-radius: 50px;
+          padding: 3px 8px 3px 8px;
+          color: white;
+          text-transform: uppercase;
+          margin: 0 10px 0 10px;
+          cursor: pointer;
+          transition: .2s all;
+          &:hover{
+              background: $vermelho-tivit;
+              transition: .2s all;
+          }
+      }
+  }
 }
