@@ -572,18 +572,33 @@ $duration: 250ms;
 @media(min-width: 760px){
 
     .inovacao-hero{
-      background: url('../../assets/images/inovacao/banner.png') no-repeat center center;
+      height: 580px;
+      background: url('../../assets/images/inovacao/bannerinovacao.png') no-repeat center center;
       background-size: cover;
       height: 580px;
       .inovacao-hero-title{
-        h1, h2{
-          text-align: center;
-          color: white;
-        }
+        margin: 0 auto;
         h1{
-          margin-top: 243px;
+            margin-top: 200px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
         }
-      }
+        h2{
+          font-weight: 500 !important; 
+          color: white;
+          text-align: center;
+        }
     }
+    .arrow{
+    margin-top: 0;
+    }
+    .mask{
+        max-width: 1400px;
+    }
+  }
 
 }

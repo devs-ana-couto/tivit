@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="inovacao-hero">
+<div class="inovacao-hero position-relative">
   <div class="inovacao-hero-title">
     <div class="container">
       <div class="row">
@@ -27,7 +27,7 @@
   </div>
 
 </div>
-
+ 
 <!-- Introdução abaixo do Hero-->
 <div class="inovacao-intro">
   <div class="container">
