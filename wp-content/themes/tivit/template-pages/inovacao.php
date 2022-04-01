@@ -121,7 +121,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5 w-100">
-      <a class="button">Conheça mais sobre ventures</a>
+      <a href="/staged/tivit/ventures" class="button">Conheça mais sobre ventures</a>
     </div>
     <div id="triangle-down"></div>
   </div>
