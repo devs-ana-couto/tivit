@@ -282,66 +282,32 @@
     </div>
 
     <div class="row mt-2 hide-mobile">
-      <div class="col-sm-12 col-md-3">
-        <div class="box">
-          <div class="w-100">
-            <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icodesign.svg" alt="design">
+    <?php
+    // Check rows exists.
+    if( have_rows('logos_tdx_inovacao') ):
+        // Loop through rows.
+        for($i=0; have_rows('logos_tdx_inovacao'); $i++) : the_row();
+            $logo_tdx[$i] = get_sub_field('logo');
+            $title_tdx[$i] = get_sub_field('titulo');
+            $description_tdx[$i] = get_sub_field('descricao');
+        ?>
+        <div class="col-sm-12 col-md-3">
+            <div class="box">
+                <div class="w-100">
+                    <div class="w-100 m-auto text-center">
+                        <img src="<?=$logo_tdx[$i]?>" alt="design">
+                    </div>
+                    <h2>
+                        <?=$title_tdx[$i]?>
+                    </h2>
+                    <p>
+                        <?=$description_tdx[$i]?>
+                    </p>
+                </div>
             </div>
-            <h2>
-              Design, Produtos e Plataformas
-            </h2>
-            <p>
-              Ampliamos horizontes e garantimos a travessia do início ao fim da jornada.
-            </p>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-3">
-        <div class="box">
-          <div class="w-100">
-            <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icografico.svg" alt="grafico">
-            </div>
-            <h2>
-              Data & Analytics
-            </h2>
-            <p>
-              Democratizamos tecnologias e inovações do mercado em contextos reais.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-3">
-        <div class="box">
-          <div class="w-100">
-            <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
-            </div>
-            <h2>
-              Modernização e Otimização de Legado
-            </h2>
-            <p>
-              Mudar é difícil, contudo, para tornar o processo simples, apoiamos e direcionamos pessoas e negócios durante toda a jornada.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-3">
-        <div class="box">
-          <div class="w-100">
-            <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icogrow.svg" alt="grow">
-            </div>
-            <h2>
-              Sustentação e Crescimento
-            </h2>
-            <p>
-              Oferecemos serviços e plataformas que garantem clareza e segurança para cenários e ambientes complexos.
-            </p>
-          </div>
-        </div>
-      </div>
+        <? endfor; endif; ?>
+
     </div>
 
     <!-- mobile slide -->
