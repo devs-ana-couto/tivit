@@ -146,8 +146,13 @@ html, body, * {
   #menu-header-menu {
     flex-wrap: wrap; }
 
-  .header-people-and-careers > p {
+  .header-people-and-careers p {
     font-weight: 500; }
+    .header-people-and-careers p a {
+      color: white;
+      text-decoration: unset;
+      font-weight: 500;
+      font-size: 14px; }
 
   .language {
     display: flex; }

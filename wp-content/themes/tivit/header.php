@@ -52,7 +52,7 @@
         <div class="col-4 col-md-5 header-options hide-mobile">
 
           <div class="header-people-and-careers">
-            <p>Pessoas e Carreiras</p>
+            <p><a href="/staged/tivit/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
           </div>
 
           <div class="header-contact">
