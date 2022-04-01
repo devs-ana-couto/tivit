@@ -2,7 +2,9 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
+
 <div class="inovacao-hero" style="background: url('<? $detect->isMobile() ? the_field('header_mobile_inovacao') : the_field('header_desktop_inovacao'); ?>') no-repeat center center; background-size: cover;">
+
   <div class="inovacao-hero-title">
     <div class="container">
       <div class="row">
@@ -27,7 +29,7 @@
   </div>
 
 </div>
-
+ 
 <!-- Introdução abaixo do Hero-->
 <div class="inovacao-intro">
   <div class="container">
@@ -86,7 +88,7 @@
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5 w-100">
-      <a class="button">Conheça mais sobre ventures</a>
+      <a href="/staged/tivit/ventures" class="button">Conheça mais sobre ventures</a>
     </div>
     <div id="triangle-down"></div>
   </div>

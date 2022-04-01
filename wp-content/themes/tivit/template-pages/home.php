@@ -472,7 +472,7 @@
               </div>
               <div class="col-12">
                 <div class="d-flex justify-content-center align-items-center btn mt-4">
-                  <button class="btncontent">VER TODOS OS CASES</button>
+                  <button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>
                 </div>
               </div>
             </div>
