@@ -2,14 +2,16 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="inovacao-hero position-relative">
+
+<div class="inovacao-hero" style="background: url('<? $detect->isMobile() ? the_field('header_mobile_inovacao') : the_field('header_desktop_inovacao'); ?>') no-repeat center center; background-size: cover;">
+
   <div class="inovacao-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="position-relative zindex">
-            <h1>INOVAÇÃO</h1>
-            <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
+            <h1><? the_field('pre_chamada_inovacao'); ?></h1>
+            <h2 class="hide-mobile"><? the_field('chamada_inovacao'); ?></h2>
           </div>
         </div>
       </div>
@@ -19,7 +21,7 @@
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
   <div class="inovacao-hero-content hide-desktop">
-    <h2>TIVIT: a sua referência em inovação.</h2>
+    <h2><? the_field('chamada_inovacao'); ?></h2>
   </div>
 
   <div class="maskDiv text-center hide-desktop">
@@ -34,7 +36,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-          Inovação para a <span>TIVIT</span> é se reinventar sem nunca se perder.
+          <? the_field('introducao_inovacao'); ?>
         </p>
       </div>
     </div>
@@ -44,64 +46,27 @@
 <!-- Bloco Ventures -->
 <div id="ventures">
   <div class="d-flex flex-column container w-100 text-center justify-content-center align-items-center">
-    <h2>VENTURES</h2>
-    <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
-      investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
+    <h2><? the_field('chamada_inovacao_ventures'); ?></h2>
+    <p><? the_field('descricao_inovacao_ventures'); ?></p>
   </div>
   <div class="container mt-3 mb-3 mt-md-5 mb-md-5">
-    <!-- first row -->
+
     <div class="row">
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- sec row -->
-    <div class="row mt-0 mt-md-4">
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
-            <a class="hide-desktop">CONHEÇA</a>
-          </div>
-        </div>
-      </div>
+        <? 
+            if( have_rows('logo_inovacao_ventures') ):
+            // Loop through rows.
+                for($i=0; have_rows('logo_inovacao_ventures'); $i++) : the_row();
+                $logo_url[$i] = get_sub_field('logo');
+        ?>
+            <div class="col-sm-12 col-md-4 mt-3">
+                <div class="box">
+                    <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
+                        <img src="<?=$logo_url[$i]?>" alt="Privally">
+                        <a class="hide-desktop">CONHEÇA</a>
+                    </div>
+                </div>
+            </div>
+            <? endfor; endif; ?>
     </div>
 
     <div class="aboveBlock d-flex justify-content-center">
@@ -111,13 +76,15 @@
     </div>
     <div class="w-100"> 
       <div class="d-flex justify-content-center flex-row services">
-        <em>CLOUD SERVICES</em>
-        <em>CYBERSECURITY</em>
-        <em>DESIGN DE SOLUÇÕES</em>
-        <em>TECHFIN</em>
-        <em>DATA CENTER E FULL OUTSOURCING</em>
-        <em>RODUTOS DIGITAIS</em>
-        <em>DATA</em>
+        <? 
+            if( have_rows('skills_inovacao_ventures') ):
+            // Loop through rows.
+                for($i=0; have_rows('skills_inovacao_ventures'); $i++) : the_row();
+                $skill[$i] = get_sub_field('skill');
+        ?>
+        <em><?=$skill[$i]?></em>
+
+      <? endfor; endif; ?>
       </div>
     </div>
     <div class="d-flex justify-content-center mt-5 w-100">
@@ -130,12 +97,11 @@
 <!-- Bloco TivitLabs -->
 <div id="tivitLabs" class="container">
   <div class="w-100 margin-auto text-center">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/labs.svg" alt="Tivit Labs">
-  </div>
+    <img src="<? the_field('logo_labs_inovacao'); ?>" alt="Tivit Labs">
+  </div>    
   <div class="d-flex justify-content-center subText">
     <p class="text-center">
-     O TIVIT Labs é o nosso cérebro de inovação. Com ele, ajudamos clientes a desenvolverem novas tecnologias e soluções personalizadas. 
-      Para que a aprendizagem seja contínua, lançamos mão do Labs Academy, programa que fomenta ainda mais esse ecossistema de ideias.
+    <? the_field('descricao_labs_inovacao'); ?>
     </p>
   </div>
 </div>
@@ -145,71 +111,28 @@
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item heroslide active">
+        <? 
+            if( have_rows('itens_labs_inovacao') ):
+            // Loop through rows.
+                for($i=0; have_rows('itens_labs_inovacao'); $i++) : the_row();
+                $img_url[$i] = get_sub_field('imagem_item_inovacao');
+                $title_item[$i] = get_sub_field('titulo_item_inovacao');
+                $description[$i] = get_sub_field('descricao_item_inovacao');
+        ?>
+          <div class="carousel-item heroslide <?=$i==0 ? 'active' : '' ?>">
               <div class="col-11 col-md-3">
                   <div class="card">
                       <div class="card-img">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog1.jpg" alt="Blog 1" class="img-fluid w-100">
+                          <img src="<?=$img_url[$i]?>" alt="Blog 1" class="img-fluid w-100">
                       </div>
                       <div class="content">
-                        <h2>Produtização</h2>
-                        <p>Desenvolvimento, teste e validação de novas soluções de acordo com as demandas dos clientes e tendências de mercado.</p>
+                        <h2><?=$title_item[$i]?></h2>
+                        <p><?=$description[$i]?></p>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="carousel-item heroslide">
-              <div class="col-11 col-md-3">
-                  <div class="card">
-                      <div class="card-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
-                      </div>
-                      <div class="content">
-                        <h2>Meetups</h2>
-                        <p>Realização de eventos e encontros para criar uma comunidade de executivos, profissionais de tecnologia e pesquisadores com ideias e objetivos comuns.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item heroslide">
-              <div class="col-11 col-md-3">
-                  <div class="card">
-                      <div class="card-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
-                      </div>
-                      <div class="content">
-                        <h2>Hackatons</h2>
-                        <p>Promoção de maratonas de desenvolvimento para resolução de problemas de negócio, geração de novas ideias e compartilhamento de conhecimento junto ao público externo.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item heroslide">
-              <div class="col-11 col-md-3">
-                  <div class="card">
-                      <div class="card-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog2.jpg" alt="Blog 2" class="img-fluid w-100">
-                      </div>
-                      <div class="content">
-                        <h2>Startup</h2>
-                        <p>Aproximação do ecossistema de startups para apresentação e análise de novas propostas de negócio, com potencial de aceleração pela TIVIT.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item heroslide">
-              <div class="col-11 col-md-3">
-                  <div class="card">
-                      <div class="card-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/blog3.jpg" alt="Blog 3" class="img-fluid w-100">
-                      </div>
-                      <div class="content">
-                        <h2>Produtização</h2>
-                        <p>Desenvolvimento, teste e validação de novas soluções de acordo com as demandas dos clientes e tendências de mercado.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+          <? endfor; endif; ?>
       </div>
       <div class="d-flex justify-content-center mt-3 mt-md-5">
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
@@ -235,17 +158,16 @@
 <!-- Bloco CTA Tour -->
 <div id="tour">
   <div class="image-background position-relative">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/backgroundinovation.jpg" alt="background" class="img-fluid w-100 hide-mobile">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tour-mobile.svg" alt="background" class="img-fluid w-100 hide-desktop">
+    <img src="<? $detect->isMobile() ? the_field('imagem_de_fundo_labs3d_inovacao_mob') : the_field('imagem_de_fundo_labs3d_inovacao_desk'); ?>" alt="background" class="img-fluid w-100">
     <!-- <div class="position-absolute w-100">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/maskinovation.svg" alt="mask" class="img-fluid w-100">
     </div> -->
     <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 txt position-absolute">
       <h2 class="textLabs">
-        Conheça o LABS
+        <?the_field('titulo_labs3d_inovacao')?>
       </h2>
       <p>
-        Faça um tour 3D na nossa incubadora de ideias!
+        <?the_field('descricao_labs3d_inovacao')?>
       </p>
       <a>
         começar o tour

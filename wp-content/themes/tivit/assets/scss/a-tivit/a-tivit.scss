@@ -420,8 +420,6 @@
         justify-content: center;
     
         bottom: 36px;
-        right: 0;
-        left: 0;
         margin: 0 auto;
         width: 110px;
         a{
@@ -669,29 +667,26 @@
         .card{
             width: 467px;
             height: 220px;
+            max-width: 100%;
             background: unset;
             box-shadow: unset;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+            max-width: 100%!important;
             a{
                 margin-top: 0!important;
                 opacity: 0;
             }
             &:hover{
-                transition: 1.2s;
-                .card-content.card1{
-                    margin-top: -65px;
-
-                    mix-blend-mode: unset;
+                transition: 1.2s!important;
+                .card-content{
+                    margin-top: -65px!important;
+                    mix-blend-mode: unset!important;
                 }
-                .card-content.card2{
-                    margin-top: -65px;
-                    mix-blend-mode: unset;
-                }
-                a, p, .card-content.card1, .card-content.card2, .card{
-                    transition: 1.2s;
-                    opacity: 1;
+                a, p, .card-content, .card{
+                    transition: 1.2s!important;
+                    opacity: 1!important;
                 }
             }
             p{
@@ -700,26 +695,6 @@
                 margin-top: 80px;
                 text-align: center;
                 opacity: 0;
-            }
-            .card-content.card1{
-                background-image: url('../../assets/images/a-tivit/labs1.svg');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                height: 85px;
-                mix-blend-mode: luminosity;
-                opacity: 0.3;
-                width: 413px;
-
-            }
-            .card-content.card2{
-                background-image: url('../../assets/images/a-tivit/labs2.svg');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                height: 50px;
-                mix-blend-mode: luminosity;
-                opacity: 0.3;
             }
         }
         .botao{
