@@ -2,14 +2,14 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="inovacao-hero">
+<div class="inovacao-hero" style="background: url('<? $detect->isMobile() ? the_field('header_mobile_inovacao') : the_field('header_desktop_inovacao'); ?>') no-repeat center center; background-size: cover;">
   <div class="inovacao-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="position-relative zindex">
-            <h1>INOVAÇÃO</h1>
-            <h2 class="hide-mobile">TIVIT: a sua referência em inovação.</h2>
+            <h1><? the_field('pre_chamada_inovacao'); ?></h1>
+            <h2 class="hide-mobile"><? the_field('chamada_inovacao'); ?></h2>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
   <div class="inovacao-hero-content hide-desktop">
-    <h2>TIVIT: a sua referência em inovação.</h2>
+    <h2><? the_field('chamada_inovacao'); ?></h2>
   </div>
 
   <div class="maskDiv text-center hide-desktop">
@@ -34,7 +34,7 @@
     <div class="row">
       <div class="col-12">
         <p>
-          Inovação para a <span>TIVIT</span> é se reinventar sem nunca se perder.
+          <? the_field('introducao_inovacao'); ?>
         </p>
       </div>
     </div>
