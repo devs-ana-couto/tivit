@@ -1051,6 +1051,9 @@ html, body, * {
   .home-cases-content .row .btncontent:hover {
     background: #F20024;
     transition: all 0.4s linear; }
+  .home-cases-content .row .btncontent a {
+    color: white;
+    text-decoration: unset; }
 
 /**
  *  Desktop
