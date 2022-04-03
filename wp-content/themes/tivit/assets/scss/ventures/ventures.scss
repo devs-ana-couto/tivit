@@ -1,23 +1,31 @@
+//banner mobile
 .ventures-hero{
     height: 580px;
-    background: url('../../assets/images/ventures/banner-mobile.png') no-repeat center center;
+    background: url('../../assets/images/ventures/bannermobile.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     .ventures-hero-title{
-        margin: 162px auto 0 auto;
+        margin: 0 auto;
         h1{
-          font-size: 16px;
-          line-height: 22px;
-          font-weight: bold;
-          color: #fff;
-          text-transform: uppercase;
+            margin-top: 162px;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            @media (max-width: 767px){
+              margin-top: 200px;
+            }
         }
         h2{
-          font-weight: 400;
+          font-weight: 500 !important; 
         }
     }
     .ventures-hero-content{
+      @media (max-width: 767px){
+        z-index: 100;
+      }
     h2{
         font-size: 34px;
         line-height: 34px;
@@ -25,112 +33,211 @@
         font-weight: 400;
         width: 320px;
         margin: 198px auto 0 auto;
+        @media (max-width: 767px){
+          color: white;
+          font-size: 28px;
+          font-weight: lighter;
+          text-align: center;
+          margin: 5px auto 0 auto;
+        }
     }
-    }
-    .botao{
-      margin-bottom: 30px;
-      a{
-        background: transparent;
-        color: $vermelho-tivit;
-        border: solid 1px $vermelho-tivit;        
-      }
     }
     .arrow{
     margin-top: 0;
     }
+    .zindex{
+      z-index: 100;
+    }
+    .mask{
+      max-width: 90%;
+      @media (max-width: 768px){
+        max-width: 100%;
+      }
+      mix-blend-mode: multiply;
+    }
+    .maskDiv{
+      img{
+          top: 10%;
+          left: 0;
+          width: 100%;
+          mix-blend-mode: multiply;
+      }
+  }
 }
 
-@media(min-width: 760px){
-    .ventures-hero{
-        background: url('../../assets/images/ventures/banner.png') no-repeat center center;
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-    
-        .ventures-hero-title{ 
-            margin-top: 15%;
-            h1{
-               font-size: 14px;
-               line-height: 21.29px;
-               font-weight: 700; 
-               text-align: center;
-               margin: 0;
-      
-            }
-            h2{
-                font-size: 48px;
-                line-height: 54px;
-                color: white;
-                font-weight: 400;
-                text-align: center;
-                max-width: 564px;
-                margin: 0 auto;
-            }
-            .botao{
-                position: absolute;
-                bottom: 20px;
-                right: 0;
-                left: 0;
-                a{                
-                    text-decoration: none;
-                    border: none;
-                    padding: 0;
-                    color: white;
-                    background-color: transparent;
-                    p{
-                        margin-top: 10px;
-                    }
-                    &:hover{
-                        background: transparent;
-                        border:none;
-                    }
-                }
+// Sobre
+.a-tivit-sobre.ventures{
+    p{
+        font-weight: 300;
+    }
+    .red{
+        color: $vermelho-tivit;
+    }
+    @media(max-width: 760px){
+        margin-bottom: 70px;
+    }
+}
+
+// tdx ventures
+
+.tdx.ventures{
+    .title{
+        h2{
+            font-size: 28px;
+            line-height: 44px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+    }
+    .box{
+        h2{
+            text-transform: uppercase;
+        }
+    }
+}
+
+// tdx ventures - box
+#ventures{
+    @media(max-width: 760px){
+        h2{
+            font-size: 24px;
+        }
+    }
+    div.box{
+        height: 370px;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 100px;
+        }
+        p{
+            margin-top: 40px;
+        }
+        &:hover{
+            background: white;
+            transition: .2s all;
+            img{
+                filter: grayscale(0);
             }
         }
     }
+}
 
-    // Sobre
-    .a-tivit-sobre.ventures{
-        p{
-            font-weight: 300;
-        }
-        .red{
+// Apresentações
+.apresentacoes{
+    padding: 50px 0 50px 0;
+    h2{
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $cinza-dark-cyber-tivit;
+    }
+    .box{
+        padding: 30px 30px;
+        border: 1px solid $cinza-light-tivit;
+        margin-right: 18px;
+        margin-top: 20px;
+        h3{
+            font-size: 28px;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
             color: $vermelho-tivit;
         }
-    }
-
-
-    // tdx ventures
-
-    .tdx.ventures{
-        .title{
-            h2{
-                font-size: 28px;
-                line-height: 44px;
-                margin-bottom: 40px;
-                text-transform: uppercase;
-            }
-        }
-        .box{
-            h2{
-                text-transform: uppercase;
-            }
+        p{
+            margin: 0;
+            color: black;
+            line-height: 1.5;
         }
     }
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .carousel-inner .carousel-item > div:nth-child(2n) {
+      display: block;
+    }
+    .carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+      transform: translateX(-91.5%);
+    }
+    .carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+      transform: translateX(91.5%);
+    }
 
-    // tdx ventures - box
-    #ventures{
-        div.box{
-            height: 370px;
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+}
+
+    // a tivit cases
+    .a-tivit-cases.ventures{
+        @media(max-width: 760px){
+            h2{
+                font-size: 24px;
+                line-height: 1.3;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .a-tivit-cases.ventures{
+        background: white;
+        margin-bottom: 50px;
+    }
+
+@media(min-width: 760px){
+    //banner desktop
+    .ventures-hero{
+        height: 580px;
+        background: url('../../assets/images/ventures/bannerdesktop.jpg') no-repeat center center;
+        background-size: cover;
+        height: 580px;
+        .ventures-hero-title{
+          margin: 0 auto;
+          h1{
+              margin-top: 200px;
+              font-size: 16px;
+              line-height: 22px;
+              font-weight: 600;
+              color: #fff;
+              text-transform: uppercase;
+              text-align: center;
+          }
+          h2{
+            font-weight: 500 !important; 
+            color: white;
             text-align: center;
-            img{
-                width: 100%;
-                height: 100px;
-            }
-            p{
-                margin-top: 40px;
-            }
-        }
+            max-width: 550px;
+          }
+          p{
+              font-size: 18px;
+              color: white;
+              line-height: 1.3;
+              text-align: center;
+              margin-top: 15px;
+              max-width: 554px;
+          }
+      }
+      .arrow{
+      margin-top: 0;
+      }
+      .mask{
+          max-width: 1235px;
+          top: 0;
+      }
+    }
+
+    // a tivit cases
+    .a-tivit-cases.ventures{
+        margin-top: 0px !important;
     }
 
     // Apresentações
@@ -140,7 +247,7 @@
             font-size: 28px;
             line-height: 44px;
             margin-bottom: 6px;
-            font-weight: bold;
+            font-weight: 600;
             text-transform: uppercase;
             color: $cinza-dark-cyber-tivit;
         }
@@ -151,7 +258,7 @@
                 font-size: 28px;
                 line-height: 32px;
                 margin-bottom: 17px;
-                font-weight: bold;
+                font-weight: 600;
                 text-transform: uppercase;
                 color: $vermelho-tivit;
             }
