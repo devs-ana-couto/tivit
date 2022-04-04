@@ -91,7 +91,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="clouds">
     <div class="container">
         <div class="row">
-            <? 
+            <?
                 if( have_rows('itens_nuvem_solucoes') ):
                 // Loop through rows.
                     for($i=0; have_rows('itens_nuvem_solucoes'); $i++) : the_row();
@@ -109,12 +109,12 @@ if(have_posts()) : while(have_posts()) : the_post();
                     </div>
                     <div class="subtitle">
                         <p>Nível: <strong><?=$level_item[$i]?></strong></p>
-                        <p><?=$certifications_item[$i]?> certificações</p>
+                        <p><?=$certifications_item[$i] != '' ? $certifications_item[$i] . ' certificações' : '' ?></p>
                         <p><?=$acreditacoes_item[$i] != '' ? $acreditacoes_item[$i] . ' acreditações' : '' ?></p>
                     </div>
                 </div>
             </div>
-            <?  endfor; endif; ?>
+            
 
             <!-- Mobile section -->
             <div class="col-12 col-md-4 customTitleMobile hide-desktop">
@@ -122,22 +122,24 @@ if(have_posts()) : while(have_posts()) : the_post();
                 <div class="col-6 position-relative d-flex flex-column align-items-center justify-content-center">
                   <p class="w-100">
                     <span>
-                      <h2>Azure</h2>
+                      <h2><?=$name_item[$i]?></h2>
                     </span>
-                    <img class="tagMobile position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/azure.svg" width="40" alt="Azure" />
+                    <img class="tagMobile position-absolute" src="<?=$logo_url_item[$i]?>" width="40" alt="Azure" />
                   </p>
                 </div>
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-start align-items-center">
-                      <p class="custom-text">
-                        Nível: <strong>Gold</strong> 15 certificações
-                      </p>
+               
+                    <p>Nível: <strong><?=$level_item[$i]?></strong></br>
+                    <?=$certifications_item[$i] != '' ? $certifications_item[$i] . ' certificações' : '' ?></br>
+                    <?=$acreditacoes_item[$i] != '' ? $acreditacoes_item[$i] . ' acreditações' : '' ?></p>
+                     
                   </div>
                 </div>
               </div>
             </div>
             <!-- //// Mobile section -->
-
+            <?  endfor; endif; ?>
         </div>
         <div class="divCta text-center">
             <h2 class="cta"><?the_field('chamada_final_nuvem_solucoes');?></h2>
