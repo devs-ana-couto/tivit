@@ -53,7 +53,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 </div>
 
 <!-- only for this page MOBILE -->
-<div class="related hide-desktop">
+<div class="related container hide-desktop">
   <div class="row">
     <div class="col-12">
       <div class="d-flex flex-column align-items-center justify-content-center w-100">
@@ -117,7 +117,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             
 
             <!-- Mobile section -->
-            <div class="col-12 col-md-4 customTitleMobile hide-desktop">
+            <div class="container col-12 col-md-4 customTitleMobile hide-desktop">
               <div class="row">
                 <div class="col-6 position-relative d-flex flex-column align-items-center justify-content-center">
                   <p class="w-100">
