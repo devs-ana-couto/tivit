@@ -22,11 +22,11 @@
         <div class="col-md-5 footer-options hide-mobile">
 
           <div class="footer-people-and-careers">
-            <p>Pessoas e Carreiras</p>
+            <p><a href="/staged/tivit/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
           </div>
 
           <div class="footer-contact">
-            <p><a href="#" class="btn btn-contact">Contato</a></p>
+            <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
           </div>
 
           <div class="language">

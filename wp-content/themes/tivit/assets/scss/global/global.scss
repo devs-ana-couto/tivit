@@ -513,6 +513,18 @@ html, body, * {
     }
   }
 
+  .footer-people-and-careers{
+    p{
+      font-weight: 600;
+     a{
+      color: $cinza-dark-cyber-tivit !important;
+      text-decoration: unset;
+      font-weight: 600;
+      font-size: 14px;
+     } 
+    }
+  }
+
   .footer-address{
     p{
       font-size: 14px;

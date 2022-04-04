@@ -302,6 +302,13 @@ html, body, * {
         font-size: 14px;
         line-height: 21.29px;
         font-weight: 400; }
+  .footer .footer-people-and-careers p {
+    font-weight: 600; }
+    .footer .footer-people-and-careers p a {
+      color: #262626 !important;
+      text-decoration: unset;
+      font-weight: 600;
+      font-size: 14px; }
   .footer .footer-address p {
     font-size: 14px;
     line-height: 21.29px;
@@ -3482,7 +3489,9 @@ html, body, * {
     padding: 15px 40px 15px 40px;
     color: white;
     font-weight: 600;
-    font-size: 14px; }
+    font-size: 14px;
+    border-radius: 50px;
+    text-decoration: unset; }
 #labs .lp-tbanks-confira-content {
   width: 420px; }
 #labs .slide1 {
@@ -3520,7 +3529,7 @@ html, body, * {
     transition: .2s all; }
     .btnLabsCta .cta a:hover {
       background: white;
-      color: #454D54;
+      color: #454D54 !important;
       transition: .2s all; }
 
 #tdx {
