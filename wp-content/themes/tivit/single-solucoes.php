@@ -80,9 +80,9 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="services-intro">
     <div class="container d-flex justify-content-center align-items-center flex-column w-100">
         <div class="text text-center">
-            <h2>Desenhamos e implementamos a solução ideal em nuvem pública para o seu negócio</h2>
+            <h2><? the_field('chamada_nuvem_solucoes'); ?></h2>
             <div class="d-flex justify-content-center align-items-center flex-column mt-4 w-100">
-                <p>Garanta escalabilidade, agilidade de implantação e custos de infraestrutura sob demanda com toda a nossa expertise. </p>
+                <p><? the_field('descricao_nuvem_solucoes'); ?></p>
             </div>
         </div>
     </div>
@@ -91,85 +91,30 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="clouds">
     <div class="container">
         <div class="row">
+            <? 
+                if( have_rows('itens_nuvem_solucoes') ):
+                // Loop through rows.
+                    for($i=0; have_rows('itens_nuvem_solucoes'); $i++) : the_row();
+                    $logo_url_item[$i] = get_sub_field('logo');
+                    $name_item[$i] = get_sub_field('nome');
+                    $level_item[$i] = get_sub_field('nivel');
+                    $certifications_item[$i] = get_sub_field('certificacoes');
+                    $acreditacoes_item[$i] = get_sub_field('acreditacoes');
+            ?>
             <div class="col-12 col-md-4 hide-mobile">
                 <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
-                    <h2>AWS</h2>
+                    <h2><?=$name_item[$i]?></h2>
                     <div class="tag">
-                        <img class="position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/aws.svg" alt="mask" />
+                        <img class="position-absolute" src="<?=$logo_url_item[$i]?>" alt="mask" />
                     </div>
                     <div class="subtitle">
-                        Nível: <strong>Advanced</strong> 52 certificações 368 acreditações
+                        <p>Nível: <strong><?=$level_item[$i]?></strong></p>
+                        <p><?=$certifications_item[$i]?> certificações</p>
+                        <p><?=$acreditacoes_item[$i] != '' ? $acreditacoes_item[$i] . ' acreditações' : '' ?></p>
                     </div>
                 </div>
             </div>
-
-            <!-- Mobile section -->
-            <div class="col-12 col-md-4 customTitleMobile hide-desktop">
-              <div class="row">
-                <div class="col-6 position-relative d-flex flex-column align-items-center justify-content-center">
-                  <p class="w-100">
-                    <span>
-                      <h2>AWS</h2>
-                    </span>
-                    <img class="tagMobile position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/aws.svg" width="40" alt="AWS" />
-                  </p>
-                </div>
-                <div class="col-6">
-                  <div class="w-100 h-100 d-flex justify-content-start align-items-center">
-                      <p class="custom-text">
-                        Nível: <strong>Advanced</strong> 52 certificações 368 acreditações
-                      </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //// Mobile section -->
-
-            <div class="col-12 col-md-4 hide-mobile">
-                <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
-                    <h2>Google Cloud</h2>
-                    <div class="tag">
-                        <img class="position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/googlecloud.svg" alt="mask" />
-                    </div>
-                    <div class="subtitle">
-                        Nível: <strong>Premier</strong> 92 certificações
-                    </div>
-                </div>       
-            </div>
-
-            <!-- Mobile section -->
-            <div class="col-12 col-md-4 customTitleMobile hide-desktop">
-              <div class="row">
-                <div class="col-6 position-relative d-flex flex-column align-items-center justify-content-center">
-                  <p class="w-100">
-                    <span>
-                      <h2>Google Cloud</h2>
-                    </span>
-                    <img class="tagMobile position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/googlecloud.svg" width="40" alt="Google Cloud" />
-                  </p>
-                </div>
-                <div class="col-6">
-                  <div class="w-100 h-100 d-flex justify-content-start align-items-center">
-                      <p class="custom-text">
-                        Nível: <strong>Premier</strong> 92 certificações
-                      </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //// Mobile section -->
-
-            <div class="col-12 col-md-4 hide-mobile">
-                <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
-                    <h2>Azure</h2>
-                    <div class="tag">
-                        <img class="position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/azure.svg" alt="mask" />
-                    </div>
-                    <div class="subtitle">
-                        Nível: <strong>Gold</strong> 15 certificações
-                    </div>
-                </div>     
-            </div>
+            <?  endfor; endif; ?>
 
             <!-- Mobile section -->
             <div class="col-12 col-md-4 customTitleMobile hide-desktop">
@@ -195,7 +140,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
         </div>
         <div class="divCta text-center">
-            <h2 class="cta">Apoiamos sua jornada de transformação também com outros players de nuvem.</h2>
+            <h2 class="cta"><?the_field('chamada_final_nuvem_solucoes');?></h2>
             <a class="buttonCta">Fale com nossos especialistas</a>
         </div>
     </div>
