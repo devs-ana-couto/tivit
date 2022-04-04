@@ -2716,7 +2716,7 @@ html, body, * {
         text-decoration: unset; } }
 
 .cases-depoimentos {
-  padding-top: 100px; }
+  padding-top: 150px; }
   @media (max-width: 1024px) {
     .cases-depoimentos {
       padding-top: 30px; } }
@@ -2922,10 +2922,14 @@ html, body, * {
       text-transform: uppercase;
       text-decoration: none;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      transition: .2s all; }
       .cases-recentes .acessar a img {
         margin-left: 5px;
         height: 16px; }
+      .cases-recentes .acessar a:hover {
+        color: white;
+        transition: .2s all; }
   .cases-recentes .slider-cases .carousel-indicators {
     bottom: 50px !important; }
     .cases-recentes .slider-cases .carousel-indicators button {
@@ -5677,15 +5681,15 @@ html, body, * {
       .related span:hover {
         background: #F20024;
         transition: .2s all; } }
-.solucoes-hero {
+.services-hero {
   height: 580px;
   background: url("../../assets/images/solucoes/bannerMobile.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column; }
-  .solucoes-hero .solucoes-hero-title {
+  .services-hero .services-hero-title {
     margin: 0 auto; }
-    .solucoes-hero .solucoes-hero-title h1 {
+    .services-hero .services-hero-title h1 {
       margin-top: 162px;
       font-size: 16px;
       line-height: 22px;
@@ -5693,21 +5697,14 @@ html, body, * {
       color: #fff;
       text-transform: uppercase; }
       @media (max-width: 767px) {
-        .solucoes-hero .solucoes-hero-title h1 {
+        .services-hero .services-hero-title h1 {
           margin-top: 200px; } }
-    .solucoes-hero .solucoes-hero-title h2 {
+    .services-hero .services-hero-title h2 {
       font-weight: 500 !important; }
-    .solucoes-hero .solucoes-hero-title p {
-      font-size: 16px;
-      color: white;
-      line-height: 1.3;
-      text-align: center;
-      margin-top: 10px;
-      max-width: 100%; }
   @media (max-width: 767px) {
-    .solucoes-hero .solucoes-hero-content {
+    .services-hero .services-hero-content {
       z-index: 100; } }
-  .solucoes-hero .solucoes-hero-content h2 {
+  .services-hero .services-hero-content h2 {
     font-size: 34px;
     line-height: 34px;
     text-align: center;
@@ -5715,29 +5712,36 @@ html, body, * {
     width: 320px;
     margin: 198px auto 0 auto; }
     @media (max-width: 767px) {
-      .solucoes-hero .solucoes-hero-content h2 {
+      .services-hero .services-hero-content h2 {
         color: white;
         font-size: 28px;
         font-weight: lighter;
         text-align: center;
         margin: 5px auto 0 auto; } }
-  .solucoes-hero .botao {
+  .services-hero .services-hero-content p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%; }
+  .services-hero .botao {
     margin-bottom: 30px; }
-    .solucoes-hero .botao a {
+    .services-hero .botao a {
       background: transparent;
       color: #F20024;
       border: solid 1px #F20024; }
-  .solucoes-hero .arrow {
+  .services-hero .arrow {
     margin-top: 0; }
-  .solucoes-hero .zindex {
+  .services-hero .zindex {
     z-index: 100; }
-  .solucoes-hero .mask {
+  .services-hero .mask {
     max-width: 90%;
     mix-blend-mode: multiply; }
     @media (max-width: 768px) {
-      .solucoes-hero .mask {
+      .services-hero .mask {
         max-width: 100%; } }
-  .solucoes-hero .maskDiv img {
+  .services-hero .maskDiv img {
     top: 10%;
     left: 0;
     width: 100%;
@@ -5746,6 +5750,11 @@ html, body, * {
 .bgWhite {
   padding: 130px 0 50px 0;
   background: white; }
+  .bgWhite .container-fluid.intro {
+    margin-left: 10.5% !important; }
+    @media (max-width: 1024px) {
+      .bgWhite .container-fluid.intro {
+        margin-left: 0 !important; } }
   @media (max-width: 1024px) {
     .bgWhite {
       padding: 35px 0 50px 0; } }

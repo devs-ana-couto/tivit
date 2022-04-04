@@ -1,11 +1,11 @@
 // Banner
-.solucoes-hero{
+.services-hero{
     height: 580px;
     background: url('../../assets/images/solucoes/bannerMobile.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    .solucoes-hero-title{
+    .services-hero-title{
         margin: 0 auto;
         h1{
             margin-top: 162px;
@@ -21,16 +21,8 @@
         h2{
           font-weight: 500 !important; 
         }
-        p{
-            font-size: 16px;
-            color: white;
-            line-height: 1.3;
-            text-align: center;
-            margin-top: 10px;
-            max-width: 100%;
-        }
     }
-    .solucoes-hero-content{
+    .services-hero-content{
       @media (max-width: 767px){
         z-index: 100;
       }
@@ -48,6 +40,14 @@
           text-align: center;
           margin: 5px auto 0 auto;
         }
+    }
+    p{
+        font-size: 16px;
+        color: white;
+        line-height: 1.3;
+        text-align: center;
+        margin-top: 10px;
+        max-width: 100%;
     }
     }
     .botao{
@@ -84,6 +84,12 @@
 .bgWhite{
     padding: 130px 0 50px 0;
     background: white;
+    .container-fluid.intro{
+        margin-left: 10.5% !important;
+        @media(max-width: 1024px){
+            margin-left: 0 !important;
+        }
+    }
     @media(max-width: 1024px){
         padding: 35px 0 50px 0;
     }
