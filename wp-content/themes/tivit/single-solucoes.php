@@ -151,73 +151,44 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="middleContent">
     <div class="container">
         <div class="w-100">
-            <h2 class="title text-center">chamada sobre big numbers lipsum</h2>
-        </div>
-        <div class="row hide-mobile">
-            <div class="col-12 col-md-4">
-                <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
-                    <h2>XXX</h2>
-                    <div class="subtitle">
-                        Clientes atendidos 
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
-                    <h2>+600</h2>
-                    <div class="subtitle">
-                        Profissionais dedicados à nuvem 
-                    </div>
-                </div>       
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
-                    <h2>XX</h2>
-                    <div class="subtitle">
-                        Certificações de parceiros 
-                    </div>
-                </div>     
-            </div>
+            <h2 class="title text-center"><?the_field('chamada_big_numbers_solucoes');?></h2>
         </div>
 
-        <!-- mobile row -->
-        <div class="row hide-desktop">
-            <div class="col-12">
-                <div class="row bigNumbersTitle">
-                    <div class="col-6">
-                        <h2>XXX</h2>
+        <div class="row">
+
+            <div class="col-12 col-md-4"> 
+                <div class="bigNumbersTitle">
+                    <div class="title">
+                        <h2><?the_field('clientes_atendidos_solucoes');?></h2>
                     </div>
-                    <div class="col-6">
-                        <div class="subtitle">
-                            Clientes atendidos 
-                        </div>
+                    <div class="subtitle">
+                        <p>Clientes<br/> atendidos</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="row bigNumbersTitle">
-                    <div class="col-6">
-                        <h2>+600</h2>
+
+            <div class="col-12 col-md-4"> 
+                <div class="bigNumbersTitle">
+                    <div class="title">
+                        <h2>+<?the_field('profissionais_dedicados_a_nuvem_solucoes');?></h2>
                     </div>
-                    <div class="col-6">
-                        <div class="subtitle">
-                            Profissionais dedicados à nuvem 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="row bigNumbersTitle">
-                    <div class="col-6">
-                        <h2>XX</h2>
-                    </div>
-                    <div class="col-6">
-                        <div class="subtitle">
-                            Certificações de parceiros
-                        </div>
+                    <div class="subtitle">
+                        <p>Profissionais dedicados <br/>à nuvem</p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-12 col-md-4"> 
+                <div class="bigNumbersTitle">
+                    <div class="title">
+                        <h2><?the_field('certificacoes_de_parceiros_solucoes');?></h2>
+                    </div>
+                    <div class="subtitle">
+                        <p>Certificações de <br/>parceiros</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="diferenciais">
@@ -492,7 +463,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 <!-- Bloco de Conteúdos -->
 <div id="contentServices" class="home-content content-inovacao">
-<div id="triangle-down"></div>
+    <div id="triangle-down"></div>
   <div class="container pd">
     <div class="title">
       <h2 class="titleText text-center">CONTEÚDOS RELACIONADOS</h2>
@@ -680,7 +651,6 @@ if(have_posts()) : while(have_posts()) : the_post();
 
   </div>
 </div>
-
 
 <?php
 endwhile; endif;

@@ -5443,12 +5443,24 @@ html, body, * {
     text-align: center;
     font-weight: lighter;
     line-height: 1.3;
-    color: #262626;
-    max-width: 185px; }
+    color: #262626; }
     @media (max-width: 1024px) {
       #middleContent .row .bigNumbersTitle .subtitle {
-        margin: 15px;
-        text-align: left; } }
+        padding: 15px;
+        text-align: left;
+        width: 50%; } }
+    #middleContent .row .bigNumbersTitle .subtitle p {
+      margin: 0; }
+  #middleContent .row .bigNumbersTitle .title {
+    margin-bottom: 0; }
+    @media (max-width: 1024px) {
+      #middleContent .row .bigNumbersTitle .title {
+        width: 50%; } }
+    #middleContent .row .bigNumbersTitle .title h2 {
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      justify-content: center; }
   #middleContent .diferenciais {
     padding: 170px 0px 170px 0; }
     @media (max-width: 1024px) {
