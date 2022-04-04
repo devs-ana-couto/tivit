@@ -1,31 +1,37 @@
 <?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
-<div class="cases-hero">
-
+<div class="cases-hero position-relative">
   <div class="cases-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1><?=get_post_meta( get_the_ID(), 'casesHero_pre-chamada', true );?></h1>
-          <h2 class="hide-mobile"><?=get_post_meta( get_the_ID(), 'casesHero_chamada', true );?></h2>
+            <div class="zindex textBanner">
+              <h1>Cases</h1>
+              <h2>Nome do cliente videocase Lorem ipsum</h2>
+            </div>
+            <div class="maskDiv text-center hide-desktop">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg" class="position-absolute mask" alt="Máscara">
+            </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="cases-hero-content hide-desktop">
-    <h2>Nome do cliente videocase Lorem ipsum</h2>
+  <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
+      <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
-
-  <div class="botao hide-desktop">
-    <a href="#" class="btn btn-primary">Assista ao Reel</a>
+  <div class="botaoReels m-0 hide-mobile">
+    <a href="#">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
+      <p>Assista ao reel</p>
+    </a>
   </div>
-
-  <div class="arrow text-center hide-desktop">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" class="bounce" alt="Saiba Mais">
+  <div class="botaoReels m-0 hide-desktop">
+    <a href="#">
+      <p>Assista ao reel</p>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
+    </a>
   </div>
-  
 </div>
 
 <div class="cases-depoimentos text-center">
