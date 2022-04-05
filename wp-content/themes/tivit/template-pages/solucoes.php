@@ -56,7 +56,7 @@
                         $description_service[$x] = get_sub_field('descricao_do_servico');
                         
                 ?>
-                <div class="carousel-item <?=$x==0 ? 'active' : '';?> <?=$i==0 ? 'heroslide' : 'heroslide'.$i=$i+1 ;?>">
+                <div class="carousel-item <?=$x==0 ? 'active' : '';?> <?=$i==0 ? 'heroslide' : 'heroslide'.$l=$i+1 ;?>">
                     <div class="col-11 col-md-3">
                         <div class="card">
                             <div class="content">
