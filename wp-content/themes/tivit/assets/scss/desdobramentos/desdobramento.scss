@@ -91,7 +91,8 @@
         margin-top: -70px;
         padding: 220px 0 130px 0;
         @media(max-width: 1024px){
-            padding: 50px 0 100px 0; 
+            margin-top: -100px;
+            padding: 100px 0 60px 0; 
         }
         .text{
             h2{
@@ -112,6 +113,9 @@
 
 #middleContent.unfolding{
     background: #3a3a3a;
+    @media(max-width: 1024px){
+        padding: 20px 0 0px 0;
+    }
     .title{
         color: white;
     }
@@ -135,6 +139,9 @@
         background: #3a3a3a;
         padding-bottom: 45px;
         padding-top: 140px;
+        @media(max-width: 1024px){
+            padding-top: 70px;
+        }
         .titleCarousel{
             h2{
                 color: white;
@@ -143,6 +150,11 @@
             }
         }
     }
+}
+
+
+.bgWhite.unfolding{
+    padding: 70px 0 50px 0;
 }
 
 .diferenciais{
@@ -206,6 +218,44 @@
                 color: black;
                 font-size: 16px;
                 line-height: 1.3;
+            }
+        }
+    }
+}
+
+#contatoUnfolding{
+    background: #F5F6F7;
+    padding: 100px 0 75px 0;
+    .cta{
+        h2{
+            color: $vermelho-tivit;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1.3;
+            max-width: 300px;
+        }
+        strong{
+            color: $vermelho-tivit;
+            font-weight: 600;;
+        }
+    }
+    .form .tdx-form .wpcf7-form-control.has-spinner.wpcf7-submit{
+        background: $vermelho-tivit !important;
+        padding: 5px 52px;
+        @media(max-width: 1024px){
+            padding: 15px 52px;
+        }
+    }
+    .grupo-5{
+        margin-top: 35px;
+    }
+    .form{
+        input{
+            margin-top: 50px;
+        }
+        .tdx-form{
+            @media(max-width: 1024px){
+                margin: 0px auto 0 auto;
             }
         }
     }

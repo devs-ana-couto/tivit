@@ -259,7 +259,7 @@
 
 </div>
 
-<div class="bgWhite bgGray">
+<div class="bgWhite bgGray unfolding">
     <div class="container-fluid intro">
         <div>
             <h2>CYBERSECURITY</h2>
@@ -378,7 +378,7 @@
 <div class="introTitle">
     <div class="container titleCarousel">
         <h2>
-            Pilares de atuação do Labs
+            Pilares de atuação
         </h2>
     </div>
 </div>
@@ -567,6 +567,214 @@
         <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="contatoUnfolding" class="lp-tbanks-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="w-100 d-flex justify-content-center align-items-center h-100 cta">
+                    <h2><strong>PRONTO PARA INOVAR?</strong> FALE COM NOSSOS ESPECIALISTAS</h2>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="form">
+                    <?php echo do_shortcode('[contact-form-7 id="66" title="Contato Desdobramentos"]'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bloco de Conteúdos -->
+<div id="contentTdx" class="home-content content-inovacao">
+<div id="triangle-down"></div>
+  <div class="container pd">
+    <div class="title">
+      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+    </div>
+
+    <div class="row hide-mobile">
+      <!-- content 1 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1"> 
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 1 -->
+
+      <!-- content 2 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+            <div class="position-absolute tagContent">press release</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 2 -->
+      <!-- content 3 -->
+      <div class="col-12 col-md-4">
+        <div class="cardContent p-1">
+          <div class="title">
+            <h2 class="hide-desktop">cases mais recentes</h2>
+          </div>
+          <div class="img position-relative">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+            <div class="position-absolute tagContent">artigo</div>
+          </div>
+          <div class="detalhes">
+            <span>01/01/2021</span>
+            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+          </div>
+          <div class="content">
+            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          </div>
+          <div class="autor-time w-100">
+            <div class="d-flex flex-row align-items-center">
+              <a href="#">conta híbrida</a>
+              <a href="#">varejo</a>
+            </div>
+            <p>6 minutos de leitura</p>
+          </div>
+          <div class="acessar">
+            <a href="#">acessar artigo</a>
+          </div>
+        </div>
+      </div>
+      <!-- // content 3 -->
+    </div>
+
+    <!-- mobile slide -->
+    <div class="row mx-auto my-auto justify-content-center hide-desktop">
+      <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item heroslide4 content active">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2"> 
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">artigo</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row aaa">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 content">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2">
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">press release</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item heroslide4 content">
+                  <div class="col-11 m-0 p-0">
+                    <div class="cardContent p-2">
+                      <div class="img position-relative">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
+                        <div class="position-absolute tagContent">artigo</div>
+                      </div>
+                      <div class="detalhes">
+                        <span>01/01/2021</span>
+                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
+                      </div>
+                      <div class="content">
+                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                      </div>
+                      <div class="autor-time w-100">
+                        <div class="d-flex flex-row align-items-center">
+                          <a href="#">conta híbrida</a>
+                          <a href="#">varejo</a>
+                        </div>
+                        <p>6 min. de leitura</p>
+                      </div>
+                      <div class="acessar">
+                        <a href="#">acessar artigo</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
