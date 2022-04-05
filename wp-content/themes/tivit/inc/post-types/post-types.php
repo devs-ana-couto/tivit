@@ -71,7 +71,7 @@ function create_cases() {
 			'menu_icon' => 'dashicons-awards',
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'nossos-cases'),
-			'supports' => array( 'title', 'editor', 'thumbnail')
+			'supports' => array( 'title', 'thumbnail')
 		)
 	);
 
@@ -114,6 +114,29 @@ function create_clientes() {
 			'menu_icon' => 'dashicons-smiley',
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'clientes'),
+			'supports' => array( 'title', 'thumbnail')
+		)
+	);
+}
+
+// Soluções
+add_action( 'init', 'create_solucoes' );
+function create_solucoes() {
+	register_post_type( 'solucoes',
+	    array(
+	      	'labels' => array(
+		        'name' => __( 'Solucões', '' ),
+		        'singular_name' => __( 'Solução', '' ),
+				'add_new' => __( 'Adicionar Solução', '' ),
+				'add_new_item' => __( 'Adicionar Nova Solução', '' ),
+				'edit_item' => __( 'Editar Solução', '' ),
+				'new_item' => __( 'Nova Solução', '' ),
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-forms',
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'solucoes'),
 			'supports' => array( 'title', 'thumbnail')
 		)
 	);
