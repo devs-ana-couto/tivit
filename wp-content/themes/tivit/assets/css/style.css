@@ -6181,6 +6181,237 @@ html, body, * {
   .home-pessoas-e-carreiras.inovar.labs {
     background: url("../../assets/images/labs/carreiras.jpg") no-repeat center center; } }
 
+.unfolding-hero {
+  height: 580px;
+  background: url("../../assets/images/desdobramentos/bannermobile.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .unfolding-hero .unfolding-hero-title {
+    margin: 0 auto; }
+    .unfolding-hero .unfolding-hero-title h1 {
+      margin-top: 162px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .unfolding-hero .unfolding-hero-title h1 {
+          margin-top: 200px; } }
+    .unfolding-hero .unfolding-hero-title h2 {
+      font-weight: 500 !important; }
+  @media (max-width: 767px) {
+    .unfolding-hero .unfolding-hero-content {
+      z-index: 100; } }
+  .unfolding-hero .unfolding-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+    @media (max-width: 767px) {
+      .unfolding-hero .unfolding-hero-content h2 {
+        color: white;
+        font-size: 28px;
+        font-weight: lighter;
+        text-align: center;
+        margin: 5px auto 0 auto; } }
+  .unfolding-hero .unfolding-hero-content p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%; }
+  .unfolding-hero .botao {
+    margin-bottom: 30px; }
+    .unfolding-hero .botao a {
+      background: transparent;
+      color: #F20024;
+      border: solid 1px #F20024; }
+  .unfolding-hero .arrow {
+    margin-top: 0; }
+  .unfolding-hero .zindex {
+    z-index: 100; }
+  .unfolding-hero .mask {
+    max-width: 90%;
+    mix-blend-mode: multiply; }
+    @media (max-width: 768px) {
+      .unfolding-hero .mask {
+        max-width: 100%; } }
+  .unfolding-hero .maskDiv img {
+    top: 10%;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: multiply; }
+
+.introTitle {
+  padding: 100px 0 0 0; }
+
+.dark-bg {
+  background: #3a3a3a; }
+  .dark-bg #intro-unfolding {
+    margin-top: -70px;
+    padding: 220px 0 130px 0; }
+    @media (max-width: 1024px) {
+      .dark-bg #intro-unfolding {
+        margin-top: -100px;
+        padding: 100px 0 60px 0; } }
+    .dark-bg #intro-unfolding .text h2 {
+      font-size: 36px;
+      color: white;
+      font-weight: 500;
+      line-height: 1.3;
+      text-align: center;
+      max-width: 700px; }
+      @media (max-width: 1024px) {
+        .dark-bg #intro-unfolding .text h2 {
+          font-size: 28px; } }
+
+#middleContent.unfolding {
+  background: #3a3a3a; }
+  @media (max-width: 1024px) {
+    #middleContent.unfolding {
+      padding: 20px 0 0px 0; } }
+  #middleContent.unfolding .title {
+    color: white; }
+  #middleContent.unfolding .row .bigNumbersTitle .subtitle {
+    color: white; }
+
+#cases-unfolding .a-tivit-cases {
+  background: linear-gradient(to top, #F5F6F7 50%, #3a3a3a 50%); }
+
+#cases-unfolding .a-tivit-cases.cases.labs {
+  margin-top: 0; }
+
+#cases-unfolding .custom-bg {
+  background: #3a3a3a;
+  padding-bottom: 45px;
+  padding-top: 140px; }
+  @media (max-width: 1024px) {
+    #cases-unfolding .custom-bg {
+      padding-top: 70px; } }
+  #cases-unfolding .custom-bg .titleCarousel h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0; }
+
+.bgWhite.unfolding {
+  padding: 70px 0 50px 0; }
+
+.diferenciais {
+  padding: 170px 0px 0px 0; }
+  @media (max-width: 1024px) {
+    .diferenciais {
+      padding: 110px 10px 0px 10px; } }
+  .diferenciais .intro .titleDif {
+    font-size: 36px;
+    color: #262626;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    max-width: 250px; }
+    @media (max-width: 1024px) {
+      .diferenciais .intro .titleDif {
+        font-size: 28px;
+        max-width: 100%; } }
+  .diferenciais .intro .subtitle {
+    font-size: 18px;
+    color: black;
+    font-weight: lighter;
+    line-height: 1.3; }
+  .diferenciais .intro div {
+    margin-top: 30px; }
+    @media (max-width: 1024px) {
+      .diferenciais .intro div {
+        margin-bottom: 50px; } }
+    .diferenciais .intro div a {
+      color: #F20024;
+      text-decoration: unset;
+      text-transform: uppercase; }
+      .diferenciais .intro div a:after {
+        content: url("../../assets/images/esg/arrow-red-content.svg");
+        margin-left: 5px;
+        margin-top: 1px;
+        transition: all .2s linear; }
+  .diferenciais .content div {
+    margin-bottom: 45px; }
+    @media (max-width: 1024px) {
+      .diferenciais .content div {
+        margin-bottom: 40px; } }
+    .diferenciais .content div h2 {
+      text-transform: uppercase;
+      color: #F20024;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.1; }
+    .diferenciais .content div p {
+      color: black;
+      font-size: 16px;
+      line-height: 1.3; }
+
+#contatoUnfolding {
+  background: #F5F6F7;
+  padding: 100px 0 75px 0; }
+  #contatoUnfolding .cta h2 {
+    color: #F20024;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 300px; }
+  #contatoUnfolding .cta strong {
+    color: #F20024;
+    font-weight: 600; }
+  #contatoUnfolding .form .tdx-form .wpcf7-form-control.has-spinner.wpcf7-submit {
+    background: #F20024 !important;
+    padding: 5px 52px; }
+    @media (max-width: 1024px) {
+      #contatoUnfolding .form .tdx-form .wpcf7-form-control.has-spinner.wpcf7-submit {
+        padding: 15px 52px; } }
+  #contatoUnfolding .grupo-5 {
+    margin-top: 35px; }
+  #contatoUnfolding .form input {
+    margin-top: 50px; }
+  @media (max-width: 1024px) {
+    #contatoUnfolding .form .tdx-form {
+      margin: 0px auto 0 auto; } }
+
+@media (min-width: 1024px) {
+  .unfolding-hero {
+    height: 580px;
+    background: url("../../assets/images/desdobramentos/bannerdesktop.png") no-repeat center center;
+    background-size: cover;
+    height: 580px; }
+    .unfolding-hero .unfolding-hero-title {
+      margin: 0 auto; }
+      .unfolding-hero .unfolding-hero-title h1 {
+        margin-top: 200px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center; }
+      .unfolding-hero .unfolding-hero-title h2 {
+        font-weight: 500 !important;
+        color: white;
+        text-align: center; }
+      .unfolding-hero .unfolding-hero-title p {
+        font-size: 18px;
+        color: white;
+        line-height: 1.3;
+        text-align: center;
+        margin-top: 15px;
+        max-width: 554px; }
+    .unfolding-hero .arrow {
+      margin-top: 0; }
+    .unfolding-hero .mask {
+      max-width: 1235px;
+      top: 0; } }
+
 .ventures-hero {
   height: 580px;
   background: url("../../assets/images/ventures/bannermobile.png") no-repeat center center;
