@@ -393,60 +393,34 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item heroslide active">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
+        <? 
+            if( have_rows('depoimentos_solucoes') ):
+            // Loop through rows.
+                for($i=0; have_rows('depoimentos_solucoes'); $i++) : the_row();
+                $image_solucoes[$i] = get_sub_field('imagem');
+                $name_solucoes[$i] = get_sub_field('nome');
+                $role_solucoes[$i] = get_sub_field('cargo');
+                $content_solucoes[$i] = get_sub_field('conteudo');
+        ?>
+        <div class="carousel-item heroslide <?=$i==0 ? 'active' : '';?>">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="lp-tbanks-depoimentos-content text-center ">
+                            <div class="lp-tbanks-depoimentos-autor">
+                                <img src="<?=$image_solucoes[$i]?>" alt="Tbanks Saiba Mais">
+                                <h3><?=$name_solucoes[$i]?></h3>
+                                <h4><?=$role_solucoes[$i]?></h4>
+                                <p>
+                                ”<?=$content_solucoes[$i]?>”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-            <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <? endfor; endif; ?>
     </div>
     <div class="mobileRelative">
       <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
