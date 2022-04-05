@@ -2,26 +2,22 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="services-hero position-relative">
-  <div class="services-hero-title">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex justify-content-center align-items-center flex-column position-relative zindex">
-            <h1>SOLUÇÕES</h1>
-            <h2 class="hide-mobile">POR SERVIÇOS E PRODUTOS</h2>
-            <p class="hide-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
-          </div>
+<div class="services-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_psolucoes') : the_field('banner_desktop_psolucoes'); ?>') no-repeat center center; background-size: cover;">
+    <div class="services-hero-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center flex-column position-relative zindex services-hero-content">
+                        <h1><?the_field('pre_chamada_psolucoes');?></h1>
+                        <h2><?the_field('chamada_psolucoes');?></h2>
+                        <p><?the_field('descricao_psolucoes');?></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
   <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
-  </div>
-  <div class="container services-hero-content hide-desktop">
-    <h2>POR SERVIÇOS E PRODUTOS</h2>
-    <p class="hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
   </div>
 
   <div class="maskDiv text-center hide-desktop">

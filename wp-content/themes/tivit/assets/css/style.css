@@ -5792,7 +5792,7 @@ html, body, * {
     padding-left: calc(10.5% + 0.75rem) !important; }
     @media (max-width: 1024px) {
       .bgWhite .container-fluid.intro {
-        margin-left: 0 !important; } }
+        padding-left: 0.75rem !important; } }
   @media (max-width: 1024px) {
     .bgWhite {
       padding: 35px 0 50px 0; } }
@@ -5900,9 +5900,13 @@ html, body, * {
         text-transform: uppercase;
         text-align: center; }
       .services-hero .services-hero-title h2 {
+        margin: 3px 0 10px 0;
+        font-size: 48px;
+        line-height: 52px;
         font-weight: 500 !important;
         color: white;
-        text-align: center; }
+        text-align: center;
+        width: 100%; }
       .services-hero .services-hero-title p {
         font-size: 18px;
         color: white;
