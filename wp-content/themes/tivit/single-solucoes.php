@@ -35,8 +35,12 @@ if(have_posts()) : while(have_posts()) : the_post();
       <div class="col-6">
         <div class="d-flex flex-row align-items-center justify-content-center w-100">
           <p>Ofertado por:</p>
-          <span>TDX</span>
-          <span>STONE AGE</span>
+          <?
+            $categories = get_categories();
+                foreach($categories as $category) {
+          ?>
+          <span><?=$category->name?></span>
+          <? } ?>
         </div>
       </div>
       <div class="col-6">
@@ -60,8 +64,12 @@ if(have_posts()) : while(have_posts()) : the_post();
         <p>Ofertado por:</p>
       </div>
       <div class="d-flex flex-row align-items-center justify-content-center w-100">
-        <span>TDX</span>
-        <span>STONE AGE</span>
+        <?
+            $categories = get_categories();
+                foreach($categories as $category) {
+          ?>
+          <span><?=$category->name?></span>
+        <? } ?>
       </div>
     </div>
     <div class="col-12 mt-3">

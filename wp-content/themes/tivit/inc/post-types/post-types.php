@@ -137,7 +137,8 @@ function create_solucoes() {
 			'menu_icon' => 'dashicons-forms',
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'solucoes'),
-			'supports' => array( 'title', 'thumbnail')
+			'supports' => array( 'title', 'thumbnail'),
+			'taxonomies' => array('category')
 		)
 	);
 }
