@@ -25,14 +25,20 @@
   </div>
 </div>
 
-<!-- Bloco 1 WHITE -->
-<div class="bgWhite">
+<? 
+    if( have_rows('item_psolucoes') ):
+    // Loop through rows.
+        for($i=0; have_rows('item_psolucoes'); $i++) : the_row();
+        $name_solucao[$i] = get_sub_field('nome_da_solucao');
+        $description_solucao[$i] = get_sub_field('descricao_da_solucao');
+        $services_solucao[$i] = get_sub_field('servicos');
+?>
+<div class="<?=$i % 2 == 0 ? 'bgWhite' : 'bgWhite bgGray'?>">
     <div class="container-fluid intro">
         <div>
-            <h2>cloud solutions</h2>
+            <h2><?=$name_solucao[$i]?></h2>
             <p>
-                Para empresas que buscam capacidade de escalonamento com agilidade de implantação e custos de infraestrutura sob demanda, 
-                a solução está nos Serviços de Public Cloud da TIVIT.
+                <?=$description_solucao[$i]?>
             </p>
         </div>
     </div>
@@ -40,16 +46,24 @@
      <!-- Bloco Carrossel Infinito -->
      <div id="carouselCustom" class="container-fluid solucoes p-0 text-center my-3">
         <div class="row mx-auto my-auto justify-content-center">
-            <div id="recipeCarouselFirstBlock" class="carousel slide" data-bs-ride="carousel">
+            <div id="recipeCarouselFirstBlock<?=$i?>" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                <div class="carousel-item heroslide active">
+                <? 
+                    if( have_rows('servicos_da_solucao') ):
+                    // Loop through rows.
+                        for($x=0; have_rows('servicos_da_solucao'); $x++) : the_row();
+                        $name_service[$x] = get_sub_field('nome_do_servico');
+                        $description_service[$x] = get_sub_field('descricao_do_servico');
+                        
+                ?>
+                <div class="carousel-item <?=$x==0 ? 'active' : '';?> <?=$i==0 ? 'heroslide' : 'heroslide'.$i ;?>">
                     <div class="col-11 col-md-3">
                         <div class="card">
                             <div class="content">
-                                <p class="tag">CLOUD SOLUTIONS</p>
-                                <h2>PUBLIC CLOUDS</h2>
+                                <p class="tag"><?=$name_solucao[$i]?></p>
+                                <h2><?=$name_service[$x]?></h2>
                                 <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
+                                    <p><?=$description_service[$x]?></p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
                                     <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
@@ -58,83 +72,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item heroslide">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CLOUD SOLUTIONS</p>
-                                <h2>CLOUD MANAGED SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CLOUD SOLUTIONS</p>
-                                <h2>CLOUD PROFESSIONAL SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CLOUD SOLUTIONS</p>
-                                <h2>PRIVATE SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CLOUD SOLUTIONS</p>
-                                <h2>LOREM IPSUM SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
+                <?
+                    endfor;
+                    endif;
+                ?>        
             </div>
 
             <div class="d-flex position-absolute controls">
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselFirstBlock" role="button" data-bs-slide="prev">
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselFirstBlock<?=$i?>" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
                     <!-- <div class="d-flex flex-row counter">
                         <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
                     </div> -->
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarouselFirstBlock" role="button" data-bs-slide="next">
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarouselFirstBlock<?=$i?>" role="button" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -144,124 +95,6 @@
     </div>
 </div>
 <!-- /// Bloco 1 WHITE -->
+<? endfor; endif; ?>
 
-<!-- Bloco 2 CINZA -->
-<div class="bgWhite bgGray">
-    <div class="container-fluid intro">
-        <div>
-            <h2>CYBERSECURITY</h2>
-            <p>
-                Para empresas que buscam capacidade de escalonamento com agilidade de implantação e custos de infraestrutura sob demanda, 
-                a solução está nos Serviços de Public Cloud da TIVIT.
-            </p>
-        </div>
-    </div>
-
-     <!-- Bloco Carrossel Infinito -->
-     <div id="carouselCustom" class="container-fluid solucoes p-0 text-center my-3">
-        <div class="row mx-auto my-auto justify-content-center">
-            <div id="recipeCarouselSecBlock" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                <div class="carousel-item heroslide2 active">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>MDR</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>DEV SEC OPS</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>THREAT INTELL</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>CONSULTING</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>LOREM IPSUM SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div>
-
-            <div class="d-flex position-absolute controls">
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselSecBlock" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <!-- <div class="d-flex flex-row counter">
-                        <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
-                    </div> -->
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarouselSecBlock" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /// Bloco 2 CINZA -->
 <?php get_footer(); ?>
