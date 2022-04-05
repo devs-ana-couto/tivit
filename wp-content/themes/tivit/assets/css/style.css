@@ -3490,6 +3490,7 @@ html, body, * {
     font-size: 14px;
     border-radius: 50px;
     text-decoration: unset; }
+
 #labs .lp-tbanks-confira-content {
   width: 420px; }
 
@@ -5788,7 +5789,7 @@ html, body, * {
   padding: 130px 0 50px 0;
   background: white; }
   .bgWhite .container-fluid.intro {
-    margin-left: 10.5% !important; }
+    padding-left: calc(10.5% + 0.75rem) !important; }
     @media (max-width: 1024px) {
       .bgWhite .container-fluid.intro {
         margin-left: 0 !important; } }
@@ -6103,6 +6104,7 @@ html, body, * {
     max-width: 165px;
     line-height: 1.2;
     height: 80px; }
+
 #carouselCustom.labs .carousel-inner {
   right: -10%; }
   @media (max-width: 1024px) {
@@ -6171,7 +6173,6 @@ html, body, * {
     .labs-hero .mask {
       max-width: 1235px;
       top: 0; }
-
   .home-pessoas-e-carreiras.inovar.labs {
     background: url("../../assets/images/labs/carreiras.jpg") no-repeat center center; } }
 

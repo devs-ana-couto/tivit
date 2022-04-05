@@ -85,7 +85,7 @@
     padding: 130px 0 50px 0;
     background: white;
     .container-fluid.intro{
-        margin-left: 10.5% !important;
+        padding-left: calc(10.5% + 0.75rem) !important;
         @media(max-width: 1024px){
             margin-left: 0 !important;
         }
