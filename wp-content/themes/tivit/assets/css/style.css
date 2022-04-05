@@ -5792,6 +5792,7 @@ html, body, * {
     padding-left: calc(10.5% + 0.75rem) !important; }
     @media (max-width: 1024px) {
       .bgWhite .container-fluid.intro {
+        padding-left: 0.75rem !important;
         margin-left: 0 !important; } }
   @media (max-width: 1024px) {
     .bgWhite {
