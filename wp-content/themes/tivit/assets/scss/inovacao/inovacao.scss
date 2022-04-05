@@ -422,6 +422,8 @@ $duration: 250ms;
       color: white;
       font-weight: 600;
       font-size: 14px;
+      border-radius: 50px;
+      text-decoration: unset;
     }
   }
   .lp-tbanks-confira-content{
@@ -469,7 +471,7 @@ $duration: 250ms;
       transition: .2s all;
       &:hover{
         background: white;
-        color: $cinza-dark-tivit;
+        color: $cinza-dark-tivit !important;
         transition: .2s all;
       }
     }

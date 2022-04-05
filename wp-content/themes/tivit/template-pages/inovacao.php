@@ -151,7 +151,7 @@
 
 <div class="btnLabsCta">
   <div class="cta">
-    <a>Conheça mais sobre TIVIT LABS</a>
+    <a href="/staged/tivit/tivit-labs">Conheça mais sobre TIVIT LABS</a>
   </div>
 </div>
 
@@ -192,7 +192,7 @@
                 <h3>
                 Conheça os projetos em destaque da <strong>TIVIT Labs</strong>
                 </h3>
-                <a class="button">
+                <a href="/staged/tivit/tivit-labs" class="button">
                     CONHEÇA MAIS SOBRE A TIVIT LABS
                 </a>
               </div>
@@ -346,7 +346,7 @@
     </div>
 
     <div class="cta w-100 d-flex align-items-center justify-content-center">
-      <a class="button">Conheça MAIS sobre a tdx</a>
+      <a href="/staged/tivit/tdx" class="button">Conheça MAIS sobre a tdx</a>
     </div>
   </div>
 </div>

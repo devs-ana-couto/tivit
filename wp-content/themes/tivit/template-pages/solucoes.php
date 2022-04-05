@@ -10,7 +10,7 @@
           <div class="d-flex justify-content-center align-items-center flex-column position-relative zindex">
             <h1>SOLUÇÕES</h1>
             <h2 class="hide-mobile">POR SERVIÇOS E PRODUTOS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+            <p class="hide-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
           </div>
         </div>
       </div>
@@ -19,8 +19,9 @@
   <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
-  <div class="services-hero-content hide-desktop">
-    <h2>SOLUÇÕES</h2>
+  <div class="container services-hero-content hide-desktop">
+    <h2>POR SERVIÇOS E PRODUTOS</h2>
+    <p class="hide-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
   </div>
 
   <div class="maskDiv text-center hide-desktop">
@@ -30,7 +31,7 @@
 
 <!-- Bloco 1 WHITE -->
 <div class="bgWhite">
-    <div class="container">
+    <div class="container-fluid intro">
         <div>
             <h2>cloud solutions</h2>
             <p>
@@ -55,7 +56,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +72,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +88,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +104,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +120,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +151,7 @@
 
 <!-- Bloco 2 CINZA -->
 <div class="bgWhite bgGray">
-    <div class="container">
+    <div class="container-fluid intro">
         <div>
             <h2>CYBERSECURITY</h2>
             <p>
@@ -175,7 +176,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +192,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +208,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +224,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +240,7 @@
                                     <p>Descritivo breve lorem ipsum dolor.</p>
                                 </div>
                                 <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a class="d-flex buttonCta w-100">Saiba Mais</a>
+                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
                                 </div>
                             </div>
                         </div>

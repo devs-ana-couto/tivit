@@ -114,7 +114,7 @@
 
 // Depoimentos
 .cases-depoimentos{
-    padding-top: 100px;
+    padding-top: 150px;
     @media(max-width: 1024px){
       padding-top: 30px;
     }
@@ -382,9 +382,14 @@
       text-decoration: none;
       display: flex;
       align-items: center;
+      transition: .2s all;
       img{
         margin-left: 5px;
         height: 16px;
+      }
+      &:hover{
+        color: white;
+        transition: .2s all;
       }
     }
 
