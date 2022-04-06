@@ -23,7 +23,7 @@
   </div>
   <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
-      <p class="customNumbers">Números de <br /> setembro de 2021</p>
+      <p class="customNumbers"><?the_field('chamada_numeros_pc')?></p>
   </div>
 </div>
 
@@ -33,7 +33,7 @@
       <div class="col-12">
 
       <div class="numberMobile hide-desktop">
-        <small>Números de Setembro 2021</small>
+        <small><?the_field('chamada_numeros_pc')?></small>
       </div>
 
         <div class="lp-tbanks-credibilidade text-center">
@@ -41,7 +41,7 @@
             <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
                 <span>
-                  <b>3,8</b>
+                  <b><?the_field('nota_glassdoor')?></b>
                 </span>
                 <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/glassdoor.svg" width="60" alt="Glass Door" />
               </p>
@@ -58,7 +58,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>3,8</b>
+                      <b><?the_field('nota_glassdoor')?></b>
                     </span>
                     <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/glassdoor.svg" width="60" alt="Glass Door" />
                   </p>
@@ -76,7 +76,7 @@
 
             <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
-                <span>78%</span>
+                <span><?the_field('recomendaria_para_um_amigo')?></span>
                 <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
@@ -92,7 +92,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>78%</b>
+                      <b><?the_field('recomendaria_para_um_amigo')?></b>
                     </span>
                     <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
                   </p>
@@ -110,7 +110,7 @@
 
             <div class="col-12 col-md-4 hide-mobile">
               <p>
-                <span>50%</span>
+                <span><?the_field('das_vagas_preenchidas_com_promocao_interna')?></span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
@@ -125,7 +125,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>50%</b>
+                      <b><?the_field('das_vagas_preenchidas_com_promocao_interna')?></b>
                     </span>
                   </p>
                 </div>
@@ -158,7 +158,7 @@
 
                 <div class="lp-tbanks-conheca-content">
                     <p>
-                      O seu futuro é colaborar com a gente na transformação das maiores empresas do país e do mundo. 
+                      <?the_field('introducao_numeros_pc');?>
                     </p>
                 </div>
             </div>
