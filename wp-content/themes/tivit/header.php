@@ -75,6 +75,189 @@
         </div>
       </div>
 
+      <div class="solution-menu position-absolute hide-mobile">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por serviços e produtos</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por indústria</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POR DESAFIO</button>
+          </li>
+        </ul>
+        <div class="container">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active pt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="textLeft">
+                    <h2>Conheça as soluções da TIVIT por <strong>Serviços e Produtos.</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+                    <a class="buttonintro">ver todas as solucoes</a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenu">
+                    <h2>Cloud Solutions</h2>
+                    <ul>
+                      <li>
+                        Public CLOUD
+                      </li>
+                      <li>
+                        CLOUD MANAGED SERVICES
+                      </li>
+                      <li>
+                        CLOUD PRofeSSIONAL SERvices
+                      </li>
+                      <li>
+                        private cloud
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="separator w-100"/>
+                  <div class="textMenu">
+                    <h2>TECH PLATFORMS</h2>
+                    <ul>
+                      <li>
+                        Infrastructure Management
+                      </li>
+                      <li>
+                        Transactional Services
+                      </li>
+                      <li>
+                        Workplace
+                      </li>
+                      <li>
+                        Smart Systems & IoT
+                      </li>
+                      <li>
+                        Enterprise Content Management
+                      </li>
+                      <li>
+                        Business Integration
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenu">
+                    <h2>Cloud Solutions</h2>
+                    <ul>
+                      <li>
+                        Public CLOUD
+                      </li>
+                      <li>
+                        CLOUD MANAGED SERVICES
+                      </li>
+                      <li>
+                        CLOUD PRofeSSIONAL SERvices
+                      </li>
+                      <li>
+                        private cloud
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="separator w-100"/>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenu">
+                    <h2>Cloud Solutions</h2>
+                    <ul>
+                      <li>
+                        Public CLOUD
+                      </li>
+                      <li>
+                        CLOUD MANAGED SERVICES
+                      </li>
+                      <li>
+                        CLOUD PRofeSSIONAL SERvices
+                      </li>
+                      <li>
+                        private cloud
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="textLeft pt-5">
+                    <h2>Conheça as soluções da TIVIT por <strong>INDÚSTRIA</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                  <div class="textMenuCard mt-4">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                  <div class="textMenuCard mt-4">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="textLeft pt-5">
+                    <h2>Conheça as soluções da TIVIT por <strong>INDÚSTRIA</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                  <div class="textMenuCard mt-4">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                  <div class="textMenuCard mt-4">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="textMenuCard mt-5">
+                    <h2><a>serviços financeiros</a></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="text-center hide-desktop">
       <?php
           wp_nav_menu( array(
