@@ -2,16 +2,16 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="pec-hero position-relative">
+<div class="pec-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_pc') : the_field('banner_desktop_pc'); ?>') no-repeat center center; background-size: cover;">
   <div class="pec-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
             <div class="zindex position-relative">
-                <h1>PESSOAS E CARREIRAS</h1>
-                <h2 class="">Vem Transformar</h2>
+                <h1><?the_field('pre_chamada_pc')?></h1>
+                <h2><?the_field('chamada_pc')?></h2>
                 <div class="buttoncta">
-                  <a>Quero ver as vagas</a>
+                  <a href="<?the_field('link_cta')?>"><?the_field('texto_do_cta')?></a>
                 </div>
             </div>
             <div class="maskDiv text-center hide-desktop">
