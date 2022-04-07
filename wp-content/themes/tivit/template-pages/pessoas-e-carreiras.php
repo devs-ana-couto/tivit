@@ -269,18 +269,19 @@
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
+              
               <div class="carousel-item heroslide4 content active">
                 <div class="col-11 m-0 p-0">
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/atendente-icon.svg" alt="design">
+                        <img src="<? the_field('item_1_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Carreira e Reconhecimento
+                      <? the_field('item_1_titulo_vv') ?>
                       </h2>
                       <p>
-                        Aqui as oportunidades são reais e acontecem! 
+                      <? the_field('item_1_descricao_vv') ?>
                       </p>
                     </div>
                   </div>
@@ -291,13 +292,13 @@
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mouse-icon.svg" alt="grafico">
+                        <img src="<? the_field('item_2_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Desenvolvimento e Aprendizagem
+                      <? the_field('item_2_titulo_vv') ?>
                       </h2>
                       <p>
-                        Seu desenvolvimento é prioridade para nós!
+                      <? the_field('item_2_descricao_vv') ?>
                       </p>
                     </div>
                   </div>
@@ -308,13 +309,13 @@
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/like-icon.svg" alt="code">
+                        <img src="<? the_field('item_3_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Clima e Engajamento
+                      <? the_field('item_3_titulo_vv') ?>
                       </h2>
                       <p>
-                        Aqui o Clima é leve e descontraído!
+                      <? the_field('item_3_descricao_vv') ?>
                       </p>
                     </div>
                   </div>
