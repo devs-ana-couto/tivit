@@ -886,5 +886,11 @@ window.addEventListener("DOMContentLoaded", function() {
                document.body.classList.remove('nomove')
                :
                document.body.classList.add('nomove')
+
+            //rotate menu arrow
+            document.getElementById('solutions').classList.contains('rotate180')?
+               document.getElementById('solutions').classList.remove('rotate180')
+               :
+               document.getElementById('solutions').classList.add('rotate180')
    }, false);
 }, false);

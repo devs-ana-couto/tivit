@@ -129,6 +129,20 @@ html, body, * {
 .nomove {
   overflow: hidden !important; }
 
+#solutions:after {
+  content: url("../../assets/images/menusolutionsarrow.svg");
+  transform: rotateX(180deg);
+  margin-left: 4px;
+  width: auto;
+  margin-top: 3px;
+  position: absolute;
+  transition: .3s all; }
+
+.rotate180:after {
+  transform: rotateX(0deg) !important;
+  transition: .3s all;
+  bottom: 25px; }
+
 @media (min-width: 769px) {
   .header .header-menu ul li.active {
     border: 1px solid white;
