@@ -867,3 +867,24 @@ window.addEventListener('scroll', function() {
    }
 })
 
+//Function on Solutions Menu
+window.addEventListener("DOMContentLoaded", function() {
+   document.getElementById('solutions').addEventListener('click', function() {
+      document.querySelector('.solution-menu').classList.contains('solution-menu-open')?
+         document.querySelector('.solution-menu').classList.remove('solution-menu-open')
+         :
+         document.querySelector('.solution-menu').classList.add('solution-menu-open')
+
+         //Red background on menu
+         document.querySelector('.navbar-expand-md').classList.contains('navbar-expand-md-red')?
+            document.querySelector('.navbar-expand-md').classList.remove('navbar-expand-md-red')
+            :
+            document.querySelector('.navbar-expand-md').classList.add('navbar-expand-md-red')
+
+            //Do not allow overflow
+            document.body.classList.contains('nomove')?
+               document.body.classList.remove('nomove')
+               :
+               document.body.classList.add('nomove')
+   }, false);
+}, false);
