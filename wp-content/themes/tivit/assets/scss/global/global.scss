@@ -220,13 +220,14 @@ html, body, * {
   z-index: 9030 !important;
 }
 // Header Mobile
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header{
     background: #990017;
     max-width: 100%;
     margin: 0 auto;
     .navbar {
       padding: 0;
+      align-items: start;
       .navbar-toggler {
         color: rgb(255, 255, 255);  
         border-color: rgba(0, 0, 0, 0);
@@ -237,6 +238,9 @@ html, body, * {
       }
       .container{
         display: block;
+      }
+      .navbar-nav{
+        height: 100vh;
       }
     }
     .header-logo{
@@ -256,6 +260,34 @@ html, body, * {
       justify-content: center;
       background: $vermelho-dark-tivit;
     }
+    .menu-item{
+      margin: 5px 0 5px 0;
+      span{
+        font-size: 28px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 300;
+      }
+    }
+    .menu-item:first-child{
+      margin-top: 30px;
+    }
+    .menu-item.active{
+      a{
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+    #solutions{
+      &:after{
+        content: url('../../assets/images/expandmenu.svg');
+        margin-left: 10px;
+        width: 16px;
+        transition: all .2s linear;
+        margin-bottom: 1px;
+      }
+    }
   }  
 }
 
@@ -264,7 +296,7 @@ html, body, * {
 }
 
 // Header Desktop
-@media (min-width: 769px){
+@media (min-width: 1024px){
   // .btn{
   //   padding: 0.08rem 0.75rem !important;
   // }
@@ -288,8 +320,10 @@ html, body, * {
   .solution-menu-open{
     opacity: 1 !important;
     transition: .7s all;
+    display: block !important;
   }
   .solution-menu{
+    display: none;
     opacity: 0;
     padding-top: 30px;
     position: absolute;
