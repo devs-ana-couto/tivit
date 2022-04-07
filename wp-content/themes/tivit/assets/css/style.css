@@ -126,6 +126,9 @@ html, body, * {
       align-items: center;
       justify-content: center;
       background: #990017; } }
+.nomove {
+  overflow: hidden !important; }
+
 @media (min-width: 769px) {
   .header .header-menu ul li.active {
     border: 1px solid white;
@@ -143,13 +146,19 @@ html, body, * {
     border-color: white;
     transition: all .2s linear; }
 
+  .solution-menu-open {
+    opacity: 1 !important;
+    transition: .7s all; }
+
   .solution-menu {
+    opacity: 0;
     padding-top: 30px;
     position: absolute;
     left: 0;
     right: 0;
     background: #990017;
-    height: 100vh; }
+    height: 100vh;
+    transition: .8s all; }
     .solution-menu .nav-tabs {
       display: flex;
       justify-content: space-evenly;
@@ -173,7 +182,10 @@ html, body, * {
         text-transform: uppercase; }
         .solution-menu .nav-tabs .nav-link:hover, .solution-menu .nav-tabs .nav-link:focus, .solution-menu .nav-tabs .nav-link:focus-visible {
           color: #f6f6f6;
-          border: unset; }
+          border-bottom: 2px solid white;
+          border-left: unset;
+          border-right: unset;
+          border-top: unset; }
     .solution-menu .textLeft {
       padding-right: 50px; }
       .solution-menu .textLeft h2 {
@@ -220,16 +232,13 @@ html, body, * {
         .solution-menu .textMenu ul li:after {
           content: url("../../assets/images/expandmenu.svg");
           margin-left: 9px;
-          width: 100%;
+          width: auto;
           transition: all .2s linear;
           margin-bottom: 1px;
           position: absolute; }
         .solution-menu .textMenu ul li:hover:after {
-          content: url("../../assets/images/expandmenu.svg");
           margin-left: 19px;
-          width: 16px;
-          transition: all .2s linear;
-          margin-bottom: 1px; }
+          transition: all .2s linear; }
     .solution-menu .textMenu:first-child {
       padding-bottom: 60px; }
     .solution-menu hr {
@@ -237,7 +246,8 @@ html, body, * {
       margin: 0 0 50px !important; }
     .solution-menu .textMenuCard {
       border: 1px solid RGBA(195, 195, 195, 0.28);
-      padding: 25px; }
+      padding: 25px;
+      transition: all .3s; }
       .solution-menu .textMenuCard h2 {
         font-size: 18px;
         font-weight: 600;
@@ -260,12 +270,23 @@ html, body, * {
           width: 16px;
           transition: all .2s linear;
           margin-bottom: 1px; }
-        .solution-menu .textMenuCard h2:hover:after {
-          content: url("../../assets/images/expandmenu.svg");
-          margin-left: 19px;
-          width: 16px;
-          transition: all .2s linear;
-          margin-bottom: 1px; }
+      .solution-menu .textMenuCard:hover {
+        background: white;
+        border-color: white;
+        transition: all .3s; }
+        .solution-menu .textMenuCard:hover h2 {
+          color: #990017;
+          transition: all .2s linear; }
+          .solution-menu .textMenuCard:hover h2:after {
+            content: url("../../assets/images/expandmenured.svg");
+            margin-left: 19px;
+            width: 16px;
+            transition: all .3s linear;
+            margin-bottom: 1px; }
+        .solution-menu .textMenuCard:hover a {
+          color: #990017; }
+        .solution-menu .textMenuCard:hover p {
+          color: #990017; }
     .solution-menu p {
       font-size: 16px;
       font-weight: lighter;
@@ -307,11 +328,15 @@ html, body, * {
   .navbar-expand-md {
     background: transparent;
     height: 70px;
-    transition: all .33s linear; }
+    transition: all .2s; }
+
+  .navbar-expand-md-red {
+    background: #990017;
+    transition: all .2s; }
 
   .on-scroll-global {
     background: #990017;
-    transition: all .33s linear; }
+    transition: all .7s; }
 
   .header {
     background-color: transparent;

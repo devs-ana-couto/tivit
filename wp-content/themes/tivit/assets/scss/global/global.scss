@@ -259,6 +259,10 @@ html, body, * {
   }  
 }
 
+.nomove{
+  overflow: hidden !important;
+}
+
 // Header Desktop
 @media (min-width: 769px){
   // .btn{
@@ -281,13 +285,19 @@ html, body, * {
     border-color: white;
     transition: all .2s linear;
   }
+  .solution-menu-open{
+    opacity: 1 !important;
+    transition: .7s all;
+  }
   .solution-menu{
+    opacity: 0;
     padding-top: 30px;
     position: absolute;
     left: 0;
     right: 0;
     background: $vermelho-dark-tivit;
     height: 100vh;
+    transition: .8s all;
     .nav-tabs{
       display: flex;
       justify-content: space-evenly;
@@ -312,7 +322,10 @@ html, body, * {
         text-transform: uppercase;
         &:hover, &:focus, &:focus-visible{
           color: #f6f6f6;
-          border: unset;
+          border-bottom: 2px solid white;
+          border-left: unset;
+          border-right: unset;
+          border-top: unset;
         }
       }
     }
@@ -369,18 +382,15 @@ html, body, * {
           &:after{
             content: url('../../assets/images/expandmenu.svg');
             margin-left: 9px;
-            width: 100%;
+            width: auto;
             transition: all .2s linear;
             margin-bottom: 1px;
             position: absolute;
           }
           &:hover{
             &:after{
-              content: url('../../assets/images/expandmenu.svg');
               margin-left: 19px;
-              width: 16px;
               transition: all .2s linear;
-              margin-bottom: 1px;
           }
         }
       }
@@ -396,6 +406,7 @@ html, body, * {
     .textMenuCard{
       border: 1px solid RGBA(195,195,195,0.28);
       padding: 25px;
+      transition: all .3s;
       h2{
         font-size: 18px;
         font-weight: 600;
@@ -420,14 +431,27 @@ html, body, * {
           transition: all .2s linear;
           margin-bottom: 1px;
         }
-        &:hover{
-          &:after{
-            content: url('../../assets/images/expandmenu.svg');
-            margin-left: 19px;
-            width: 16px;
-            transition: all .2s linear;
-            margin-bottom: 1px;
+    }
+    &:hover{
+      background: white;
+      border-color: white;
+      transition: all .3s;
+      h2{
+        color: $vermelho-dark-tivit;
+        transition: all .2s linear;
+        &:after{
+          content: url('../../assets/images/expandmenured.svg');
+          margin-left: 19px;
+          width: 16px;
+          transition: all .3s linear;
+          margin-bottom: 1px;
         }
+      }
+      a{
+        color: $vermelho-dark-tivit;
+      }
+      p{
+        color: $vermelho-dark-tivit;
       }
     }
   }
@@ -483,11 +507,15 @@ html, body, * {
   .navbar-expand-md{
     background: transparent;
     height: 70px;
-    transition: all .33s linear;
+    transition: all .2s;
+  }
+  .navbar-expand-md-red{
+    background: $vermelho-dark-tivit;
+    transition: all .2s;
   }
   .on-scroll-global{
     background: $vermelho-dark-tivit;
-    transition: all .33s linear;
+    transition: all .7s;
   }
   .header{
     background-color: transparent;
