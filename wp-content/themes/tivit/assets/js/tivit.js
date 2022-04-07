@@ -881,10 +881,44 @@ window.addEventListener("DOMContentLoaded", function() {
             :
             document.querySelector('.navbar-expand-md').classList.add('navbar-expand-md-red')
 
-            //Do not allow overflow
+            //Do not allow overflow on body
             document.body.classList.contains('nomove')?
                document.body.classList.remove('nomove')
                :
                document.body.classList.add('nomove')
+
+            //rotate menu arrow
+            document.getElementById('solutions').classList.contains('rotate180')?
+               document.getElementById('solutions').classList.remove('rotate180')
+               :
+               document.getElementById('solutions').classList.add('rotate180')
+   }, false);
+
+   //Open services and Products mobile
+   document.getElementById('service-product').addEventListener('click', function() {
+      document.querySelector('#solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('#solutions-service-mobile').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('#solutions-service-mobile').classList.add('solutions-service-mobile-open')
+
+         //Do not allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
+   }, false);
+
+   //Close open services and procuts mobile
+   document.querySelector('#solutions-service-mobile > .container > .intro > h2').addEventListener('click', function() {
+      document.querySelector('#solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('#solutions-service-mobile').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('#solutions-service-mobile').classList.add('solutions-service-mobile-open')
+
+         //Allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
    }, false);
 }, false);

@@ -48,6 +48,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 register_nav_menus( 
   array(
     'header-menu' => __('Header Menu'),
+    'mobile-menu' => __('Mobile Menu'),
     'footer-menu' => __('Footer Menu'),
     'footer-menu-copyright' => __('Footer Copyright Menu'),
   )
