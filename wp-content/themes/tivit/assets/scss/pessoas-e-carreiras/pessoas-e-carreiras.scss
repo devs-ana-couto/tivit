@@ -126,7 +126,7 @@
   padding: 0px 140px 0;
   .lp-tbanks-conheca-content{
     p{
-      max-width: 850px;
+      max-width: 100%;
     }
   }
 }
@@ -382,7 +382,6 @@
     @media (min-width: 768px){
       padding: 0px 0px 72px 0;
     }
-    padding: 0px 0px 0px 0;
   }
   h2.title{
     font-size: 36px;
