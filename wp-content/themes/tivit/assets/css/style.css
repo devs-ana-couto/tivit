@@ -223,7 +223,13 @@ html, body, * {
         padding: 10px 35px 10px 35px;
         text-decoration: unset;
         text-transform: uppercase;
-        font-size: 14px; }
+        font-size: 14px;
+        transition: .3s all;
+        cursor: pointer; }
+        .solution-menu .textLeft a:hover {
+          background: white;
+          color: #990017;
+          transition: .3s all; }
     .solution-menu .textMenu h2 {
       font-size: 14px;
       font-weight: 600;

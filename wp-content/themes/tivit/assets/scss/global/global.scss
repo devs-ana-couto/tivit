@@ -376,6 +376,13 @@ html, body, * {
         text-decoration: unset;
         text-transform: uppercase;
         font-size: 14px;
+        transition: .3s all;
+        cursor: pointer;
+        &:hover{
+          background: white;
+          color: $vermelho-dark-tivit;
+          transition: .3s all;
+        }
       }
     }
     .textMenu{
