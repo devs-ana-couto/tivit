@@ -2,16 +2,16 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="pec-hero position-relative">
+<div class="pec-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_pc') : the_field('banner_desktop_pc'); ?>') no-repeat center center; background-size: cover;">
   <div class="pec-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
             <div class="zindex position-relative">
-                <h1>PESSOAS E CARREIRAS</h1>
-                <h2 class="">Vem Transformar</h2>
+                <h1><?the_field('pre_chamada_pc')?></h1>
+                <h2><?the_field('chamada_pc')?></h2>
                 <div class="buttoncta">
-                  <a>Quero ver as vagas</a>
+                  <a href="<?the_field('link_cta')?>"><?the_field('texto_do_cta')?></a>
                 </div>
             </div>
             <div class="maskDiv text-center hide-desktop">
@@ -23,7 +23,7 @@
   </div>
   <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
-      <p class="customNumbers">Números de <br /> setembro de 2021</p>
+      <p class="customNumbers"><?the_field('chamada_numeros_pc')?></p>
   </div>
 </div>
 
@@ -33,7 +33,7 @@
       <div class="col-12">
 
       <div class="numberMobile hide-desktop">
-        <small>Números de Setembro 2021</small>
+        <small><?the_field('chamada_numeros_pc')?></small>
       </div>
 
         <div class="lp-tbanks-credibilidade text-center">
@@ -41,7 +41,7 @@
             <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
                 <span>
-                  <b>3,8</b>
+                  <b><?the_field('nota_glassdoor')?></b>
                 </span>
                 <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/glassdoor.svg" width="60" alt="Glass Door" />
               </p>
@@ -58,7 +58,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>3,8</b>
+                      <b><?the_field('nota_glassdoor')?></b>
                     </span>
                     <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/glassdoor.svg" width="60" alt="Glass Door" />
                   </p>
@@ -76,7 +76,7 @@
 
             <div class="col-12 col-md-4 hide-mobile">
               <p class="w-100 position-relative">
-                <span>78%</span>
+                <span><?the_field('recomendaria_para_um_amigo')?></span>
                 <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
@@ -92,7 +92,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>78%</b>
+                      <b><?the_field('recomendaria_para_um_amigo')?></b>
                     </span>
                     <img class="tag position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/greatplace.svg" width="60" alt="Great place to work tag" />
                   </p>
@@ -110,7 +110,7 @@
 
             <div class="col-12 col-md-4 hide-mobile">
               <p>
-                <span>50%</span>
+                <span><?the_field('das_vagas_preenchidas_com_promocao_interna')?></span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
@@ -125,7 +125,7 @@
                 <div class="col-6">
                   <p class="w-100 position-relative">
                     <span>
-                      <b>50%</b>
+                      <b><?the_field('das_vagas_preenchidas_com_promocao_interna')?></b>
                     </span>
                   </p>
                 </div>
@@ -155,10 +155,9 @@
         </div>
         <div class="row">
             <div class="col-12">
-
                 <div class="lp-tbanks-conheca-content">
                     <p>
-                      O seu futuro é colaborar com a gente na transformação das maiores empresas do país e do mundo. 
+                      <?the_field('introducao_numeros_pc');?>
                     </p>
                 </div>
             </div>
@@ -223,13 +222,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/atendente-icon.svg" alt="design">
+              <img src="<? the_field('item_1_logo_vv') ?>" alt="design">
             </div>
             <h2>
-              Carreira e Reconhecimento
+                <? the_field('item_1_titulo_vv') ?>
             </h2>
             <p>
-              Aqui as oportunidades são reais e acontecem! 
+                <? the_field('item_1_descricao_vv') ?> 
             </p>
           </div>
         </div>
@@ -238,13 +237,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mouse-icon.svg" alt="grafico">
+              <img src="<? the_field('item_2_logo_vv') ?>" alt="grafico">
             </div>
             <h2>
-              Desenvolvimento e Aprendizagem
+                <? the_field('item_2_titulo_vv') ?>
             </h2>
             <p>
-              Seu desenvolvimento é prioridade para nós!
+                <? the_field('item_2_descricao_vv') ?> 
             </p>
           </div>
         </div>
@@ -253,13 +252,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/like-icon.svg" alt="code">
+              <img src="<? the_field('item_3_logo_vv') ?>" alt="code">
             </div>
             <h2>
-              Clima e Engajamento
+                <? the_field('item_3_titulo_vv') ?>
             </h2>
             <p>
-              Aqui o Clima é leve e descontraído!
+                <? the_field('item_3_descricao_vv') ?>
             </p>
           </div>
         </div>
@@ -270,18 +269,19 @@
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
+              
               <div class="carousel-item heroslide4 content active">
                 <div class="col-11 m-0 p-0">
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/atendente-icon.svg" alt="design">
+                        <img src="<? the_field('item_1_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Carreira e Reconhecimento
+                      <? the_field('item_1_titulo_vv') ?>
                       </h2>
                       <p>
-                        Aqui as oportunidades são reais e acontecem! 
+                      <? the_field('item_1_descricao_vv') ?>
                       </p>
                     </div>
                   </div>
@@ -292,13 +292,13 @@
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mouse-icon.svg" alt="grafico">
+                        <img src="<? the_field('item_2_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Desenvolvimento e Aprendizagem
+                      <? the_field('item_2_titulo_vv') ?>
                       </h2>
                       <p>
-                        Seu desenvolvimento é prioridade para nós!
+                      <? the_field('item_2_descricao_vv') ?>
                       </p>
                     </div>
                   </div>
@@ -309,13 +309,13 @@
                   <div class="box">
                     <div class="w-100">
                       <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/like-icon.svg" alt="code">
+                        <img src="<? the_field('item_3_logo_vv') ?>" alt="design">
                       </div>
                       <h2>
-                        Clima e Engajamento
+                      <? the_field('item_3_titulo_vv') ?>
                       </h2>
                       <p>
-                        Aqui o Clima é leve e descontraído!
+                      <? the_field('item_3_descricao_vv') ?>
                       </p>
                     </div>
                   </div>

@@ -105,9 +105,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                     for($i=0; have_rows('itens_nuvem_solucoes'); $i++) : the_row();
                     $logo_url_item[$i] = get_sub_field('logo');
                     $name_item[$i] = get_sub_field('nome');
-                    $level_item[$i] = get_sub_field('nivel');
-                    $certifications_item[$i] = get_sub_field('certificacoes');
-                    $acreditacoes_item[$i] = get_sub_field('acreditacoes');
+                    $content_item[$i] = get_sub_field('conteudo');
             ?>
             <div class="col-12 col-md-4 hide-mobile">
                 <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
@@ -116,9 +114,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                         <img class="position-absolute" src="<?=$logo_url_item[$i]?>" alt="mask" />
                     </div>
                     <div class="subtitle">
-                        <p>Nível: <strong><?=$level_item[$i]?></strong></p>
-                        <p><?=$certifications_item[$i] != '' ? $certifications_item[$i] . ' certificações' : '' ?></p>
-                        <p><?=$acreditacoes_item[$i] != '' ? $acreditacoes_item[$i] . ' acreditações' : '' ?></p>
+                        <p><?=$content_item[$i]?></p>
                     </div>
                 </div>
             </div>
@@ -167,10 +163,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             <div class="col-12 col-md-4"> 
                 <div class="bigNumbersTitle">
                     <div class="title">
-                        <h2><?the_field('clientes_atendidos_solucoes');?></h2>
+                        <h2><?the_field('item_1_texto_solucoes');?></h2>
                     </div>
                     <div class="subtitle">
-                        <p>Clientes<br/> atendidos</p>
+                        <p><?the_field('item_1_descricao_solucoes');?></p>
                     </div>
                 </div>
             </div>
@@ -178,10 +174,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             <div class="col-12 col-md-4"> 
                 <div class="bigNumbersTitle">
                     <div class="title">
-                        <h2>+<?the_field('profissionais_dedicados_a_nuvem_solucoes');?></h2>
+                        <h2><?the_field('item_2_texto_solucoes');?></h2>
                     </div>
                     <div class="subtitle">
-                        <p>Profissionais dedicados <br/>à nuvem</p>
+                        <p><?the_field('item_2_descricao_solucoes');?></p>
                     </div>
                 </div>
             </div>
@@ -189,10 +185,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             <div class="col-12 col-md-4"> 
                 <div class="bigNumbersTitle">
                     <div class="title">
-                        <h2><?the_field('certificacoes_de_parceiros_solucoes');?></h2>
+                        <h2><?the_field('item_3_texto_solucoes');?></h2>
                     </div>
                     <div class="subtitle">
-                        <p>Certificações de <br/>parceiros</p>
+                        <p><?the_field('item_3_descricao_solucoes');?></p>
                     </div>
                 </div>
             </div>
