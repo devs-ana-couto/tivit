@@ -401,64 +401,20 @@
     <div class="lp-tbanks-services text-center m-0 hide-mobile">      
  
       <div class="row">
-
+        <?
+            if( have_rows('itens_opc') ):
+            // Loop through rows.   
+                for($i=0; have_rows('itens_opc'); $i++) : the_row();
+                $name_itemp[$i] = get_sub_field('nome');
+                $description_itemp[$i] = get_sub_field('descricao');
+        ?>
         <div class="col-12 col-md-3">
           <div class="bg-white">
-            <h3>Plano de carreira</h3>
-            <p>Valorizamos e proporcionamos o seu desenvolvimento.Conte com a gente para que você decole na sua carreira.</p>
+            <h3><?=$name_itemp[$i]?></h3>
+            <p><?=$description_itemp[$i]?></p>
           </div>
         </div>
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Pulses e Avaliação & Feedback 360°</h3>
-            <p>Saber onde está e onde quer chegar é fundamental em nossa vida. Por isso, a avaliação, comunicação e feedback estão em nosso DNA para evolução e crescimento profissional.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Comitês da Janela de Mérito</h3>
-            <p>Comitê semestral dedicado a falar sobre quem está se destacando para aplicação de um mérito finaceiro, afinal, queremos ver seu crescimento aqui dentro.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TechnoTIVIT</h3>
-            <p>Com mais de 400 cursos disponíveis, aprendizado, certificação e desenvolvimento profissional estão em nosso dia a dia.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row marginC">
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TIVIT Community</h3>
-            <p>Nossa Comunidade Técnica para incentivo a inovação e o crescimento coletivo, compartilhando conhecimentos dentro de uma comunidade orgânica e diversa.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TIVIT CLUB</h3>
-            <p>Programa de parcerias de benefícios com descontos exclusivos em vários segmentos para os nossos colaboradores.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Vivaz</h3>
-            <p>O programa de Qualidade de Vida de A a Z, com lives voltadas para a qualidade de vida, Newsletters mensais , informes médicos semanais em nossos canais de comunicação.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Trabalho Remoto</h3>
-            <p>Se o seu trabalho pode ser feito de casa, estaremos conectados, mesmo que distantes, mas com o mesmo propósito.</p>
-          </div>
-        </div>
+        <? endfor; endif; ?>
 
       </div>
 
