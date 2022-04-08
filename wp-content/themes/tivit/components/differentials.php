@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="intro">
-                    <h2 class="titleDif">NOSSOS DIFERENCIAIS</h2>
-                    <p class="subtitle">Aconselhamos nossos clientes na escolha da melhor solução. Somos provedores multicloud e entregamos nuvens híbridas de verdade.</p>
+                    <h2 class="titleDif"><?the_field('chamada_diferenciais')?></h2>
+                    <p class="subtitle"><?the_field('descricao_diferenciais')?></p>
                     <div>
                         <a class="cta">Fale com nossos especialistas</a>
                     </div>
@@ -13,28 +13,28 @@
             <div class="col-12 col-md-4">
                 <div class="content">
                     <div>
-                        <h2>Cultura</h2>
-                        <p>Apoiamos a transformação integral do cliente, conduzindo-o numa jornada de evolução contínua e atenta às necessidades de cada empresa.</p>
+                        <h2><?the_field('item_1_nome')?></h2>
+                        <p><?the_field('item_1_descricao')?></p>
                     </div>
                     <div>
-                        <h2>Parcerias sólidas</h2>
-                        <p>Somos certificados e experientes na implantação e gestão dos principais players de nuvem.</p>
+                        <h2><?the_field('item_2_nome')?></h2>
+                        <p><?the_field('item_2_descricao')?></p>
                     </div>
                     <div>
-                        <h2>Agilidade</h2>
-                        <p>Proporcionamos serviços eficientes, com maior qualidade e velocidade, utilizando conceitos como AiOPs, Agile, DevOps e ferramentas de última geração.</p>
+                        <h2><?the_field('item_3_nome')?></h2>
+                        <p><?the_field('item_3_descricao')?></p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="content">
                     <div>
-                        <h2>Portfólio</h2>
-                        <p>Temos expertise nas camadas de infraestrutura, cloud, plataformas e soluções digitais, com competências específicas e diferenciadas para cada parceiro.</p>
+                        <h2><?the_field('item_4_nome')?></h2>
+                        <p><?the_field('item_4_descricao')?></p>
                     </div>
                     <div>
-                        <h2>Consultoria</h2>
-                        <p>Somos flexíveis às demandas dos clientes. Nossa equipe de especialistas entrega a melhor solução para o seu negócio.</p>
+                        <h2><?the_field('item_5_nome')?></h2>
+                        <p><?the_field('item_5_descricao')?></p>
                     </div>
                 </div>
             </div>
