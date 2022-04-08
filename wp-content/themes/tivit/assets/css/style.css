@@ -308,7 +308,7 @@ html, body, * {
           display: flex;
           justify-content: center; }
       .header .solutions-service-mobile-cards .cardMenu {
-        border: 1px solid #c3c3c3;
+        border: 1px solid RGBA(195, 195, 195, 0.28);
         padding: 30px;
         margin-bottom: 20px; }
         .header .solutions-service-mobile-cards .cardMenu h2 {
