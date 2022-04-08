@@ -220,13 +220,14 @@ html, body, * {
   z-index: 9030 !important;
 }
 // Header Mobile
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header{
     background: #990017;
     max-width: 100%;
     margin: 0 auto;
     .navbar {
       padding: 0;
+      align-items: start;
       .navbar-toggler {
         color: rgb(255, 255, 255);  
         border-color: rgba(0, 0, 0, 0);
@@ -237,6 +238,10 @@ html, body, * {
       }
       .container{
         display: block;
+      }
+      .navbar-nav{
+        height: 100vh;
+        padding-top: 30px;
       }
     }
     .header-logo{
@@ -256,23 +261,265 @@ html, body, * {
       justify-content: center;
       background: $vermelho-dark-tivit;
     }
+    .menu-item{
+      margin: 8px 0 8px 0;
+      a{
+        display: flex;
+        justify-content: center;
+        &:after{
+          margin-top: 10px;
+          filter: invert(100%) sepia(70%) saturate(289%) hue-rotate(156deg) brightness(110%) contrast(105%);
+        }
+      }
+      span{
+        font-size: 28px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 300;
+      }
+    }
+    .menu-item.active{
+      a{
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+    .dropdown-menu{
+      background-color: transparent;
+      border: unset;
+      .menu-item{
+        span{
+          font-size: 20px;
+          font-weight: 600;
+          &:after{
+            content: url('../../assets/images/expandmenu.svg');
+            margin-left: 9px;
+            width: auto;
+            transition: all .2s linear;
+            margin-bottom: 1px;
+            position: absolute;
+          }
+        }
+      }
+    }
+    .dropdown-item{
+      text-align: center;
+    }
+    .dropdown-toggle{
+      transition: .3s all;
+    }
+    .dropdown-toggle.show{
+      span{
+        font-weight: 600;
+        transition: .3s all;
+      }
+    }
+
+    .solutions-service-mobile-open{
+      display: block !important;
+    }
+    .solutions-service-mobile{
+      background: $vermelho-dark-tivit;
+      height: 100%;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 5%;
+      overflow-y: scroll;
+      .intro{
+        margin-top: 30px;
+        h3{
+          color: white;
+          font-size: 14px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        h2{
+          color: white;
+          font-size: 20px;
+          line-height: 1.3;
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          &:before{
+            content: url('../../assets/images/menumobilebefore.svg');
+            left: 10%;
+            bottom: 6%;
+            width: auto;
+            transition: all .2s linear;
+            position: absolute;
+          }
+        }
+        p{
+          color: white;
+          font-size: 16px;
+          line-height: 1.3;
+          text-align: center;
+          margin-top: 19px;
+        }
+        a{
+          color: white;
+          font-size: 14px;
+          border: 1px solid white;
+          border-radius: 50px;
+          padding: 10px 45px 10px 45px;
+          text-align: center;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      hr{
+        color: #c3c3c3 !important;
+        margin: 30px 0 30px;
+      }
+      .textMenu{
+          h2{
+            font-size: 14px;
+            color: white;
+            line-height: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+          }
+          ul{
+            padding: 0;
+            li{
+              color: white;
+              text-transform: uppercase;
+              font-weight: lighter;
+              font-size: 18px;
+              line-height: 1.3;
+              list-style-type: none;
+              padding-bottom: 15px;
+              cursor: pointer;
+              transition: all .2s linear;
+              &:after{
+                content: url('../../assets/images/expandmenu.svg');
+                margin-left: 9px;
+                width: auto;
+                transition: all .2s linear;
+                margin-bottom: 1px;
+                position: absolute;
+              }
+              &:hover{
+                &:after{
+                  margin-left: 19px;
+                  transition: all .2s linear;
+              }
+            }
+          }
+        }
+        hr{
+          color: #c3c3c3 !important;
+          margin: 15px 0 30px !important;
+        }
+      }
+      .textMenu:last-child{
+        padding-bottom: 100px;
+      }
+    }
+    .languages{
+      padding: 35px 0 35px 0px;
+      .title{
+        h2{
+          color: white;
+          text-transform: uppercase;
+          line-height: 1.2;
+          font-weight: 500;
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+    }
+    .solutions-service-mobile-cards{
+      background: $vermelho-dark-tivit;
+      height: 100%;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 5%;
+      overflow-y: scroll;
+      .intro{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        h3{
+          color: white;
+          font-size: 14px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        h2{
+          color: white;
+          font-size: 20px;
+          line-height: 1.3;
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          &:before{
+            content: url('../../assets/images/menumobilebefore.svg');
+            left: 10%;
+            bottom: 6%;
+            width: auto;
+            transition: all .2s linear;
+            position: absolute;
+          }
+        }
+        p{
+          color: white;
+          font-size: 16px;
+          line-height: 1.3;
+          text-align: center;
+          margin-top: 19px;
+        }
+        a{
+          color: white;
+          font-size: 14px;
+          border: 1px solid white;
+          border-radius: 50px;
+          padding: 10px 45px 10px 45px;
+          text-align: center;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .cardMenu{
+        border: 1px solid #c3c3c3;
+        padding: 30px;
+        margin-bottom: 20px;
+        h2{
+          font-size: 18px;
+          line-height: 1.3;
+          color: white;
+          text-transform: uppercase;
+          margin-bottom: 11px;
+          &:after{
+            content: url('../../assets/images/expandmenu.svg');
+            margin-left: 9px;
+            width: auto;
+            transition: all .2s linear;
+            margin-bottom: 1px;
+            position: absolute;
+          }
+        }
+        p{
+          font-size: 14px;
+          color: white;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+    }
   }  
 }
 
 .nomove{
   overflow: hidden !important;
-}
-
-#solutions{
-  &:after{
-    content: url('../../assets/images/menusolutionsarrow.svg');
-    transform: rotateX(180deg);
-    margin-left: 4px;
-    width: auto;
-    margin-top: 3px;
-    position: absolute;
-    transition: .3s all;
-  }
 }
 
 .rotate180{
@@ -284,7 +531,7 @@ html, body, * {
 }
 
 // Header Desktop
-@media (min-width: 769px){
+@media (min-width: 1024px){
   // .btn{
   //   padding: 0.08rem 0.75rem !important;
   // }
@@ -308,8 +555,10 @@ html, body, * {
   .solution-menu-open{
     opacity: 1 !important;
     transition: .7s all;
+    display: block !important;
   }
   .solution-menu{
+    display: none;
     opacity: 0;
     padding-top: 30px;
     position: absolute;
@@ -487,6 +736,17 @@ html, body, * {
       font-weight: lighter;
       color: white;
       line-height: 1.4;
+    }
+  }
+  #solutions{
+    &:after{
+      content: url('../../assets/images/menusolutionsarrow.svg');
+      transform: rotateX(180deg);
+      margin-left: 4px;
+      width: auto;
+      margin-top: 3px;
+      position: absolute;
+      transition: .3s all;
     }
   }
   #menu-header-menu{

@@ -261,7 +261,7 @@
       <div class="text-center hide-desktop">
       <?php
           wp_nav_menu( array(
-            'theme_location'  => 'header-menu',
+            'theme_location'  => 'mobile-menu',
             'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
             'container'       => 'div',
             'container_class' => 'collapse navbar-collapse',
@@ -272,6 +272,234 @@
           ) );
         ?>
       </div>
+
+      <div class="solutions-service-mobile por-servicos-e-produtos">
+        <div class="container hide-desktop">
+          <div class="intro">
+            <h3>soluções</h3>
+            <h2>POR SERVIÇOS E PRODUTOS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
+            </p>
+            <a>VER TODAS AS SOLUÇÕES</a>
+          </div>
+          <hr class="w-100" />
+
+          <div class="textMenu">
+            <div class="row">
+              <div class="col-1 d-flex justify-content-center">
+                <div>
+                  <h2>
+                    Cloud Solutions
+                  </h2>
+                </div>
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li>
+                    PUBLIC CLOUD
+                  </li>
+                  <li>
+                    CLOUD MANAGED SERVICES
+                  </li>
+                  <li>
+                    CLOUD PRofeSSIONAL SERvices
+                  </li>
+                  <li>
+                    private cloud
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="w-100" />
+          </div>
+          
+          <div class="textMenu">
+            <div class="row">
+              <div class="col-1 d-flex justify-content-center">
+                <div>
+                  <h2>
+                    Cloud Solutions
+                  </h2>
+                </div>
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li>
+                    PUBLIC CLOUD
+                  </li>
+                  <li>
+                    CLOUD MANAGED SERVICES
+                  </li>
+                  <li>
+                    CLOUD PRofeSSIONAL SERvices
+                  </li>
+                  <li>
+                    private cloud
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="w-100" />
+          </div>
+
+          <div class="textMenu">
+            <div class="row">
+              <div class="col-1 d-flex justify-content-center">
+                <div>
+                  <h2>
+                    Cloud Solutions
+                  </h2>
+                </div>
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li>
+                    PUBLIC CLOUD
+                  </li>
+                  <li>
+                    CLOUD MANAGED SERVICES
+                  </li>
+                  <li>
+                    CLOUD PRofeSSIONAL SERvices
+                  </li>
+                  <li>
+                    private cloud
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr class="w-100" />
+          </div>
+
+          <div class="languages">
+            <div class="row">
+              <div class="col-6">
+                <div class="title">
+                  <h2>ENGLISH</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="title">
+                  <h2>ESPAÑOL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="solutions-service-mobile-cards por-industria">
+        <div class="container hide-desktop">
+          <div class="intro">
+            <h3>soluções</h3>
+            <h2>POR INDÚSTRIA</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
+            </p>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>SERVIÇOS FINANCEIROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MEIOS DE PAGAMENTO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MANUFATURA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages">
+            <div class="row">
+              <div class="col-6">
+                <div class="title">
+                  <h2>ENGLISH</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="title">
+                  <h2>ESPAÑOL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="solutions-service-mobile-cards por-desafios">
+        <div class="container hide-desktop">
+          <div class="intro">
+            <h3>soluções</h3>
+            <h2>POR DESAFIO</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
+            </p>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>SERVIÇOS FINANCEIROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MEIOS DE PAGAMENTO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MANUFATURA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages">
+            <div class="row">
+              <div class="col-6">
+                <div class="title">
+                  <h2>ENGLISH</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="title">
+                  <h2>ESPAÑOL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </nav>
 </header>
