@@ -896,10 +896,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
    //Open services and Products mobile
    document.getElementById('service-product').addEventListener('click', function() {
-      document.querySelector('#solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
-         document.querySelector('#solutions-service-mobile').classList.remove('solutions-service-mobile-open')
+      document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
          :
-         document.querySelector('#solutions-service-mobile').classList.add('solutions-service-mobile-open')
+         document.querySelector('.solutions-service-mobile').classList.add('solutions-service-mobile-open')
 
          //Do not allow overflow on body
          document.body.classList.contains('nomove')?
@@ -909,16 +909,94 @@ window.addEventListener("DOMContentLoaded", function() {
    }, false);
 
    //Close open services and procuts mobile
-   document.querySelector('#solutions-service-mobile > .container > .intro > h2').addEventListener('click', function() {
-      document.querySelector('#solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
-         document.querySelector('#solutions-service-mobile').classList.remove('solutions-service-mobile-open')
+   document.querySelector('.solutions-service-mobile > .container > .intro > h2').addEventListener('click', function() {
+      document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
          :
-         document.querySelector('#solutions-service-mobile').classList.add('solutions-service-mobile-open')
+         document.querySelector('.solutions-service-mobile').classList.add('solutions-service-mobile-open')
 
          //Allow overflow on body
          document.body.classList.contains('nomove')?
             document.body.classList.remove('nomove')
             :
             document.body.classList.add('nomove')
+   }, false);
+
+   //Open Industry mobile
+   document.getElementById('industry').addEventListener('click', function() {
+      document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('.solutions-service-mobile-cards.por-industria').classList.add('solutions-service-mobile-open')
+
+         //Do not allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
+   }, false);
+
+   //Close industry mobile
+   document.querySelector('.solutions-service-mobile-cards.por-industria > .container > .intro > h2').addEventListener('click', function() {
+      document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('.solutions-service-mobile-cards.por-industria').classList.add('solutions-service-mobile-open')
+
+         //Allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
+   }, false);
+
+   //Open Challenge mobile
+   document.getElementById('challenge').addEventListener('click', function() {
+      document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.add('solutions-service-mobile-open')
+
+         //Do not allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
+   }, false);
+
+   //Close Challenge mobile
+   document.querySelector('.solutions-service-mobile-cards.por-desafios > .container > .intro > h2').addEventListener('click', function() {
+      document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
+         :
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.add('solutions-service-mobile-open')
+
+         //Allow overflow on body
+         document.body.classList.contains('nomove')?
+            document.body.classList.remove('nomove')
+            :
+            document.body.classList.add('nomove')
+   }, false);
+
+   //Close everything on main menu closed click   
+   document.querySelector('.navbar-toggler').addEventListener('click', function() {
+      //Services and products
+      document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
+         :
+         ''
+
+      //Industry
+      document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
+         :
+         ''
+
+      //Challenge
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open')?
+         document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
+         :
+         ''
+
    }, false);
 }, false);

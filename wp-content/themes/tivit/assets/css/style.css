@@ -167,7 +167,7 @@ html, body, * {
       transition: .3s all; }
     .header .solutions-service-mobile-open {
       display: block !important; }
-    .header #solutions-service-mobile {
+    .header .solutions-service-mobile {
       background: #990017;
       height: 100%;
       display: none;
@@ -175,35 +175,35 @@ html, body, * {
       left: 0;
       top: 5%;
       overflow-y: scroll; }
-      .header #solutions-service-mobile .intro {
+      .header .solutions-service-mobile .intro {
         margin-top: 30px; }
-        .header #solutions-service-mobile .intro h3 {
+        .header .solutions-service-mobile .intro h3 {
           color: white;
           font-size: 14px;
           line-height: 1.2;
           text-transform: uppercase;
           text-align: center; }
-        .header #solutions-service-mobile .intro h2 {
+        .header .solutions-service-mobile .intro h2 {
           color: white;
           font-size: 20px;
           line-height: 1.3;
           text-transform: uppercase;
           text-align: center;
           position: relative; }
-          .header #solutions-service-mobile .intro h2:before {
+          .header .solutions-service-mobile .intro h2:before {
             content: url("../../assets/images/menumobilebefore.svg");
             left: 10%;
             bottom: 6%;
             width: auto;
             transition: all .2s linear;
             position: absolute; }
-        .header #solutions-service-mobile .intro p {
+        .header .solutions-service-mobile .intro p {
           color: white;
           font-size: 16px;
           line-height: 1.3;
           text-align: center;
           margin-top: 19px; }
-        .header #solutions-service-mobile .intro a {
+        .header .solutions-service-mobile .intro a {
           color: white;
           font-size: 14px;
           border: 1px solid white;
@@ -213,10 +213,10 @@ html, body, * {
           margin-top: 40px;
           display: flex;
           justify-content: center; }
-      .header #solutions-service-mobile hr {
+      .header .solutions-service-mobile hr {
         color: #c3c3c3 !important;
         margin: 30px 0 30px; }
-      .header #solutions-service-mobile .textMenu h2 {
+      .header .solutions-service-mobile .textMenu h2 {
         font-size: 14px;
         color: white;
         line-height: 0;
@@ -224,9 +224,9 @@ html, body, * {
         text-transform: uppercase;
         writing-mode: vertical-lr;
         transform: rotate(180deg); }
-      .header #solutions-service-mobile .textMenu ul {
+      .header .solutions-service-mobile .textMenu ul {
         padding: 0; }
-        .header #solutions-service-mobile .textMenu ul li {
+        .header .solutions-service-mobile .textMenu ul li {
           color: white;
           text-transform: uppercase;
           font-weight: lighter;
@@ -236,30 +236,99 @@ html, body, * {
           padding-bottom: 15px;
           cursor: pointer;
           transition: all .2s linear; }
-          .header #solutions-service-mobile .textMenu ul li:after {
+          .header .solutions-service-mobile .textMenu ul li:after {
             content: url("../../assets/images/expandmenu.svg");
             margin-left: 9px;
             width: auto;
             transition: all .2s linear;
             margin-bottom: 1px;
             position: absolute; }
-          .header #solutions-service-mobile .textMenu ul li:hover:after {
+          .header .solutions-service-mobile .textMenu ul li:hover:after {
             margin-left: 19px;
             transition: all .2s linear; }
-      .header #solutions-service-mobile .textMenu hr {
+      .header .solutions-service-mobile .textMenu hr {
         color: #c3c3c3 !important;
         margin: 15px 0 30px !important; }
-      .header #solutions-service-mobile .textMenu:last-child {
+      .header .solutions-service-mobile .textMenu:last-child {
         padding-bottom: 100px; }
-      .header #solutions-service-mobile .languages {
-        padding: 35px 0 35px 0px; }
-        .header #solutions-service-mobile .languages .title h2 {
+    .header .languages {
+      padding: 35px 0 35px 0px; }
+      .header .languages .title h2 {
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center; }
+    .header .solutions-service-mobile-cards {
+      background: #990017;
+      height: 100%;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 5%;
+      overflow-y: scroll; }
+      .header .solutions-service-mobile-cards .intro {
+        margin-top: 30px;
+        margin-bottom: 30px; }
+        .header .solutions-service-mobile-cards .intro h3 {
+          color: white;
+          font-size: 14px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          text-align: center; }
+        .header .solutions-service-mobile-cards .intro h2 {
+          color: white;
+          font-size: 20px;
+          line-height: 1.3;
+          text-transform: uppercase;
+          text-align: center;
+          position: relative; }
+          .header .solutions-service-mobile-cards .intro h2:before {
+            content: url("../../assets/images/menumobilebefore.svg");
+            left: 10%;
+            bottom: 6%;
+            width: auto;
+            transition: all .2s linear;
+            position: absolute; }
+        .header .solutions-service-mobile-cards .intro p {
+          color: white;
+          font-size: 16px;
+          line-height: 1.3;
+          text-align: center;
+          margin-top: 19px; }
+        .header .solutions-service-mobile-cards .intro a {
+          color: white;
+          font-size: 14px;
+          border: 1px solid white;
+          border-radius: 50px;
+          padding: 10px 45px 10px 45px;
+          text-align: center;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center; }
+      .header .solutions-service-mobile-cards .cardMenu {
+        border: 1px solid #c3c3c3;
+        padding: 30px;
+        margin-bottom: 20px; }
+        .header .solutions-service-mobile-cards .cardMenu h2 {
+          font-size: 18px;
+          line-height: 1.3;
           color: white;
           text-transform: uppercase;
-          line-height: 1.2;
-          font-weight: 500;
-          font-size: 18px;
-          text-align: center; } }
+          margin-bottom: 11px; }
+          .header .solutions-service-mobile-cards .cardMenu h2:after {
+            content: url("../../assets/images/expandmenu.svg");
+            margin-left: 9px;
+            width: auto;
+            transition: all .2s linear;
+            margin-bottom: 1px;
+            position: absolute; }
+        .header .solutions-service-mobile-cards .cardMenu p {
+          font-size: 14px;
+          color: white;
+          line-height: 1.4;
+          margin: 0; } }
 .nomove {
   overflow: hidden !important; }
 

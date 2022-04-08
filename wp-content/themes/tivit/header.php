@@ -273,7 +273,7 @@
         ?>
       </div>
 
-      <div id="solutions-service-mobile">
+      <div class="solutions-service-mobile por-servicos-e-produtos">
         <div class="container hide-desktop">
           <div class="intro">
             <h3>soluções</h3>
@@ -381,7 +381,117 @@
               </div>
               <div class="col-6">
                 <div class="title">
+                  <h2>ESPAÑOL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="solutions-service-mobile-cards por-industria">
+        <div class="container hide-desktop">
+          <div class="intro">
+            <h3>soluções</h3>
+            <h2>POR INDÚSTRIA</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
+            </p>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>SERVIÇOS FINANCEIROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MEIOS DE PAGAMENTO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MANUFATURA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages">
+            <div class="row">
+              <div class="col-6">
+                <div class="title">
                   <h2>ENGLISH</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="title">
+                  <h2>ESPAÑOL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="solutions-service-mobile-cards por-desafios">
+        <div class="container hide-desktop">
+          <div class="intro">
+            <h3>soluções</h3>
+            <h2>POR DESAFIO</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
+            </p>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>SERVIÇOS FINANCEIROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MEIOS DE PAGAMENTO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardMenu">
+            <div class="row">
+              <div class="col-12">
+                <h2>MANUFATURA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="languages">
+            <div class="row">
+              <div class="col-6">
+                <div class="title">
+                  <h2>ENGLISH</h2>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="title">
+                  <h2>ESPAÑOL</h2>
                 </div>
               </div>
             </div>
