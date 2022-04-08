@@ -998,5 +998,11 @@ window.addEventListener("DOMContentLoaded", function() {
          :
          ''
 
+      //Allow overflow on body
+      document.body.classList.contains('nomove')?
+         document.body.classList.remove('nomove')
+         :
+         ''
+
    }, false);
 }, false);
