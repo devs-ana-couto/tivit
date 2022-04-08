@@ -332,75 +332,46 @@
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item heroslide active">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
+        <?
+            if( have_rows('depoimentos_pc') ):
+            // Loop through rows.   
+                for($i=0; have_rows('depoimentos_pc'); $i++) : the_row();
+                $imagem_url_item[$i] = get_sub_field('imagem');
+                $name_item[$i] = get_sub_field('nome');
+                $role_item[$i] = get_sub_field('cargo');
+                $linkedin_item[$i] = get_sub_field('linkedin');
+                $github_item[$i] = get_sub_field('github');
+                $instagram_item[$i] = get_sub_field('instagram');
+                $depoimento_item[$i] = get_sub_field('depoimento');
+        ?>
+        <div class="carousel-item heroslide <?=$i==0 ? 'active' : ''?>">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="lp-tbanks-depoimentos-content text-center ">
+                            <div class="lp-tbanks-depoimentos-autor">
+                                <img src="<?=$imagem_url_item[$i];  ?>" alt="Tbanks Saiba Mais">
+                                <h3><?=$name_item[$i]?></h3>
+                                <h4><?=$role_item[$i]?></h4>
+                                <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
+                                    <a href="<?=$linkedin_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid"></a>
+                                    <a href="<?=$github_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid"></a>
+                                    <a href="<?=$instagram_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid"></a>
+                                </div>
+                                <p>
+                                ”<?=$depoimento_item[$i]?>”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-            <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <?
+            endfor;
+            endif;
+        ?>
+
     </div>
     <div class="mobileRelative">
       <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
@@ -430,64 +401,20 @@
     <div class="lp-tbanks-services text-center m-0 hide-mobile">      
  
       <div class="row">
-
+        <?
+            if( have_rows('itens_opc') ):
+            // Loop through rows.   
+                for($i=0; have_rows('itens_opc'); $i++) : the_row();
+                $name_itemp[$i] = get_sub_field('nome');
+                $description_itemp[$i] = get_sub_field('descricao');
+        ?>
         <div class="col-12 col-md-3">
           <div class="bg-white">
-            <h3>Plano de carreira</h3>
-            <p>Valorizamos e proporcionamos o seu desenvolvimento.Conte com a gente para que você decole na sua carreira.</p>
+            <h3><?=$name_itemp[$i]?></h3>
+            <p><?=$description_itemp[$i]?></p>
           </div>
         </div>
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Pulses e Avaliação & Feedback 360°</h3>
-            <p>Saber onde está e onde quer chegar é fundamental em nossa vida. Por isso, a avaliação, comunicação e feedback estão em nosso DNA para evolução e crescimento profissional.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Comitês da Janela de Mérito</h3>
-            <p>Comitê semestral dedicado a falar sobre quem está se destacando para aplicação de um mérito finaceiro, afinal, queremos ver seu crescimento aqui dentro.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TechnoTIVIT</h3>
-            <p>Com mais de 400 cursos disponíveis, aprendizado, certificação e desenvolvimento profissional estão em nosso dia a dia.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row marginC">
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TIVIT Community</h3>
-            <p>Nossa Comunidade Técnica para incentivo a inovação e o crescimento coletivo, compartilhando conhecimentos dentro de uma comunidade orgânica e diversa.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>TIVIT CLUB</h3>
-            <p>Programa de parcerias de benefícios com descontos exclusivos em vários segmentos para os nossos colaboradores.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Vivaz</h3>
-            <p>O programa de Qualidade de Vida de A a Z, com lives voltadas para a qualidade de vida, Newsletters mensais , informes médicos semanais em nossos canais de comunicação.</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3">
-          <div class="bg-white">
-            <h3>Trabalho Remoto</h3>
-            <p>Se o seu trabalho pode ser feito de casa, estaremos conectados, mesmo que distantes, mas com o mesmo propósito.</p>
-          </div>
-        </div>
+        <? endfor; endif; ?>
 
       </div>
 
@@ -499,70 +426,22 @@
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
-                <div class="carousel-item heroslide6 active">
+                <?
+                    if( have_rows('itens_opc') ):
+                    // Loop through rows.   
+                        for($i=0; have_rows('itens_opc'); $i++) : the_row();
+                        $name_itemp[$i] = get_sub_field('nome');
+                        $description_itemp[$i] = get_sub_field('descricao');
+                ?>
+                <div class="carousel-item heroslide6 <?=$i==0 ? 'active' : '';?>">
                   <div class="col-11 col-md-3">
                     <div class="bg-white">
-                      <h3>Plano de carreira</h3>
-                      <p>Valorizamos e proporcionamos o seu desenvolvimento.Conte com a gente para que você decole na sua carreira.</p>
+                      <h3><?=$name_itemp[$i]?></h3>
+                      <p><?=$description_itemp[$i]?></p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>Pulses e Avaliação & Feedback 360°</h3>
-                      <p>Saber onde está e onde quer chegar é fundamental em nossa vida. Por isso, a avaliação, comunicação e feedback estão em nosso DNA para evolução e crescimento profissional.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>Comitês da Janela de Mérito</h3>
-                      <p>Comitê semestral dedicado a falar sobre quem está se destacando para aplicação de um mérito finaceiro, afinal, queremos ver seu crescimento aqui dentro.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>TechnoTIVIT</h3>
-                      <p>Com mais de 400 cursos disponíveis, aprendizado, certificação e desenvolvimento profissional estão em nosso dia a dia.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>TIVIT Community</h3>
-                      <p>Nossa Comunidade Técnica para incentivo a inovação e o crescimento coletivo, compartilhando conhecimentos dentro de uma comunidade orgânica e diversa.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>TIVIT CLUB</h3>
-                      <p>Programa de parcerias de benefícios com descontos exclusivos em vários segmentos para os nossos colaboradores.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>Vivaz</h3>
-                      <p>O programa de Qualidade de Vida de A a Z, com lives voltadas para a qualidade de vida, Newsletters mensais , informes médicos semanais em nossos canais de comunicação.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide6">
-                  <div class="col-11 col-md-3">
-                    <div class="bg-white">
-                      <h3>Trabalho Remoto</h3>
-                      <p>Se o seu trabalho pode ser feito de casa, estaremos conectados, mesmo que distantes, mas com o mesmo propósito.</p>
-                    </div>
-                  </div>
-                </div>
+                <? endfor; endif; ?>
             </div>
           </div>
         </div>
@@ -577,54 +456,29 @@
 
     <!-- first row -->
     <div class="row hide-mobile">
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/heart.svg" alt="Privally">
-            <div class="content">
-              <h2>CESTA DE BENEFÍCIOS</h2>
-              <p>
-                Vale Refeição/Alimentação<br>
-                Vale transporte<br>
-                Estacionamento
-              </p>
+        <?
+            if( have_rows('itens_nb') ):
+            // Loop through rows.   
+                for($i=0; have_rows('itens_nb'); $i++) : the_row();
+                $icone_itemnb[$i] = get_sub_field('icone');
+                $name_itemnb[$i] = get_sub_field('nome');
+                $description_itemnb[$i] = get_sub_field('descricao');
+        ?>
+        <div class="col-sm-12 col-md-4">
+            <div class="box">
+                <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
+                    <img src="<?=$icone_itemnb[$i]?>" alt="Privally">
+                    <div class="content">
+                        <h2><?=$name_itemnb[$i]?></h2>
+                        <p>
+                            <?=$description_itemnb[$i]?>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/hand-heart.svg" alt="Iambda">
-            <div class="content">
-              <h2>CUIDADO & APOIO</h2>
-              <p>
-                Auxílio Creche<br>
-                Auxílio Home Office<br>
-                Parcerias com Universidades e Escolas de Idioma<br>
-                Campanha #EUINDICO<br>
-                PPR - Programa de Participação nos Resultados
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/shield.svg" alt="Stone Age">
-            <div class="content">
-              <h2>SAÚDE & VIDA</h2>
-              <p>
-                Plano de Saúde<br>
-                Plano Odontológico<br>
-                Convênio Farmácia<br>
-                Seguro de Vida
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <? endfor; endif; ?>
+
     </div>
 
     <!-- Bloco Mobile Carrossel -->
@@ -696,7 +550,7 @@
 
 <!-- Conheça a nossa equipe -->
 <div id="pecConheca" class="lp-tbanks-conheca">
-<div id="triangle-down"></div>
+    <div id="triangle-down"></div>
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center"> 
