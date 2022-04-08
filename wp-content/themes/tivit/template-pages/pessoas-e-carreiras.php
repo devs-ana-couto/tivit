@@ -332,75 +332,46 @@
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item heroslide active">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
+        <?
+            if( have_rows('depoimentos_pc') ):
+            // Loop through rows.   
+                for($i=0; have_rows('depoimentos_pc'); $i++) : the_row();
+                $imagem_url_item[$i] = get_sub_field('imagem');
+                $name_item[$i] = get_sub_field('nome');
+                $role_item[$i] = get_sub_field('cargo');
+                $linkedin_item[$i] = get_sub_field('linkedin');
+                $github_item[$i] = get_sub_field('github');
+                $instagram_item[$i] = get_sub_field('instagram');
+                $depoimento_item[$i] = get_sub_field('depoimento');
+        ?>
+        <div class="carousel-item heroslide <?=$i==0 ? 'active' : ''?>">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="lp-tbanks-depoimentos-content text-center ">
+                            <div class="lp-tbanks-depoimentos-autor">
+                                <img src="<?=$imagem_url_item[$i];  ?>" alt="Tbanks Saiba Mais">
+                                <h3><?=$name_item[$i]?></h3>
+                                <h4><?=$role_item[$i]?></h4>
+                                <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
+                                    <a href="<?=$linkedin_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid"></a>
+                                    <a href="<?=$github_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid"></a>
+                                    <a href="<?=$instagram_item[$i]?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid"></a>
+                                </div>
+                                <p>
+                                ”<?=$depoimento_item[$i]?>”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-            <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                <div class="lp-tbanks-depoimentos-autor">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                  <h3>Fulano de Tal da Silva</h3>
-                  <h4>Desenvolvedor Jr.</h4>
-                  <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                  </div>
-                  <p>
-                  ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <?
+            endfor;
+            endif;
+        ?>
+
     </div>
     <div class="mobileRelative">
       <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
@@ -696,7 +667,7 @@
 
 <!-- Conheça a nossa equipe -->
 <div id="pecConheca" class="lp-tbanks-conheca">
-<div id="triangle-down"></div>
+    <div id="triangle-down"></div>
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center"> 
