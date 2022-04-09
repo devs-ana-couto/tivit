@@ -1,0 +1,128 @@
+<div class="container">
+  <div id="strategy">
+    <div class="container">
+      <div class="intro">
+        <h2><?the_field('chamada_pl_solucoes');?></h2>
+        <p><?the_field('descricao_pl_solucoes');?></p>
+      </div>
+      <div class="row cards hide-mobile">
+        <div class="col-12 col-md-4">
+          <div class="intro text-center">
+            <h3>MIGRAÇÃO</h3>
+          </div>
+          <? 
+              if( have_rows('migracao_pl_solucoes') ):
+              // Loop through rows.
+                  for($i=0; have_rows('migracao_pl_solucoes'); $i++) : the_row();
+                  $content[$i] = get_sub_field('conteudo');
+          ?>
+          <div class="card w-100">
+            <p><?=$content[$i]?></p>
+          </div>
+          <? endfor; endif; ?>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="intro text-center">
+            <h3>TRANSFORMAÇÃO</h3>
+          </div>
+          <? 
+              if( have_rows('transformacao_pl_solucoes') ):
+              // Loop through rows.
+                  for($i=0; have_rows('transformacao_pl_solucoes'); $i++) : the_row();
+                  $content[$i] = get_sub_field('conteudo');
+          ?>
+          <div class="card w-100">
+            <p><?=$content[$i]?></p>
+          </div>
+          <? endfor; endif; ?>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="intro text-center">
+            <h3>OTIMIZAÇÃO</h3>
+          </div>
+          <? 
+              if( have_rows('otimizacao_pl_solucoes') ):
+              // Loop through rows.
+                  for($i=0; have_rows('otimizacao_pl_solucoes'); $i++) : the_row();
+                  $content[$i] = get_sub_field('conteudo');
+          ?>
+          <div class="card w-100">
+            <p><?=$content[$i]?></p>
+          </div>
+          <? endfor; endif; ?>        
+        </div>
+      </div>
+
+      <!-- Mobile accordion -->
+      <div class="accordion hide-desktop" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              MIGRAÇÃO
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <? 
+                  if( have_rows('migracao_pl_solucoes') ):
+                  // Loop through rows.
+                      for($i=0; have_rows('migracao_pl_solucoes'); $i++) : the_row();
+                      $content[$i] = get_sub_field('conteudo');
+              ?>
+              <div class="card w-100">
+              <p><?=$content[$i]?></p>
+              </div>
+              <? endfor; endif; ?>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              TRANSFORMAÇÃO
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <? 
+                  if( have_rows('transformacao_pl_solucoes') ):
+                  // Loop through rows.
+                      for($i=0; have_rows('transformacao_pl_solucoes'); $i++) : the_row();
+                      $content[$i] = get_sub_field('conteudo');
+              ?>
+              <div class="card w-100">
+              <p><?=$content[$i]?></p>
+              </div>
+              <? endfor; endif; ?>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              OTIMIZAÇÃO
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <? 
+                  if( have_rows('otimizacao_pl_solucoes') ):
+                  // Loop through rows.
+                      for($i=0; have_rows('otimizacao_pl_solucoes'); $i++) : the_row();
+                      $content[$i] = get_sub_field('conteudo');
+              ?>
+              <div class="card w-100">
+              <p><?=$content[$i]?></p>
+              </div>
+              <? endfor; endif; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //mobile accordion -->
+    </div>
+  </div>
+</div>
