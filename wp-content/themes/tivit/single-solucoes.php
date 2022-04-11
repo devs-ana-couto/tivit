@@ -85,58 +85,149 @@ if(have_posts()) : while(have_posts()) : the_post();
 </div>
 <!-- /// only for his page MOBILE -->
 <? 
-  $introduction = '/components/introduction.php';
-  $clouds = '/components/clouds.php';
-  $bigNumbers = '/components/bigNumbers.php';
-  $diff = '/components/differentials.php';
-  $publicCloud =  '/components/publicCloud.php';
-  $strategy = '/components/strategy.php';
-  $testimonials = '/components/testimonials.php';
-  $content_page = '/components/content.php';
+
+    $introduction = '/components/introduction.php';
+
+    $clouds = '/components/clouds.php';
+    $clouds_order = get_field('posicao_no_layout');
+
+    $bigNumbers = '/components/bigNumbers.php';
+    $bigNumbers_order = get_field('posicao_no_layout_big_numbers');
+
+    $diff = '/components/differentials.php';
+    $diff_order = get_field('posicao_no_layout_nd');
+
+    $publicCloud =  '/components/publicCloud.php';
+    // $publicCloud_order = get_field('posicao_no_layout_planejamento');
+
+    $strategy = '/components/strategy.php';
+    $strategy_order = get_field('posicao_no_layout_planejamento');
+
+    $testimonials = '/components/testimonials.php';
+    $testimonials_order = get_field('posicionamento_no_layout_depoimentos');
+
+    $content_page = '/components/content.php';
+
+
+
 ?>
 
 <section id="main-solutions">
   <!-- Intro -->
   <div id="services-intro">
-    <?
-        include get_template_directory() . $introduction;
-        include get_template_directory() . $clouds;
-        include get_template_directory() . $bigNumbers;
-        include get_template_directory() . $diff;
-        include get_template_directory() . $publicCloud;
-        include get_template_directory() . $strategy;
-        include get_template_directory() . $testimonials;
-        include get_template_directory() . $content_page;
-    ?>
-
+    <? include get_template_directory() . $introduction; ?>
   </div>
   <!-- //intro -->
 
   <!-- Clouds -->
   <div id="clouds">
-
+    <?
+        if($clouds_order == 1) {
+            include get_template_directory() . $clouds;
+        }elseif($bigNumbers_order == 1) {
+            include get_template_directory() . $bigNumbers;
+        }elseif($diff_order == 1) {
+            include get_template_directory() . $diff;
+        }elseif($publicCloud_order == 1) {
+            include get_template_directory() . $publicCloud;
+        }elseif($strategy_order == 1) {
+            include get_template_directory() . $strategy;
+        }elseif($testimonials_order == 1) {
+            include get_template_directory() . $testimonials;
+        }elseif($content_page_order == 1) {
+            include get_template_directory() . $content_page;
+        }
+    ?>
   </div>
   <!-- //Clouds -->
 
   <!-- Middle Content -->
   <div id="middleContent">
-    
-    
+    <?
+        if($clouds_order == 2) {
+            include get_template_directory() . $clouds;
+        }elseif($bigNumbers_order == 2) {
+            include get_template_directory() . $bigNumbers;
+        }elseif($diff_order == 2) {
+            include get_template_directory() . $diff;
+        }elseif($publicCloud_order == 2) {
+            include get_template_directory() . $publicCloud;
+        }elseif($strategy_order == 2) {
+            include get_template_directory() . $strategy;
+        }elseif($testimonials_order == 2) {
+            include get_template_directory() . $testimonials;
+        }elseif($content_page_order == 2) {
+            include get_template_directory() . $content_page;
+        }
+
+        
+    ?>    
+
+    <?
+        if($clouds_order == 3) {
+            include get_template_directory() . $clouds;
+        }elseif($bigNumbers_order == 3) {
+            include get_template_directory() . $bigNumbers;
+        }elseif($diff_order == 3) {
+            include get_template_directory() . $diff;
+        }elseif($publicCloud_order == 3) {
+            include get_template_directory() . $publicCloud;
+        }elseif($strategy_order == 3) {
+            include get_template_directory() . $strategy;
+        }elseif($testimonials_order == 3) {
+            include get_template_directory() . $testimonials;
+        }elseif($content_page_order == 3) {
+            include get_template_directory() . $content_page;
+        }
+        include get_template_directory() . $publicCloud;
+    ?>
   </div>
   <!-- //Middle Content -->
 
   <!-- Stratregy -->
   <div id="strategy">
-    
+
+    <?
+        if($clouds_order == 4) {
+            include get_template_directory() . $clouds;
+        }elseif($bigNumbers_order == 4) {
+            include get_template_directory() . $bigNumbers;
+        }elseif($diff_order == 4) {
+            include get_template_directory() . $diff;
+        }elseif($publicCloud_order == 4) {
+            include get_template_directory() . $publicCloud;
+        }elseif($strategy_order == 4) {
+            include get_template_directory() . $strategy;
+        }elseif($testimonials_order == 4) {
+            include get_template_directory() . $testimonials;
+        }
+    ?>
   </div>
   <!-- //Stratregy  -->
 
   <!-- Depoiments -->
-  
+  <?
+    if($clouds_order == 5) {
+        include get_template_directory() . $clouds;
+    }elseif($bigNumbers_order == 5) {
+        include get_template_directory() . $bigNumbers;
+    }elseif($diff_order == 5) {
+        include get_template_directory() . $diff;
+    }elseif($publicCloud_order == 5) {
+        include get_template_directory() . $publicCloud;
+    }elseif($strategy_order == 5) {
+        include get_template_directory() . $strategy;
+    }elseif($testimonials_order == 5) {
+        include get_template_directory() . $testimonials;
+    }
+  ?>
   <!-- //Depoiments  -->
 
   <!-- Content -->
   
+    <?
+        include get_template_directory() . $content_page;
+    ?>
   <!-- //Content  -->
 </section>
 
