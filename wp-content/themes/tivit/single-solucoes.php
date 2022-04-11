@@ -84,40 +84,59 @@ if(have_posts()) : while(have_posts()) : the_post();
   </div>
 </div>
 <!-- /// only for his page MOBILE -->
+<? 
+  $introduction = '/components/introduction.php';
+  $clouds = '/components/clouds.php';
+  $bigNumbers = '/components/bigNumbers.php';
+  $diff = '/components/differentials.php';
+  $publicCloud =  '/components/publicCloud.php';
+  $strategy = '/components/strategy.php';
+  $testimonials = '/components/testimonials.php';
+  $content_page = '/components/content.php';
+?>
 
 <section id="main-solutions">
   <!-- Intro -->
   <div id="services-intro">
-    <?php include get_template_directory() . '/components/introduction.php'; ?>
+    <?
+        include get_template_directory() . $introduction;
+        include get_template_directory() . $clouds;
+        include get_template_directory() . $bigNumbers;
+        include get_template_directory() . $diff;
+        include get_template_directory() . $publicCloud;
+        include get_template_directory() . $strategy;
+        include get_template_directory() . $testimonials;
+        include get_template_directory() . $content_page;
+    ?>
+
   </div>
   <!-- //intro -->
 
   <!-- Clouds -->
   <div id="clouds">
-    <?php include get_template_directory() . '/components/clouds.php'; ?>
+
   </div>
   <!-- //Clouds -->
 
   <!-- Middle Content -->
   <div id="middleContent">
-    <?php include get_template_directory() . '/components/bigNumbers.php'; ?>
-    <?php include get_template_directory() . '/components/differentials.php'; ?>
-    <?php include get_template_directory() . '/components/publicCloud.php'; ?>
+    
+    
   </div>
   <!-- //Middle Content -->
 
   <!-- Stratregy -->
   <div id="strategy">
-    <?php include get_template_directory() . '/components/strategy.php'; ?>
+    
   </div>
   <!-- //Stratregy  -->
 
   <!-- Depoiments -->
-  <?php include get_template_directory() . '/components/depoiments.php'; ?>
+  
   <!-- //Depoiments  -->
 
   <!-- Content -->
-  <?php include get_template_directory() . '/components/content.php'; ?>
+  
   <!-- //Content  -->
 </section>
 
