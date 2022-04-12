@@ -7047,6 +7047,12 @@ html, body, * {
   text-transform: uppercase;
   max-width: 298px; }
 
+.banner-cases-item .case-item-content h3 {
+  font-size: 12px;
+  line-height: 18.25px;
+  font-weight: 400;
+  color: white; }
+
 .banner-cases-item .case-item-logos {
   margin-top: 65px; }
   .banner-cases-item .case-item-logos .row {
@@ -7055,6 +7061,11 @@ html, body, * {
       border-right: solid 1px white; }
     .banner-cases-item .case-item-logos .row .col-7 {
       text-align: center; }
+
+.conteudo {
+  padding: 60px 0; }
+  .conteudo p {
+    margin: 0; }
 
 .empresa-cases-item {
   padding: 30px 0; }
