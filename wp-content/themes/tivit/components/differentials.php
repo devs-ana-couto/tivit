@@ -6,7 +6,7 @@
                     <h2 class="titleDif"><?the_field('chamada_diferenciais')?></h2>
                     <p class="subtitle"><?the_field('descricao_diferenciais')?></p>
                     <div>
-                        <a class="cta">Fale com nossos especialistas</a>
+                        <a href="<?the_field('cta_link_solucoes');?>" class="cta"><?the_field('cta_texto_solucoes');?></a>
                     </div>
                 </div>
             </div>

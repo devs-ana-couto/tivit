@@ -84,6 +84,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   </div>
 </div>
 <!-- /// only for his page MOBILE -->
+
 <? 
 
     $introduction = '/components/introduction.php';
