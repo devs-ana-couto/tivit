@@ -46,10 +46,4 @@
             <!-- //// Mobile section -->
             <?  endfor; endif; ?>
         </div>
-        <div class="divCta text-center">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-             <h2 class="cta"><?the_field('chamada_final_nuvem_solucoes');?></h2>
-            </div>
-            <a class="buttonCta">Fale com nossos especialistas</a>
-        </div>
     </div>

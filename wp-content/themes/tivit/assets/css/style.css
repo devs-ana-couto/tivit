@@ -5991,12 +5991,10 @@ html, body, * {
         font-size: 24px; } }
   #main-solutions .intro p {
     font-size: 24px;
-    font-weight: 600;
     color: #262626;
     line-height: 1.3;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
-    text-transform: uppercase;
     max-width: 750px; }
     @media (max-width: 1024px) {
       #main-solutions .intro p {
@@ -7047,12 +7045,6 @@ html, body, * {
   text-transform: uppercase;
   max-width: 298px; }
 
-.banner-cases-item .case-item-content h3 {
-  font-size: 12px;
-  line-height: 18.25px;
-  font-weight: 400;
-  color: white; }
-
 .banner-cases-item .case-item-logos {
   margin-top: 65px; }
   .banner-cases-item .case-item-logos .row {
@@ -7061,11 +7053,6 @@ html, body, * {
       border-right: solid 1px white; }
     .banner-cases-item .case-item-logos .row .col-7 {
       text-align: center; }
-
-.conteudo {
-  padding: 60px 0; }
-  .conteudo p {
-    margin: 0; }
 
 .empresa-cases-item {
   padding: 30px 0; }

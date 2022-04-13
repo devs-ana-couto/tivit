@@ -4,6 +4,7 @@
       <div class="intro">
         <h2><?the_field('chamada_pl_solucoes');?></h2>
         <p><?the_field('descricao_pl_solucoes');?></p>
+        <?the_field('descricao_pl_solucoes_2');?>
       </div>
       <div class="row cards hide-mobile">
         <div class="col-12 col-md-4">
@@ -41,9 +42,9 @@
             <h3><?the_field('label_item_3');?></h3>
           </div>
           <? 
-              if( have_rows('item_2_pl_solucoes') ):
+              if( have_rows('item_3_pl_solucoes') ):
               // Loop through rows.
-                  for($i=0; have_rows('item_2_pl_solucoes'); $i++) : the_row();
+                  for($i=0; have_rows('item_3_pl_solucoes'); $i++) : the_row();
                   $content_item[$i] = get_sub_field('conteudo');
           ?>
           <div class="card w-100">

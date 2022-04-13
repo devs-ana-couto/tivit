@@ -92,6 +92,9 @@ if(have_posts()) : while(have_posts()) : the_post();
     $clouds = '/components/clouds.php';
     $clouds_order = get_field('posicao_no_layout');
 
+    $cta = '/components/cta.php';
+    $cta_order = get_field('posicao_no_layout_cta');
+
     $bigNumbers = '/components/bigNumbers.php';
     $bigNumbers_order = get_field('posicao_no_layout_big_numbers');
 
@@ -137,13 +140,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             include get_template_directory() . $testimonials;
         }elseif($content_page_order == 1) {
             include get_template_directory() . $content_page;
+        }elseif($cta_order == 1) {
+            include get_template_directory() . $cta;
         }
     ?>
-  </div>
-  <!-- //Clouds -->
-
-  <!-- Middle Content -->
-  <div id="middleContent">
     <?
         if($clouds_order == 2) {
             include get_template_directory() . $clouds;
@@ -159,11 +159,15 @@ if(have_posts()) : while(have_posts()) : the_post();
             include get_template_directory() . $testimonials;
         }elseif($content_page_order == 2) {
             include get_template_directory() . $content_page;
-        }
+        }elseif($cta_order == 2) {
+            include get_template_directory() . $cta;
+        }        
+    ?>   
+  </div>
+  <!-- //Clouds -->
 
-        
-    ?>    
-
+  <!-- Middle Content -->
+  <div id="middleContent">
     <?
         if($clouds_order == 3) {
             include get_template_directory() . $clouds;
@@ -179,14 +183,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             include get_template_directory() . $testimonials;
         }elseif($content_page_order == 3) {
             include get_template_directory() . $content_page;
-        }
-        include get_template_directory() . $publicCloud;
-    ?>
-  </div>
-  <!-- //Middle Content -->
-
-  <!-- Stratregy -->
-  <div id="strategy">
+        }elseif($cta_order == 3) {
+            include get_template_directory() . $cta;
+        }        
+    ?>    
 
     <?
         if($clouds_order == 4) {
@@ -201,6 +201,36 @@ if(have_posts()) : while(have_posts()) : the_post();
             include get_template_directory() . $strategy;
         }elseif($testimonials_order == 4) {
             include get_template_directory() . $testimonials;
+        }elseif($content_page_order == 4) {
+            include get_template_directory() . $content_page;
+        }elseif($cta_order == 4) {
+            include get_template_directory() . $cta;
+        }
+        include get_template_directory() . $publicCloud;
+    ?>
+  </div>
+  <!-- //Middle Content -->
+
+  <!-- Stratregy -->
+  <div id="strategy">
+
+    <?
+        if($clouds_order == 5) {
+            include get_template_directory() . $clouds;
+        }elseif($bigNumbers_order == 5) {
+            include get_template_directory() . $bigNumbers;
+        }elseif($diff_order == 5) {
+            include get_template_directory() . $diff;
+        }elseif($publicCloud_order == 5) {
+            include get_template_directory() . $publicCloud;
+        }elseif($strategy_order == 5) {
+            include get_template_directory() . $strategy;
+        }elseif($testimonials_order == 5) {
+            include get_template_directory() . $testimonials;
+        }elseif($content_page == 5) {
+            include get_template_directory() . $content_page;
+        }elseif($cta_order == 5) {
+            include get_template_directory() . $cta;
         }
     ?>
   </div>
@@ -208,24 +238,25 @@ if(have_posts()) : while(have_posts()) : the_post();
 
   <!-- Depoiments -->
   <?
-    if($clouds_order == 5) {
+    if($clouds_order == 6) {
         include get_template_directory() . $clouds;
-    }elseif($bigNumbers_order == 5) {
+    }elseif($bigNumbers_order == 6) {
         include get_template_directory() . $bigNumbers;
-    }elseif($diff_order == 5) {
+    }elseif($diff_order == 6) {
         include get_template_directory() . $diff;
-    }elseif($publicCloud_order == 5) {
+    }elseif($publicCloud_order == 6) {
         include get_template_directory() . $publicCloud;
-    }elseif($strategy_order == 5) {
+    }elseif($strategy_order == 6) {
         include get_template_directory() . $strategy;
-    }elseif($testimonials_order == 5) {
+    }elseif($testimonials_order == 6) {
         include get_template_directory() . $testimonials;
+    }elseif($cta_order == 6) {
+        include get_template_directory() . $cta;
     }
   ?>
   <!-- //Depoiments  -->
 
-  <!-- Content -->
-  
+  <!-- Content -->  
     <?
         include get_template_directory() . $content_page;
     ?>
