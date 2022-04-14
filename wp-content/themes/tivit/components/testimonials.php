@@ -1,5 +1,5 @@
 <!-- Depoimentos -->
-<div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom">
+<div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom soluc-dep">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <? 

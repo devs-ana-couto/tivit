@@ -97,9 +97,10 @@
 }
 
 #main-solutions{
+    padding-top: 60px;
     //Services Intro
     #services-intro{
-        margin: 100px 0px 100px 0px;
+        padding: 60px 0;
         @media(max-width: 1024px){
             margin: 80px 0px 80px 0px;
         }
@@ -125,9 +126,8 @@
 
     //Clouds
     #clouds{
-        margin: 0 0 100px 0;
+        padding: 0 0 60px 0;
     }
-
     .cloudTitle{
         font-size: 54px;
         font-weight: 700;
@@ -181,7 +181,7 @@
     }
     
     .divCta{
-        margin: 100px 0 100px 0;
+        padding: 60px 0;
         .cta{
             font-size: 24px;
             font-weight: 600;
@@ -211,7 +211,7 @@
     //Middle Content
     #middleContent{
         background: #F5F6F7;
-        padding: 100px 0 80px 0;
+        padding: 60px 0;
     }
 
     .title{
@@ -269,8 +269,11 @@
             }
         }
     }
+    .gap{
+        padding: 60px 0;
+    }
     .diferenciais{
-        padding: 170px 0px 170px 0;
+        padding: 60px 0;
         @media(max-width: 1024px){
             padding: 110px 10px 110px 10px;
         }
@@ -401,7 +404,10 @@
 
     //estratégia
     #strategy{
-        margin: 120px 0px 120px 0;
+        padding: 60px 0;
+    }
+    .soluc-dep{
+        margin: 0;
     }
 
     .intro{
@@ -446,9 +452,9 @@
                 }
             }
             .card{
-                margin: 20px;
+                margin: 20px 0;
                 padding: 20px;
-                height: 180px;
+                min-height: 180px;
                 border-left: 4px solid $vermelho-tivit;
                 border-top: 1px solid $cinza-light-tivit;
                 border-right: 1px solid $cinza-light-tivit;
@@ -502,13 +508,11 @@
         }
 
     //custom margin on depoiments
-    .mx-custom{
-        margin-bottom: 50px;
-    }
 
     #contentServices{
         background: white !important;
         .pd{
+            padding: 60px 0;
             .title{
                 .titleText{
                     color: $cinza-dark-cyber-tivit !important;

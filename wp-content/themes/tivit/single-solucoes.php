@@ -110,6 +110,9 @@ if(have_posts()) : while(have_posts()) : the_post();
     $testimonials = '/components/testimonials.php';
     $testimonials_order = get_field('posicionamento_no_layout_depoimentos');
 
+    $extra = '/components/extra.php';
+    $extra_order = get_field('posicao_no_layout_extra');
+
     $content_page = '/components/content.php';
 
 
@@ -125,135 +128,295 @@ if(have_posts()) : while(have_posts()) : the_post();
 
   <!-- Clouds -->
   <div id="clouds">
-    <?
+  <?
         if($clouds_order == 1) {
-            include get_template_directory() . $clouds;
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
         }elseif($bigNumbers_order == 1) {
-            include get_template_directory() . $bigNumbers;
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
         }elseif($diff_order == 1) {
-            include get_template_directory() . $diff;
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
         }elseif($publicCloud_order == 1) {
-            include get_template_directory() . $publicCloud;
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
         }elseif($strategy_order == 1) {
-            include get_template_directory() . $strategy;
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
         }elseif($testimonials_order == 1) {
-            include get_template_directory() . $testimonials;
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
         }elseif($content_page_order == 1) {
-            include get_template_directory() . $content_page;
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
         }elseif($cta_order == 1) {
-            include get_template_directory() . $cta;
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 1) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
         }
-    ?>
+    ?> 
     <?
         if($clouds_order == 2) {
-            include get_template_directory() . $clouds;
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
         }elseif($bigNumbers_order == 2) {
-            include get_template_directory() . $bigNumbers;
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
         }elseif($diff_order == 2) {
-            include get_template_directory() . $diff;
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
         }elseif($publicCloud_order == 2) {
-            include get_template_directory() . $publicCloud;
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
         }elseif($strategy_order == 2) {
-            include get_template_directory() . $strategy;
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
         }elseif($testimonials_order == 2) {
-            include get_template_directory() . $testimonials;
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
         }elseif($content_page_order == 2) {
-            include get_template_directory() . $content_page;
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
         }elseif($cta_order == 2) {
-            include get_template_directory() . $cta;
-        }        
-    ?>   
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 2) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }
+    ?> 
   </div>
   <!-- //Clouds -->
 
   <!-- Middle Content -->
   <div id="middleContent">
-    <?
+  <?
         if($clouds_order == 3) {
-            include get_template_directory() . $clouds;
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
         }elseif($bigNumbers_order == 3) {
-            include get_template_directory() . $bigNumbers;
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
         }elseif($diff_order == 3) {
-            include get_template_directory() . $diff;
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
         }elseif($publicCloud_order == 3) {
-            include get_template_directory() . $publicCloud;
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
         }elseif($strategy_order == 3) {
-            include get_template_directory() . $strategy;
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
         }elseif($testimonials_order == 3) {
-            include get_template_directory() . $testimonials;
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
         }elseif($content_page_order == 3) {
-            include get_template_directory() . $content_page;
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
         }elseif($cta_order == 3) {
-            include get_template_directory() . $cta;
-        }        
-    ?>    
-
-    <?
-        if($clouds_order == 4) {
-            include get_template_directory() . $clouds;
-        }elseif($bigNumbers_order == 4) {
-            include get_template_directory() . $bigNumbers;
-        }elseif($diff_order == 4) {
-            include get_template_directory() . $diff;
-        }elseif($publicCloud_order == 4) {
-            include get_template_directory() . $publicCloud;
-        }elseif($strategy_order == 4) {
-            include get_template_directory() . $strategy;
-        }elseif($testimonials_order == 4) {
-            include get_template_directory() . $testimonials;
-        }elseif($content_page_order == 4) {
-            include get_template_directory() . $content_page;
-        }elseif($cta_order == 4) {
-            include get_template_directory() . $cta;
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 3) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
         }
-        include get_template_directory() . $publicCloud;
-    ?>
+    ?>   
+
+<?
+        if($clouds_order == 4) {
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
+        }elseif($bigNumbers_order == 4) {
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
+        }elseif($diff_order == 4) {
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
+        }elseif($publicCloud_order == 4) {
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
+        }elseif($strategy_order == 4) {
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
+        }elseif($testimonials_order == 4) {
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 4) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
+        }elseif($cta_order == 4) {
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 4) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }
+    ?> 
   </div>
   <!-- //Middle Content -->
 
   <!-- Stratregy -->
   <div id="strategy">
 
-    <?
+  <?
         if($clouds_order == 5) {
-            include get_template_directory() . $clouds;
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
         }elseif($bigNumbers_order == 5) {
-            include get_template_directory() . $bigNumbers;
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
         }elseif($diff_order == 5) {
-            include get_template_directory() . $diff;
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
         }elseif($publicCloud_order == 5) {
-            include get_template_directory() . $publicCloud;
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
         }elseif($strategy_order == 5) {
-            include get_template_directory() . $strategy;
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
         }elseif($testimonials_order == 5) {
-            include get_template_directory() . $testimonials;
-        }elseif($content_page == 5) {
-            include get_template_directory() . $content_page;
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 5) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
         }elseif($cta_order == 5) {
-            include get_template_directory() . $cta;
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 5) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
         }
-    ?>
+    ?> 
   </div>
   <!-- //Stratregy  -->
 
   <!-- Depoiments -->
   <?
-    if($clouds_order == 6) {
-        include get_template_directory() . $clouds;
-    }elseif($bigNumbers_order == 6) {
-        include get_template_directory() . $bigNumbers;
-    }elseif($diff_order == 6) {
-        include get_template_directory() . $diff;
-    }elseif($publicCloud_order == 6) {
-        include get_template_directory() . $publicCloud;
-    }elseif($strategy_order == 6) {
-        include get_template_directory() . $strategy;
-    }elseif($testimonials_order == 6) {
-        include get_template_directory() . $testimonials;
-    }elseif($cta_order == 6) {
-        include get_template_directory() . $cta;
-    }
-  ?>
+        if($clouds_order == 6) {
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
+        }elseif($bigNumbers_order == 6) {
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
+        }elseif($diff_order == 6) {
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
+        }elseif($publicCloud_order == 6) {
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
+        }elseif($strategy_order == 6) {
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
+        }elseif($testimonials_order == 6) {
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 6) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
+        }elseif($cta_order == 6) {
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 6) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }
+    ?> 
+    <?
+        if($clouds_order == 7) {
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
+        }elseif($bigNumbers_order == 7) {
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
+        }elseif($diff_order == 7) {
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
+        }elseif($publicCloud_order == 7) {
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
+        }elseif($strategy_order == 7) {
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
+        }elseif($testimonials_order == 7) {
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 7) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
+        }elseif($cta_order == 7) {
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 7) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }
+    ?> 
   <!-- //Depoiments  -->
 
   <!-- Content -->  
