@@ -30,7 +30,7 @@ if(have_posts()) : while(have_posts()) : the_post();
   </div>
 
   <!-- only for this page DESKTOP -->
-  <div class="related hide-mobile">
+  <!-- <div class="related hide-mobile">
     <div class="row w-100">
       <div class="col-6">
         <div class="d-flex flex-row align-items-center justify-content-center w-100">
@@ -52,12 +52,12 @@ if(have_posts()) : while(have_posts()) : the_post();
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- /// only for his page DESKTOP -->
 </div>
 
 <!-- only for this page MOBILE -->
-<div class="related container hide-desktop">
+<!-- <div class="related container hide-desktop">
   <div class="row">
     <div class="col-12">
       <div class="d-flex flex-column align-items-center justify-content-center w-100">
@@ -82,7 +82,7 @@ if(have_posts()) : while(have_posts()) : the_post();
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- /// only for his page MOBILE -->
 
 <? 
