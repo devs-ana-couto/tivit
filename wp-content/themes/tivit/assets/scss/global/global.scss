@@ -655,26 +655,32 @@ html, body, * {
           padding-bottom: 15px;
           cursor: pointer;
           transition: all .2s linear;
-          &:after{
-            content: url('../../assets/images/expandmenu.svg');
-            margin-left: 9px;
-            width: auto;
-            transition: all .2s linear;
-            margin-bottom: 1px;
-            position: absolute;
-          }
-          &:hover{
+          a{
+            color: white;
+            text-decoration: unset;
+            font-weight: lighter;
+            font-size: 18px;
+            padding: 0;
             &:after{
-              margin-left: 19px;
+              content: url('../../assets/images/expandmenu.svg');
+              margin-left: 9px;
+              width: auto;
               transition: all .2s linear;
+              margin-bottom: 1px;
+              position: absolute;
+            }
+            &:hover{
+              &:after{
+                margin-left: 19px;
+                transition: all .2s linear;
+            }
           }
+
         }
       }
     }
   }
-    .textMenu:first-child{
-      padding-bottom: 60px;
-    }
+
     hr{
       color: #c3c3c3 !important;
       margin: 0 0 50px !important;

@@ -48,6 +48,10 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 register_nav_menus( 
   array(
     'header-menu' => __('Header Menu'),
+    'header-menu-cloud' => __('Header Menu - Cloud Solutions'),
+    'header-menu-cyber' => __('Header Menu - Cybersecurity'),
+    'header-menu-digital' => __('Header Menu - Digital Business'),
+    'header-menu-tech' => __('Header Menu - Tech Platforms'),
     'mobile-menu' => __('Mobile Menu'),
     'footer-menu' => __('Footer Menu'),
     'footer-menu-copyright' => __('Footer Copyright Menu'),

@@ -27,7 +27,7 @@
           <?php
             wp_nav_menu( array(
               'theme_location'  => 'header-menu',
-              'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+              'depth'           =>  2, // 1 = no dropdowns, 2 = with dropdowns.
               'container'       => 'div',
               'container_class' => 'collapse navbar-collapse',
               'container_id'    => 'bs-example-navbar-collapse-1',
@@ -95,89 +95,59 @@
                   <div class="textLeft">
                     <h2>Conheça as soluções da TIVIT por <strong>Serviços e Produtos.</strong></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
-                    <a class="buttonintro">ver todas as solucoes</a>
+                    <a href="/solucoes" class="buttonintro">ver todas as solucoes</a>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="textMenu">
                     <h2>Cloud Solutions</h2>
-                    <ul>
-                      <li>
-                        Public CLOUD
-                      </li>
-                      <li>
-                        CLOUD MANAGED SERVICES
-                      </li>
-                      <li>
-                        CLOUD PRofeSSIONAL SERvices
-                      </li>
-                      <li>
-                        private cloud
-                      </li>
-                    </ul>
+                        <?php
+                            wp_nav_menu( array(
+                            'theme_location'  => 'header-menu-cloud',
+                            'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                            'walker'          => new WP_Bootstrap_Navwalker(),
+                            ) );
+                        ?>
                   </div>
                   <hr class="separator w-100"/>
                   <div class="textMenu">
                     <h2>TECH PLATFORMS</h2>
-                    <ul>
-                      <li>
-                        Infrastructure Management
-                      </li>
-                      <li>
-                        Transactional Services
-                      </li>
-                      <li>
-                        Workplace
-                      </li>
-                      <li>
-                        Smart Systems & IoT
-                      </li>
-                      <li>
-                        Enterprise Content Management
-                      </li>
-                      <li>
-                        Business Integration
-                      </li>
-                    </ul>
+                    <?php
+                        wp_nav_menu( array(
+                        'theme_location'  => 'header-menu-tech',
+                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'          => new WP_Bootstrap_Navwalker(),
+                        ) );
+                    ?>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="textMenu">
-                    <h2>Cloud Solutions</h2>
-                    <ul>
-                      <li>
-                        Public CLOUD
-                      </li>
-                      <li>
-                        CLOUD MANAGED SERVICES
-                      </li>
-                      <li>
-                        CLOUD PRofeSSIONAL SERvices
-                      </li>
-                      <li>
-                        private cloud
-                      </li>
-                    </ul>
+                    <h2>CYBERSECURITY</h2>
+                    <?php
+                        wp_nav_menu( array(
+                        'theme_location'  => 'header-menu-cyber',
+                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'          => new WP_Bootstrap_Navwalker(),
+                        ) );
+                    ?>
                   </div>
                   <hr class="separator w-100"/>
                 </div>
                 <div class="col-md-3">
                   <div class="textMenu">
-                    <h2>Cloud Solutions</h2>
-                    <ul>
-                      <li>
-                        Public CLOUD
-                      </li>
-                      <li>
-                        CLOUD MANAGED SERVICES
-                      </li>
-                      <li>
-                        CLOUD PRofeSSIONAL SERvices
-                      </li>
-                      <li>
-                        private cloud
-                      </li>
-                    </ul>
+                    <h2>Digital Business</h2>
+                    <?php
+                        wp_nav_menu( array(
+                        'theme_location'  => 'header-menu-digital',
+                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'          => new WP_Bootstrap_Navwalker(),
+                        ) );
+                    ?>
                   </div>
                 </div>
               </div>
@@ -281,7 +251,7 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
             </p>
-            <a>VER TODAS AS SOLUÇÕES</a>
+            <a href="/solucoes">VER TODAS AS SOLUÇÕES</a>
           </div>
           <hr class="w-100" />
 

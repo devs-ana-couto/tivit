@@ -442,18 +442,22 @@ html, body, * {
         padding-bottom: 15px;
         cursor: pointer;
         transition: all .2s linear; }
-        .solution-menu .textMenu ul li:after {
-          content: url("../../assets/images/expandmenu.svg");
-          margin-left: 9px;
-          width: auto;
-          transition: all .2s linear;
-          margin-bottom: 1px;
-          position: absolute; }
-        .solution-menu .textMenu ul li:hover:after {
-          margin-left: 19px;
-          transition: all .2s linear; }
-    .solution-menu .textMenu:first-child {
-      padding-bottom: 60px; }
+        .solution-menu .textMenu ul li a {
+          color: white;
+          text-decoration: unset;
+          font-weight: lighter;
+          font-size: 18px;
+          padding: 0; }
+          .solution-menu .textMenu ul li a:after {
+            content: url("../../assets/images/expandmenu.svg");
+            margin-left: 9px;
+            width: auto;
+            transition: all .2s linear;
+            margin-bottom: 1px;
+            position: absolute; }
+          .solution-menu .textMenu ul li a:hover:after {
+            margin-left: 19px;
+            transition: all .2s linear; }
     .solution-menu hr {
       color: #c3c3c3 !important;
       margin: 0 0 50px !important; }
