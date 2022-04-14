@@ -9,7 +9,7 @@
                 $name_item[$i] = get_sub_field('nome');
                 $content_item[$i] = get_sub_field('conteudo');
         ?>
-        <div class="col-12 col-md-4 hide-mobile">
+        <div class="col-12 col-md-3 hide-mobile">
             <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
                 <h2><?=$name_item[$i]?></h2>
                 <div class="tag">
@@ -23,7 +23,7 @@
         
 
         <!-- Mobile section -->
-        <div class="container col-12 col-md-4 customTitleMobile hide-desktop">
+        <div class="container col-12 col-md-3 customTitleMobile hide-desktop">
           <div class="row">
             <div class="col-6 position-relative d-flex flex-column align-items-center justify-content-center">
               <p class="w-100">
@@ -36,9 +36,7 @@
             <div class="col-6">
               <div class="w-100 h-100 d-flex justify-content-start align-items-center">
             
-                <p>Nível: <strong><?=$level_item[$i]?></strong></br>
-                <?=$certifications_item[$i] != '' ? $certifications_item[$i] . ' certificações' : '' ?></br>
-                <?=$acreditacoes_item[$i] != '' ? $acreditacoes_item[$i] . ' acreditações' : '' ?></p>
+              <p><?=$content_item[$i]?></p>
                   
               </div>
             </div>
