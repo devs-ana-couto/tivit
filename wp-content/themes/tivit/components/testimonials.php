@@ -31,7 +31,7 @@
         </div>
         <? endfor; endif; ?>
     </div>
-    <div class="mobileRelative">
+    <div class="mobileRelative <?=count(get_field('depoimentos_solucoes')) <= 1 ? 'hide-desktop hide-mobile' : ''; ?>">
       <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>

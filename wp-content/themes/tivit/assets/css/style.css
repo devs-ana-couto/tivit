@@ -5723,9 +5723,9 @@ html, body, * {
       margin: 5px 5px 0 5px; } }
 
 #main-solutions {
-  padding-top: 60px; }
+  padding-top: 100px; }
   #main-solutions #services-intro {
-    padding: 60px 0; }
+    padding: 100px 0; }
     @media (max-width: 1024px) {
       #main-solutions #services-intro {
         margin: 80px 0px 80px 0px; } }
@@ -5744,7 +5744,7 @@ html, body, * {
       color: #262626;
       max-width: 700px; }
   #main-solutions #clouds {
-    padding: 0 0 60px 0; }
+    padding: 0 0 100px 0; }
   #main-solutions .cloudTitle {
     font-size: 54px;
     font-weight: 700;
@@ -5783,7 +5783,7 @@ html, body, * {
     #main-solutions .custom-text strong {
       font-weight: 700; }
   #main-solutions .divCta {
-    padding: 60px 0; }
+    padding: 100px 0; }
     #main-solutions .divCta .cta {
       font-size: 24px;
       font-weight: 600;
@@ -5807,7 +5807,7 @@ html, body, * {
         transition: all .2s; }
   #main-solutions #middleContent {
     background: #F5F6F7;
-    padding: 60px 0; }
+    padding: 100px 0; }
   #main-solutions .title {
     font-size: 28px;
     text-transform: uppercase;
@@ -5854,9 +5854,9 @@ html, body, * {
       display: flex;
       justify-content: center; }
   #main-solutions .gap {
-    padding: 60px 0; }
+    padding: 100px 0; }
   #main-solutions .diferenciais {
-    padding: 60px 0; }
+    padding: 100px 0; }
     @media (max-width: 1024px) {
       #main-solutions .diferenciais {
         padding: 110px 10px 110px 10px; } }
@@ -5957,7 +5957,7 @@ html, body, * {
     margin-top: 8px;
     max-width: 350px; }
   #main-solutions #strategy {
-    padding: 60px 0; }
+    padding: 100px 0; }
   #main-solutions .soluc-dep {
     margin: 0; }
   #main-solutions .intro {
@@ -6043,7 +6043,7 @@ html, body, * {
   #main-solutions #contentServices {
     background: white !important; }
     #main-solutions #contentServices .pd {
-      padding: 60px 0; }
+      padding: 100px 0; }
       #main-solutions #contentServices .pd .title .titleText {
         color: #262626 !important; }
     #main-solutions #contentServices .detalhes span, #main-solutions #contentServices .detalhes p {
