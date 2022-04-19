@@ -14,8 +14,8 @@
                 <div class="row custom-direction">
                     <div class="col-12 col-md-6 d-flex justify-content-end">
                     <div class="h-100">
-                        <h2>PUBLIC CLOUD</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2><? the_field('titulo_publicCloud'); ?></h2>
+                        <p><? the_field('descricao_publicCloud'); ?></p>
                     </div>
                     </div>
                     <div class="col-12 col-md-6">

@@ -102,7 +102,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     $diff_order = get_field('posicao_no_layout_nd');
 
     $publicCloud =  '/components/publicCloud.php';
-    // $publicCloud_order = get_field('posicao_no_layout_planejamento');
+    $publicCloud_order = get_field('posicao_no_layout_publicCloud');
 
     $strategy = '/components/strategy.php';
     $strategy_order = get_field('posicao_no_layout_planejamento');
@@ -251,7 +251,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         }
     ?>   
 
-<?
+    <?
         if($clouds_order == 4) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
