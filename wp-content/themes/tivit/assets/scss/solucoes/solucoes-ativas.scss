@@ -599,3 +599,13 @@
       }
   }
 }
+
+.modal{
+    .modal-dialog{
+        max-width: 800px;
+    }
+    .modal-content, .modal-header{
+        background-color: unset;
+        border: unset;
+    }
+}

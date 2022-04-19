@@ -6104,6 +6104,13 @@ html, body, * {
         background: #F20024;
         transition: .2s all; } }
 
+.modal .modal-dialog {
+  max-width: 800px; }
+
+.modal .modal-content, .modal .modal-header {
+  background-color: unset;
+  border: unset; }
+
 .services-hero {
   height: 580px;
   background: url("../../assets/images/solucoes/bannerMobile.png") no-repeat center center;

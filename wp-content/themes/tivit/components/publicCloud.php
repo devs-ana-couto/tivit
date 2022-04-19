@@ -1,3 +1,17 @@
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+      <iframe src="https://player.vimeo.com/video/<?the_field('link_video_publicCloud');?>?h=7eff968989" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+
+
 <div class="gap">
     <div class="container">
         <div class="publiccloud position-relative">
@@ -19,9 +33,11 @@
                     </div>
                     </div>
                     <div class="col-12 col-md-6">
-                    <div>
-                        <img class="w-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/play.svg" alt="Play" />
-                    </div>
+                        <div>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+                                <img class="w-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/play.svg" alt="Play" />
+                            </a>                        
+                        </div>
                     </div>
                 </div>
             </div>
