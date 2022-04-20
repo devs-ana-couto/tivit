@@ -1,4 +1,4 @@
-<div id="strategy">
+<div id="strategy" style="background: <?=the_field('cor_de_fundo_pl_solucoes');?>">
   <div class="container">
     <div class="intro">
       <h2><?the_field('chamada_pl_solucoes');?></h2>

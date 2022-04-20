@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-      <iframe src="https://player.vimeo.com/video/<?the_field('link_video_publicCloud');?>?h=7eff968989" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/<?the_field('link_video_publicCloud');?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -12,7 +12,7 @@
 <!-- Button trigger modal -->
 
 
-<div class="gap">
+<div class="gap" style="background: <?=the_field('cor_de_fundo_publicCloud');?>">
     <div class="container">
         <div class="publiccloud position-relative">
             <div id="triangle-down"></div>

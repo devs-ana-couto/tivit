@@ -417,6 +417,45 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?> 
+        <?
+        if($clouds_order == 8) {
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
+        }elseif($bigNumbers_order == 8) {
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
+        }elseif($diff_order == 8) {
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
+        }elseif($publicCloud_order == 8) {
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
+        }elseif($strategy_order == 8) {
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
+        }elseif($testimonials_order == 8) {
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 8) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
+        }elseif($cta_order == 8) {
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 8) {
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }
+    ?> 
   <!-- //Depoiments  -->
 
   <!-- Content -->  

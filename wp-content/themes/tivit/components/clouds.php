@@ -1,4 +1,4 @@
-<div class="gap">
+<div class="gap" style="background: <?=the_field('cor_de_fundo_clouds');?>">
   <div class="container">
     <div class="row">
         <?

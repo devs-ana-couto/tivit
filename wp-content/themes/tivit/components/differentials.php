@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="background: <?=the_field('cor_de_fundo_nd');?>">
     <div class="diferenciais">
         <div class="row">
             <div class="col-12 col-md-4">

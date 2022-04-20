@@ -1,4 +1,4 @@
-<div class="gap">
+<div class="gap" style="background: <?=the_field('cor_de_fundo_solucoes');?>">
     <div class="container">
         <div class="w-100">
             <h2 class="title text-center"><?the_field('chamada_big_numbers_solucoes');?></h2>
