@@ -1,5 +1,6 @@
-<div class="container" style="background: <?=the_field('cor_de_fundo_nd');?>">
-    <div class="diferenciais">
+<div class="diferenciais" style="background: <?=the_field('cor_de_fundo_nd');?>">
+
+    <div class="container">
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="intro">
