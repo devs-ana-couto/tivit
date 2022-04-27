@@ -1,5 +1,5 @@
 <!-- Section Diferenciais e Beneficios -->
-<section class="diferenciais-cases-item" style="background: <?=the_field('cor_de_fundo_nd');?>">
+<section class="diferenciais-cases-item" style="background: <?=the_field('cor_de_fundo_nd_cases');?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-11 offset-md-1">

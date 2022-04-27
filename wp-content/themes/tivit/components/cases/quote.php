@@ -1,5 +1,5 @@
 <!-- Section Citação -->
-<section class="citacao-cases-item">
+<section class="citacao-cases-item" style="background: <?=the_field('cor_de_fundo_citacao');?>">
     <div class="container">
         <div class="row">
             <div class="col-12">
