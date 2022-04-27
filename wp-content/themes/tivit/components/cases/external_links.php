@@ -1,5 +1,5 @@
 <!-- Section Links Externos -->
-<section class="links-externos-cases-item">
+<section class="links-externos-cases-item" style="background: <?=the_field('cor_de_fundo_links_cases');?>">
     <div class="container">
         <?php
             if($detect->isMobile()){
