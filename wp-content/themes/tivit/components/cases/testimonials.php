@@ -1,5 +1,5 @@
 <!-- Section Depoimento -->
-<section class="depoimento-cases-item">
+<section class="depoimento-cases-item" style="background: <?=the_field('cor_de_fundo_depoimentos_cases');?>">
     <div class="container">
         <div class="row">
             <div class="col-12">
