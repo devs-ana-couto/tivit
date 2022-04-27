@@ -1,5 +1,5 @@
 <!-- Section Serviços Nuvem -->
-<section class="nuvem-cases-item">
+<section class="nuvem-cases-item" style="background: <?=the_field('cor_de_fundo_cloud_cases');?>">
     <div class="container">
         <div class="row">
             <div class="col-12">
