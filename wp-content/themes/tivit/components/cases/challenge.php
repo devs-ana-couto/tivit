@@ -1,5 +1,5 @@
 <!-- Section Desafio -->
-<section class="desafio-cases-item" style="background: <?=the_field('cor_de_fundo_exibir_featured_cases');?>">
+<section class="desafio-cases-item" style="background: <?=the_field('cor_de_fundo_desafio_cases');?>">
     <div class="container">
         <div class="row">
             <div class="col-11 offset-md-1">
