@@ -1,5 +1,5 @@
 <!-- Section Empresa -->
-<section class="empresa-cases-item">
+<section class="empresa-cases-item" style="background: <?=the_field('cor_de_fundo_sobre_cases');?>">
     <div class="container">
         <div class="row">
             <div class="col-8 offset-md-1">
