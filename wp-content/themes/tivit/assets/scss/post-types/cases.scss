@@ -124,7 +124,6 @@
 
 // Section Desafio
 .desafio-cases-item{
-    margin-top: 53px;
     h2{
         font-size: 28px;
         line-height: 32px;
@@ -214,7 +213,7 @@
 
 // Section Citação
 .citacao-cases-item{
-    margin-top: 60px;
+    margin: 60px 0;
     .col-12{
         padding: 0;
         .box{
@@ -271,6 +270,7 @@
 
 // Section Conteúdo
 .conteudo-cases-item{
+    padding: 60px 0;
     .box{
         margin: 72px 0;
         h2{
@@ -284,7 +284,7 @@
 }
 
 .links-externos-cases-item{
-    margin: 0px 0 50px 0;
+    padding: 60px 0;
     .box{
         border: 1px solid $cinza-light-tivit;
         padding: 20px 30px;
@@ -388,7 +388,7 @@
     }
 
     .empresa-cases-item{
-        padding: 100px 0;
+        padding: 60px 0;
         .col-12{
             display: flex;
             align-items: center;
@@ -396,7 +396,7 @@
     }
 
     .destaques-cases-item{
-        margin-top: 70px;
+        padding: 60px 0;
         h2{
             text-align: center;
         }
@@ -418,7 +418,7 @@
     }
 
     .desafio-cases-item{
-        margin: 130px 0;
+        padding: 60px 0;
         .box{
             padding-top: 55px;
             padding-bottom: 55px;
@@ -435,7 +435,7 @@
     }
 
     .nuvem-cases-item{
-        margin-bottom: 150px;
+        padding: 60px 0;
         h2{
             width: 100%;
             text-align: center;
@@ -456,6 +456,7 @@
     }
 
     .diferenciais-cases-item{
+        padding: 60px 0;
         h2{
             text-align: center;
         }
@@ -472,7 +473,7 @@
     }
     
     .citacao-cases-item{
-        margin: 144px 0;
+        margin: 60px 0;
         background: #cad2d833;
 
         .col-12{
@@ -491,7 +492,7 @@
     }
 
     .depoimento-cases-item{
-        margin: 100px 0 50px 0;
+        padding: 60px 0;
         .box{
             p{
                 width: 763px;
