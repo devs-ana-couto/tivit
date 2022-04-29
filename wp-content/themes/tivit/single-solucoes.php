@@ -150,6 +150,9 @@ if(have_posts()) : while(have_posts()) : the_post();
     $testimonials_cases = '/components/cases/testimonials.php';
     $testimonials_cases_order = get_field('posicao_no_layout_depoimentos_cases');
 
+    $background_cta = '/components/cases/background_cta.php';
+    $background_cta_order = get_field('posicao_no_layout_ctabg');
+
 ?>
 
 <section id="main-solutions">
@@ -234,6 +237,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 1) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     <?
@@ -308,6 +315,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 2) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 2) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?> 
@@ -389,6 +400,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 3) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?>   
 
@@ -464,6 +479,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 4) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 4) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?> 
@@ -546,6 +565,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 5) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     </div>
@@ -625,6 +648,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 6) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     <?
@@ -700,6 +727,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 7) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?>
     <?
@@ -774,6 +805,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 8) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 8) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?>
@@ -851,6 +886,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 9) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
 
@@ -927,6 +966,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 10) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     <?
@@ -1001,6 +1044,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 11) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 11) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?> 
@@ -1077,6 +1124,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 12) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     <?
@@ -1151,6 +1202,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 13) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 13) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?> 
@@ -1227,6 +1282,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 14) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?>
     <?
@@ -1301,6 +1360,10 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 15) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 15) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?>
@@ -1377,6 +1440,10 @@ if(have_posts()) : while(have_posts()) : the_post();
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
             }
+        }elseif($background_cta_order == 16) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
         }
     ?> 
     <?
@@ -1451,6 +1518,89 @@ if(have_posts()) : while(have_posts()) : the_post();
         }elseif($external_links_cases_order == 17) {
             if(get_field('exibir_links_cases') == true){
                 include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 17) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
+            }
+        }
+    ?>
+        <?
+        if($clouds_order == 18) {
+            if(get_field('exibir_clouds') == true){
+                include get_template_directory() . $clouds;
+            }
+        }elseif($bigNumbers_order == 18) {
+            if(get_field('exibir_bigNumbers') == true){
+                include get_template_directory() . $bigNumbers;
+            }
+        }elseif($diff_order == 18) {
+            if(get_field('exibir_diff') == true){
+                include get_template_directory() . $diff;
+            }
+        }elseif($publicCloud_order == 18) {
+            if(get_field('exibir_publicCloud') == true){
+                include get_template_directory() . $publicCloud;
+            }
+        }elseif($strategy_order == 18) {
+            if(get_field('exibir_strategy') == true){
+                include get_template_directory() . $strategy;
+            }
+        }elseif($testimonials_order == 18) {
+            if(get_field('exibir_testimonials') == true){
+                include get_template_directory() . $testimonials;
+            }
+        }elseif($content_page_order == 18) {
+            if(get_field('exibir_content_page') == true){
+                include get_template_directory() . $content_page;
+            }
+        }elseif($cta_order == 18) {
+            if(get_field('exibir_cta') == true){
+                include get_template_directory() . $cta;
+            }
+        }elseif($extra_order == 18){
+            if(get_field('exibir_extra') == true){
+                include get_template_directory() . $extra;
+            }
+        }elseif($about_cases_order == 18) {
+            if(get_field('exibir_sobre_cases') == true){
+                include get_template_directory() . $about_cases;
+            }
+        }elseif($challenge_cases_order == 18) {
+            if(get_field('exibir_challenge_cases') == true){
+                include get_template_directory() . $challenge_cases;
+            }
+        }elseif($featured_cases_order == 18) {
+            if(get_field('exibir_featured_cases') == true){
+                include get_template_directory() . $featured_cases;
+            }
+        }elseif($cloud_cases_order == 18) {
+            if(get_field('exibir_nuvem_cases') == true){
+                include get_template_directory() . $cloud_cases;
+            }
+        }elseif($differentials_cases_order == 18) {
+            if(get_field('exibir_db') == true){
+                include get_template_directory() . $differentials_cases;
+            }
+        }elseif($quote_cases_order == 18) {
+            if(get_field('exibir_citacao') == true){
+                include get_template_directory() . $quote_cases;
+            }
+        }elseif($content_cases_order == 18) {
+            if(get_field('exibir_content') == true){
+                include get_template_directory() . $content_cases;
+            }
+        }elseif($testimonials_cases_order == 18) {
+            if(get_field('exibir_depoimentos_cases') == true){
+                include get_template_directory() . $testimonials_cases;
+            }
+        }elseif($external_links_cases_order == 18) {
+            if(get_field('exibir_links_cases') == true){
+                include get_template_directory() . $external_links_cases;
+            }
+        }elseif($background_cta_order == 18) {
+            if(get_field('exibira_ctabg') == true){
+                include get_template_directory() . $background_cta;
             }
         }
     ?> 

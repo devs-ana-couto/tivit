@@ -608,3 +608,13 @@
         border: unset;
     }
 }
+
+.background_cta{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .botao{
+        margin: 0;
+    }
+}

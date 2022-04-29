@@ -6110,6 +6110,14 @@ html, body, * {
   background-color: unset;
   border: unset; }
 
+.background_cta {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .background_cta .botao {
+    margin: 0; }
+
 .services-hero {
   height: 580px;
   background: url("../../assets/images/solucoes/bannerMobile.png") no-repeat center center;

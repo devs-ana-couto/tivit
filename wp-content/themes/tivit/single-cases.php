@@ -102,7 +102,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
   <!-- Clouds -->
   <div id="clouds">
-  <?
+    <?
         if($clouds_order == 1) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1399,7 +1399,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
     <!-- Content -->  
     <?
-        include get_template_directory() . $content_page;
+      include get_template_directory() . $content_page;
     ?>
     <!-- //Content  -->
 </section>
