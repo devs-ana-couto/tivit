@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Serviços gerenciados na nuvem</h2>
+                <h2><?the_field('chamada_nuvem_services')?></h2>
             </div>
         </div>
         <?php

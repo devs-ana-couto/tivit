@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
-                <h2>Destaques do projeto</h2>
+                <h2><?the_field('chamada_destaques')?></h2>
                 <div class="row">   
                     <?php
                     // Check rows exists.

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-11 offset-md-1">
-                <h2>Desafio</h2>
+                <h2><?the_field('chamada_desafio')?></h2>
             </div>
             <div class="col-12 col-md-8">
                 <div class="box">

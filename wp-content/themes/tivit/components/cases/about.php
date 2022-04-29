@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-8 offset-md-1">
-                <h2>Sobre o cliente</h2>
+                <h2><?the_field('chamada_empresa')?></h2>
             </div>
             <div class="col-4 hide-desktop">
                 <img src="<? the_field('logo_da_empresa'); ?>" alt="">
