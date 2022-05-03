@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-3"> 
+            <div cl ass="col-12 col-md-3"> 
                 <div class="bigNumbersTitle">
                     <div class="title">
                         <h2><?the_field('item_4_texto_solucoes');?></h2>

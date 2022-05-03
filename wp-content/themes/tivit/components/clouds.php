@@ -9,7 +9,17 @@
                 $name_item[$i] = get_sub_field('nome');
                 $content_item[$i] = get_sub_field('conteudo');
         ?>
-        <div class="col-12 col-md-3 hide-mobile">
+        <div class="col-12 <? 
+        if(count(get_field('itens_nuvem_solucoes')) == 1){
+          echo 'col-md-12';
+        }elseif(count(get_field('itens_nuvem_solucoes')) == 2){
+          echo 'col-md-6';
+        }elseif(count(get_field('itens_nuvem_solucoes')) == 3){
+          echo 'col-md-4';
+        }elseif(count(get_field('itens_nuvem_solucoes')) == 4){
+          echo 'col-md-3';
+        }
+          ?>  hide-mobile">
             <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
                 <h2><?=$name_item[$i]?></h2>
                 <div class="tag">

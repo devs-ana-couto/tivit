@@ -97,8 +97,10 @@
 }
 
 #main-solutions{
+    margin-top: 100px;
     //Services Intro
     #services-intro{
+        margin: 100px 0;
         @media(max-width: 1024px){
             margin: 80px 0px 80px 0px;
         }
@@ -178,7 +180,7 @@
     }
     
     .divCta{
-        padding: 100px 0;
+        padding: 30px 0 100px 0;
         .cta{
             font-size: 24px;
             font-weight: 600;
@@ -203,10 +205,6 @@
                 transition: all .2s;
             }
         }
-    }
-
-    //Middle Content
-    #middleContent{
     }
 
     .title{
@@ -398,8 +396,6 @@
     }
 
     //estratégia
-    #strategy{
-    }
     .soluc-dep{
         margin: 0;
     }

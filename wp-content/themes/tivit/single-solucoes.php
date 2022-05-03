@@ -89,6 +89,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 <? 
 
     $introduction = '/components/introduction.php';
+    
+    $form = '/components/cases/form.php';
 
     $clouds = '/components/clouds.php';
     $clouds_order = get_field('posicao_no_layout');
@@ -1608,9 +1610,12 @@ if(have_posts()) : while(have_posts()) : the_post();
 
     <!-- Content -->  
     <?
+        include get_template_directory() . $form;
         include get_template_directory() . $content_page;
     ?>
     <!-- //Content  -->
+
+    
 </section>
 
 <?php
