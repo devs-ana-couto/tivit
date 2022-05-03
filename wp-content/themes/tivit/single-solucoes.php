@@ -489,8 +489,8 @@ if(have_posts()) : while(have_posts()) : the_post();
   </div>
   <!-- //Middle Content -->
 
-  <!-- Stratregy -->
-  <div id="strategy">
+<!-- Stratregy -->
+<div id="strategy">
 
     <?
         if($clouds_order == 5) {
@@ -570,11 +570,11 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $background_cta;
             }
         }
-    ?> 
-    </div>
+        ?> 
+</div>
     <!-- //Stratregy  -->
 
-  <!-- Depoiments -->
+    <!-- Depoiments -->
     <?
         if($clouds_order == 6) {
             if(get_field('exibir_clouds') == true){
@@ -1525,7 +1525,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-        <?
+    <?
         if($clouds_order == 18) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
