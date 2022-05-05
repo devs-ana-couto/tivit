@@ -61,24 +61,24 @@
     }
   }
   .arrow{
-  margin-top: 0;
+    margin-top: 0;
   }
   .customMargin{
     margin-top: -50px;
   }
   .mask{
-      max-width: 90%;
-      @media (max-width: 768px){
-          max-width: 100%;
-      }
-      mix-blend-mode: multiply;
+    max-width: 90%;
+    @media (max-width: 768px){
+      max-width: 100%;
+    }
+    mix-blend-mode: multiply;
   }
   .maskDiv{
     img{
-        top: 15%;
-        left: 0;
-        width: 100%;
-        mix-blend-mode: multiply;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      mix-blend-mode: multiply;
     }
   }
   .customNumbers{

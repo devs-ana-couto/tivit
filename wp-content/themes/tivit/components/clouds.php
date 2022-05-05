@@ -22,9 +22,11 @@
           ?>  hide-mobile">
             <div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
                 <h2><?=$name_item[$i]?></h2>
-                <div class="tag">
-                    <img class="position-absolute" src="<?=$logo_url_item[$i]?>" alt="mask" />
-                </div>
+                <? if($logo_url_item[$i]){ ?>
+                  <div class="tag">
+                      <img class="position-absolute" src="<?=$logo_url_item[$i]?>" alt="mask" />
+                  </div>
+                <? } ?>
                 <div class="subtitle">
                     <p><?=$content_item[$i]?></p>
                 </div>
@@ -40,7 +42,9 @@
                 <span>
                   <h2><?=$name_item[$i]?></h2>
                 </span>
+              <? if($logo_url_item[$i]){ ?>
                 <img class="tagMobile position-absolute" src="<?=$logo_url_item[$i]?>" width="40" alt="Azure" />
+              <? } ?>
               </p>
             </div>
             <div class="col-6">

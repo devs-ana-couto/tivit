@@ -492,7 +492,6 @@ if(have_posts()) : while(have_posts()) : the_post();
   <!-- //Middle Content -->
 
 <!-- Stratregy -->
-<div id="strategy">
 
     <?
         if($clouds_order == 5) {
@@ -573,7 +572,6 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
         ?> 
-</div>
     <!-- //Stratregy  -->
 
     <!-- Depoiments -->

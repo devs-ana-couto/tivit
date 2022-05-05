@@ -97,12 +97,15 @@
 }
 
 #main-solutions{
-    margin-top: 100px;
+    margin: 100px 0 0 0;
+    @media(max-width: 1024px){
+        margin: 50px 0px;
+    }
     //Services Intro
     #services-intro{
         margin: 100px 0;
         @media(max-width: 1024px){
-            margin: 80px 0px 80px 0px;
+            margin: 50px 0px;
         }
     }
 
@@ -178,9 +181,14 @@
             font-weight: 700;
         }
     }
-    
+    #strategy{
+        padding: 100px 0;
+        @media(max-width: 1024px){
+            padding: 50px 0;
+        }
+    }
     .divCta{
-        padding: 100px 0 100px 0;
+        padding: 30px 0;
         .cta{
             font-size: 24px;
             font-weight: 600;
@@ -196,7 +204,7 @@
             color: white;
             background: $vermelho-tivit;
             border-radius: 50px;
-            padding: 10px 35px 10px 35px;
+            padding: 10px 15px;
             border: 1px solid $vermelho-tivit;
             transition: all .2s;
             &:hover{
@@ -264,11 +272,14 @@
     }
     .gap{
         padding: 100px 0;
+        @media(max-width: 1024px){
+            padding: 50px 0;
+        }
     }
     .diferenciais{
         padding: 100px 0;
         @media(max-width: 1024px){
-            padding: 110px 10px 110px 10px;
+            padding: 30px 0;
         }
         .intro{
             display: block;
@@ -406,6 +417,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            margin-bottom: 35px;
             h2{
                 font-size: 36px;
                 font-weight: lighter;
@@ -430,7 +442,6 @@
             }
         }
         .cards{
-            margin-top: 50px;
             .intro{
                 h3{
                     font-size: 28px;
@@ -442,7 +453,7 @@
                 }
             }
             .card{
-                margin: 20px 0;
+                margin: 20px 0 0 0;
                 padding: 20px;
                 min-height: 180px;
                 border-left: 4px solid $vermelho-tivit;
@@ -503,6 +514,9 @@
         background: white !important;
         .pd{
             padding: 100px 0;
+            @media(max-width: 1024px){
+                padding: 50px 0;
+            }
             .title{
                 .titleText{
                     color: $cinza-dark-cyber-tivit !important;
@@ -600,7 +614,7 @@
 }
 
 .background_cta{
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -230,6 +230,9 @@
 #contatoUnfolding{
     background: #F5F6F7;
     padding: 100px 0;
+    @media(max-width: 1024px){
+        padding: 50px 0;
+    }
     .cta{
         h2{
             color: $vermelho-tivit;

@@ -75,3 +75,15 @@ require_once( get_template_directory() . '/inc/page.builder/page.builder.php' );
 require_once( get_template_directory() . '/libs/Mobile_Detect.php' );
 
 $detect = new Mobile_Detect;
+
+// 
+
+function admin_queue( $hook ) {
+  global $post;
+    if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
+      if ( 'solucoes' === $post->post_type ) {
+        wp_enqueue_script( 'tivit-solucoes', get_bloginfo( 'template_directory' ) . '/assets/js/tivit-solucoes.js', 'jquery', '', true );
+    }
+  }
+}
+add_action( 'admin_enqueue_scripts', 'admin_queue' );

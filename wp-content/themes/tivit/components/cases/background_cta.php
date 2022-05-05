@@ -8,9 +8,13 @@
                 <div class="desc">
                     <?=the_field('descricao_ctabg');?>
                 </div>
-                <div class="botao">
-                    <a href="<?=the_field('link_cta_ctabg');?>" class="btn btn-primary"><?=the_field('cta_ctabg');?></a>
-                </div>
+                <?
+                    if(get_field('cta_ctabg') != ''){ 
+                        echo "<div class='botao'>";
+                        echo "<a href=".get_field('link_cta_ctabg')." class='btn btn-primary'>".get_field('cta_ctabg')."</a>";
+                        echo "</div>";
+                    }
+                ?>
             </div>
         </div>
     </div>

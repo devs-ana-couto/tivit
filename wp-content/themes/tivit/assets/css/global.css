@@ -3,7 +3,8 @@ html, body, * {
   font-family: 'Titillium Web', sans-serif;
   background-color: transparent; }
   html p, body p, * p {
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 0; }
   html img, body img, * img {
     max-width: 100%; }
   @media (max-width: 768px) {

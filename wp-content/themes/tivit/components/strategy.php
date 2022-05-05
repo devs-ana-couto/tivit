@@ -1,10 +1,12 @@
 <div id="strategy" style="background: <?=the_field('cor_de_fundo_pl_solucoes');?>">
   <div class="container">
-    <div class="intro">
-      <h2><?the_field('chamada_pl_solucoes');?></h2>
-      <p><?the_field('descricao_pl_solucoes');?></p>
-      <?the_field('descricao_pl_solucoes_2');?>
-    </div>
+    <? if(get_field('chamada_pl_solucoes') || get_field('descricao_pl_solucoes') || get_field('descricao_pl_solucoes_2') != ''){ ?>
+      <div class="intro">
+        <? the_field('chamada_pl_solucoes') != '' ? "<h2>".the_field('chamada_pl_solucoes')."</h2>" : '' ?>
+        <? the_field('descricao_pl_solucoes') != '' ? "<p>".the_field('descricao_pl_solucoes')."</p>" : '' ?>
+        <? the_field('descricao_pl_solucoes_2') != '' ? "<p>".the_field('descricao_pl_solucoes_2')."</p>" : '' ?>
+      </div>
+    <? } ?>
     <div class="row cards hide-mobile">
       <div class="col-12 col-md-4">
         <div class="intro text-center">
