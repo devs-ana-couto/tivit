@@ -2,9 +2,11 @@
 <section class="destaques-cases-item" style="background: <?=the_field('cor_de_fundo_exibir_featured_cases');?>">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-10 offset-md-1">
+            <div class="col-12 col-md-10 offset-md-1 text-center">
+
+                <div class="row"> 
                 <h2><?the_field('chamada_destaques')?></h2>
-                <div class="row">   
+                <p><?the_field('descricao_destaques')?></p>  
                     <?php
                     // Check rows exists.
                     if( have_rows('adicione_seus_destaques') ):

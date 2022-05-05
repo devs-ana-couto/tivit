@@ -5781,7 +5781,7 @@ html, body, * {
     #main-solutions .custom-text strong {
       font-weight: 700; }
   #main-solutions .divCta {
-    padding: 30px 0 100px 0; }
+    padding: 100px 0 100px 0; }
     #main-solutions .divCta .cta {
       font-size: 24px;
       font-weight: 600;
@@ -6751,7 +6751,7 @@ html, body, * {
 
 #contatoUnfolding {
   background: #F5F6F7;
-  padding: 100px 0 75px 0; }
+  padding: 100px 0; }
   #contatoUnfolding .cta h2 {
     color: #F20024;
     font-size: 28px;
@@ -7380,7 +7380,7 @@ html, body, * {
         font-weight: 600;
         padding: 30px; }
   .depoimento-cases-item {
-    padding: 60px 0; }
+    padding: 100px 0; }
     .depoimento-cases-item .box p {
       width: 763px;
       font-size: 28px;

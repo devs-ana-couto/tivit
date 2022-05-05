@@ -4,6 +4,8 @@
         <div class="row">
             <div class="col-12 col-md-11 offset-md-1">
                 <h2><?the_field('chamada_db')?></h2>
+                <?the_field('descricao_db')?>
+                
                 <div class="row">
                 <?php
                 // Check rows exists.
