@@ -3,10 +3,11 @@ jQuery(document).ready(function ($) {
    $('#post').submit(function (e) {
       $("label:contains('Posição no Layout')").each(function () {
          var quem = $(this).attr('for');
-         console.log(quem);
-         $('#' + quem).val(contador);
+         // console.log(quem);
+         // $('#' + quem).val(contador);
+         $('#' + quem + ' option[value=' + contador+']').attr('selected', 'selected');
          contador++;
       });
-      return false;
+      // return false;
    });
 });
