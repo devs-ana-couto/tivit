@@ -10,9 +10,9 @@
                 </div>
                 <?
                     if(get_field('cta_ctabg') != ''){ 
-                        echo "<div class='botao'>";
-                        echo "<a href=".get_field('link_cta_ctabg')." class='btn btn-primary'>".get_field('cta_ctabg')."</a>";
-                        echo "</div>";
+                        echo '<div class="botao">';
+                        echo '<a href="'.get_field('link_cta_ctabg').'" class="btn btn-primary">'.get_field('cta_ctabg').'</a>';
+                        echo '</div>';
                     }
                 ?>
             </div>

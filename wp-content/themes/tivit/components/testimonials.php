@@ -2,6 +2,8 @@
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom soluc-dep" style="background: <?=the_field('cor_de_fundo_testimonials');?>">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+        <h2><?the_field('chamada_testimonials')?></h2>
+          <? the_field('descricao_testimonials') ?>
         <? 
             if( have_rows('depoimentos_solucoes') ):
             // Loop through rows.
@@ -11,7 +13,7 @@
                 $role_solucoes[$i] = get_sub_field('cargo');
                 $content_solucoes[$i] = get_sub_field('conteudo');
         ?>
-        <div class="carousel-item heroslide <?=$i==0 ? 'active' : '';?>">
+        <div class="mt-5 carousel-item heroslide <?=$i==0 ? 'active' : '';?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
