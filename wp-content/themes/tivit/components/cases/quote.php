@@ -5,8 +5,12 @@
         <div class="row">
             <div class="col-12 text-center">                
                 <div class="box">
-                    <h2><? the_field('titulo_da_citacao'); ?></h2>
-                    <p><? the_field('texto_de_citacao'); ?></p>
+                    <? if(get_field('titulo_da_citacao') != ''){  ?>
+                        <h2><? the_field('titulo_da_citacao'); ?></h2>
+                    <? } ?>
+                    <? if(get_field('texto_de_citacao') != ''){  ?>
+                        <p><? the_field('texto_de_citacao'); ?></p>
+                    <? } ?>
                 </div>
             </div>
         </div>

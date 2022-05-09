@@ -3,8 +3,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2><?the_field('chamada_nuvem_services')?></h2>
-                <? the_field('descricao_nuvem_services') ?>
+                <? if(get_field('chamada_nuvem_services') != ''){  ?>
+                    <h2><?the_field('chamada_nuvem_services')?></h2>
+                <? } ?>
+                <? if(get_field('descricao_nuvem_services') != ''){  ?>
+                    <? the_field('descricao_nuvem_services') ?>
+                <? } ?>
             </div>
         </div>
         <?php

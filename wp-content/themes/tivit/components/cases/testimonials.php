@@ -5,8 +5,12 @@
         <div class="row">
             <div class="col-12">
             <div class="box text-center">
-                <h2><?the_field('chamada_depoimentos_cases')?></h2>
-                <p><?the_field('descricao_depoimentos_cases')?></p>
+                <? if(get_field('chamada_depoimentos_cases') != ''){  ?>
+                    <h2><?the_field('chamada_depoimentos_cases')?></h2>
+                <? } ?>
+                <? if(get_field('descricao_depoimentos_cases') != ''){  ?>
+                    <p><?the_field('descricao_depoimentos_cases')?></p>
+                <? } ?>
             <?php
                 // Check rows exists.   
                 if( have_rows('depoimento_2') ):

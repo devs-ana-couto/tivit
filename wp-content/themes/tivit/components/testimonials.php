@@ -2,8 +2,12 @@
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom soluc-dep" style="background: <?=the_field('cor_de_fundo_testimonials');?>">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <h2><?the_field('chamada_testimonials')?></h2>
+        <? if(get_field('chamada_depoimentos_cases') != ''){  ?>
+          <h2><?the_field('chamada_testimonials')?></h2>
+        <? } ?>
+        <? if(get_field('descricao_testimonials') != ''){  ?>  
           <? the_field('descricao_testimonials') ?>
+        <? } ?>
         <? 
             if( have_rows('depoimentos_solucoes') ):
             // Loop through rows.

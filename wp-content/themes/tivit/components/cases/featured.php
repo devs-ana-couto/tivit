@@ -4,9 +4,13 @@
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1 text-center">
 
-                <div class="row"> 
-                <h2><?the_field('chamada_destaques')?></h2>
-                <p><?the_field('descricao_destaques')?></p>  
+                <div class="row">
+                    <? if(get_field('chamada_destaques') != ''){  ?>
+                        <h2><?the_field('chamada_destaques')?></h2>
+                    <? } ?>
+                    <? if(get_field('descricao_destaques') != ''){  ?>
+                        <p><?the_field('descricao_destaques')?></p>
+                    <? } ?>
                     <?php
                     // Check rows exists.
                     if( have_rows('adicione_seus_destaques') ):
