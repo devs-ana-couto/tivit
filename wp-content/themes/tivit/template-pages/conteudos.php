@@ -1,6 +1,12 @@
 <?php /* Template Name: Conteudos */ ?>
 <?php get_header(); ?>
 
+<?php echo do_shortcode('[ac-pagina-conteudo]'); ?>
+
+
+<? if (false) { ?>
+
+
 <div class="a-tivit-cases cases conteudos">
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="container">
@@ -177,7 +183,7 @@
           <div class="acessar">
             <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
           </div>
-        </div>    
+        </div>
       <?php
       }
       ?>
@@ -193,7 +199,7 @@
       <div class="row">
         <div class="col-12">
           <div class="filtros">
-            
+
             <div class="select">
               <select name="">
                 <option value="">escolha um ou mais assuntos</option>
@@ -202,7 +208,7 @@
                 <option value="">A-Z</option>
                 <option value="">Z-A</option>
               </select>
-            </div>          
+            </div>
 
             <div class="divisao">
               <div class="select">
@@ -283,7 +289,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="carousel-item">
             <div class="col-12 col-md-4">
               <div class="img">
@@ -342,7 +348,7 @@
                 <a href="#">acessar artigo <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>
               </div>
             </div>
-            
+
           </div>
 
           <div class="carousel-item">
@@ -481,5 +487,8 @@
   </div>
   <!--- End Mobile -->
 </div>
+
+
+<?php } ?>
 
 <?php get_footer(); ?>
