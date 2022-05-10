@@ -49,8 +49,10 @@ if (!function_exists('ac_conteudo_listar')) {
             $imagem      = (isset($encontrou[1][0])) ? $encontrou[1][0] : '';
             $cat_aux    = get_the_category();
             $categorias = array();
-            foreach( $cat_aux as $categoria ) {
-                $categorias[$categoria->term_id] = $categoria->name;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[$categoria->term_id] = $categoria->name;
+                }
             }
             $etiquetas = get_the_tags($identif);
             $resultado[] = array(
@@ -88,8 +90,10 @@ if (!function_exists('ac_conteudo_listar_categorias')) {
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
             $cat_aux = get_the_category();
-            foreach( $cat_aux as $categoria ) {
-                $categorias[$categoria->slug] = $categoria->name;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[$categoria->slug] = $categoria->name;
+                }
             }
         }
         wp_reset_query();
@@ -97,7 +101,6 @@ if (!function_exists('ac_conteudo_listar_categorias')) {
         return $categorias;
     }
 }
-
 
 
 if (!function_exists('ac_conteudo_listar_tags')) {
@@ -119,8 +122,10 @@ if (!function_exists('ac_conteudo_listar_tags')) {
             $the_query->the_post();
             $identif   = $the_query->post->ID;
             $etiq_aux = get_the_tags($identif);
-            foreach( $etiq_aux as $etiqueta ) {
-                $etiquetas[$etiqueta->slug] = $etiqueta->name;
+            if (is_array($etiq_aux) || is_object($etiq_aux)) {
+                foreach( $etiq_aux as $etiqueta ) {
+                    $etiquetas[$etiqueta->slug] = $etiqueta->name;
+                }
             }
         }
         wp_reset_query();
@@ -130,18 +135,12 @@ if (!function_exists('ac_conteudo_listar_tags')) {
 }
 
 
-
-
-
-
 if (!function_exists('ac_bloco_conteudo')) {
     function ac_bloco_conteudo() {
         $arg['porpagina'] = 3;
         $arg['pagina']    = 1;
         $dados = ac_conteudo_listar($arg);
 
-        $saida  = '<div id="contentTdx" class="home-content content-inovacao">';
-        $saida .= '<div id="triangle-down"></div>';
         $saida .= '<div class="container pd">';
         $saida .= '<div class="title">';
         $saida .= '<h2 class="titleText text-center">'.__('NOSSOS CONTEÚDOS').'</h2>';
@@ -150,13 +149,17 @@ if (!function_exists('ac_bloco_conteudo')) {
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
-            foreach( $cat_aux as $categoria ) {
-                $categorias[] = $categoria;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
             }
             $etiquetas  = array();
             $etq_aux = $dados[$ac]['etiquetas'];
-            foreach( $etq_aux as $etiqueta ) {
-                $etiquetas[] = $etiqueta->name;
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
             }
             $saida .= '<div class="col-12 col-md-4">';
             $saida .= '<div class="cardContent p-1">';
@@ -192,13 +195,17 @@ if (!function_exists('ac_bloco_conteudo')) {
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
-            foreach( $cat_aux as $categoria ) {
-                $categorias[] = $categoria;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
             }
             $etiquetas  = array();
             $etq_aux = $dados[$ac]['etiquetas'];
-            foreach( $etq_aux as $etiqueta ) {
-                $etiquetas[] = $etiqueta->name;
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
             }
             $saida .= '<div class="carousel-item heroslide4 content active">';
             $saida .= '<div class="col-11 m-0 p-0">';
@@ -233,15 +240,10 @@ if (!function_exists('ac_bloco_conteudo')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '</div>';
         return $saida;
     }
 }
 add_shortcode( 'ac-bloco-conteudo', 'ac_bloco_conteudo' );
-
-
-
-
 
 
 if (!function_exists('ac_pagina_conteudo')) {
@@ -277,9 +279,11 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<h4>'._('escolha um ou mais assuntos').'</h4>';
         $ativo = (count($get_etiqueta)==0) ? 'active' : '';
         $saida .= '<a href="#" class="'.$ativo.'">'.__('Todos').'</a>';
-        foreach ($t_etiquetas as $slug => $nome) {
-            $ativo = (in_array($slug, $get_etiqueta)) ? 'active' : '';
-            $saida .= '<a href="#" class="'.$ativo.'">'.$slug.'</a>';
+        if (is_array($t_etiquetas) || is_object($t_etiquetas)) {
+            foreach ($t_etiquetas as $slug => $nome) {
+                $ativo = (in_array($slug, $get_etiqueta)) ? 'active' : '';
+                $saida .= '<a href="#" class="'.$ativo.'">'.$slug.'</a>';
+            }
         }
         $saida .= '</div>';
         $saida .= '</div>';
@@ -288,9 +292,11 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<div class="select">';
         $saida .= '<select name="">';
         $saida .= '<option value="">'.('Filtrar por').'</option>';
-        foreach ($t_categorias as $slug => $nome) {
-            $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
-            $saida .= '<option value="" '.$ativo.'>'.$slug.'</option>';
+        if (is_array($t_categorias) || is_object($t_categorias)) {
+            foreach ($t_categorias as $slug => $nome) {
+                $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
+                $saida .= '<option value="" '.$ativo.'>'.$slug.'</option>';
+            }
         }
         $saida .= '</select>';
         $saida .= '</div>';
@@ -306,13 +312,17 @@ if (!function_exists('ac_pagina_conteudo')) {
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
-            foreach( $cat_aux as $categoria ) {
-                $categorias[] = $categoria;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
             }
             $etiquetas  = array();
             $etq_aux = $dados[$ac]['etiquetas'];
-            foreach( $etq_aux as $etiqueta ) {
-                $etiquetas[] = $etiqueta->name;
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
             }
             $saida .= '<div class="col-12 col-md-4">';
             $saida .= '<div class="cardContent p-1">';
@@ -381,13 +391,17 @@ if (!function_exists('ac_pagina_conteudo')) {
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
-            foreach( $cat_aux as $categoria ) {
-                $categorias[] = $categoria;
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
             }
             $etiquetas  = array();
             $etq_aux = $dados[$ac]['etiquetas'];
-            foreach( $etq_aux as $etiqueta ) {
-                $etiquetas[] = $etiqueta->name;
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
             }
             $saida .= '<div class="carousel-item heroslide4 content active">';
             $saida .= '<div class="col-11 m-0 p-0">';
