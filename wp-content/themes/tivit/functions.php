@@ -75,9 +75,6 @@ require_once( get_template_directory() . '/inc/page.builder/page.builder.php' );
 // Mobile Detect
 require_once( get_template_directory() . '/libs/Mobile_Detect.php' );
 
-// Content Page
-require_once( get_template_directory() . '/inc/conteudo.php' );
-
 $detect = new Mobile_Detect;
 
 /** Admin Enqueue **/
