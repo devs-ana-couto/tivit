@@ -254,7 +254,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $get_categoria = '';
         if (isset($_GET['categoria'])) {
             $arg['categoria'] = $_GET['categoria'];
-            $get_categoria = explode(',',$_GET['categoria']);
+            $get_categoria = $_GET['categoria'];
         }
         $get_etiqueta = array();
         if (isset($_GET['etiqueta'])) {
@@ -276,33 +276,33 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<div class="assuntos">';
         $saida .= '<h4>'._('escolha um ou mais assuntos').'</h4>';
         $ativo = (count($get_etiqueta)==0) ? 'active' : '';
-        $saida .= '<a href="#" class="'.$ativo.'">'.__('Todos').'</a>';
+        $saida .= '<a href="#" class="'.$ativo.' conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_selecao(\'todos\')">'.__('Todos').'</a>';
         foreach ($t_etiquetas as $slug => $nome) {
             $ativo = (in_array($slug, $get_etiqueta)) ? 'active' : '';
-            $saida .= '<a href="#" class="'.$ativo.'">'.$slug.'</a>';
+            $saida .= '<a href="#" class="'.$ativo.' conteudo_etiqueta conteudo_etiqueta_'.$slug.'" data-conteudo="'.$slug.'" onclick="ac_conteudo_selecao(\''.$slug.'\')">'.$nome.'</a>';
         }
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '<div class="col-5">';
         $saida .= '<div class="filtros">';
         $saida .= '<div class="select">';
-        $saida .= '<select name="">';
+        $saida .= '<select name="" onchange="ac_conteudo_selecao(\'\')" class="conteudo_categoria">';
         $saida .= '<option value="">'.('Filtrar por').'</option>';
         foreach ($t_categorias as $slug => $nome) {
-            $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
-            $saida .= '<option value="" '.$ativo.'>'.$slug.'</option>';
+            $ativo = ($slug == $get_categoria) ? 'selected' : '';
+            $saida .= '<option value="'.$slug.'" '.$ativo.'>'.$nome.'</option>';
         }
         $saida .= '</select>';
         $saida .= '</div>';
-        $saida .= '<div class="search">';
-        $saida .= '<a href="#"><img src="'.get_template_directory_uri().'/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
-        $saida .= '</div>';
+        // $saida .= '<div class="search">';
+        // $saida .= '<a href="#"><img src="'.get_template_directory_uri().'/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
+        // $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
 
         /* Conteudos */
-        $saida .= '<div class="row">';
+        $saida .= '<div class="row" id="conteudo-variavel-desktop">';
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
@@ -353,21 +353,21 @@ if (!function_exists('ac_pagina_conteudo')) {
         /* Filtros */
         $saida .= '<div class="filtros">';
         $saida .= '<div class="select">';
-        $saida .= '<select name="">';
+        $saida .= '<select name="" onchange="ac_conteudo_selecao(\'\')" class="conteudo_etiqueta_mobile" multiple>';
         $saida .= '<option value="">'._('escolha um ou mais assuntos').'</option>';
-        for ($ac=0; $ac<count($t_etiquetas); $ac++) {
-            $ativo = (in_array($t_etiquetas[$ac], $get_etiqueta)) ? 'selected' : '';
-            $saida .= '<option value="" '.$ativo.'">'.$t_etiquetas[$ac].'</option>';
+        foreach ($t_etiquetas as $slug => $nome) {
+            $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
+            $saida .= '<option value="'.$slug.'" '.$ativo.'>'.$nome.'</option>';
         }
         $saida .= '</select>';
         $saida .= '</div>';
         $saida .= '<div class="divisao">';
         $saida .= '<div class="select">';
-        $saida .= '<select name="">';
+        $saida .= '<select name="" onchange="ac_conteudo_selecao(\'\')" class="conteudo_categoria_mobile">';
         $saida .= '<option value="">'.('Filtrar por').'</option>';
-        for ($ac=0; $ac<count($t_categorias); $ac++) {
-            $ativo = (in_array($t_categorias[$ac], $t_categorias)) ? 'selected' : '';
-            $saida .= '<option value="" '.$ativo.'>'.$t_categorias[$ac].'</option>';
+        foreach ($t_categorias as $slug => $nome) {
+            $ativo = ($slug == $get_categoria) ? 'selected' : '';
+            $saida .= '<option value="'.$slug.'" '.$ativo.'>'.$nome.'</option>';
         }
         $saida .= '</select>';
         $saida .= '</div>';
@@ -377,7 +377,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '<div class="carousel-inner">';
+        $saida .= '<div class="carousel-inner" id="conteudo-variavel-mobile">';
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
@@ -422,7 +422,151 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
+        $saida .= '<input type="hidden" id="conteudo_pag" name="conteudo_pag" value="1"/>';
         return $saida;
     }
 }
 add_shortcode( 'ac-pagina-conteudo', 'ac_pagina_conteudo' );
+
+
+
+
+
+
+if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
+    function ac_pagina_conteudo_pesquisa_desktop() {
+        $arg = array();
+        if (isset($_POST['pagina'])) {
+            $arg['pagina'] = $_POST['pagina'] + 1;
+            $get_pagina = $_POST['pagina'] + 1;
+        }
+        $get_categoria = '';
+        if (isset($_POST['categoria'])) {
+            $arg['categoria'] = $_POST['categoria'];
+            $get_categoria = $_POST['categoria'];
+        }
+        $get_etiqueta = array();
+        if (isset($_POST['etiqueta'])) {
+            $arg['etiqueta']  = $_POST['etiqueta'];
+            $get_etiqueta = explode(',',$_POST['etiqueta']);
+        }
+        $dados = ac_conteudo_listar($arg);
+        $saida = '';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            foreach( $cat_aux as $categoria ) {
+                $categorias[] = $categoria;
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            foreach( $etq_aux as $etiqueta ) {
+                $etiquetas[] = $etiqueta->name;
+            }
+            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="cardContent p-1">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        echo $saida;
+        die();
+        return;
+    }
+}
+add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
+add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
+
+
+
+
+
+
+if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
+    function ac_pagina_conteudo_pesquisa_mobile() {
+        $arg = array();
+        if (isset($_POST['pagina'])) {
+            $arg['pagina'] = $_POST['pagina'] + 1;
+            $get_pagina = $_POST['pagina'] + 1;
+        }
+        $get_categoria = '';
+        if (isset($_POST['categoria'])) {
+            $arg['categoria'] = $_POST['categoria'];
+            $get_categoria = $_POST['categoria'];
+        }
+        $get_etiqueta = array();
+        if (isset($_POST['etiqueta'])) {
+            $arg['etiqueta']  = $_POST['etiqueta'];
+            $get_etiqueta = explode(',',$_POST['etiqueta']);
+        }
+        // print_r($arg);
+        $dados = ac_conteudo_listar($arg);
+        $saida = '';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            foreach( $cat_aux as $categoria ) {
+                $categorias[] = $categoria;
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            foreach( $etq_aux as $etiqueta ) {
+                $etiquetas[] = $etiqueta->name;
+            }
+            $saida .= '<div class="carousel-item heroslide4 content active">';
+            $saida .= '<div class="col-11 m-0 p-0">';
+            $saida .= '<div class="cardContent p-2">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row aaa">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        echo $saida;
+        die();
+        return;
+    }
+}
+add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );
+add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );

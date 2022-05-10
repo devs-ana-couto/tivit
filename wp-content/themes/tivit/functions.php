@@ -37,7 +37,13 @@ function load_scripts(){
   wp_enqueue_script('bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js', array(), '5.1.3', true);
   wp_enqueue_script('tivit', get_template_directory_uri() . '/assets/js/tivit.js', array(), '1.0.0', true);
 
-
+  /*=================================
+    Registro de ajax
+    =================================*/
+  wp_register_script( 'ac-conteudo', get_template_directory_uri() . '/assets/js/tivit-conteudo.js', array('jquery'), '1.0.0', true );
+  $translation_array = array('tivitAjaxUrl' => admin_url( 'admin-ajax.php' ));
+  wp_localize_script( 'ac-conteudo', 'referenciaTivit', $translation_array );
+  wp_enqueue_script( 'ac-conteudo' );
 
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
