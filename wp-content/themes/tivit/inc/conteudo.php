@@ -239,7 +239,6 @@ if (!function_exists('ac_bloco_conteudo')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '</div>';
         return $saida;
     }
 }

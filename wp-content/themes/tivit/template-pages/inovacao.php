@@ -353,8 +353,8 @@
 
 <!-- Bloco de Conteúdos -->
 <div id="contentTdx" class="home-content content-inovacao">
-<div id="triangle-down"></div>
-  <?=do_shortcode('[ac-bloco-conteudo]');?>
+  <div id="triangle-down"></div>
+    <?=do_shortcode('[ac-bloco-conteudo]');?>
+  </div>
 </div>
-
 <?php get_footer(); ?>
