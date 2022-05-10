@@ -61,6 +61,7 @@ register_nav_menus(
 // Include Meta Boxes
 require_once( get_template_directory() . '/inc/pages/cases.php' );
 require_once( get_template_directory() . '/inc/post-types/post-types.php' );
+require_once( get_template_directory() . '/inc/conteudo.php' );
 
 
 // Include ACF (Metabox & Options Pages)
