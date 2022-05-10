@@ -1,4 +1,4 @@
-@import './global/global.scss'; 
+@import './global/global.scss';
 
 // Página: Home
 @import './home/home.scss';
@@ -44,3 +44,6 @@
 
 // Página: Cases Item (CPT)
 @import './post-types/cases.scss';
+
+// Pesquisa
+@import './pesquisa/pesquisa.scss';

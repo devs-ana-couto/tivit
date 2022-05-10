@@ -19,7 +19,22 @@
 </head>
 <body <?php body_class(); ?>>
 <header class="fixed-top header frontpage">
-  <nav class="navbar navbar-expand-md navbar-light" role="navigation"> 
+  <div class="barra-pesquisa">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 area-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
+        </div>
+        <div class="col-10 area-pesquisar">
+          <form method="get" id="searchform" action="<?php home_url('/'); ?>" >
+            <input type="text" id="s" name="s" class="pesquisar" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit" onclick="jQuery('#searchform').submit()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-light" role="navigation">
     <div class="container">
       <div class="row">
         <div class="col-2 col-md-5 header-menu">
@@ -38,10 +53,10 @@
           ?>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'tivit' ); ?>">
-            <span class="navbar-toggler-icon"></span>          
+            <span class="navbar-toggler-icon"></span>
           </button>
 
-        </div>  
+        </div>
 
         <div class="col-8 col-md-2 header-logo">
           <a class="navbar-brand" href="<?php echo home_url(); ?>">
@@ -52,11 +67,11 @@
         <div class="col-4 col-md-5 header-options hide-mobile">
 
           <div class="header-people-and-careers">
-            <p><a href="/staged/tivit/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
+            <p><a href="/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
           </div>
 
           <div class="header-contact">
-            <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
+            <p><a href="/contato" class="btn btn-contact">Contato</a></p>
           </div>
 
           <div class="language">
@@ -65,13 +80,13 @@
           </div>
 
           <div class="search">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" alt="Search Tivit" onclick="abre_barra_pesquisa();">
           </div>
 
         </div>
 
         <div class="col-2 hide-desktop search">
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit"></a>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit" onclick="abre_barra_pesquisa();">
         </div>
       </div>
 
@@ -283,7 +298,7 @@
             </div>
             <hr class="w-100" />
           </div>
-          
+
           <div class="textMenu">
             <div class="row">
               <div class="col-1 d-flex justify-content-center">
@@ -378,7 +393,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="cardMenu">
             <div class="row">
               <div class="col-12">
@@ -433,7 +448,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="cardMenu">
             <div class="row">
               <div class="col-12">

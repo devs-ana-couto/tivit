@@ -226,7 +226,7 @@ jQuery(document).ready(function($) {
       $('.numseparation4').html('  /  ');
       $('.numtotal4').html( totalItems4 );
    });
-   
+
    //Carousel slick
    $('.slider-for').slick({
       slidesToShow: 1,
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function(){
          event.path[0].innerHTML === 'Varejo'? document.querySelector('.home-portifolio-image').setAttribute('style', 'background:url(/staged/tivit/wp-content/themes/tivit/assets/images/home/img_banner4.jpg) no-repeat top center;') : ''
       } catch(err){}
    }
-   
+
    function cleanHover(){
       for (let i = 0; i <= 0; i++) {
          items[i].classList.contains('active')? items[i].classList.remove('active') : ''
@@ -729,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function(){
    }
 
    if(window.location.pathname === '/staged/tivit' || window.location.pathname === '/staged/tivit/'){
-      
+
       let items = document.querySelectorAll('.carousel .heroslide4')
       items.forEach((el) => {
          const minPerSlide = 2
@@ -844,7 +844,7 @@ window.addEventListener('scroll', function() {
       }
    }
 
-   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") { 
+   if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") {
       add_class_on_scroll_tbanks();
    } else if(scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/"){
       add_class_on_scroll_tdx();
@@ -978,7 +978,7 @@ window.addEventListener("DOMContentLoaded", function() {
             document.body.classList.add('nomove')
    }, false);
 
-   //Close everything on main menu closed click   
+   //Close everything on main menu closed click
    document.querySelector('.navbar-toggler').addEventListener('click', function() {
       //Services and products
       document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open')?
@@ -1006,3 +1006,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
    }, false);
 }, false);
+
+
+function abre_barra_pesquisa() {
+   jQuery('.barra-pesquisa').css({ top: 0 });
+}
