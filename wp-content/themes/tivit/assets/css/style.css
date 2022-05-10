@@ -1152,7 +1152,10 @@ html, body, * {
       margin-left: 20px;
       transition: all 0.2s linear; }
   .home-content .img img {
+    max-width: 100%;
     width: 100%;
+    height: 250px;
+    max-height: 100%;
     cursor: pointer; }
   .home-content .content {
     width: 100%;
@@ -5924,7 +5927,7 @@ html, body, * {
   #main-solutions .publiccloud #triangle-down {
     border-top: 28px solid #F5F6F7; }
   #main-solutions .publiccloud .customCloudPosition {
-    top: 25%; }
+    top: 35%; }
     @media (max-width: 1024px) {
       #main-solutions .publiccloud .customCloudPosition {
         top: 22%; } }

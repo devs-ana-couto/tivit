@@ -27,7 +27,7 @@ function create_posts_taxonomies(){
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'areas-de-interesse-tools' ),
 	);
-	register_taxonomy( 'areas-de-interesse-tools', array( 'post' ), $args );
+	register_taxonomy( 'areas-de-interesse-tools', array( 'cases','solucoes' ), $args );
 
 
 	$labels = array(
@@ -47,7 +47,7 @@ function create_posts_taxonomies(){
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'tipo-de-post' ),
 	);
-	register_taxonomy( 'tipo-de-post', array( 'post' ), $args );
+	register_taxonomy( 'tipo-de-post', array( 'cases','solucoes' ), $args );
 
 
 }
@@ -138,7 +138,7 @@ function create_solucoes() {
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'solucoes'),
 			'supports' => array( 'title', 'thumbnail'),
-			'taxonomies' => array('category')
+			// 'taxonomies' => array('category')
 		)
 	);
 }

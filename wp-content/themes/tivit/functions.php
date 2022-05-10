@@ -37,15 +37,21 @@ function load_scripts(){
   wp_enqueue_script('bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js', array(), '5.1.3', true);
   wp_enqueue_script('tivit', get_template_directory_uri() . '/assets/js/tivit.js', array(), '1.0.0', true);
 
+  /*=================================
+    Registro de ajax
+    =================================*/
+  wp_register_script( 'ac-conteudo', get_template_directory_uri() . '/assets/js/tivit-conteudo.js', array('jquery'), '1.0.0', true );
+  $translation_array = array('tivitAjaxUrl' => admin_url( 'admin-ajax.php' ));
+  wp_localize_script( 'ac-conteudo', 'referenciaTivit', $translation_array );
+  wp_enqueue_script( 'ac-conteudo' );
 
-  
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
 
 /**
  * Função para adicionar o menu
  */
-register_nav_menus( 
+register_nav_menus(
   array(
     'header-menu' => __('Header Menu'),
     'header-menu-cloud' => __('Header Menu - Cloud Solutions'),
@@ -61,6 +67,7 @@ register_nav_menus(
 // Include Meta Boxes
 require_once( get_template_directory() . '/inc/pages/cases.php' );
 require_once( get_template_directory() . '/inc/post-types/post-types.php' );
+require_once( get_template_directory() . '/inc/conteudo.php' );
 
 
 // Include ACF (Metabox & Options Pages)
@@ -76,5 +83,13 @@ require_once( get_template_directory() . '/libs/Mobile_Detect.php' );
 
 $detect = new Mobile_Detect;
 
-// 
-
+/** Admin Enqueue **/
+function admin_queue( $hook ) {
+  global $post;
+    if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
+      if ( 'solucoes' === $post->post_type ) {
+        wp_enqueue_script( 'tivit-solucoes', get_bloginfo( 'template_directory' ) . '/assets/js/tivit-solucoes.js', 'jquery', '', true );
+    }
+  }
+}
+add_action( 'admin_enqueue_scripts', 'admin_queue' );
