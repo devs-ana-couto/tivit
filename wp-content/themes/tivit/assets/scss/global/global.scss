@@ -56,6 +56,13 @@
 
 // Fim cores
 
+//Tratamento para página blog
+body.page-template-conteudos{
+  .detalhes > span, p{
+    color: black;
+    margin-left: 0;
+  }
+}
 
 // Fontes
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Viga&display=swap');
