@@ -164,7 +164,7 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -207,7 +207,7 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -318,7 +318,7 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -394,7 +394,7 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -467,7 +467,7 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -539,7 +539,7 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
             $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
