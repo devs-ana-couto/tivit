@@ -64,16 +64,21 @@
           </a>
         </div>
 
-        <div class="col-4 col-md-5 header-options hide-mobile">
-
-          <div class="header-people-and-careers">
-            <p><a href="/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
-          </div>
-
-          <div class="header-contact">
-            <p><a href="/contato" class="btn btn-contact">Contato</a></p>
-          </div>
-
+        <div class="col-4 col-md-3 header-menu hide-mobile">
+          <?php
+            wp_nav_menu( array(
+              'theme_location'  => 'header-menu-02',
+              'depth'           =>  2, // 1 = no dropdowns, 2 = with dropdowns.
+              'container'       => 'div',
+              'container_class' => 'collapse navbar-collapse',
+              'container_id'    => 'bs-example-navbar-collapse-1',
+              'menu_class'      => 'navbar-nav mr-auto',
+              'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'          => new WP_Bootstrap_Navwalker(),
+            ) );
+          ?>
+        </div>
+        <div class="col-4 col-md-2 header-options hide-mobile">
           <div class="language">
             <a href="#"><p class="en">EN</p></a>
             <a href="#"><p class="es">ES</p></a>

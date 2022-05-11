@@ -54,6 +54,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 register_nav_menus(
   array(
     'header-menu' => __('Header Menu'),
+    'header-menu-02' => __('Header Menu lateral'),
     'header-menu-cloud' => __('Header Menu - Cloud Solutions'),
     'header-menu-cyber' => __('Header Menu - Cybersecurity'),
     'header-menu-digital' => __('Header Menu - Digital Business'),
