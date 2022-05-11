@@ -3263,7 +3263,9 @@ html, body, * {
           color: black; }
   .cases-recentes .detalhes {
     margin: 18px auto 21px auto;
-    width: 284px; }
+    width: 284px;
+    display: flex;
+    justify-content: space-between; }
     .cases-recentes .detalhes a {
       font-size: 12px;
       line-height: 14px;
@@ -3277,11 +3279,10 @@ html, body, * {
       padding: 4px 10px; }
       .cases-recentes .detalhes a:first-child {
         margin-right: 5px; }
-    .cases-recentes .detalhes span {
+    .cases-recentes .detalhes span, .cases-recentes .detalhes p {
       color: white;
       font-size: 12px;
-      line-height: 18.25px;
-      margin-left: 10px; }
+      line-height: 18.25px; }
   .cases-recentes .content {
     width: 284px;
     margin: 12px auto 0 auto; }
@@ -6366,7 +6367,7 @@ html, body, * {
     bottom: 50px; }
 
 .cases-recentes.conteudos {
-  padding: 60px 0 20px 0;
+  padding: 60px 0 0 0;
   background: white; }
   .cases-recentes.conteudos .filtros .select select {
     color: #3A3A3A;
@@ -6380,6 +6381,8 @@ html, body, * {
     border: solid 1px #262626; }
   .cases-recentes.conteudos .acessar {
     margin: 10px auto 50px auto; }
+    .cases-recentes.conteudos .acessar:hover a {
+      color: #F20024; }
   .cases-recentes.conteudos .slider-cases .carousel-indicators {
     bottom: 0 !important; }
     .cases-recentes.conteudos .slider-cases .carousel-indicators .active {

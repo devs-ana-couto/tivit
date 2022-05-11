@@ -266,13 +266,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $t_categorias = ac_conteudo_listar_categorias();
         $t_etiquetas = ac_conteudo_listar_tags($arg);
 
-        $saida  = '<div class="cases-recentes conteudos">';
 
-        /* Desktop */
-        $saida .= '<div class="container hide-mobile">';
-
-        /* Filtros */
-        $saida .= '<div class="row">';
         $saida .= '<div class="col-7">';
         $saida .= '<div class="assuntos">';
         $saida .= '<h4>'._('escolha um ou mais assuntos').'</h4>';
@@ -324,34 +318,23 @@ if (!function_exists('ac_pagina_conteudo')) {
                 }
             }
             $saida .= '<div class="col-12 col-md-4">';
-            $saida .= '<div class="cardContent p-1">';
-            $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
-            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '<div class="img">';
+            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
-            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '<div class="autor-time">';
+            $saida .= '<p><b>'.$dados[$ac]['postdate'].'</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
             $saida .= '</div>';
-            $saida .= '<div class="autor-time w-100">';
-            $saida .= '<div class="d-flex flex-row">';
-            for ($k=0; $k<count($etiquetas); $k++) {
-                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
-            }
-            $saida .= '</div>';
-            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
-            $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
-            $saida .= '</div>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">acessar artigo <img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
             $saida .= '</div>';
             $saida .= '</div>';
         }
         $saida .= '</div>';
         $saida .= '</div>';
+
 
         /* Mobile */
         $saida .= '<div id="cases" class="carousel slide carousel-fade hide-desktop" data-bs-ride="carousel">';
@@ -431,8 +414,6 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '</div>';
             $saida .= '</div>';
         }
-        $saida .= '</div>';
-        $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
         return $saida;

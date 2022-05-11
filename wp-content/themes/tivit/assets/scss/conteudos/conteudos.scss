@@ -43,7 +43,7 @@
 }
 
 .cases-recentes.conteudos{
-    padding: 60px 0 20px 0;
+    padding: 60px 0 0 0;
     background: white;
     .filtros{
         .select{
@@ -70,7 +70,12 @@
         }
     }
     .acessar{
-        margin: 10px auto 50px auto        
+        margin: 10px auto 50px auto;
+        &:hover{
+            a{
+                color: $vermelho-tivit;
+            }
+        }
     }
     .slider-cases{
         .carousel-indicators{
