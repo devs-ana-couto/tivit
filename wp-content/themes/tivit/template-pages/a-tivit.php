@@ -121,8 +121,19 @@
   </div>
 </div>
 
+<div class="a-tivit-cases cases ctivit">
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h2 class="text-center">Confira o que nossas parcerias estratégicas já fizeram!</h2>
+        </div>
+        <?=do_shortcode('[ac-bloco-cases]')?>
+    </div>
+  </div>
+</div>
 
-<?=do_shortcode('[ac-bloco-cases]')?>
+
 
 <div class="a-tivit-inovacao">
   <div class="container">

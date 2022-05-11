@@ -142,13 +142,6 @@ if (!function_exists('ac_bloco_cases')) {
         $arg['pagina']    = 1;
         $dados = ac_cases_listar($arg);
 
-        $saida .= '<div class="a-tivit-cases cases ctivit">';
-        $saida .= '<div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">';
-        $saida .= '<div class="container">';
-        $saida .= '<div class="row">';
-        $saida .= '<div class="title">';
-        $saida .= '<h2 class="text-center">'.__('Confira o que nossas parcerias estratégicas já fizeram!').'</h2>';
-        $saida .= '</div>';
         $saida .= '<div class="carousel-inner">';
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $categorias = array();
@@ -178,7 +171,7 @@ if (!function_exists('ac_bloco_cases')) {
             $saida .= '<h2>'.$dados[$ac]['titulo'].'</h2>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="#">'.__('acessar case').'<img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar case').'<img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -205,9 +198,7 @@ if (!function_exists('ac_bloco_cases')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
+
         return $saida;
     }
 }
