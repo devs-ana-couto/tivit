@@ -22,10 +22,10 @@
   <div class="barra-pesquisa">
     <div class="container">
       <div class="row">
-        <div class="col-2 area-logo">
+        <div class="d-none d-md-flex col-md-2 area-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
         </div>
-        <div class="col-10 area-pesquisar">
+        <div class="col-12 col-md-10 area-pesquisar">
           <form method="get" id="searchform" action="<?php home_url('/'); ?>" >
             <input type="text" id="s" name="s" class="pesquisar" />
             <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit" onclick="jQuery('#searchform').submit()">
