@@ -245,6 +245,74 @@ if (!function_exists('ac_bloco_conteudo')) {
 add_shortcode( 'ac-bloco-conteudo', 'ac_bloco_conteudo' );
 
 
+if (!function_exists('ac_bloco_header_conteudo')) {
+    function ac_bloco_header_conteudo() {
+        $arg['porpagina'] = 3;
+        $arg['pagina']    = 1;
+        $dados = ac_conteudo_listar($arg);
+
+        $saida .= '<div class="container">';
+        $saida .= '<div class="row">';
+        $saida .= '<div class="carousel-inner">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
+            }
+            $saida .= '<div class="carousel-item heroslide '.($ac == 0 ? 'active' : '').'">';
+            $saida .= '<div class="col-12 col-md-6">';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="autor-time">';
+            $saida .= '<p>Escrito por: <strong>'.$dados[$ac]['quem'].'</strong></p>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h2>'.$dados[$ac]['titulo'].'</h2>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">acessar artigo <img src="'. get_template_directory_uri().'/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        $saida .= '<div class="col-12 col-md-6">';
+        $saida .= '<div class="navigation">';
+        $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">';
+        $saida .= '<img src="'.get_template_directory_uri().'/assets/icons/navegacao/arrow_left.png" alt="arrow_left">';
+        $saida .= '</button>';
+        $saida .= '<div class="d-flex flex-row counter">';
+        $saida .= '<div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>';
+        $saida .= '</div>';
+        $saida .= '<button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">';
+        $saida .= '<img src="'.get_template_directory_uri().'/assets/icons/navegacao/arrow_right.png" alt="arrow_right">';
+        $saida .= '</button>';
+        $saida .= '<div class="carousel-indicators">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $saida .= '<button type="button" data-bs-target="#content" data-bs-slide-to="'.$ac.'" class="'.($ac == 0 ? 'active' : '').'" aria-current="true" aria-label="Content 1"></button>';
+            
+        }
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        return $saida;
+    }
+}
+add_shortcode( 'ac_bloco_header_conteudo', 'ac_bloco_header_conteudo' );
+
+
 if (!function_exists('ac_pagina_conteudo')) {
     function ac_pagina_conteudo() {
         $arg = array();
