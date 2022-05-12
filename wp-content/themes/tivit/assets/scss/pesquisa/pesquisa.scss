@@ -10,7 +10,11 @@
   transition: 0.7s ease-out;
 
   .area-logo {
-    line-height: 60px;
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   .area-pesquisar {
@@ -39,5 +43,96 @@
 .search {
   img {
     cursor: pointer;
+  }
+}
+
+.search-results {
+  .header {
+    background-color: $vermelho-dark-tivit;
+  }
+
+  .page-pesquisa {
+    margin-top: 80px;
+
+    .pesquisa-pesquisoupor {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .pesquisa-pesquisoupor-pesquisa {
+      margin-top: 15px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      color: $vermelho-tivit;
+    }
+
+    .pesquisa-pesquisoupor_resultado {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $cinza-dark-tivit;
+
+      .pesquisa-numero-resultados {
+        color: $vermelho-tivit;
+      }
+    }
+
+    .pesquisa-cartao {
+      width: 100%;
+      max-width: 100%;
+      // height: 190px;
+      border-top: 1px solid $cinza-light-tivit;
+      padding: 30px 0 30px 0;
+      position: relative;
+
+      a {
+        text-decoration: none;
+      }
+
+      .pesquisa-cartao-titulo {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        text-decoration-line: underline;
+        color: $vermelho-tivit;
+      }
+
+      .pesquisa-cartao-resumo {
+        width: 70%;
+        height: auto;
+        max-height: 72px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $cinza-dark-tivit;
+      }
+
+      &::after {
+        content: url('data:image/svg+xml; utf8, <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0.648438L19.3516 10L10 19.3516L8.35938 17.7109L14.8672 11.1484H0.648438V8.85156H14.8672L8.35938 2.28906L10 0.648438Z" fill="rgba(242, 0, 36, 1)" /></svg>');
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        transform: translateY(-50%);
+        transition: 0.7s ease;
+      }
+
+      &:hover{
+        &::after {
+         right: 0;
+        }
+      }
+    }
+
+    .pesquisa-lista {
+      padding-bottom: 80px;
+    }
   }
 }
