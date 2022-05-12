@@ -99,6 +99,10 @@
             position: relative;
             bottom: -6%;
             text-align: center;
+            img{
+                border: 1px solid black;
+                border-radius: 50%;
+            }
             p{
                 margin-bottom: 5px;
             }
@@ -172,6 +176,7 @@
             line-height: 27px;
             color: white;
             text-align: center;
+            padding: 15px;
         }
     }
 }
@@ -422,6 +427,9 @@
         bottom: 70px;
         margin: 0 auto;
         width: 110px;
+        @media(max-width: 1024px){
+            margin: 0 0 0 20px;
+        }
         a{
           color: white;
         }

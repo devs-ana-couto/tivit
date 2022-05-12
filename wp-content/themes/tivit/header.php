@@ -265,20 +265,14 @@
                 </div>
               </div>
               <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
+                <?php
+                    wp_nav_menu( array(
+                    'theme_location'  => 'header-menu-cloud',
+                    'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'          => new WP_Bootstrap_Navwalker(),
+                    ) );
+                ?>
               </div>
             </div>
             <hr class="w-100" />
@@ -289,25 +283,19 @@
               <div class="col-1 d-flex justify-content-center">
                 <div>
                   <h2>
-                    Cloud Solutions
+                    TECH PLATFORMS
                   </h2>
                 </div>
               </div>
               <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
+                <?php
+                  wp_nav_menu( array(
+                  'theme_location'  => 'header-menu-tech',
+                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+                  ) );
+                ?>
               </div>
             </div>
             <hr class="w-100" />
@@ -318,25 +306,42 @@
               <div class="col-1 d-flex justify-content-center">
                 <div>
                   <h2>
-                    Cloud Solutions
+                    CYBERSECURITY
                   </h2>
                 </div>
               </div>
               <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
+                <?php
+                  wp_nav_menu( array(
+                  'theme_location'  => 'header-menu-cyber',
+                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+                  ) );
+                ?>
+              </div>
+            </div>
+            <hr class="w-100" />
+          </div>
+
+          <div class="textMenu">
+            <div class="row">
+              <div class="col-1 d-flex justify-content-center">
+                <div>
+                  <h2>
+                    Digital Business
+                  </h2>
+                </div>
+              </div>
+              <div class="col-11">
+                <?php
+                  wp_nav_menu( array(
+                  'theme_location'  => 'header-menu-digital',
+                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                  'walker'          => new WP_Bootstrap_Navwalker(),
+                  ) );
+                ?>
               </div>
             </div>
             <hr class="w-100" />

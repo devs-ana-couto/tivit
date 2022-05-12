@@ -169,6 +169,9 @@
   height: 100%;
 
   margin-top: 160px;
+  @media(max-width: 1024px){
+    margin-top: 50px;
+  }
 
   #hero{
     max-width: 1170px;

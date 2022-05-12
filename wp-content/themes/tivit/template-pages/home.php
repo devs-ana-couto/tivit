@@ -141,12 +141,11 @@
 
 <div class="home-content">
 
-  <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
+<div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
   <div id="triangle-down"></div>
 
   <?=do_shortcode('[ac-bloco-conteudo]');?>
              
- 
 </div>
 
 <div class="home-cases">

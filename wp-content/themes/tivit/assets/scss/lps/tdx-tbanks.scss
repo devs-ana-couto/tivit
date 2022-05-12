@@ -637,6 +637,8 @@
       @media(max-width: 768px){
         top: 0 !important;
         padding: 28px;
+        position: absolute;
+        height: 100%;
         h2{
           text-transform: uppercase;
           font-weight: 600;
