@@ -916,6 +916,12 @@
         width: 100%;
       }
       .cardCases{
+        img{
+          height: 400px;
+          width: 100%;
+          max-width: 100%;
+          object-fit: cover;
+        }
         cursor: pointer;
         &:hover{
           h3{
@@ -951,6 +957,7 @@
           text-transform: uppercase;
           text-align: left;
           transition: all .3s linear;
+          text-decoration: none;
           cursor: pointer;
           &:hover{
             color: white;

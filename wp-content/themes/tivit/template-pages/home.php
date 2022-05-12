@@ -141,12 +141,83 @@
 
 <div class="home-content">
 
-<div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
+  <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
   <div id="triangle-down"></div>
 
   <?=do_shortcode('[ac-bloco-conteudo]');?>
              
 </div>
+
+
+<div class="col-12">
+  
+  <div id="labs" class="carousel slide position-relative hide-desktop" data-bs-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+
+      <div class="carousel-item heroslide2 active">        
+        <div class="row">
+          <div class="col-12">
+            <div class="cardCases bg1 m-2 position-relative">
+              <div class="overlay"></div>
+              <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
+              <div class="textCase">
+              <h3> NOME DO CLIENTE 1 </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
+                <div class="w-100 d-flex text-left">
+                  <a>VER CASE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+  
+    </div>
+
+    <div class="navigation w-100">
+      <div class="d-flex justify-content-center align-items-center">
+        <button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
+        </button>
+        <div class="d-flex flex-row counter2">
+          <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
+        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="home-cases-content left text-center hide-mobile">
+    <div class="row d-flex justify-content-center">
+      <div class="d-flex customContainer">
+        <div class="col-md-4">
+          <div class="cardCases bg1 m-3">
+            <div class="overlay"></div>
+            <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
+            <div class="textCase">
+              <h3> NOME DO CLIENTE 1 </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
+              <div class="w-100 d-flex text-left">
+                <a>VER CASE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="d-flex justify-content-center align-items-center btn mt-4">
+          <button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 <div class="home-cases">
   <div class="d-flex justify-content-center transitionCases position-absolute hide-mobile"></div>
@@ -158,142 +229,11 @@
         <h2>Nossos Cases</h2>
         <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>
       </div>
-      <div class="col-12">
-        <div id="labs" class="carousel slide position-relative hide-desktop" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item heroslide2 active">
-              
-              <div class="row">
-                <div class="col-12">
-                  <div class="cardCases bg1 m-2 position-relative">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 1 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-            <div class="carousel-item heroslide2">
-              
-              <div class="row">
-                <div class="col-12">
-                  <div class="cardCases bg2 m-2 position-relative">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg2.png" alt="backgroundcase2">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 2 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-            <div class="carousel-item heroslide2">
-              
-              <div class="row">
-                <div class="col-12">
-                  <div class="cardCases bg3 m-2 position-relative">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg3.png" alt="backgroundcase3">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 3 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-
-            </div>
-          </div>
-
-          <div class="navigation w-100">
-            <div class="d-flex justify-content-center align-items-center">
-              <button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
-              </button>
-              <div class="d-flex flex-row counter2">
-                <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
-              </div>
-              <button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
-              </button>
-            </div>
-          </div>
-
-
-        </div>
-
-        <div class="home-cases-content left text-center hide-mobile">
-          <div class="row d-flex justify-content-center">
-            <div class="d-flex customContainer">
-              <div class="col-md-4">
-                  <div class="cardCases bg1 m-3">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg1.png" alt="backgroundcase1">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 1 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="cardCases bg2 m-3">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg2.png" alt="backgroundcase2">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 2 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="cardCases bg3 m-3">
-                    <div class="overlay"></div>
-                    <img class="w-100 h-100 img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/bg3.png" alt="backgroundcase3">
-                    <div class="textCase">
-                    <h3> NOME DO CLIENTE 3 </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>
-                      <div class="w-100 d-flex text-left">
-                        <a>VER CASE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="d-flex justify-content-center align-items-center btn mt-4">
-                  <button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <?=do_shortcode('[ac_bloco_home_cases]');?>
     </div>
   </div>
 </div>
+
 
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute hide-mobile"></div>

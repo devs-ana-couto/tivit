@@ -204,6 +204,104 @@ if (!function_exists('ac_bloco_cases')) {
 }
 add_shortcode( 'ac-bloco-cases', 'ac_bloco_cases' );
 
+if (!function_exists('ac_bloco_home_cases')) {
+    function ac_bloco_home_cases() {
+        $arg['porpagina'] = 3;
+        $arg['pagina']    = 1;
+        $dados = ac_cases_listar($arg);
+
+        $saida .= '<div class="col-12">';
+        $saida .= '<div id="labs" class="carousel slide position-relative hide-desktop" data-bs-ride="carousel">';
+        $saida .= '<div class="carousel-inner" role="listbox">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            if (is_array($etq_aux) || is_object($etq_aux)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
+            }
+            $saida .= '<div class="carousel-item heroslide2 active">';            
+            $saida .= '<div class="row">';
+            $saida .= '<div class="col-12">';
+            $saida .= '<div class="cardCases bg1 m-2 position-relative">';
+            $saida .= '<div class="overlay"></div>';
+            $saida .= '<img class="w-100 h-100 img-fluid" src="'.get_template_directory_uri().'/assets/images/home/bg1.png" alt="backgroundcase1">';
+            $saida .= '<div class="textCase">';
+            $saida .= '<h3>NOME DO CLIENTE 1 </h3>';
+            $saida .= '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>';
+            $saida .= '<div class="w-100 d-flex text-left">';
+            $saida .= '<a href="">VER CASE</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+
+        }
+        $saida .= '</div>';
+
+        $saida .= '<div class="navigation w-100">';
+        $saida .= '<div class="d-flex justify-content-center align-items-center">';
+        $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">';
+        $saida .= '<img src="'.get_template_directory_uri().'/assets/icons/navegacao/arrow_left.png" alt="arrow_left">';
+        $saida .= '</button>';
+        $saida .= '<div class="d-flex flex-row counter2">';
+        $saida .= '<div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>';
+        $saida .= '</div>';
+        $saida .= '<button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">';
+        $saida .= '<img src="'.get_template_directory_uri().'/assets/icons/navegacao/arrow_right.png" alt="arrow_right">';
+        $saida .= '</button>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+        $saida .= '<div class="home-cases-content left text-center hide-mobile">';
+        $saida .= '<div class="row d-flex justify-content-center">';
+        $saida .= '<div class="d-flex customContainer">';
+
+        for($ac = 0; $ac < count($dados); $ac++){
+            $saida .= '<div class="col-md-4">';
+            $saida .= '<div class="cardCases bg1 m-3">';
+            $saida .= '<div class="overlay"></div>';
+            $saida .= '<img src="'.$dados[$ac]['bgdesktop'].'" alt="backgroundcase1">';
+            $saida .= '<div class="textCase">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '<p>'.$dados[$ac]['resumo'].'</p>';
+            $saida .= '<div class="w-100 d-flex text-left mt-3">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">VER CASE</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+        $saida .= '<div class="col-12">';
+        $saida .= '<div class="d-flex justify-content-center align-items-center btn mt-4">';
+        $saida .= '<button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>';
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+        return $saida;
+    }
+}
+add_shortcode( 'ac_bloco_home_cases', 'ac_bloco_home_cases' );
+
 
 if (!function_exists('ac_pagina_cases')) {
     function ac_pagina_cases() {

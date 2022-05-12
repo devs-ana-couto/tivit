@@ -1641,6 +1641,11 @@ html, body, * {
       width: 100%; }
     .home-cases .home-cases-content .cardCases {
       cursor: pointer; }
+      .home-cases .home-cases-content .cardCases img {
+        height: 400px;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover; }
       .home-cases .home-cases-content .cardCases:hover h3 {
         color: #F20024;
         transition: all 0.2s linear; }
@@ -1666,6 +1671,7 @@ html, body, * {
         text-transform: uppercase;
         text-align: left;
         transition: all .3s linear;
+        text-decoration: none;
         cursor: pointer; }
         .home-cases .home-cases-content .textCase a:hover {
           color: white;
