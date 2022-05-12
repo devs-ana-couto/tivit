@@ -114,6 +114,12 @@
         line-height: 24px;
         color: $cinza-dark-tivit;
       }
+      @media (max-width: 768px) {
+        .pesquisa-cartao-resumo {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
 
       &::after {
         content: url('data:image/svg+xml; utf8, <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0.648438L19.3516 10L10 19.3516L8.35938 17.7109L14.8672 11.1484H0.648438V8.85156H14.8672L8.35938 2.28906L10 0.648438Z" fill="rgba(242, 0, 36, 1)" /></svg>');
@@ -122,6 +128,11 @@
         right: 6px;
         transform: translateY(-50%);
         transition: 0.7s ease;
+      }
+      @media (max-width: 768px) {
+        &::after {
+          content: '';
+        }
       }
 
       &:hover{
