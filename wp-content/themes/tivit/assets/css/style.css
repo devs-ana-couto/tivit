@@ -1297,7 +1297,7 @@ html, body, * {
     transition: all 0.4s linear; }
   @media (max-width: 767px) {
     .home-cases {
-      height: 700px; } }
+      height: 800px; } }
   @media (max-width: 760px) {
     .home-cases .paragrafo2 {
       color: white;
@@ -1620,6 +1620,11 @@ html, body, * {
   .home-cases {
     background-color: #262626;
     transition: background-color 0.35s linear; }
+    .home-cases img {
+      height: 400px;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover; }
     .home-cases .divOpacity {
       opacity: 0;
       transition: all 0.55s linear; }
@@ -1767,7 +1772,7 @@ html, body, * {
       opacity: 1;
       transition: all 0.3s linear 0.2s; }
   .partners {
-    padding-bottom: 140px;
+    padding: 140px 0;
     transition: all 0.4s linear 0.2s;
     opacity: 0; }
     .partners .title {

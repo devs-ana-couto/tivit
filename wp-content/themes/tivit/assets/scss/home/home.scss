@@ -440,7 +440,7 @@
   transition: background-color 0.35s linear;
   height: 930px;
   @media (max-width: 767px) {
-    height: 700px;
+    height: 800px;
   }
   .paragrafo2{
     @media(max-width: 760px){
@@ -885,6 +885,12 @@
   .home-cases{  
     background-color: #262626;
     transition: background-color 0.35s linear;
+    img{
+      height: 400px;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
     .divOpacity{
       opacity: 0;
       transition: all 0.55s linear;
@@ -1089,7 +1095,7 @@
   }
 
   .partners{
-    padding-bottom: 140px;
+    padding: 140px 0;
     transition: all 0.4s linear 0.2s;
     opacity: 0;
     .title{

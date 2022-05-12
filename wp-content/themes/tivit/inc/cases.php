@@ -228,17 +228,17 @@ if (!function_exists('ac_bloco_home_cases')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="carousel-item heroslide2 active">';            
+            $saida .= '<div class="carousel-item heroslide2 '.($ac==0 ? 'active' : '').'">';            
             $saida .= '<div class="row">';
             $saida .= '<div class="col-12">';
             $saida .= '<div class="cardCases bg1 m-2 position-relative">';
             $saida .= '<div class="overlay"></div>';
-            $saida .= '<img class="w-100 h-100 img-fluid" src="'.get_template_directory_uri().'/assets/images/home/bg1.png" alt="backgroundcase1">';
+            $saida .= '<img class="w-100 h-100 img-fluid" src="'.$dados[$ac]['bgmobile'].'" alt="backgroundcase1">';
             $saida .= '<div class="textCase">';
-            $saida .= '<h3>NOME DO CLIENTE 1 </h3>';
-            $saida .= '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur velit justo, et fermentum purus gravida quis.</p>';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '<p>'.$dados[$ac]['resumo'].'</p>';
             $saida .= '<div class="w-100 d-flex text-left">';
-            $saida .= '<a href="">VER CASE</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">VER CASE</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -283,10 +283,13 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
+            $saida .= '</div>';
         }
 
+
+
         $saida .= '</div>';
-        $saida .= '</div>';
+
 
         $saida .= '<div class="col-12">';
         $saida .= '<div class="d-flex justify-content-center align-items-center btn mt-4">';
@@ -294,7 +297,6 @@ if (!function_exists('ac_bloco_home_cases')) {
 
         $saida .= '</div>';
         $saida .= '</div>';
-
         $saida .= '</div>';
         $saida .= '</div>';
         return $saida;

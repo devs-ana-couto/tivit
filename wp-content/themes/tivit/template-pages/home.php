@@ -164,6 +164,10 @@
   </div>
 </div>
 
+<section class="partners">
+  <?=do_shortcode('[ac-bloco-clientes]');?>
+</section>
+
 
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute hide-mobile"></div>
@@ -185,104 +189,6 @@
   </div>
 </section>
 
-<section class="partners">
-  <div class="container">
-    <div class="title w-100">
-      <h2 class="text-center"> Com quem trabalhamos </h2>
-    </div>
-    <div class="d-flex justify-content-between hide-mobile">
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/anima.svg" alt="Anima logo">
-      </a>
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/cielo.svg" alt="Cielo logo">
-      </a>
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/google.svg" alt="Google logo">
-      </a>
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/itau.svg" alt="Itau logo">
-      </a>
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/johnson.svg" alt="Johnson logo">
-      </a>
-      <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/nestle.svg" alt="Nestle logo">
-      </a>
-    </div>
 
-    <div class="row mx-auto my-auto justify-content-center hide-desktop">
-      <div id="customerCarouselHome" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-              <div class="carousel-item heroslide3 customers active">
-                  <div class="col-6 col-md-2">
-                      <div class="h-100">
-                          <div class="m-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/anima.svg" alt="Anima logo">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide3 customers">
-                  <div class="col-6 col-md-2">
-                      <div class="h-100">
-                          <div class="m-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/cielo.svg" alt="Cielo logo">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide3 customers">
-                  <div class="col-6 col-md-2">
-                      <div class="h-100">
-                          <div class="m-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/google.svg" alt="Google logo">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide3 customers">
-                  <div class="col-6 col-md-2">
-                      <div class="h-100">
-                          <div class="m-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/itau.svg" alt="Itau logo">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide3 customers">
-                  <div class="col-6 col-md-2">
-                      <div class="h-100">
-                          <div class="m-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/johnson.svg" alt="Johnson logo">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide3 customers">
-                <div class="col-6 col-md-2">
-                    <div class="h-100">
-                        <div class="m-3">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/nestle.svg" alt="Nestle logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="w-100 position-relative mt-2">
-            <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>  
-            <div class="d-flex flex-row justify-content-center counter3 mt-3">
-              <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
-            </div>
-            <a class="carousel-control-next bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-          </div>
-      </div>
-  </div>
-  </div>
-</section>
 
 <?php get_footer(); ?>
