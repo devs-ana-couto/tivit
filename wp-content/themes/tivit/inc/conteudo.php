@@ -206,7 +206,7 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="carousel-item heroslide4 content active">';
+            $saida .= '<div class="carousel-item heroslide4 content '.($ac==0 ? 'active' : '').'">';
             $saida .= '<div class="col-11 m-0 p-0">';
             $saida .= '<div class="cardContent p-2">';
             $saida .= '<div class="img position-relative">';
