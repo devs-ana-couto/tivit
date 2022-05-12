@@ -15,6 +15,48 @@
 <?php
   // Path: header.php
   wp_head();
+
+  $por_servico_port   = get_theme_mod('por_servico_port');
+  $por_industria_port = get_theme_mod('por_industria_port');
+  $por_desafio_port   = get_theme_mod('por_desafio_port');
+  $por_servico_eng    = get_theme_mod('por_servico_eng');
+  $por_industria_eng  = get_theme_mod('por_industria_eng');
+  $por_desafio_eng    = get_theme_mod('por_desafio_eng');
+  $por_servico_esp    = get_theme_mod('por_servico_esp');
+  $por_industria_esp  = get_theme_mod('por_industria_esp');
+  $por_desafio_esp    = get_theme_mod('por_desafio_esp');
+
+  $rel_por_servico    = get_terms('por-servico');
+  $rel_por_industria  = get_terms('por-industria');
+  $rel_por_desafio    = get_terms('por-desafio');
+
+  function le_subpaginas($tipo_categoria,$valor_categoria) {
+    $args = array (
+        'post_type'       => 'solucoes',
+        'posts_per_page'  => -1,
+        'post_status'     => 'publish',
+        'orderby'         => 'menu',
+        'order'           => 'ASC',
+        'tax_query' => array(
+            array(
+                'taxonomy' => $tipo_categoria,
+                'field'    => 'slug',
+                'terms'    => $valor_categoria,
+            ),
+        ),
+    );
+    $the_query = new WP_Query( $args );
+    $resultado = array();
+    while ( $the_query->have_posts() ) {
+      $the_query->the_post();
+      $identif = $the_query->post->ID;
+      $titulo  = get_the_title();
+      $link    = get_permalink();
+      $resultado[] = array('titulo'=>$titulo, 'link'=>$link);
+    }
+    return $resultado;
+  }
+
 ?>
 </head>
 <body <?php body_class(); ?>>
@@ -113,60 +155,29 @@
               <div class="row">
                 <div class="col-md-3">
                   <div class="textLeft">
-                    <h2>Conheça as soluções da TIVIT por <strong>Serviços e Produtos.</strong></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
-                    <a href="/solucoes" class="buttonintro">ver todas as solucoes</a>
+                    <h2><?php _e('Conheça as soluções da TIVIT por <strong>Serviços e Produtos.</strong>'); ?></h2>
+                    <p><?php echo $por_servico_port; ?></p>
+                    <a href="/solucoes" class="buttonintro"><?php _e('ver todas as solucoes'); ?></a>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="textMenu">
-                    <h2>Cloud Solutions</h2>
-                        <?php
-                            wp_nav_menu( array(
-                            'theme_location'  => 'header-menu-cloud',
-                            'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                            'walker'          => new WP_Bootstrap_Navwalker(),
-                            ) );
-                        ?>
-                  </div>
-                  <hr class="separator w-100"/>
-                  <div class="textMenu">
-                    <h2>TECH PLATFORMS</h2>
+                <div class="col-md-9">
+                  <div class="row">
                     <?php
-                        wp_nav_menu( array(
-                        'theme_location'  => 'header-menu-tech',
-                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker'          => new WP_Bootstrap_Navwalker(),
-                        ) );
-                    ?>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenu">
-                    <h2>CYBERSECURITY</h2>
-                    <?php
-                        wp_nav_menu( array(
-                        'theme_location'  => 'header-menu-cyber',
-                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker'          => new WP_Bootstrap_Navwalker(),
-                        ) );
-                    ?>
-                  </div>
-                  <hr class="separator w-100"/>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenu">
-                    <h2>Digital Business</h2>
-                    <?php
-                        wp_nav_menu( array(
-                        'theme_location'  => 'header-menu-digital',
-                        'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker'          => new WP_Bootstrap_Navwalker(),
-                        ) );
+                    for ($ss=0; $ss<count($rel_por_servico); $ss++) {
+                      echo '<div class="col-md-4">';
+                      echo '<div class="textMenu">';
+                      echo '<h2>'.$rel_por_servico[$ss]->name.'</h2>';
+                      echo '<div class="menu-solucoes-cloud-solutions-container"><ul id="menu-solucoes-cloud-solutions" class="menu" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">';
+                      $list_por_servico = le_subpaginas('por-servico',$rel_por_servico[$ss]->slug);
+                      for ($ps=0; $ps<count($list_por_servico); $ps++) {
+                        echo '<li id="menu-item-530" class="menu-item menu-item-type-post_type menu-item-object-solucoes menu-item-530 nav-item">';
+                        echo '<a itemprop="url" href="'.$list_por_servico[$ps]['link'].'" class="nav-link">';
+                        echo '<span itemprop="name">'.$list_por_servico[$ps]['titulo'].'</span></a></li>';
+                      }
+                      echo '</ul></div>';
+                      echo '</div>';
+                      echo '</div>';
+                    }
                     ?>
                   </div>
                 </div>
@@ -176,34 +187,22 @@
               <div class="row">
                 <div class="col-md-3">
                   <div class="textLeft pt-5">
-                    <h2>Conheça as soluções da TIVIT por <strong>INDÚSTRIA</strong></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+                    <h2><?php _e('Conheça as soluções da TIVIT por <strong>INDÚSTRIA</strong>'); ?></h2>
+                    <p><?php echo $por_industria_port; ?></p>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                  <div class="textMenuCard mt-4">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                  <div class="textMenuCard mt-4">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                <div class="col-md-9">
+                  <div class="row">
+                    <?php
+                    for ($si=0; $si<count($rel_por_industria); $si++) {
+                      echo '<div class="col-md-4">';
+                      echo '<div class="textMenuCard mt-5">';
+                      echo '<h2><a>'.$rel_por_industria[$si]->name.'</a></h2>';
+                      echo '<p>'.$rel_por_industria[$si]->description.'</p>';
+                      echo '</div>';
+                      echo '</div>';
+                    }
+                    ?>
                   </div>
                 </div>
               </div>
@@ -212,34 +211,22 @@
               <div class="row">
                 <div class="col-md-3">
                   <div class="textLeft pt-5">
-                    <h2>Conheça as soluções da TIVIT por <strong>INDÚSTRIA</strong></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.</p>
+                    <h2><?php _e('Conheça as soluções da TIVIT por <strong>DESAFIO</strong>'); ?></h2>
+                    <p><?php echo $por_desafio_port; ?></p>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                  <div class="textMenuCard mt-4">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                  <div class="textMenuCard mt-4">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="textMenuCard mt-5">
-                    <h2><a>serviços financeiros</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
+                <div class="col-md-9">
+                  <div class="row">
+                    <?php
+                    for ($sd=0; $sd<count($rel_por_desafio); $sd++) {
+                      echo '<div class="col-md-4">';
+                      echo '<div class="textMenuCard mt-5">';
+                      echo '<h2><a>'.$rel_por_desafio[$sd]->name.'</a></h2>';
+                      echo '<p>'.$rel_por_desafio[$sd]->description.'</p>';
+                      echo '</div>';
+                      echo '</div>';
+                    }
+                    ?>
                   </div>
                 </div>
               </div>

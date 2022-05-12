@@ -18,7 +18,6 @@ function create_posts_taxonomies(){
 		'edit_item'         => __( 'Editar', ''),
 		'menu_name'         => __( 'Categorias de Tools', ''),
 	);
-
 	$args = array(
 		'hierarchical'      => true,
 		'labels'            => $labels,
@@ -27,7 +26,7 @@ function create_posts_taxonomies(){
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'areas-de-interesse-tools' ),
 	);
-	register_taxonomy( 'areas-de-interesse-tools', array( 'cases','solucoes' ), $args );
+	register_taxonomy( 'areas-de-interesse-tools', array( 'cases' ), $args );
 
 
 	$labels = array(
@@ -38,7 +37,6 @@ function create_posts_taxonomies(){
 		'edit_item'         => __( 'Editar', ''),
 		'menu_name'         => __( 'Tipo de Post', ''),
 	);
-
 	$args = array(
 		'hierarchical'      => true,
 		'labels'            => $labels,
@@ -47,7 +45,64 @@ function create_posts_taxonomies(){
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'tipo-de-post' ),
 	);
-	register_taxonomy( 'tipo-de-post', array( 'cases','solucoes' ), $args );
+	register_taxonomy( 'tipo-de-post', array( 'cases' ), $args );
+
+
+	$labels = array(
+		'name'              => __( 'Por serviços', ''),
+		'singular_name'     => __( 'Por serviço', ''),
+		'add_new_item'      => __( 'Adicionar', ''),
+		'new_item_name'     => __( 'Nova', ''),
+		'edit_item'         => __( 'Editar', ''),
+		'menu_name'         => __( 'Por serviços', ''),
+	);
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'por-servico' ),
+	);
+	register_taxonomy( 'por-servico', array( 'solucoes' ), $args );
+
+
+	$labels = array(
+		'name'              => __( 'Por indústrias', ''),
+		'singular_name'     => __( 'Por indústria', ''),
+		'add_new_item'      => __( 'Adicionar', ''),
+		'new_item_name'     => __( 'Nova', ''),
+		'edit_item'         => __( 'Editar', ''),
+		'menu_name'         => __( 'Por indústrias', ''),
+	);
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'por-industria' ),
+	);
+	register_taxonomy( 'por-industria', array( 'solucoes' ), $args );
+
+
+	$labels = array(
+		'name'              => __( 'Por desafios', ''),
+		'singular_name'     => __( 'Por desafio', ''),
+		'add_new_item'      => __( 'Adicionar', ''),
+		'new_item_name'     => __( 'Nova', ''),
+		'edit_item'         => __( 'Editar', ''),
+		'menu_name'         => __( 'Por desafios', ''),
+	);
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'por-desafio' ),
+	);
+	register_taxonomy( 'por-desafio', array( 'solucoes' ), $args );
 
 
 }
