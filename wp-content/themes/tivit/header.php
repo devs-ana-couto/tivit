@@ -264,96 +264,6 @@
 
           <div class="textMenu">
             <div class="row">
-<<<<<<< HEAD
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    Cloud Solutions
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <?php
-                    wp_nav_menu( array(
-                    'theme_location'  => 'header-menu-cloud',
-                    'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker'          => new WP_Bootstrap_Navwalker(),
-                    ) );
-                ?>
-              </div>
-            </div>
-            <hr class="w-100" />
-          </div>
-
-          <div class="textMenu">
-            <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    TECH PLATFORMS
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <?php
-                  wp_nav_menu( array(
-                  'theme_location'  => 'header-menu-tech',
-                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'          => new WP_Bootstrap_Navwalker(),
-                  ) );
-                ?>
-              </div>
-            </div>
-            <hr class="w-100" />
-          </div>
-
-          <div class="textMenu">
-            <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    CYBERSECURITY
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <?php
-                  wp_nav_menu( array(
-                  'theme_location'  => 'header-menu-cyber',
-                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'          => new WP_Bootstrap_Navwalker(),
-                  ) );
-                ?>
-              </div>
-            </div>
-            <hr class="w-100" />
-          </div>
-
-          <div class="textMenu">
-            <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    Digital Business
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <?php
-                  wp_nav_menu( array(
-                  'theme_location'  => 'header-menu-digital',
-                  'depth'           =>  1, // 1 = no dropdowns, 2 = with dropdowns.
-                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker'          => new WP_Bootstrap_Navwalker(),
-                  ) );
-                ?>
-              </div>
-            </div>
-            <hr class="w-100" />
-=======
               <?php
               for ($ss=0; $ss<count($rel_por_servico); $ss++) {
                 echo '<div class="textMenu">';
@@ -375,7 +285,6 @@
               }
               ?>
             </div>
->>>>>>> 0f65142679c9d0807ff3443316e45bbc2a57fe52
           </div>
 
           <div class="languages">
