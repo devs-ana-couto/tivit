@@ -253,100 +253,36 @@
       <div class="solutions-service-mobile por-servicos-e-produtos">
         <div class="container hide-desktop">
           <div class="intro">
-            <h3>soluções</h3>
-            <h2>POR SERVIÇOS E PRODUTOS</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
-            </p>
-            <a href="/solucoes">VER TODAS AS SOLUÇÕES</a>
+            <h3><?php _e('soluções'); ?></h3>
+            <h2><?php _e('POR SERVIÇOS E PRODUTOS'); ?></h2>
+            <p><?php echo $por_servico_port; ?></p>
+            <a href="/solucoes"><?php _e('VER TODAS AS SOLUÇÕES'); ?></a>
           </div>
           <hr class="w-100" />
 
           <div class="textMenu">
             <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    Cloud Solutions
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
-              </div>
+              <?php
+              for ($ss=0; $ss<count($rel_por_servico); $ss++) {
+                echo '<div class="textMenu">';
+                echo '<div class="row">';
+                echo '<div class="col-1 d-flex justify-content-center">';
+                echo '<div><h2>'.$rel_por_servico[$ss]->name.'</h2></div>';
+                echo '</div>';
+                echo '<div class="col-11"><ul>';
+                $list_por_servico = le_subpaginas('por-servico',$rel_por_servico[$ss]->slug);
+                for ($ps=0; $ps<count($list_por_servico); $ps++) {
+                  echo '<a itemprop="url" href="'.$list_por_servico[$ps]['link'].'" class="nav-link">';
+                  echo '<li>';
+                  echo $list_por_servico[$ps]['titulo'].'</li></a>';
+                }
+                echo '</ul></div>';
+                echo '<hr class="w-100" />';
+                echo '</div>';
+                echo '</div>';
+              }
+              ?>
             </div>
-            <hr class="w-100" />
-          </div>
-
-          <div class="textMenu">
-            <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    Cloud Solutions
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr class="w-100" />
-          </div>
-
-          <div class="textMenu">
-            <div class="row">
-              <div class="col-1 d-flex justify-content-center">
-                <div>
-                  <h2>
-                    Cloud Solutions
-                  </h2>
-                </div>
-              </div>
-              <div class="col-11">
-                <ul>
-                  <li>
-                    PUBLIC CLOUD
-                  </li>
-                  <li>
-                    CLOUD MANAGED SERVICES
-                  </li>
-                  <li>
-                    CLOUD PRofeSSIONAL SERvices
-                  </li>
-                  <li>
-                    private cloud
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr class="w-100" />
           </div>
 
           <div class="languages">
@@ -370,40 +306,23 @@
       <div class="solutions-service-mobile-cards por-industria">
         <div class="container hide-desktop">
           <div class="intro">
-            <h3>soluções</h3>
-            <h2>POR INDÚSTRIA</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
-            </p>
+            <h3><?php _e('soluções'); ?></h3>
+            <h2><?php _e('POR INDÚSTRIA'); ?></h2>
+            <p><?php echo $por_industria_port; ?></p>
           </div>
 
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>SERVIÇOS FINANCEIROS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>MEIOS DE PAGAMENTO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>MANUFATURA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
+          <?php
+          for ($si=0; $si<count($rel_por_industria); $si++) {
+            echo '<div class="cardMenu">';
+            echo '<div class="row">';
+            echo '<div class="col-12">';
+            echo '<h2><a>'.$rel_por_industria[$si]->name.'</a></h2>';
+            echo '<p>'.$rel_por_industria[$si]->description.'</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+          }
+          ?>
           <div class="languages">
             <div class="row">
               <div class="col-6">
@@ -425,40 +344,23 @@
       <div class="solutions-service-mobile-cards por-desafios">
         <div class="container hide-desktop">
           <div class="intro">
-            <h3>soluções</h3>
-            <h2>POR DESAFIO</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit. Nulla consequat sapien vestibulum, hendrerit ante in, fermentum eros.
-            </p>
+            <h3><?php _e('soluções'); ?></h3>
+            <h2><?php _e('POR DESAFIO'); ?></h2>
+            <p><?php echo $por_desafio_port; ?></p>
           </div>
 
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>SERVIÇOS FINANCEIROS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>MEIOS DE PAGAMENTO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardMenu">
-            <div class="row">
-              <div class="col-12">
-                <h2>MANUFATURA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed massa at eros elementum posuere ut et elit.</p>
-              </div>
-            </div>
-          </div>
-
+          <?php
+          for ($sd=0; $sd<count($rel_por_desafio); $sd++) {
+            echo '<div class="cardMenu">';
+            echo '<div class="row">';
+            echo '<div class="col-12">';
+            echo '<h2><a>'.$rel_por_desafio[$sd]->name.'</a></h2>';
+            echo '<p>'.$rel_por_desafio[$sd]->description.'</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+          }
+          ?>
           <div class="languages">
             <div class="row">
               <div class="col-6">
