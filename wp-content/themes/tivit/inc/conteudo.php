@@ -166,7 +166,7 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -213,7 +213,7 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -389,8 +389,14 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '<div class="img">';
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
             $saida .= '</div>';
+<<<<<<< HEAD
             $saida .= '<div class="autor-time">';
             $saida .= '<p><b>'.$dados[$ac]['postdate'].'</b></p>';
+=======
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+>>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -460,7 +466,7 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>';
-            $saida .= '<div class="detalhes">';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
             $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
@@ -488,3 +494,149 @@ if (!function_exists('ac_pagina_conteudo')) {
     }
 }
 add_shortcode( 'ac-pagina-conteudo', 'ac_pagina_conteudo' );
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
+    function ac_pagina_conteudo_pesquisa_desktop() {
+        $arg = array();
+        if (isset($_POST['pagina'])) {
+            $arg['pagina'] = $_POST['pagina'] + 1;
+            $get_pagina = $_POST['pagina'] + 1;
+        }
+        $get_categoria = '';
+        if (isset($_POST['categoria'])) {
+            $arg['categoria'] = $_POST['categoria'];
+            $get_categoria = $_POST['categoria'];
+        }
+        $get_etiqueta = array();
+        if (isset($_POST['etiqueta'])) {
+            $arg['etiqueta']  = $_POST['etiqueta'];
+            $get_etiqueta = explode(',',$_POST['etiqueta']);
+        }
+        $dados = ac_conteudo_listar($arg);
+        $saida = '';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            foreach( $cat_aux as $categoria ) {
+                $categorias[] = $categoria;
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            foreach( $etq_aux as $etiqueta ) {
+                $etiquetas[] = $etiqueta->name;
+            }
+            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="cardContent p-1">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        echo $saida;
+        die();
+        return;
+    }
+}
+add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
+add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
+
+
+
+
+
+
+if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
+    function ac_pagina_conteudo_pesquisa_mobile() {
+        $arg = array();
+        if (isset($_POST['pagina'])) {
+            $arg['pagina'] = $_POST['pagina'] + 1;
+            $get_pagina = $_POST['pagina'] + 1;
+        }
+        $get_categoria = '';
+        if (isset($_POST['categoria'])) {
+            $arg['categoria'] = $_POST['categoria'];
+            $get_categoria = $_POST['categoria'];
+        }
+        $get_etiqueta = array();
+        if (isset($_POST['etiqueta'])) {
+            $arg['etiqueta']  = $_POST['etiqueta'];
+            $get_etiqueta = explode(',',$_POST['etiqueta']);
+        }
+        // print_r($arg);
+        $dados = ac_conteudo_listar($arg);
+        $saida = '';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            foreach( $cat_aux as $categoria ) {
+                $categorias[] = $categoria;
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            foreach( $etq_aux as $etiqueta ) {
+                $etiquetas[] = $etiqueta->name;
+            }
+            $saida .= '<div class="carousel-item heroslide4 content active">';
+            $saida .= '<div class="col-11 m-0 p-0">';
+            $saida .= '<div class="cardContent p-2">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row aaa">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        echo $saida;
+        die();
+        return;
+    }
+}
+add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );
+add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );
+>>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae

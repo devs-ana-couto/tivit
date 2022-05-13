@@ -54,6 +54,7 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 register_nav_menus(
   array(
     'header-menu' => __('Header Menu'),
+    'header-menu-02' => __('Header Menu lateral'),
     'header-menu-cloud' => __('Header Menu - Cloud Solutions'),
     'header-menu-cyber' => __('Header Menu - Cybersecurity'),
     'header-menu-digital' => __('Header Menu - Digital Business'),
@@ -95,3 +96,134 @@ function admin_queue( $hook ) {
   }
 }
 add_action( 'admin_enqueue_scripts', 'admin_queue' );
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+/*==============================================
+    Configura Registros customizaveis
+===============================================*/
+function ac_customiza( $wp_customize ) {
+    $wp_customize->add_section( 'solucoes', array(
+        'title'    => 'Soluções',
+        'priority' => 30,
+    ) );
+
+    $wp_customize->add_setting( 'por_servico_port', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_servico_port', array(
+            'label'    => 'Por Serviço em português',
+            'section'  => 'solucoes',
+            'settings' => 'por_servico_port',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_servico_eng', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_servico_eng', array(
+            'label'    => 'Por Serviço em inglês',
+            'section'  => 'solucoes',
+            'settings' => 'por_servico_eng',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_servico_esp', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_servico_esp', array(
+            'label'    => 'Por Serviço em espanhol',
+            'section'  => 'solucoes',
+            'settings' => 'por_servico_esp',
+            'type'     => 'textarea',
+        )
+    ) );
+
+    $wp_customize->add_setting( 'por_industria_port', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_industria_port', array(
+            'label'    => 'Por Indústria em português',
+            'section'  => 'solucoes',
+            'settings' => 'por_industria_port',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_industria_eng', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_industria_eng', array(
+            'label'    => 'Por Indústria em inglês',
+            'section'  => 'solucoes',
+            'settings' => 'por_industria_eng',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_industria_esp', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_industria_esp', array(
+            'label'    => 'Por Indústria em espanhol',
+            'section'  => 'solucoes',
+            'settings' => 'por_industria_esp',
+            'type'     => 'textarea',
+        )
+    ) );
+
+    $wp_customize->add_setting( 'por_desafio_port', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_desafio_port', array(
+            'label'    => 'Por Desafio em português',
+            'section'  => 'solucoes',
+            'settings' => 'por_desafio_port',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_desafio_eng', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_desafio_eng', array(
+            'label'    => 'Por Desafio em inglês',
+            'section'  => 'solucoes',
+            'settings' => 'por_desafio_eng',
+            'type'     => 'textarea',
+        )
+    ) );
+    $wp_customize->add_setting( 'por_desafio_esp', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'por_desafio_esp', array(
+            'label'    => 'Por Desafio em espanhol',
+            'section'  => 'solucoes',
+            'settings' => 'por_desafio_esp',
+            'type'     => 'textarea',
+        )
+    ) );
+}
+add_action( 'customize_register', 'ac_customiza' );
+>>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae
