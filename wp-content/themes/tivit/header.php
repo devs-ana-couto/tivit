@@ -54,6 +54,8 @@
       $link    = get_permalink();
       $resultado[] = array('titulo'=>$titulo, 'link'=>$link);
     }
+    wp_reset_postdata();
+    wp_reset_query();
     return $resultado;
   }
 
