@@ -96,8 +96,6 @@ function admin_queue( $hook ) {
   }
 }
 add_action( 'admin_enqueue_scripts', 'admin_queue' );
-<<<<<<< HEAD
-=======
 
 
 
@@ -226,4 +224,3 @@ function ac_customiza( $wp_customize ) {
     ) );
 }
 add_action( 'customize_register', 'ac_customiza' );
->>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae

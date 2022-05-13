@@ -389,14 +389,8 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '<div class="img">';
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
             $saida .= '</div>';
-<<<<<<< HEAD
             $saida .= '<div class="autor-time">';
             $saida .= '<p><b>'.$dados[$ac]['postdate'].'</b></p>';
-=======
-            $saida .= '<div class="d-flex justify-content-between align-items-center detalhes">';
-            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
->>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -494,8 +488,6 @@ if (!function_exists('ac_pagina_conteudo')) {
     }
 }
 add_shortcode( 'ac-pagina-conteudo', 'ac_pagina_conteudo' );
-<<<<<<< HEAD
-=======
 
 
 
@@ -639,4 +631,3 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
 }
 add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );
 add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_mobile', 'ac_pagina_conteudo_pesquisa_mobile' );
->>>>>>> ab657a0f5102a0d66d8be0818b8bc09e23bc91ae
