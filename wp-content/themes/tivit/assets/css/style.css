@@ -2805,8 +2805,8 @@ div {
   .a-tivit-certificacoes .title {
     margin-top: 53px; }
     .a-tivit-certificacoes .title h2 {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 28px;
+      line-height: 44px;
       color: #262626;
       text-transform: uppercase; }
       @media (max-width: 760px) {
@@ -3066,7 +3066,7 @@ div {
         font-size: 28px;
         line-height: 44px;
         font-weight: bold;
-        color: #454D54;
+        color: #262626 !important;
         text-transform: uppercase; }
   .home-pessoas-e-carreiras.inovar {
     background: url("../../assets/images/a-tivit/inovar-bg.png") no-repeat center center;

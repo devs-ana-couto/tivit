@@ -317,18 +317,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="title">
-          <h2>Certificações</h2>
-        </div>
-        <div class="desc">
-          <p class="paragrafo3">
-            Nossa expertise é garantida e certificada por diversas organizações de atuação nacional e internacional. Com mais de 20 anos de mercado, acumulamos excelência no que há de mais importante.
-          </p>
-        </div>
+        <? the_field('chamada_certificacoes_ativit') ?>
       </div>
     </div>
 
-    <div id="ativitClientes" class="lp-tbanks-logo-clientes mt-0 mt-md-5">
+    <div id="ativitClientes" class="lp-tbanks-logo-clientes mt-0">
       <div class="row">
         <div class="col-12">
           <div class="lp-tbanks-logo-clientes-content text-center">
@@ -336,42 +329,25 @@
               <div class="row mx-auto my-auto justify-content-center">
                   <div id="ativitCustomerCarousel" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item heroslide3 customers active">
+                        <? 
+                            if( have_rows(' certificacoes_ativit') ):
+                            // Loop through rows.
+                                for($i=0; have_rows('certificacoes_ativit'); $i++) : the_row();
+                                $img_url[$i] = get_sub_field('logo');
+                        ?>
+                        <div class="carousel-item heroslide3 customers <?= $i==0 ? 'active' : ''?>">
                             <div class="col-6 col-md-3">
                                 <div class="h-100">
                                     <div class="m-3">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/certificacoes/gptw1.svg" alt="Gptw">
+                                      <img src="<?=$img_url[$i]?>" alt="Gptw">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item heroslide3 customers">
-                            <div class="col-6 col-md-3">
-                                <div class="h-100">
-                                    <div class="m-3">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/certificacoes/abes1.svg" alt="Abes">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item heroslide3 customers">
-                            <div class="col-6 col-md-3">
-                                <div class="h-100">
-                                    <div class="m-3">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/certificacoes/cmmi1.svg" alt="Cmmi">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item heroslide3 customers">
-                            <div class="col-6 col-md-3">
-                                <div class="h-100">
-                                    <div class="m-3">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/certificacoes/hdi1.svg" alt="Hdi">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php 
+                            endfor;
+                            endif;
+                        ?>
                       </div>
                       <div class="w-100 position-relative mt-2">
                         <a class="carousel-control-prev bg-transparent w-aut" href="#ativitCustomerCarousel" role="button" data-bs-slide="prev">

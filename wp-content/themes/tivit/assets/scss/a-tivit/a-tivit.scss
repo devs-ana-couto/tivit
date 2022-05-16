@@ -480,8 +480,8 @@
     .title{
         margin-top: 53px;
         h2{
-            font-size: 24px;
-            line-height: 24px;
+            font-size: 28px;
+            line-height: 44px;
             color: $cinza-dark-cyber-tivit;
             text-transform: uppercase;
             @media(max-width: 760px){
@@ -850,7 +850,7 @@
                 font-size: 28px;
                 line-height: 44px;
                 font-weight: bold;
-                color: $cinza-dark-tivit;
+                color: $cinza-dark-cyber-tivit!important;
                 text-transform: uppercase;
             }
         }
