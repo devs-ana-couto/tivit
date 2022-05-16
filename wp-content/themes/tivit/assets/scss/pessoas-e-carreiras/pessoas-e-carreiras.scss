@@ -491,6 +491,25 @@
       margin-right: 10px;
     }
   }
+  .counter5{
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    .numactive5{
+      color: $vermelho-tivit;
+      font-weight: 700;
+    }
+    .numseparation5, .numtotal5{
+      color: $vermelho-tivit;
+      font-weight: 300;
+    }
+    .numseparation5{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }
 
 #pecInterno{

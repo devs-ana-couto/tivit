@@ -2240,6 +2240,21 @@ div {
     #pecConheca .counter2 .numseparation2 {
       margin-left: 10px;
       margin-right: 10px; }
+  #pecConheca .counter5 {
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #pecConheca .counter5 .numactive5 {
+      color: #F20024;
+      font-weight: 700; }
+    #pecConheca .counter5 .numseparation5, #pecConheca .counter5 .numtotal5 {
+      color: #F20024;
+      font-weight: 300; }
+    #pecConheca .counter5 .numseparation5 {
+      margin-left: 10px;
+      margin-right: 10px; }
 
 #pecInterno #pecInternoDepoimentos {
   margin-top: 120px; }

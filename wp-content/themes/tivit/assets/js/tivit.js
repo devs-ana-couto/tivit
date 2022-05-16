@@ -227,6 +227,7 @@ jQuery(document).ready(function($) {
       $('.numtotal4').html( totalItems4 );
    });
 
+
    //Carousel slick
    $('.slider-for').slick({
       slidesToShow: 1,

@@ -33,15 +33,16 @@ if (!function_exists('ac_equipe_listar')) {
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
             $identif    = $the_query->post->ID;
-            $titulo     = $the_query->post->post_title;
-            $link       = get_field('link_equipe');
+            $nome       = $the_query->post->post_title;
+            $atuacao       = get_field('area_de_atuacao_equipe');
+            $linkedin_url  = get_field('url_linkedin');
             $imagem     = get_field('imagem_equipe');
-            $etiquetas = get_the_tags($identif);
             $resultado[] = array(
-                'postid'     => $identif,
-                'link'       => $link,
-                'imagem'     => $imagem,
-                'titulo'     => $titulo,       
+                'postid'   => $identif,
+                'nome'     => $nome,
+                'linkedin_url'  => $linkedin_url,
+                'imagem'   => $imagem,
+                'atuacao' => $atuacao
             );
         }
         wp_reset_query();
@@ -57,44 +58,52 @@ if (!function_exists('ac_bloco_equipe')) {
         $dados = ac_equipe_listar($arg);
 
 
+        $saida .= '<div id="pecConheca" class="lp-tbanks-conheca">';
+        $saida .= '<div id="triangle-down"></div>';
         $saida .= '<div class="container">';
-        $saida .= '<div class="title w-100">';
-        $saida .= '<h2 class="text-center">Com quem trabalhamos</h2>';
+        $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
+        $saida .= '<h2 class="title text-center">CONHEÇA A NOSSA EQUIPE</h2>';
         $saida .= '</div>';
-        $saida .= '<div class="d-flex justify-content-between hide-mobile">';
-        for ($ac = 0; $ac < count($dados); $ac++ ) {
-            $saida .= '<a href="'.$dados[$ac]['link'].'">';
-            $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="Logo da '.$dados[$ac]['titulo'].'">';
-            $saida .= '</a>';
-        }
-        $saida .= '</div>';
-
-        $saida .= '<div class="row mx-auto my-auto justify-content-center hide-desktop">';
-        $saida .= '<div id="customerCarouselHome" class="carousel slide" data-bs-ride="carousel">';
+        //  <!-- Bloco Carrossel Infinito -->
+        $saida .= '<div id="carouselCustom" class="container-fluid text-center my-3">';
+        $saida .= '<div class="row mx-auto my-auto justify-content-center">';
+        $saida .= '<div id="esg" class="carousel slide" data-bs-ride="carousel">';
         $saida .= '<div class="carousel-inner" role="listbox">';
+        
         for($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= ' <div class="carousel-item heroslide3 customers '.($ac == 0 ? 'active' : '').'">';
-            $saida .= '<div class="col-6 col-md-2">';
-            $saida .= '<div class="h-100">';
-            $saida .= '<div class="m-3">';
-            $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="Logo '.$dados[$ac]['titulo'].'">';
+            $saida .= '<div class="carousel-item heroslide2 '. ($ac==0 ? 'active' : '') .'">';
+            $saida .= '<div class="col-11 col-md-3">';
+            $saida .= '<div class="card">';
+            $saida .= '<div class="card-img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="'.$dados[$ac]['nome'].'" class="img-fluid w-100">';
+            $saida .= '<div class="position-absolute tagIn"><img class="position-absolute imgIn" src="'.get_template_directory_uri().'/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"></div>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h2>'.$dados[$ac]['nome'].'</h2>';
+            $saida .= '<p>'.$dados[$ac]['atuacao'].'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="redes-sociais d-flex justify-content-center flex-row">';
+            $saida .= '<img src="'.get_template_directory_uri().'/assets/images/pessoas-e-carreiras/git.svg" alt="Blog 3" class="img-fluid">';
+            $saida .= '<img src="'.get_template_directory_uri().'/assets/images/pessoas-e-carreiras/mundo.svg" alt="Blog 3" class="img-fluid">';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
         }
         $saida .= '</div>';
-
-        $saida .= '<div class="w-100 position-relative mt-2">';
-        $saida .= '<a class="carousel-control-prev bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="prev">';
+        $saida .= '<div class="d-flex justify-content-center mt-5">';
+        $saida .= '<a class="carousel-control-prev bg-transparent w-aut" href="#esg" role="button" data-bs-slide="prev">';
         $saida .= '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
         $saida .= '</a>';
-        $saida .= '<div class="d-flex flex-row justify-content-center counter3 mt-3">';
-        $saida .= '<div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>';
-        $saida .= '</div>';
-        $saida .= '<a class="carousel-control-next bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="next">';
+        $saida .= '<div class="d-flex flex-row counter2">';
+        $saida .= '<div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>';
+        $saida .= '<a class="carousel-control-next bg-transparent w-aut" href="#esg" role="button" data-bs-slide="next">';
         $saida .= '<span class="carousel-control-next-icon" aria-hidden="true"></span>';
         $saida .= '</a>';
+        
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
         $saida .= '</div>';
 
         $saida .= '</div>';
