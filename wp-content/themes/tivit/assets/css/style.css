@@ -2418,6 +2418,16 @@ div {
       #pecVagas .container #faq .accordion-button::after {
         background-image: url("../../assets/images/pessoas-e-carreiras/add.svg"); }
 
+.botao {
+  margin-top: 40px; }
+  .botao a {
+    color: #fff;
+    text-decoration: none; }
+    .botao a:hover {
+      color: #F20024;
+      background: transparent;
+      border: #F20024 1px solid; }
+
 .a-tivit-hero {
   height: 580px;
   background: url("../../assets/images/a-tivit/banner.png") no-repeat center center;
@@ -2794,6 +2804,10 @@ div {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .a-tivit-certificacoes .col-6 .h-100 {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .inovar {
   background: url("../../assets/images/a-tivit/inovar.svg") no-repeat center center;
@@ -2927,7 +2941,9 @@ div {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      max-width: 100% !important; }
+      max-width: 100% !important;
+      min-width: 100% !important;
+      padding: 20px; }
       .a-tivit-inovacao .card a {
         margin-top: 0 !important;
         opacity: 0; }
@@ -4788,7 +4804,6 @@ div {
 
 .lp-tbanks-logo-clientes {
   height: 100%;
-  margin-bottom: 150px;
   /* medium and up screens */ }
   @media (max-width: 768px) {
     .lp-tbanks-logo-clientes {

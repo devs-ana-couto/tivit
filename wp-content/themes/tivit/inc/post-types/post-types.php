@@ -174,6 +174,29 @@ function create_clientes() {
 	);
 }
 
+// Equipe
+add_action( 'init', 'create_equipe' );
+function create_equipe() {
+	register_post_type( 'equipe',
+	    array(
+	      	'labels' => array(
+		        'name' => __( 'Equipe', '' ),
+		        'singular_name' => __( 'Equipe', '' ),
+				'add_new' => __( 'Adicionar Equipe', '' ),
+				'add_new_item' => __( 'Adicionar Novo Equipe', '' ),
+				'edit_item' => __( 'Editar Equipe', '' ),
+				'new_item' => __( 'Novo Equipe', '' ),
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-smiley',
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'Equipe'),
+			'supports' => array( 'title', 'thumbnail')
+		)
+	);
+}
+
 // Soluções
 add_action( 'init', 'create_solucoes' );
 function create_solucoes() {

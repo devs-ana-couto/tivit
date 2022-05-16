@@ -41,6 +41,9 @@
         <p>
         <? the_field('introducao_ativit');?>
         </p>
+        <div class="botao">
+          <a href="<?the_field('cta_url_ativit');?>"><?the_field('cta_texto_ativit')?></a>
+        </div>
       </div>
     </div>
   </div>
@@ -140,9 +143,8 @@
     <div class="row">
       <div class="col-12">
 
-        <div class="content text-center">
-          <h2>Como a TIVIT tem inovado?</h2>
-          <p class="paragrafo3">Investir em pessoas e ideias faz parte do nosso DNA. Entendemos que a transformação digital e a busca por inovação se fazem a partir da antecipação das tendências do mercado. Para compor nossa atuação, contamos com soluções personalizadas e áreas como TIVIT Ventures, TBanks, TIVIT Labs e Tdx.</p>
+        <div class="content">
+          <?the_field('chamada_inovacao_ativit')?>
         </div>
 
         <div class="row">
@@ -157,10 +159,11 @@
                 background-position: center;
                 height: 85px;
                 mix-blend-mode: luminosity;
-                max-width: 100%;">
-                <p class="hide-mobile">O TIVIT Labs é o hub de inovação da TIVIT.</p>
+                max-width: 100%;
+                min-width: 100%;">
+                <p class="hide-mobile"><?the_field('texto_logo_1_ativit')?></p>
                 <img src="<? the_field('logo_1_ativit'); ?>" class="hide-desktop" alt="Tivit Inovação">
-                <a href="#">conheça a tivit labs <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a>
+                <a href="<?the_field('url_logo_1_ativit')?>">conheça a tivit labs <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a>
               </div>
             </div>
           </div>
@@ -174,10 +177,11 @@
                 background-position: center;
                 height: 85px;
                 mix-blend-mode: luminosity;
-                max-width: 100%;">
-                <p class="hide-mobile">A Ventures é a vertical de investimentos e aquisições da TIVIT.</p>
+                max-width: 100%;
+                min-width: 100%;">
+                <p class="hide-mobile"><?the_field('texto_logo_2_ativit')?></p>
                 <img src="<? the_field('logo_2_ativit'); ?>" class="hide-desktop" alt="Tivit Experts">
-                <div class="pt-4 pt-md-0"><a href="#">conheça a ventures <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a></div>
+                <div class="pt-4 pt-md-0"><a href="<?the_field('url_logo_2_ativit')?>">conheça a ventures <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg" alt="Saiba Mais"></a></div>
               </div>
             </div>
           </div>
@@ -185,7 +189,7 @@
         </div>
 
         <div class="botao">
-          <a href="#">saiba mais sobre inovação</a>
+          <a href="<?the_field('cta_url2_ativit')?>"><?the_field('cta_texto2_ativit')?></a>
         </div>
 
       </div>
