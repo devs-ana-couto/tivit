@@ -7,7 +7,7 @@
 
     <div class="carousel-inner text-center">
         <?php
-            // Check rows exists.   
+            // Check rows exists.
             if( have_rows('slider_hero') ):
                 // Loop through rows.
                 for($i=0; have_rows('slider_hero'); $i++) : the_row();
@@ -47,7 +47,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
             </button>
             <div class="carousel-indicators">
-                <?php 
+                <?php
                     if( have_rows('slider_hero') ):
                     // Loop through rows.
                         for($i=0; have_rows('slider_hero'); $i++) : the_row();
@@ -92,9 +92,6 @@
         <p class="mt-3">
           <? the_field('texto_de_introducao') ?>
         </p>
-        <div class="botao">
-          <a href="#" class="btn btn-primary">Saiba Mais</a>
-        </div>
       </div>
     </div>
   </div>
@@ -153,7 +150,7 @@
     <div class="row hide-mobile">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="cardContent p-1"> 
+        <div class="cardContent p-1">
           <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
             <div class="position-absolute tagContent">artigo</div>
@@ -247,7 +244,7 @@
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide4 content active">
                   <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2"> 
+                    <div class="cardContent p-2">
                       <div class="img position-relative">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
                         <div class="position-absolute tagContent">artigo</div>
@@ -351,7 +348,7 @@
         <div id="labs" class="carousel slide position-relative hide-desktop" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item heroslide2 active">
-              
+
               <div class="row">
                 <div class="col-12">
                   <div class="cardCases bg1 m-2 position-relative">
@@ -367,10 +364,10 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
             <div class="carousel-item heroslide2">
-              
+
               <div class="row">
                 <div class="col-12">
                   <div class="cardCases bg2 m-2 position-relative">
@@ -386,10 +383,10 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
             <div class="carousel-item heroslide2">
-              
+
               <div class="row">
                 <div class="col-12">
                   <div class="cardCases bg3 m-2 position-relative">
@@ -405,7 +402,7 @@
                   </div>
                 </div>
               </div>
-              
+
 
             </div>
           </div>
@@ -591,7 +588,7 @@
           <div class="w-100 position-relative mt-2">
             <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarouselHome" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>  
+            </a>
             <div class="d-flex flex-row justify-content-center counter3 mt-3">
               <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
             </div>
