@@ -110,17 +110,28 @@
           <div class="col-12">
             <div class="home-portifolio-content">
                 <div class="txt">
-                  <h3>Possuímos um portfolio diverso</h3>
-                  <a href="#"><p class="active">Meios de pagamento</p></a>
+                  <h3><?php echo get_field('titulo_portifolio'); ?></h3>
+                <?php
+                    if( have_rows('portifolio_lista') ){
+                        for($i=0; have_rows('portifolio_lista'); $i++) {
+                          the_row();
+                          echo '<a href="#"><p';
+                          if ($i==0) echo ' class="active"';
+                          echo '>'.get_sub_field('portifolio_titulo').'</p></a>';
+                        }
+                      }
+                ?>
+                <?php echo get_field('portifolio_call_to_action'); ?>
+                  <!-- <a href="#"><p class="active">Meios de pagamento</p></a>
                   <a href="#">
                     <p>Serviços financeiros</p>
                   </a>
                   <a href="#"><p>Manufatura</p></a>
                   <a href="#"><p>Utilities</p></a>
-                  <a href="#"><p>Varejo</p></a>
-                  <div class="botao">
+                  <a href="#"><p>Varejo</p></a> -->
+                  <!-- <div class="botao">
                     <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                  </div>
+                  </div> -->
               </div>
             </div>
           </div>
