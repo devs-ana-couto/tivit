@@ -227,6 +227,14 @@ jQuery(document).ready(function($) {
       $('.numtotal4').html( totalItems4 );
    });
 
+   $('#esgTivit.a-tivit').bind('slid.bs.carousel', function() {
+      currentIndex4 = $('.heroslide4.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive4').html( currentIndex4 );
+      $('.numseparation4').html('  /  ');
+      $('.numtotal4').html( totalItems4 );
+   });
+
 
    //Carousel slick
    $('.slider-for').slick({
@@ -331,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function(){
    if(window.location.pathname === '/staged/tivit/a-tivit' || window.location.pathname === '/staged/tivit/a-tivit/'){
       let items = document.querySelectorAll('.carousel .heroslide4')
       items.forEach((el) => {
-         const minPerSlide = 2
+         const minPerSlide = 1
          let next = el.nextElementSibling
          for (var i=1; i<minPerSlide; i++) {
             if (!next) {
@@ -346,7 +354,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
       let items2 = document.querySelectorAll('.carousel .heroslide2')
       items2.forEach((el) => {
-         const minPerSlide = 1
+         const minPerSlide = 4
          let next = el.nextElementSibling
          for (var i=1; i<minPerSlide; i++) {
             if (!next) {

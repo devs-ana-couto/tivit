@@ -58,7 +58,7 @@ if (!function_exists('ac_bloco_equipe')) {
         $dados = ac_equipe_listar($arg);
 
 
-        $saida .= '<div id="pecConheca" class="lp-tbanks-conheca">';
+        $saida = '<div id="pecConheca" class="lp-tbanks-conheca">';
         $saida .= '<div id="triangle-down"></div>';
         $saida .= '<div class="container">';
         $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
@@ -97,11 +97,12 @@ if (!function_exists('ac_bloco_equipe')) {
         $saida .= '</a>';
         $saida .= '<div class="d-flex flex-row counter2">';
         $saida .= '<div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>';
+        $saida .= '</div>';
         $saida .= '<a class="carousel-control-next bg-transparent w-aut" href="#esg" role="button" data-bs-slide="next">';
         $saida .= '<span class="carousel-control-next-icon" aria-hidden="true"></span>';
         $saida .= '</a>';
+
         
-        $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
