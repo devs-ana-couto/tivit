@@ -198,6 +198,7 @@
 <!-- Conheça a nossa equipe -->
 <?=do_shortcode('[ac-bloco-equipe]');?>
 
+<!-- Bloco ESG + SLIDER -->
 <div id="esgTivit" class="esg a-tivit carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="container">
     <div class="row">
@@ -210,84 +211,43 @@
           <div class="row columnReverseMobile">
             <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
               <div class="lp-tbanks-confira-content">
-                <h3>
-                <strong>ESG:</strong></br>
-                sustentabilidade, diversidade e responsabilidade.
-              </h3>
+                <? the_field('chamada_esg_ativit') ?>
+                <a href="<? the_field('esg_cta_texto_url') ?>"><? the_field('esg_cta_texto') ?></a>
               </div>
             </div>
 
             <div class="col-12 col-md-6">
-
-              <div class="carousel-item heroslide4 active">
-                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
-                    <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                    </p>
+            <?php
+              // Check rows exists.
+              if( have_rows('slider_esg') ):
+                  // Loop through rows.
+                  for($i=0; have_rows('slider_esg'); $i++) : the_row();
+                      $imagem_de_fundo[$i] = get_sub_field('imagem_de_fundo');
+                      $campo_de_texto[$i] = get_sub_field('campo_de_texto');
+                      $texto_cta[$i] = get_sub_field('texto_cta');
+                      $url_cta[$i] = get_sub_field('url_cta');
+              ?>
+                <div class="carousel-item heroslide4 <?=$i==0 ? 'active' : '';  ?>">
+                  <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile" style="background: url('<?=$imagem_de_fundo[$i];?>') no-repeat center center; background-size: cover;">
+                    <div class="lp-tbanks-confira-carousel">
+                      <?=$campo_de_texto[$i];?>
+                      <a href="<?=$url_cta[$i];?>"><?=$texto_cta[$i];?></a>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                  <div class="position-relative">
-                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/mobileslide1.svg" alt="Mobile Slide 1">
-                    <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center">
-                      <h2>MASP SP</h2>
-                      <p class="paragrafo3">
-                        Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                      </p>
-                      <a>CONHEÇA A AÇÃO</a>
+                  <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop" style="background: url('<?=$imagem_de_fundo[$i];?>') no-repeat center center; background-size: cover;">
+                    <div class="position-relative">
+                      <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/mobileslide1.svg" alt="Mobile Slide 1">
+                      <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center">
+                      <?=$campo_de_texto[$i];?>
+                        <a href="<?=$url_cta[$i];?>"><?=$texto_cta[$i];?></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="carousel-item heroslide4">
-                <div class="col-12 lp-tbanks-confira-bg-left  hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
-                    <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                  <div class="position-relative">
-                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/mobileslide1.svg" alt="Mobile Slide 1">
-                    <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center h-100 position-absolute">
-                      <h2>MASP SP</h2>
-                      <p class="paragrafo3">
-                        Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                      </p>
-                      <a>CONHEÇA A AÇÃO</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item heroslide4">
-                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
-                    <p class="paragrafo3">
-                      Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                  <div class="position-relative">
-                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tdx/mobileslide1.svg" alt="Mobile Slide 1">
-                    <div class="lp-tbanks-confira-carousel d-flex flex-column justify-content-center h-100 position-absolute">
-                      <h2>MASP SP</h2>
-                      <p class="paragrafo3">
-                        Apoiar o Masp é contribuir para a manutenção de uma das mais relevantes instituições culturais do país e foi por isso que escolhemos apoiá-lo em 2019.
-                      </p>
-                      <a>CONHEÇA A AÇÃO</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <?php
+                  endfor;
+              endif;
+              ?>
 
             </div> 
 

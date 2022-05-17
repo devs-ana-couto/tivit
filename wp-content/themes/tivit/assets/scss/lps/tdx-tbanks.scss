@@ -608,7 +608,7 @@
           line-height: 1.3;
           font-weight: 400;
           color: white;
-          margin-bottom: 87px;
+          margin-bottom: 40px;
           width: 500px;
           max-width: 100%;
           @media(max-width: 768px){
@@ -631,9 +631,30 @@
         strong{
           font-weight: 600;
         }
+        a{
+          background: transparent;
+          border: white solid 1px;
+          color: white;
+          padding: 14px 34px;
+          text-decoration: none;
+          border-radius: 30px;
+          font-size: 14px;
+        }
       }
     }
     .lp-tbanks-confira-carousel{
+      a{
+        text-decoration: unset;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: white !important;
+        margin-top: 18px;
+        &:after{
+          content: url('../../assets/images/landing/tdx/arrow-forward-white.svg');
+          margin-left: 10px;
+        }
+      }
       @media(max-width: 768px){
         top: 0 !important;
         padding: 28px;
@@ -650,18 +671,6 @@
           font-size: 16px;
           color: white;
           line-height: 1.8;
-        }
-        a{
-          text-decoration: unset;
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: 14px;
-          color: white !important;
-          margin-top: 18px;
-          &:after{
-            content: url('../../assets/images/landing/tdx/arrow-forward-white.svg');
-            margin-left: 10px;
-          }
         }
       }
     }

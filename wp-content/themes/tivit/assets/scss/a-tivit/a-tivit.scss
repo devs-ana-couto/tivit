@@ -436,7 +436,7 @@
         flex-direction: row;
         justify-content: center;
     
-        bottom: 70px;
+        bottom: 50px;
         margin: 0 auto;
         width: 110px;
         @media(max-width: 1024px){
@@ -638,10 +638,9 @@
         .confira{
             margin: 100px auto 13px auto;
             h2{
-            font-size: 44px;
-            line-height: 50px;
-            color: white;
-            
+                font-size: 44px;
+                line-height: 50px;
+                color: white;            
             }
         }
         .detalhes{
@@ -775,7 +774,7 @@
                     justify-content: flex-end;
                     text-align: right;
                     padding-right: 50px;
-                    padding-bottom: 60px;
+                    padding-bottom: 50px;
                     h2{
                         font-size: 36px;
                         line-height: 42px;
@@ -787,6 +786,7 @@
                         margin: 0 auto;
                         color: white;
                         max-width: 100%;
+                        margin-bottom: 20px;
                     }
                 }
                 .slide1{
