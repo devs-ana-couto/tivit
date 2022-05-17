@@ -122,16 +122,6 @@
                       }
                 ?>
                 <?php echo get_field('portifolio_call_to_action'); ?>
-                  <!-- <a href="#"><p class="active">Meios de pagamento</p></a>
-                  <a href="#">
-                    <p>Serviços financeiros</p>
-                  </a>
-                  <a href="#"><p>Manufatura</p></a>
-                  <a href="#"><p>Utilities</p></a>
-                  <a href="#"><p>Varejo</p></a> -->
-                  <!-- <div class="botao">
-                    <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                  </div> -->
               </div>
             </div>
           </div>
@@ -147,7 +137,7 @@
   </div>
 </section>
 
-<div class="home-content">
+<!-- <div class="home-content">
 
   <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
   <div id="triangle-down"></div>
@@ -155,11 +145,10 @@
 
   <div class="container pd">
     <div class="title">
-      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
+      <h2 class="titleText text-center"><?php _e('NOSSOS CONTEÚDOS'); ?></h2>
     </div>
 
     <div class="row hide-mobile">
-      <!-- content 1 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="img position-relative">
@@ -185,9 +174,6 @@
           </div>
         </div>
       </div>
-      <!-- // content 1 -->
-
-      <!-- content 2 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="title">
@@ -216,8 +202,6 @@
           </div>
         </div>
       </div>
-      <!-- // content 2 -->
-      <!-- content 3 -->
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="title">
@@ -246,10 +230,8 @@
           </div>
         </div>
       </div>
-      <!-- // content 3 -->
     </div>
 
-    <!-- mobile slide -->
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
@@ -343,7 +325,9 @@
       <button class="btncontent">VER TODOS OS NOSSOS CONTEÚDOS</button>
     </div>
   </div>
-</div>
+</div> -->
+
+<?php echo do_shortcode('[ac-bloco-conteudo]'); ?>
 
 <div class="home-cases">
   <div class="d-flex justify-content-center transitionCases position-absolute hide-mobile"></div>
