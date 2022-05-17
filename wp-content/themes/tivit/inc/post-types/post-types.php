@@ -105,6 +105,25 @@ function create_posts_taxonomies(){
 	register_taxonomy( 'por-desafio', array( 'solucoes' ), $args );
 
 
+	$labels = array(
+		'name'              => __( 'Categorias', ''),
+		'singular_name'     => __( 'Categoria', ''),
+		'add_new_item'      => __( 'Adicionar', ''),
+		'new_item_name'     => __( 'Nova', ''),
+		'edit_item'         => __( 'Editar', ''),
+		'menu_name'         => __( 'Categorias', ''),
+	);
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'tipo-faq' ),
+	);
+	register_taxonomy( 'tipo-faq', array( 'faq' ), $args );
+
+
 }
 
 
@@ -194,6 +213,31 @@ function create_solucoes() {
 			'rewrite' => array('slug' => 'solucoes'),
 			'supports' => array( 'title', 'thumbnail'),
 			// 'taxonomies' => array('category')
+		)
+	);
+}
+
+
+// Faq
+add_action( 'init', 'create_faq' );
+function create_faq() {
+	register_post_type( 'faq',
+	    array(
+	      	'labels' => array(
+		        'name' => __( 'FAQs', '' ),
+		        'singular_name' => __( 'FAQ', '' ),
+				'add_new' => __( 'Adicionar FAQ', '' ),
+				'add_new_item' => __( 'Adicionar Nova FAQ', '' ),
+				'edit_item' => __( 'Editar FAQ', '' ),
+				'new_item' => __( 'Nova FAQ', '' ),
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-paperclip',
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'faq'),
+	        'supports' => array('title','editor'),
+			'taxonomies' => array('tipos-faq')
 		)
 	);
 }

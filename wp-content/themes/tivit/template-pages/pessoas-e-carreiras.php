@@ -117,7 +117,7 @@
                     Das vagas preenchidas com promoção interna
                   </p>
               </div>
-            </div>  
+            </div>
 
             <!-- Mobile section -->
             <div class="col-12 col-md-4 hide-desktop">
@@ -212,7 +212,7 @@
 <div id="tdx" class="valorizacao">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
+      <h2 class="title text-center">
         O QUE VALORIZAMOS E VIVENCIAMOS
       </h2>
     </div>
@@ -228,7 +228,7 @@
                 <? the_field('item_1_titulo_vv') ?>
             </h2>
             <p>
-                <? the_field('item_1_descricao_vv') ?> 
+                <? the_field('item_1_descricao_vv') ?>
             </p>
           </div>
         </div>
@@ -243,7 +243,7 @@
                 <? the_field('item_2_titulo_vv') ?>
             </h2>
             <p>
-                <? the_field('item_2_descricao_vv') ?> 
+                <? the_field('item_2_descricao_vv') ?>
             </p>
           </div>
         </div>
@@ -269,7 +269,7 @@
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
-              
+
               <div class="carousel-item heroslide4 content active">
                 <div class="col-11 m-0 p-0">
                   <div class="box">
@@ -334,7 +334,7 @@
     <div class="carousel-inner">
         <?
             if( have_rows('depoimentos_pc') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('depoimentos_pc'); $i++) : the_row();
                 $imagem_url_item[$i] = get_sub_field('imagem');
                 $name_item[$i] = get_sub_field('nome');
@@ -393,17 +393,17 @@
 <div id="pecOferece" class="lp-tbanks-conheca">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
+      <h2 class="title text-center">
         O que a tivit oferece
       </h2>
     </div>
 
-    <div class="lp-tbanks-services text-center m-0 hide-mobile">      
- 
+    <div class="lp-tbanks-services text-center m-0 hide-mobile">
+
       <div class="row">
         <?
             if( have_rows('itens_opc') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('itens_opc'); $i++) : the_row();
                 $name_itemp[$i] = get_sub_field('nome');
                 $description_itemp[$i] = get_sub_field('descricao');
@@ -421,14 +421,14 @@
     </div>
 
     <!-- Bloco Mobile Carrossel -->
-    <div class="lp-tbanks-services text-center m-0 hide-desktop"> 
+    <div class="lp-tbanks-services text-center m-0 hide-desktop">
       <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
                 <?
                     if( have_rows('itens_opc') ):
-                    // Loop through rows.   
+                    // Loop through rows.
                         for($i=0; have_rows('itens_opc'); $i++) : the_row();
                         $name_itemp[$i] = get_sub_field('nome');
                         $description_itemp[$i] = get_sub_field('descricao');
@@ -449,7 +449,7 @@
     </div>
 
     <div class="insiderBlock d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
+      <h2 class="title text-center">
         Nossos Benefícios
       </h2>
     </div>
@@ -458,7 +458,7 @@
     <div class="row hide-mobile">
         <?
             if( have_rows('itens_nb') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('itens_nb'); $i++) : the_row();
                 $icone_itemnb[$i] = get_sub_field('icone');
                 $name_itemnb[$i] = get_sub_field('nome');
@@ -553,7 +553,7 @@
     <div id="triangle-down"></div>
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
+      <h2 class="title text-center">
         CONHEÇA A NOSSA EQUIPE
       </h2>
     </div>
@@ -769,7 +769,7 @@
   <div id="triangle-down"></div>
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
+      <h2 class="title text-center">
         VAGAS
       </h2>
     </div>
@@ -805,59 +805,8 @@
       </a>
     </div>
 
-    <div id="faq" class="d-flex flex-column align-items-center justify-content-center insiderBlock">
-      <div class="d-flex justify-content-center align-items-center flex-column w-100">
-        <h2 class="title text-center"> 
-          ainda tem dúvidas? veja as perguntas frequentes:
-        </h2>
-      </div>
+    <?php echo do_shortcode('[ac-bloco-faq]'); ?>
 
-      <div class="w-100 block">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Plano de carreira, regime de trabalho e benefícios?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Com o que a TIVIT trabalha?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Onde ficam os escritórios da TIVIT?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                Quais são as unidades de negócios (BUs) da TIVIT?
-              </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 </div>
 
