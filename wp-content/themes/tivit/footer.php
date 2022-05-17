@@ -13,7 +13,7 @@
               )
             );
           ?>
-        </div>  
+        </div>
 
         <div class="col-12 col-md-2 footer-logo">
           <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-red.png" width="148px" height="21px" alt="Logo Tivit"></a>
@@ -29,7 +29,7 @@
             <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
           </div>
 
-          <div class="language">
+          <div class="language" style="display:none;">
             EN/ES
           </div>
 
@@ -57,7 +57,7 @@
           <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube"></a>
 
           </p>
-            
+
         </div>
 
         <div class="col-12 hr">
@@ -90,9 +90,9 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tdx.svg" width="68.28px" height="30px" alt="Tdx Tivit">
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tivit-labs.svg" width="188.4" height="18px" alt="Tivit Labs">
-        
+
         </div>
-          
+
       </div>
     </div>
   </div>
