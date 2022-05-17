@@ -390,7 +390,9 @@
         }
     }
 }
-
+.modal-body{
+    height: 500px;
+}
 // Carousel
 #esgTivit{
     margin-top: 50px;
@@ -861,9 +863,6 @@
         background: url('../../assets/images/a-tivit/inovar-bg.png') no-repeat center center;
         height: 675px;
         background-size: cover;
-        .home-pessoas-e-carreiras-title{
-            margin-top: 217px;
-        }
     }
 }
 

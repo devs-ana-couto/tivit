@@ -2741,6 +2741,9 @@ div {
     .a-tivit-experts .a-tivit-experts-desc p {
       margin-bottom: 0; }
 
+.modal-body {
+  height: 500px; }
+
 #esgTivit {
   margin-top: 50px; }
   @media (max-width: 760px) {
@@ -3072,9 +3075,7 @@ div {
   .home-pessoas-e-carreiras.inovar {
     background: url("../../assets/images/a-tivit/inovar-bg.png") no-repeat center center;
     height: 675px;
-    background-size: cover; }
-    .home-pessoas-e-carreiras.inovar .home-pessoas-e-carreiras-title {
-      margin-top: 217px; } }
+    background-size: cover; } }
 
 #ativitClientes {
   /* medium and up screens */ }

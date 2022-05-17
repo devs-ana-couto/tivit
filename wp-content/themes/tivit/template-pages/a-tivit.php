@@ -1,6 +1,17 @@
 <?php /* Template Name: A Tivit */ ?>
 <?php get_header(); ?>
 
+<!-- Modal -->
+<div class="modal fade" id="videoOpen" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoOpenLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?the_field('assista_ao_reel');?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="a-tivit-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); ?>') no-repeat center center; background-size: cover;">
   <div class="a-tivit-hero-title">
     <div class="container">
@@ -21,14 +32,18 @@
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
   <div class="botaoReels m-0 hide-mobile">
-    <a href="#">
+    <a href="" data-bs-toggle="modal" data-bs-target="#videoOpen">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
-      <p>Assista ao reel</p>
+      <p>
+        <a href="" data-bs-toggle="modal" data-bs-target="#videoOpen">Assista ao reel</a>
+      </p>
     </a>
   </div>
   <div class="botaoReels m-0 hide-desktop">
-    <a href="#">
-      <p>Assista ao reel</p>
+    <a href="" data-bs-toggle="modal" data-bs-target="#videoOpen">
+      <p>
+        Assista ao reel
+      </p>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
     </a>
   </div>
@@ -336,10 +351,10 @@
     <div class="row">
       <div class="col-12">
         <div class="home-pessoas-e-carreiras-title">
-          <h2>pronto para inovar?</h2>
+          <?the_field('chamada_final_ativit')?>
         </div>
         <div class="botao">
-          <a href="#" class="btn btn-primary">Fale com a gente!</a>
+          <a href="<?the_field('cta_url_final_ativit')?>" class="btn btn-primary"><?the_field('cta_texto_final_ativit')?></a>
         </div>
       </div>
     </div>
