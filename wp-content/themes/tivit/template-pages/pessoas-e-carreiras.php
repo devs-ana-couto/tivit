@@ -765,47 +765,9 @@
 
 </div>
 
-<div id="pecVagas">
-  <div id="triangle-down"></div>
-  <div class="container">
-    <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center">
-        VAGAS
-      </h2>
-    </div>
-    <div class="row items m-0 m-md-auto">
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-    </div>
-    <div class="btnCta d-flex justify-content-center align-items-center w-100">
-      <a>
-        Ver todas AS VAGAS
-      </a>
-    </div>
+<?php echo do_shortcode('[ac-bloco-vaga]'); ?>
 
-    <?php echo do_shortcode('[ac-bloco-faq]'); ?>
+<?php echo do_shortcode('[ac-bloco-faq]'); ?>
 
   </div>
 </div>

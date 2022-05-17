@@ -241,3 +241,27 @@ function create_faq() {
 		)
 	);
 }
+
+
+// Vagas
+add_action( 'init', 'create_vaga' );
+function create_vaga() {
+	register_post_type( 'vaga',
+	    array(
+	      	'labels' => array(
+		        'name' => __( 'Vagas', '' ),
+		        'singular_name' => __( 'Vaga', '' ),
+				'add_new' => __( 'Adicionar Vaga', '' ),
+				'add_new_item' => __( 'Adicionar Nova Vaga', '' ),
+				'edit_item' => __( 'Editar Vaga', '' ),
+				'new_item' => __( 'Nova Vaga', '' ),
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-megaphone',
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'vaga'),
+	        'supports' => array('title','editor'),
+		)
+	);
+}
