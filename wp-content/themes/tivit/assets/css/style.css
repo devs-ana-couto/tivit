@@ -41,7 +41,7 @@ html, body, * {
     line-height: 30px; }
   html h6, body h6, * h6 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700; 
     line-height: 30.42px; }
   html .button, body .button, * .button {
     font-size: 20px;
