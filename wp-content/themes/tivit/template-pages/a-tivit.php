@@ -330,7 +330,7 @@
                   <div id="ativitCustomerCarousel" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner" role="listbox">
                         <? 
-                            if( have_rows(' certificacoes_ativit') ):
+                            if( have_rows('certificacoes_ativit') ):
                             // Loop through rows.
                                 for($i=0; have_rows('certificacoes_ativit'); $i++) : the_row();
                                 $img_url[$i] = get_sub_field('logo');
