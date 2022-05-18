@@ -255,12 +255,6 @@ $duration: 250ms;
   .card{
     border-color: transparent;
     margin: 10px;
-    .card-img{
-      img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-    }
     .content{
       border: 1px solid #CAD2D8;
       padding: 30px;
@@ -404,6 +398,7 @@ $duration: 250ms;
       font-weight: 600;
       padding: 15px 40px 15px 40px;
       transition: .2s all;
+      text-decoration: none;
       &:hover{
         background: $vermelho-tivit;
         transition: .2s all;

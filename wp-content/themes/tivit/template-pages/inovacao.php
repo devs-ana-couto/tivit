@@ -73,26 +73,29 @@
             <? endfor; endif; ?>
     </div>
 
-    <div class="aboveBlock d-flex justify-content-center">
-      <div class="textAbove">
-        <p>Juntas, nossas marcas tem skills para atender nossos clientes com diversas soluções:</p>
+    <!-- <div class="esconder-por-hora">
+      <div class="aboveBlock d-flex justify-content-center">
+        <div class="textAbove">
+          <p>Juntas, nossas marcas tem skills para atender nossos clientes com diversas soluções:</p>
+        </div>
       </div>
-    </div>
-    <div class="w-100"> 
-      <div class="d-flex justify-content-center flex-row services">
-        <? 
-            if( have_rows('skills_inovacao_ventures') ):
-            // Loop through rows.
-                for($i=0; have_rows('skills_inovacao_ventures'); $i++) : the_row();
-                $skill[$i] = get_sub_field('skill');
-        ?>
-        <em><?=$skill[$i]?></em>
+      <div class="w-100"> 
+        <div class="d-flex justify-content-center flex-row services">
+          <? 
+              if( have_rows('skills_inovacao_ventures') ):
+              // Loop through rows.
+                  for($i=0; have_rows('skills_inovacao_ventures'); $i++) : the_row();
+                  $skill[$i] = get_sub_field('skill');
+          ?>
+          <em><?=$skill[$i]?></em>
 
-      <? endfor; endif; ?>
+        <? endfor; endif; ?>
+        </div>
       </div>
-    </div>
+    </div> -->
+
     <div class="d-flex justify-content-center mt-5 w-100">
-      <a href="/staged/tivit/ventures" class="button">Conheça mais sobre ventures</a>
+      <a href="/staged/tivit/ventures" class="button">CONHEÇA MAIS SOBRE VENTURES</a>
     </div>
     <div id="triangle-down"></div>
   </div>
@@ -155,7 +158,7 @@
 
 <div class="btnLabsCta">
   <div class="cta">
-    <a href="/staged/tivit/tivit-labs">Conheça mais sobre TIVIT LABS</a>
+    <a href="<?the_field('cta_url_inovacao')?>" class="button"><?the_field('cta_texto_inovacao')?></a>
   </div>
 </div>
 
@@ -173,8 +176,8 @@
       <p>
         <?the_field('descricao_labs3d_inovacao')?>
       </p>
-      <a>
-        começar o tour
+      <a href="<? the_field('cta_url_labs3d_inovacao') ?>">
+        <? the_field('cta_texto_labs3d_inovacao') ?>
       </a>
     </div>
   </div>
@@ -258,7 +261,7 @@
     </div>
 
     <div class="cta w-100 d-flex align-items-center justify-content-center">
-      <a href="/staged/tivit/tdx" class="button">Conheça MAIS sobre a tdx</a>
+      <a href="<?the_field('cta_url_tdx_inovacao')?>" class="button"><?the_field('cta_texto_tdx_inovacao')?></a>
     </div>
   </div>
 </div>

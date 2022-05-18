@@ -3845,9 +3845,6 @@ div {
   #carouselCustom .card {
     border-color: transparent;
     margin: 10px; }
-    #carouselCustom .card .card-img img {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
     #carouselCustom .card .content {
       border: 1px solid #CAD2D8;
       padding: 30px;
@@ -3952,7 +3949,8 @@ div {
     cursor: pointer;
     font-weight: 600;
     padding: 15px 40px 15px 40px;
-    transition: .2s all; }
+    transition: .2s all;
+    text-decoration: none; }
     #tour .txt a:hover {
       background: #F20024;
       transition: .2s all; }
