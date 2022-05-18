@@ -47,7 +47,7 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Nota Glassdoor
+                    <?php _e('Nota Glassdoor'); ?>
                   </p>
               </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-start align-items-center">
                       <p class="custom-text">
-                        Nota Glassdoor
+                        <?php _e('Nota Glassdoor'); ?>
                       </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Recomendaria para um amigo
+                    <?php _e('Recomendaria para um amigo'); ?>
                   </p>
               </div>
             </div>
@@ -100,7 +100,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-center align-items-center">
                       <p class="custom-text">
-                        Recomendaria para um amigo
+                        <?php _e('Recomendaria para um amigo'); ?>
                       </p>
                   </div>
                 </div>
@@ -114,10 +114,10 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Das vagas preenchidas com promoção interna
+                    <?php _e('Das vagas preenchidas com promoção interna'); ?>
                   </p>
               </div>
-            </div>  
+            </div>
 
             <!-- Mobile section -->
             <div class="col-12 col-md-4 hide-desktop">
@@ -132,7 +132,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-center align-items-center">
                       <p class="custom-text">
-                        Das vagas preenchidas com promoção interna
+                        <?php _e('Das vagas preenchidas com promoção interna'); ?>
                       </p>
                   </div>
                 </div>
@@ -176,26 +176,21 @@
           <div class="col-12">
             <div class="home-portifolio-content">
                 <div class="txt">
-                  <h3 class="hide-mobile">conheça nossos programas</h3>
-                  <a href="#"><p class="active">TIVIT MULTICLOUD</p></a>
-                  <a href="#"><p>ACELERA DEVS</p></a>
-                  <a href="#"><p>Programa de Aceleração de Carreira + MOMENTO UP</p></a>
-                  <a href="#"><p>Instituto TIVIT</p></a>
-                  <div class="d-flex justify-content-center align-items-center flex-column hide-desktop">
-                    <div class="cta">
-                      <small>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
-                      foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
-                      profissionalmente dentro da TIVIT. </small>
-                    </div>
-                  </div>
+                  <h3><?php echo get_field('titulo_portifolio'); ?></h3>
+                <?php
+                    if( have_rows('portifolio_lista') ){
+                        for($i=0; have_rows('portifolio_lista'); $i++) {
+                          the_row();
+                          echo '<a href="#"><p';
+                          if ($i==0) echo ' class="active"';
+                          echo '>'.get_sub_field('portifolio_titulo').'</p></a>';
+                        }
+                      }
+                ?>
+                <?php echo get_field('portifolio_call_to_action'); ?>
               </div>
             </div>
           </div>
-          <div class="col-12 hide-mobile">
-            <p class="position-absolute desc"> Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
-              foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
-              profissionalmente dentro da TIVIT. </p>
-        </div>
           <div class="d-flex justify-content-center mascaraDobra3 position-absolute hide-desktop">
             <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/portmaskmobile.svg" alt="mask">
           </div>
@@ -212,8 +207,8 @@
 <div id="tdx" class="valorizacao">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
-        O QUE VALORIZAMOS E VIVENCIAMOS
+      <h2 class="title text-center">
+        <?php _e('O QUE VALORIZAMOS E VIVENCIAMOS'); ?>
       </h2>
     </div>
 
@@ -228,7 +223,7 @@
                 <? the_field('item_1_titulo_vv') ?>
             </h2>
             <p>
-                <? the_field('item_1_descricao_vv') ?> 
+                <? the_field('item_1_descricao_vv') ?>
             </p>
           </div>
         </div>
@@ -243,7 +238,7 @@
                 <? the_field('item_2_titulo_vv') ?>
             </h2>
             <p>
-                <? the_field('item_2_descricao_vv') ?> 
+                <? the_field('item_2_descricao_vv') ?>
             </p>
           </div>
         </div>
@@ -269,7 +264,7 @@
     <div class="row mx-auto my-auto justify-content-center hide-desktop">
       <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
           <div class="carousel-inner" role="listbox">
-              
+
               <div class="carousel-item heroslide4 content active">
                 <div class="col-11 m-0 p-0">
                   <div class="box">
@@ -334,7 +329,7 @@
     <div class="carousel-inner">
         <?
             if( have_rows('depoimentos_pc') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('depoimentos_pc'); $i++) : the_row();
                 $imagem_url_item[$i] = get_sub_field('imagem');
                 $name_item[$i] = get_sub_field('nome');
@@ -393,17 +388,17 @@
 <div id="pecOferece" class="lp-tbanks-conheca">
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
-        O que a tivit oferece
+      <h2 class="title text-center">
+        <?php _e('O que a tivit oferece'); ?>
       </h2>
     </div>
 
-    <div class="lp-tbanks-services text-center m-0 hide-mobile">      
- 
+    <div class="lp-tbanks-services text-center m-0 hide-mobile">
+
       <div class="row">
         <?
             if( have_rows('itens_opc') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('itens_opc'); $i++) : the_row();
                 $name_itemp[$i] = get_sub_field('nome');
                 $description_itemp[$i] = get_sub_field('descricao');
@@ -421,14 +416,14 @@
     </div>
 
     <!-- Bloco Mobile Carrossel -->
-    <div class="lp-tbanks-services text-center m-0 hide-desktop"> 
+    <div class="lp-tbanks-services text-center m-0 hide-desktop">
       <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
                 <?
                     if( have_rows('itens_opc') ):
-                    // Loop through rows.   
+                    // Loop through rows.
                         for($i=0; have_rows('itens_opc'); $i++) : the_row();
                         $name_itemp[$i] = get_sub_field('nome');
                         $description_itemp[$i] = get_sub_field('descricao');
@@ -449,8 +444,8 @@
     </div>
 
     <div class="insiderBlock d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
-        Nossos Benefícios
+      <h2 class="title text-center">
+        <?php _e('Nossos Benefícios'); ?>
       </h2>
     </div>
 
@@ -458,7 +453,7 @@
     <div class="row hide-mobile">
         <?
             if( have_rows('itens_nb') ):
-            // Loop through rows.   
+            // Loop through rows.
                 for($i=0; have_rows('itens_nb'); $i++) : the_row();
                 $icone_itemnb[$i] = get_sub_field('icone');
                 $name_itemnb[$i] = get_sub_field('nome');
@@ -486,60 +481,33 @@
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
+              <?
+                  if( have_rows('itens_nb') ) {
+                      for($i=0; have_rows('itens_nb'); $i++) {
+                        the_row();
+                        $icone_itemnb[$i] = get_sub_field('icone');
+                        $name_itemnb[$i] = get_sub_field('nome');
+                        $description_itemnb[$i] = get_sub_field('descricao');
+              ?>
                 <div class="carousel-item heroslide5 active">
                   <div class="col-11 col-md-3">
                     <div class="box">
                       <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/heart.svg" alt="Privally">
+                        <img src="<?php echo $icone_itemnb[$i]; ?>" alt="Privally">
                         <div class="content">
-                          <h2>CESTA DE BENEFÍCIOS</h2>
+                          <h2><?php echo $name_itemnb[$i]?></h2>
                           <p>
-                            Vale Refeição/Alimentação<br>
-                            Vale transporte<br>
-                            Estacionamento
+                            <?php echo $description_itemnb[$i]?>
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item heroslide5">
-                  <div class="col-11 col-md-3">
-                    <div class="box">
-                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/hand-heart.svg" alt="Iambda">
-                        <div class="content">
-                          <h2>CUIDADO & APOIO</h2>
-                          <p>
-                            Auxílio Creche<br>
-                            Auxílio Home Office<br>
-                            Parcerias com Universidades e Escolas de Idioma<br>
-                            Campanha #EUINDICO<br>
-                            PPR - Programa de Participação nos Resultados
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide5">
-                  <div class="col-11 col-md-3">
-                    <div class="box">
-                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/shield.svg" alt="Stone Age">
-                        <div class="content">
-                          <h2>SAÚDE & VIDA</h2>
-                          <p>
-                            Plano de Saúde<br>
-                            Plano Odontológico<br>
-                            Convênio Farmácia<br>
-                            Seguro de Vida
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <?php
+                      }
+                    }
+                ?>
             </div>
           </div>
         </div>
@@ -551,191 +519,6 @@
 <!-- Conheça a nossa equipe -->
 <?=do_shortcode('[ac-bloco-equipe]');?>
 
-<!-- depoimentos internos -->
-<div id="pecInterno">
-
-  <div id="pecInternoDepoimentos" class="lp-tbanks-depoimentos">
-    <div id="recipeCarouselInterno" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item heroslide3 active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="lp-tbanks-depoimentos-content text-center ">
-                  <div class="lp-tbanks-depoimentos-autor">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                    <h3>Fulano de Tal da Silva</h3>
-                    <h4>CTO, trabalha há 5 anos na TIVIT.</h4>
-                    <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                    </div>
-                    <p>
-                    ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item heroslide3">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-              <div class="lp-tbanks-depoimentos-content text-center ">
-                  <div class="lp-tbanks-depoimentos-autor">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                    <h3>Fulano de Tal da Silva</h3>
-                    <h4>CTO, trabalha há 5 anos na TIVIT.</h4>
-                    <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                    </div>
-                    <p>
-                    ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item heroslide3">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="lp-tbanks-depoimentos-content text-center ">
-                  <div class="lp-tbanks-depoimentos-autor">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/cliente.svg" alt="Tbanks Saiba Mais">
-                    <h3>Fulano de Tal da Silva</h3>
-                    <h4>CTO, trabalha há 5 anos na TIVIT.</h4>
-                    <div class="redes d-flex flex-row justify-content-center align-items-center w-100">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/git.svg" alt="Git" class="img-fluid">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/mundo.svg" alt="Mundo" class="img-fluid">
-                    </div>
-                    <p>
-                    ”Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.”
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex flex-row justify-content-center counter3 mt-3 mobileRelative position-relative">
-        <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarouselInterno" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#recipeCarouselInterno" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div id="pecVagas">
-  <div id="triangle-down"></div>
-  <div class="container">
-    <div class="d-flex justify-content-center align-items-center flex-column w-100">
-      <h2 class="title text-center"> 
-        VAGAS
-      </h2>
-    </div>
-    <div class="row items m-0 m-md-auto">
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="card">
-          <small>Profissional iniciante</small>
-          <h2>Package Consultant-SAP BW Analytics</h2>
-          <p>Descritivo breve lorem ipsum dolor.</p>
-          <a>confira esta vaga</a>
-        </div>
-      </div>
-    </div>
-    <div class="btnCta d-flex justify-content-center align-items-center w-100">
-      <a>
-        Ver todas AS VAGAS
-      </a>
-    </div>
-
-    <div id="faq" class="d-flex flex-column align-items-center justify-content-center insiderBlock">
-      <div class="d-flex justify-content-center align-items-center flex-column w-100">
-        <h2 class="title text-center"> 
-          ainda tem dúvidas? veja as perguntas frequentes:
-        </h2>
-      </div>
-
-      <div class="w-100 block">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Plano de carreira, regime de trabalho e benefícios?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Com o que a TIVIT trabalha?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Onde ficam os escritórios da TIVIT?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                Quais são as unidades de negócios (BUs) da TIVIT?
-              </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 </div>
 

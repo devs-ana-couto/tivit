@@ -122,16 +122,6 @@
                       }
                 ?>
                 <?php echo get_field('portifolio_call_to_action'); ?>
-                  <!-- <a href="#"><p class="active">Meios de pagamento</p></a>
-                  <a href="#">
-                    <p>Serviços financeiros</p>
-                  </a>
-                  <a href="#"><p>Manufatura</p></a>
-                  <a href="#"><p>Utilities</p></a>
-                  <a href="#"><p>Varejo</p></a> -->
-                  <!-- <div class="botao">
-                    <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
-                  </div> -->
               </div>
             </div>
           </div>
@@ -147,15 +137,12 @@
   </div>
 </section>
 
-<div class="home-content">
-
+<div id="contentTdx" class="home-content content-inovacao">
   <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
   <div id="triangle-down"></div>
-
-  <?=do_shortcode('[ac-bloco-conteudo]');?>
-             
+    <?=do_shortcode('[ac-bloco-conteudo]');?>
+  </div>
 </div>
-
 
 <div class="home-cases">
   <div class="d-flex justify-content-center transitionCases position-absolute hide-mobile"></div>
@@ -184,12 +171,11 @@
       <div class="row">
         <div class="col-12">
           <div class="home-pessoas-e-carreiras-title">
-            <h2>Pessoas e Carreiras</h2>
-            <p class="">Você está preparado para o futuro?
-            </br>Aqui na TIVIT, temos a resposta que você precisa.</p>
+            <h2><?php _e('Pessoas e Carreiras'); ?></h2>
+            <p class=""><?php _e('Você está preparado para o futuro?</br>Aqui na TIVIT, temos a resposta que você precisa.'); ?></p>
           </div>
           <div class="botao">
-            <a href="#">Saiba mais</a>
+            <a href="<?php echo get_site_url();?>/pessoas-e-carreiras/"><?php _e('Saiba mais'); ?></a>
           </div>
         </div>
       </div>

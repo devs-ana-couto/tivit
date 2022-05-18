@@ -1988,7 +1988,7 @@ div {
         background: url("../../assets/images/pessoas-e-carreiras/portmobile.jpg") no-repeat center center;
         background-size: cover; } }
   #pecPort .home-portifolio .home-portifolio-content .txt {
-    max-width: 500px; }
+    height: 530px; }
   #pecPort .home-portifolio .home-portifolio-content .cta {
     text-align: center;
     width: 250px;

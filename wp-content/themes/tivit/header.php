@@ -123,7 +123,7 @@
           ?>
         </div>
         <div class="col-4 col-md-2 header-options hide-mobile">
-          <div class="language">
+          <div class="language" style="display:none;">
             <a href="#"><p class="en">EN</p></a>
             <a href="#"><p class="es">ES</p></a>
           </div>
