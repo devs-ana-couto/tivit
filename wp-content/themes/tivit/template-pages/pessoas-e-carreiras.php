@@ -47,7 +47,7 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Nota Glassdoor
+                    <?php _e('Nota Glassdoor'); ?>
                   </p>
               </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-start align-items-center">
                       <p class="custom-text">
-                        Nota Glassdoor
+                        <?php _e('Nota Glassdoor'); ?>
                       </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Recomendaria para um amigo
+                    <?php _e('Recomendaria para um amigo'); ?>
                   </p>
               </div>
             </div>
@@ -100,7 +100,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-center align-items-center">
                       <p class="custom-text">
-                        Recomendaria para um amigo
+                        <?php _e('Recomendaria para um amigo'); ?>
                       </p>
                   </div>
                 </div>
@@ -114,7 +114,7 @@
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Das vagas preenchidas com promoção interna
+                    <?php _e('Das vagas preenchidas com promoção interna'); ?>
                   </p>
               </div>
             </div>
@@ -132,7 +132,7 @@
                 <div class="col-6">
                   <div class="w-100 h-100 d-flex justify-content-center align-items-center">
                       <p class="custom-text">
-                        Das vagas preenchidas com promoção interna
+                        <?php _e('Das vagas preenchidas com promoção interna'); ?>
                       </p>
                   </div>
                 </div>
@@ -176,26 +176,21 @@
           <div class="col-12">
             <div class="home-portifolio-content">
                 <div class="txt">
-                  <h3 class="hide-mobile">conheça nossos programas</h3>
-                  <a href="#"><p class="active">TIVIT MULTICLOUD</p></a>
-                  <a href="#"><p>ACELERA DEVS</p></a>
-                  <a href="#"><p>Programa de Aceleração de Carreira + MOMENTO UP</p></a>
-                  <a href="#"><p>Instituto TIVIT</p></a>
-                  <div class="d-flex justify-content-center align-items-center flex-column hide-desktop">
-                    <div class="cta">
-                      <small>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
-                      foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
-                      profissionalmente dentro da TIVIT. </small>
-                    </div>
-                  </div>
+                  <h3><?php echo get_field('titulo_portifolio'); ?></h3>
+                <?php
+                    if( have_rows('portifolio_lista') ){
+                        for($i=0; have_rows('portifolio_lista'); $i++) {
+                          the_row();
+                          echo '<a href="#"><p';
+                          if ($i==0) echo ' class="active"';
+                          echo '>'.get_sub_field('portifolio_titulo').'</p></a>';
+                        }
+                      }
+                ?>
+                <?php echo get_field('portifolio_call_to_action'); ?>
               </div>
             </div>
           </div>
-          <div class="col-12 hide-mobile">
-            <p class="position-absolute desc"> Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de verdade! Ele
-              foi desenvolvido para proporcionar a todos colaboradores a possibilidade de crescer
-              profissionalmente dentro da TIVIT. </p>
-        </div>
           <div class="d-flex justify-content-center mascaraDobra3 position-absolute hide-desktop">
             <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/portmaskmobile.svg" alt="mask">
           </div>
@@ -213,7 +208,7 @@
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center">
-        O QUE VALORIZAMOS E VIVENCIAMOS
+        <?php _e('O QUE VALORIZAMOS E VIVENCIAMOS'); ?>
       </h2>
     </div>
 
@@ -394,7 +389,7 @@
   <div class="container">
     <div class="d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center">
-        O que a tivit oferece
+        <?php _e('O que a tivit oferece'); ?>
       </h2>
     </div>
 
@@ -450,7 +445,7 @@
 
     <div class="insiderBlock d-flex justify-content-center align-items-center flex-column w-100">
       <h2 class="title text-center">
-        Nossos Benefícios
+        <?php _e('Nossos Benefícios'); ?>
       </h2>
     </div>
 
@@ -486,60 +481,33 @@
         <div class="row mx-auto my-auto justify-content-center">
             <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" role="listbox">
+              <?
+                  if( have_rows('itens_nb') ) {
+                      for($i=0; have_rows('itens_nb'); $i++) {
+                        the_row();
+                        $icone_itemnb[$i] = get_sub_field('icone');
+                        $name_itemnb[$i] = get_sub_field('nome');
+                        $description_itemnb[$i] = get_sub_field('descricao');
+              ?>
                 <div class="carousel-item heroslide5 active">
                   <div class="col-11 col-md-3">
                     <div class="box">
                       <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/heart.svg" alt="Privally">
+                        <img src="<?php echo $icone_itemnb[$i]; ?>" alt="Privally">
                         <div class="content">
-                          <h2>CESTA DE BENEFÍCIOS</h2>
+                          <h2><?php echo $name_itemnb[$i]?></h2>
                           <p>
-                            Vale Refeição/Alimentação<br>
-                            Vale transporte<br>
-                            Estacionamento
+                            <?php echo $description_itemnb[$i]?>
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item heroslide5">
-                  <div class="col-11 col-md-3">
-                    <div class="box">
-                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/hand-heart.svg" alt="Iambda">
-                        <div class="content">
-                          <h2>CUIDADO & APOIO</h2>
-                          <p>
-                            Auxílio Creche<br>
-                            Auxílio Home Office<br>
-                            Parcerias com Universidades e Escolas de Idioma<br>
-                            Campanha #EUINDICO<br>
-                            PPR - Programa de Participação nos Resultados
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item heroslide5">
-                  <div class="col-11 col-md-3">
-                    <div class="box">
-                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pessoas-e-carreiras/shield.svg" alt="Stone Age">
-                        <div class="content">
-                          <h2>SAÚDE & VIDA</h2>
-                          <p>
-                            Plano de Saúde<br>
-                            Plano Odontológico<br>
-                            Convênio Farmácia<br>
-                            Seguro de Vida
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <?php
+                      }
+                    }
+                ?>
             </div>
           </div>
         </div>
@@ -550,7 +518,7 @@
 
 <?php echo do_shortcode('[ac-bloco-equipe]'); ?>
 
-<?php echo do_shortcode('[ac-bloco-equipe comdepoimento=true]'); ?>
+<?php // echo do_shortcode('[ac-bloco-equipe comdepoimento=true]'); ?>
 
 <?php echo do_shortcode('[ac-bloco-vaga]'); ?>
 
