@@ -70,6 +70,8 @@ require_once( get_template_directory() . '/inc/pages/cases.php' );
 require_once( get_template_directory() . '/inc/post-types/post-types.php' );
 require_once( get_template_directory() . '/inc/conteudo.php' );
 require_once( get_template_directory() . '/inc/faq.php' );
+require_once( get_template_directory() . '/inc/vaga.php' );
+require_once( get_template_directory() . '/inc/equipe.php' );
 
 
 // Include ACF (Metabox & Options Pages)
