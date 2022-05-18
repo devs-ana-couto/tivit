@@ -136,9 +136,7 @@ $duration: 250ms;
     height: 200px;
     .justify-content-custom{
       justify-content: center;
-      @media (max-width: 767px){
-        justify-content: space-between;
-      }
+      flex-direction: column;
     }
     @media (max-width: 767px){
       padding: 28px;
@@ -161,6 +159,9 @@ $duration: 250ms;
         -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
         filter: grayscale(0); /* Microsoft Edge and Firefox 35+ */
       }
+    }
+    .chamada{
+      transition: 0.2s;
       a{
         position: relative;
         color: $vermelho-tivit;

@@ -57,15 +57,19 @@
             // Loop through rows.
                 for($i=0; have_rows('logo_inovacao_ventures'); $i++) : the_row();
                 $logo_url[$i] = get_sub_field('logo');
+                $cta_texto[$i] = get_sub_field('cta_texto');
+                $cta_url[$i] = get_sub_field('cta_url');
         ?>
-            <div class="col-sm-12 col-md-4 mt-3">
-                <div class="box">
-                    <div class="d-flex justify-content-custom align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?=$logo_url[$i]?>" alt="Privally">
-                        <a class="hide-desktop">CONHEÇA</a>
-                    </div>
-                </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="box">
+            <div class="d-flex justify-content-custom text-center">
+                <img src="<?=$logo_url[$i]?>" alt="Privally">
             </div>
+            <div class="chamada">
+              <a href="<?=$cta_url[$i]?>"><?=$cta_texto[$i]?></a>
+            </div>
+          </div>
+        </div>
             <? endfor; endif; ?>
     </div>
 
@@ -176,98 +180,6 @@
   </div>
 </div>
 
-<!-- Bloco de labs -->
-<div id="labs" class="esg carousel slide carousel-fade hide-mobile" data-bs-ride="carousel">
-  <div class="container">
-    <div class="row">
-      <div class="lp-tbanks-confira lp-tdx">
-
-      <div id="triangle-down"></div>
-
-        <div class="carousel-inner">
-        
-          <div class="row">
-            <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
-              <div class="lp-tbanks-confira-content">
-                <h3>
-                Conheça os projetos em destaque da <strong>TIVIT Labs</strong>
-                </h3>
-                <a href="/staged/tivit/tivit-labs" class="button">
-                    CONHEÇA MAIS SOBRE A TIVIT LABS
-                </a>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-
-              <div class="carousel-item heroslide2 active">
-                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>IVI Virtual Employee</h2>
-                    <p class="paragrafo3">
-                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div> -->
-              </div>
-
-              <div class="carousel-item heroslide2">
-                <div class="col-12 lp-tbanks-confira-bg-left  hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
-                    <p class="paragrafo3">
-                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div> -->
-              </div>
-
-              <div class="carousel-item heroslide2">
-                <div class="col-12 lp-tbanks-confira-bg-left slide1 hide-mobile">
-                  <div class="lp-tbanks-confira-carousel">
-                    <h2>MASP SP</h2>
-                    <p class="paragrafo3">
-                      Mais que um bot: quase humana. A IVI é a colaboradora virtual da TIVIT que nasceu em 2018.
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="col-12 lp-tbanks-confira-bg-mobile hide-desktop">
-                </div> -->
-
-              </div>
-
-            </div>
-
-            <div class="col-12 col-md-6">
-              <div class="navigation">
-                <button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
-                </button>
-                <div class="d-flex flex-row counter2">
-                  <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
-                </div>
-                <button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
-                </button>
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#esg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
-                  <button type="button" data-bs-target="#esg" data-bs-slide-to="1" aria-label="Content 2"></button>
-                  <button type="button" data-bs-target="#esg" data-bs-slide-to="2" aria-label="Content 3"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- TDX -->
 <div id="tdx">
@@ -281,7 +193,7 @@
       </p>
     </div>
 
-    <div class="row mt-2 hide-mobile">
+    <div class="row mt-5 hide-mobile">
     <?php
     // Check rows exists.
     if( have_rows('logos_tdx_inovacao') ):

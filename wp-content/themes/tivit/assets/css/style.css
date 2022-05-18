@@ -3736,10 +3736,8 @@ div {
     border: 1px solid #CAD2D8;
     height: 200px; }
     #ventures div.box .justify-content-custom {
-      justify-content: center; }
-      @media (max-width: 767px) {
-        #ventures div.box .justify-content-custom {
-          justify-content: space-between; } }
+      justify-content: center;
+      flex-direction: column; }
     @media (max-width: 767px) {
       #ventures div.box {
         padding: 28px; } }
@@ -3764,19 +3762,21 @@ div {
           -webkit-filter: grayscale(0);
           /* Google Chrome, Safari 6+ & Opera 15+ */
           filter: grayscale(0);
-          /* Microsoft Edge and Firefox 35+ */ }
-        #ventures div.box a {
-          position: relative;
-          color: #F20024;
-          font-size: 14px;
-          font-weight: 700;
-          text-transform: uppercase;
-          text-decoration: unset; }
-          #ventures div.box a:after {
-            content: url("../../assets/images/esg/arrow-red-content.svg");
-            margin-left: 9px;
-            width: 16px;
-            position: relative; } }
+          /* Microsoft Edge and Firefox 35+ */ } }
+    #ventures div.box .chamada {
+      transition: 0.2s; }
+      #ventures div.box .chamada a {
+        position: relative;
+        color: #F20024;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: unset; }
+        #ventures div.box .chamada a:after {
+          content: url("../../assets/images/esg/arrow-red-content.svg");
+          margin-left: 9px;
+          width: 16px;
+          position: relative; }
   #ventures .services {
     flex-wrap: wrap; }
     #ventures .services em {
@@ -7020,7 +7020,10 @@ div {
 
 #ventures div.box {
   height: 370px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
   #ventures div.box img {
     width: 100%;
     height: 100px; }
