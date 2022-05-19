@@ -7021,17 +7021,31 @@ div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  transition: 1s all; }
   #ventures div.box img {
     width: 100%;
-    height: 100px; }
+    height: 100px;
+    transition: 1s all; }
   #ventures div.box p {
-    margin-top: 40px; }
+    margin-top: 40px;
+    transition: 1s all; }
   #ventures div.box:hover {
     background: white;
-    transition: .2s all; }
+    transition: 1s all; }
     #ventures div.box:hover img {
       filter: grayscale(0); }
+    #ventures div.box:hover > a {
+      opacity: 1;
+      transition: 1s all; }
+  #ventures div.box a {
+    transition: 1s all;
+    opacity: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  #ventures div.box .botao-ventures {
+    transition: 1s all; }
 
 .apresentacoes {
   padding: 50px 0 50px 0; }

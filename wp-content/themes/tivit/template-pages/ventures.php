@@ -192,65 +192,35 @@
 <!-- Bloco Ventures -->
 <div id="ventures">
   <div class="d-flex flex-column container w-100 text-center justify-content-center align-items-center">
-    <h2>EMPRESAS NA VENTURES</h2>
-    <p>A TIVIT Ventures é o nosso braço de compra e criação de empresas. Só no último ano,
-      investimos x milhões de reais na transformação de startups! Assim a gente continua sendo relevante para a tecnologia... Todos os dias.</p>
+    <?the_field('chamada_e_descricao_ventures')?>
   </div>
   <div class="container mt-5 mb-5">
     <!-- first row -->
     <div class="row">
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/privally.svg" alt="Privally">
+    <?php
+      // Check rows exists.
+      if( have_rows('empresas_ventures') ):
+          // Loop through rows.
+          for($i=0; have_rows('empresas_ventures'); $i++) : the_row();
+            $imagem_de_fundo[$i] = get_sub_field('logo');
+            $campo_de_texto[$i] = get_sub_field('descricao');
+            $texto_cta[$i] = get_sub_field('cta_texto');
+            $url_cta[$i] = get_sub_field('cta_url');
+      ?>
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="box">
+            <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
+              <img src="<?=$imagem_de_fundo[$i]?>" alt="Privally">
+            </div>
+            <?=$campo_de_texto[$i]?>
+            <a href="<?=$url_cta[$i]?>" class="botao_ventures"><?=$texto_cta[$i]?></a>
           </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/iambda.svg" alt="Iambda">
-          </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/stoneage.svg" alt="Stone Age">
-          </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
-        </div>
-      </div>
-    </div>
-    <!-- sec row -->
-    <div class="row mt-0 mt-md-4">
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/devapi.svg" alt="Dev API">
-          </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/tbanks.svg" alt="TBanks">
-          </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <div class="box">
-          <div class="d-flex justify-content-center align-items-center w-100  margin-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/cybersec.svg" alt="Cyber Security">
-          </div>
-          <p>A Privally é a primeira startup a entrar para a TIVIT Ventures, focada em gerenciamento de segurança. Como acontece em todas as aquisições, suas operações continuarão a atuar de forma independente.</p>
-        </div>
-      </div>
-    </div>
+      <?
+        endfor;
+        endif;
+       
+      ?>
 
     <div id="triangle-down"></div>
   </div>
@@ -349,15 +319,11 @@
     <div class="container">
       <div class="row">
         <div class="title">
-          <h2 class="text-center">A atuação da Ventures empreende com e para você. Conheça nossos cases:</h2>
+          <h2 class="text-center">A atuação da Ventures empreende com e para você. Conheça nossos cases:</h2> 
         </div>
         <?=do_shortcode('[ac-bloco-cases]')?>
-
       </div>
-
     </div>
-
-
   </div>
 </div>
 
