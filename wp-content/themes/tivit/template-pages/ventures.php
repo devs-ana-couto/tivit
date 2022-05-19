@@ -2,14 +2,14 @@
 
 <?php get_header(); ?>
 <!-- Hero banner-->
-<div class="ventures-hero position-relative">
+<div class="ventures-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_ventures') : the_field('banner_desktop_ventures'); ?>') no-repeat center center; background-size: cover;">
   <div class="ventures-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="d-flex justify-content-center align-items-center flex-column position-relative zindex">
-            <h1>TIVIT VENTURES</h1>
-            <h2 class="hide-mobile">Conheça a nossa cultura empreendedora</h2>
+            <h1><?the_field('pre_chamada_ventures');?></h1>
+            <h2 class="hide-mobile"><?the_field('chamada_ventures');?></h2>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
   <div class="ventures-hero-content hide-desktop">
-    <h2>SOLUÇÕES</h2>
+    <h2><?the_field('chamada_ventures');?></h2>
   </div>
 
   <div class="maskDiv text-center hide-desktop">
@@ -33,9 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p>
-        A TIVIT anunciou recentemente a criação do <span class="red">TIVIT Ventures</span>, vertical de investimentos e aquisições criada para encontrar empresas que fortaleçam o portfólio de serviços oferecidos pela marca.
-        </p>
+        <?the_field('chamada_para_conteudo');?>
       </div>
     </div>
   </div>
@@ -46,7 +44,7 @@
 <div id="tdx" class="tdx ventures">
   <div class="container">
     <div class="title w-100 text-center m-auto">
-      <h2>Como investimos?</h2>
+      <h2><?the_field('chamada_como_investimos');?></h2>
     </div>
 
     <div class="row mt-2 hide-mobile">
@@ -54,14 +52,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/empreendedorismo.svg" alt="empreendedorismo">
+            <img src="<?the_field('item_1_-_logo')?>" alt="<?the_field('item_1_-_nome')?>">
             </div>
             <h2>
-              empreendedorismo
+              <?the_field('item_1_-_nome')?>
             </h2>
             <p>
-              As ventures aceleram o crescimento e reforçam a cultura empreendedora da TIVIT.
-            </p>
+            <?the_field('item_1_-_descricao')?>
           </div>
         </div>
       </div>
@@ -69,14 +66,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/ideia-icon.svg" alt="ideia">
+            <img src="<?the_field('item_2_-_logo')?>" alt="<?the_field('item_2_-_nome')?>">
             </div>
             <h2>
-              inovação
+              <?the_field('item_2_-_nome')?>
             </h2>
             <p>
-              Além dos projetos orgânicos internos, buscamos novas soluções inovadoras no ecossistema de startups.
-            </p>
+            <?the_field('item_2_-_descricao')?>
           </div>
         </div>
       </div>
@@ -84,14 +80,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
+              <img src="<?the_field('item_3_-_logo')?>" alt="<?the_field('item_3_-_nome')?>">
             </div>
             <h2>
-              crescimento
+              <?the_field('item_3_-_nome')?>
             </h2>
             <p>
-              O objetivo é adquirir startups de modelo SaaS com trajetórias de forte crescimento e escalabilidade.
-            </p>
+            <?the_field('item_3_-_descricao')?>
           </div>
         </div>
       </div>
@@ -99,14 +94,13 @@
         <div class="box">
           <div class="w-100">
             <div class="w-100 m-auto text-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/estrelas-icon.svg" alt="grow">
+            <img src="<?the_field('item_4_-_logo')?>" alt="<?the_field('item_4_-_nome')?>">
             </div>
             <h2>
-              autonomia
+              <?the_field('item_4_-_nome')?>
             </h2>
             <p>
-              As startups têm todo o suporte da TIVIT, ao mesmo tempo que mantém sua autonomia de gestão.
-            </p>
+            <?the_field('item_4_-_descricao')?>
           </div>
         </div>
       </div>
@@ -115,81 +109,81 @@
     <!-- mobile slide -->
     <div class="row mx-auto my-auto justify-content-center mt-3 mt-md-0 hide-desktop">
       <div id="tdxMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-              <div class="carousel-item heroslide3 tdx active">
-                <div class="col-11 m-0 p-0">
-                  <div class="box">
-                    <div class="w-100">
-                      <div class="w-100 m-auto text-center">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/empreendedorismo.svg" alt="empreendedorismo">
-                      </div>
-                      <h2>
-                        empreendedorismo
-                      </h2>
-                      <p>
-                        As ventures aceleram o crescimento e reforçam a cultura empreendedora da TIVIT.
-                      </p>
-                    </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item heroslide3 tdx active">
+            <div class="col-11 m-0 p-0">
+              <div class="box">
+                <div class="w-100">
+                  <div class="w-100 m-auto text-center">
+                    <img src="<?the_field('item_1_-_logo')?>" alt="<?the_field('item_1_-_nome')?>">
                   </div>
+                  <h2>
+                    <?the_field('item_1_-_nome')?>
+                  </h2>
+                  <p>
+                    <?the_field('item_1_-_descricao')?>
+                  </p>
                 </div>
               </div>
-              <div class="carousel-item heroslide3 tdx">
-                <div class="col-11 m-0 p-0">
-                  <div class="box">
-                    <div class="w-100">
-                      <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/ideia-icon.svg" alt="ideia">
-                      </div>
-                      <h2>
-                        inovação
-                      </h2>
-                      <p>
-                        Além dos projetos orgânicos internos, buscamos novas soluções inovadoras no ecossistema de startups.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item heroslide3 tdx">
-                <div class="col-11 m-0 p-0">
-                  <div class="box">
-                    <div class="w-100">
-                      <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inovacao/icocode.svg" alt="code">
-                      </div>
-                      <h2>
-                        crescimento
-                      </h2>
-                      <p>
-                        O objetivo é adquirir startups de modelo SaaS com trajetórias de forte crescimento e escalabilidade.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item heroslide3 tdx">
-                <div class="col-11 m-0 p-0">
-                  <div class="box">
-                    <div class="w-100">
-                      <div class="w-100 m-auto text-center">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ventures/estrelas-icon.svg" alt="grow">
-                      </div>
-                      <h2>
-                        autonomia
-                      </h2>
-                      <p>
-                        As startups têm todo o suporte da TIVIT, ao mesmo tempo que mantém sua autonomia de gestão.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
+          <div class="carousel-item heroslide3 tdx">
+            <div class="col-11 m-0 p-0">
+              <div class="box">
+                <div class="w-100">
+                  <div class="w-100 m-auto text-center">
+                    <img src="<?the_field('item_2_-_logo')?>" alt="<?the_field('item_2_-_nome')?>">
+                  </div>
+                  <h2>
+                    <?the_field('item_2_-_nome')?>
+                  </h2>
+                  <p>
+                    <?the_field('item_2_-_descricao')?>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide3 tdx">
+            <div class="col-11 m-0 p-0">
+              <div class="box">
+                <div class="w-100">
+                  <div class="w-100 m-auto text-center">
+                    <img src="<?the_field('item_3_-_logo')?>" alt="<?the_field('item_3_-_nome')?>">
+                  </div>
+                  <h2>
+                    <?the_field('item_3_-_nome')?>
+                  </h2>
+                  <p>
+                    <?the_field('item_3_-_descricao')?>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item heroslide3 tdx">
+            <div class="col-11 m-0 p-0">
+              <div class="box">
+                <div class="w-100">
+                  <div class="w-100 m-auto text-center">
+                    <img src="<?the_field('item_4_-_logo')?>" alt="<?the_field('item_4_-_nome')?>">
+                  </div>
+                  <h2>
+                    <?the_field('item_4_-_nome')?>
+                  </h2>
+                  <p>
+                    <?the_field('item_4_-_descricao')?>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="cta w-100 d-flex align-items-center justify-content-center">
-      <a class="button">APLICAÇÃO DE EMPRESAS</a>
+      <a href="<?the_field('cta_url_como_investimos')?>" class="button"><?the_field('cta_texto_como_investimos')?></a>
     </div>
   </div>
 </div>
