@@ -197,6 +197,7 @@
   <div class="container mt-5 mb-5">
     <!-- first row -->
     <div class="row">
+
     <?php
       // Check rows exists.
       if( have_rows('empresas_ventures') ):
@@ -221,8 +222,7 @@
         endif;
        
       ?>
-
-    <div id="triangle-down"></div>
+  </div>
   </div>
 </div>
 
@@ -238,34 +238,24 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>prÓximas apresentaçÕes de startups</h2>
-        <p class="paragrafo2">Conheça ainda mais de perto o que fazemos. Marque na sua agenda os nossos próximos encontros para inovar.</p>
+        <?the_field('chamada_apresentacao_ventures')?>
       </div>
     </div>
 
     <div class="row mt-5 hide-mobile">
       <div class="col-4">
         <div class="box">
-          <h3>
-            10/10/2021
-          </h3>
-          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <?the_field('apresentacao_1_ventures')?>
         </div>
       </div>
       <div class="col-4">
         <div class="box">
-          <h3>
-            15/10/2021
-          </h3>
-          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <?the_field('apresentacao_2_ventures')?>
         </div>
       </div>
       <div class="col-4">
         <div class="box">
-          <h3>
-            02/11/2021
-          </h3>
-          <p class="paragrafo3">Nesse dia lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <?the_field('apresentacao_3_ventures')?>
         </div>
       </div>
     </div>
@@ -311,7 +301,6 @@
 
   </div>
 </section>
-
 
 <!-- Cases -->
 <div class="a-tivit-cases cases ventures">
