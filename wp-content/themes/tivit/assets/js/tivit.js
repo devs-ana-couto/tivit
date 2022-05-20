@@ -88,14 +88,6 @@ jQuery(document).ready(function($) {
       $('.numtotal').html( totalItems );
    });
 
-   $('#recipeCarousel').bind('slid.bs.carousel', function() {
-      currentIndex = $('.heroslide.active').index() + 1;
-      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
-      $('.numactive').html( currentIndex );
-      $('.numseparation').html('  /  ');
-      $('.numtotal').html( totalItems );
-   });
-
    $('#cases').bind('slid.bs.carousel', function() {
       currentIndex = $('.heroslide.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
@@ -153,6 +145,22 @@ jQuery(document).ready(function($) {
       $('.numtotal2').html( totalItems2 );
    });
 
+   $('#recipeCarouselInterno').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
+   $('#recipeCarouselTimeLine').bind('slid.bs.carousel', function() {
+      currentIndex2 = $('.heroslide2.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive2').html( currentIndex2 );
+      $('.numseparation2').html('  /  ');
+      $('.numtotal2').html( totalItems2 );
+   });
+
    $('#cultureCarousel').bind('slid.bs.carousel', function() {
       currentIndex2 = $('.heroslide2.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
@@ -170,7 +178,7 @@ jQuery(document).ready(function($) {
    $('.numseparation3').html('  /  ');
    $('.numtotal3').html( totalItems3 );
 
-   $('#recipeCarouselInterno').bind('slid.bs.carousel', function() {
+   $('#recipeCarousel').bind('slid.bs.carousel', function() {
       currentIndex3 = $('.heroslide3.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
       $('.numactive3').html( currentIndex3 );
@@ -567,7 +575,7 @@ document.addEventListener("DOMContentLoaded", function(){
    if(window.location.pathname === '/staged/tivit/tivit-labs' || window.location.pathname === '/staged/tivit/tivit-labs/'){
       let items = document.querySelectorAll('.carousel .heroslide')
       items.forEach((el) => {
-         const minPerSlide = 6
+         const minPerSlide = 1
          let next = el.nextElementSibling
          for (var i=1; i<minPerSlide; i++) {
             if (!next) {
@@ -595,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function(){
          }
       })
 
-      let items3 = document.querySelectorAll('.carousel .heroslide4')
+      let items3 = document.querySelectorAll('.carousel .heroslide3')
       items3.forEach((el) => {
          const minPerSlide = 6
          let next = el.nextElementSibling

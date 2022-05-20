@@ -142,6 +142,25 @@
             right: 0;
         }
     }
+    .counter3{
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .numactive3{
+          color: $vermelho-tivit;
+          font-weight: 700;
+        }
+        .numseparation3, .numtotal3{
+          color: $vermelho-tivit;
+          font-weight: 300;
+        }
+        .numseparation3{
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
 }
 
 #carouselCustom.timelineCarousel{

@@ -49,7 +49,7 @@
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item heroslide active">
+            <div class="carousel-item heroslide3 active">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide">
+            <div class="carousel-item heroslide3">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide">
+            <div class="carousel-item heroslide3">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide">
+            <div class="carousel-item heroslide3">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide">
+            <div class="carousel-item heroslide3">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -105,8 +105,8 @@
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <div class="d-flex flex-row counter">
-          <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+        <div class="d-flex flex-row counter3">
+          <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
         </div>
         <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
