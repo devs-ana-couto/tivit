@@ -99,9 +99,6 @@
           position: relative;
           bottom: -6%;
           text-align: center;
-          p{
-              margin-bottom: 5px;
-          }
           a{
               color: white;
               font-weight: lighter;
@@ -670,6 +667,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
       margin-top: 34px;
       .select{
         margin-right: 50px;

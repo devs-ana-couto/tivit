@@ -111,14 +111,17 @@
             position: relative;
             bottom: -6%;
             text-align: center;
+            .open{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
             img{
                 border: 1px solid black;
                 border-radius: 50%;
             }
-            p{
-                margin-bottom: 5px;
-            }
-            a{
+            button{
                 color: white;
                 font-weight: lighter;
                 font-size: 14px;
@@ -562,15 +565,18 @@
             bottom: -10%;
             z-index: 100;
             text-align: center;
-            a{                
+            .open{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            button{
                 text-decoration: none;
                 border: none;
                 padding: 0;
                 color: white;
                 background-color: transparent;
-                p{
-                    margin-top: 10px;
-                }
                 &:hover{
                     background: transparent;
                     border:none;

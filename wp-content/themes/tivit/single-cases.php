@@ -7,7 +7,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 <!-- Hero banner-->
 <section class="banner-cases-item">
-    <div class="case-item-background" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile') : the_field('banner_desktop'); ?>') no-repeat center center; background-size: cover;">
+    <div class="case-item-background" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile') : the_field('banner_desktop'); ?>') no-repeat center center; background-size: cover;display: flex; align-items: center;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-5">

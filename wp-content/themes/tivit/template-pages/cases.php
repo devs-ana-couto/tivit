@@ -67,11 +67,12 @@
   <!--- Desktop -->
   <div class="container hide-mobile">
 
-  <div class="row">
-    <?=do_shortcode('[ac-pagina-cases]') ?>
+    <div class="row">
+      <?=do_shortcode('[ac-pagina-cases]') ?>
+    </div>
+
   </div>
-</div>
-<!--- End Desktop -->
+  <!--- End Desktop -->
 </div>
 
 <div class="home-pessoas-e-carreiras inovar">

@@ -6,7 +6,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 ?>
 
 <!-- Hero banner-->
-<div class="services-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_solucoes') : the_field('banner_desktop_solucoes'); ?>') no-repeat center center; background-size: cover;">
+<div class="services-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_solucoes') : the_field('banner_desktop_solucoes'); ?>') no-repeat center center; background-size: cover; display: flex; align-items: center;">
   <div class="services-hero-title">
     <div class="container">
       <div class="row">
@@ -19,9 +19,11 @@ if(have_posts()) : while(have_posts()) : the_post();
       </div>
     </div>
   </div>
+
   <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
+  
   <div class="services-hero-content hide-desktop">
     <h2><? the_field('chamada_solucoes'); ?></h2>
   </div>
