@@ -744,6 +744,7 @@ html, body, * {
     .footer .bg-red span {
       font-weight: 600; }
     .footer .bg-red p {
+      color: white;
       margin: 0; }
 
 @media (min-width: 768px) {

@@ -127,11 +127,10 @@ get_header(); ?>
                         the_post();
                         $identif = get_the_ID();
                         echo '<div class="pesquisa-cartao">';
-                        echo '<a href="#">';
+                        echo '<a href="'.get_permalink().'">';
                         echo '<div class="pesquisa-cartao-titulo">'.get_the_title().'</div>';
                         echo '</a>';
-                        echo '<div class="pesquisa-cartao-resumo">'.get_the_content().'</div>';
-                        echo '</div>';
+
                         // echo '<div class="pesquisa-cartao">';
                         // echo '<a href="'.vm50_pesquisa_link( get_post_type($identif), $identif ).'">';
                         // echo '<div class="pesquisa-cartao-titulo">'.vm50_origem( get_post_type($identif), $identif ).'</div>';
