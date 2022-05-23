@@ -3,13 +3,13 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-      <iframe width="100%" height="480" src="https://www.youtube.com/embed/<?the_field('link_video_publicCloud');?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <div id="player"></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Button trigger modal -->
 
 
 <div class="gap" style="background: <?=the_field('cor_de_fundo_publicCloud');?>">
@@ -34,9 +34,9 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div>
-                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+                            <button class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
                                 <img class="w-auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/solucoes/play.svg" alt="Play" />
-                            </a>                        
+                            </button>                        
                         </div>
                     </div>
                 </div>
@@ -44,3 +44,40 @@
         </div>
     </div>
 </div>
+
+<script>
+var player, iframe;
+var $ = document.querySelector.bind(document);
+
+// init player
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '400',
+    width: '100%',
+    videoId: '<?php the_field('link_video_publicCloud')?>',
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+// when ready, wait for clicks
+function onPlayerReady(event) {
+  var player = event.target;
+  iframe = $('#player');
+  setupListener(); 
+}
+
+function setupListener (){
+$('button.open').addEventListener('click', playFullscreen);
+}
+
+function playFullscreen (){
+  player.playVideo();//won't work on mobile
+  
+  var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+  if (requestFullScreen) {
+    requestFullScreen.bind(iframe)();
+  }
+}
+</script>

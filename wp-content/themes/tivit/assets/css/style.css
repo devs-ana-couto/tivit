@@ -3196,7 +3196,15 @@ div {
       position: relative;
       bottom: -6%;
       text-align: center; }
-      .cases-hero .botaoReels a {
+      .cases-hero .botaoReels .open {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center; }
+      .cases-hero .botaoReels img {
+        border: 1px solid black;
+        border-radius: 50%; }
+      .cases-hero .botaoReels button {
         color: white;
         font-weight: lighter;
         font-size: 14px;
@@ -3473,18 +3481,21 @@ div {
       position: absolute;
       right: 0;
       left: 0;
-      bottom: 30px;
+      bottom: 5%;
       z-index: 100;
       text-align: center; }
-      .cases-hero .botaoReels a {
+      .cases-hero .botaoReels .open {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center; }
+      .cases-hero .botaoReels button {
         text-decoration: none;
         border: none;
         padding: 0;
         color: white;
         background-color: transparent; }
-        .cases-hero .botaoReels a p {
-          margin-top: 10px; }
-        .cases-hero .botaoReels a:hover {
+        .cases-hero .botaoReels button:hover {
           background: transparent;
           border: none; }
   .cases-depoimentos .img {
@@ -6062,6 +6073,8 @@ div {
           margin-left: 0px;
           margin: auto;
           text-align: center; } }
+      #main-solutions .publiccloud .row .col-md-6 div button {
+        border: none; }
       #main-solutions .publiccloud .row .col-md-6 div img {
         margin-top: -50px; }
         @media (max-width: 1024px) {

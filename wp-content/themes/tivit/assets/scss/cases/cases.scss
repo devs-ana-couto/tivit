@@ -92,20 +92,30 @@
   }
 
   @media(max-width: 760px){
-      .botaoReels{
-          // position: absolute;
-          // left: 0;
-          // right: 0;
-          position: relative;
-          bottom: -6%;
-          text-align: center;
-          a{
-              color: white;
-              font-weight: lighter;
-              font-size: 14px;
-              text-decoration: unset;
-          }
+    .botaoReels{
+      // position: absolute;
+      // left: 0;
+      // right: 0;
+      position: relative;
+      bottom: -6%;
+      text-align: center;
+      .open{
+          display: flex;
+          margin: 0 auto;
+          flex-direction: column-reverse;
+          align-items: center;
       }
+      img{
+          border: 1px solid black;
+          border-radius: 50%;
+      }
+      button{
+          color: white;
+          font-weight: lighter;
+          font-size: 14px;
+          text-decoration: unset;
+      }
+  }
   }
 }
 
@@ -467,27 +477,30 @@
     }
 
     .botaoReels{
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 30px;
-        z-index: 100;
-        text-align: center;
-        a{                
-            text-decoration: none;
-            border: none;
-            padding: 0;
-            color: white;
-            background-color: transparent;
-            p{
-                margin-top: 10px;
-            }
-            &:hover{
-                background: transparent;
-                border:none;
-            }
-        }
-    }
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 5%;
+      z-index: 100;
+      text-align: center;
+      .open{
+          display: flex;
+          margin: 0 auto;
+          flex-direction: column-reverse;
+          align-items: center;
+      }
+      button{
+          text-decoration: none;
+          border: none;
+          padding: 0;
+          color: white;
+          background-color: transparent;
+          &:hover{
+              background: transparent;
+              border:none;
+          }
+      }
+  }
     
 }
   

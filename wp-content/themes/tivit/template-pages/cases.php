@@ -1,6 +1,19 @@
 <?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
+<!-- Modal -->
+<div class="modal fade" id="videoOpen" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoOpenLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <div id="player"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="cases-hero position-relative">
   <div class="cases-hero-title">
     <div class="container">
@@ -21,16 +34,16 @@
       <img class="mask w-100 position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask" />
   </div>
   <div class="botaoReels m-0 hide-mobile">
-    <a href="#">
+    <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
+      Assista ao reel
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
-      <p>Assista ao reel</p>
-    </a>
+    </button>
   </div>
   <div class="botaoReels m-0 hide-desktop">
-    <a href="#">
-      <p>Assista ao reel</p>
+    <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
+      Assista ao reel
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
-    </a>
+    </button>
   </div>
 </div>
 
@@ -90,5 +103,42 @@
     </div>
   </div>
 </div>
+
+<script>
+  var player, iframe;
+var $ = document.querySelector.bind(document);
+
+// init player
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '400',
+    width: '100%',
+    videoId: '<?php the_field('assista_ao_reel_cases')?>',
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+// when ready, wait for clicks
+function onPlayerReady(event) {
+  var player = event.target;
+  iframe = $('#player');
+  setupListener(); 
+}
+
+function setupListener (){
+$('button.open').addEventListener('click', playFullscreen);
+}
+
+function playFullscreen (){
+  player.playVideo();//won't work on mobile
+  
+  var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+  if (requestFullScreen) {
+    requestFullScreen.bind(iframe)();
+  }
+}
+</script>
 
 <?php get_footer(); ?>
