@@ -2,14 +2,14 @@
 <?php get_header(); ?>
 
 <!-- Hero banner-->
-<div class="esg-hero position-relative">
+<div class="esg-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_esg') : the_field('banner_desktop_esg'); ?>') no-repeat center center; background-size: cover;">
   <div class="esg-hero-title">
     <div class="container">
       <div class="row">
         <div class="col-12">
             <div class="zindex position-relative">
-                <h1>ESG</h1>
-                <h2 class="">ESG: um compromisso TIVIT.</h2>
+                <h1><?the_field('pre_chamada_esg')?></h1>
+                <h2><?the_field('chamada_esg')?></h2>
             </div>
         </div>
       </div>
@@ -33,45 +33,45 @@
             <div class="col-12 col-md-3">
               <p>
                 <span>
-                  <b>+30</b>
+                  <b><?the_field('valor_1')?></b>
                 </span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Projetos apoiados
+                    <?the_field('label_1')?>
                   </p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
               <p>
-                <span>+900</span>
+                <span><?the_field('valor_2')?></span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Empregos gerados
+                    <?the_field('label_2')?>
                   </p>
               </div>
             </div>
 
             <div class="col-12 col-md-3">
               <p>
-                <span>+600</span><small>MIL</small>
+                <span><?the_field('valor_3')?></span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                    Pessoas impactadas pelos projetos
+                    <?the_field('label_3')?>
                   </p>
               </div>
             </div>  
 
             <div class="col-12 col-md-3">
               <p>
-                <span>+300</span>
+                <span><?the_field('valor_4')?></span>
               </p>
               <div class="w-100 d-flex justify-content-center align-items-center">
                   <p class="custom-text">
-                  Empregos gerados somente na pandemia
+                    <?the_field('label_4')?>
                   </p>
               </div>
             </div> 
@@ -93,9 +93,7 @@
             <div class="col-12">
 
                 <div class="lp-tbanks-conheca-content">
-                    <p>
-                    Uma frase sobre os números dos projetos ESGs lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                  <?the_field('intro_chamada_esg')?>
                 </div>
             </div>
         </div>
