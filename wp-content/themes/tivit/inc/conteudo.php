@@ -291,7 +291,7 @@ if (!function_exists('ac_bloco_header_conteudo')) {
             $saida .= '</div>';
         }
         $saida .= '<div class="col-12 col-md-6">';
-        $saida .= '<div class="navigation">';
+        $saida .= '<div class="navigation '.($ac <= 1 ? ' hide-mobile hide-desktop' : '').'">';
         $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">';
         $saida .= '<img src="'.get_template_directory_uri().'/assets/icons/navegacao/arrow_left.png" alt="arrow_left">';
         $saida .= '</button>';

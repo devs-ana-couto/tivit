@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="navigation">
+          <div class="navigation <?=count(get_field('slider_hero')) == 1 ? 'hide-desktop hide-mobile' : '' ?>">
             <button class="carousel-control-prev hide-mobile" type="button" data-bs-target="#hero" data-bs-slide="prev">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
             </button>

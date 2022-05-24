@@ -264,7 +264,7 @@
             </div> 
 
             <div class="col-12 col-md-6">
-              <div class="navigation">
+              <div class="navigation <?=count(get_field('slider_esg')) == 1 ? 'hide-desktop hide-mobile' : '' ?>">
                 <button class="carousel-control-prev" type="button" data-bs-target="#esgTivit" data-bs-slide="prev">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
                 </button>
