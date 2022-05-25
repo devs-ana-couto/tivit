@@ -78,6 +78,82 @@ if (!function_exists('ac_conteudo_listar')) {
     }
 }
 
+if (!function_exists('ac_conteudo_listar_esg')) {
+    /**
+     * porpagina => Quantos posts por páginas deve retornar
+     * pagina => paginacao (inicia-se com 1)
+     * categoria => slug da categoria a pesquisar (separar com virgual quando for mais de uma)
+     * etiqueta => slug da tag a pesquisar (separar com virgual quando for mais de uma)
+     */
+    function ac_conteudo_listar_esg($attr=array()) {
+        $porpagina = (isset($attr['porpagina']) ? $attr['porpagina'] : 5);
+        $pagina    = (isset($attr['pagina'])    ? $attr['pagina']    : 1);
+        $categoria = (isset($attr['categoria']) ? $attr['categoria'] : '');
+        $etiqueta  = (isset($attr['etiqueta'])  ? $attr['etiqueta']  : '');
+        $args      = array (
+            'post_type'       => 'post',
+            'posts_per_page'  => $porpagina * 1,
+            'page'            => $pagina * 1,
+            'post_status'     => 'publish',
+            'orderby'         => 'date',
+            'order'           => 'DESC',
+            'category_name'   => 'projeto',
+        );
+        if ( $categoria != '' ) {
+            $args['category_name'] = $categoria;
+        }
+        if ( $etiqueta != '' ) {
+            $args['tag'] = $etiqueta;
+        }
+        $the_query = new WP_Query( $args );
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            $identif    = $the_query->post->ID;
+            $titulo     = get_the_title();
+            $conteudo   = apply_filters( 'the_content', get_the_content() );
+            $conteudo   = str_replace( ']]>', ']]&gt;', $conteudo );
+            $resumo     = get_the_content();
+            $link       = get_permalink();
+            $dia        = get_the_date();
+            $quem       = get_the_author();
+            $bhdesktop  = get_field('banner_header_desktop_conteudo');
+            $bhmobile   = get_field('banner_header_mobile_conteudo');
+            $tleitura   = get_field('tempo_de_leitura');
+            $chamada    = get_field('chamada_sobre_cases');
+            $imagem      = '';
+            $teste       = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $conteudo, $encontrou);
+            $imagem      = (isset($encontrou[1][0])) ? $encontrou[1][0] : '';
+            $cat_aux    = get_the_category();
+            $categorias = array();
+            if ((is_array($cat_aux)) && (count($cat_aux)>0)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[$categoria->term_id] = $categoria->name;
+                }
+            }
+            $etiquetas = get_the_tags($identif);
+            $resultado[] = array(
+                'postid'     => $identif,
+                'postdate'   => $dia,
+                'link'       => $link,
+                'imagem'     => $imagem,
+                'conteudo'   => $conteudo,
+                'quem'       => $quem,
+                'resumo'     => $resumo,
+                'titulo'     => $titulo,
+                'categorias' => $categorias,
+                'etiquetas'  => $etiquetas,
+                'bhdesktop'  => $bhdesktop,
+                'bhmobile'   => $bhmobile,
+                'tleitura'   => $tleitura,
+                'chamada'    => $chamada,
+            );
+        }
+        wp_reset_query();
+        wp_reset_postdata();
+        return $resultado;
+    }
+}
+
 
 if (!function_exists('ac_conteudo_listar_categorias')) {
     function ac_conteudo_listar_categorias() {
@@ -248,6 +324,119 @@ if (!function_exists('ac_bloco_conteudo')) {
     }
 }
 add_shortcode( 'ac-bloco-conteudo', 'ac_bloco_conteudo' );
+
+
+if (!function_exists('ac_bloco_conteudo_esg')) {
+    function ac_bloco_conteudo_esg() {
+        $arg['porpagina'] = 3;
+        $arg['pagina']    = 1;
+        $dados = ac_conteudo_listar_esg($arg);
+
+
+        $saida .= '<div class="container pd">';
+        $saida .= '<div class="title">';
+        $saida .= '<h2 class="titleText text-center">'.__('ÚLTIMOS PROJETOS').'</h2>';
+        $saida .= '</div>';
+        $saida .= '<div class="row hide-mobile">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if ((is_array($cat_aux)) && (count($cat_aux)>0)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            if ((is_array($etq_aux)) && (count($etq_aux)>0)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
+            }
+            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="cardContent p-1">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        $saida .= '</div>';
+        $saida .= '<div class="row mx-auto my-auto justify-content-center hide-desktop">';
+        $saida .= '<div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">';
+        $saida .= '<div class="carousel-inner" role="listbox">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if ((is_array($cat_aux)) && (count($cat_aux)>0)) {
+                foreach( $cat_aux as $categoria ) {
+                    $categorias[] = $categoria;
+                }
+            }
+            $etiquetas  = array();
+            $etq_aux = $dados[$ac]['etiquetas'];
+            if ((is_array($etq_aux)) && (count($etq_aux)>0)) {
+                foreach( $etq_aux as $etiqueta ) {
+                    $etiquetas[] = $etiqueta->name;
+                }
+            }
+            $saida .= '<div class="carousel-item heroslide4 content '.($ac==0 ? 'active' : '').'">';
+            $saida .= '<div class="col-11 m-0 p-0">';
+            $saida .= '<div class="cardContent p-2">';
+            $saida .= '<div class="img position-relative">';
+            $saida .= '<img src="'.$dados[$ac]['bhmobile'].'" alt="Depoimento">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
+            $saida .= '<p class="m-0 h-100">'.__('Por').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '</div>';
+            $saida .= '<div class="content">';
+            $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
+            $saida .= '</div>';
+            $saida .= '<div class="autor-time w-100">';
+            $saida .= '<div class="d-flex flex-row aaa">';
+            for ($k=0; $k<count($etiquetas); $k++) {
+                $saida .= '<a href="#">'.$etiquetas[$k].'</a>';
+            }
+            $saida .= '</div>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura').'</p>';
+            $saida .= '</div>';
+            $saida .= '<div class="acessar">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        return $saida;
+    }
+}
+add_shortcode( 'ac-bloco-conteudo-esg', 'ac_bloco_conteudo_esg' );
 
 
 if (!function_exists('ac_bloco_header_conteudo')) {
@@ -500,10 +689,6 @@ if (!function_exists('ac_pagina_conteudo')) {
 add_shortcode( 'ac-pagina-conteudo', 'ac_pagina_conteudo' );
 
 
-
-
-
-
 if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
     function ac_pagina_conteudo_pesquisa_desktop() {
         $arg = array();
@@ -572,10 +757,6 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
 }
 add_action( 'wp_ajax_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
 add_action( 'wp_ajax_nopriv_ac_pagina_conteudo_pesquisa_desktop', 'ac_pagina_conteudo_pesquisa_desktop' );
-
-
-
-
 
 
 if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
