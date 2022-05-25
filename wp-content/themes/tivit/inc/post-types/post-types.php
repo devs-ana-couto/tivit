@@ -289,3 +289,46 @@ function create_equipe() {
 		)
 	);
 }
+
+// Landings
+add_action( 'init', 'create_lp' );
+function create_lp() {
+	register_post_type( 'lp',
+	    array(
+	      	'labels' => array(
+		        'name' => __( 'Landings', '' ),
+		        'singular_name' => __( 'Landing', '' ),
+				'add_new' => __( 'Adicionar Landing', '' ),
+				'add_new_item' => __( 'Adicionar Nova Landing', '' ),
+				'edit_item' => __( 'Editar Landing', '' ),
+				'new_item' => __( 'Nova Landing', '' ),
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-awards',
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'landing'),
+			'supports' => array( 'title', 'thumbnail')
+		)
+	);
+
+
+	$labels = array(
+		'name'              => __( 'Tags', ''),
+		'singular_name'     => __( 'Tag', ''),
+		'add_new_item'      => __( 'Adicionar Tag', ''),
+		'new_item_name'     => __( 'Nova Tag', ''),
+		'edit_item'         => __( 'Editar Tag', ''),
+		'menu_name'         => __( 'Tags', ''),
+	);
+
+	$args = array(
+		'hierarchical'      => false,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'tags-landings' ),
+	);
+	register_taxonomy( 'tags-landings', array( 'landings' ), $args );
+}
