@@ -153,107 +153,9 @@ if(have_posts()) : while(have_posts()) : the_post();
         <div class="a-tivit-cases cases labs">
             <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="container">
-
                     <div class="row">
-                        <div class="carousel-inner">
-                        <div class="carousel-item heroslide active fundo1">
-                            <div class="col-12 col-md-6">
-                            <div class="detalhes">
-                                <div class="autor-time">
-                                <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
-                            </div>
-                            <div class="tag">
-                                <a href="#">conta híbrida</a>
-                                <a href="#">varejo</a>
-                            </div>
-                            <div class="acessar">
-                                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item heroslide fundo2">
-                            <div class="col-12 col-md-6">
-                            <div class="detalhes">
-                                <div class="autor-time">
-                                <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
-                            </div>
-                            <div class="tag">
-                                <a href="#">conta híbrida</a>
-                                <a href="#">varejo</a>
-                            </div>
-                            <div class="acessar">
-                                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item heroslide fundo3">
-                            <div class="col-12 col-md-6">
-                            <div class="detalhes">
-                                <div class="autor-time">
-                                <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
-                            </div>
-                            <div class="tag">
-                                <a href="#">conta híbrida</a>
-                                <a href="#">varejo</a>
-                            </div>
-                            <div class="acessar">
-                                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item heroslide fundo3">
-                            <div class="col-12 col-md-6">
-                            <div class="detalhes">
-                                <div class="autor-time">
-                                <p>Cliente: <strong>Ana Helena Lazaroni</strong></p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>grupo malwee embarca na nuvem do google cloud rumo ao caminho da indústria  4.0 com apoio da tivit</h2>
-                            </div>
-                            <div class="tag">
-                                <a href="#">conta híbrida</a>
-                                <a href="#">varejo</a>
-                            </div>
-                            <div class="acessar">
-                                <a href="#">acessar case <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="navigation">
-                            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_left.png" alt="arrow_left">
-                            </button>
-                            <div class="d-flex flex-row counter">
-                                <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
-                            </div>
-                            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/navegacao/arrow_right.png" alt="arrow_right">
-                            </button>
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#content" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Content 1"></button>
-                                <button type="button" data-bs-target="#content" data-bs-slide-to="1" aria-label="Content 2"></button>
-                                <button type="button" data-bs-target="#content" data-bs-slide-to="2" aria-label="Content 3"></button>
-                                <button type="button" data-bs-target="#content" data-bs-slide-to="3" aria-label="Content 4"></button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+                        <?=do_shortcode('[ac-bloco-cases]')?>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -264,11 +166,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div class="bgWhite bgGray unfolding">
     <div class="container-fluid intro">
         <div>
-            <h2>CYBERSECURITY</h2>
-            <p>
-                Para empresas que buscam capacidade de escalonamento com agilidade de implantação e custos de infraestrutura sob demanda, 
-                a solução está nos Serviços de Public Cloud da TIVIT.
-            </p>
+            <h2><?the_field('chamada_carousel_lp')?></h2>
+            <?the_field('descricao_carousel_lp')?>
         </div>
     </div>
 
@@ -276,91 +175,41 @@ if(have_posts()) : while(have_posts()) : the_post();
      <div id="carouselCustom" class="container-fluid solucoes p-0 text-center my-3">
         <div class="row mx-auto my-auto justify-content-center">
             <div id="recipeCarouselSecBlock" class="carousel slide" data-bs-ride="carousel">
+
                 <div class="carousel-inner" role="listbox">
-                <div class="carousel-item heroslide2 active">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>MDR</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>DEV SEC OPS</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
+                    <?php
+                        // Check rows exists.
+                        if( have_rows('carousel_01_lp') ):
+                            // Loop through rows.
+                            for($i=0; have_rows('carousel_01_lp'); $i++) : the_row();
+                                $categoria[$i] = get_sub_field('categoria');
+                                $nome[$i] = get_sub_field('nome');
+                                $descricao[$i] = get_sub_field('descricao');
+                                $link_cta[$i] = get_sub_field('link_cta');
+                    ?>
+                        <div class="carousel-item heroslide2 global <?=$i==0 ? 'active' : '';?>">
+                            <div class="col-11 col-md-3">
+                                <div class="card">
+                                    <div class="content">
+                                        <p class="tag"><?=$categoria[$i]?></p>
+                                        <h2><?=$nome[$i]?></h2>
+                                        <div class="w-100 custom-height">
+                                            <?=$descricao[$i]?>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
+                                            <a href="<?=$link_cta[$i];?>" class="d-flex buttonCta w-100">Saiba Mais</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>THREAT INTELL</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>CONSULTING</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item heroslide2">
-                    <div class="col-11 col-md-3">
-                        <div class="card">
-                            <div class="content">
-                                <p class="tag">CYBERSECURITY</p>
-                                <h2>LOREM IPSUM SERVICES</h2>
-                                <div class="w-100 custom-height">
-                                    <p>Descritivo breve lorem ipsum dolor.</p>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-end w-100 saibaMais">
-                                    <a href="/staged/tivit/solucoes-ativas/" class="d-flex buttonCta w-100">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <? 
+                        endfor;
+                        endif;
+                    ?>
                 </div>
 
-            </div>
-
-            <div class="d-flex position-absolute controls">
+                <div class="d-flex position-absolute controls">
                     <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarouselSecBlock" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
@@ -389,7 +238,8 @@ if(have_posts()) : while(have_posts()) : the_post();
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item heroslide3 active">
+
+            <div class="carousel-item heroslide3 global2 active">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -399,7 +249,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide3">
+            <div class="carousel-item heroslide3 global2">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -409,7 +259,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide3">
+            <div class="carousel-item heroslide3 global2">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -419,7 +269,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide3">
+            <div class="carousel-item heroslide3 global2">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -429,7 +279,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                     </div>
                 </div>
             </div>
-            <div class="carousel-item heroslide3">
+            <div class="carousel-item heroslide3 global2">
                 <div class="col-11 col-md-3">
                     <div class="card">
                         <div class="content">
@@ -445,8 +295,8 @@ if(have_posts()) : while(have_posts()) : the_post();
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <div class="d-flex flex-row counter">
-          <div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>
+        <div class="d-flex flex-row counter3">
+          <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
         </div>
         <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -501,7 +351,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div id="pecDepoimentos" class="lp-tbanks-depoimentos mx-custom">
   <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item heroslide active">
+      <div class="carousel-item heroslide4 active">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -519,8 +369,8 @@ if(have_posts()) : while(have_posts()) : the_post();
           </div>
         </div>
       </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
+      <div class="carousel-item heroslide4">
+        <div class="container">
           <div class="row">
             <div class="col-md-12">
             <div class="lp-tbanks-depoimentos-content text-center ">
@@ -537,8 +387,8 @@ if(have_posts()) : while(have_posts()) : the_post();
           </div>
         </div>
       </div>
-      <div class="carousel-item heroslide">
-      <div class="container">
+      <div class="carousel-item heroslide4">
+        <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="lp-tbanks-depoimentos-content text-center ">
@@ -587,197 +437,6 @@ if(have_posts()) : while(have_posts()) : the_post();
             </div>
         </div>
     </div>
-</div>
-
-<!-- Bloco de Conteúdos -->
-<div id="contentTdx" class="home-content content-inovacao">
-<div id="triangle-down"></div>
-  <div class="container pd">
-    <div class="title">
-      <h2 class="titleText text-center">NOSSOS CONTEÚDOS</h2>
-    </div>
-
-    <div class="row hide-mobile">
-      <!-- content 1 -->
-      <div class="col-12 col-md-4">
-        <div class="cardContent p-1"> 
-          <div class="img position-relative">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
-            <div class="position-absolute tagContent">artigo</div>
-          </div>
-          <div class="detalhes">
-            <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-          </div>
-          <div class="content">
-            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          </div>
-          <div class="autor-time w-100">
-            <div class="d-flex flex-row">
-              <a href="#">conta híbrida</a>
-              <a href="#">varejo</a>
-            </div>
-            <p>6 minutos de leitura</p>
-          </div>
-          <div class="acessar">
-            <a href="#">acessar artigo</a>
-          </div>
-        </div>
-      </div>
-      <!-- // content 1 -->
-
-      <!-- content 2 -->
-      <div class="col-12 col-md-4">
-        <div class="cardContent p-1">
-          <div class="title">
-            <h2 class="hide-desktop">cases mais recentes</h2>
-          </div>
-          <div class="img position-relative">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
-            <div class="position-absolute tagContent">press release</div>
-          </div>
-          <div class="detalhes">
-            <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-          </div>
-          <div class="content">
-            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          </div>
-          <div class="autor-time w-100">
-            <div class="d-flex flex-row">
-              <a href="#">conta híbrida</a>
-              <a href="#">varejo</a>
-            </div>
-            <p>6 minutos de leitura</p>
-          </div>
-          <div class="acessar">
-            <a href="#">acessar artigo</a>
-          </div>
-        </div>
-      </div>
-      <!-- // content 2 -->
-      <!-- content 3 -->
-      <div class="col-12 col-md-4">
-        <div class="cardContent p-1">
-          <div class="title">
-            <h2 class="hide-desktop">cases mais recentes</h2>
-          </div>
-          <div class="img position-relative">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
-            <div class="position-absolute tagContent">artigo</div>
-          </div>
-          <div class="detalhes">
-            <span>01/01/2021</span>
-            <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-          </div>
-          <div class="content">
-            <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          </div>
-          <div class="autor-time w-100">
-            <div class="d-flex flex-row align-items-center">
-              <a href="#">conta híbrida</a>
-              <a href="#">varejo</a>
-            </div>
-            <p>6 minutos de leitura</p>
-          </div>
-          <div class="acessar">
-            <a href="#">acessar artigo</a>
-          </div>
-        </div>
-      </div>
-      <!-- // content 3 -->
-    </div>
-
-    <!-- mobile slide -->
-    <div class="row mx-auto my-auto justify-content-center hide-desktop">
-      <div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-              <div class="carousel-item heroslide4 content active">
-                  <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2"> 
-                      <div class="img position-relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
-                        <div class="position-absolute tagContent">artigo</div>
-                      </div>
-                      <div class="detalhes">
-                        <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-                      </div>
-                      <div class="content">
-                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                      </div>
-                      <div class="autor-time w-100">
-                        <div class="d-flex flex-row aaa">
-                          <a href="#">conta híbrida</a>
-                          <a href="#">varejo</a>
-                        </div>
-                        <p>6 min. de leitura</p>
-                      </div>
-                      <div class="acessar">
-                        <a href="#">acessar artigo</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 content">
-                  <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2">
-                      <div class="img position-relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo2.png" alt="Depoimento">
-                        <div class="position-absolute tagContent">press release</div>
-                      </div>
-                      <div class="detalhes">
-                        <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-                      </div>
-                      <div class="content">
-                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                      </div>
-                      <div class="autor-time w-100">
-                        <div class="d-flex flex-row">
-                          <a href="#">conta híbrida</a>
-                          <a href="#">varejo</a>
-                        </div>
-                        <p>6 min. de leitura</p>
-                      </div>
-                      <div class="acessar">
-                        <a href="#">acessar artigo</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item heroslide4 content">
-                  <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2">
-                      <div class="img position-relative">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo3.png" alt="Depoimento">
-                        <div class="position-absolute tagContent">artigo</div>
-                      </div>
-                      <div class="detalhes">
-                        <span>01/01/2021</span>
-                        <p class="m-0 h-100">Por <b>Ana Helena Lazaroni</b></p>
-                      </div>
-                      <div class="content">
-                        <h3>título do artigo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                      </div>
-                      <div class="autor-time w-100">
-                        <div class="d-flex flex-row align-items-center">
-                          <a href="#">conta híbrida</a>
-                          <a href="#">varejo</a>
-                        </div>
-                        <p>6 min. de leitura</p>
-                      </div>
-                      <div class="acessar">
-                        <a href="#">acessar artigo</a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <?php

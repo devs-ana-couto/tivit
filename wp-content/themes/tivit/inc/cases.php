@@ -171,7 +171,7 @@ if (!function_exists('ac_bloco_cases')) {
             $saida .= '<h2>'.$dados[$ac]['titulo'].'</h2>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar case').'<img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('ver mais').'<img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"><img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow-red.svg" class="hide-mobile" alt="Saiba Mais"></a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -188,8 +188,7 @@ if (!function_exists('ac_bloco_cases')) {
         $saida .= '</button>';
         $saida .= '<div class="carousel-indicators">';
         for ($ac = 0; $ac < count($dados); $ac++ ) {
-            $saida .= '<button type="button" data-bs-target="#content" data-bs-slide-to="'.$ac.'" class="'.($ac == 0 ? 'active' : '').'"aria-current="true" aria-label="Content 1"></button>';
-            
+            $saida .= '<button type="button" data-bs-target="#hero" data-bs-slide-to="'.$ac.'" class="'.($ac == 0 ? 'active' : '').'"aria-current="true" aria-label="Content 1"></button>';
         }
 
         $saida .= '</div>';
@@ -238,7 +237,7 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
             $saida .= '<p>'.$dados[$ac]['resumo'].'</p>';
             $saida .= '<div class="w-100 d-flex text-left">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">VER CASE</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">VER MAIS</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -388,7 +387,7 @@ if (!function_exists('ac_pagina_cases')) {
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">acessar artigo <img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">Ver mais <img src="'.get_template_directory_uri().'/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
             $saida .= '</div>';
             $saida .= '</div>';
         }
@@ -467,7 +466,7 @@ if (!function_exists('ac_pagina_cases')) {
           $saida .= '</div>';
           $saida .= '</div>';
           $saida .= '<div class="acessar">';
-          $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo').'</a>';
+          $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('ver mais').'</a>';
           $saida .= '</div>';
           $saida .= '</div>';
           $saida .= '</div>';
