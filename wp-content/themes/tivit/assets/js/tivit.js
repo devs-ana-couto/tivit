@@ -219,6 +219,15 @@ jQuery(document).ready(function($) {
    $('.numseparation4').html('  /  ');
    $('.numtotal4').html( totalItems4 );
 
+
+   $('#recipeCarousel2').bind('slid.bs.carousel', function() {
+      currentIndex4 = $('.heroslide4.active').index() + 1;
+      // $('.numactive').html('' + currentIndex + '/' + totalItems + '');
+      $('.numactive4').html( currentIndex4 );
+      $('.numseparation4').html('  /  ');
+      $('.numtotal4').html( totalItems4 );
+   });
+
    $('#paymentMobileCarousel').bind('slid.bs.carousel', function() {
       currentIndex4 = $('.heroslide4.active').index() + 1;
       // $('.numactive').html('' + currentIndex + '/' + totalItems + '');

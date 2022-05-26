@@ -241,21 +241,21 @@
     background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
     width: 13px;
   }
-  .counter{
+  .counter, .counter4{
     margin-left: 15px;
     margin-right: 15px;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    .numactive{
+    .numactive, .numactive4{
       color: $vermelho-tivit;
       font-weight: 700;
     }
-    .numseparation, .numtotal{
+    .numseparation, .numtotal, .numseparation4, .numtotal4{
       color: $vermelho-tivit;
       font-weight: 300;
     }
-    .numseparation{
+    .numseparation, .numseparation4{
       margin-left: 10px;
       margin-right: 10px;
     }
