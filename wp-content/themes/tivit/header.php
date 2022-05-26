@@ -83,23 +83,22 @@
       <div class="row">
         <div class="col-2 col-md-5 header-menu">
           <div class="hide-mobile">
-          <?php
-            wp_nav_menu( array(
-              'theme_location'  => 'header-menu',
-              'depth'           =>  2, // 1 = no dropdowns, 2 = with dropdowns.
-              'container'       => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id'    => 'bs-example-navbar-collapse-1',
-              'menu_class'      => 'navbar-nav mr-auto',
-              'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-              'walker'          => new WP_Bootstrap_Navwalker(),
-            ) );
-          ?>
+            <?php
+              wp_nav_menu( array(
+                'theme_location'  => 'header-menu',
+                'depth'           =>  2, // 1 = no dropdowns, 2 = with dropdowns.
+                'container'       => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id'    => 'bs-example-navbar-collapse-1',
+                'menu_class'      => 'navbar-nav mr-auto',
+                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'          => new WP_Bootstrap_Navwalker(),
+              ) );
+            ?>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'tivit' ); ?>">
             <span class="navbar-toggler-icon"></span>
           </button>
-
         </div>
 
         <div class="col-8 col-md-2 header-logo">
@@ -108,7 +107,7 @@
           </a>
         </div>
 
-        <div class="col-4 col-md-3 header-menu hide-mobile">
+        <div class="offset-md-2 col-4 col-md-3 header-menu hide-mobile">
           <?php
             wp_nav_menu( array(
               'theme_location'  => 'header-menu-02',
@@ -122,8 +121,8 @@
             ) );
           ?>
         </div>
-        <div class="col-4 col-md-2 header-options hide-mobile">
-          <div class="language" style="display:none;">
+        <!-- <div class="col-4 col-md-2 header-options">
+          <div class="language">
             <a href="#"><p class="en">EN</p></a>
             <a href="#"><p class="es">ES</p></a>
           </div>
@@ -132,7 +131,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" alt="Search Tivit" onclick="abre_barra_pesquisa();">
           </div>
 
-        </div>
+        </div> -->
 
         <div class="col-2 hide-desktop search">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg" class="search-ico" alt="Search Tivit" onclick="abre_barra_pesquisa();">

@@ -67,11 +67,25 @@
     <div class="row">
       <div class="col-12">
         <div class="redes hide-mobile">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg"  alt="Linkedin">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg"  alt="Instagram">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg"  alt="Twitter">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg"  alt="Youtube">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg"  alt="Facebook">
+          <? if(get_field('instagram', 'option') != ""){?>
+            <a href="<? the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg" alt="Instagram"></a>
+          <? } ?>
+
+          <? if(get_field('linkedin', 'option') != ""){?>
+            <a href="<? the_field('linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg" alt="Linkedin"></a>
+          <? } ?>
+
+          <? if(get_field('facebook', 'option') != ""){?>
+            <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg" alt="Facebook"></a>
+          <? } ?>
+          
+          <? if(get_field('twitter', 'option') != ""){?>
+            <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg" alt="Twitter"></a>
+          <? } ?>
+          
+          <? if(get_field('youtube', 'option') != ""){?>
+            <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg" alt="Youtube"></a>
+          <? } ?>
         </div>
       </div>
     </div>
@@ -159,11 +173,6 @@
   </div>
 </div>
 
-<section class="partners">
-  <?=do_shortcode('[ac-bloco-clientes]');?>
-</section>
-
-
 <section class="pessoasCarreiras">
   <div class="d-flex justify-content-center transCarreiras position-absolute hide-mobile"></div>
   <div class="d-flex justify-content-center home-pessoas-e-carreiras">
@@ -171,11 +180,10 @@
       <div class="row">
         <div class="col-12">
           <div class="home-pessoas-e-carreiras-title">
-            <h2><?php _e('Pessoas e Carreiras'); ?></h2>
-            <p class=""><?php _e('Você está preparado para o futuro?</br>Aqui na TIVIT, temos a resposta que você precisa.'); ?></p>
+            <? the_field('texto_pc') ?>
           </div>
           <div class="botao">
-            <a href="<?php echo get_site_url();?>/pessoas-e-carreiras/"><?php _e('Saiba mais'); ?></a>
+            <a href="<? the_field('url_cta_pc') ?>"><? the_field('texto_cta_pc') ?></a>
           </div>
         </div>
       </div>
@@ -183,6 +191,9 @@
   </div>
 </section>
 
+<section class="partners">
+  <?=do_shortcode('[ac-bloco-clientes]');?>
+</section>
 
 
 <?php get_footer(); ?>

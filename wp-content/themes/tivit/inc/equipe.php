@@ -127,21 +127,20 @@ if (!function_exists('ac_bloco_equipe')) {
                 $saida .= '<div class="card">';
                 $saida .= '<div class="card-img position-relative">';
                 $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="'.$dados[$ac]['titulo'].'" class="img-fluid w-100">';
+                $saida .= '<a target="_blank" href="'.$dados[$ac]['linkedin'].'">';
                 $saida .= '<div class="position-absolute tagIn"> <img class="position-absolute imgIn" src="'.get_template_directory_uri().'/assets/images/pessoas-e-carreiras/in-white.svg" alt="Linkedin" class="img-fluid"> </div>';
+                $saida .= '</a>';
                 $saida .= '</div>';
                 $saida .= '<div class="content">';
                 $saida .= '<h2>'.$dados[$ac]['titulo'].'</h2>';
                 $saida .= '<p>'.$dados[$ac]['atuacao'].'</p>';
-                $saida .= '</div>';
-                $saida .= '<div class="redes-sociais d-flex justify-content-center flex-row">';
-                $saida .= '<a href="'.$dados[$ac]['linkedin'].'" target="_blank"><img src="'.get_template_directory_uri().'/assets/images/pessoas-e-carreiras/in.svg" alt="Linkedin" class="img-fluid"></a>';
                 $saida .= '</div>';
                 $saida .= '</div>';
                 $saida .= '</div>';
                 $saida .= '</div>';
             }
             $saida .= '</div>'; //.carousel-inner
-            $saida .= '<div class="d-flex justify-content-center mt-5">';
+            $saida .= '<div class="d-flex justify-content-center mt-3">';
             $saida .= '<a class="carousel-control-prev bg-transparent w-aut" href="#esg" role="button" data-bs-slide="prev">';
             $saida .= '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
             $saida .= '</a>';

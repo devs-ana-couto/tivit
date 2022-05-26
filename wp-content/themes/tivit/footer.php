@@ -50,11 +50,25 @@
         <div class="col-12 col-md-3 footer-socials hide-mobile">
           <p>
 
-          <a href="<? the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-red.svg" alt="Instagram"></a>
-          <a href="<? the_field('linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-red.svg" alt="Linkedin"></a>
-          <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-red.svg" alt="Facebook"></a>
-          <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-red.svg" alt="Twitter"></a>
-          <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube"></a>
+          <? if(get_field('instagram', 'option') != ""){?>
+            <a href="<? the_field('instagram', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-red.svg" alt="Instagram"></a>
+          <? } ?>
+
+          <? if(get_field('linkedin', 'option') != ""){?>
+            <a href="<? the_field('linkedin', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-red.svg" alt="Linkedin"></a>
+          <? } ?>
+
+          <? if(get_field('facebook', 'option') != ""){?>
+            <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-red.svg" alt="Facebook"></a>
+          <? } ?>
+          
+          <? if(get_field('twitter', 'option') != ""){?>
+            <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-red.svg" alt="Twitter"></a>
+          <? } ?>
+          
+          <? if(get_field('youtube', 'option') != ""){?>
+            <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube"></a>
+          <? } ?>
 
           </p>
 

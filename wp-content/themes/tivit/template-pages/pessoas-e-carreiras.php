@@ -478,40 +478,40 @@
 
     <!-- Bloco Mobile Carrossel -->
     <div id="carouselCustom" class="container-fluid p-0 text-center my-3 hide-desktop">
-        <div class="row mx-auto my-auto justify-content-center">
-            <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-              <?
-                  if( have_rows('itens_nb') ) {
-                      for($i=0; have_rows('itens_nb'); $i++) {
-                        the_row();
-                        $icone_itemnb[$i] = get_sub_field('icone');
-                        $name_itemnb[$i] = get_sub_field('nome');
-                        $description_itemnb[$i] = get_sub_field('descricao');
-              ?>
-                <div class="carousel-item heroslide5 active">
-                  <div class="col-11 col-md-3">
-                    <div class="box">
-                      <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
-                        <img src="<?php echo $icone_itemnb[$i]; ?>" alt="Privally">
-                        <div class="content">
-                          <h2><?php echo $name_itemnb[$i]?></h2>
-                          <p>
-                            <?php echo $description_itemnb[$i]?>
-                          </p>
-                        </div>
+      <div class="row mx-auto my-auto justify-content-center">
+          <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+            <?
+                if( have_rows('itens_nb') ) {
+                    for($i=0; have_rows('itens_nb'); $i++) {
+                      the_row();
+                      $icone_itemnb[$i] = get_sub_field('icone');
+                      $name_itemnb[$i] = get_sub_field('nome');
+                      $description_itemnb[$i] = get_sub_field('descricao');
+            ?>
+              <div class="carousel-item heroslide5 active">
+                <div class="col-11 col-md-3">
+                  <div class="box">
+                    <div class="d-flex flex-column justify-content-start align-items-center w-100 h-100 margin-auto text-center">
+                      <img src="<?php echo $icone_itemnb[$i]; ?>" alt="Privally">
+                      <div class="content">
+                        <h2><?php echo $name_itemnb[$i]?></h2>
+                        <p>
+                          <?php echo $description_itemnb[$i]?>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <?php
-                      }
+              </div>
+              <?php
                     }
-                ?>
-            </div>
+                  }
+              ?>
           </div>
         </div>
       </div>
+    </div>
 
   </div>
 </div>

@@ -52,7 +52,7 @@ if (!function_exists('ac_clientes_listar')) {
 
 if (!function_exists('ac_bloco_clientes')) {
     function ac_bloco_clientes() {
-        $arg['porpagina'] = 3;
+        $arg['porpagina'] = 6;
         $arg['pagina']    = 1;  
         $dados = ac_clientes_listar($arg);
 

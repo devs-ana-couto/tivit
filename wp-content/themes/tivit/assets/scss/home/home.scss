@@ -667,6 +667,7 @@
       &:hover{
         color: #c4c4c4;
         transition: all .2s linear;
+        border: none;
         &:after{
           margin-left: 20px;
           transition: all .2s linear;
@@ -699,7 +700,7 @@
     .btncontent{
       background: transparent;
       border: 1px solid #F20024;
-      padding: 20px 35px 20px 35px;
+      padding: 15px 40px;
       border-radius: 50px;
       color: white;
       text-transform: uppercase;
@@ -1166,7 +1167,7 @@
   }
 
   .partners{
-    padding: 140px 0;
+    padding: 0px 0 50px 0;
     transition: all 0.4s linear 0.2s;
     opacity: 0;
     .title{
