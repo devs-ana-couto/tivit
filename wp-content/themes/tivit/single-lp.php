@@ -229,7 +229,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 <div class="introTitle">
     <div class="container titleCarousel">
         <h2>
-            Pilares de atuação
+            <?the_field('chamada_carousel_02_lp')?>
         </h2>
     </div>
 </div>
@@ -238,58 +238,30 @@ if(have_posts()) : while(have_posts()) : the_post();
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
+            <?php
+                // Check rows exists.
+                if( have_rows('carousel_02_lp') ):
+                    // Loop through rows.
+                    for($i=0; have_rows('carousel_02_lp'); $i++) : the_row();
+                        $titulo[$i] = get_sub_field('titulo');
+                        $descricao[$i] = get_sub_field('descricao');
+            ?>
+            <div class="carousel-item heroslide3 global2 <?=$i==0 ? 'active' : '';?>">
+                <div class="col-11 col-md-3">
+                    <div class="card">
+                        <div class="content">
+                        <h2><?=$titulo[$i]?></h2>
+                        <p><?=$descricao[$i]?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <? 
+                endfor;
+                endif;
+            ?>
 
-            <div class="carousel-item heroslide3 global2 active">
-                <div class="col-11 col-md-3">
-                    <div class="card">
-                        <div class="content">
-                        <h2>Produtização</h2>
-                        <p>Desenvolvimento, teste e validação de novas soluções de acordo com as demandas dos clientes e tendências de mercado.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item heroslide3 global2">
-                <div class="col-11 col-md-3">
-                    <div class="card">
-                        <div class="content">
-                        <h2>Meetups</h2>
-                        <p>Realização de eventos e encontros para criar uma comunidade de executivos, profissionais de tecnologia e pesquisadores com ideias e objetivos comuns.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item heroslide3 global2">
-                <div class="col-11 col-md-3">
-                    <div class="card">
-                        <div class="content">
-                        <h2>Hackatons</h2>
-                        <p>Promoção de maratonas de desenvolvimento para resolução de problemas de negócio, geração de novas ideias e compartilhamento de conhecimento junto ao público externo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item heroslide3 global2">
-                <div class="col-11 col-md-3">
-                    <div class="card">
-                        <div class="content">
-                        <h2>Startup <br> Pitch Day</h2>
-                        <p>Aproximação do ecossistema de startups para apresentação e análise de novas propostas de negócio, com potencial de aceleração pela TIVIT.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item heroslide3 global2">
-                <div class="col-11 col-md-3">
-                    <div class="card">
-                        <div class="content">
-                        <h2>Academy</h2>
-                        <p>Divisão de conhecimentos e novas metodologias. Transformar as pessoas e dar o impulso para novas skills profissionais.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
+        </div>
       </div>
       <div class="d-flex justify-content-center mt-3 mt-md-5">
         <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
@@ -309,39 +281,28 @@ if(have_posts()) : while(have_posts()) : the_post();
     <div class="row">
         <div class="col-12 col-md-4">
             <div class="intro">
-                <h2 class="titleDif">NOSSOS DIFERENCIAIS</h2>
-                <p class="subtitle">Aconselhamos nossos clientes na escolha da melhor solução. Somos provedores multicloud e entregamos nuvens híbridas de verdade.</p>
+                <?the_field('chamada_nd_lp')?>
                 <div>
-                    <a class="cta">Fale com nossos especialistas</a>
+                    <a href="<?the_field('cta_link_nd_lp')?>" class="cta"><?the_field('cta_texto_nd_lp')?></a>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4">
-            <div class="content">
-                <div>
-                    <h2>Cultura</h2>
-                    <p>Apoiamos a transformação integral do cliente, conduzindo-o numa jornada de evolução contínua e atenta às necessidades de cada empresa.</p>
+        <div class="col-12 col-md-8">
+            <div class="row">
+                <?
+                    if( have_rows('itens_nd_lp') ):
+                    // Loop through rows.
+                        for($i=0; have_rows('itens_nd_lp'); $i++) : the_row();
+                        $texto[$i] = get_sub_field('texto');
+                ?>
+                <div class="col-12 col-md-6">
+                    <div class="content">
+                        <div>
+                            <?=$texto[$i]?>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Parcerias sólidas</h2>
-                    <p>Somos certificados e experientes na implantação e gestão dos principais players de nuvem.</p>
-                </div>
-                <div>
-                    <h2>Agilidade</h2>
-                    <p>Proporcionamos serviços eficientes, com maior qualidade e velocidade, utilizando conceitos como AiOPs, Agile, DevOps e ferramentas de última geração.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="content">
-                <div>
-                    <h2>Portfólio</h2>
-                    <p>Temos expertise nas camadas de infraestrutura, cloud, plataformas e soluções digitais, com competências específicas e diferenciadas para cada parceiro.</p>
-                </div>
-                <div>
-                    <h2>Consultoria</h2>
-                    <p>Somos flexíveis às demandas dos clientes. Nossa equipe de especialistas entrega a melhor solução para o seu negócio.</p>
-                </div>
+                <? endfor; endif; ?>
             </div>
         </div>
     </div>

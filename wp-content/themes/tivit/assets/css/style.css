@@ -2086,46 +2086,49 @@ div {
     .valorizacao .carousel-inner .carousel-item-prev {
       display: flex; } }
 
-#pecDepoimentos {
-  padding: 100px 0; }
-  @media (max-width: 767px) {
-    #pecDepoimentos {
-      margin-top: 70px;
-      margin-bottom: 50px;
-      padding: 50px 0; }
-      #pecDepoimentos .mobileRelative {
-        display: flex;
-        position: relative;
-        justify-content: center; } }
-  #pecDepoimentos .carousel-control-prev-icon {
-    background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
-    width: 13px; }
-  #pecDepoimentos .carousel-control-next-icon {
-    background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
-    width: 13px; }
-  #pecDepoimentos .counter {
-    margin-left: 15px;
-    margin-right: 15px;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; }
-    #pecDepoimentos .counter .numactive {
-      color: #F20024;
-      font-weight: 700; }
-    #pecDepoimentos .counter .numseparation, #pecDepoimentos .counter .numtotal {
-      color: #F20024;
-      font-weight: 300; }
-    #pecDepoimentos .counter .numseparation {
-      margin-left: 10px;
-      margin-right: 10px; }
-  #pecDepoimentos .carousel-control-prev, #pecDepoimentos .carousel-control-next {
-    top: 35%; }
-  #pecDepoimentos .redes {
-    margin: 10px 0 15px 0; }
-    #pecDepoimentos .redes img {
-      width: 30px; }
-    #pecDepoimentos .redes img:first-child, #pecDepoimentos .redes img:nth-child(2n) {
-      margin-right: 10px; }
+@media (max-width: 767px) {
+  #pecDepoimentos {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 50px 0; }
+    #pecDepoimentos .mobileRelative {
+      display: flex;
+      position: relative;
+      justify-content: center; } }
+
+#pecDepoimentos .carousel-control-prev-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-left-red.svg") !important;
+  width: 13px; }
+
+#pecDepoimentos .carousel-control-next-icon {
+  background-image: url("../../assets/icons/navegacao/arrow-right-red.svg") !important;
+  width: 13px; }
+
+#pecDepoimentos .counter {
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; }
+  #pecDepoimentos .counter .numactive {
+    color: #F20024;
+    font-weight: 700; }
+  #pecDepoimentos .counter .numseparation, #pecDepoimentos .counter .numtotal {
+    color: #F20024;
+    font-weight: 300; }
+  #pecDepoimentos .counter .numseparation {
+    margin-left: 10px;
+    margin-right: 10px; }
+
+#pecDepoimentos .carousel-control-prev, #pecDepoimentos .carousel-control-next {
+  top: 35%; }
+
+#pecDepoimentos .redes {
+  margin: 10px 0 15px 0; }
+  #pecDepoimentos .redes img {
+    width: 30px; }
+  #pecDepoimentos .redes img:first-child, #pecDepoimentos .redes img:nth-child(2n) {
+    margin-right: 10px; }
 
 #pecOferece.lp-tbanks-conheca {
   padding: 0 !important; }
