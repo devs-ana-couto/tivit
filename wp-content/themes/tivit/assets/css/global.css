@@ -381,7 +381,7 @@ html, body, * {
     transition: .8s all; }
     .solution-menu .nav-tabs {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       border-color: RGBA(195, 195, 195, 0.28); }
       .solution-menu .nav-tabs .nav-link.active {
         background-color: transparent;

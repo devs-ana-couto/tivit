@@ -38,11 +38,11 @@
         'orderby'         => 'menu',
         'order'           => 'ASC',
         'tax_query' => array(
-            array(
-                'taxonomy' => $tipo_categoria,
-                'field'    => 'slug',
-                'terms'    => $valor_categoria,
-            ),
+          array(
+            'taxonomy' => $tipo_categoria,
+            'field'    => 'slug',
+            'terms'    => $valor_categoria,
+          ),
         ),
     );
     $the_query = new WP_Query( $args );
@@ -101,13 +101,13 @@
           </button>
         </div>
 
-        <div class="col-8 col-md-2 header-logo">
+        <div class="col-8 col-md-3 header-logo">
           <a class="navbar-brand" href="<?php echo home_url(); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px" height="21px" class="logo-brand" alt="Logo Tivit">
           </a>
         </div>
 
-        <div class="offset-md-2 col-4 col-md-3 header-menu hide-mobile">
+        <div class="offset-md-1 col-4 col-md-3 header-menu hide-mobile">
           <?php
             wp_nav_menu( array(
               'theme_location'  => 'header-menu-02',
@@ -139,17 +139,23 @@
       </div>
 
       <div class="solution-menu position-absolute hide-mobile">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por serviços e produtos</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por indústria</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POR DESAFIO</button>
-          </li>
-        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por serviços e produtos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por indústria</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POR DESAFIO</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active pt-5" id="home" role="tabpanel" aria-labelledby="home-tab">

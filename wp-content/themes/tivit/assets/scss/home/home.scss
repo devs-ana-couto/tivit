@@ -914,10 +914,12 @@
       }
       a{
         text-decoration: unset;
+        margin: 15px;
       }
       p{
         font-size: 36px;
-        line-height: 56px;
+        line-height: 40px;
+        max-width: 500px;
         margin-bottom: 0;
         color: white;
         transition: all 0.25s linear;

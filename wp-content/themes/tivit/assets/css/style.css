@@ -382,7 +382,7 @@ html, body, * {
     transition: .8s all; }
     .solution-menu .nav-tabs {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       border-color: RGBA(195, 195, 195, 0.28); }
       .solution-menu .nav-tabs .nav-link.active {
         background-color: transparent;
@@ -1674,10 +1674,12 @@ div {
       line-height: 30px;
       font-weight: 600; }
     .home-portifolio .home-portifolio-content a {
-      text-decoration: unset; }
+      text-decoration: unset;
+      margin: 15px; }
     .home-portifolio .home-portifolio-content p {
       font-size: 36px;
-      line-height: 56px;
+      line-height: 40px;
+      max-width: 500px;
       margin-bottom: 0;
       color: white;
       transition: all 0.25s linear; }
