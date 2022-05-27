@@ -110,35 +110,41 @@
         flex-direction: column;
         justify-content: space-around;
         transition: 1s all;
+        .chamada{
+            transition: 1s all;
+        }
         img{
             width: 100%;
             height: 100px;
             transition: 1s all;
         }
+
         p{
             margin-top: 40px;
+            
             transition: 1s all;
         }
+        a{
+            transition: 1s all;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .botao-ventures{
+            transition: 1s all;
+        }
+
         &:hover{
             background: white;
             transition: 1s all;
             img{
                 filter: grayscale(0);
             }
-            > a{
-                opacity: 1;
-                transition: 1s all;
-            }
         }
-        a{
+        &:hover .chamada{
             transition: 1s all;
-            opacity: 0;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-        .botao-ventures{
-            transition: 1s all;
+            display: block;
         }
     }
 }

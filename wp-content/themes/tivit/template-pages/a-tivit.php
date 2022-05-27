@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<div class="a-tivit-carousel hide-desktop">
+<!-- <div class="a-tivit-carousel hide-desktop">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
 
@@ -134,7 +134,7 @@
     <div>2009</div>
     <div>2010</div>
   </div>
-</div>
+</div> -->
 
 <div class="a-tivit-cases cases ctivit">
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">

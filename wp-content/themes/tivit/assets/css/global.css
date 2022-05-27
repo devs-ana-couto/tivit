@@ -563,6 +563,8 @@ html, body, * {
     background: transparent;
     height: 70px;
     transition: all .2s; }
+    .navbar-expand-md .navbar-collapse {
+      justify-content: flex-end; }
   .navbar-expand-md-red {
     background: #990017;
     transition: all .2s; }
@@ -608,7 +610,6 @@ html, body, * {
           text-decoration: none;
           border: 1px solid white;
           background: white;
-          padding: 0.08rem 0.75rem !important;
           box-sizing: border-box;
           border-radius: 50px; }
           .header .header-menu ul li.btn-contact a,
@@ -831,6 +832,8 @@ html, body, * {
         text-decoration: none; }
         .footer .footer-socials p a:hover {
           opacity: 0.6; }
+        .footer .footer-socials p a img {
+          height: 30px; }
   .footer .footer-partners {
     padding: 0;
     display: flex;
@@ -934,6 +937,21 @@ html, body, * {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+
+.inicial {
+  display: flex;
+  justify-content: start;
+  width: 33%; }
+
+.central {
+  display: flex;
+  justify-content: center;
+  width: 33%; }
+
+.final {
+  display: flex;
+  justify-content: flex-end;
+  width: 33%; }
 
 .numbers {
   animation: counter 5s infinite alternate ease-in-out;

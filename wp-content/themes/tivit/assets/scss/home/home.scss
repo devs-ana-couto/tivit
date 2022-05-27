@@ -104,11 +104,11 @@
   transition: all 0.3s ease-in;
   @media(max-width: 760px){
     background: white;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 50px 0px;
   }
   p{
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 28px;
     color: #262626;
     text-align: center;
     max-width: 320px;
@@ -757,6 +757,7 @@
         bottom: 90px;
         img{
           margin-bottom: 5px;
+          height: 30px;
           &:hover{
             filter: invert(18%) sepia(8%) saturate(0%) hue-rotate(143deg) brightness(97%) contrast(89%);
           }

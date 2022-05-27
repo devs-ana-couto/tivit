@@ -564,6 +564,8 @@ html, body, * {
     background: transparent;
     height: 70px;
     transition: all .2s; }
+    .navbar-expand-md .navbar-collapse {
+      justify-content: flex-end; }
   .navbar-expand-md-red {
     background: #990017;
     transition: all .2s; }
@@ -609,7 +611,6 @@ html, body, * {
           text-decoration: none;
           border: 1px solid white;
           background: white;
-          padding: 0.08rem 0.75rem !important;
           box-sizing: border-box;
           border-radius: 50px; }
           .header .header-menu ul li.btn-contact a,
@@ -832,6 +833,8 @@ html, body, * {
         text-decoration: none; }
         .footer .footer-socials p a:hover {
           opacity: 0.6; }
+        .footer .footer-socials p a img {
+          height: 30px; }
   .footer .footer-partners {
     padding: 0;
     display: flex;
@@ -935,6 +938,21 @@ html, body, * {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+
+.inicial {
+  display: flex;
+  justify-content: start;
+  width: 33%; }
+
+.central {
+  display: flex;
+  justify-content: center;
+  width: 33%; }
+
+.final {
+  display: flex;
+  justify-content: flex-end;
+  width: 33%; }
 
 .numbers {
   animation: counter 5s infinite alternate ease-in-out;
@@ -1076,10 +1094,10 @@ div {
   @media (max-width: 760px) {
     .home-intro {
       background: white;
-      padding: 30px 0px 0px 0px; } }
+      padding: 30px 0px 50px 0px; } }
   .home-intro p {
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 28px;
     color: #262626;
     text-align: center;
     max-width: 320px;
@@ -1565,7 +1583,8 @@ div {
         right: 0;
         bottom: 90px; }
         .home-hero .container .redes img {
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          height: 30px; }
           .home-hero .container .redes img:hover {
             filter: invert(18%) sepia(8%) saturate(0%) hue-rotate(143deg) brightness(97%) contrast(89%); }
     .home-hero .container {
@@ -3248,7 +3267,8 @@ div {
         display: flex;
         margin: 0 auto;
         flex-direction: column-reverse;
-        align-items: center; }
+        align-items: center;
+        border: none; }
       .cases-hero .botaoReels img {
         border: 1px solid black;
         border-radius: 50%; }
@@ -3761,7 +3781,6 @@ div {
     color: #262626;
     font-weight: 500;
     text-align: center;
-    max-width: 520px;
     margin: 0 auto; }
     .inovacao-intro p span {
       font-weight: 600;
@@ -3828,6 +3847,7 @@ div {
           filter: grayscale(0);
           /* Microsoft Edge and Firefox 35+ */ } }
     #ventures div.box .chamada {
+      display: none;
       transition: 0.2s; }
       #ventures div.box .chamada a {
         position: relative;
@@ -5498,8 +5518,9 @@ div {
           margin-right: 8px; }
         .contato-canais .borda .contato-canais-item p img:last-child {
           margin-left: 8px; }
+  .contato-canais .borda.socials img {
+    height: 30px; }
   .contato-canais .borda.socials a {
-    height: 35px;
     width: 35px;
     margin-right: 30px; }
     .contato-canais .borda.socials a:last-child {
@@ -7106,6 +7127,8 @@ div {
   flex-direction: column;
   justify-content: space-around;
   transition: 1s all; }
+  #ventures div.box .chamada {
+    transition: 1s all; }
   #ventures div.box img {
     width: 100%;
     height: 100px;
@@ -7113,22 +7136,21 @@ div {
   #ventures div.box p {
     margin-top: 40px;
     transition: 1s all; }
-  #ventures div.box:hover {
-    background: white;
-    transition: 1s all; }
-    #ventures div.box:hover img {
-      filter: grayscale(0); }
-    #ventures div.box:hover > a {
-      opacity: 1;
-      transition: 1s all; }
   #ventures div.box a {
     transition: 1s all;
-    opacity: 0;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 10px; }
   #ventures div.box .botao-ventures {
     transition: 1s all; }
+  #ventures div.box:hover {
+    background: white;
+    transition: 1s all; }
+    #ventures div.box:hover img {
+      filter: grayscale(0); }
+  #ventures div.box:hover .chamada {
+    transition: 1s all;
+    display: block; }
 
 .apresentacoes {
   padding: 50px 0 50px 0; }
@@ -7655,7 +7677,12 @@ div {
     padding-right: 20px;
     color: #ffffff; }
 
+@media (min-width: 760px) {
+  .search {
+    margin-left: 20px; } }
+
 .search img {
+  width: 30px;
   cursor: pointer; }
 
 .search-results .header {

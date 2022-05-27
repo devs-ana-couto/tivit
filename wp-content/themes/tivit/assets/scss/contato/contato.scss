@@ -234,8 +234,10 @@
         }
     }
     .borda.socials{
+        img{
+            height: 30px;
+        }
         a{
-            height: 35px;
             width: 35px;
             margin-right: 30px;
             &:last-child{
