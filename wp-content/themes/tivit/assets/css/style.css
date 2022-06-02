@@ -1045,8 +1045,9 @@ div {
       background: white;
       color: #F20024; }
 
-.home-hero .mask {
-  opacity: 0; }
+@media (max-width: 759px) {
+  .home-hero .mask {
+    opacity: 0; } }
 
 .home-hero .content {
   background-size: cover;

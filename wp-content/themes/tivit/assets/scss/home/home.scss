@@ -46,9 +46,12 @@
   // #hero{
   //   background-color: #990017;
   // }
-  .mask{
-    opacity: 0;
+  @media(max-width: 759px){
+    .mask{
+      opacity: 0;
+    }
   }
+
   .content{
     @media(max-width:759px){
       background: url('../../assets/images/home/slider-1-mobile.png') no-repeat center center;
