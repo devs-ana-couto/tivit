@@ -46,6 +46,9 @@
   // #hero{
   //   background-color: #990017;
   // }
+  .mask{
+    opacity: 0;
+  }
   .content{
     @media(max-width:759px){
       background: url('../../assets/images/home/slider-1-mobile.png') no-repeat center center;
@@ -59,6 +62,8 @@
     .title{
       max-width: 320px;
       margin: 0 auto;
+      left: 0;
+      right: 0;
       h1{
         font-size: 48px;
         line-height: 48px;
@@ -387,6 +392,7 @@
     .carousel-inner .carousel-item-prev {
         display: flex;
     }
+
   }
 }
 

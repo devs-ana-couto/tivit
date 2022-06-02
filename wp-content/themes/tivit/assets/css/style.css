@@ -1045,6 +1045,9 @@ div {
       background: white;
       color: #F20024; }
 
+.home-hero .mask {
+  opacity: 0; }
+
 .home-hero .content {
   background-size: cover;
   height: 580px;
@@ -1057,7 +1060,9 @@ div {
       background-size: cover; } }
   .home-hero .content .title {
     max-width: 320px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
     .home-hero .content .title h1 {
       font-size: 48px;
       line-height: 48px;

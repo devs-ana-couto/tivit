@@ -17,8 +17,8 @@
         ?>
         <div class="carousel-item heroslide <?=$i==0 ? 'active' : ''?>">
             <div class="content">
-                <img class="hide-mobile maskImg" src="<?=$banner_desktop_url[$i]?>" alt="Imagem do Slider" />
-                <img class="hide-mobile mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
+                <img class="maskImg hide-mobile" src="<?=$banner_desktop_url[$i]?>" alt="Imagem do Slider" />
+                <img class="mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg" alt="mask" />
                 <div class="title position-absolute">
                     <h1><?=$chamada[$i]?></h1>
                 </div>
