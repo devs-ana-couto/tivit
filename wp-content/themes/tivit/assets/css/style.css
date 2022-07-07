@@ -9932,7 +9932,7 @@ div {
   }
 }
 .box-intro .box-cta {
-  width: 82%;
+  width: 88%;
   display: flex;
   flex-wrap: wrap;
   z-index: 1054;
@@ -9951,7 +9951,7 @@ div {
   color: #FFFFFF;
 }
 .box-intro .box-cta .btn-outline-primary {
-  margin-top: 40px;
+  margin-top: 25px;
   z-index: 1054;
   width: 280px;
   height: 50px;
