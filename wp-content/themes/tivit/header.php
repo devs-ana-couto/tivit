@@ -12,7 +12,7 @@
 <!-- Bootstrap -->
 <!-- CSS -->
 
-<?php
+    <?php
   // Path: header.php
   wp_head();
 
