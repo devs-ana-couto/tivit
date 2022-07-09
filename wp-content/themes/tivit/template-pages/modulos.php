@@ -321,7 +321,8 @@
         <div class="container">
             <!-- passe o d-flex para ativo, e d-none para ocultar na class -->
             <div class="col d-flex justify-content-center box-title-top">
-                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo - (Opcional)</h3>
+                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo -
+                    (Opcional)</h3>
             </div>
             <div class="row gx-4 linha-dados">
                 <div class="col-12 col-lg-7 order-1 box-list">
@@ -413,7 +414,8 @@
     <section class="container-fluid px-0 box-list-img alternative">
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top">
-                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo - (Opcional)</h3>
+                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo -
+                    (Opcional)</h3>
             </div>
             <div class="row gx-4 linha-dados">
                 <div class="col-12 col-lg-7 order-2 box-list">
@@ -497,6 +499,143 @@
                 </div>
                 <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center">
                     <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- box banner soluções -->
+    <section class="container box-banner-solucoes">
+        <div class="d-flex flex-wrap">
+
+            <div class="col-12 col-lg-auto order-1 box-img position-relative">
+                <div class="card-img-overlay box-overlay">
+                    <h3 class="box-title-img">Managed Detecting and Response (MDR)</h3>
+                </div>
+                <div class="col-12">
+                    <img class="w-100"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/banner-solucoes.png"
+                         alt="">
+                </div>
+                <div class="card-img-overlay box-overlay-mandala d-flex justify-content-center
+                 justify-content-lg-end align-items-end align-items-lg-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/mandala-solucoes.png"
+                         alt="">
+                </div>
+            </div>
+
+            <!-- passe a cor de fundo na tag style -->
+            <div class="col-12 col-lg box-solucoes order-2 position-relative" style="background: #F14517;">
+                <div class="row justify-content-end align-items-center h-100">
+                    <div class="col-12 col-lg-10 box-dados-list">
+                        <div class="col-auto box-title">
+                            <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
+                                segurança de TI, apoiada na
+                                experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
+                                responder às ameaças em tempo real.
+                            </h3>
+                        </div>
+                        <div class="col-auto listagem">
+                            <ul>
+                                <li>
+                                    <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
+                                    especializado atuando
+                                    na gestão de ambientes críticos
+                                </li>
+                                <li>
+                                    <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
+                                    vulnerabilidades de
+                                    ambientes produtivos
+                                </li>
+                                <li>
+                                    <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
+                                    Identidade e
+                                    permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
+                                </li>
+                                <li>
+                                    <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
+                                    aplicações em
+                                    nuvem, mitigando o risco de vazamento de dados.
+                                </li>
+                                <li>
+                                    <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
+                                    ISO27001 de
+                                    segurança da informação
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
+                            <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- box banner soluções alternativo -->
+    <section class="container box-banner-solucoes">
+        <div class="d-flex flex-wrap">
+
+            <div class="col-12 col-lg-auto order-1 box-img position-relative">
+                <div class="card-img-overlay box-overlay">
+                    <h3 class="box-title-img">Managed Detecting and Response (MDR)</h3>
+                </div>
+                <div class="col-12">
+                    <img class="w-100"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/banner-solucoes.png"
+                         alt="">
+                </div>
+                <div class="card-img-overlay box-overlay-mandala d-flex justify-content-center
+                 justify-content-lg-end align-items-end align-items-lg-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/mandala-solucoes-alt.png"
+                         alt="">
+                </div>
+            </div>
+
+            <!-- passe a cor de fundo na tag style -->
+            <div class="col-12 col-lg box-solucoes order-2 position-relative" style="background: #009EE3;">
+                <div class="row justify-content-end align-items-center h-100">
+                    <div class="col-12 col-lg-10 box-dados-list">
+                        <div class="col-auto box-title">
+                            <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
+                                segurança de TI, apoiada na
+                                experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
+                                responder às ameaças em tempo real.
+                            </h3>
+                        </div>
+                        <div class="col-auto listagem">
+                            <ul>
+                                <li>
+                                    <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
+                                    especializado atuando
+                                    na gestão de ambientes críticos
+                                </li>
+                                <li>
+                                    <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
+                                    vulnerabilidades de
+                                    ambientes produtivos
+                                </li>
+                                <li>
+                                    <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
+                                    Identidade e
+                                    permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
+                                </li>
+                                <li>
+                                    <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
+                                    aplicações em
+                                    nuvem, mitigando o risco de vazamento de dados.
+                                </li>
+                                <li>
+                                    <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
+                                    ISO27001 de
+                                    segurança da informação
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
+                            <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
