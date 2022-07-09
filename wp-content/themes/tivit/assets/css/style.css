@@ -9918,15 +9918,27 @@ div {
   margin-top: 90px;
 }
 
+section {
+  margin-top: 40px;
+}
+
 .box-intro {
   z-index: 0;
+  /*.box-below {
+    height: 250px;
+    position: relative;
+    @media screen and (max-width: 991px){
+      height: auto;
+      padding: 40px;
+    }
+  }*/
 }
-.box-intro .box-top {
+.box-intro .box-modulo {
   position: relative;
   height: 250px;
 }
 @media screen and (max-width: 991px) {
-  .box-intro .box-top {
+  .box-intro .box-modulo {
     height: auto;
     padding: 40px;
   }
@@ -9968,14 +9980,9 @@ div {
   background: #990017;
   border: #990017 solid 1px;
 }
-.box-intro .box-below {
-  height: 250px;
-  position: relative;
-}
 @media screen and (max-width: 991px) {
-  .box-intro .box-below {
-    height: auto;
-    padding: 40px;
+  .box-intro .box-cta .btn-outline-primary {
+    margin-bottom: 25px;
   }
 }
 .box-intro .mask {
@@ -10000,7 +10007,8 @@ div {
 }
 @media screen and (max-width: 991px) {
   .box-intro img {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     width: 100% !important;
   }
 }
@@ -10025,6 +10033,57 @@ div {
 .box-intro .logo-tivit {
   z-index: 1054;
   width: 231px;
+}
+
+.box-txt-img .box-modulo {
+  height: 500px;
+}
+@media screen and (max-width: 991px) {
+  .box-txt-img .box-modulo {
+    height: auto;
+    padding: 40px;
+  }
+}
+.box-txt-img .box-text {
+  width: 87%;
+}
+@media screen and (max-width: 991px) {
+  .box-txt-img .box-text {
+    width: 100%;
+  }
+}
+.box-txt-img h1, .box-txt-img h2, .box-txt-img h3, .box-txt-img h4, .box-txt-img h5, .box-txt-img h6, .box-txt-img .titulo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  /* or 122% */
+  color: #FE4817;
+  margin-bottom: 25px;
+}
+.box-txt-img h1 strong, .box-txt-img h1 b, .box-txt-img h2 strong, .box-txt-img h2 b, .box-txt-img h3 strong, .box-txt-img h3 b, .box-txt-img h4 strong, .box-txt-img h4 b, .box-txt-img h5 strong, .box-txt-img h5 b, .box-txt-img h6 strong, .box-txt-img h6 b, .box-txt-img .titulo strong, .box-txt-img .titulo b {
+  font-weight: 700;
+}
+.box-txt-img p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  /* Cinza Dark Tivit */
+  color: #262626;
+}
+.box-txt-img.dark-theme .box-modulo {
+  background: #262626;
+}
+.box-txt-img.dark-theme p {
+  color: white;
+}
+.box-txt-img.dark-theme h1, .box-txt-img.dark-theme h2, .box-txt-img.dark-theme h3, .box-txt-img.dark-theme h4, .box-txt-img.dark-theme h5, .box-txt-img.dark-theme h6, .box-txt-img.dark-theme .titulo {
+  color: white;
+}
+.box-txt-img.dark-theme h1 strong, .box-txt-img.dark-theme h2 strong, .box-txt-img.dark-theme h3 strong, .box-txt-img.dark-theme h4 strong, .box-txt-img.dark-theme h5 strong, .box-txt-img.dark-theme h6 strong, .box-txt-img.dark-theme .titulo strong {
+  color: #FE4817;
 }
 
 /*# sourceMappingURL=style.css.map */

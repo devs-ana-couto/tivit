@@ -1,12 +1,15 @@
 .dev {
   margin-top: 90px;
 }
+section{
+  margin-top: 40px;
+}
 
 $primary-color: #990017;
 .box-intro {
   z-index: 0;
 
-  .box-top {
+  .box-modulo{
     position: relative;
     height: 250px;
     @media screen and (max-width: 991px){
@@ -51,19 +54,19 @@ $primary-color: #990017;
         border: $primary-color solid 1px;
       }
       @media screen and (max-width: 991px){
-        //margin-bottom: 40px;
+        margin-bottom: 25px;
       }
     }
   }
 
-  .box-below {
+  /*.box-below {
     height: 250px;
     position: relative;
     @media screen and (max-width: 991px){
       height: auto;
       padding: 40px;
     }
-  }
+  }*/
 
   .mask {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 48.96%, #000000 100%);
@@ -86,7 +89,8 @@ $primary-color: #990017;
   }
   img{
     @media screen and (max-width: 991px){
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      margin-top: 20px;
       width: 100% !important;
     }
   }
@@ -112,5 +116,59 @@ $primary-color: #990017;
     z-index: 1054;
     width: 231px;
   }
+}
 
+.box-txt-img{
+  .box-modulo{
+    height: 500px;
+    @media screen and (max-width: 991px){
+      height: auto;
+      padding: 40px;
+    }
+  }
+
+  .box-text{
+    width: 87%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  h1, h2, h3,h4, h5, h6, .titulo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* or 122% */
+    color: #FE4817;
+    strong, b{
+      font-weight: 700;
+    }
+    margin-bottom: 25px;
+  }
+  p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+
+    /* Cinza Dark Tivit */
+
+    color: #262626;
+  }
+  &.dark-theme{
+    .box-modulo{
+      background: #262626;
+    }
+    p{
+      color: white;
+    }
+    h1, h2, h3,h4, h5, h6, .titulo{
+      color: white;
+      strong{
+        color: #FE4817;
+      }
+    }
+  }
 }
