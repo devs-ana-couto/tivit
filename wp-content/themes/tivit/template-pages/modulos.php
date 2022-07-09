@@ -240,7 +240,7 @@
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
                                 <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-black.svg"
                                          alt="">
                                 </div>
                                 <div class="col">
@@ -258,7 +258,7 @@
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
                                 <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-black.svg"
                                          alt="">
                                 </div>
                                 <div class="col">
@@ -276,7 +276,7 @@
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
                                 <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-black.svg"
                                          alt="">
                                 </div>
                                 <div class="col">
@@ -294,7 +294,7 @@
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
                                 <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-black.svg"
                                          alt="">
                                 </div>
                                 <div class="col">
