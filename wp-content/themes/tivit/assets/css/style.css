@@ -10086,4 +10086,127 @@ section {
   color: #FE4817;
 }
 
+.box-card-icons {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+.box-card-icons .box-title-top .title-top {
+  width: 95%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+  color: #000000;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .box-card-icons .box-title-top .title-top {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+.box-card-icons .box-cards {
+  padding-top: 45px;
+}
+@media screen and (max-width: 991px) {
+  .box-card-icons .box-cards {
+    padding-top: 25px;
+  }
+}
+.box-card-icons .box-cards .card {
+  min-height: 290px;
+  border: unset;
+  border-radius: 0px;
+}
+.box-card-icons .box-cards .card .card-body {
+  background: #FBFBFC;
+  border: 1px solid #CAD2D8;
+}
+@media screen and (max-width: 991px) {
+  .box-card-icons .box-cards .card .card-body {
+    padding-bottom: 25px;
+  }
+}
+.box-card-icons .box-cards .card .card-body h1, .box-card-icons .box-cards .card .card-body h2, .box-card-icons .box-cards .card .card-body h3, .box-card-icons .box-cards .card .card-body h4, .box-card-icons .box-cards .card .card-body h5, .box-card-icons .box-cards .card .card-body h6, .box-card-icons .box-cards .card .card-body .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FE4817;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 991px) {
+  .box-card-icons .box-cards .card .card-body h1, .box-card-icons .box-cards .card .card-body h2, .box-card-icons .box-cards .card .card-body h3, .box-card-icons .box-cards .card .card-body h4, .box-card-icons .box-cards .card .card-body h5, .box-card-icons .box-cards .card .card-body h6, .box-card-icons .box-cards .card .card-body .card-title {
+    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+.box-card-icons .box-cards .card .card-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* Cinza Dark Tivit */
+  color: #262626;
+}
+.box-card-icons .box-cards .card .card-body img {
+  max-height: 70px;
+}
+@media screen and (max-width: 991px) {
+  .box-card-icons .box-cards .box-img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+.box-card-icons .box-cta {
+  margin-top: 50px;
+}
+.box-card-icons .box-cta .btn-primary {
+  border-radius: 30px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FE4817;
+  transition: all 0.5s;
+  border: 0px;
+}
+.box-card-icons .box-cta .btn-primary:hover {
+  background: #990017;
+}
+.box-card-icons .card {
+  background: transparent;
+}
+.box-card-icons.alternative {
+  background: #C7EDE3;
+}
+.box-card-icons.alternative .box-title-top .title-top {
+  color: #990017;
+}
+.box-card-icons.alternative .box-cards .card .card-body h1, .box-card-icons.alternative .box-cards .card .card-body h2, .box-card-icons.alternative .box-cards .card .card-body h3, .box-card-icons.alternative .box-cards .card .card-body h4, .box-card-icons.alternative .box-cards .card .card-body h5, .box-card-icons.alternative .box-cards .card .card-body h6, .box-card-icons.alternative .box-cards .card .card-body .card-title {
+  color: black;
+}
+.box-card-icons.alternative .box-cards .card .card-body p {
+  color: black;
+}
+.box-card-icons.alternative .box-cta {
+  margin-top: 50px;
+}
+.box-card-icons.alternative .box-cta .btn-primary {
+  border-radius: 30px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #990017;
+  transition: all 0.5s;
+  border: 0px;
+}
+.box-card-icons.alternative .box-cta .btn-primary:hover {
+  background: #FE4817;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 .dev {
   margin-top: 90px;
 }
-section{
+
+section {
   margin-top: 40px;
 }
 
@@ -9,10 +10,10 @@ $primary-color: #990017;
 .box-intro {
   z-index: 0;
 
-  .box-modulo{
+  .box-modulo {
     position: relative;
     height: 250px;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       height: auto;
       padding: 40px;
     }
@@ -23,9 +24,10 @@ $primary-color: #990017;
     display: flex;
     flex-wrap: wrap;
     z-index: 1054;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       width: 100%;
     }
+
     p {
       width: 100%;
       font-style: normal;
@@ -53,7 +55,8 @@ $primary-color: #990017;
         background: $primary-color;
         border: $primary-color solid 1px;
       }
-      @media screen and (max-width: 991px){
+
+      @media screen and (max-width: 991px) {
         margin-bottom: 25px;
       }
     }
@@ -82,13 +85,14 @@ $primary-color: #990017;
     line-height: 34px;
     color: #FFFFFF;
     horiz-align: center;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       width: 100%;
       margin-bottom: 20px;
     }
   }
-  img{
-    @media screen and (max-width: 991px){
+
+  img {
+    @media screen and (max-width: 991px) {
       margin-bottom: 30px;
       margin-top: 20px;
       width: 100% !important;
@@ -106,7 +110,7 @@ $primary-color: #990017;
     line-height: 30px;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       margin-bottom: 20px;
       width: 100%;
     }
@@ -118,34 +122,38 @@ $primary-color: #990017;
   }
 }
 
-.box-txt-img{
-  .box-modulo{
+.box-txt-img {
+  .box-modulo {
     height: 500px;
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       height: auto;
       padding: 40px;
     }
   }
 
-  .box-text{
+  .box-text {
     width: 87%;
     @media screen and (max-width: 991px) {
       width: 100%;
     }
   }
-  h1, h2, h3,h4, h5, h6, .titulo{
+
+  h1, h2, h3, h4, h5, h6, .titulo {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
     /* or 122% */
     color: #FE4817;
-    strong, b{
+
+    strong, b {
       font-weight: 700;
     }
+
     margin-bottom: 25px;
   }
-  p{
+
+  p {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -157,17 +165,168 @@ $primary-color: #990017;
 
     color: #262626;
   }
-  &.dark-theme{
-    .box-modulo{
+
+  &.dark-theme {
+    .box-modulo {
       background: #262626;
     }
-    p{
+
+    p {
       color: white;
     }
-    h1, h2, h3,h4, h5, h6, .titulo{
+
+    h1, h2, h3, h4, h5, h6, .titulo {
       color: white;
-      strong{
+
+      strong {
         color: #FE4817;
+      }
+    }
+  }
+}
+
+.box-card-icons {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  //height: 920px;
+  .box-title-top {
+    .title-top {
+      width: 95%;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 44px;
+      color: #000000;
+      text-align: center;
+      @media screen and (max-width: 991px) {
+        font-size: 19px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .box-cards {
+    padding-top: 45px;
+    @media screen and (max-width: 991px) {
+      padding-top: 25px;
+    }
+
+    .card {
+      min-height: 290px;
+      border: unset;
+      border-radius: 0px;
+
+      .card-body {
+        background: #FBFBFC;
+        border: 1px solid #CAD2D8;
+        @media screen and (max-width: 991px) {
+          padding-bottom: 25px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .card-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 28px;
+          color: #FE4817;
+          margin-bottom: 25px;
+          @media screen and (max-width: 991px) {
+            margin-bottom: 15px;
+            //text-align: center;
+            font-size: 19px;
+            line-height: 22px;
+          }
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          @media screen and (max-width: 991px) {
+
+          }
+          /* Cinza Dark Tivit */
+
+          color: #262626;
+        }
+
+        img {
+          max-height: 70px;
+        }
+      }
+    }
+
+    .box-img {
+      @media screen and (max-width: 991px) {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .box-cta {
+    margin-top: 50px;
+
+    .btn-primary {
+      border-radius: 30px;
+      width: 280px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FE4817;
+      transition: all 0.5s;
+      border: 0px;
+
+      &:hover {
+        background: #990017;
+      }
+    }
+  }
+
+  .card {
+    background: transparent;
+  }
+
+  &.alternative {
+    background: #C7EDE3;
+    .box-title-top {
+      .title-top {
+        color: #990017;
+      }
+    }
+    .box-cards {
+      .card {
+        .card-body {
+          h1, h2, h3, h4, h5, h6, .card-title {
+            color: black;
+          }
+          p {
+            color: black;
+          }
+        }
+      }
+
+    }
+    .box-cta {
+      margin-top: 50px;
+
+      .btn-primary {
+        border-radius: 30px;
+        width: 280px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #990017;
+        transition: all 0.5s;
+        border: 0px;
+
+        &:hover {
+          background: #FE4817;
+
+        }
       }
     }
   }

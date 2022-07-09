@@ -110,8 +110,8 @@
                         acima de países como Alemanha (14%) e Austrália (17%).</p>
                 </div>
             </div>
-            <div class="col-auto box-modulo order-2 d-flex flex-wrap align-items-center">
-                <div class="col-auto d-flex justify-content-center">
+            <div class="col-auto box-modulo order-1 d-flex flex-wrap align-items-center">
+                <div class="col d-flex justify-content-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/grafico.png" alt="">
                 </div>
             </div>
@@ -141,5 +141,179 @@
         </div>
     </section>
 
+    <!-- Box Card + Icons-->
+    <section class="container-fluid box-card-icons px-lg-0">
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
+            </div>
+            <div class="col box-cards h-100">
+                <div class="row row-cols-1 row-cols-lg-2 g-4 p-1  px-lg-5">
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col box-cta d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Conheça todas nossas soluções</a>
+            </div>
+        </div>
+    </section>
+    <!-- box alternativo, só passar a classe alternative no section -->
+    <section class="container-fluid box-card-icons px-lg-0 alternative">
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
+            </div>
+            <div class="col box-cards h-100">
+                <div class="row row-cols-1 row-cols-lg-2 g-4 p-1  px-lg-5">
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card">
+                        <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/pc-icon-orange.svg"
+                                         alt="">
+                                </div>
+                                <div class="col">
+                                    <h3 class="card-title">Trabalhamos com as melhores ferramentas, sem
+                                        exclusividade</h3>
+                                    <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
+                                        consegue operar e fazer benchmarking para identificar as melhores soluções para
+                                        cada
+                                        empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col box-cta d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Conheça todas nossas soluções</a>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
