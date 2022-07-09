@@ -224,7 +224,7 @@
                 </div>
             </div>
             <div class="col box-cta d-flex justify-content-center">
-                <a href="#" class="btn btn-primary">Conheça todas nossas soluções</a>
+                <a href="#" class="btn btn-tivit1">Conheça todas nossas soluções</a>
             </div>
         </div>
     </section>
@@ -311,9 +311,194 @@
                 </div>
             </div>
             <div class="col box-cta d-flex justify-content-center">
-                <a href="#" class="btn btn-primary">Conheça todas nossas soluções</a>
+                <a href="#" class="btn btn-tivit1">Conheça todas nossas soluções</a>
             </div>
         </div>
     </section>
 
+    <!-- Box lista + img -->
+    <section class="container-fluid px-0 box-list-img">
+        <div class="container">
+            <!-- passe o d-flex para ativo, e d-none para ocultar na class -->
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo - (Opcional)</h3>
+            </div>
+            <div class="row gx-4 linha-dados">
+                <div class="col-12 col-lg-7 order-1 box-list">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">MDR</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Plataformas e equipes especializadas que atuam 24x7x365 para
+                                        investigar, identificar e responder as ameaças em tempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">DEV SEC OPS</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Desenvolva aplicações de maneira ágil e segura desde o início
+                                        do
+                                        processo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">THREAT INTELL</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Visão 360º para atuar com inteligência em tempo real na
+                                        análise,
+                                        detecção e tratativa de uso indevido de informações, protegendo a exposição dos
+                                        negócios de sua empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">GRC</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Soluções de governança para garantir que os processos de TI
+                                        estejam
+                                        alinhados a estratégia e regras do negócio e agreguem valor para as
+                                        organizações.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                                <div class="row justify-content-between">
+                                    <h3 class="card-title">CONSULTING</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Equipe altamente qualificada para serviços de assessoria,
+                                        avaliação, recuperação e analise forense, para gestão de crises, ataques e
+                                        projetos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-5 order-2 box-img d-flex flex-wrap justify-content-center align-content-center">
+                    <img class="img-fluid"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/mandala-list-img.png"
+                         alt="">
+                </div>
+                <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Box Alternativo Lista + Img -->
+    <section class="container-fluid px-0 box-list-img alternative">
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo - (Opcional)</h3>
+            </div>
+            <div class="row gx-4 linha-dados">
+                <div class="col-12 col-lg-7 order-2 box-list">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">MDR</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Plataformas e equipes especializadas que atuam 24x7x365 para
+                                        investigar, identificar e responder as ameaças em tempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">DEV SEC OPS</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Desenvolva aplicações de maneira ágil e segura desde o início
+                                        do
+                                        processo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">THREAT INTELL</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Visão 360º para atuar com inteligência em tempo real na
+                                        análise,
+                                        detecção e tratativa de uso indevido de informações, protegendo a exposição dos
+                                        negócios de sua empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-auto">
+                                    <h3 class="card-title">GRC</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Soluções de governança para garantir que os processos de TI
+                                        estejam
+                                        alinhados a estratégia e regras do negócio e agreguem valor para as
+                                        organizações.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                            <div class="card-body d-flex gap-4 flex-wrap justify-content-between">
+                                <div class="row justify-content-between">
+                                    <h3 class="card-title">CONSULTING</h3>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="card-text">Equipe altamente qualificada para serviços de assessoria,
+                                        avaliação, recuperação e analise forense, para gestão de crises, ataques e
+                                        projetos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-5 order-1 box-img d-flex flex-wrap justify-content-center align-content-center">
+                    <img class="img-fluid"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/mandala-list-img.png"
+                         alt="">
+                </div>
+                <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php get_footer(); ?>
