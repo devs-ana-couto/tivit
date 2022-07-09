@@ -10284,7 +10284,7 @@ section {
 }
 
 .box-banner-solucoes .box-img .box-overlay {
-  background: linear-gradient(360deg, rgb(0, 0, 0) 8.36%, rgba(0, 0, 0, 0.2) 74.48%);
+  background: linear-gradient(360deg, rgb(0, 0, 0) 8.36%, rgba(0, 0, 0, 0) 74.48%);
   mix-blend-mode: normal;
   padding: 20px;
   display: flex;
@@ -10292,7 +10292,7 @@ section {
 @media screen and (max-width: 991px) {
   .box-banner-solucoes .box-img .box-overlay {
     background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 8.36%, rgba(0, 0, 0, 0.2) 74.48%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 8.36%, rgba(0, 0, 0, 0.1) 74.48%);
   }
 }
 .box-banner-solucoes .box-img .box-overlay h1, .box-banner-solucoes .box-img .box-overlay h2, .box-banner-solucoes .box-img .box-overlay h3, .box-banner-solucoes .box-img .box-overlay h4, .box-banner-solucoes .box-img .box-overlay h5, .box-banner-solucoes .box-img .box-overlay h6, .box-banner-solucoes .box-img .box-overlay .box-title-img {

@@ -438,13 +438,13 @@ $primary-color: #990017;
 .box-banner-solucoes {
   .box-img {
     .box-overlay {
-      background: linear-gradient(360deg, rgba(0, 0, 0, 1) 8.36%, rgba(0, 0, 0, 0.2) 74.48%);
+      background: linear-gradient(360deg, rgba(0, 0, 0, 1) 8.36%, rgba(0, 0, 0, 0) 74.48%);
       mix-blend-mode: normal;
       padding: 20px;
       display: flex;
       @media screen and (max-width: 991px) {
         background: rgb(0, 0, 0);
-        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 8.36%, rgba(0, 0, 0, 0.2) 74.48%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 8.36%, rgba(0, 0, 0, 0.1) 74.48%);
       }
 
       h1, h2, h3, h4, h5, h6, .box-title-img {
