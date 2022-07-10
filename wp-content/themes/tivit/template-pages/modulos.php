@@ -640,4 +640,263 @@
             </div>
         </div>
     </section>
+
+    <!-- Box Big Numbers -->
+    <!-- permitir que o usuario passar a cor desejada através do style background -->
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: transparent;">
+        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
+        <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
+        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
+        d-none no container abaixo -->
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo (Opcional)</h3>
+            </div>
+        </div>
+        <!-- aqui se incia os container cards -->
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-cards">
+                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
+                        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">R$ 5,5 milhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">52% dos casos</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que
+                                            pode
+                                            destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternativo com 2 - 6 cards colunas e fundo com 2 cores-->
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: #990017;">
+        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
+        <div class="card-img-overlay h-50 fundo-50-top" style="background: #F4F6F7;"></div>
+        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
+        d-none no container abaixo -->
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo (Opcional)</h3>
+            </div>
+        </div>
+        <!-- aqui se incia os container cards -->
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-cards">
+                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
+                        <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que
+                                            pode
+                                            destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que
+                                            pode
+                                            destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que pode destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que pode destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternativo com 2 - 2 cards colunas e fundo com 2 cores-->
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: #3A3A3A;">
+        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
+        <div class="card-img-overlay h-50 fundo-50-top" style="background: #F4F6F7;"></div>
+        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
+        d-none no container abaixo -->
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo (Opcional)</h3>
+            </div>
+        </div>
+        <!-- aqui se incia os container cards -->
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-cards">
+                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
+                        <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: #990017;">15 bilhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternativo com 3 colunas - 5 cards e cor sólida-->
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: #C7EDE3;">
+        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background, parar cor sólida
+         passar o style transparent -->
+        <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
+        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
+        d-none no container abaixo -->
+        <div class="container">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo (Opcional)</h3>
+            </div>
+        </div>
+        <!-- aqui se incia os container cards -->
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-cards">
+                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
+                        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title" style="color: black;">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: black;">15 bilhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title" style="color: black;">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: black;">15 bilhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title" style="color: black;">15 bilhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <?php get_footer(); ?>

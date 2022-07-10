@@ -45,6 +45,7 @@ section {
 }
 
 $primary-color: #990017;
+
 .box-intro {
   z-index: 0;
 
@@ -478,15 +479,16 @@ $primary-color: #990017;
   }
 
   .box-solucoes {
-    .box-dados-list{
+    .box-dados-list {
       padding: 50px 90px 50px 0px;
-      @media screen and (max-width: 1367px){
+      @media screen and (max-width: 1367px) {
         padding: 50px 50px 50px 0px;
       }
       @media screen and (max-width: 991px) {
         padding: 150px 30px 50px 30px;
       }
     }
+
     .box-title {
       .box-title-solucoes {
         font-style: normal;
@@ -501,9 +503,11 @@ $primary-color: #990017;
         }
       }
     }
-    .listagem{
+
+    .listagem {
       margin-top: 15px;
-      li{
+
+      li {
         list-style-type: square;
         font-style: normal;
         font-weight: 400;
@@ -514,25 +518,79 @@ $primary-color: #990017;
           font-size: 14px;
           line-height: 18px;
         }
-        strong{
+
+        strong {
           font-weight: 700;
         }
       }
     }
-    .box-cta{
+
+    .box-cta {
       margin-bottom: 0px;
       margin-top: 25px;
       @media screen and (max-width: 991px) {
         margin-top: 50px;
       }
-      .btn-tivit1{
+
+      .btn-tivit1 {
         background: white;
-        color:  #F14517;
-        &:hover{
+        color: #F14517;
+
+        &:hover {
           background: #990017;
           color: white;
         }
       }
     }
+  }
+}
+
+.box-big-number {
+  .box-title-top{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h1, h2, h3, h4, h5,h6, .title-top{
+      z-index: 1054;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 44px;
+      color: #000000;
+    }
+  }
+  .box-cards {
+    padding-bottom: 140px !important;
+    @media screen and (max-width: 991px) {
+      padding-bottom: 70px !important;
+    }
+    .card {
+      padding: 40px;
+      border-radius: 0px;
+      background: #FBFBFC;
+      border: 1px solid #CAD2D8;
+
+      .card-body {
+        h1, h2, h3, h4, h5, h6, .card-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 48px;
+          color: #FE4817;
+          margin-bottom: 25px;
+        }
+
+        p, .card-text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #262626;
+        }
+      }
+    }
+  }
+  .fundo-50-top{
+    bottom: 0px;
+    //background: red;
   }
 }

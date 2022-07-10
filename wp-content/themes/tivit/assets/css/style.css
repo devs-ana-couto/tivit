@@ -10388,4 +10388,49 @@ section {
   color: white;
 }
 
+.box-big-number .box-title-top {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.box-big-number .box-title-top h1, .box-big-number .box-title-top h2, .box-big-number .box-title-top h3, .box-big-number .box-title-top h4, .box-big-number .box-title-top h5, .box-big-number .box-title-top h6, .box-big-number .box-title-top .title-top {
+  z-index: 1054;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 44px;
+  color: #000000;
+}
+.box-big-number .box-cards {
+  padding-bottom: 140px !important;
+}
+@media screen and (max-width: 991px) {
+  .box-big-number .box-cards {
+    padding-bottom: 70px !important;
+  }
+}
+.box-big-number .box-cards .card {
+  padding: 40px;
+  border-radius: 0px;
+  background: #FBFBFC;
+  border: 1px solid #CAD2D8;
+}
+.box-big-number .box-cards .card .card-body h1, .box-big-number .box-cards .card .card-body h2, .box-big-number .box-cards .card .card-body h3, .box-big-number .box-cards .card .card-body h4, .box-big-number .box-cards .card .card-body h5, .box-big-number .box-cards .card .card-body h6, .box-big-number .box-cards .card .card-body .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FE4817;
+  margin-bottom: 25px;
+}
+.box-big-number .box-cards .card .card-body p, .box-big-number .box-cards .card .card-body .card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #262626;
+}
+.box-big-number .fundo-50-top {
+  bottom: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
