@@ -1,8 +1,100 @@
 <?php /* Template Name: Modulos */ ?>
 <?php get_header(); ?>
-
+    <!-- Header Mobile -->
+    <section class="container-fluid p-0 header-landing position-relative mt-0"
+             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/background.png')">
+        <div class="card-img-overlay mask-header"></div>
+        <div class="card-img-overlay mask-header-gradient"></div>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center position-relative">
+                <!-- imagem grafica para compor o hero -->
+                <div class="card-img-overlay d-flex justify-content-center align-items-center w-100">
+                    <img class="img-fluid d-none d-lg-block"
+                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/grafismos.svg"
+                         alt="">
+                </div>
+                <div class="col-auto box-logo position-relative">
+                    <div class="col-auto d-flex justify-content-center box-img-logo">
+                        <!-- Aqui devará conter um logo -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/logo-header.svg"
+                             alt="">
+                    </div>
+                    <div class="col-auto">
+                        <h1 class="title-header">Juntos, rumo ao <strong>extraordinário</strong></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- remover a classe dev no back end -->
-    <div class="dev"></div>
+    <!-- separei esse modulo em 2 pois já temos o big number criado,
+     sendo assim ele pode ou não ser utilizado -->
+    <section class="container box-chamada-pagina">
+            <div class="col box-title p-0 d-flex align-items-center justify-content-center flex-wrap">
+                <p><strong>Soluções inovadoras na prática.</strong></p>
+                <p> Desafiamos e encorajamos a transformação, porque acreditamos que o
+                    plano no papel não muda o mundo</p>
+            </div>
+    </section>
+    <!-- segunda parte do modulo  -->
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: transparent;">
+        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
+        <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
+        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
+        d-none no container abaixo -->
+        <div class="containe d-none">
+            <div class="col d-flex justify-content-center box-title-top">
+                <h3 class="title-top">Titulo (Opcional)</h3>
+            </div>
+        </div>
+
+        <!-- aqui se incia os container cards -->
+        <div class="container-fluid p-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-cards">
+                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
+                        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <!-- permitir que o usuário passe a cor do titulo atrávés do style background,
+                                         caso não seja setado a cor padrão será a defina no css-->
+                                        <h5 class="card-title">15 bilhões</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">R$ 5,5 milhões</h5>
+                                        <p class="card-text">é a média do custo que as empresas têm a cada ataque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">52% dos casos</h5>
+                                        <p class="card-text">os dados comprometidos envolvem informações de clientes, o
+                                            que
+                                            pode
+                                            destruir a reputação da empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- final do modulo Chamada Página -->
+
+
     <section class="container box-intro">
         <div class="row p-3">
             <!-- passar a cor adivinda do back para o inline abaixo, caso não tenha cor setada por padrão deverá ser a cor setada na abaixo, vale também para imagens -->

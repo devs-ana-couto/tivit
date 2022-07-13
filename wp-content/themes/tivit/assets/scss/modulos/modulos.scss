@@ -6,6 +6,73 @@ section {
   margin-top: 40px;
 }
 
+.header-landing {
+  height: 520px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  @media screen and (max-width: 991px) {
+    background-size: unset !important;
+    background-position: center !important;
+  }
+
+  .mask-header {
+    background: #262626;
+    opacity: 0.5;
+  }
+
+  .mask-header-gradient {
+    background: linear-gradient(270.27deg, rgba(0, 0, 0, 0.9) 0.24%, rgba(0, 0, 0, 0.09) 99.76%);
+    opacity: 0.3;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .box-logo {
+    h1, h2, h3, h4, h5, h6, .title-header {
+      max-width: 320px;;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 52px;
+      text-align: center;
+      color: #FFFFFF;
+      @media screen and (max-width: 991px) {
+        max-width: 220px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+
+    .box-img-logo {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.box-chamada-pagina {
+  padding: 130px 0px 70px 0px;
+  margin-top: 0px;
+  @media screen and (max-width: 991px) {
+    padding: 40px 0px 40px 0px;
+  }
+  .box-title{
+    p{
+      max-width: 830px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      color: #262626;
+      @media screen and (max-width: 991px) {
+        width: 100% !important;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+}
+
 .box-cta {
   margin: 50px 0px;
 
@@ -546,10 +613,11 @@ $primary-color: #990017;
 }
 
 .box-big-number {
-  .box-title-top{
+  .box-title-top {
     padding-top: 40px;
     padding-bottom: 40px;
-    h1, h2, h3, h4, h5,h6, .title-top{
+
+    h1, h2, h3, h4, h5, h6, .title-top {
       z-index: 1054;
       font-style: normal;
       font-weight: 600;
@@ -558,11 +626,13 @@ $primary-color: #990017;
       color: #000000;
     }
   }
+
   .box-cards {
     padding-bottom: 140px !important;
     @media screen and (max-width: 991px) {
       padding-bottom: 70px !important;
     }
+
     .card {
       padding: 40px;
       border-radius: 0px;
@@ -589,8 +659,11 @@ $primary-color: #990017;
       }
     }
   }
-  .fundo-50-top{
+
+  .fundo-50-top {
     bottom: 0px;
     //background: red;
   }
 }
+
+
