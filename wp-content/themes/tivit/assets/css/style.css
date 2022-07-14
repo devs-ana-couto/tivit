@@ -9983,7 +9983,7 @@ section {
 @media screen and (max-width: 991px) {
   .box-chamada-pagina .box-title p {
     width: 100% !important;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -10169,7 +10169,7 @@ section {
   /* Cinza Dark Tivit */
   color: #262626;
 }
-.box-txt-img.dark-theme .box-modulo {
+.box-txt-img.dark-theme {
   background: #262626;
 }
 .box-txt-img.dark-theme p {
