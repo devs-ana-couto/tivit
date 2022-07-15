@@ -1115,14 +1115,44 @@
 
     <!-- modulo slider -->
     <section class="container-fluid box-slider position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 case-sliders position-relative p-lg-0">
-                    <div class="col-12 position-absolute box-triangulo d-flex justify-content-center w-100 p-lg-0">
-                        <div class="box-triangulo-color" style="background: #fff;"></div>
-                    </div>
-                    <div id="slider-base-modular" class="carousel slide" data-bs-ride="true">
+        <div class="container position-relative">
+            <div class="card-img-overlay box-mask ">
+                <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
+                         alt="">
+                </div>
+            </div>
 
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="w-100 d-none position-absolute box-triangulo d-lg-flex justify-content-center w-100 p-lg-0">
+                    <div class="box-triangulo-color" style="background: #fff;"></div>
+                </div>
+                <div class="col box-solid p-lg-0">
+                    <div class="col-12 box-title-solid h-100" style="background: #F14517;">
+                        <h3 class="title-solid" style="color: white">Cases de sucesso da
+                            <strong>Tdx</strong>
+                        </h3>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+
+                        <a href="#" class="btn cta-theme">CONHEÇA A TDX</a>
+                    </div>
+                </div>
+
+
+
+                <div class="col case-sliders position-relative p-lg-0">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slider-base-modular"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div id="slider-base-modular" class="carousel slide position-relative" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#slider-base-modular" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1133,21 +1163,8 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active position-relative">
-                                <div class="card-img-overlay box-mask ">
-                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
-                                             alt="">
-                                    </div>
-                                </div>
-                                <div class="row row-cols-1 row-cols-lg-2">
-                                    <div class="col box-solid p-lg-0" style="background: #F14517;">
-                                        <div class="col-12 box-title-solid h-100">
-                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
-                                                <strong>Tdx</strong></h3>
-                                        </div>
-                                    </div>
+                                <div class="row row-cols-1">
                                     <div class="col box-images p-lg-0">
-
                                         <div class="col-12">
                                             <div class="card bg-dark text-white position-relative">
                                                 <img class="img-fluid h-100"
@@ -1168,19 +1185,8 @@
                                 </div>
                             </div>
                             <div class="carousel-item position-relative">
-                                <div class="card-img-overlay box-mask ">
-                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
-                                             alt="">
-                                    </div>
-                                </div>
-                                <div class="row row-cols-1 row-cols-lg-2">
-                                    <div class="col box-solid p-0" style="background: #010101;">
-                                        <div class="col-12 box-title-solid h-100">
-                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
-                                                <strong>Tdx</strong></h3>
-                                        </div>
-                                    </div>
+                                <div class="row">
+
                                     <div class="col box-images p-lg-0">
 
                                         <div class="col-12">
@@ -1203,19 +1209,8 @@
                                 </div>
                             </div>
                             <div class="carousel-item position-relative">
-                                <div class="card-img-overlay box-mask ">
-                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
-                                             alt="">
-                                    </div>
-                                </div>
-                                <div class="row row-cols-1 row-cols-lg-2">
-                                    <div class="col box-solid p-0" style="background: #990017;">
-                                        <div class="col-12 box-title-solid h-100">
-                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
-                                                <strong>Tdx</strong></h3>
-                                        </div>
-                                    </div>
+
+                                <div class="row">
                                     <div class="col box-images p-lg-0">
 
                                         <div class="col-12">
@@ -1241,16 +1236,7 @@
                             </div>
 
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular"
-                                data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#slider-base-modular"
-                                data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+
                     </div>
 
                 </div>
