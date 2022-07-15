@@ -36,3 +36,5 @@ $('.slider-cliente').owlCarousel({
         }
     }
 })
+
+const carousel = new bootstrap.Carousel('#slider-base-modular')

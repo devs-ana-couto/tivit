@@ -133,7 +133,7 @@
             </div>
         </div>
     </section>
-<!-- modulo cliente -->
+    <!-- modulo cliente -->
     <section class="container-fluid p-0 box-nosso-clientes">
         <div class="container">
             <div class="row justify-content-center ">
@@ -1110,6 +1110,154 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- modulo slider -->
+    <section class="container-fluid box-slider position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 case-sliders position-relative p-lg-0">
+                    <div class="col-12 position-absolute box-triangulo d-flex justify-content-center w-100 p-lg-0">
+                        <div class="box-triangulo-color" style="background: #fff;"></div>
+                    </div>
+                    <div id="slider-base-modular" class="carousel slide" data-bs-ride="true">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#slider-base-modular" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#slider-base-modular" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#slider-base-modular" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active position-relative">
+                                <div class="card-img-overlay box-mask ">
+                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col box-solid p-lg-0" style="background: #F14517;">
+                                        <div class="col-12 box-title-solid h-100">
+                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
+                                                <strong>Tdx</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col box-images p-lg-0">
+
+                                        <div class="col-12">
+                                            <div class="card bg-dark text-white position-relative">
+                                                <img class="img-fluid h-100"
+                                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/shutterstock_1874774047_low%201.png"
+                                                     alt="">
+                                                <div class="card-img-overlay d-flex justify-content-end align-items-end">
+                                                    <div class="col box-text d-flex flex-wrap justify-content-end">
+                                                        <h3 class="card-title">cnh industrial</h3>
+                                                        <p class="card-text">This is a wider card with supporting text
+                                                            below as a natural lead-in to additional content. This
+                                                            content is a little bit longer.</p>
+                                                        <a href="#" class="btn cta-slider">CONHEÇA A AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <div class="card-img-overlay box-mask ">
+                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col box-solid p-0" style="background: #010101;">
+                                        <div class="col-12 box-title-solid h-100">
+                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
+                                                <strong>Tdx</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col box-images p-lg-0">
+
+                                        <div class="col-12">
+                                            <div class="card bg-dark text-white position-relative">
+                                                <img class="img-fluid h-100"
+                                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/shutterstock_1874774047_low%201.png"
+                                                     alt="">
+                                                <div class="card-img-overlay d-flex justify-content-end align-items-end">
+                                                    <div class="col box-text d-flex flex-wrap justify-content-end">
+                                                        <h3 class="card-title">Lorem Ipsum</h3>
+                                                        <p class="card-text">Lorem Ipsum is simply dummy text of the
+                                                            printing and typesetting industry. Lorem Ipsum has been the
+                                                            industry's standard dummy text ever since the 1500s.</p>
+                                                        <a href="#" class="btn cta-slider">CONHEÇA A AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <div class="card-img-overlay box-mask ">
+                                    <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-lg-2">
+                                    <div class="col box-solid p-0" style="background: #990017;">
+                                        <div class="col-12 box-title-solid h-100">
+                                            <h3 class="title-solid" style="color: white">Cases de sucesso da
+                                                <strong>Tdx</strong></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col box-images p-lg-0">
+
+                                        <div class="col-12">
+                                            <div class="card bg-dark text-white position-relative">
+                                                <img class="img-fluid h-100"
+                                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/shutterstock_1874774047_low%201.png"
+                                                     alt="">
+                                                <div class="card-img-overlay d-flex justify-content-end align-items-end">
+                                                    <div class="col box-text d-flex flex-wrap justify-content-end">
+                                                        <h3 class="card-title">Why do we use it?</h3>
+                                                        <p class="card-text">It is a long established fact that a reader
+                                                            will be distracted by the readable content of a page when
+                                                            looking at its layout. The point of using Lorem Ipsum is
+                                                            that it has a more-or-less normal distribution of letters,
+                                                            as opposed to using 'Content here.</p>
+                                                        <a href="#" class="btn cta-slider">CONHEÇA A AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#slider-base-modular"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
+            <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
         </div>
     </section>
 
