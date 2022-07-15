@@ -94,6 +94,7 @@
     </section>
     <!-- final do modulo Chamada Página -->
 
+    <!-- modulo parceiros -->
     <section class="container-fluid p-0 box-parceiros">
         <div class="container">
             <div class="row justify-content-center">
@@ -132,7 +133,7 @@
             </div>
         </div>
     </section>
-
+<!-- modulo cliente -->
     <section class="container-fluid p-0 box-nosso-clientes">
         <div class="container">
             <div class="row justify-content-center ">
@@ -190,58 +191,6 @@
                                      alt="">
                             </a>
                         </div>
-
-
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
-                                     alt="">
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                     alt="">
-                            </a>
-                        </div>
-
                     </div>
                 </div>
             </div>
