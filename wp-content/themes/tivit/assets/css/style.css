@@ -10499,4 +10499,67 @@ section {
   bottom: 0px;
 }
 
+.box-parceiros .owl-theme .owl-dots .owl-dot.active span, .box-parceiros .owl-theme .owl-dots .owl-dot:hover span, .box-nosso-clientes .owl-theme .owl-dots .owl-dot.active span, .box-nosso-clientes .owl-theme .owl-dots .owl-dot:hover span {
+  background: #F20024;
+}
+.box-parceiros .owl-theme .owl-nav.disabled + .owl-dots, .box-nosso-clientes .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 70px;
+}
+.box-parceiros .box-title h1, .box-parceiros .box-title h2, .box-parceiros .box-title h3, .box-parceiros .box-title h4, .box-parceiros .box-title h5, .box-parceiros .box-title h6, .box-parceiros .box-title .title-box, .box-nosso-clientes .box-title h1, .box-nosso-clientes .box-title h2, .box-nosso-clientes .box-title h3, .box-nosso-clientes .box-title h4, .box-nosso-clientes .box-title h5, .box-nosso-clientes .box-title h6, .box-nosso-clientes .box-title .title-box {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #262626;
+  margin-bottom: 0px;
+}
+.box-parceiros .box-slider, .box-nosso-clientes .box-slider {
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+@media screen and (max-width: 991px) {
+  .box-parceiros .box-slider, .box-nosso-clientes .box-slider {
+    padding-left: 20px !important;
+    padding-right: 0px !important;
+  }
+}
+.box-parceiros .box-slider .slider-parceiros .item img, .box-nosso-clientes .box-slider .slider-parceiros .item img {
+  height: 70px;
+}
+@media screen and (min-width: 991px) {
+  .box-parceiros .box-slider .slider-parceiros .item img, .box-nosso-clientes .box-slider .slider-parceiros .item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    transition: 0.5s;
+  }
+}
+.box-parceiros .box-slider .slider-parceiros .item img:hover, .box-nosso-clientes .box-slider .slider-parceiros .item img:hover {
+  -webkit-filter: unset;
+  filter: unset;
+  filter: unset; /* IE */
+}
+
+.box-nosso-clientes .box-slider .owl-stage {
+  height: 100%;
+}
+.box-nosso-clientes .box-slider .item img {
+  height: 70px;
+  width: auto;
+}
+@media screen and (min-width: 991px) {
+  .box-nosso-clientes .box-slider .item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    transition: 0.5s;
+  }
+}
+.box-nosso-clientes .box-slider .item img:hover {
+  -webkit-filter: unset;
+  filter: unset;
+  filter: unset; /* IE */
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -94,6 +94,159 @@
     </section>
     <!-- final do modulo Chamada Página -->
 
+    <section class="container-fluid p-0 box-parceiros">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto box-title">
+                    <h2>Parceiros</h2>
+                </div>
+                <div class="col-12 box-slider">
+                    <div class="owl-carousel owl-theme slider-parceiros">
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_aws.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_azure.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_gc.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_sap.png"
+                                     alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-0 box-nosso-clientes">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-auto box-title">
+                    <h2>Nosso Clientes</h2>
+                </div>
+                <div class="col-12 box-slider">
+                    <div class="owl-carousel owl-theme slider-cliente">
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container-fluid box-intro">
         <div class="row justify-content-center align-items-center">
