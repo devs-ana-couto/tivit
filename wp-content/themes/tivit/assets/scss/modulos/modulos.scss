@@ -891,7 +891,7 @@ $primary-color: #990017;
               mix-blend-mode: normal;
 
               .box-text {
-                z-index: 1;
+                z-index: 1001;
                 * {
                   text-align: right;
                 }
@@ -906,6 +906,7 @@ $primary-color: #990017;
                   letter-spacing: 0.03em;
                   text-transform: uppercase;
                   color: #FFFFFF;
+                  transition: opacity 0.75s;
                   @media screen and (max-width: 991px) {
                     width: 100%;
                   }
@@ -920,7 +921,7 @@ $primary-color: #990017;
                   margin-top: 10px;
 
                   text-align: right;
-
+                  transition: opa 0.75s;
                   /* Branco */
 
                   color: #FFFFFF;

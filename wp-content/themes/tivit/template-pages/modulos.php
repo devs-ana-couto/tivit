@@ -1170,7 +1170,7 @@
                                                 <img class="img-fluid h-100"
                                                      src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/shutterstock_1874774047_low%201.png"
                                                      alt="">
-                                                <div class="card-img-overlay d-flex justify-content-end align-items-end">
+                                                <div class="card-img-overlay d-flex justify-content-end align-items-end ">
                                                     <div class="col box-text d-flex flex-wrap justify-content-end">
                                                         <h3 class="card-title">cnh industrial</h3>
                                                         <p class="card-text">This is a wider card with supporting text

@@ -10678,7 +10678,7 @@ section {
   }
 }
 .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text {
-  z-index: 1;
+  z-index: 1001;
 }
 .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text * {
   text-align: right;
@@ -10693,6 +10693,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: opacity 0.75s;
 }
 @media screen and (max-width: 991px) {
   .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h1, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h2, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h3, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h4, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h5, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text h6, .box-slider .case-sliders .slide .carousel-inner .box-images .card .card-img-overlay .box-text .card-title {
@@ -10707,6 +10708,7 @@ section {
   /* or 133% */
   margin-top: 10px;
   text-align: right;
+  transition: opa 0.75s;
   /* Branco */
   color: #FFFFFF;
 }
