@@ -32,6 +32,9 @@
     <!-- remover a classe dev no back end -->
     <!-- separei esse modulo em 2 pois já temos o big number criado,
      sendo assim ele pode ou não ser utilizado -->
+    <!-- fim do Header Mobile -->
+
+    <!-- box-chamada-pagina -->
     <section class="container box-chamada-pagina">
         <div class="col box-title p-0 d-flex align-items-center justify-content-center flex-wrap">
             <p><strong>Soluções inovadoras na prática.</strong></p>
@@ -96,6 +99,7 @@
         </div>
     </section>
     <!-- final do modulo Chamada Página -->
+    <!-- fim  box-chamada-pagina -->
 
     <!-- modulo parceiros -->
     <section class="container-fluid p-0 box-parceiros">
@@ -136,6 +140,8 @@
             </div>
         </div>
     </section>
+    <!-- fim do modulo parceiros -->
+
     <!-- modulo cliente -->
     <section class="container-fluid p-0 box-nosso-clientes">
         <div class="container">
@@ -199,6 +205,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do modulo cliente -->
 
     <section class="container-fluid box-intro">
         <div class="row justify-content-center align-items-center">
@@ -360,6 +367,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box Text + Img -->
 
     <!-- Box Card + Icons-->
     <section class="container-fluid box-card-icons px-lg-0">
@@ -534,6 +542,7 @@
             </div>
         </div>
     </section>
+    <!--fim do Box Card + Icons-->
 
     <!-- Box lista + img -->
     <section class="container-fluid px-0 box-list-img">
@@ -722,6 +731,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box lista + img -->
 
     <!-- box banner soluções -->
     <section class="container box-banner-solucoes">
@@ -859,6 +869,7 @@
             </div>
         </div>
     </section>
+    <!--fim do box banner soluções -->
 
     <!-- Box Big Numbers -->
     <!-- permitir que o usuario passar a cor desejada através do style background -->
@@ -1117,6 +1128,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box Big Numbers -->
 
     <!-- modulo slider -->
     <section class="container-fluid box-slider position-relative">
@@ -1251,6 +1263,7 @@
             <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
         </div>
     </section>
+    <!-- fim do modulo slider -->
 
     <!-- cards only with text -->
     <section class="container-fluid px-0 card-only-text">
