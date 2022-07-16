@@ -3,7 +3,31 @@
 }
 
 section {
-  margin-top: 40px;
+  //margin-top: 40px;
+}
+
+.btn-tivit1 {
+  border-radius: 30px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FE4817;
+  transition: all 0.5s;
+  border: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+
+  &:hover {
+    background: #990017;
+    color: white;
+  }
 }
 
 .header-landing {
@@ -77,28 +101,6 @@ section {
 .box-cta {
   margin: 50px 0px;
 
-  .btn-tivit1 {
-    border-radius: 30px;
-    width: 280px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FE4817;
-    transition: all 0.5s;
-    border: 0px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-
-    &:hover {
-      background: #990017;
-    }
-  }
 
   .alternative {
     .btn-tivit1 {
@@ -115,6 +117,7 @@ section {
 $primary-color: #990017;
 
 .box-intro {
+  margin: 70px 0px;
   z-index: 0;
 
   .box-modulo {
@@ -506,6 +509,8 @@ $primary-color: #990017;
 }
 
 .box-banner-solucoes {
+  padding: 70px 0px;
+
   .box-img {
     .box-overlay {
       background: linear-gradient(360deg, rgba(0, 0, 0, 1) 8.36%, rgba(0, 0, 0, 0) 74.48%);
@@ -771,6 +776,7 @@ $primary-color: #990017;
       clip-path: polygon(51% 100%, 0 0, 100% 0);
     }
   }
+
   .box-mask {
     mix-blend-mode: multiply;
     z-index: 1;
@@ -786,6 +792,7 @@ $primary-color: #990017;
       }
     }
   }
+
   .box-solid {
     z-index: 1000;
     //height: 640px !important;
@@ -818,6 +825,7 @@ $primary-color: #990017;
         }
       }
     }
+
     p, .card-text {
       width: 75%;
       font-weight: 400;
@@ -829,7 +837,8 @@ $primary-color: #990017;
         width: 100%;
       }
     }
-    .cta-theme{
+
+    .cta-theme {
       z-index: 2;
       margin-top: 30px;
       border: 1px solid white;
@@ -850,18 +859,17 @@ $primary-color: #990017;
       justify-content: center;
       max-width: 200px;
 
-      &:hover{
+      &:hover {
         background: #990017;
         border: 1px solid #990017;
       }
     }
   }
+
   .case-sliders {
 
     .slide {
       .carousel-inner {
-
-
 
 
         .box-images {
@@ -892,6 +900,7 @@ $primary-color: #990017;
 
               .box-text {
                 z-index: 1001;
+
                 * {
                   text-align: right;
                 }
@@ -970,39 +979,42 @@ $primary-color: #990017;
       }
     }
   }
-    .carousel-indicators {
-      position: absolute;
-      right: unset;
-      bottom: 70px;
-      left: -90%;
-      display: flex;
-      justify-content: center;
+
+  .carousel-indicators {
+    position: absolute;
+    right: unset;
+    bottom: 70px;
+    left: -90%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    z-index: 1001;
+    @media screen and (max-width: 991px) {
+      //left: 20px !important;
+      bottom: unset !important;
+      top: -50px;
       padding: 0;
       margin-right: 0;
       margin-bottom: 0;
       margin-left: 0;
-      list-style: none;
-      z-index: 1001;
-      @media screen and (max-width: 991px) {
-        //left: 20px !important;
-        bottom: unset !important;
-        top: -50px;
-        padding: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        position: absolute;
-        right: 0;
-        bottom: unset;
-        left: 0;
-      }
+      position: absolute;
+      right: 0;
+      bottom: unset;
+      left: 0;
+    }
   }
+
   .carousel-indicators [data-bs-target] {
     width: 12px;
     height: 12px;
     border-radius: 50%;
   }
-  .carousel-control-prev{
+
+  .carousel-control-prev {
     left: 20px;
     //bottom: 50px;
     //align-items: end;
@@ -1014,6 +1026,7 @@ $primary-color: #990017;
       //padding: 0px !important;
     }
   }
+
   .carousel-control-next {
     right: 20px;
     //left: 68px;
@@ -1023,9 +1036,10 @@ $primary-color: #990017;
       //left: 45px !important;
       //bottom: unset !important;
       //top: 306px;
-     // padding: 0px !important;
+      // padding: 0px !important;
     }
   }
+
   .carousel-control-prev-icon {
     left: 35px;
     width: 20px;
@@ -1034,6 +1048,7 @@ $primary-color: #990017;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .carousel-control-next-icon {
     width: 20px;
     height: 20px;
@@ -1049,3 +1064,196 @@ $primary-color: #990017;
     }
   }
 }
+
+.card-only-text {
+  padding: 70px 0px;
+
+  .box-title {
+    h1, h2, h3, h4, h5, h6 .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 43px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #262626;
+      margin: 0px;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+
+  .box-text {
+    p, .box-text {
+      max-width: 980px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #262626;
+      margin: 0px 20px;
+      margin-top: 10px;
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        text-align: left;
+        margin: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .box-cards {
+    .card {
+      border-radius: 0px;
+      padding: 30px 30px;
+      border: 1px solid #CAD2D8;
+      border-left: 5px solid;
+      @media screen and (min-width: 991px) {
+        min-height: 300px;
+      }
+
+      .card-header {
+        border-radius: 0px;
+        background-color: unset;
+        border: unset;
+        padding-top: 0px;
+        padding-left: 0px;
+
+        h1, h2, h3, h4, h5, h6, .card-title {
+          max-width: 148px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #582689;
+        }
+      }
+
+      .card-body {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+
+        .box-card-text {
+          min-height: 50%;
+
+          p, .card-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            /* or 125% */
+
+            letter-spacing: 0.02em;
+            color: #262626;
+
+          }
+        }
+      }
+    }
+  }
+
+  .btn-tivit1 {
+    background: #582689;
+
+    &:hover {
+      background: #2F154A;
+    }
+  }
+
+  &.alternative {
+    background-color: #262626;
+
+    .box-title {
+      h1, h2, h3, h4, h5, h6 .title {
+        color: white;
+      }
+    }
+
+    .box-text {
+      p, .box-text {
+        color: white;
+      }
+    }
+
+    .card {
+      //background: transparent;
+
+      .card-body {
+        .box-card-text {
+          p, .card-text {
+            //color: white;
+          }
+
+        }
+      }
+    }
+
+    .btn-tivit1 {
+      background: #FE4817;
+
+      &:hover {
+        background: #990017;
+      }
+    }
+  }
+}
+
+.cards-images-centred {
+  padding: 100px 0px;
+  .box-title {
+    h1, h2, h3, h4, h5, h6 .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #262626;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+  .box-cards{
+    .card{
+      border: 1px solid #CAD2D8;
+      .card-body{
+        img{
+          max-height: 85px;
+          margin-bottom: 30px;
+        }
+        h1, h2, h3, h4, h5, h6, .card-title{
+          max-width: 269px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          /* or 120% */
+
+          text-align: center;
+          text-transform: uppercase;
+
+          /* Roxo TBanks */
+
+          color: #582689;
+        }
+      }
+    }
+  }
+  &.alternative{
+    .card{
+      background: white;
+
+    }
+  }
+}
+

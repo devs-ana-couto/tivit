@@ -1,5 +1,8 @@
 <?php /* Template Name: Modulos */ ?>
 <?php get_header(); ?>
+    <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
+        poderam ser personalizados pelo usuario -->
+
     <!-- Header Mobile -->
     <section class="container-fluid p-0 header-landing position-relative mt-0"
              style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/background.png')">
@@ -318,7 +321,9 @@
                         <p>Segundo o Instituto Ponemon, o risco é de 43% em uma empresa brasileira sofrer um ataque,
                             muito
                             acima de países como Alemanha (14%) e Austrália (17%).</p>
+                        <a href="#" class="btn btn-tivit1 mt-5">Conheça todas nossas soluções</a>
                     </div>
+
                 </div>
                 <div class="col-auto box-modulo order-1 d-flex flex-wrap align-items-center">
                     <div class="col d-flex justify-content-center">
@@ -333,7 +338,7 @@
     <!-- Exemplo de variação --- Atente-se as classe orders -->
     <section class="container-fluid p-0 box-txt-img dark-theme">
         <div class="container">
-            <div class="row row-cols-lg-2">
+            <div class="row row-cols-lg-2 p-3">
                 <!-- aqui deverá ser definido a order -->
                 <div class="col-auto box-modulo order-2 d-flex flex-wrap align-items-center justify-content-center">
                     <div class="col-auto box-text d-flex flex-column flex-lg-wrap">
@@ -343,6 +348,7 @@
                         <p>Segundo o Instituto Ponemon, o risco é de 43% em uma empresa brasileira sofrer um ataque,
                             muito
                             acima de países como Alemanha (14%) e Austrália (17%).</p>
+                        <a href="#" class="btn btn-tivit1 mt-5">Conheça todas nossas soluções</a>
                     </div>
                 </div>
                 <!--- Aqui deverá ser definido a order -->
@@ -375,8 +381,7 @@
                                         exclusividade</h3>
                                     <p class="card-text">Não somos ligados a nenhuma ferramenta ou software - a TIVIT
                                         consegue operar e fazer benchmarking para identificar as melhores soluções para
-                                        cada
-                                        empresa.</p>
+                                        cada empresa.</p>
                                 </div>
                             </div>
                         </div>
@@ -1132,13 +1137,13 @@
                         <h3 class="title-solid" style="color: white">Cases de sucesso da
                             <strong>Tdx</strong>
                         </h3>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s.</p>
 
                         <a href="#" class="btn cta-theme">CONHEÇA A TDX</a>
                     </div>
                 </div>
-
 
 
                 <div class="col case-sliders position-relative p-lg-0">
@@ -1246,5 +1251,428 @@
             <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
         </div>
     </section>
+
+    <!-- cards only with text -->
+    <section class="container-fluid px-0 card-only-text">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col box-title">
+                    <h3 class="title">Nossas plataformas</h3>
+                </div>
+                <div class="col box-text d-flex justify-content-center">
+                    <p class="box-text">Com um mindset ágil vamos transformar a TIVIT, reconhecida muitas vezes por
+                        excelência em
+                        infraestrutura e terceirização de TI, para plataformas digitais com serviços financeiros para os
+                        nossos Clientes B2B.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 box-cards  mt-5">
+                <div class="row  row-cols-1 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100" style="border-color: #582689;">
+                            <div class="card-header">
+                                <h5 class="card-title">PSTI</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Provedor de Serviços de Tecnologia da Informação homologado
+                                        pelo Banco Central.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-left-color: #582689;">
+                            <div class="card-header">
+                                <h5 class="card-title">API Gateway</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Plataforma de integração financeira e Open Banking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-left-color: #582689;">
+                            <div class="card-header">
+                                <h5 class="card-title">TBanks Payments</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Conta Digital da TIVIT para pagamentos de contas, Utilities e
+                                        PIX.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-left-color: #582689;">
+                            <div class="card-header">
+                                <h5 class="card-title">Banking as a Service</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Oferta completa de Serviços Financeiros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 cta-card mt-5">
+                <div class="row row-cols-1 justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-tivit1">CTA CARDS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternative-->
+    <section class="container-fluid px-0 card-only-text alternative">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col box-title">
+                    <h3 class="title">Nossas plataformas</h3>
+                </div>
+                <div class="col box-text d-flex justify-content-center">
+                    <p class="box-text">Com um mindset ágil vamos transformar a TIVIT, reconhecida muitas vezes por
+                        excelência em
+                        infraestrutura e terceirização de TI, para plataformas digitais com serviços financeiros para os
+                        nossos Clientes B2B.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 box-cards  mt-5">
+                <div class="row  row-cols-1 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100" style="border-color: #F14517;">
+                            <div class="card-header">
+                                <h5 class="card-title" style="color:  #F14517">PSTI</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Provedor de Serviços de Tecnologia da Informação homologado
+                                        pelo Banco Central.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-color: #F14517;">
+                            <div class="card-header">
+                                <h5 class="card-title" style="color:  #F14517">API Gateway</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Plataforma de integração financeira e Open Banking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-color: #F14517;">
+                            <div class="card-header">
+                                <h5 class="card-title" style="color:  #F14517">TBanks Payments</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Conta Digital da TIVIT para pagamentos de contas, Utilities e
+                                        PIX.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100" style="border-color: #F14517;">
+                            <div class="card-header">
+                                <h5 class="card-title" style="color:  #F14517">Banking as a Service</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="col box-card-text">
+                                    <p class="card-text">Oferta completa de Serviços Financeiros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 cta-card mt-5">
+                <div class="row row-cols-1 justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-tivit1">CTA CARDS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim do cards only with text -->
+
+    <!-- card img+title -->
+    <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
+    poderam ser personalizados pelo usuario -->
+    <section class="container-fluid px-0 card-only-text cards-images-centred">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-auto box-title">
+                    <h3 class="title">Última tecnologia em pagamentos</h3>
+                </div>
+                <div class="col-12 box-cards  mt-5">
+                    <!-- passa row-col-lg-number  a quantidade de colunas que o usuario
+                    deseja sendo no maximo row-cols-lg-4 e no minimo row-cols-lg-2 -->
+                    <div class="row  row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-01.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Taxas de transação mais
+                                                baratas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-02.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Informações em tempo real das operações</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-03.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Avisos de movimentações bancárias</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-04.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Faturamento em tempo real</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-05.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Dashboard de gestão de operações</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-06.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color:  #582689">Sistema intuitivo e unificado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 cta-card mt-5">
+                <div class="row row-cols-1 justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-tivit1">CTA CARDS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternative -->
+    <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
+       poderam ser personalizados pelo usuario -->
+    <section class="container-fluid px-0 card-only-text cards-images-centred alternative">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-auto box-title">
+                    <h3 class="title">Última tecnologia em pagamentos</h3>
+                </div>
+                <div class="col-12 box-cards  mt-5">
+                    <!-- passa row-col-lg-number  a quantidade de colunas que o usuario
+                   deseja sendo no maximo row-cols-lg-4 e no minimo row-cols-lg-2 -->
+                    <div class="row  row-cols-1 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-01a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Taxas de transação mais
+                                                baratas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-02a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-03a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Avisos de movimentações bancárias</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-04a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Faturamento em tempo real</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-05a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Dashboard de gestão de operações</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-06a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Sistema intuitivo e unificado</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-01a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Taxas de transação mais
+                                                baratas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="border-color: #FE4817">
+                                <div class="card-body">
+                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-02a.svg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 cta-card mt-5">
+                <div class="row row-cols-1 justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-tivit1">CTA CARDS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim do card img+title -->
 
 <?php get_footer(); ?>
