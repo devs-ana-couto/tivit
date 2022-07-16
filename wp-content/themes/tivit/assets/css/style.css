@@ -10954,4 +10954,106 @@ div {
   background: white;
 }
 
+.box-feedback-cliente {
+  padding: 100px;
+}
+.box-feedback-cliente .box-title {
+  margin-bottom: 70px;
+}
+.box-feedback-cliente .box-title h1, .box-feedback-cliente .box-title h2, .box-feedback-cliente .box-title h3, .box-feedback-cliente .box-title h4, .box-feedback-cliente .box-title h5, .box-feedback-cliente .box-title h6, .box-feedback-cliente .box-title .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #262626;
+}
+.box-feedback-cliente .feedbackSlider {
+  height: 310px;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner {
+  height: 100% !important;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .box-img {
+  height: unset !important;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .box-img img {
+  border-radius: 50%;
+  height: 62px;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .info-user {
+  margin-top: 10px;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .info-user p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .info-user p strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .box-feedback {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.box-feedback-cliente .feedbackSlider .carousel-inner .box-feedback p {
+  max-width: 765px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #582689;
+  justify-self: center;
+}
+@media screen and (max-width: 991px) {
+  .box-feedback-cliente .feedbackSlider .carousel-inner .box-feedback p {
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+.box-feedback-cliente .feedbackSlider .carousel-indicators {
+  margin-bottom: 0px !important;
+  bottom: -20px;
+}
+.box-feedback-cliente .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.box-feedback-cliente.alternative {
+  background: #262626;
+}
+.box-feedback-cliente.alternative .box-title h1, .box-feedback-cliente.alternative .box-title h2, .box-feedback-cliente.alternative .box-title h3, .box-feedback-cliente.alternative .box-title h4, .box-feedback-cliente.alternative .box-title h5, .box-feedback-cliente.alternative .box-title h6, .box-feedback-cliente.alternative .box-title .title {
+  color: white;
+}
+.box-feedback-cliente.alternative .info-user {
+  margin-top: 10px;
+}
+.box-feedback-cliente.alternative .info-user p {
+  color: white !important;
+}
+.box-feedback-cliente.alternative .info-user p strong {
+  color: #F14517 !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+.box-feedback-cliente.alternative .box-feedback p {
+  color: white !important;
+}
+.box-feedback-cliente.alternative .carousel-indicators [data-bs-target] {
+  background: #F14517;
+  background-clip: padding-box;
+}
+
 /*# sourceMappingURL=style.css.map */

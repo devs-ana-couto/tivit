@@ -1461,7 +1461,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color:  #582689">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1476,7 +1477,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Avisos de movimentações bancárias</h5>
+                                            <h5 class="card-title" style="color:  #582689">Avisos de movimentações
+                                                bancárias</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1491,7 +1493,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Faturamento em tempo real</h5>
+                                            <h5 class="card-title" style="color:  #582689">Faturamento em tempo
+                                                real</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1506,7 +1509,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Dashboard de gestão de operações</h5>
+                                            <h5 class="card-title" style="color:  #582689">Dashboard de gestão de
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1521,7 +1525,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Sistema intuitivo e unificado</h5>
+                                            <h5 class="card-title" style="color:  #582689">Sistema intuitivo e
+                                                unificado</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1577,7 +1582,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1592,7 +1598,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Avisos de movimentações bancárias</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Avisos de movimentações
+                                                bancárias</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1607,7 +1614,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Faturamento em tempo real</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Faturamento em tempo
+                                                real</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1622,7 +1630,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Dashboard de gestão de operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Dashboard de gestão de
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1637,7 +1646,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Sistema intuitivo e unificado</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Sistema intuitivo e
+                                                unificado</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1668,7 +1678,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1687,5 +1698,209 @@
         </div>
     </section>
     <!-- fim do card img+title -->
+
+    <!-- box BENEFÍCIOS PARA CLIENTES -->
+    <section class="container-fluid px-0 box-feedback-cliente">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
+                    <h3 class="title">benefícios para clientes</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div id="feedbackSlider" class="carousel carousel-dark slide feedbackSlider"
+                         data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <button class="carousel-control-prev d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- altenative
+    carro o cliente sete o modo escuro, esse bloco precisará se carregado ao invés do outro
+    -->
+    <section class="container-fluid px-0 box-feedback-cliente alternative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
+                    <h3 class="title">benefícios para clientes</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div id="feedbackSlider-alternative" class="carousel slide feedbackSlider"
+                         data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <button class="carousel-control-prev d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider-alternative"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider-alternative"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
