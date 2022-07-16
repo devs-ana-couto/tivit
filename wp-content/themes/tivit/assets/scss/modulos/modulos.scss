@@ -3,7 +3,31 @@
 }
 
 section {
-  margin-top: 40px;
+  //margin-top: 40px;
+}
+
+.btn-tivit1 {
+  border-radius: 30px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FE4817;
+  transition: all 0.5s;
+  border: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+
+  &:hover {
+    background: #990017;
+    color: white;
+  }
 }
 
 .header-landing {
@@ -54,8 +78,9 @@ section {
   @media screen and (max-width: 991px) {
     padding: 40px 0px 40px 0px;
   }
-  .box-title{
-    p{
+
+  .box-title {
+    p {
       max-width: 830px;
       font-style: normal;
       font-weight: 500;
@@ -76,28 +101,6 @@ section {
 .box-cta {
   margin: 50px 0px;
 
-  .btn-tivit1 {
-    border-radius: 30px;
-    width: 280px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FE4817;
-    transition: all 0.5s;
-    border: 0px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-
-    &:hover {
-      background: #990017;
-    }
-  }
 
   .alternative {
     .btn-tivit1 {
@@ -114,6 +117,7 @@ section {
 $primary-color: #990017;
 
 .box-intro {
+  margin: 70px 0px;
   z-index: 0;
 
   .box-modulo {
@@ -274,6 +278,7 @@ $primary-color: #990017;
 
   &.dark-theme {
     background: #262626;
+
     .box-modulo {
     }
 
@@ -504,6 +509,8 @@ $primary-color: #990017;
 }
 
 .box-banner-solucoes {
+  padding: 70px 0px;
+
   .box-img {
     .box-overlay {
       background: linear-gradient(360deg, rgba(0, 0, 0, 1) 8.36%, rgba(0, 0, 0, 0) 74.48%);
@@ -666,19 +673,21 @@ $primary-color: #990017;
   }
 }
 
-.box-parceiros, .box-nosso-clientes{
-  .owl-stage-outer{
+.box-parceiros, .box-nosso-clientes {
+  .owl-stage-outer {
     //overflow: visible;
   }
 
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #F20024;
   }
-  .owl-theme .owl-nav.disabled+.owl-dots {
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 70px;
   }
-  .box-title{
-    h1, h2, h3, h4, h5, h6, .title-box{
+
+  .box-title {
+    h1, h2, h3, h4, h5, h6, .title-box {
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
@@ -688,7 +697,8 @@ $primary-color: #990017;
       margin-bottom: 0px;
     }
   }
-  .box-slider{
+
+  .box-slider {
     margin-top: 50px;
     margin-bottom: 130px;
     @media screen and (max-width: 991px) {
@@ -696,17 +706,18 @@ $primary-color: #990017;
       padding-right: 0px !important;
     }
     //height: 400px;
-    .slider-parceiros{
-      .item{
-        img{
-          height: 70px;
+    .slider-parceiros {
+      .item {
+        img {
+
           @media screen and (min-width: 991px) {
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
             filter: gray; /* IE */
             transition: 0.5s;
           }
-          &:hover{
+
+          &:hover {
             -webkit-filter: unset;
             filter: unset;
             filter: unset; /* IE */
@@ -716,19 +727,23 @@ $primary-color: #990017;
     }
   }
 }
-.box-nosso-clientes{
-  .box-slider{
-    .owl-stage{
+
+.box-nosso-clientes {
+  .box-slider {
+    .owl-stage {
       height: 100%;
     }
-    .owl-stage-outer{
+
+    .owl-stage-outer {
       //overflow: visible;
     }
-    .owl-item{
+
+    .owl-item {
 
     }
-    .item{
-      img{
+
+    .item {
+      img {
         height: 70px;
         width: auto;
         @media screen and (min-width: 991px) {
@@ -737,7 +752,8 @@ $primary-color: #990017;
           filter: gray; /* IE */
           transition: 0.5s;
         }
-        &:hover{
+
+        &:hover {
           -webkit-filter: unset;
           filter: unset;
           filter: unset; /* IE */
@@ -746,3 +762,498 @@ $primary-color: #990017;
     }
   }
 }
+
+.box-slider {
+  padding: 100px 0px;
+  margin-top: -0.5px;
+
+  .box-triangulo {
+    z-index: 1001;
+
+    .box-triangulo-color {
+      width: 66px;
+      height: 28px;
+      clip-path: polygon(51% 100%, 0 0, 100% 0);
+    }
+  }
+
+  .box-mask {
+    mix-blend-mode: multiply;
+    z-index: 1;
+
+    .mask {
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      mix-blend-mode: multiply;
+
+      img {
+
+      }
+    }
+  }
+
+  .box-solid {
+    z-index: 1000;
+    //height: 640px !important;
+    overflow: hidden !important;
+    @media screen and (max-width: 991px) {
+      height: 350px !important;
+    }
+
+    .box-title-solid {
+      z-index: 2000;
+      padding: 50px 50px;
+      //padding-right: 250px;
+      @media screen and (max-width: 991px) {
+        padding: 20px 20px;
+      }
+
+      h1, h2, h3, h4, h5, h6, .title-solid {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 52px;
+        width: 345px;
+
+
+        strong, b {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 52px;
+        }
+      }
+    }
+
+    p, .card-text {
+      width: 75%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 10px;
+      color: #FFFFFF;
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    .cta-theme {
+      z-index: 2;
+      margin-top: 30px;
+      border: 1px solid white;
+      border-radius: 30px;
+      padding-right: 30px;
+      padding-left: 30px;
+      color: white;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+      transition: 0.5s;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 200px;
+
+      &:hover {
+        background: #990017;
+        border: 1px solid #990017;
+      }
+    }
+  }
+
+  .case-sliders {
+
+    .slide {
+      .carousel-inner {
+
+
+        .box-images {
+          //height: 640px !important;
+          @media screen and (max-width: 991px) {
+            height: 400px !important;
+          }
+          overflow: hidden;
+
+          .card {
+            border-radius: 0px;
+            border: 0px;
+
+            .card-body {
+              border-radius: 0px;
+              border: 0px;
+            }
+
+            .card-img-overlay {
+              padding: 70px;
+              @media screen and (max-width: 991px) {
+                padding: 20px 20px;
+              }
+              border-radius: 0px;
+              border: 0px;
+              background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 8.36%, rgba(0, 0, 0, 0.2) 74.48%);
+              mix-blend-mode: normal;
+
+              .box-text {
+                z-index: 1001;
+
+                * {
+                  text-align: right;
+                }
+
+                h1, h2, h3, h4, h5, h6, .card-title {
+                  width: 75%;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 36px;
+                  line-height: 42px;
+                  text-align: right;
+                  letter-spacing: 0.03em;
+                  text-transform: uppercase;
+                  color: #FFFFFF;
+                  transition: opacity 0.75s;
+                  @media screen and (max-width: 991px) {
+                    width: 100%;
+                  }
+                }
+
+                p, .card-text {
+                  width: 75%;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 24px;
+                  /* or 133% */
+                  margin-top: 10px;
+
+                  text-align: right;
+                  transition: opa 0.75s;
+                  /* Branco */
+
+                  color: #FFFFFF;
+                  @media screen and (max-width: 991px) {
+                    width: 100%;
+                  }
+                }
+
+                a, .cta-slider {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 21px;
+                  display: flex;
+                  align-content: center;
+                  align-items: center;
+                  text-transform: uppercase;
+                  color: #FFFFFF;
+                  padding: 0px;
+                  border: 0px;
+                  margin-top: 30px;
+                  transition: 0.5s;
+
+                  &:hover, &:active, &:focus, &:visited {
+                    border: 0px;
+                  }
+
+                  &:hover {
+                    color: #F14517;
+                  }
+
+                  &::after {
+                    content: "";
+                    background: url(../images/modulos/slider/arrow_forward.svg);
+                    background-size: cover;
+                    display: inline-flex;
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    right: unset;
+    bottom: 70px;
+    left: -90%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    z-index: 1001;
+    @media screen and (max-width: 991px) {
+      //left: 20px !important;
+      bottom: unset !important;
+      top: -50px;
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      position: absolute;
+      right: 0;
+      bottom: unset;
+      left: 0;
+    }
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev {
+    left: 20px;
+    //bottom: 50px;
+    //align-items: end;
+    @media screen and (max-width: 991px) {
+      //padding: 0px;
+      //left: 20px !important;
+      //bottom: unset !important;
+      //top: 306px;
+      //padding: 0px !important;
+    }
+  }
+
+  .carousel-control-next {
+    right: 20px;
+    //left: 68px;
+    //bottom: 50px;
+    //align-items: end;
+    @media screen and (max-width: 991px) {
+      //left: 45px !important;
+      //bottom: unset !important;
+      //top: 306px;
+      // padding: 0px !important;
+    }
+  }
+
+  .carousel-control-prev-icon {
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/modulos/slider/arrow_last.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background: url("../images/modulos/slider/arrow_next.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-slider {
+    z-index: -1;
+
+    .box-50per {
+    }
+  }
+}
+
+.card-only-text {
+  padding: 70px 0px;
+
+  .box-title {
+    h1, h2, h3, h4, h5, h6 .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 43px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #262626;
+      margin: 0px;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+
+  .box-text {
+    p, .box-text {
+      max-width: 980px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #262626;
+      margin: 0px 20px;
+      margin-top: 10px;
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        text-align: left;
+        margin: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .box-cards {
+    .card {
+      border-radius: 0px;
+      padding: 30px 30px;
+      border: 1px solid #CAD2D8;
+      border-left: 5px solid;
+      @media screen and (min-width: 991px) {
+        min-height: 300px;
+      }
+
+      .card-header {
+        border-radius: 0px;
+        background-color: unset;
+        border: unset;
+        padding-top: 0px;
+        padding-left: 0px;
+
+        h1, h2, h3, h4, h5, h6, .card-title {
+          max-width: 148px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #582689;
+        }
+      }
+
+      .card-body {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+
+        .box-card-text {
+          min-height: 50%;
+
+          p, .card-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            /* or 125% */
+
+            letter-spacing: 0.02em;
+            color: #262626;
+
+          }
+        }
+      }
+    }
+  }
+
+  .btn-tivit1 {
+    background: #582689;
+
+    &:hover {
+      background: #2F154A;
+    }
+  }
+
+  &.alternative {
+    background-color: #262626;
+
+    .box-title {
+      h1, h2, h3, h4, h5, h6 .title {
+        color: white;
+      }
+    }
+
+    .box-text {
+      p, .box-text {
+        color: white;
+      }
+    }
+
+    .card {
+      //background: transparent;
+
+      .card-body {
+        .box-card-text {
+          p, .card-text {
+            //color: white;
+          }
+
+        }
+      }
+    }
+
+    .btn-tivit1 {
+      background: #FE4817;
+
+      &:hover {
+        background: #990017;
+      }
+    }
+  }
+}
+
+.cards-images-centred {
+  padding: 100px 0px;
+  .box-title {
+    h1, h2, h3, h4, h5, h6 .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #262626;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+  .box-cards{
+    .card{
+      border: 1px solid #CAD2D8;
+      .card-body{
+        img{
+          max-height: 85px;
+          margin-bottom: 30px;
+        }
+        h1, h2, h3, h4, h5, h6, .card-title{
+          max-width: 269px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          /* or 120% */
+
+          text-align: center;
+          text-transform: uppercase;
+
+          /* Roxo TBanks */
+
+          color: #582689;
+        }
+      }
+    }
+  }
+  &.alternative{
+    .card{
+      background: white;
+
+    }
+  }
+}
+
