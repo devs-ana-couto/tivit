@@ -1903,4 +1903,179 @@
         </div>
     </section>
 
+    <!--Formulario novo padronizado alterar no layout atual -->
+    <section class="container-fluid px-0 box-form-contato">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-12 box-title d-flex justify-content-center">
+                            <h3 class="title">Reduza custos e fuja da burocracia. Fale com nossos especialistas.</h3>
+                        </div>
+                        <div class="col-12 box-form">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <form name="contato" class="form-case">
+                                        <div class="row">
+                                            <div class="col-12 box-name-form mb-4">
+                                                <h4 class="form-name">contatos pessoais</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="nome-completo" class="form-control"
+                                                       placeholder="Nome Completo" aria-label="Nome Completo" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4" required>
+                                                <select name="cargo" class="form-select">
+                                                    <option selected>Cargo</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="email" name="email" class="form-control"
+                                                       placeholder="E-mail" aria-label="E-mail" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="phone" class="form-control"
+                                                       placeholder="Telefone" aria-label="Telefone" required>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5 mb-2">
+                                                <h4 class="form-name">empresa e projeto</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="empresa" class="form-control"
+                                                       placeholder="Empresa" aria-label="Empresa" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <select name="cargo" class="form-select" required>
+                                                    <option selected>Segmento</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5">
+                                                <h4 class="form-name">Conte-nos um pouco sobre os desafios que fizeram
+                                                    você buscar as soluções tbanks</h4>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <textarea name="assunto" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="col-12 col-lg-9 mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                           id="flexCheckDefault" required>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Estou ciente das finalidades para utilização de meus dados
+                                                        pessoais por parte da TIVIT e concordo com os termos deste
+                                                        tratamento descrito na Política de Privacidade disponibilizada.*
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-lg-3 mt-4">
+                                                <button type="submit" class="btn btn-tivit1 btn-form">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-10 mt-5">
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações
+                                pessoais somente para fornecer os produtos e serviços que você solicitou.
+                                Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu
+                                interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para
+                                conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira
+                                nossa Política de Privacidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- altenativo -->
+    <section class="container-fluid px-0 box-form-contato alternative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-12 box-title d-flex justify-content-center">
+                            <h3 class="title">Reduza custos e fuja da burocracia. Fale com nossos especialistas.</h3>
+                        </div>
+                        <div class="col-12 box-form">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <form name="contato" class="form-case">
+                                        <div class="row">
+                                            <div class="col-12 box-name-form mb-4">
+                                                <h4 class="form-name">contatos pessoais</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="nome-completo" class="form-control"
+                                                       placeholder="Nome Completo" aria-label="Nome Completo" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4" required>
+                                                <select name="cargo" class="form-select">
+                                                    <option selected>Cargo</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="email" name="email" class="form-control"
+                                                       placeholder="E-mail" aria-label="E-mail" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="phone" class="form-control"
+                                                       placeholder="Telefone" aria-label="Telefone" required>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5 mb-2">
+                                                <h4 class="form-name">empresa e projeto</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="empresa" class="form-control"
+                                                       placeholder="Empresa" aria-label="Empresa" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <select name="cargo" class="form-select" required>
+                                                    <option selected>Segmento</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5">
+                                                <h4 class="form-name">Conte-nos um pouco sobre os desafios que fizeram
+                                                    você buscar as soluções tbanks</h4>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <textarea name="assunto" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="col-12 col-lg-9 mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Estou ciente das finalidades para utilização de meus dados pessoais por parte da TIVIT e concordo com os termos deste tratamento descrito na Política de Privacidade disponibilizada.*
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-lg-3 mt-4">
+                                                <button type="submit" class="btn btn-tivit1 btn-form">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-10 mt-5">
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações pessoais somente para fornecer os produtos e serviços que você solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira nossa Política de Privacidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <?php get_footer(); ?>

@@ -10333,7 +10333,7 @@ div {
   }
 }
 .box-list-img.alternative {
-  background: black;
+  background: #262626;
 }
 .box-list-img.alternative .box-title-top .title-top {
   color: #FE4817;
@@ -11054,6 +11054,175 @@ div {
 .box-feedback-cliente.alternative .carousel-indicators [data-bs-target] {
   background: #F14517;
   background-clip: padding-box;
+}
+
+.box-form-contato {
+  background: #f4f6f7;
+  padding: 120px 0px;
+}
+.box-form-contato .box-title {
+  margin-bottom: 90px;
+}
+.box-form-contato .box-title h1, .box-form-contato .box-title h2, .box-form-contato .box-title h3, .box-form-contato .box-title h4, .box-form-contato .box-title h5, .box-form-contato .box-title h6, .box-form-contato .box-title .title {
+  max-width: 550px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #262626;
+}
+.box-form-contato .box-form .box-name-form h1, .box-form-contato .box-form .box-name-form h2, .box-form-contato .box-form .box-name-form h3, .box-form-contato .box-form .box-name-form h4, .box-form-contato .box-form .box-name-form h5, .box-form-contato .box-form .box-name-form h6, .box-form-contato .box-form .box-name-form .form-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #262626;
+  margin: 0px;
+}
+.box-form-contato .box-form .form-case input[type=text], .box-form-contato .box-form .form-case input[type=email] {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #3A3A3A;
+  border-radius: 0px;
+  background-color: transparent;
+  border: unset;
+  border-bottom: 1px solid #92A2AE;
+}
+.box-form-contato .box-form .form-case input[type=text]::placeholder, .box-form-contato .box-form .form-case input[type=email]::placeholder {
+  color: #3A3A3A;
+}
+.box-form-contato .box-form .form-case input, .box-form-contato .box-form .form-case select, .box-form-contato .box-form .form-case textarea {
+  box-shadow: unset;
+}
+.box-form-contato .box-form .form-case input[type=checkbox] {
+  border-radius: 0px;
+}
+.box-form-contato .box-form .form-case input[type=checkbox]:checked {
+  background: #582689;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  border: unset;
+}
+.box-form-contato .box-form .form-case select {
+  border: unset;
+  border-bottom: 1px solid #92A2AE;
+  background-color: #262626 !important;
+  box-shadow: unset;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.box-form-contato .box-form .form-case select::-ms-expand {
+  border-radius: 0px;
+  border: unset;
+}
+.box-form-contato .box-form .form-case select option {
+  height: 40px;
+  border-radius: 0px;
+  color: #3A3A3A;
+}
+.box-form-contato .box-form .form-case textarea {
+  background: transparent;
+  border: 1px solid #92A2AE;
+  border-radius: 0px;
+  height: 170px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3A3A3A;
+}
+.box-form-contato .box-form .form-case .btn-form {
+  width: 100%;
+  background: #582689;
+}
+.box-form-contato .box-form .form-case .btn-form:hover {
+  background: #2F154A;
+}
+.box-form-contato .info-form {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #262626;
+}
+.box-form-contato .form-check-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #262626;
+}
+.box-form-contato.alternative {
+  background: #262626 !important;
+}
+.box-form-contato.alternative .box-title h1, .box-form-contato.alternative .box-title h2, .box-form-contato.alternative .box-title h3, .box-form-contato.alternative .box-title h4, .box-form-contato.alternative .box-title h5, .box-form-contato.alternative .box-title h6, .box-form-contato.alternative .box-title .title {
+  color: #F14517 !important;
+}
+.box-form-contato.alternative .box-form .box-name-form h1, .box-form-contato.alternative .box-form .box-name-form h2, .box-form-contato.alternative .box-form .box-name-form h3, .box-form-contato.alternative .box-form .box-name-form h4, .box-form-contato.alternative .box-form .box-name-form h5, .box-form-contato.alternative .box-form .box-name-form h6, .box-form-contato.alternative .box-form .box-name-form .form-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #F14517 !important;
+  margin: 0px;
+}
+.box-form-contato.alternative .box-form .form-case input[type=text], .box-form-contato.alternative .box-form .form-case input[type=email] {
+  color: white;
+  border-bottom: 1px solid white;
+}
+.box-form-contato.alternative .box-form .form-case input[type=text]::placeholder, .box-form-contato.alternative .box-form .form-case input[type=email]::placeholder {
+  color: white;
+}
+.box-form-contato.alternative .box-form .form-case input, .box-form-contato.alternative .box-form .form-case select, .box-form-contato.alternative .box-form .form-case textarea {
+  box-shadow: unset;
+}
+.box-form-contato.alternative .box-form .form-case input[type=checkbox] {
+  border-radius: 0px;
+}
+.box-form-contato.alternative .box-form .form-case input[type=checkbox]:checked {
+  background: #F14517;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  border: unset;
+}
+.box-form-contato.alternative .box-form .form-case select {
+  border: unset;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  box-shadow: unset;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.box-form-contato.alternative .box-form .form-case textarea {
+  border: 1px solid white;
+  color: white;
+}
+.box-form-contato.alternative .box-form .form-case .btn-form {
+  width: 100%;
+  background: #FE4817;
+}
+.box-form-contato.alternative .box-form .form-case .btn-form:hover {
+  background: #990017;
+}
+.box-form-contato.alternative .info-form {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: white;
+}
+.box-form-contato.alternative .form-check-label {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
