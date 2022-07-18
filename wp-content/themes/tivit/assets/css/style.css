@@ -10901,9 +10901,6 @@ div {
 .card-only-text .btn-tivit1:hover {
   background: #2F154A;
 }
-.card-only-text.alternative {
-  background-color: #262626;
-}
 .card-only-text.alternative .box-title h1, .card-only-text.alternative .box-title h2, .card-only-text.alternative .box-title h3, .card-only-text.alternative .box-title h4, .card-only-text.alternative .box-title h5, .card-only-text.alternative .box-title h6 .title {
   color: white;
 }
@@ -11232,7 +11229,6 @@ div {
 }
 
 .box-full-img {
-  background: #F4F6F7;
   padding: 80px 0px;
   padding-bottom: 130px;
 }

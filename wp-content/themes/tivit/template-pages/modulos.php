@@ -1387,7 +1387,7 @@
     <!-- fim do modulo slider -->
 
     <!-- box full img -->
-    <section class="container-fluid px-lg-0 box-full-img">
+    <section class="container-fluid px-lg-0 box-full-img" style="background: #F4F6F7;">
         <div class="container">
             <div class="row">
                 <div class="col-12 box-title-header">
@@ -1489,7 +1489,7 @@
         </div>
     </section>
     <!-- alternative-->
-    <section class="container-fluid px-0 card-only-text alternative">
+    <section class="container-fluid px-0 card-only-text alternative" style="background: #262626">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
@@ -1692,7 +1692,7 @@
     <!-- alternative -->
     <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
        poderam ser personalizados pelo usuario -->
-    <section class="container-fluid px-0 card-only-text cards-images-centred alternative">
+    <section class="container-fluid px-0 card-only-text cards-images-centred alternative" style="background: #262626">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col-auto box-title">
