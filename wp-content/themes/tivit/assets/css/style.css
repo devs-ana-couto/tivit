@@ -11111,7 +11111,7 @@ div {
 .box-form-contato .box-form .form-case select {
   border: unset;
   border-bottom: 1px solid #92A2AE;
-  background-color: #262626 !important;
+  background-color: transparent !important;
   box-shadow: unset;
   border-radius: 0px;
   font-size: 14px;
