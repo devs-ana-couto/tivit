@@ -11231,4 +11231,45 @@ div {
   color: white;
 }
 
+.box-full-img {
+  background: #F4F6F7;
+  padding: 80px 0px;
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 991px) {
+  .box-full-img {
+    padding: 40px 0px;
+    padding-bottom: 80px;
+  }
+}
+.box-full-img .box-title-header .box-title h1, .box-full-img .box-title-header .box-title h2, .box-full-img .box-title-header .box-title h3, .box-full-img .box-title-header .box-title h4, .box-full-img .box-title-header .box-title h5, .box-full-img .box-title-header .box-title h6, .box-full-img .box-title-header .box-title .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #262626;
+}
+.box-full-img .box-title-header .box-desc p, .box-full-img .box-title-header .box-desc .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #262626;
+  margin-top: 20px;
+}
+.box-full-img .box-title-header .box-img {
+  margin-top: 75px;
+}
+@media screen and (max-width: 991px) {
+  .box-full-img .box-title-header .box-img {
+    margin-top: 40px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

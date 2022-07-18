@@ -134,6 +134,30 @@
                                      alt="">
                             </a>
                         </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_aws.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_azure.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_gc.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_sap.png"
+                                     alt="">
+                            </a>
+                        </div>
 
                     </div>
                 </div>
@@ -154,7 +178,7 @@
                         <div class="col box-img">
                             <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                 alt="">
+                                     alt="">
                             </a>
                         </div>
                         <div class="col box-img">
@@ -1362,6 +1386,30 @@
     </section>
     <!-- fim do modulo slider -->
 
+    <!-- box full img -->
+    <section class="container-fluid px-lg-0 box-full-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title-header">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 box-title d-flex justify-content-center">
+                            <h3 class="title">Como fazemos</h3>
+                        </div>
+                        <div class="col-12 col-lg-7 box-desc">
+                            <p class="desc">Atuamos desde a descoberta do desafio do cliente, estudando a operação e elaborando
+                                hipóteses, para então desenvolver soluções customizadas. Construímos as fundações para
+                                seu negócio crescer e prosperar, em um ciclo virtuoso.</p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center box-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/box-img/grafico-tdx.png"
+                                 class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- cards only with text -->
     <section class="container-fluid px-0 card-only-text">
         <div class="container">
@@ -2079,7 +2127,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-10 mt-5">
-                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos
+                                suas informações
                                 pessoais somente para fornecer os produtos e serviços que você solicitou.
                                 Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu
                                 interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para
@@ -2152,9 +2201,12 @@
                                             </div>
                                             <div class="col-12 col-lg-9 mt-4">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                           id="flexCheckDefault" required>
                                                     <label class="form-check-label" for="flexCheckChecked">
-                                                        Estou ciente das finalidades para utilização de meus dados pessoais por parte da TIVIT e concordo com os termos deste tratamento descrito na Política de Privacidade disponibilizada.*
+                                                        Estou ciente das finalidades para utilização de meus dados
+                                                        pessoais por parte da TIVIT e concordo com os termos deste
+                                                        tratamento descrito na Política de Privacidade disponibilizada.*
                                                     </label>
                                                 </div>
                                             </div>
@@ -2167,7 +2219,12 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-10 mt-5">
-                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações pessoais somente para fornecer os produtos e serviços que você solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira nossa Política de Privacidade.</p>
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos
+                                suas informações pessoais somente para fornecer os produtos e serviços que você
+                                solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser
+                                do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser.
+                                Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais,
+                                confira nossa Política de Privacidade.</p>
                         </div>
                     </div>
                 </div>
