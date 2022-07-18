@@ -32,6 +32,9 @@
     <!-- remover a classe dev no back end -->
     <!-- separei esse modulo em 2 pois já temos o big number criado,
      sendo assim ele pode ou não ser utilizado -->
+    <!-- fim do Header Mobile -->
+
+    <!-- box-chamada-pagina -->
     <section class="container box-chamada-pagina">
         <div class="col box-title p-0 d-flex align-items-center justify-content-center flex-wrap">
             <p><strong>Soluções inovadoras na prática.</strong></p>
@@ -96,6 +99,7 @@
         </div>
     </section>
     <!-- final do modulo Chamada Página -->
+    <!-- fim  box-chamada-pagina -->
 
     <!-- modulo parceiros -->
     <section class="container-fluid p-0 box-parceiros">
@@ -136,69 +140,169 @@
             </div>
         </div>
     </section>
+    <!-- fim do modulo parceiros -->
+
     <!-- modulo cliente -->
-    <section class="container-fluid p-0 box-nosso-clientes">
+    <section class="container-fluid px-lg-0 box-nosso-clientes">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-auto box-title">
                     <h2>Nosso Clientes</h2>
                 </div>
                 <div class="col-12 box-slider">
-                    <div class="owl-carousel owl-theme slider-cliente">
-                        <div class="item">
-                            <a href="#">
+                    <div class="row justify-content-around row-cols-3 row-cols-lg-6">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                     alt="">
+                                 alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
                                      alt="">
                             </a>
                         </div>
-
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
                                      alt="">
                             </a>
                         </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- fim do modulo cliente -->
 
     <section class="container-fluid box-intro">
         <div class="row justify-content-center align-items-center">
@@ -360,6 +464,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box Text + Img -->
 
     <!-- Box Card + Icons-->
     <section class="container-fluid box-card-icons px-lg-0">
@@ -534,6 +639,7 @@
             </div>
         </div>
     </section>
+    <!--fim do Box Card + Icons-->
 
     <!-- Box lista + img -->
     <section class="container-fluid px-0 box-list-img">
@@ -722,6 +828,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box lista + img -->
 
     <!-- box banner soluções -->
     <section class="container box-banner-solucoes">
@@ -859,6 +966,7 @@
             </div>
         </div>
     </section>
+    <!--fim do box banner soluções -->
 
     <!-- Box Big Numbers -->
     <!-- permitir que o usuario passar a cor desejada através do style background -->
@@ -1117,6 +1225,7 @@
             </div>
         </div>
     </section>
+    <!-- fim do Box Big Numbers -->
 
     <!-- modulo slider -->
     <section class="container-fluid box-slider position-relative">
@@ -1251,6 +1360,7 @@
             <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
         </div>
     </section>
+    <!-- fim do modulo slider -->
 
     <!-- cards only with text -->
     <section class="container-fluid px-0 card-only-text">
@@ -1448,7 +1558,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color:  #582689">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1463,7 +1574,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Avisos de movimentações bancárias</h5>
+                                            <h5 class="card-title" style="color:  #582689">Avisos de movimentações
+                                                bancárias</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1478,7 +1590,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Faturamento em tempo real</h5>
+                                            <h5 class="card-title" style="color:  #582689">Faturamento em tempo
+                                                real</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1493,7 +1606,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Dashboard de gestão de operações</h5>
+                                            <h5 class="card-title" style="color:  #582689">Dashboard de gestão de
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1508,7 +1622,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color:  #582689">Sistema intuitivo e unificado</h5>
+                                            <h5 class="card-title" style="color:  #582689">Sistema intuitivo e
+                                                unificado</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1564,7 +1679,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1579,7 +1695,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Avisos de movimentações bancárias</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Avisos de movimentações
+                                                bancárias</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1594,7 +1711,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Faturamento em tempo real</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Faturamento em tempo
+                                                real</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1609,7 +1727,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Dashboard de gestão de operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Dashboard de gestão de
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1624,7 +1743,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Sistema intuitivo e unificado</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Sistema intuitivo e
+                                                unificado</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1655,7 +1775,8 @@
                                                  alt="">
                                         </div>
                                         <div class="col-12 d-flex justify-content-center">
-                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das operações</h5>
+                                            <h5 class="card-title" style="color: #FE4817;">Informações em tempo real das
+                                                operações</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -1674,5 +1795,384 @@
         </div>
     </section>
     <!-- fim do card img+title -->
+
+    <!-- box BENEFÍCIOS PARA CLIENTES -->
+    <section class="container-fluid px-0 box-feedback-cliente">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
+                    <h3 class="title">benefícios para clientes</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div id="feedbackSlider" class="carousel carousel-dark slide feedbackSlider"
+                         data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#feedbackSlider" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <button class="carousel-control-prev d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- altenative
+    carro o cliente sete o modo escuro, esse bloco precisará se carregado ao invés do outro
+    -->
+    <section class="container-fluid px-0 box-feedback-cliente alternative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
+                    <h3 class="title">benefícios para clientes</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div id="feedbackSlider-alternative" class="carousel slide feedbackSlider"
+                         data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#feedbackSlider-alternative" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 box-img d-flex justify-content-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/feedback/user.png"
+                                             class="d-block" alt="...">
+                                    </div>
+                                    <div class="col-12 info-user  d-flex flex-column justify-content-center">
+                                        <p><strong>André Correia</strong></p>
+                                        <p>Diretor e head de negócios da TBankS</p>
+                                    </div>
+                                    <div class="col-12 box-feedback d-flex justify-content-center">
+                                        <p>”A chegada do Open Banking traz uma grande oportunidade para a renovação do
+                                            sistema financeiro brasileiro. A TIVIT, como uma das maiores empresas de
+                                            tecnologia do país, usa sua expertise para ser protagonista neste
+                                            mercado.”</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <button class="carousel-control-prev d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider-alternative"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next d-none d-lg-block" type="button"
+                                data-bs-target="#feedbackSlider-alternative"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Formulario novo padronizado alterar no layout atual -->
+    <section class="container-fluid px-0 box-form-contato">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-12 box-title d-flex justify-content-center">
+                            <h3 class="title">Reduza custos e fuja da burocracia. Fale com nossos especialistas.</h3>
+                        </div>
+                        <div class="col-12 box-form">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <form name="contato" class="form-case">
+                                        <div class="row">
+                                            <div class="col-12 box-name-form mb-4">
+                                                <h4 class="form-name">contatos pessoais</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="nome-completo" class="form-control"
+                                                       placeholder="Nome Completo" aria-label="Nome Completo" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4" required>
+                                                <select name="cargo" class="form-select">
+                                                    <option selected>Cargo</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="email" name="email" class="form-control"
+                                                       placeholder="E-mail" aria-label="E-mail" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="phone" class="form-control"
+                                                       placeholder="Telefone" aria-label="Telefone" required>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5 mb-2">
+                                                <h4 class="form-name">empresa e projeto</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="empresa" class="form-control"
+                                                       placeholder="Empresa" aria-label="Empresa" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <select name="cargo" class="form-select" required>
+                                                    <option selected>Segmento</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5">
+                                                <h4 class="form-name">Conte-nos um pouco sobre os desafios que fizeram
+                                                    você buscar as soluções tbanks</h4>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <textarea name="assunto" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="col-12 col-lg-9 mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                           id="flexCheckDefault" required>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Estou ciente das finalidades para utilização de meus dados
+                                                        pessoais por parte da TIVIT e concordo com os termos deste
+                                                        tratamento descrito na Política de Privacidade disponibilizada.*
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-lg-3 mt-4">
+                                                <button type="submit" class="btn btn-tivit1 btn-form">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-10 mt-5">
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações
+                                pessoais somente para fornecer os produtos e serviços que você solicitou.
+                                Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu
+                                interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para
+                                conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira
+                                nossa Política de Privacidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- altenativo -->
+    <section class="container-fluid px-0 box-form-contato alternative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div class="col-12 box-title d-flex justify-content-center">
+                            <h3 class="title">Reduza custos e fuja da burocracia. Fale com nossos especialistas.</h3>
+                        </div>
+                        <div class="col-12 box-form">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+                                    <form name="contato" class="form-case">
+                                        <div class="row">
+                                            <div class="col-12 box-name-form mb-4">
+                                                <h4 class="form-name">contatos pessoais</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="nome-completo" class="form-control"
+                                                       placeholder="Nome Completo" aria-label="Nome Completo" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4" required>
+                                                <select name="cargo" class="form-select">
+                                                    <option selected>Cargo</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="email" name="email" class="form-control"
+                                                       placeholder="E-mail" aria-label="E-mail" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="phone" class="form-control"
+                                                       placeholder="Telefone" aria-label="Telefone" required>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5 mb-2">
+                                                <h4 class="form-name">empresa e projeto</h4>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <input type="text" name="empresa" class="form-control"
+                                                       placeholder="Empresa" aria-label="Empresa" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6 mt-4">
+                                                <select name="cargo" class="form-select" required>
+                                                    <option selected>Segmento</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 box-name-form mt-5">
+                                                <h4 class="form-name">Conte-nos um pouco sobre os desafios que fizeram
+                                                    você buscar as soluções tbanks</h4>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <textarea name="assunto" class="form-control" required></textarea>
+                                            </div>
+                                            <div class="col-12 col-lg-9 mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Estou ciente das finalidades para utilização de meus dados pessoais por parte da TIVIT e concordo com os termos deste tratamento descrito na Política de Privacidade disponibilizada.*
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-lg-3 mt-4">
+                                                <button type="submit" class="btn btn-tivit1 btn-form">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-10 mt-5">
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações pessoais somente para fornecer os produtos e serviços que você solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira nossa Política de Privacidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
