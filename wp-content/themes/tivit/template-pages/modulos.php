@@ -134,30 +134,6 @@
                                      alt="">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_aws.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_azure.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_gc.png"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_sap.png"
-                                     alt="">
-                            </a>
-                        </div>
 
                     </div>
                 </div>
@@ -167,18 +143,90 @@
     <!-- fim do modulo parceiros -->
 
     <!-- modulo cliente -->
-    <section class="container-fluid p-0 box-nosso-clientes">
+    <section class="container-fluid px-lg-0 box-nosso-clientes">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-auto box-title">
                     <h2>Nosso Clientes</h2>
                 </div>
                 <div class="col-12 box-slider">
-                    <div class="row justify-content-around row-cols-lg-2 row-cols-lg-6 gx-2">
+                    <div class="row justify-content-around row-cols-3 row-cols-lg-6">
                         <div class="col box-img">
                             <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
                                  alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/notredame.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/zurich.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/ipiranga.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/boticario.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/bv.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="col box-img">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
+                                     alt="">
                             </a>
                         </div>
                         <div class="col box-img">

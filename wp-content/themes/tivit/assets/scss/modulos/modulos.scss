@@ -702,8 +702,7 @@ $primary-color: #990017;
     //margin-top: 50px;
     //margin-bottom: 130px;
     @media screen and (max-width: 991px) {
-      padding-left: 20px !important;
-      padding-right: 0px !important;
+      padding: 40px 0px;
     }
     //height: 400px;
     .slider-parceiros {
@@ -738,9 +737,13 @@ $primary-color: #990017;
       justify-content: center;
       margin-bottom: 40px;
       padding: 0px 20px;
+      @media screen and (min-width: 991px) {
+        padding: 0px 0px;
+      }
       img {
-        height: 70px;
         @media screen and (min-width: 991px) {
+          height: 70px;
+          padding: 0 20px;
           -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
           filter: gray; /* IE */
