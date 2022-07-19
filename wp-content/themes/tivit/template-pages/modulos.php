@@ -43,7 +43,7 @@
         </div>
     </section>
     <!-- segunda parte do modulo  -->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: transparent;">
+    <section class="container-fluid p-0 box-big-number position-relative" style="background: #000;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
@@ -2227,6 +2227,20 @@
                                 confira nossa Política de Privacidade.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- conteúdos -->
+    <section class="container-fluid px-lg-0 box-three-news" style="background: #262626;">
+        <div class="col-12 position-absolute box-triangulo w-100 d-flex justify-content-center">
+            <div class="triangulo"></div>
+        </div>
+        <div class="container case-news">
+            <div class="row">
+                <div class="col-12 box-title">
+                    <h3 class="title">últimas notícias da tdx</h3>
                 </div>
             </div>
         </div>

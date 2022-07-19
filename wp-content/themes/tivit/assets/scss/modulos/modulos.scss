@@ -1656,3 +1656,23 @@ $primary-color: #990017;
     }
   }
 }
+
+.box-three-news{
+  padding-bottom: 130px;
+  .box-triangulo{
+    .triangulo{
+      width: 66px;
+      height: 28px;
+      clip-path: polygon(51% 100%, 0 0, 100% 0);
+      background: white;
+    }
+  }
+  .case-news{
+    padding: 70px 0px;
+    .box-title{
+      h1, h2, h3, h4, h5, h6, .title{
+
+      }
+    }
+  }
+}
