@@ -35,15 +35,15 @@
     <!-- fim do Header Mobile -->
 
     <!-- box-chamada-pagina -->
-    <section class="container box-chamada-pagina">
-        <div class="col box-title p-0 d-flex align-items-center justify-content-center flex-wrap">
+    <section class="container box-chamada-pagina" style="background: white;">
+        <div class="col box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap">
             <p><strong>Soluções inovadoras na prática.</strong></p>
             <p> Desafiamos e encorajamos a transformação, porque acreditamos que o
                 plano no papel não muda o mundo</p>
         </div>
     </section>
     <!-- segunda parte do modulo  -->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: transparent;">
+    <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
@@ -102,7 +102,7 @@
     <!-- fim  box-chamada-pagina -->
 
     <!-- modulo parceiros -->
-    <section class="container-fluid p-0 box-parceiros">
+    <section class="container-fluid px-0 box-parceiros" style="background: white;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto box-title">
@@ -110,6 +110,30 @@
                 </div>
                 <div class="col-12 box-slider">
                     <div class="owl-carousel owl-theme slider-parceiros">
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_aws.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_azure.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_gc.png"
+                                     alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_sap.png"
+                                     alt="">
+                            </a>
+                        </div>
                         <div class="item">
                             <a href="#">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/Parceiros/logo_aws.png"
@@ -143,7 +167,7 @@
     <!-- fim do modulo parceiros -->
 
     <!-- modulo cliente -->
-    <section class="container-fluid px-lg-0 box-nosso-clientes">
+    <section class="container-fluid px-lg-0 box-nosso-clientes" style="background: white;">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-auto box-title">
@@ -154,7 +178,7 @@
                         <div class="col box-img">
                             <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
-                                 alt="">
+                                     alt="">
                             </a>
                         </div>
                         <div class="col box-img">
@@ -304,117 +328,89 @@
     </section>
     <!-- fim do modulo cliente -->
 
-    <section class="container-fluid box-intro">
-        <div class="row justify-content-center align-items-center">
-            <!-- passar a cor adivinda do back para o inline abaixo, caso não tenha cor setada por padrão deverá ser a cor setada na abaixo, vale também para imagens -->
-            <!-- passar a classe order-1 ou 2 para colocar a caixa em cima ou em baixo alternando a possição 1 para topo 2 para baixo -->
-            <div class="col-12 box-modulo order-1" style="background: #454D54;">
-                <div class="container h-100">
-                    <div class="row row-cols-2 h-100 justify-content-center align-items-center">
-                        <!-- para facilitar na implementação do back, como os texot serão posicionado de acordo com
-                         a vontade do usuario passe a order1ou order2 na class -->
-                        <div class="col-12 col-lg order-1 d-flex justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
-                                 class="logo-tivit" alt="">
-                        </div>
-                        <div class="col-12 col-lg order-2 d-flex justify-content-center align-items-center">
-                            <p>8 entre as 10 maiores empresas da América Latina contam com a TIVIT como parceira
-                                tecnológica
-                                para trazer eficiência e inovação para os seus negócios.</p>
-                        </div>
-                    </div>
+    <!-- Box intro -->
+    <section class="container-fluid px-0 box-intro position-relative mt-2" style="background: #262626">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
+                <div class="col modulo order-1 flex-wrap d-flex justify-content-center align-items-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
+                         class="logo-tivit" height="40" alt="">
                 </div>
-            </div>
-            <!-- passar a cor adivinda do back para o inline abaixo, caso não tenha cor setada por padrão deverá ser a cor setada na abaixo, vale também para imagens -->
-            <!-- passar a classe order-1 ou 2 para colocar a caixa em cima ou em baixo alternando a possição -->
-            <div class="col-12 box-modulo order-2"
-                 style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
-                <!-- caso passe uma imagem no inline acima, o card-img-overlay deverá ser inserido abaixo antes das col-auto -->
-                <div class="container h-100">
-                    <div class="row row-cols-2 h-100">
-                        <!-- para facilitar na implementação do back, como os texot serão posicionado de acordo com
-                                               a vontade do usuario passe a order1, order2, order3 ou order4 na class -->
-                        <div class="col-auto col-lg order-1 d-flex flex-wrap justify-content-center align-content-center">
-                            <h4>Seu negócio hoje age proativamente contra ataques ou apenas reage?</h4>
-                            <p>Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
-                        </div>
-                        <div class="col-auto col-lg order-2 d-flex flex-wrap justify-content-center align-content-center">
-                            <div class="col-12 box-cta">
-                                <p>Entre em contato com nossos consultores e saiba como o serviços de Cyber Security
-                                    podem
-                                    mitigar
-                                    os riscos e vulnerabilidades do seu negócio.</p>
-                                <a href="" class="btn btn-outline-primary">Fale com nossos consultores</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">8 entre as 10
+                        maiores empresas da América Latina contam com a TIVIT como parceira tecnológica para trazer
+                        eficiência e inovação para os seus negócios.</p>
+                    <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
                 </div>
-                <div class="card-img-overlay mask"></div>
             </div>
         </div>
+        <!--opicional mascara, caso adiconar, remova tag d-none -->
+        <div class="card-img-overlay box-mask w-100 h-100 d-none"></div>
     </section>
-    <!-- exemplo de implementação com order sem alterar o a estrura do código, alterando apenas a classe order box-intro -->
-    <section class="container-fluid box-intro">
-        <div class="row justify-content-center">
-            <!-- passar a cor adivinda do back para o inline abaixo, caso não tenha cor setada por padrão deverá ser a cor setada na abaixo, vale também para imagens -->
-            <!-- passar a classe order-1 ou 2 para colocar a caixa em cima ou em baixo alternando a possição 1 para topo 2 para baixo -->
-            <!-- classe foi alterada para order 2 -->
-
-            <div class="col-12 box-modulo order-2" style="background: #454D54;">
-                <div class="container h-100">
-                    <div class="row row-cols-2 h-100 justify-content-center align-items-center">
-                        <!-- para facilitar na implementação do back, como os texot serão posicionado de acordo com
-                         a vontade do usuario passe a order1, order2, order3 ou order4 na class -->
-                        <!-- classe foi alterada para order 2 -->
-                        <div class="col-12 col-lg order-2 d-flex justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
-                                 class="logo-tivit" alt="">
-                        </div>
-                        <!-- classe foi alterada para order 1 -->
-                        <div class="col-12 col-lg order-1 d-flex justify-content-center align-items-center">
-                            <p>8 entre as 10 maiores empresas da América Latina contam com a TIVIT como parceira
-                                tecnológica
-                                para trazer eficiência e inovação para os seus negócios.</p>
-                        </div>
-                    </div>
+    <section class="container-fluid px-0 box-intro position-relative mt-2" style="background: #262626">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
+                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
+                         class="logo-tivit" height="40" alt="">
                 </div>
-            </div>
-
-
-            <!-- passar a cor adivinda do back para o inline abaixo, caso não tenha cor setada por padrão deverá ser a cor setada na abaixo, vale também para imagens -->
-            <!-- passar a classe order-1 ou 2 para colocar a caixa em cima ou em baixo alternando a possição -->
-            <!-- classe foi alterada para order 1 -->
-            <div class="col-12 box-modulo order-1"
-                 style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
-                <!-- caso passe uma imagem no inline acima, o card-img-overlay deverá ser inserido abaixo antes das col-auto -->
-                <div class="container h-100">
-                    <div class="row row-cols-2 h-100">
-                        <!-- para facilitar na implementação do back, como os texot serão posicionado de acordo com
-                                               a vontade do usuario passe a order1, order2, order3 ou order4 na class -->
-                        <!-- classe foi alterar para order-2 -->
-                        <div class="col-auto col-lg order-2 d-flex flex-wrap justify-content-center align-content-center">
-                            <h4>Seu negócio hoje age proativamente contra ataques ou apenas reage?</h4>
-                            <p>Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
-                        </div>
-                        <!-- classe foi alterada para order-1 -->
-                        <div class="col-auto col-lg order-1 d-flex flex-wrap justify-content-center align-content-center">
-                            <div class="col-12 box-cta">
-                                <p>Entre em contato com nossos consultores e saiba como o serviços de Cyber Security
-                                    podem
-                                    mitigar
-                                    os riscos e vulnerabilidades do seu negócio.</p>
-                                <a href="" class="btn btn-outline-primary">Fale com nossos consultores</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col modulo order-1 d-flex flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">8 entre as 10
+                        maiores empresas da América Latina contam com a TIVIT como parceira tecnológica para trazer
+                        eficiência e inovação para os seus negócios.</p>
+                    <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
                 </div>
-                <div class="card-img-overlay mask"></div>
             </div>
         </div>
+        <!--opicional mascara, caso adiconar, remova tag d-none -->
+        <div class="card-img-overlay box-mask w-100 h-100 d-none"></div>
+    </section>
+    <!-- alternativo -->
+    <section class="container-fluid px-0 box-intro position-relative mt-2"
+             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
+                <div class="col modulo order-1 flex-wrap d-flex justify-content-center align-items-center">
+                    <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
+                        Seu negócio hoje age proativamente contra ataques ou apenas reage?
+                    </h3>
+                    <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
+                        Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
+                </div>
+                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e vulnerabilidades do seu negócio.</p>
+                    <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
+                </div>
+            </div>
+        </div>
+        <!--opicional mascara, caso deseje ocutar adcione o d-none -->
+        <div class="card-img-overlay box-mask w-100 h-100"></div>
+    </section>
+    <section class="container-fluid px-0 box-intro position-relative mt-2"
+             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
+                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+                    <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
+                        Seu negócio hoje age proativamente contra ataques ou apenas reage?
+                    </h3>
+                    <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
+                        Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
+                </div>
+                <div class="col modulo order-1 d-flex flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e vulnerabilidades do seu negócio.</p>
+                    <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
+                </div>
+            </div>
+        </div>
+        <!--opicional mascara, caso deseje ocutar adcione o d-none -->
+        <div class="card-img-overlay box-mask w-100 h-100"></div>
     </section>
 
     <!--  Box Text + Img -->
-    <section class="container-fluid p-0 box-txt-img">
+    <section class="container-fluid px-lg-0 box-txt-img" style="background: white;">
         <div class="container">
             <div class="row row-cols-lg-2 p-3">
                 <div class="col-auto box-modulo order-1 d-flex flex-wrap align-items-center justify-content-center">
@@ -440,7 +436,7 @@
     <!-- Exemplo de variação --- Atenção com a classe dark-theme precisa ser setada quando
     o usuario definir como dark-->
     <!-- Exemplo de variação --- Atente-se as classe orders -->
-    <section class="container-fluid p-0 box-txt-img dark-theme">
+    <section class="container-fluid px-lg-0 box-txt-img dark-theme" style="background: #262626;">
         <div class="container">
             <div class="row row-cols-lg-2 p-3">
                 <!-- aqui deverá ser definido a order -->
@@ -467,7 +463,7 @@
     <!-- fim do Box Text + Img -->
 
     <!-- Box Card + Icons-->
-    <section class="container-fluid box-card-icons px-lg-0">
+    <section class="container-fluid box-card-icons px-lg-0" style="background: white;">
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top">
                 <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
@@ -553,7 +549,7 @@
         </div>
     </section>
     <!-- box alternativo, só passar a classe alternative no section -->
-    <section class="container-fluid box-card-icons px-lg-0 alternative">
+    <section class="container-fluid box-card-icons px-lg-0 alternative" style="background: #C7EDE3;">
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top">
                 <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
@@ -642,7 +638,7 @@
     <!--fim do Box Card + Icons-->
 
     <!-- Box lista + img -->
-    <section class="container-fluid px-0 box-list-img">
+    <section class="container-fluid px-lg-0 box-list-img" style="background: white;">
         <div class="container">
             <!-- passe o d-flex para ativo, e d-none para ocultar na class -->
             <div class="col d-flex justify-content-center box-title-top">
@@ -736,7 +732,7 @@
         </div>
     </section>
     <!-- Box Alternativo Lista + Img -->
-    <section class="container-fluid px-0 box-list-img alternative">
+    <section class="container-fluid px-lg-0 box-list-img alternative" style="background: #262626;">
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top">
                 <h3 class="title-top">Titulo superior da Box Lista + IMG, Passe aqui o titulo do modulo -
@@ -970,7 +966,7 @@
 
     <!-- Box Big Numbers -->
     <!-- permitir que o usuario passar a cor desejada através do style background -->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: transparent;">
+    <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: transparent;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
@@ -1025,7 +1021,7 @@
         </div>
     </section>
     <!-- alternativo com 2 - 6 cards colunas e fundo com 2 cores-->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: #990017;">
+    <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: #990017;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: #F4F6F7;"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
@@ -1109,7 +1105,7 @@
         </div>
     </section>
     <!-- alternativo com 2 - 2 cards colunas e fundo com 2 cores-->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: #3A3A3A;">
+    <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: #3A3A3A;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: #F4F6F7;"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
@@ -1153,7 +1149,7 @@
         </div>
     </section>
     <!-- alternativo com 3 colunas - 5 cards e cor sólida-->
-    <section class="container-fluid p-0 box-big-number position-relative" style="background: #C7EDE3;">
+    <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: #C7EDE3;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background, parar cor sólida
          passar o style transparent -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
@@ -1228,7 +1224,7 @@
     <!-- fim do Box Big Numbers -->
 
     <!-- modulo slider -->
-    <section class="container-fluid box-slider position-relative">
+    <section class="container-fluid px-lg-0 box-slider position-relative" style="background: white">
         <div class="container position-relative">
             <div class="card-img-overlay box-mask ">
                 <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
@@ -1362,8 +1358,33 @@
     </section>
     <!-- fim do modulo slider -->
 
+    <!-- box full img -->
+    <section class="container-fluid px-lg-0 box-full-img" style="background: #F4F6F7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title-header">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 box-title d-flex justify-content-center">
+                            <h3 class="title">Como fazemos</h3>
+                        </div>
+                        <div class="col-12 col-lg-7 box-desc">
+                            <p class="desc">Atuamos desde a descoberta do desafio do cliente, estudando a operação e
+                                elaborando
+                                hipóteses, para então desenvolver soluções customizadas. Construímos as fundações para
+                                seu negócio crescer e prosperar, em um ciclo virtuoso.</p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center box-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/box-img/grafico-tdx.png"
+                                 class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- cards only with text -->
-    <section class="container-fluid px-0 card-only-text">
+    <section class="container-fluid px-lg-0 card-only-text" style="background: transparent;">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
@@ -1441,7 +1462,7 @@
         </div>
     </section>
     <!-- alternative-->
-    <section class="container-fluid px-0 card-only-text alternative">
+    <section class="container-fluid px-lg-0 card-only-text alternative" style="background: #262626">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
@@ -1523,7 +1544,7 @@
     <!-- card img+title -->
     <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
     poderam ser personalizados pelo usuario -->
-    <section class="container-fluid px-0 card-only-text cards-images-centred">
+    <section class="container-fluid px-lg-0 card-only-text cards-images-centred" style="background: transparent;">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col-auto box-title">
@@ -1644,7 +1665,8 @@
     <!-- alternative -->
     <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
        poderam ser personalizados pelo usuario -->
-    <section class="container-fluid px-0 card-only-text cards-images-centred alternative">
+    <section class="container-fluid px-lg-0 card-only-text cards-images-centred alternative"
+             style="background: #262626">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col-auto box-title">
@@ -1797,7 +1819,7 @@
     <!-- fim do card img+title -->
 
     <!-- box BENEFÍCIOS PARA CLIENTES -->
-    <section class="container-fluid px-0 box-feedback-cliente">
+    <section class="container-fluid px-lg-0 box-feedback-cliente" style="background: transparent;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
@@ -1899,7 +1921,7 @@
     <!-- altenative
     carro o cliente sete o modo escuro, esse bloco precisará se carregado ao invés do outro
     -->
-    <section class="container-fluid px-0 box-feedback-cliente alternative">
+    <section class="container-fluid px-lg-0 box-feedback-cliente alternative" style="background: #262626">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
@@ -2001,7 +2023,7 @@
     </section>
 
     <!--Formulario novo padronizado alterar no layout atual -->
-    <section class="container-fluid px-0 box-form-contato">
+    <section class="container-fluid px-lg-0 box-form-contato" style="background: transparent">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
@@ -2079,7 +2101,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-10 mt-5">
-                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos
+                                suas informações
                                 pessoais somente para fornecer os produtos e serviços que você solicitou.
                                 Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu
                                 interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para
@@ -2092,7 +2115,7 @@
         </div>
     </section>
     <!-- altenativo -->
-    <section class="container-fluid px-0 box-form-contato alternative">
+    <section class="container-fluid px-lg-0 box-form-contato alternative" style="background: #262626">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
@@ -2152,9 +2175,12 @@
                                             </div>
                                             <div class="col-12 col-lg-9 mt-4">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                           id="flexCheckDefault" required>
                                                     <label class="form-check-label" for="flexCheckChecked">
-                                                        Estou ciente das finalidades para utilização de meus dados pessoais por parte da TIVIT e concordo com os termos deste tratamento descrito na Política de Privacidade disponibilizada.*
+                                                        Estou ciente das finalidades para utilização de meus dados
+                                                        pessoais por parte da TIVIT e concordo com os termos deste
+                                                        tratamento descrito na Política de Privacidade disponibilizada.*
                                                     </label>
                                                 </div>
                                             </div>
@@ -2167,9 +2193,253 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-10 mt-5">
-                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos suas informações pessoais somente para fornecer os produtos e serviços que você solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser. Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais, confira nossa Política de Privacidade.</p>
+                            <p class="info-form">A TIVIT tem o compromisso de proteger a sua privacidade e nós usaremos
+                                suas informações pessoais somente para fornecer os produtos e serviços que você
+                                solicitou. Ocasionalmente, gostaríamos de contatá-lo sobre novos assuntos que possam ser
+                                do seu interesse. Você pode cancelar o recebimento dessas comunicações quando quiser.
+                                Para conhecer seus direitos e maiores detalhes de como a TIVIT trata dados pessoais,
+                                confira nossa Política de Privacidade.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- conteúdos -->
+    <section class="container-fluid px-lg-0 box-three-news" style="background: transparent;">
+        <div class="container case-news">
+            <div class="row">
+                <div class="col-12 box-title d-flex justify-content-center">
+                    <h3 class="title">últimas notícias da tdx</h3>
+                </div>
+                <div class="col-12 box-cards-news mt-5">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 box-cta d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- alternative -->
+    <section class="container-fluid px-lg-0 box-three-news alternative" style="background: #262626">
+        <div class="container case-news">
+            <div class="row">
+                <div class="col-12 box-title d-flex justify-content-center">
+                    <h3 class="title">últimas notícias da tdx</h3>
+                </div>
+                <div class="col-12 box-cards-news mt-5">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/conteudo/Tivit-brandbook-foto-06.png"
+                                     class="card-img-top" alt="">
+                                <div class="card-body px-0">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <span class="date">01/09/2021</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="author">Por: <strong>Ana Helena Lazaroni</strong></span>
+                                        </div>
+                                        <div class="col-12 mt-3">
+                                            <h5 class="card-title">título do artigo 1 Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit, sed do.</h5>
+                                        </div>
+                                        <div class="col-auto mt-3 box-tags">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li><a href="">conta híbrida</a></li>
+                                                <li><a href="">varejo</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <span class="tempo-leitura">6 minutos de leitura</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0">
+                                    <div class="col-12 box-link">
+                                        <a href="#">ver artigo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 box-cta d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
                 </div>
             </div>
         </div>
