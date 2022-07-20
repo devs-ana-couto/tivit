@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
    $('.numtotal').html( totalItems );
 
    $('#hero').carousel({
-      interval: false
+      //interval: false
     });
 
    $('#hero').bind('slid.bs.carousel', function() {
