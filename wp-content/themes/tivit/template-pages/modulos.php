@@ -34,6 +34,7 @@
      sendo assim ele pode ou não ser utilizado -->
     <!-- fim do Header Mobile -->
 
+
     <!-- box-chamada-pagina -->
     <section class="container box-chamada-pagina" style="background: white;">
         <div class="col box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap">
@@ -100,6 +101,212 @@
     </section>
     <!-- final do modulo Chamada Página -->
     <!-- fim  box-chamada-pagina -->
+
+    <!-- slider + Links(Projetos por Categoria) -->
+    <section class="container-fluid px-0 slider-categoria" style="background: #f4f6f7">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-auto box-title">
+                    <h3 class="title">Projetos por categoria</h3>
+                </div>
+                <div class="col-12 menu-categoria">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">cultura e responsabilidade
+                                social</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">programas ambientais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">diversidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">capacitação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Educação</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 box-slider">
+                    <section class="container px-0 slider-projetos" style="background: #262626">
+                        <div id="slider-categoria" class="carousel slide carousel-fade"
+                             data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-end d-none d-lg-flex">
+                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                            <img class="img-fluid"
+                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row gx-0 h-100 justify-content-between">
+                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                            <div class="container h-100 case-infos d-flex align-items-end">
+                                                <div class="row justify-content-start align-items-end">
+                                                    <div class="col-12 n-acao">
+                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                    </div>
+                                                    <div class="col-12 title">
+                                                        <h3 class="title-text">Masp sp</h3>
+                                                    </div>
+                                                    <div class="col-12 box-desc">
+                                                        <p>
+                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
+                                                            relevantes instituições culturais do país e foi por isso que
+                                                            escolhemos apoiá-lo em 2019.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                        <ul class="list-group list-group-horizontal">
+                                                            <li class="list-group-item"><a href="#">CULTURA E
+                                                                    RESPONSABILIDADE SOCIAL</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                        <p>10 minutos de leitura</p>
+                                                    </div>
+                                                    <div class="col-12 box-link mt-2 mt-lg-4">
+                                                        <a href="#">VER AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-lg-8 box-img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                 class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row justify-content-end d-none d-lg-flex">
+                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                            <img class="img-fluid"
+                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row gx-0 h-100 justify-content-between">
+                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                            <div class="container h-100 case-infos d-flex align-items-end">
+                                                <div class="row justify-content-start align-items-end">
+                                                    <div class="col-12 n-acao">
+                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                    </div>
+                                                    <div class="col-12 title">
+                                                        <h3 class="title-text">Masp sp</h3>
+                                                    </div>
+                                                    <div class="col-12 box-desc">
+                                                        <p>
+                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
+                                                            relevantes instituições culturais do país e foi por isso que
+                                                            escolhemos apoiá-lo em 2019.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                        <ul class="list-group list-group-horizontal">
+                                                            <li class="list-group-item"><a href="#">CULTURA E
+                                                                    RESPONSABILIDADE SOCIAL</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                        <p>10 minutos de leitura</p>
+                                                    </div>
+                                                    <div class="col-12 box-link mt-2 mt-lg-4">
+                                                        <a href="#">VER AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-lg-8 box-img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                 class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row justify-content-end d-none d-lg-flex">
+                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                            <img class="img-fluid"
+                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                                 alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row gx-0 h-100 justify-content-between">
+                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                            <div class="container h-100 case-infos d-flex align-items-end">
+                                                <div class="row justify-content-start align-items-end">
+                                                    <div class="col-12 n-acao">
+                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                    </div>
+                                                    <div class="col-12 title">
+                                                        <h3 class="title-text">Masp sp</h3>
+                                                    </div>
+                                                    <div class="col-12 box-desc">
+                                                        <p>
+                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
+                                                            relevantes instituições culturais do país e foi por isso que
+                                                            escolhemos apoiá-lo em 2019.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                        <ul class="list-group list-group-horizontal">
+                                                            <li class="list-group-item"><a href="#">CULTURA E
+                                                                    RESPONSABILIDADE SOCIAL</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                        <p>10 minutos de leitura</p>
+                                                    </div>
+                                                    <div class="col-12 box-link mt-2 mt-lg-4">
+                                                        <a href="#">VER AÇÃO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-lg-8 box-img">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                 class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-auto position-relative controlador">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#slider-categoria"
+                                        data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#slider-categoria"
+                                        data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- modulo parceiros -->
     <section class="container-fluid px-0 box-parceiros" style="background: white;">
@@ -331,12 +538,12 @@
     <!-- Box intro -->
     <section class="container-fluid px-0 box-intro position-relative mt-2" style="background: #262626">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
+            <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
                 <div class="col modulo order-1 flex-wrap d-flex justify-content-center align-items-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                          class="logo-tivit" height="40" alt="">
                 </div>
-                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
+                <div class="col modulo order-2  mt-5 d-flex flex-wrap justify-content-start align-items-center">
                     <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">8 entre as 10
                         maiores empresas da América Latina contam com a TIVIT como parceira tecnológica para trazer
                         eficiência e inovação para os seus negócios.</p>
@@ -349,8 +556,8 @@
     </section>
     <section class="container-fluid px-0 box-intro position-relative mt-2" style="background: #262626">
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
-                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
+                <div class="col modulo order-2  mt-5 flex-wrap d-flex justify-content-center align-items-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                          class="logo-tivit" height="40" alt="">
                 </div>
@@ -370,16 +577,18 @@
              style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
 
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
-                <div class="col modulo order-1 flex-wrap d-flex justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
+                <div class="col modulo order-1  flex-wrap d-flex justify-content-center align-items-center">
                     <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
                         Seu negócio hoje age proativamente contra ataques ou apenas reage?
                     </h3>
                     <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
                         Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
                 </div>
-                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
-                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e vulnerabilidades do seu negócio.</p>
+                <div class="col modulo order-2 d-flex  mt-5 flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato
+                        com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e
+                        vulnerabilidades do seu negócio.</p>
                     <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
                 </div>
             </div>
@@ -391,16 +600,18 @@
              style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/box-intro/background.png'); background-repeat: no-repeat; background-size: cover;">
 
         <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 g-5 gy-lg-0">
-                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
+                <div class="col modulo order-2  mt-5 flex-wrap d-flex justify-content-center align-items-center">
                     <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
                         Seu negócio hoje age proativamente contra ataques ou apenas reage?
                     </h3>
                     <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
                         Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
                 </div>
-                <div class="col modulo order-1 d-flex flex-wrap justify-content-start align-items-center">
-                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e vulnerabilidades do seu negócio.</p>
+                <div class="col modulo order-1  d-flex flex-wrap justify-content-start align-items-center">
+                    <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato
+                        com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e
+                        vulnerabilidades do seu negócio.</p>
                     <a href="#" class="btn btn-tivit1 mt-4">BNT INTRO OPCIONAL</a>
                 </div>
             </div>
@@ -469,7 +680,7 @@
                 <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
             </div>
             <div class="col box-cards h-100">
-                <div class="row row-cols-1 row-cols-lg-2 g-4 p-1  px-lg-5">
+                <div class="row row-cols-1 row-cols-lg-2 gy-4 g-lg-4 p-1  px-lg-5">
                     <div class="col card">
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
@@ -555,7 +766,7 @@
                 <h3 class="title-top">Por que contar com a TIVIT para realizar a segurança do seu negócio?</h3>
             </div>
             <div class="col box-cards h-100">
-                <div class="row row-cols-1 row-cols-lg-2 g-4 p-1  px-lg-5">
+                <div class="row row-cols-1 row-cols-lg-2 gy-4 g-lg-4  p-1  px-lg-5">
                     <div class="col card">
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
