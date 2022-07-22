@@ -2032,7 +2032,7 @@ div {
   }
   .home-intro p {
     font-size: 48px;
-    max-width: 766px;
+    max-width: 991px;
     line-height: 54px;
     font-weight: lighter;
   }
@@ -3315,7 +3315,7 @@ div {
     border: 1px solid black;
     border-radius: 50%;
   }
-  .a-tivit-hero .botaoReels button {
+  .a-tivit-hero .botaoReels button, .a-tivit-hero .botaoReels a {
     color: white;
     font-weight: lighter;
     font-size: 14px;
@@ -3735,33 +3735,15 @@ div {
     max-width: 960px;
     margin: 0 auto;
   }
-  .a-tivit-hero .botaoReels {
-    position: absolute;
+  .a-tivit-hero .box-aura {
     right: 0;
     left: 0;
-    bottom: -10%;
+    bottom: -9%;
     z-index: 100;
     text-align: center;
   }
-  .a-tivit-hero .botaoReels .open {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .a-tivit-hero .botaoReels button {
-    text-decoration: none;
-    border: none;
-    padding: 0;
-    color: white;
-    background-color: transparent;
-  }
-  .a-tivit-hero .botaoReels button:hover {
-    background: transparent;
-    border: none;
-  }
   .a-tivit-sobre {
-    margin: 184px 0 149px 0;
+    margin: 270px 0 149px 0;
   }
   .a-tivit-sobre p {
     font-size: 36px;
@@ -4061,6 +4043,62 @@ div {
   margin-right: 10px;
 }
 
+.aura {
+  width: 105px;
+  height: 105px;
+  background: white;
+  opacity: 0.1;
+  border-radius: 100px;
+  animation: pulse 0.5s infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+
+.botaoReels {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -9.5%;
+  z-index: 100;
+  text-align: center;
+}
+.botaoReels .open {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+.botaoReels button {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  color: white;
+  background-color: transparent;
+}
+.botaoReels button span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.botaoReels button:hover {
+  background: transparent;
+  border: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .cases-hero {
   height: 580px;
   background: url("../../assets/images/cases/bannermobile.png") no-repeat center center;

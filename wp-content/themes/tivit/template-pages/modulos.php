@@ -543,7 +543,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                          class="logo-tivit" height="40" alt="">
                 </div>
-                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
+                <div class="col modulo order-2  mt-5 d-flex flex-wrap justify-content-start align-items-center">
                     <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">8 entre as 10
                         maiores empresas da América Latina contam com a TIVIT como parceira tecnológica para trazer
                         eficiência e inovação para os seus negócios.</p>
@@ -557,7 +557,7 @@
     <section class="container-fluid px-0 box-intro position-relative mt-2" style="background: #262626">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
-                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+                <div class="col modulo order-2  mt-5 flex-wrap d-flex justify-content-center align-items-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                          class="logo-tivit" height="40" alt="">
                 </div>
@@ -578,14 +578,14 @@
 
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
-                <div class="col modulo order-1 flex-wrap d-flex justify-content-center align-items-center">
+                <div class="col modulo order-1  flex-wrap d-flex justify-content-center align-items-center">
                     <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
                         Seu negócio hoje age proativamente contra ataques ou apenas reage?
                     </h3>
                     <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
                         Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
                 </div>
-                <div class="col modulo order-2 d-flex flex-wrap justify-content-start align-items-center">
+                <div class="col modulo order-2 d-flex  mt-5 flex-wrap justify-content-start align-items-center">
                     <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato
                         com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e
                         vulnerabilidades do seu negócio.</p>
@@ -601,14 +601,14 @@
 
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
-                <div class="col modulo order-2 flex-wrap d-flex justify-content-center align-items-center">
+                <div class="col modulo order-2  mt-5 flex-wrap d-flex justify-content-center align-items-center">
                     <h3 style="font-weight: 700; font-size: 28px; line-height: 34px; color: #FFFFFF;">
                         Seu negócio hoje age proativamente contra ataques ou apenas reage?
                     </h3>
                     <p style="font-style: normal; font-weight: 400; font-size: 18px; line-height: 24px; color: #FFFFFF;">
                         Prevenção é a chave para diminuir custos e manter a reputação da sua empresa.</p>
                 </div>
-                <div class="col modulo order-1 d-flex flex-wrap justify-content-start align-items-center">
+                <div class="col modulo order-1  d-flex flex-wrap justify-content-start align-items-center">
                     <p style="font-weight: 400; font-size: 20px; line-height: 30px; color: #FFFFFF;">Entre em contato
                         com nossos consultores e saiba como o serviços de Cyber Security podem mitigar os riscos e
                         vulnerabilidades do seu negócio.</p>
