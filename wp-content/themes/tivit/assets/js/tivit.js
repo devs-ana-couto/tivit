@@ -67,6 +67,7 @@ if (window.innerWidth <= 768 && window.location.pathname === "/staged/tivit/tban
 
 // Executes after DOM loads
 jQuery(document).ready(function($) {
+
    // Slider home counter
    var totalItems = $('.heroslide').length;
    var currentIndex = $('.heroslide.active').index() + 1;
