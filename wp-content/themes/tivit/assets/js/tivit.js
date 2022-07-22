@@ -766,7 +766,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add class on scroll
 window.addEventListener('scroll', function () {
-   console.log("entrei")
     scrollpos = window.scrollY;
 
     if (window.location.pathname === '/staged/tivit' || window.location.pathname === '/staged/tivit/' ||
