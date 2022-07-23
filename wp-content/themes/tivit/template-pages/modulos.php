@@ -136,7 +136,7 @@
             <div class="col-12 box-slider">
                 <section class="container px-0 slider-projetos" style="background: #262626">
                     <div class="row">
-                        <div id="slider-categoria" class="carousel slide p-0"
+                        <div id="slider-categoria" class="carousel slide p-0 carousel-fade"
                              data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="0"
@@ -319,6 +319,75 @@
                         </div>
                     </div>
                 </section>
+            </div>
+            <div class="col-12 box-article-slider">
+                <div class="row justify-content-center">
+                    <div class="col-auto box-title">
+                        <h3 class="title">outros projetos de cultura e responsabilidade social</h3>
+                    </div>
+                    <div class="col-12 box-news-slider px-lg-0" id="boxArticles">
+                        <div class="row row-cols-1 row-cols-lg-3 article-box">
+                            <!-- alimentado via ajax api -->
+                            <div class="col-auto item">
+                                <a href="">
+                                <div class="card mt-lg-auto">
+                                    <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as
+                                            a
+                                            natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                        <div class="col-12 box-cta mt-2 mt-lg-4">
+                                            <a href="http://tivit.local/" class="btn-cta">conheça a ação</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-auto item">
+                                <a href="">
+                                <div class="card mt-lg-auto">
+                                    <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as
+                                            a
+                                            natural lead-in to additional content. This content is a little bit
+                                            longer.</p>
+                                        <div class="col-12 box-cta mt-2 mt-lg-4">
+                                            <a href="http://tivit.local/" class="btn-cta">conheça a ação</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="col-auto item">
+                                <a href="">
+                                    <div class="card mt-lg-auto">
+                                        <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                             class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as
+                                                a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                            <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                <a href="http://tivit.local/" class="btn-cta">conheça a ação</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            .
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -2669,7 +2738,7 @@
     </section>
 
 
-    <section class="container px-0 slider-projetos">
+    <section class="container px-0 slider-projetos solto">
         <div class="col-12 px-0">
             <div id="slider-categoria01" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
@@ -2680,21 +2749,6 @@
                             aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                </div>
-
-                <div class="col-auto position-relative controlador">
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <div class="carousel-inner">
 
@@ -2845,6 +2899,21 @@
                     </div>
 
                 </div>
+                <div class="col-auto position-relative controlador">
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#slider-categoria01"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#slider-categoria01"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
             </div>
         </div>
     </section>

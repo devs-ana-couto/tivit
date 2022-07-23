@@ -1,7 +1,74 @@
 var sliderCategoria = document.querySelector(".slider-categoria");
-
+var $ = jQuery;
 if (sliderCategoria !== null) {
     buscaDados();
+}
+
+window.onload = function () {
+    $('#owl-articles').owlCarousel({
+        loop: false,
+        margin: 28,
+        nav: true,
+        rtl: false,
+        responsive: {
+            0: {
+                margin: 20,
+                items: 1
+            },
+            992: {
+
+                items: 3
+            }
+        }
+    });
+
+};
+
+function preparaBusca() {
+    var sliderCategoria = document.querySelector("#slider-categoria");
+    var carouselInner = sliderCategoria.querySelector(".carousel-inner");
+
+    if (carouselInner !== null) {
+        deleteCarousel();
+        criaCarousel();
+    } else {
+        criaCarousel();
+    }
+
+}
+
+function buscaDados() {
+    var menuCat = document.querySelector(".menu-categoria");
+    var navLink = menuCat.querySelector(".nav-link.active");
+
+    var categoryOnly = navLink.getAttribute("id");
+    var xhr = new XMLHttpRequest;
+
+    preparaBusca();
+
+    xhr.open("GET", "http://tivit.local/wp-content/uploads/2022/01/json/arquivos.json");
+    xhr.addEventListener("load", function () {
+        if (xhr.status === 200) {
+            var response = xhr.responseText;
+            var dados = JSON.parse(response);
+
+            var indexDados = 0;
+
+            dados.forEach(function (dado) {
+                if (dado.category === categoryOnly && indexDados <= 3) {
+                    montaSlider(dado, indexDados);
+                    indexDados++;
+                } else if (dado.category === categoryOnly && indexDados > 3) {
+                   // montaOwl(dado, indexDados);
+                    indexDados++;
+                }
+            });
+
+        }
+    });
+
+    xhr.send();
+
 }
 
 function defineAtivo(menu) {
@@ -17,62 +84,34 @@ function defineAtivo(menu) {
         }
     });
 }
-function fadeIn(){
 
-}
-function fadeOut(){
-
-}
-function buscaDados() {
-    var menuCat = document.querySelector(".menu-categoria");
-    var navLink = menuCat.querySelector(".nav-link.active");
-
-    var categoryOnly = navLink.getAttribute("id");
-    var xhr = new XMLHttpRequest;
-
+function deleteCarousel() {
     var sliderCategoria = document.querySelector("#slider-categoria");
     var carouselInner = sliderCategoria.querySelector(".carousel-inner");
-
-    if(carouselInner !== null){
+    carouselInner.classList.remove("fadein");
+    carouselInner.classList.add("right-to-left");
+    setTimeout(function () {
         sliderCategoria.removeChild(carouselInner);
-        criaCarousel();
-    }else{
-        criaCarousel();
-    }
+    }, 500);
+    return true;
 
-
-    xhr.open("GET", "http://tivit.local/wp-content/uploads/2022/01/json/arquivos.json");
-    xhr.addEventListener("load", function () {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            var dados = JSON.parse(response);
-
-            var indexDados = 0;
-            dados.forEach(function (dado) {
-                if (dado.category === categoryOnly && indexDados <= 3) {
-                    montaSlider(dado, indexDados);
-                    indexDados++;
-                }else if(dado.category === categoryOnly && indexDados >= 4){
-
-                }
-            });
-        }
-    });
-    xhr.send();
 }
-function criaCarousel(){
+
+function criaCarousel() {
     var sliderCategoria = document.querySelector("#slider-categoria");
     var carouselInner = document.createElement("div");
+    carouselInner.classList.remove("right-to-left");
     carouselInner.classList.add("carousel-inner", "fadein");
     sliderCategoria.appendChild(carouselInner);
 }
+
 function montaSlider(dados, index) {
     var sliderCategoria = document.querySelector("#slider-categoria");
-    var carouselInner = sliderCategoria.querySelector(".carousel-inner");
+    var carouselInner = sliderCategoria.querySelector(".carousel-inner.fadein");
 
     var carouselItem = document.createElement("div");
     carouselItem.classList.add("carousel-item");
-    if(index === 0){
+    if (index === 0) {
         carouselItem.classList.add("active");
     }
 
@@ -111,12 +150,12 @@ function montaSlider(dados, index) {
     rowCases.appendChild(nameAction);
 
     var boxTitle = document.createElement("div");
-    boxTitle.innerHTML = '<h3 class="title-text">'+ dados.title +'</h3>';
+    boxTitle.innerHTML = '<h3 class="title-text">' + dados.title + '</h3>';
     boxTitle.classList.add("col-12", "title");
     rowCases.appendChild(boxTitle);
 
     var boxDesc = document.createElement("div");
-    boxDesc.innerHTML = "<p>"+ dados.desc +"</p>"
+    boxDesc.innerHTML = "<p>" + dados.desc + "</p>"
     boxDesc.classList.add("col-12", "box-desc");
     rowCases.appendChild(boxDesc);
 
@@ -126,22 +165,22 @@ function montaSlider(dados, index) {
 
     var ulTags = document.createElement("ul");
     ulTags.classList.add("list-group", "list-group-horizontal");
-    ulTags.innerHTML = ' <li class="list-group-item">'+ dados.tag +'</li>';
+    ulTags.innerHTML = ' <li class="list-group-item">' + dados.tag + '</li>';
     boxTags.appendChild(ulTags);
 
     var boxTimeSlide = document.createElement("div");
     boxTimeSlide.classList.add("col-auto", "box-time-slide", "mt-2", "mt-lg-4");
-    boxTimeSlide.innerHTML = '<p>'+ dados.readtime +' de leitura</p>';
+    boxTimeSlide.innerHTML = '<p>' + dados.readtime + ' de leitura</p>';
     rowCases.appendChild(boxTimeSlide);
 
     var boxCta = document.createElement("div");
     boxCta.classList.add("col-12", "box-link", "mt-2", "mt-lg-4");
-    boxCta.innerHTML =' <a href="'+ dados.link +'">VER AÇÃO</a>';
+    boxCta.innerHTML = ' <a href="' + dados.link + '">VER AÇÃO</a>';
     rowCases.appendChild(boxCta);
 
     var boxImg = document.createElement("div");
     boxImg.classList.add("col-12", "col-lg-8", "box-img");
-    boxImg.innerHTML = '<img src="'+ dados.img +'" class="d-block w-100" alt="'+ dados.title +'">';
+    boxImg.innerHTML = '<img src="' + dados.img + '" class="d-block w-100" alt="' + dados.title + '">';
     rowContent.appendChild(boxImg);
 
 
@@ -149,7 +188,6 @@ function montaSlider(dados, index) {
     carouselItem.appendChild(rowContent);
 
     carouselInner.appendChild(carouselItem);
-
 }
 
 

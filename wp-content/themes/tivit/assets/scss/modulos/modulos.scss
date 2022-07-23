@@ -1895,7 +1895,7 @@ $primary-color: #990017;
 
   .carousel-inner {
     background: #262626;
-    min-height: 603px;
+    //min-height: 603px;
     @media screen and (max-width: 991px) {
       height: auto;
     }
@@ -1905,7 +1905,7 @@ $primary-color: #990017;
     position: absolute;
     bottom: 3rem;
     left: unset;
-    right: 50px;
+    right: 40px;
     display: flex;
     justify-content: center;
     padding: 0;
@@ -2143,17 +2143,178 @@ $primary-color: #990017;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 @keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
-.fadein{
+
+.fadein {
+  position: relative !important;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
   -ms-animation: fadein 1s; /* Internet Explorer */
   -o-animation: fadein 1s; /* Opera < 12.1 */
   animation: fadein 1s;
+}
+
+@keyframes rtl {
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: 2000px;
+    opacity: 0;
+  }
+
+}
+
+.right-to-left {
+  position: absolute !important;
+  -webkit-animation: rtl 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: rtl 1s; /* Firefox < 16 */
+  -ms-animation: rtl 1s; /* Internet Explorer */
+  -o-animation: rtl 1s; /* Opera < 12.1 */
+  animation: rtl 1s;
+  transition: all 1s;
+}
+
+.slider-projetos.solto {
+  .controlador {
+    bottom: 5rem !important;
+  }
+
+  .carousel-indicators {
+    bottom: 9rem;
+    right: 40px;
+  }
+}
+
+.box-article-slider {
+  .box-title {
+    margin: 100px 0px 50px 0px;
+
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      /* identical to box height, or 117% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+
+    }
+  }
+
+  .box-news-slider {
+    @media screen and (max-width: 991px) {
+      padding-right: 0px;
+    }
+
+    .slick-slide {
+      @media screen and (max-width: 991px) {
+        width: 370px !important;
+      }
+      padding: 0px 10px;
+    }
+
+    .slick-dots li {
+      button:before {
+        font-size: 12px;
+        color: #262626;
+      }
+      &.slick-active{
+        color: #990017;
+      }
+    }
+
+    .item, .slick-slide {
+
+      @media screen and (max-width: 991px) {
+        padding-bottom: 40px;
+      }
+
+      .card {
+        background: transparent !important;
+        border: none;
+        border-radius: 0px;
+
+        .card-img-top {
+          border-radius: 0px;
+        }
+
+        .card-body {
+          background: transparent !important;
+          border-radius: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+
+          h1, h2, h3, h4, h5, h6, .card-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: #F20024;
+          }
+
+          p, .card-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #262626;
+          }
+
+          .box-cta {
+            margin: unset;
+            .btn-cta {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 21px;
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+
+              /* Vermelho Tivit */
+
+              color: #F20024;
+
+              &:after {
+                content: "";
+                background: url(../images/modulos/conteudo/arrow_artigo.svg);
+                background-size: cover;
+                background-position: center center;
+                width: 12px;
+                height: 12px;
+                background-repeat: no-repeat;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
