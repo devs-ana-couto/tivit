@@ -11718,6 +11718,39 @@ div {
   right: 40px;
 }
 
+.box-article-slider .carousel-indicators {
+  margin-bottom: unset;
+  position: relative;
+}
+.box-article-slider .carousel-control-next, .box-article-slider .carousel-control-prev {
+  position: relative;
+}
+.box-article-slider .carousel-control-next-icon {
+  background-image: url("../images/modulos/categoria-slider/article-arrow-next.svg");
+}
+.box-article-slider .carousel-control-prev-icon {
+  background-image: url("../images/modulos/categoria-slider/article-arrow-back.svg");
+}
+.box-article-slider .carousel-control-next-icon, .box-article-slider .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  opacity: unset;
+}
+.box-article-slider .carousel-dark .carousel-control-next-icon, .box-article-slider .carousel-dark .carousel-control-prev-icon {
+  filter: unset;
+}
+.box-article-slider .controladores {
+  bottom: -50px;
+}
+.box-article-slider .carousel-indicators [data-bs-target] {
+  width: 19.5px;
+  height: 12px;
+  border-radius: 50%;
+}
 .box-article-slider .box-title {
   margin: 100px 0px 50px 0px;
 }
@@ -11735,11 +11768,6 @@ div {
   /* Cinza Dark Tivit */
   color: #262626;
 }
-@media screen and (max-width: 991px) {
-  .box-article-slider .box-news-slider {
-    padding-right: 0px;
-  }
-}
 .box-article-slider .box-news-slider .slick-slide {
   padding: 0px 10px;
 }
@@ -11756,25 +11784,25 @@ div {
   color: #990017;
 }
 @media screen and (max-width: 991px) {
-  .box-article-slider .box-news-slider .item, .box-article-slider .box-news-slider .slick-slide {
+  .box-article-slider .box-news-slider .item {
     padding-bottom: 40px;
   }
 }
-.box-article-slider .box-news-slider .item .card, .box-article-slider .box-news-slider .slick-slide .card {
+.box-article-slider .box-news-slider .item .card {
   background: transparent !important;
   border: none;
   border-radius: 0px;
 }
-.box-article-slider .box-news-slider .item .card .card-img-top, .box-article-slider .box-news-slider .slick-slide .card .card-img-top {
+.box-article-slider .box-news-slider .item .card .card-img-top {
   border-radius: 0px;
 }
-.box-article-slider .box-news-slider .item .card .card-body, .box-article-slider .box-news-slider .slick-slide .card .card-body {
+.box-article-slider .box-news-slider .item .card .card-body {
   background: transparent !important;
   border-radius: 0px;
   padding-left: 0px;
   padding-right: 0px;
 }
-.box-article-slider .box-news-slider .item .card .card-body h1, .box-article-slider .box-news-slider .item .card .card-body h2, .box-article-slider .box-news-slider .item .card .card-body h3, .box-article-slider .box-news-slider .item .card .card-body h4, .box-article-slider .box-news-slider .item .card .card-body h5, .box-article-slider .box-news-slider .item .card .card-body h6, .box-article-slider .box-news-slider .item .card .card-body .card-title, .box-article-slider .box-news-slider .slick-slide .card .card-body h1, .box-article-slider .box-news-slider .slick-slide .card .card-body h2, .box-article-slider .box-news-slider .slick-slide .card .card-body h3, .box-article-slider .box-news-slider .slick-slide .card .card-body h4, .box-article-slider .box-news-slider .slick-slide .card .card-body h5, .box-article-slider .box-news-slider .slick-slide .card .card-body h6, .box-article-slider .box-news-slider .slick-slide .card .card-body .card-title {
+.box-article-slider .box-news-slider .item .card .card-body h1, .box-article-slider .box-news-slider .item .card .card-body h2, .box-article-slider .box-news-slider .item .card .card-body h3, .box-article-slider .box-news-slider .item .card .card-body h4, .box-article-slider .box-news-slider .item .card .card-body h5, .box-article-slider .box-news-slider .item .card .card-body h6, .box-article-slider .box-news-slider .item .card .card-body .card-title {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -11782,17 +11810,17 @@ div {
   text-transform: uppercase;
   color: #F20024;
 }
-.box-article-slider .box-news-slider .item .card .card-body p, .box-article-slider .box-news-slider .item .card .card-body .card-text, .box-article-slider .box-news-slider .slick-slide .card .card-body p, .box-article-slider .box-news-slider .slick-slide .card .card-body .card-text {
+.box-article-slider .box-news-slider .item .card .card-body p, .box-article-slider .box-news-slider .item .card .card-body .card-text {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #262626;
 }
-.box-article-slider .box-news-slider .item .card .card-body .box-cta, .box-article-slider .box-news-slider .slick-slide .card .card-body .box-cta {
+.box-article-slider .box-news-slider .item .card .card-body .box-cta {
   margin: unset;
 }
-.box-article-slider .box-news-slider .item .card .card-body .box-cta .btn-cta, .box-article-slider .box-news-slider .slick-slide .card .card-body .box-cta .btn-cta {
+.box-article-slider .box-news-slider .item .card .card-body .box-cta .btn-cta {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -11803,7 +11831,7 @@ div {
   /* Vermelho Tivit */
   color: #F20024;
 }
-.box-article-slider .box-news-slider .item .card .card-body .box-cta .btn-cta:after, .box-article-slider .box-news-slider .slick-slide .card .card-body .box-cta .btn-cta:after {
+.box-article-slider .box-news-slider .item .card .card-body .box-cta .btn-cta:after {
   content: "";
   background: url(../images/modulos/conteudo/arrow_artigo.svg);
   background-size: cover;

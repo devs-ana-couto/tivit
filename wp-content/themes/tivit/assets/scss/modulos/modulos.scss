@@ -2203,6 +2203,46 @@ $primary-color: #990017;
 }
 
 .box-article-slider {
+  .carousel-indicators {
+    margin-bottom: unset;
+    position: relative;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    position: relative;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("../images/modulos/categoria-slider/article-arrow-next.svg");
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../images/modulos/categoria-slider/article-arrow-back.svg");
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    opacity: unset;
+  }
+
+  .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: unset;
+  }
+  .controladores{
+    bottom: -50px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 19.5px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
   .box-title {
     margin: 100px 0px 50px 0px;
 
@@ -2228,7 +2268,7 @@ $primary-color: #990017;
 
   .box-news-slider {
     @media screen and (max-width: 991px) {
-      padding-right: 0px;
+      //padding-right: 0px;
     }
 
     .slick-slide {
@@ -2243,12 +2283,13 @@ $primary-color: #990017;
         font-size: 12px;
         color: #262626;
       }
-      &.slick-active{
+
+      &.slick-active {
         color: #990017;
       }
     }
 
-    .item, .slick-slide {
+    .item {
 
       @media screen and (max-width: 991px) {
         padding-bottom: 40px;
@@ -2288,6 +2329,7 @@ $primary-color: #990017;
 
           .box-cta {
             margin: unset;
+
             .btn-cta {
               font-style: normal;
               font-weight: 700;
