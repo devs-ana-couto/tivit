@@ -4,24 +4,6 @@ if (sliderCategoria !== null) {
     buscaDados();
 }
 
-
-function preparaBusca() {
-    var sliderCategoria = document.querySelector("#slider-categoria");
-    var carouselInner = sliderCategoria.querySelector(".carousel-inner");
-
-    if (carouselInner !== null) {
-        deleteCarousel("slider-categoria");
-        deleteCarousel("carousel-articles");
-        deleteBullets();
-        criaCarousel("slider-categoria");
-        criaCarousel("carousel-articles");
-    } else {
-        criaCarousel("slider-categoria");
-        criaCarousel("carousel-articles");
-    }
-
-}
-
 function buscaDados() {
     var menuCat = document.querySelector(".menu-categoria");
     var navLink = menuCat.querySelector(".nav-link.active");
@@ -71,6 +53,23 @@ function buscaDados() {
 
 }
 
+function preparaBusca() {
+    var sliderCategoria = document.querySelector("#slider-categoria");
+    var carouselInner = sliderCategoria.querySelector(".carousel-inner");
+
+    if (carouselInner !== null) {
+        deleteCarousel("slider-categoria");
+        deleteCarousel("carousel-articles");
+        deleteBullets();
+        criaCarousel("slider-categoria");
+        criaCarousel("carousel-articles");
+    } else {
+        criaCarousel("slider-categoria");
+        criaCarousel("carousel-articles");
+    }
+
+}
+
 function deleteBullets(){
     var carousel = document.getElementById("carousel-articles");
     var controladores = carousel.querySelector(".carousel-indicators");
@@ -78,6 +77,7 @@ function deleteBullets(){
     controladores.innerHTML = "";
 
 }
+
 function montaBullets(index){
     var carousel = document.getElementById("carousel-articles");
     var controladores = carousel.querySelector(".carousel-indicators");
