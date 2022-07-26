@@ -209,6 +209,13 @@
                 requestFullScreen.bind(iframe)();
             }
         }
+        const myModalEl = document.getElementById('videoOpen');
+        myModalEl.addEventListener('hidden.bs.modal', event => {
+            player.pauseVideo();
+        });
+        myModalEl.addEventListener('shown.bs.modal', event => {
+            player.playVideo();
+        });
     </script>
 
 <?php get_footer(); ?>
