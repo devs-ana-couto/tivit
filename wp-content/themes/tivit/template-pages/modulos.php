@@ -103,6 +103,7 @@
     <!-- fim  box-chamada-pagina -->
 
     <!-- slider + Links(Projetos por Categoria) -->
+    <!-- Chama o bruno para call antes de implementar esse modulo -->
     <section class="container-fluid px-0 slider-categoria" style="background: #f4f6f7">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
@@ -110,30 +111,33 @@
                     <h3 class="title">Projetos por categoria</h3>
                 </div>
                 <div class="col-12 menu-categoria">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">cultura e responsabilidade
+                    <ul class="nav justify-content-lg-center justify-content-start">
+                        <li class="col-auto  nav-item order-1">
+                            <a class="nav-link active" id="cultura-responsabilidade" aria-current="page"
+                               onclick="defineAtivo('cultura-responsabilidade')">cultura e responsabilidade
                                 social</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">programas ambientais</a>
+                        <li class="col-auto nav-item order-3 order-lg-2">
+                            <a class="nav-link" id="ambientais" onclick="defineAtivo('ambientais')">programas
+                                ambientais</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">diversidade</a>
+                        <li class="col nav-item order-2 order-lg-3">
+                            <a class="nav-link" id="diversidade" onclick="defineAtivo('diversidade')">diversidade</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">capacitação</a>
+
+                        <li class="col nav-item order-4">
+                            <a class="nav-link" id="capacitacao" onclick="defineAtivo('capacitacao')">capacitação</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Educação</a>
+                        <li class="col nav-item order-5 ">
+                            <a class="nav-link" id="educacao" onclick="defineAtivo('educacao')">Educação</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 box-slider">
-                    <section class="container px-0 slider-projetos" style="background: #262626">
-                        <div id="slider-categoria" class="carousel slide carousel-fade"
+            <div class="col-12 box-slider">
+                <section class="container px-0 slider-projetos" style="background: #262626">
+                    <div class="row">
+                        <div id="slider-categoria" class="carousel slide p-0 carousel-fade"
                              data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="0"
@@ -142,166 +146,427 @@
                                         aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="2"
                                         aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#slider-categoria" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
                             </div>
-                            <div class="carousel-inner">
 
-                                <div class="carousel-item active">
-                                    <div class="row justify-content-end d-none d-lg-flex">
-                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                            <img class="img-fluid"
-                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                                 alt="">
-                                        </div>
-                                    </div>
-                                    <div class="row gx-0 h-100 justify-content-between">
-                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                            <div class="container h-100 case-infos d-flex align-items-end">
-                                                <div class="row justify-content-start align-items-end">
-                                                    <div class="col-12 n-acao">
-                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                                    </div>
-                                                    <div class="col-12 title">
-                                                        <h3 class="title-text">Masp sp</h3>
-                                                    </div>
-                                                    <div class="col-12 box-desc">
-                                                        <p>
-                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
-                                                            relevantes instituições culturais do país e foi por isso que
-                                                            escolhemos apoiá-lo em 2019.
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
-                                                        <ul class="list-group list-group-horizontal">
-                                                            <li class="list-group-item"><a href="#">CULTURA E
-                                                                    RESPONSABILIDADE SOCIAL</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                                        <p>10 minutos de leitura</p>
-                                                    </div>
-                                                    <div class="col-12 box-link mt-2 mt-lg-4">
-                                                        <a href="#">VER AÇÃO</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-lg-8 box-img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                                 class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row justify-content-end d-none d-lg-flex">
-                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                            <img class="img-fluid"
-                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                                 alt="">
-                                        </div>
-                                    </div>
-                                    <div class="row gx-0 h-100 justify-content-between">
-                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                            <div class="container h-100 case-infos d-flex align-items-end">
-                                                <div class="row justify-content-start align-items-end">
-                                                    <div class="col-12 n-acao">
-                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                                    </div>
-                                                    <div class="col-12 title">
-                                                        <h3 class="title-text">Masp sp</h3>
-                                                    </div>
-                                                    <div class="col-12 box-desc">
-                                                        <p>
-                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
-                                                            relevantes instituições culturais do país e foi por isso que
-                                                            escolhemos apoiá-lo em 2019.
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
-                                                        <ul class="list-group list-group-horizontal">
-                                                            <li class="list-group-item"><a href="#">CULTURA E
-                                                                    RESPONSABILIDADE SOCIAL</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                                        <p>10 minutos de leitura</p>
-                                                    </div>
-                                                    <div class="col-12 box-link mt-2 mt-lg-4">
-                                                        <a href="#">VER AÇÃO</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-lg-8 box-img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                                 class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row justify-content-end d-none d-lg-flex">
-                                        <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                            <img class="img-fluid"
-                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                                 alt="">
-                                        </div>
-                                    </div>
-                                    <div class="row gx-0 h-100 justify-content-between">
-                                        <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                            <div class="container h-100 case-infos d-flex align-items-end">
-                                                <div class="row justify-content-start align-items-end">
-                                                    <div class="col-12 n-acao">
-                                                        <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                                    </div>
-                                                    <div class="col-12 title">
-                                                        <h3 class="title-text">Masp sp</h3>
-                                                    </div>
-                                                    <div class="col-12 box-desc">
-                                                        <p>
-                                                            Apoiar o Masp é contribuir para a manutenção de uma das mais
-                                                            relevantes instituições culturais do país e foi por isso que
-                                                            escolhemos apoiá-lo em 2019.
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-auto box-tags mt-2 mt-lg-4">
-                                                        <ul class="list-group list-group-horizontal">
-                                                            <li class="list-group-item"><a href="#">CULTURA E
-                                                                    RESPONSABILIDADE SOCIAL</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                                        <p>10 minutos de leitura</p>
-                                                    </div>
-                                                    <div class="col-12 box-link mt-2 mt-lg-4">
-                                                        <a href="#">VER AÇÃO</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-lg-8 box-img">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                                 class="d-block w-100" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
                             <div class="col-auto position-relative controlador">
-                                <button class="carousel-control-prev" type="button" data-bs-target="#slider-categoria"
+                                <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#slider-categoria"
                                         data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#slider-categoria"
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#slider-categoria"
                                         data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
+                            <!--<div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+
+                                        <div class="row justify-content-end d-none d-lg-flex">
+                                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                                <img class="img-fluid" src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/mask-slider.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row gx-0 h-100 justify-content-between">
+
+                                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                                <div class="container h-100 case-infos d-flex align-items-end">
+                                                    <div class="row justify-content-start align-items-end">
+
+                                                        <div class="col-12 n-acao">
+                                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                        </div>
+                                                        <div class="col-12 title">
+                                                            <h3 class="title-text">Masp sp</h3>
+                                                        </div>
+                                                        <div class="col-12 box-desc">
+                                                            <p>
+                                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                                mais
+                                                                relevantes instituições culturais do país e foi por isso
+                                                                que
+                                                                escolhemos apoiá-lo em 2019.
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                            <ul class="list-group list-group-horizontal">
+                                                                <li class="list-group-item">CULTURA E
+                                                                        RESPONSABILIDADE SOCIAL</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                            <p>10 minutos de leitura</p>
+                                                        </div>
+                                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                                            <a href="#">VER AÇÃO</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8 box-img">
+                                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                     class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-end d-none d-lg-flex">
+                                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                                <img class="img-fluid"
+                                                     src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                                     alt="">
+                                            </div>
+                                        </div>
+                                        <div class="row gx-0 h-100 justify-content-between">
+                                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                                <div class="container h-100 case-infos d-flex align-items-end">
+                                                    <div class="row justify-content-start align-items-end">
+                                                        <div class="col-12 n-acao">
+                                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                        </div>
+                                                        <div class="col-12 title">
+                                                            <h3 class="title-text">Masp sp</h3>
+                                                        </div>
+                                                        <div class="col-12 box-desc">
+                                                            <p>
+                                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                                mais
+                                                                relevantes instituições culturais do país e foi por isso
+                                                                que
+                                                                escolhemos apoiá-lo em 2019.
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                            <ul class="list-group list-group-horizontal">
+                                                                <li class="list-group-item"><a href="#">CULTURA E
+                                                                        RESPONSABILIDADE SOCIAL</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                            <p>10 minutos de leitura</p>
+                                                        </div>
+                                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                                            <a href="#">VER AÇÃO</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8 box-img">
+                                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                     class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-end d-none d-lg-flex">
+                                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                                <img class="img-fluid"
+                                                     src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                                     alt="">
+                                            </div>
+                                        </div>
+                                        <div class="row gx-0 h-100 justify-content-between">
+                                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                                <div class="container h-100 case-infos d-flex align-items-end">
+                                                    <div class="row justify-content-start align-items-end">
+                                                        <div class="col-12 n-acao">
+                                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                                        </div>
+                                                        <div class="col-12 title">
+                                                            <h3 class="title-text">Masp sp</h3>
+                                                        </div>
+                                                        <div class="col-12 box-desc">
+                                                            <p>
+                                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                                mais
+                                                                relevantes instituições culturais do país e foi por isso
+                                                                que
+                                                                escolhemos apoiá-lo em 2019.
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                            <ul class="list-group list-group-horizontal">
+                                                                <li class="list-group-item"><a href="#">CULTURA E
+                                                                        RESPONSABILIDADE SOCIAL</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                            <p>10 minutos de leitura</p>
+                                                        </div>
+                                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                                            <a href="#">VER AÇÃO</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8 box-img">
+                                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                                     class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>-->
                         </div>
-                    </section>
+                    </div>
+                </section>
+            </div>
+            <div class="col-12 box-article-slider">
+                <div class="row justify-content-center">
+                    <div class="col-auto box-title">
+                        <h3 class="title" id="title-articles-slider">outros projetos de cultura e responsabilidade
+                            social</h3>
+                    </div>
+                    <div class="col-12 box-news-slider px-lg-0" id="boxArticles">
+
+                        <!-- alimentado via ajax api -->
+
+                        <div id="carousel-articles" class="carousel slide carousel-dark position-relative"
+                             data-bs-ride="carousel"
+                             data-bs-interval="30000">
+                            <div class="col-12 controladores position-absolute">
+                                <div class="row row-cols- justify-content-center">
+                                    <div class="col-auto d-flex align-items-center">
+                                        <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carousel-articles"
+                                                data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-auto p-0">
+                                        <div class="carousel-indicators"></div>
+                                    </div>
+                                    <div class="col-auto d-flex align-items-center">
+                                        <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carousel-articles"
+                                                data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- alimentado com ajax -->
+                            <!-- <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                     <div class="row row-cols-1 row-cols-lg-3 article-box">
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="carousel-item">
+                                     <div class="row row-cols-1 row-cols-lg-3 article-box">
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="carousel-item">
+                                     <div class="row row-cols-1 row-cols-lg-3 article-box">
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="col-auto item">
+                                             <a href="">
+                                                 <div class="card mt-lg-auto">
+                                                     <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=880&txt_altura=603&extensao=png&fundo_r=0.1881103515625&fundo_g=0.1881103515625&fundo_b=0.1881103515625&texto_r=1&texto_g=1&texto_b=1&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10"
+                                                          class="card-img-top" alt="...">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">Card title</h5>
+                                                         <p class="card-text">This is a longer card with supporting text
+                                                             below as
+                                                             a
+                                                             natural lead-in to additional content. This content is a
+                                                             little bit
+                                                             longer.</p>
+                                                         <div class="col-12 box-cta mt-2 mt-lg-4">
+                                                             <a href="http://tivit.local/" class="btn-cta">conheça a
+                                                                 ação</a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </a>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                             </div>-->
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,7 +577,7 @@
     <section class="container-fluid px-0 box-parceiros" style="background: white;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-auto box-title">
+                <div class="col-auto box-title mt-5 mt-lg- auto">
                     <h2>Parceiros</h2>
                 </div>
                 <div class="col-12 box-slider">
@@ -377,7 +642,7 @@
     <section class="container-fluid px-lg-0 box-nosso-clientes" style="background: white;">
         <div class="container">
             <div class="row justify-content-center ">
-                <div class="col-auto box-title">
+                <div class="col-auto box-title mt-5">
                     <h2>Nosso Clientes</h2>
                 </div>
                 <div class="col-12 box-slider">
@@ -1058,48 +1323,47 @@
             </div>
 
             <!-- passe a cor de fundo na tag style -->
-            <div class="col-12 col-lg box-solucoes order-2 position-relative" style="background: #F14517;">
-                <div class="row justify-content-end align-items-center h-100">
-                    <div class="col-12 col-lg-10 box-dados-list">
-                        <div class="col-auto box-title">
-                            <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
-                                segurança de TI, apoiada na
-                                experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
-                                responder às ameaças em tempo real.
-                            </h3>
-                        </div>
-                        <div class="col-auto listagem">
-                            <ul>
-                                <li>
-                                    <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
-                                    especializado atuando
-                                    na gestão de ambientes críticos
-                                </li>
-                                <li>
-                                    <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
-                                    vulnerabilidades de
-                                    ambientes produtivos
-                                </li>
-                                <li>
-                                    <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
-                                    Identidade e
-                                    permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
-                                </li>
-                                <li>
-                                    <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
-                                    aplicações em
-                                    nuvem, mitigando o risco de vazamento de dados.
-                                </li>
-                                <li>
-                                    <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
-                                    ISO27001 de
-                                    segurança da informação
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
-                            <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
-                        </div>
+            <div class="col-12 col-lg box-solucoes order-2 position-relative d-flex justify-content-end align-items-center"
+                 style="background: #F14517;">
+                <div class="col-12 col-lg-10 box-dados-list">
+                    <div class="col-auto box-title">
+                        <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
+                            segurança de TI, apoiada na
+                            experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
+                            responder às ameaças em tempo real.
+                        </h3>
+                    </div>
+                    <div class="col-auto listagem">
+                        <ul>
+                            <li>
+                                <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
+                                especializado atuando
+                                na gestão de ambientes críticos
+                            </li>
+                            <li>
+                                <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
+                                vulnerabilidades de
+                                ambientes produtivos
+                            </li>
+                            <li>
+                                <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
+                                Identidade e
+                                permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
+                            </li>
+                            <li>
+                                <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
+                                aplicações em
+                                nuvem, mitigando o risco de vazamento de dados.
+                            </li>
+                            <li>
+                                <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
+                                ISO27001 de
+                                segurança da informação
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
+                        <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
                     </div>
                 </div>
             </div>
@@ -1126,48 +1390,47 @@
             </div>
 
             <!-- passe a cor de fundo na tag style -->
-            <div class="col-12 col-lg box-solucoes order-2 position-relative" style="background: #009EE3;">
-                <div class="row justify-content-end align-items-center h-100">
-                    <div class="col-12 col-lg-10 box-dados-list">
-                        <div class="col-auto box-title">
-                            <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
-                                segurança de TI, apoiada na
-                                experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
-                                responder às ameaças em tempo real.
-                            </h3>
-                        </div>
-                        <div class="col-auto listagem">
-                            <ul>
-                                <li>
-                                    <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
-                                    especializado atuando
-                                    na gestão de ambientes críticos
-                                </li>
-                                <li>
-                                    <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
-                                    vulnerabilidades de
-                                    ambientes produtivos
-                                </li>
-                                <li>
-                                    <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
-                                    Identidade e
-                                    permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
-                                </li>
-                                <li>
-                                    <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
-                                    aplicações em
-                                    nuvem, mitigando o risco de vazamento de dados.
-                                </li>
-                                <li>
-                                    <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
-                                    ISO27001 de
-                                    segurança da informação
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
-                            <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
-                        </div>
+            <div class="col-12 col-lg box-solucoes order-2 position-relative d-flex justify-content-end align-items-center"
+                 style="background: #009EE3;">
+                <div class="col-12 col-lg-10 box-dados-list">
+                    <div class="col-auto box-title">
+                        <h3 class="box-title-solucoes">Plataforma com inteligência para oferecer visão unificada da
+                            segurança de TI, apoiada na
+                            experiência de equipes especializadas que atuam 24x7x365 para investigar, identificar e
+                            responder às ameaças em tempo real.
+                        </h3>
+                    </div>
+                    <div class="col-auto listagem">
+                        <ul>
+                            <li>
+                                <strong>Centro de Operações de Segurança (SOC):</strong> Com plataforma e time
+                                especializado atuando
+                                na gestão de ambientes críticos
+                            </li>
+                            <li>
+                                <strong>Threat Vulnerability Management (TVM):</strong> Processo de gestão de
+                                vulnerabilidades de
+                                ambientes produtivos
+                            </li>
+                            <li>
+                                <strong>Identity and Access Management (IAM):</strong> Plataforma com gestão de
+                                Identidade e
+                                permissão de acessos que garante a segurança de todos os acessos, aplicações e dados
+                            </li>
+                            <li>
+                                <strong>Cloud Access Security Broker (CASB):</strong> Ferramenta para segurança de
+                                aplicações em
+                                nuvem, mitigando o risco de vazamento de dados.
+                            </li>
+                            <li>
+                                <strong>Operação de ambientes</strong> seguindo as normas e diretrizes previstas na
+                                ISO27001 de
+                                segurança da informação
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-7 order-3 box-cta d-flex justify-content-center justify-content-lg-start">
+                        <a href="#" class="btn btn-tivit1">TEXTO DO BOTÃO LISTA</a>
                     </div>
                 </div>
             </div>
@@ -2655,5 +2918,300 @@
             </div>
         </div>
     </section>
+
+    <!-- slider solto -->
+    <section class="container px-0 slider-projetos solto">
+        <div class="col-12 px-0">
+            <div id="slider-categoria01" class="carousel slide slider-categoria"
+                 data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-end d-none d-lg-flex">
+                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                <img class="img-fluid"
+                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="row gx-0 h-100 justify-content-between">
+                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                <div class="container h-100 case-infos d-flex align-items-end">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-12 n-acao">
+                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                        </div>
+                                        <div class="col-12 title">
+                                            <h3 class="title-text">Masp sp</h3>
+                                        </div>
+                                        <div class="col-12 box-desc">
+                                            <p>
+                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                mais relevantes instituições culturais do país e foi por isso
+                                                que escolhemos apoiá-lo em 2019.
+                                            </p>
+                                        </div>
+                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li class="list-group-item"><a href="#">CULTURA E
+                                                        RESPONSABILIDADE SOCIAL</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                            <p>10 minutos de leitura</p>
+                                        </div>
+                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                            <a href="#">VER AÇÃO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-8 box-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                     class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-end d-none d-lg-flex">
+                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                <img class="img-fluid"
+                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="row gx-0 h-100 justify-content-between">
+                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                <div class="container h-100 case-infos d-flex align-items-end">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-12 n-acao">
+                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                        </div>
+                                        <div class="col-12 title">
+                                            <h3 class="title-text">Masp sp</h3>
+                                        </div>
+                                        <div class="col-12 box-desc">
+                                            <p>
+                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                mais
+                                                relevantes instituições culturais do país e foi por isso
+                                                que
+                                                escolhemos apoiá-lo em 2019.
+                                            </p>
+                                        </div>
+                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li class="list-group-item"><a href="#">CULTURA E
+                                                        RESPONSABILIDADE SOCIAL</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                            <p>10 minutos de leitura</p>
+                                        </div>
+                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                            <a href="#">VER AÇÃO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-8 box-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                     class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-end d-none d-lg-flex">
+                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                <img class="img-fluid"
+                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="row gx-0 h-100 justify-content-between">
+                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                <div class="container h-100 case-infos d-flex align-items-end">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-12 n-acao">
+                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                        </div>
+                                        <div class="col-12 title">
+                                            <h3 class="title-text">Masp sp</h3>
+                                        </div>
+                                        <div class="col-12 box-desc">
+                                            <p>
+                                                Apoiar o Masp é contribuir para a manutenção de uma das
+                                                mais
+                                                relevantes instituições culturais do país e foi por isso
+                                                que
+                                                escolhemos apoiá-lo em 2019.
+                                            </p>
+                                        </div>
+                                        <div class="col-auto box-tags mt-2 mt-lg-4">
+                                            <ul class="list-group list-group-horizontal">
+                                                <li class="list-group-item"><a href="#">CULTURA E
+                                                        RESPONSABILIDADE SOCIAL</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                            <p>10 minutos de leitura</p>
+                                        </div>
+                                        <div class="col-12 box-link mt-2 mt-lg-4">
+                                            <a href="#">VER AÇÃO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-8 box-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                     class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-auto position-relative controlador">
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#slider-categoria01"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#slider-categoria01"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- header -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid p-0 header-inner position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 position-relative box-mask">
+                    <div class="card-img-overlay p-0 bottom-0">
+                        <img class="w-100 d-none d-lg-block"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/Vector.svg"
+                             alt="">
+                        <img class="w-100 d-lg-none"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/mask-mobile.svg"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-0 box-header position-relative"
+             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/background.png');">
+            <div class="card-img-overlay mask-gradient"></div>
+            <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
+                <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
+                    <p class="desc-title">QUEM SOMOS</p>
+                    <h1 class="title">A TIVIT transforma pessoas e tecnologia com expertise em <strong>soluções de ponta
+                            a ponta.</strong></h1>
+                </div>
+                <div class="col-auto player position-absolute">
+                    <div class="d-flex flex-column">
+                        <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
+                            <div class="col-12">
+                                <div class="aura"></div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center position-absolute">
+                                <button  data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
+                                         alt="...">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
+                            <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                Assista ao reel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var player, iframe;
+        var $ = document.querySelector.bind(document);
+
+        // init player
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '400',
+                width: '100%',
+                videoId: 'n8Q6pqkd7Uw',
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        // when ready, wait for clicks
+        function onPlayerReady(event) {
+            var player = event.target;
+            iframe = $('#player');
+            setupListener();
+        }
+
+        function setupListener() {
+            $('button.open').click(playFullscreen);
+        }
+
+        function playFullscreen() {
+            player.playVideo();//won't work on mobile
+
+            var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+            if (requestFullScreen) {
+                requestFullScreen.bind(iframe)();
+            }
+        }
+
+        const myModalEl = document.getElementById('videoOpen');
+        myModalEl.addEventListener('hidden.bs.modal', event => {
+            player.pauseVideo();
+        });
+        myModalEl.addEventListener('shown.bs.modal', event => {
+            player.playVideo();
+        });
+
+    </script>
 
 <?php get_footer(); ?>
