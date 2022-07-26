@@ -2,10 +2,15 @@
 <?php get_header(); ?>
 
     <!-- Modal -->
-    <div class="modal fade" id="videoOpen" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoOpenLabel"
+    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
                 <div class="modal-body">
                     <script src="https://www.youtube.com/iframe_api"></script>
                     <div id="player"></div>
@@ -14,18 +19,67 @@
         </div>
     </div>
 
-    <div class="a-tivit-hero position-relative"
-         style="background: url('<?php $detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); ?>') no-repeat center center; background-size: cover;">
+
+    <section class="container-fluid p-0 header-inner position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 position-relative box-mask">
+                    <div class="card-img-overlay p-0 bottom-0">
+                        <img class="w-100 d-none d-lg-block"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/Vector.svg"
+                             alt="">
+                        <img class="w-100 d-lg-none"
+                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/mask-mobile.svg"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 p-0 box-header position-relative"
+             style="background: url('<?php $detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); ?>);">
+            <div class="card-img-overlay mask-gradient"></div>
+            <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
+                <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
+                    <p class="desc-title">QUEM SOMOS</p>
+                    <h1 class="title">A TIVIT transforma pessoas e tecnologia com expertise em <strong>soluções de ponta
+                            a ponta.</strong></h1>
+                </div>
+                <div class="col-auto player position-absolute">
+                    <div class="d-flex flex-column">
+                        <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
+                            <div class="col-12">
+                                <div class="aura"></div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center position-absolute">
+                                <button data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
+                                         alt="...">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
+                            <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                Assista ao reel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modulo Antigo -->
+    <!-- <div class="a-tivit-hero position-relative"
+         style="background: url('<?php /*$detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); */ ?>') no-repeat center center; background-size: cover;">
         <div class="a-tivit-hero-title">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="zindex textBanner">
-                            <h1><?php the_field('pre_chamada_ativit'); ?></h1>
-                            <h2><?php the_field('chamada_ativit'); ?></h2>
+                            <h1><?php /*the_field('pre_chamada_ativit'); */ ?></h1>
+                            <h2><?php /*the_field('chamada_ativit'); */ ?></h2>
                         </div>
                         <div class="maskDiv text-center hide-desktop">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contato/banner-mask.svg"
+                            <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/contato/banner-mask.svg"
                                  class="position-absolute mask" alt="Máscara">
                         </div>
                     </div>
@@ -34,14 +88,14 @@
         </div>
         <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
             <img class="mask w-100 position-absolute"
-                 src="<?php echo get_template_directory_uri(); ?>/assets/images/esg/v_slider_home.svg" alt="mask"/>
+                 src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/esg/v_slider_home.svg" alt="mask"/>
         </div>
         <div class="box-aura position-absolute m-0 hide-mobile d-flex justify-content-center align-items-center">
             <div class="aura"></div>
         </div>
         <div class="botaoReels m-0 hide-mobile d-flex justify-content-center align-items-center">
             <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
+                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
                 <span>Assista ao reel</span>
             </button>
         </div>
@@ -49,11 +103,11 @@
             <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
                 Assista ao reel
 
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg" alt="...">
+                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
             </button>
             <a href="#" class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">teste</a>
         </div>
-    </div>
+    </div>-->
 
     <div class="a-tivit-sobre">
         <div class="container">
@@ -208,7 +262,8 @@
                                     <p class="hide-mobile"><?php the_field('texto_logo_2_ativit') ?></p>
                                     <img src="<?php the_field('logo_2_ativit'); ?>" class="hide-desktop"
                                          alt="Tivit Experts">
-                                    <div class="pt-4 pt-md-0"><a href="<?php the_field('url_logo_2_ativit') ?>">conheça a
+                                    <div class="pt-4 pt-md-0"><a href="<?php the_field('url_logo_2_ativit') ?>">conheça
+                                            a
                                             ventures <img
                                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg"
                                                     alt="Saiba Mais"></a></div>
@@ -417,7 +472,7 @@
         }
 
         function setupListener() {
-            $('button.open').addEventListener('click', playFullscreen);
+            $('button.open').click(playFullscreen);
         }
 
         function playFullscreen() {
@@ -428,6 +483,15 @@
                 requestFullScreen.bind(iframe)();
             }
         }
+
+        const myModalEl = document.getElementById('videoOpen');
+        myModalEl.addEventListener('hidden.bs.modal', event => {
+            player.pauseVideo();
+        });
+        myModalEl.addEventListener('shown.bs.modal', event => {
+            player.playVideo();
+        });
+
     </script>
 
 <?php get_footer(); ?>

@@ -1039,3 +1039,4 @@ items2.forEach((el) => {
 function abre_barra_pesquisa() {
     jQuery('.barra-pesquisa').css({top: 0});
 }
+

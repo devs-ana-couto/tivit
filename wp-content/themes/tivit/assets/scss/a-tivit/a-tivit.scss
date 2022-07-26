@@ -449,7 +449,12 @@
 }
 
 .modal-body {
-  height: 500px;
+  height: auto;
+  background-color: white !important;
+}
+.modal-header{
+  background-color: white !important;
+  border-radius: 0px;
 }
 
 // Carousel

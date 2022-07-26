@@ -14,7 +14,7 @@ function buscaDados() {
     preparaBusca();
     defineTitle(navLink.getAttribute("id"));
 
-    xhr.open("GET", "http://tivit.local/wp-content/uploads/2022/01/json/arquivos.json");
+    xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
     xhr.addEventListener("load", function () {
         if (xhr.status === 200) {
             var response = xhr.responseText;
@@ -183,7 +183,8 @@ function montaSlider(dados, index) {
     rowMask.appendChild(vmask);
 
     var mask = document.createElement("img");
-    mask.setAttribute("src", "/wp-content/themes/tivit/assets/images/modulos/categoria-slider/mask-slider.svg");
+    var urlMask = "https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/modulos/categoria-slider/mask-slider.svg";
+    mask.setAttribute("src", urlMask);
     mask.classList.add("w-100")
     mask.classList.add("img-fluid")
     vmask.appendChild(mask);
