@@ -3119,7 +3119,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Header Inner -->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">
             <div class="row justify-content-center">
@@ -3151,7 +3151,7 @@
                                 <div class="aura"></div>
                             </div>
                             <div class="col-12 d-flex justify-content-center position-absolute">
-                                <button  data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                <button data-bs-toggle="modal" data-bs-target="#videoOpen">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
                                          alt="...">
                                 </button>
@@ -3167,7 +3167,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Script header inner necessário para funcionar -->
     <script>
         var player, iframe;
         var $ = document.querySelector.bind(document);
@@ -3213,5 +3213,7 @@
         });
 
     </script>
+
+
 
 <?php get_footer(); ?>
