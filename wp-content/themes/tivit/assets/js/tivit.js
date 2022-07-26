@@ -1040,3 +1040,14 @@ function abre_barra_pesquisa() {
     jQuery('.barra-pesquisa').css({top: 0});
 }
 
+function alteraBg(url){
+    var bg = document.querySelector(".portfolio__box");
+    setTimeout(function (){
+        var bgNovo = 'url("' + url +'")';
+        bg.style.backgroundImage = bgNovo;
+    }, 250);
+
+
+    console.log(bg.style.backgroundImage);
+
+}
