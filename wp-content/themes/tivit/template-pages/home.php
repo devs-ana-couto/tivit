@@ -124,43 +124,40 @@
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="redes hide-mobile">
-                        <?php if (get_field('instagram', 'option') != "") { ?>
-                            <a href="<?php the_field('instagram', 'option'); ?>" target="_blank"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg"
-                                        alt="Instagram"></a>
-                        <?php } ?>
+            <div class="col-12">
+                <div class="redes hide-mobile">
+                    <?php if (get_field('instagram', 'option') != "") { ?>
+                        <a href="<?php the_field('instagram', 'option'); ?>" target="_blank"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/instagram-white.svg"
+                                    alt="Instagram"></a>
+                    <?php } ?>
 
-                        <?php if (get_field('linkedin', 'option') != "") { ?>
-                            <a href="<?php the_field('linkedin', 'option'); ?>" target="_blank"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg"
-                                        alt="Linkedin"></a>
-                        <?php } ?>
+                    <?php if (get_field('linkedin', 'option') != "") { ?>
+                        <a href="<?php the_field('linkedin', 'option'); ?>" target="_blank"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/linkedin-white.svg"
+                                    alt="Linkedin"></a>
+                    <?php } ?>
 
-                        <?php if (get_field('facebook', 'option') != "") { ?>
-                            <a href="<?php the_field('facebook', 'option'); ?>" target="_blank"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg"
-                                        alt="Facebook"></a>
-                        <?php } ?>
+                    <?php if (get_field('facebook', 'option') != "") { ?>
+                        <a href="<?php the_field('facebook', 'option'); ?>" target="_blank"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-white.svg"
+                                    alt="Facebook"></a>
+                    <?php } ?>
 
-                        <?php if (get_field('twitter', 'option') != "") { ?>
-                            <a href="<?php the_field('twitter', 'option'); ?>" target="_blank"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg"
-                                        alt="Twitter"></a>
-                        <?php } ?>
+                    <?php if (get_field('twitter', 'option') != "") { ?>
+                        <a href="<?php the_field('twitter', 'option'); ?>" target="_blank"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-white.svg"
+                                    alt="Twitter"></a>
+                    <?php } ?>
 
-                        <?php if (get_field('youtube', 'option') != "") { ?>
-                            <a href="<?php the_field('youtube', 'option'); ?>" target="_blank"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg"
-                                        alt="Youtube"></a>
-                        <?php } ?>
-                    </div>
+                    <?php if (get_field('youtube', 'option') != "") { ?>
+                        <a href="<?php the_field('youtube', 'option'); ?>" target="_blank"><img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-white.svg"
+                                    alt="Youtube"></a>
+                    <?php } ?>
                 </div>
             </div>
         </div>
-
     </section>
 
     <div class="home-intro">
@@ -194,66 +191,85 @@
                 <div class="d-flex justify-content-center w-100">
                     <div id="triangle-down"></div>
                 </div>
-            <div class="row">
-                <?php
-                $mascara = "";
+                <div class="row row-cols-1">
+                    <?php
+                    $mascara = "";
+                    if ($detect->isMobile()) {
+                        $mascara = get_template_directory_uri() . "/assets/images/home/portmaskmobile.svg";
+                    } else {
+                        $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
+                    }
+                    ?>
+                    <div class="col-12 portfolio__box position-relative fadein">
+                        <div class="d-flex justify-content-center w-100">
+                            <div id="triangle-down"></div>
+                        </div>
 
-                if ($detect->isMobile()) {
-                    $mascara = get_template_directory_uri() . "/assets/images/home/portmaskmobile.svg";
-                    $bg = get_template_directory_uri() . "/assets/images/home/mobileportpicture.jpg";
-                } else {
-                    $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
-                    $bg = get_template_directory_uri() . "/assets/images/home/img_banner1.jpg";
-                }
-                ?>
-                <div class="col-12 portfolio__box position-relative"
-                     style="background-image: url('<?php echo $bg; ?>'); ">
-                    <div class="d-flex justify-content-center w-100">
-                        <div id="triangle-down"></div>
-                    </div>
-
-                    <div class="card-img-overlay box__mask "
-                         style="background: url('<?php echo $mascara; ?>');">
-
-
-                        <div class="container h-100 d-flex justify-content-center align-items-lg-center align-items-end py-5 py-lg-0 mask__links">
-                            <div class="col-12 col-lg-10">
-                                <div class="col links__title">
-                                    <?php echo get_field('titulo_portifolio'); ?>
-                                </div>
-                                <div class="col-12 col-lg-auto mt-5 d-flex d-lg-block justify-content-center justify-content-lg-start flex-wrap">
-                                    <?php
-                                    if (have_rows('portifolio_lista')) {
-                                        for ($i = 0; have_rows('portifolio_lista'); $i++) {
-                                            the_row();
-                                            if($detect->isMobile()){
-                                                $bg = "'" . get_sub_field("portifolio_imagem_mobile")  . "'";
-                                            }else{
-                                                $bg = "'" . get_sub_field("portifolio_imagem") . "'";
-                                            }
-
-                                            echo '<a href="' . get_sub_field("portfolio-link-lista") . '" class="links--a"
-                                                  onmouseover="alteraBg(' . $bg . ')"><p';
-                                            if ($i == 0) echo ' class="active"';
-                                            echo '>' . get_sub_field('portifolio_titulo') . '</p></a>';
-                                        }
-                                    }
-                                    ?>
-                                </div>
-                                <?php
-                                $cta = get_field("portifolio_call_to_action_geral");
-                                if ($cta): ?>
-                                    <div class="col-12 col-lg-auto mt-5 d-flex justify-content-center justify-content-lg-start flex-wrap">
-                                        <a href="<?php echo $cta['portifolio_call_to_action_link']; ?>"
-                                           class="btn btn-primary links__cta--geral"
-                                           style="background-color: <?php echo $cta['portifolio_call_to_action_cor_fundo']; ?>; color: <?php echo $cta['portifolio_call_to_action_cor_texto']; ?>; ">
-                                            <?php echo $cta['portifolio_call_to_action_text']; ?>
-                                        </a>
+                        <div class="card-img-overlay box__mask "
+                             style="background: url('<?php echo $mascara; ?>');">
+                            <div class="row h-100 row-cols-1 row-cols-lg-2">
+                                <div class="col p-lg-5">
+                                    <div class="mask__links p-5 p-lg-5 h-100">
+                                        <div class="d-flex align-content-center h-100">
+                                            <div class="col-12">
+                                                <div class="col links__title">
+                                                    <h3>
+                                                        <?php echo get_field('titulo_portifolio'); ?>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-12 col-lg-auto mt-5">
+                                                    <?php
+                                                    if (have_rows('portifolio_lista')) {
+                                                        for ($i = 0; have_rows('portifolio_lista'); $i++) {
+                                                            the_row();
+                                                            $bg = "";
+                                                            if ($detect->isMobile()) {
+                                                                $bg = "'" . get_sub_field("portifolio_imagem_mobile") . "'";
+                                                            } else {
+                                                                $bg = "'" . get_sub_field("portifolio_imagem") . "'";
+                                                            }
+                                                            $active = "";
+                                                            if ($i === 0) {
+                                                                $active = "active";
+                                                            }
+                                                            echo '<div class="d-none" id="portfolio__img__url-' . $i . '" data-img="' . $bg . '"></div>';
+                                                            echo '<div class="d-none" id="portfolio__desc-' . $i . '">' . get_sub_field("portifolio_lista_desc") . '</div>';
+                                                            echo '<div class="d-none" id="portfolio__link__url-' . $i . '">' . get_sub_field("portifolio_lista_cta") . '</div>';
+                                                            echo '<button id="' . $i . '" class="links--a ' . $active . ' w-100"
+                                                            onclick="infosPortfolio(' . $bg . ', ' . $i . ')">' . get_sub_field('portifolio_titulo') . '</button>';
+                                                        }
+                                                    }
+                                                    ?>
+                                                    <?php
+                                                    $cta = get_field("portifolio_call_to_action_geral");
+                                                    if ($cta): ?>
+                                                        <div class="col-12 col-lg-auto mt-5 d-flex justify-content-center justify-content-lg-start flex-wrap">
+                                                            <a href="<?php echo $cta['portifolio_call_to_action_link']; ?>"
+                                                               class="btn btn-primary links__cta--geral"
+                                                               style="background-color: <?php echo $cta['portifolio_call_to_action_cor_fundo']; ?>; color: <?php echo $cta['portifolio_call_to_action_cor_texto']; ?>; ">
+                                                                <?php echo $cta['portifolio_call_to_action_text']; ?>
+                                                            </a>
+                                                        </div>
+                                                    <?php
+                                                    endif;
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                <?php
-                                endif;
-                                ?>
-
+                                </div>
+                                <div class="col p-lg-5">
+                                    <div class="d-flex align-items-end p-3 p-lg-5 h-100">
+                                        <div class="col text-display fadein">
+                                            <p>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de
+                                                verdade! Ele
+                                                foi desenvolvido para proporcionar a todos colaboradores a possibilidade
+                                                de crescer
+                                                profissionalmente dentro da TIVIT.</p>
+                                            <a href="">Conheça nossos produtos</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -266,7 +282,6 @@
         <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
         <div id="triangle-down"></div>
         <?= do_shortcode('[ac-bloco-conteudo]'); ?>
-    </div>
     </div>
 
     <div class="home-cases">

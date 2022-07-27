@@ -135,11 +135,9 @@ function defineTitle(menuAtivo) {
             break;
     }
     titleArticle.classList.add("right-to-left");
-    setTimeout(function () {
-        titleArticle.classList.remove("right-to-left");
-        titleArticle.classList.add("fadein");
-        titleArticle.innerHTML = title;
-    }, 500);
+    titleArticle.classList.remove("right-to-left");
+    titleArticle.classList.add("fadein");
+    titleArticle.innerHTML = title;
     titleArticle.classList.remove("fadein")
 
 }
