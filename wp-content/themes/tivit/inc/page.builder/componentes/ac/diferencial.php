@@ -4,28 +4,28 @@
  * AC / Big Number
 */
 
-function pb_ac_big_number($obj_id,$obj = null,$echo = true){
+function pb_ac_diferencial($obj_id,$obj = null,$echo = true){
 	$generate_element = "";
 
-	if( have_rows('ac-pb-big-numbers-group',$obj_id) ):
-		while ( have_rows('ac-pb-big-numbers-group',$obj_id) ) : the_row();
+	if( have_rows('ac-pb-diferenciais-group',$obj_id) ):
+		while ( have_rows('ac-pb-diferenciais-group',$obj_id) ) : the_row();
 
-			$c_text = get_sub_field('ac-pb-big-numbers-text');
+			$c_text = get_sub_field('ac-pb-diferenciais-text');
 
-			$s_color_of_menu = get_sub_field('ac-pb-big-numbers-color-of-menu');
-			$s_color_font = get_sub_field('ac-pb-big-numbers-font-color');
-			$s_color_background = get_sub_field('ac-pb-big-numbers-background-color');
-			$s_img_background = get_sub_field('ac-big-numbers-background-image');
+			$s_color_of_menu = get_sub_field('ac-pb-diferenciais-color-of-menu');
+			$s_color_font = get_sub_field('ac-pb-diferenciais-font-color');
+			$s_color_background = get_sub_field('ac-pb-diferenciais-background-color');
+			$s_img_background = get_sub_field('ac-diferenciais-background-image');
 
-			$m_default_margin = get_sub_field('ac-pb-big-numbers-margin-padding-default');
-			$m_personalized_margin = get_sub_field('ac-pb-big-numbers-margin-padding-personalized');
+			$m_default_margin = get_sub_field('ac-pb-diferenciais-margin-padding-default');
+			$m_personalized_margin = get_sub_field('ac-pb-diferenciais-margin-padding-personalized');
 
- 			$div_el = "#element-big-numbers-$obj_id";
+ 			$div_el = "#element-diferenciais-$obj_id";
 
-			$css_id_object =  get_sub_field('ac-pb-big-numbers-id');
-			$css_content =  get_sub_field('ac-pb-big-numbers-css');
+			$css_id_object =  get_sub_field('ac-pb-diferenciais-id');
+			$css_content =  get_sub_field('ac-pb-diferenciais-css');
 			if(empty($css_id_object)){
-				$css_id_object = 'element-big-numbers-'.$obj_id;
+				$css_id_object = 'element-diferenciais-'.$obj_id;
 			}
 
 
@@ -43,11 +43,11 @@ function pb_ac_big_number($obj_id,$obj = null,$echo = true){
 				$t_margin_and_padding = set_margin_personalized($m_personalized_margin, $div_el);
 			}
 
-			$numbers = get_sub_field('ac-pb-big-numbers-itens');
+			$numbers = get_sub_field('ac-pb-diferenciais-itens');
 			$cols = 12 / count($numbers);
 
 			$template = '
-	            <!---- AC: Big Numbers Module -->
+	            <!---- AC: Diferenciais Module -->
 	            <style>
 
 	            	'.$t_color_font.'
@@ -75,7 +75,7 @@ function pb_ac_big_number($obj_id,$obj = null,$echo = true){
 					</div>
 				</div>
 				</div>
-		        <!---- // AC: Big Numbers Module -->
+		        <!---- // AC: Diferenciais Module -->
 			';
 
 
@@ -98,7 +98,7 @@ function pb_ac_big_number($obj_id,$obj = null,$echo = true){
 				$generate_content .=
 					str_replace(
 						array('{label}','{number}','{cols}'),
-						array($it['ac-pb-big-numbers-itens-label'],$it['ac-pb-big-numbers-itens-value'],$cols),
+						array($it['ac-pb-diferenciais-itens-label'],$it['ac-pb-diferenciais-itens-value'],$cols),
 						$content);
 			}
 
