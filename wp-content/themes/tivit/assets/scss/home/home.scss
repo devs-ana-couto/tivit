@@ -227,9 +227,9 @@
   margin-bottom: 150px;
 
   .row {
-    height: 680px;
+    //height: 680px;
     @media(max-width: 760px) {
-      height: 640px;
+      //height: 640px;
     }
   }
 
@@ -1550,32 +1550,63 @@
           font-size: 36px;
           line-height: 56px;
           display: flex;
+
           align-items: center;
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #FFFFFF;
-
+          border: unset;
           transition: color 0.5s, font-weight 0.5s;
+
+          @media screen and (max-width: 991px) {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+          }
 
           &::after {
             content: "";
           }
 
-          &:hover {
+          &:hover, &.active {
             font-style: normal;
             font-weight: 600;
             font-size: 36px;
             line-height: 56px;
             text-transform: uppercase;
             color: $vermelho-tivit;
+            @media screen and (max-width: 991px) {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 30px;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+
+              /* Vermelho Tivit */
+
+              color: #F20024;
+            }
+
 
             &:after {
               content: url('../images/home/icons/arrow-right-red.svg');
               margin-left: 15px;
+
             }
           }
         }
-        .links__cta--geral{
+
+        .links__cta--geral {
           font-style: normal;
           font-weight: 700;
           font-size: 14px;
@@ -1591,9 +1622,47 @@
           max-width: 235px;
           height: 50px;
           transition: all 0.5s;
-          &:hover{
+
+          &:hover {
             background: white !important;
             color: #F20024 !important;
+          }
+        }
+      }
+
+      .text-display {
+        p {
+          max-width: 448px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+
+        a {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 27px;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          text-transform: uppercase;
+          color: #F20024;
+          margin-top: 20px;
+
+          &:after {
+            content: "";
+            background: url('../images/home/icons/arrow-right-red.svg');
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-flex;
+            align-items: center;
+            align-content: center;
           }
         }
       }

@@ -769,7 +769,7 @@ window.addEventListener('scroll', function () {
     scrollpos = window.scrollY;
 
     if (window.location.pathname === '/staged/tivit' || window.location.pathname === '/staged/tivit/' ||
-    window.location.pathname === '/' || window.location.pathname === '/home') {
+        window.location.pathname === '/' || window.location.pathname === '/home') {
         //transition vars
         var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
         var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
@@ -1040,14 +1040,60 @@ function abre_barra_pesquisa() {
     jQuery('.barra-pesquisa').css({top: 0});
 }
 
-function alteraBg(url){
-    var bg = document.querySelector(".portfolio__box");
-    setTimeout(function (){
-        var bgNovo = 'url("' + url +'")';
-        bg.style.backgroundImage = bgNovo;
-    }, 250);
+function infosPortfolio(url, index) {
+    var boxPortfolio = document.querySelector(".portfolio__box");
+    if (boxPortfolio !== null) {
+        selecionaMenu(index);
 
+        //limpa o text display
+        var textDisplay = document.querySelector(".text-display");
+        textDisplay.innerHTML = "";
 
-    console.log(bg.style.backgroundImage);
+        paragrafoDinamico(index);
+        linkDinamico(index);
+
+    }
+}
+
+function selecionaMenu(id) {
+    var boxPort = document.querySelector(".portfolio__box");
+    var buttons = boxPort.querySelectorAll(".links--a");
+    buttons.forEach(function (button, index) {
+        if (parseInt(button.getAttribute("id").valueOf()) !== id) {
+            button.classList.remove("active");
+        } else {
+            button.classList.add("active");
+
+            var boxPortfolio = document.querySelector(".portfolio__box");
+            var imgId = "#portfolio__img__url-" + index;
+            var imgUrl = document.querySelector(imgId).getAttribute("data-img");
+            var bgNovo = 'url(' + imgUrl + ')';
+            boxPortfolio.style.backgroundImage = bgNovo;
+        }
+    });
+}
+function paragrafoDinamico(index){
+    var idDesc = "#portfolio__desc-" + index;
+    var textDesc = document.querySelector(idDesc).innerText;
+
+    var textDisplay = document.querySelector(".text-display");
+
+    var paragraph = document.createElement("p");
+    paragraph.classList.add("fadein");
+    paragraph.innerText = textDesc;
+    textDisplay.appendChild(paragraph);
+
 
 }
+function linkDinamico(index){
+    var idLink = "#portfolio__link__url-" + index;
+    var textLink = document.querySelector(idLink).innerText;
+
+    var textDisplay = document.querySelector(".text-display");
+    var ctaLink = document.createElement("a");
+    ctaLink.setAttribute("href", textLink);
+    ctaLink.innerText = "Conheça nossos produtos";
+    ctaLink.classList.add("fadein");
+    textDisplay.appendChild(ctaLink);
+}
+infosPortfolio(null, 0)
