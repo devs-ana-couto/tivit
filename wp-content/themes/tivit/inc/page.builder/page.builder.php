@@ -12,6 +12,7 @@ require_once('componentes/ac/banner.05.php');
 require_once('componentes/ac/banner.06.php');
 require_once('componentes/ac/big.number.php');
 require_once('componentes/ac/diferencial.php');
+require_once('componentes/ac/chamada.php');
 require_once('componentes/ac/carrossel.php');
 
 require_once('componentes/bloco.conteudo.php');
@@ -61,6 +62,9 @@ function page_bulder_init($obj_id,$obj = null,$echo = true){
 					break;
 				case 'gd-ac-diferenciais':
 					$return[$layout] = pb_ac_diferencial($obj_id,$obj,$echo);
+					break;
+				case 'gd-chamada':
+					$return[$layout] = pb_ac_chamada($obj_id,$obj,$echo);
 					break;
 				case 'gd-ac-carrossel':
 					$return[$layout] = pb_ac_carrossel($obj_id,$obj,$echo);
