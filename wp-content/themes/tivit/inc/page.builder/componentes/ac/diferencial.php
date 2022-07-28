@@ -63,33 +63,40 @@ function pb_ac_diferencial($obj_id,$obj = null,$echo = true){
 
 
 				<div id="main-solutions">
-				<div class="gap" id="{css_id_object}">
-					<div class="container">
-						<div class="w-100">
-							{c_text}
-						</div>
+					<div class="diferenciais" id="{css_id_object}">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="intro">
+										{c_text}
+									</div>
+								</div>
 
-						<div class="row">
-							{content}
+								<div class="col-md-8">
+									<div class="row">
+										{content}
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				</div>
+
 		        <!---- // AC: Diferenciais Module -->
 			';
 
 
 			$content = '
-                <div class="col-md-{cols} text-center">
-					<div class="bigNumbersTitle">
-						<div class="title">
-							<h2>{number}</h2>
-						</div>
-						<div class="subtitle">
+				<div class="col-12 col-md-6">
+					<div class="content">
+						<div>
+							<h2>{titulo}</h2>
 							<p>{label}</p>
 						</div>
 					</div>
-                </div>
+				</div>
+
+
 			';
 
 			$generate_content = "";
@@ -97,8 +104,8 @@ function pb_ac_diferencial($obj_id,$obj = null,$echo = true){
 
 				$generate_content .=
 					str_replace(
-						array('{label}','{number}','{cols}'),
-						array($it['ac-pb-diferenciais-itens-label'],$it['ac-pb-diferenciais-itens-value'],$cols),
+						array('{titulo}','{label}','{cols}'),
+						array($it['ac-pb-diferenciais-itens-titulo'],$it['ac-pb-diferenciais-itens-label'],$cols),
 						$content);
 			}
 
