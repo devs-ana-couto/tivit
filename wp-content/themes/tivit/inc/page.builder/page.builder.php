@@ -14,6 +14,9 @@ require_once('componentes/ac/big.number.php');
 require_once('componentes/ac/diferencial.php');
 require_once('componentes/ac/chamada.php');
 require_once('componentes/ac/carrossel.php');
+require_once('componentes/ac/lista.logos.01.php');
+require_once('componentes/ac/formulario.php');
+require_once('componentes/ac/conteudo.relacionado.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -65,6 +68,15 @@ function page_bulder_init($obj_id,$obj = null,$echo = true){
 					break;
 				case 'gd-chamada':
 					$return[$layout] = pb_ac_chamada($obj_id,$obj,$echo);
+					break;
+				case 'gd-lista-logos-01':
+					$return[$layout] = pb_ac_lista_logos_01($obj_id,$obj,$echo);
+					break;
+				case 'gd-formulario':
+					$return[$layout] = pb_ac_formulario($obj_id,$obj,$echo);
+					break;
+				case 'gd-conteudo-relacionado':
+					$return[$layout] = pb_ac_conteudo_relacionado($obj_id,$obj,$echo);
 					break;
 				case 'gd-ac-carrossel':
 					$return[$layout] = pb_ac_carrossel($obj_id,$obj,$echo);
