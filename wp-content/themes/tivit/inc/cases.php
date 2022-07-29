@@ -291,7 +291,7 @@ if (!function_exists('ac_bloco_home_cases')) {
 
 
         $saida .= '<div class="col-12">';
-        $saida .= '<div class="d-flex justify-content-center align-items-center btn mt-4">';
+        $saida .= '<div class="d-flex justify-content-center align-items-center box-btn mt-4">';
         $saida .= '<button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>';
 
         $saida .= '</div>';

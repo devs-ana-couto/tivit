@@ -234,8 +234,8 @@
   }
 
   .home-portifolio-image {
-    background: url('../../assets/images/home/mobileportpicture.jpg') no-repeat center top;
-    background-size: contain;
+    ////background: url('../../assets/images/home/mobileportpicture.jpg') no-repeat center top;
+    //background-size: contain;
   }
 
   .home-portifolio-content {
@@ -455,6 +455,8 @@
     a {
       text-decoration: unset !important;
       transition: all 0.3s linear;
+      display: flex;
+      align-items: center;
 
       &:hover {
         color: white;
@@ -465,15 +467,29 @@
         margin-left: 5px;
         transition: all 0.2s linear;
       }
+
+      &:after {
+        content: "";
+        background: url(../images/home/icons/arrow-right-red.svg);
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+      }
     }
   }
 
-  div.btn {
+  div.btn, .box-btn {
     padding-top: 75px;
+    border: none !important;
 
     .btncontent {
       background: transparent;
-      border: 1px solid #F20024;
+      border: unset;
       padding: 20px 35px 20px 35px;
       border-radius: 50px;
       color: white;
@@ -484,6 +500,10 @@
         background: #F20024;
         transition: all 0.4s linear;
       }
+    }
+
+    &:hover {
+      border: none !important;
     }
   }
 
@@ -557,7 +577,9 @@
     }
   }
 
-  div.btn {
+  div.btn, .box-btn {
+    border: none;
+
     .btncontent {
       color: $cinza-dark-cyber-tivit;
     }
@@ -792,12 +814,18 @@
     margin-top: 152px;
 
     h2 {
-      font-size: 24px;
-      line-height: 28px;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      /* identical to box height, or 100% */
+
+      display: flex;
+      align-items: center;
       text-align: center;
-      color: white;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
       margin-bottom: 15px;
     }
   }
@@ -825,16 +853,17 @@
       &:hover {
         color: #c4c4c4;
         transition: all .2s linear;
-        border: none;
+        border: none !important;
+        padding: 2px 20px;
 
         &:after {
-          margin-left: 20px;
+          opacity: 0;
           transition: all .2s linear;
         }
       }
 
       &:after {
-        content: url('../../assets/images/a-tivit/arrow.svg');
+        content: url('../images/a-tivit/arrow.svg');
         margin-left: 10px;
         transition: all .2s linear;
         position: absolute;
@@ -1241,6 +1270,7 @@
           text-align: left;
           font-size: 24px;
           transition: all 0.2s linear;
+          line-height: 30px;
         }
 
         p {
@@ -1256,6 +1286,20 @@
           transition: all .3s linear;
           text-decoration: none;
           cursor: pointer;
+          display: flex;
+          align-items: center;
+          &:after {
+            content: "";
+            background: url(../images/home/icons/arrow-right-red.svg);
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-flex;
+            align-items: center;
+            align-content: center;
+          }
 
           &:hover {
             color: white;
@@ -1334,11 +1378,18 @@
       margin-top: 370px;
 
       p {
+        font-style: normal;
+        font-weight: 400;
         font-size: 24px;
-        line-height: 1.3;
-        font-weight: lighter;
+        line-height: 30px;
+        /* or 125% */
+
+        display: flex;
+        align-items: center;
         text-align: center;
-        color: white;
+
+        color: #FFFFFF;
+
       }
     }
 
@@ -1514,13 +1565,22 @@
     background-repeat: no-repeat !important;
     transition: all 0.5s;
     @media screen and (max-width: 991px) {
+      height: unset;
       background-position: center top !important;
       background-size: contain !important;
     }
 
-    .box__mask {
+    .card-img-overlay {
       background-size: cover !important;
       background-repeat: no-repeat !important;
+    }
+
+    .box-z-index {
+      z-index: 1055;
+    }
+
+    .box__mask {
+      z-index: 1054;
 
       .mask__links {
         .links__title {

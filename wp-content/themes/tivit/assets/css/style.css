@@ -1026,7 +1026,7 @@ html .paragrafo6, body .paragrafo6, * .paragrafo6 {
     opacity: 0.6;
   }
   .footer .footer-socials p a img {
-    height: 30px;
+    height: 24px;
   }
   .footer .footer-partners {
     padding: 0;
@@ -1460,10 +1460,6 @@ div {
   height: 100%;
   margin-bottom: 150px;
 }
-.home-portifolio .home-portifolio-image {
-  background: url("../../assets/images/home/mobileportpicture.jpg") no-repeat center top;
-  background-size: contain;
-}
 @media (max-width: 760px) {
   .home-portifolio .home-portifolio-content {
     margin-top: 270px;
@@ -1653,6 +1649,8 @@ div {
 .home-content .acessar a {
   text-decoration: unset !important;
   transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
 }
 .home-content .acessar a:hover {
   color: white;
@@ -1662,21 +1660,37 @@ div {
   margin-left: 5px;
   transition: all 0.2s linear;
 }
-.home-content div.btn {
-  padding-top: 75px;
+.home-content .acessar a:after {
+  content: "";
+  background: url(../images/home/icons/arrow-right-red.svg);
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
 }
-.home-content div.btn .btncontent {
+.home-content div.btn, .home-content .box-btn {
+  padding-top: 75px;
+  border: none !important;
+}
+.home-content div.btn .btncontent, .home-content .box-btn .btncontent {
   background: transparent;
-  border: 1px solid #F20024;
+  border: unset;
   padding: 20px 35px 20px 35px;
   border-radius: 50px;
   color: white;
   text-transform: uppercase;
   transition: all 0.4s linear;
 }
-.home-content div.btn .btncontent:hover {
+.home-content div.btn .btncontent:hover, .home-content .box-btn .btncontent:hover {
   background: #F20024;
   transition: all 0.4s linear;
+}
+.home-content div.btn:hover, .home-content .box-btn:hover {
+  border: none !important;
 }
 @media (max-width: 767px) {
   .home-content .carousel-inner .carousel-item > div {
@@ -1726,7 +1740,10 @@ div {
 .home-content.esg1 .acessar a:hover {
   color: #262626;
 }
-.home-content.esg1 div.btn .btncontent {
+.home-content.esg1 div.btn, .home-content.esg1 .box-btn {
+  border: none;
+}
+.home-content.esg1 div.btn .btncontent, .home-content.esg1 .box-btn .btncontent {
   color: #262626;
 }
 
@@ -1933,12 +1950,16 @@ div {
   margin-top: 152px;
 }
 .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title h2 {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height, or 100% */
+  display: flex;
+  align-items: center;
   text-align: center;
-  color: white;
+  text-transform: uppercase;
+  color: #FFFFFF;
   margin-bottom: 15px;
 }
 .home-pessoas-e-carreiras .botao {
@@ -1963,14 +1984,15 @@ div {
 .home-pessoas-e-carreiras .botao a:hover {
   color: #c4c4c4;
   transition: all 0.2s linear;
-  border: none;
+  border: none !important;
+  padding: 2px 20px;
 }
 .home-pessoas-e-carreiras .botao a:hover:after {
-  margin-left: 20px;
+  opacity: 0;
   transition: all 0.2s linear;
 }
 .home-pessoas-e-carreiras .botao a:after {
-  content: url("../../assets/images/a-tivit/arrow.svg");
+  content: url("../images/a-tivit/arrow.svg");
   margin-left: 10px;
   transition: all 0.2s linear;
   position: absolute;
@@ -2292,6 +2314,7 @@ div {
     text-align: left;
     font-size: 24px;
     transition: all 0.2s linear;
+    line-height: 30px;
   }
   .home-cases .home-cases-content .textCase p {
     color: white;
@@ -2305,6 +2328,20 @@ div {
     transition: all 0.3s linear;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .home-cases .home-cases-content .textCase a:after {
+    content: "";
+    background: url(../images/home/icons/arrow-right-red.svg);
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
   }
   .home-cases .home-cases-content .textCase a:hover {
     color: white;
@@ -2366,11 +2403,15 @@ div {
     margin-top: 370px;
   }
   .home-pessoas-e-carreiras .home-pessoas-e-carreiras-title p {
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
-    line-height: 1.3;
-    font-weight: lighter;
+    line-height: 30px;
+    /* or 125% */
+    display: flex;
+    align-items: center;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
   }
 }
 @media (min-width: 760px) {
@@ -2532,13 +2573,20 @@ div {
 }
 @media screen and (max-width: 991px) {
   .portfolio .portfolio__box {
+    height: unset;
     background-position: center top !important;
     background-size: contain !important;
   }
 }
-.portfolio .portfolio__box .box__mask {
+.portfolio .portfolio__box .card-img-overlay {
   background-size: cover !important;
   background-repeat: no-repeat !important;
+}
+.portfolio .portfolio__box .box-z-index {
+  z-index: 1055;
+}
+.portfolio .portfolio__box .box__mask {
+  z-index: 1054;
 }
 @media screen and (max-width: 991px) {
   .portfolio .portfolio__box .box__mask .mask__links .links__title {
