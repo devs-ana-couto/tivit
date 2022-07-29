@@ -17,6 +17,9 @@ require_once('componentes/ac/carrossel.php');
 require_once('componentes/ac/lista.logos.01.php');
 require_once('componentes/ac/formulario.php');
 require_once('componentes/ac/conteudo.relacionado.php');
+require_once('componentes/ac/planejamento.php');
+require_once('componentes/ac/beneficios.php');
+require_once('componentes/ac/video.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -77,6 +80,15 @@ function page_bulder_init($obj_id,$obj = null,$echo = true){
 					break;
 				case 'gd-conteudo-relacionado':
 					$return[$layout] = pb_ac_conteudo_relacionado($obj_id,$obj,$echo);
+					break;
+				case 'gd-planejamento':
+					$return[$layout] = pb_ac_planejamento($obj_id,$obj,$echo);
+					break;
+				case 'gd-beneficios':
+					$return[$layout] = pb_ac_beneficios($obj_id,$obj,$echo);
+					break;
+				case 'gd-video':
+					$return[$layout] = pb_ac_video($obj_id,$obj,$echo);
 					break;
 				case 'gd-ac-carrossel':
 					$return[$layout] = pb_ac_carrossel($obj_id,$obj,$echo);
