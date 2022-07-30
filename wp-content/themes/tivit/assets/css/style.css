@@ -3858,12 +3858,14 @@ div {
 
 .modal-body {
   height: auto;
-  background-color: white !important;
 }
 
 .modal-header {
-  background-color: white !important;
   border-radius: 0px;
+}
+.modal-header .btn-close {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 #esgTivit {
@@ -12238,6 +12240,149 @@ div {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+.box-videos {
+  z-index: 0;
+  padding: 100px 0px;
+}
+.box-videos .mask-50per {
+  z-index: -1;
+}
+.box-videos .box-dados {
+  z-index: 1054;
+  min-height: 500px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.box-videos .box-dados .card-img-overlay {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+.box-videos .box-dados .row-box {
+  min-height: 500px;
+}
+.box-videos .box-dados .box-infos {
+  z-index: 1054;
+}
+.box-videos .box-dados .box-infos h1, .box-videos .box-dados .box-infos h2, .box-videos .box-dados .box-infos h3, .box-videos .box-dados .box-infos h4, .box-videos .box-dados .box-infos h5, .box-videos .box-dados .box-infos h6, .box-videos .box-dados .box-infos .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados .box-infos h1, .box-videos .box-dados .box-infos h2, .box-videos .box-dados .box-infos h3, .box-videos .box-dados .box-infos h4, .box-videos .box-dados .box-infos h5, .box-videos .box-dados .box-infos h6, .box-videos .box-dados .box-infos .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height, or 114% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+.box-videos .box-dados .box-infos p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados .box-infos p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+.box-videos .box-dados .box-infos .btn-primary {
+  border-radius: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: unset !important;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #990017;
+  transition: all 0.5s;
+  border: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.box-videos .box-dados .box-infos .btn-primary:hover {
+  background: white;
+  color: #990017;
+}
+.box-videos .box-dados .box-infos .player {
+  box-sizing: border-box;
+  z-index: 1050;
+}
+.box-videos .box-dados .box-infos .player .aura {
+  width: 250px;
+  height: 250px;
+  background: white;
+  opacity: 0.1;
+  border-radius: 250px;
+  animation: pulse 0.5s infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados .box-infos .player .aura {
+    width: 120px;
+    height: 120px;
+  }
+}
+.box-videos .box-dados .box-infos .player.peoples .customNumbers {
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.box-videos .box-dados .box-infos .player a, .box-videos .box-dados .box-infos .player button {
+  border: unset;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados .box-infos .player a img, .box-videos .box-dados .box-infos .player button img {
+    width: 61px;
+    height: 61px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

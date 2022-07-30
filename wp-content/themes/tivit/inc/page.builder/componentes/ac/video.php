@@ -58,7 +58,9 @@ function pb_ac_video($obj_id,$obj = null,$echo = true){
 
 	            	/* CSS: END Personalized */
 	            </style>
+                
 
+                
 				<div id="main-solutions">
 					<div id="{css_id_object}">
 						<div class="gap">

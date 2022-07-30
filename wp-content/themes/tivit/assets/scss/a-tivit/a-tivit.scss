@@ -450,11 +450,15 @@
 
 .modal-body {
   height: auto;
-  background-color: white !important;
+  //background-color: white !important;
 }
 .modal-header{
-  background-color: white !important;
+  //background-color: white !important;
   border-radius: 0px;
+  .btn-close {
+    width: 2.5em;
+    height: 2.5em;
+    }
 }
 
 // Carousel
