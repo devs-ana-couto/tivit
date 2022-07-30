@@ -1618,7 +1618,7 @@
           border: unset;
           transition: color 0.5s, font-weight 0.5s;
 
-          @media screen and (max-width: 991px) {
+          @media screen and (max-width: 1024px) {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -1629,6 +1629,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
 
+          }
+          @media screen and (min-width: 992px) and (max-width: 1200px) {
+            text-align: left !important;
+            justify-content: start;
           }
 
           &::after {
@@ -1642,7 +1646,7 @@
             line-height: 56px;
             text-transform: uppercase;
             color: $vermelho-tivit;
-            @media screen and (max-width: 991px) {
+            @media screen and (max-width: 1024px) {
               font-weight: 600;
               font-size: 24px;
               line-height: 30px;
@@ -1655,6 +1659,10 @@
               /* Vermelho Tivit */
 
               color: #F20024;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1200px) {
+              text-align: left !important;
+              justify-content: start;
             }
 
 

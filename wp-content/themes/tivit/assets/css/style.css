@@ -129,7 +129,7 @@ html .paragrafo6, body .paragrafo6, * .paragrafo6 {
   z-index: 9030 !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .header {
     background: #990017;
     max-width: 100%;
@@ -150,7 +150,6 @@ html .paragrafo6, body .paragrafo6, * .paragrafo6 {
     display: block;
   }
   .header .navbar .navbar-nav {
-    height: 100vh;
     padding-top: 30px;
   }
   .header .header-logo {
@@ -1013,14 +1012,14 @@ html .paragrafo6, body .paragrafo6, * .paragrafo6 {
     text-align: right;
   }
   .footer .footer-socials p a {
-    margin-left: 20px;
+    margin-left: 12px;
     text-decoration: none;
   }
   .footer .footer-socials p a:hover {
     opacity: 0.6;
   }
   .footer .footer-socials p a img {
-    height: 24px;
+    height: 18px;
   }
   .footer .footer-partners {
     padding: 0;
@@ -2634,7 +2633,7 @@ div {
   border: unset;
   transition: color 0.5s, font-weight 0.5s;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .portfolio .portfolio__box .box__mask .mask__links .links--a {
     font-style: normal;
     font-weight: 400;
@@ -2645,6 +2644,12 @@ div {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .portfolio .portfolio__box .box__mask .mask__links .links--a {
+    text-align: left !important;
+    justify-content: start;
   }
 }
 .portfolio .portfolio__box .box__mask .mask__links .links--a::after {
@@ -2658,7 +2663,7 @@ div {
   text-transform: uppercase;
   color: #F20024;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .portfolio .portfolio__box .box__mask .mask__links .links--a:hover, .portfolio .portfolio__box .box__mask .mask__links .links--a.active {
     font-weight: 600;
     font-size: 24px;
@@ -2670,6 +2675,12 @@ div {
     text-transform: uppercase;
     /* Vermelho Tivit */
     color: #F20024;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .portfolio .portfolio__box .box__mask .mask__links .links--a:hover, .portfolio .portfolio__box .box__mask .mask__links .links--a.active {
+    text-align: left !important;
+    justify-content: start;
   }
 }
 .portfolio .portfolio__box .box__mask .mask__links .links--a:hover:after, .portfolio .portfolio__box .box__mask .mask__links .links--a.active:after {
@@ -10100,7 +10111,7 @@ div {
 .barra-pesquisa .pesquisar {
   width: calc(100% - 35px);
   max-width: 100%;
-  height: 30px;
+  height: 24px;
   margin-right: 10px;
   border-radius: 30px;
   border-color: #ffffff;
@@ -10116,7 +10127,7 @@ div {
   }
 }
 .search img {
-  width: 30px;
+  width: 24px;
   cursor: pointer;
 }
 

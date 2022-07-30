@@ -236,7 +236,7 @@ html, body, * {
 }
 
 // Header Mobile
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .header {
     background: #990017;
     max-width: 100%;
@@ -261,7 +261,7 @@ html, body, * {
       }
 
       .navbar-nav {
-        height: 100vh;
+        //height: 100vh;
         padding-top: 30px;
       }
     }
@@ -1332,7 +1332,7 @@ html, body, * {
 
       p {
         a {
-          margin-left: 20px;
+          margin-left: 12px;
           text-decoration: none;
 
           &:hover {
@@ -1340,7 +1340,7 @@ html, body, * {
           }
 
           img {
-            height: 24px;
+            height: 18px;
           }
         }
 
