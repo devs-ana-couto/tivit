@@ -158,12 +158,12 @@
                   <li class="nav-item inicial" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por serviços e produtos</button>
                   </li>
-                  <li class="nav-item central" role="presentation">
+                  <!--<li class="nav-item central" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por indústria</button>
                   </li>
                   <li class="nav-item final" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">POR DESAFIO</button>
-                  </li>
+                  </li>-->
                 </ul>
               </div>
             </div>

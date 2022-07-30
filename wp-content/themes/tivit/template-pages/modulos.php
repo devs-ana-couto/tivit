@@ -43,6 +43,7 @@
                 plano no papel não muda o mundo</p>
         </div>
     </section>
+
     <!-- segunda parte do modulo  -->
     <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
@@ -3213,6 +3214,8 @@
         });
 
     </script>
+
+    <a href="#" style="background:#F20024; color:  color: #FFFFFF; " class="cta__geral">Botão</a>
 
 
 

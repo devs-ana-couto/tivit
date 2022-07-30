@@ -31,33 +31,27 @@ html img, body img, * img {
 }
 html h1, body h1, * h1 {
   font-size: 60px;
-  font-weight: 600;
   line-height: 91.26px;
 }
 html h2, body h2, * h2 {
   font-size: 48px;
-  font-weight: 600;
   line-height: 54px;
   z-index: 2;
 }
 html h3, body h3, * h3 {
   font-size: 36px;
-  font-weight: 700;
   line-height: 40px;
 }
 html h4, body h4, * h4 {
   font-size: 28px;
-  font-weight: 700;
   line-height: 34px;
 }
 html h5, body h5, * h5 {
   font-size: 24px;
-  font-weight: 700;
   line-height: 30px;
 }
 html h6, body h6, * h6 {
   font-size: 20px;
-  font-weight: 700;
   line-height: 30.42px;
 }
 html .button, body .button, * .button {
@@ -1244,6 +1238,26 @@ a:hover,
 input,
 div {
   outline: 0;
+}
+
+.cta__geral {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  height: 50px;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #F20024;
+  border: none;
+  border-radius: 40px;
+  max-width: 235px;
+  transition: all 0.5s;
+}
+.cta__geral:hover {
+  color: white;
+  background: #990017;
 }
 
 /**
