@@ -4,7 +4,7 @@
  * Vídeo Full
 */
 
-function pb_video_full($obj_id,$obj = null,$block=0,$echo = true){	
+function pb_video_full($obj_id,$obj = null,$block=0,$echo = true){
 	$generate_element = "";
 
 	$c_url = get_sub_field('gd-el-video-full-url');
@@ -36,11 +36,11 @@ function pb_video_full($obj_id,$obj = null,$block=0,$echo = true){
 	if($controls){
 		$autocontrols = "?controls=0&showinfo=0&autohide=1";
 	}
-	
+
 	preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $c_url, $match);
 	$youtube_id = $match[1];
 
-	// $generate_element = '	            
+	// $generate_element = '
     //     <!---- Video Full Module -->
     //     <section class="box-video-full header-coutoman-dark" id="gd-el-video-full-'.$block.'" style="'.$tb.'">
     //         <div class="video-wrapper">
@@ -48,18 +48,20 @@ function pb_video_full($obj_id,$obj = null,$block=0,$echo = true){
 	// 		</div>
     //     </section>
     //     <!---- // Video Full Module -->
-	// ';		
+	// ';
 
 	$generate_element = '	            
         <!---- Video Full Module -->
         <section class="box-video-full header-coutoman-dark" id="gd-el-video-full-'.$block.'" style="'.$tb.'">
             <div class="video-wrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$youtube_id.'?oi=1'.$autoplay.$autocontrols.'&loop=1" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" 
+				src="https://www.youtube.com/embed/'.$youtube_id.'?oi=1'.$autoplay.$autocontrols.'&loop=1" 
+				frameborder="0" allowfullscreen></iframe>
 			</div>
         </section>
         <!---- // Video Full Module -->
-	';		
-	
+	';
+
 
 	if($echo){
 		echo $generate_element;
