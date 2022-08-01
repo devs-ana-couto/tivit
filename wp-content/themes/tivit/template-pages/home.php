@@ -75,7 +75,7 @@
             </div>-->
 
             <div class="col-auto controladores position-absolute">
-                <div class="row row-cols- justify-content-center">
+                <div class="d-flex justify-content-center justify-content-lg-start">
                     <div class="col-auto d-none d- d-lg-flex align-items-center px-5 px-lg-3">
                         <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -183,7 +183,6 @@
         </div>
     </div>
 
-
     <section class="container-fluid px-lg-0 portfolio port mb-5">
         <div class="d-flex justify-content-center bgport position-absolute"></div>
         <div class="container home-portifolio">
@@ -205,11 +204,13 @@
                             <div id="triangle-down"></div>
                         </div>
 
-                        <div class="card-img-overlay box__mask "
+                        <div class="card-img-overlay"
                              style="background: url('<?php echo $mascara; ?>');">
+                        </div>
+                        <div class="col-12  box__mask h-100">
                             <div class="row h-100 row-cols-1 row-cols-lg-2">
-                                <div class="col p-lg-5">
-                                    <div class="mask__links p-5 p-lg-5 h-100">
+                                <div class="col p-lg-5 box-z-index">
+                                    <div class="mask__links py-5 px-0 p-lg-5 h-100">
                                         <div class="d-flex align-content-center h-100">
                                             <div class="col-12">
                                                 <div class="col links__title">
@@ -258,8 +259,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col p-lg-5">
-                                    <div class="d-flex align-items-end p-3 p-lg-5 h-100">
+                                <div class="col p-lg-5 box-z-index">
+                                    <div class="d-flex align-items-end p-3 py-5 p-lg-5 h-100">
                                         <div class="col text-display fadein">
                                             <p>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de
                                                 verdade! Ele
@@ -280,7 +281,7 @@
 
     <div id="contentTdx" class="home-content content-inovacao">
         <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
-        <div id="triangle-down"></div>
+        <div id="triangle-down" style=""></div>
         <?= do_shortcode('[ac-bloco-conteudo]'); ?>
     </div>
 

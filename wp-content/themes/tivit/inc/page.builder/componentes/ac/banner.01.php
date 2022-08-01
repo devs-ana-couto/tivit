@@ -86,7 +86,7 @@ function pb_ac_banner_01($obj_id,$obj = null,$echo = true){
 		                            <div class="row">                                        
 		                                <div class="col-md-12">
 		                                	{content}
-											{button}	
+											{button}
 		                                </div>    
 		                            </div>
 		                        </div>    
