@@ -155,9 +155,9 @@
             <div class="row">
               <div class="col-12">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
-                  <li class="nav-item inicial" role="presentation">
+                 <!-- <li class="nav-item inicial" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por serviços e produtos</button>
-                  </li>
+                  </li>-->
                   <!--<li class="nav-item central" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por indústria</button>
                   </li>
@@ -176,7 +176,7 @@
                     <div class="textLeft">
                       <h2><?php _e('Conheça as soluções da TIVIT por <strong>Serviços e Produtos.</strong>'); ?></h2>
                       <p><?php echo $por_servico_port; ?></p>
-                      <a href="<?get_site_url()?>/staged/tivit/solucoes" class="buttonintro"><?php _e('ver todas as solucoes'); ?></a>
+                     <!-- <a href="<?/*get_site_url()*/?>/staged/tivit/solucoes" class="buttonintro"><?php /*_e('ver todas as solucoes'); */?></a>-->
                     </div>
                   </div>
                   <div class="col-md-9">

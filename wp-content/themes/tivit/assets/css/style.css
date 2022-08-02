@@ -1251,7 +1251,6 @@ div {
   background: #F20024;
   border: none;
   border-radius: 40px;
-  max-width: 235px;
   transition: all 0.5s;
 }
 .cta__geral:hover {
@@ -10304,12 +10303,12 @@ div {
 }
 
 .box-chamada-pagina {
-  padding: 130px 0px 70px 0px;
+  padding: 130px 0px 100px 0px;
   margin-top: 0px;
 }
 @media screen and (max-width: 991px) {
   .box-chamada-pagina {
-    padding: 40px 0px 40px 0px;
+    padding: 75px 0px 40px 0px;
   }
 }
 .box-chamada-pagina .box-title p {
@@ -10690,7 +10689,7 @@ div {
 }
 
 .box-big-number .box-title-top {
-  padding-top: 40px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 .box-big-number .box-title-top h1, .box-big-number .box-title-top h2, .box-big-number .box-title-top h3, .box-big-number .box-title-top h4, .box-big-number .box-title-top h5, .box-big-number .box-title-top h6, .box-big-number .box-title-top .title-top {
@@ -10703,6 +10702,7 @@ div {
 }
 .box-big-number .box-cards {
   padding: 70px;
+  padding-bottom: 100px;
 }
 @media screen and (max-width: 991px) {
   .box-big-number .box-cards {
@@ -11056,7 +11056,12 @@ div {
   z-index: -1;
 }
 .card-only-text {
-  padding: 70px 0px;
+  padding: 100px 0px;
+}
+@media screen and (max-width: 991px) {
+  .card-only-text {
+    padding-top: 50px;
+  }
 }
 .card-only-text .box-title h1, .card-only-text .box-title h2, .card-only-text .box-title h3, .card-only-text .box-title h4, .card-only-text .box-title h5, .card-only-text .box-title h6 .title {
   font-style: normal;
@@ -12122,14 +12127,6 @@ div {
   margin-left: 5px;
 }
 
-.header-inner {
-  margin-bottom: 30%;
-}
-@media screen and (min-width: 992px) {
-  .header-inner {
-    margin-bottom: 10%;
-  }
-}
 .header-inner .box-mask {
   mix-blend-mode: multiply;
   opacity: 0.9;
@@ -12383,6 +12380,30 @@ div {
     width: 61px;
     height: 61px;
   }
+}
+
+.manegement-services {
+  padding: 100px 0px;
+}
+@media screen and (max-width: 991px) {
+  .manegement-services {
+    padding: 40px 0px;
+  }
+}
+.manegement-services .box-title h1, .manegement-services .box-title h2, .manegement-services .box-title h3, .manegement-services .box-title h4, .manegement-services .box-title h5, .manegement-services .box-title h6, .manegement-services .box-title .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height, or 117% */
+  color: #262626;
+  text-align: center;
+}
+.manegement-services .box-card .img-card {
+  height: 90px;
+}
+.manegement-services .box-infos {
+  padding: 20px 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

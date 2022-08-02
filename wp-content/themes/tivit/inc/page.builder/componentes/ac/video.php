@@ -63,12 +63,12 @@ function pb_ac_video($obj_id, $obj = null, $echo = true)
 	            </style>
         <section class="container-fluid box-videos position-relative" id="{css_id_object}" style="background: white;">
                 <div class="card-img-overlay h-100 d-flex align-items-center mask-50per">
-                    <div class="w-100 h-50" style="background: '.  $s_color_background .'; "></div>
+                    <div class="w-100 h-50" style="background: ' . $s_color_background . '; "></div>
                  </div>
                 <div class="d-flex justify-content-center">
                 <div class="col-11 col-lg-9">
                     <div class="container box-dados position-relative p-4"
-                     style="background: url('. $video_imagem_desk .');">
+                     style="background: url(' . $video_imagem_desk . ');">
                         <div class="row row-box justify-content-center align-items-center h-100">
                             <div class="col-12 col-lg-6 box-infos order-2 order-lg-1">
                                 <div class="row justify-content-center align-items-center">
@@ -99,7 +99,6 @@ function pb_ac_video($obj_id, $obj = null, $echo = true)
                 </div>
             </div>
         </div>
-    </section>
         <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -118,7 +117,9 @@ function pb_ac_video($obj_id, $obj = null, $echo = true)
         </div>
     </div>
   
-<script>
+    </section>
+        
+    <script>
         var player, iframe;
         var $ = document.querySelector.bind(document);
 
