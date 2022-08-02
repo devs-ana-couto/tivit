@@ -20,8 +20,8 @@ function pb_ac_card_icon($obj_id, $obj = null, $echo = true)
 
     $cta = get_sub_field("gd-el-card-icon-cta-global");
     $css_cta = "";
-    if (empty($cta['url'])) {
-        $content_cta = '<a href="' . $cta['url'] . '" class="btn btn-tivit1"> ' . $cta['gd-el-card-icon-cta-global-text'] . '</a>';
+    if (!empty($cta['gd-el-card-icon-cta-global-link'])) {
+        $content_cta = '<a href="' . $cta['gd-el-card-icon-cta-global-link'] . '" class="btn btn-tivit1"> ' . $cta['gd-el-card-icon-cta-global-text'] . '</a>';
         $cta_background_cta = $cta['gd-el-card-icon-cta-global-button-color'];
         $cta_text_color_cta = $cta['gd-el-card-icon-cta-global-color-text'];
 

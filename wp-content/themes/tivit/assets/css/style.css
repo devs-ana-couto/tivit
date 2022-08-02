@@ -10329,7 +10329,12 @@ div {
 }
 
 .box-cta {
-  margin: 50px 0px;
+  margin: 100px 0px 0px 0px;
+}
+@media screen and (max-width: 991px) {
+  .box-cta {
+    margin: 50px 0px;
+  }
 }
 .box-cta .alternative .btn-tivit1 {
   background: #990017;
@@ -10349,8 +10354,12 @@ div {
 }
 .box-intro .modulo p {
   max-width: 550px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
-.box-intro .modulo h3 {
+.box-intro .modulo h1, .box-intro .modulo h2, .box-intro .modulo h3, .box-intro .modulo h4, .box-intro .modulo h5, .box-intro .modulo h6 {
   max-width: 550px;
 }
 .box-intro .modulo .btn-tivit1 {
@@ -10433,7 +10442,7 @@ div {
   }
 }
 .box-card-icons .box-cards {
-  padding-top: 45px;
+  padding-top: 75px;
 }
 @media screen and (max-width: 991px) {
   .box-card-icons .box-cards {
@@ -10454,6 +10463,14 @@ div {
     padding-bottom: 25px;
   }
 }
+.box-card-icons .box-cards .card .card-body p, .box-card-icons .box-cards .card .card-body pre {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* Cinza Dark Tivit */
+  color: #262626;
+}
 .box-card-icons .box-cards .card .card-body h1, .box-card-icons .box-cards .card .card-body h2, .box-card-icons .box-cards .card .card-body h3, .box-card-icons .box-cards .card .card-body h4, .box-card-icons .box-cards .card .card-body h5, .box-card-icons .box-cards .card .card-body h6, .box-card-icons .box-cards .card .card-body .card-title {
   font-style: normal;
   font-weight: 600;
@@ -10468,14 +10485,6 @@ div {
     font-size: 19px;
     line-height: 22px;
   }
-}
-.box-card-icons .box-cards .card .card-body p, .box-card-icons .box-cards .card .card-body pre, .box-card-icons .box-cards .card .card-body span {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* Cinza Dark Tivit */
-  color: #262626;
 }
 .box-card-icons .box-cards .card .card-body img {
   max-height: 70px;
