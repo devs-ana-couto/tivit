@@ -211,11 +211,11 @@ $primary-color: #990017;
 }
 
 .box-card-icons {
-  padding-top: 55px;
+  padding-top: 100px;
   padding-bottom: 60px;
   //height: 920px;
   .box-title-top {
-    .title-top {
+    h1, h2, h3, h4, h5, h6, p, span, pre, .title-top {
       width: 95%;
       font-style: normal;
       font-weight: 600;
@@ -263,7 +263,7 @@ $primary-color: #990017;
           }
         }
 
-        p {
+        p, pre, span {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;

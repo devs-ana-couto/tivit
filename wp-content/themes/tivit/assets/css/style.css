@@ -10414,10 +10414,10 @@ div {
 }
 
 .box-card-icons {
-  padding-top: 55px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
-.box-card-icons .box-title-top .title-top {
+.box-card-icons .box-title-top h1, .box-card-icons .box-title-top h2, .box-card-icons .box-title-top h3, .box-card-icons .box-title-top h4, .box-card-icons .box-title-top h5, .box-card-icons .box-title-top h6, .box-card-icons .box-title-top p, .box-card-icons .box-title-top span, .box-card-icons .box-title-top pre, .box-card-icons .box-title-top .title-top {
   width: 95%;
   font-style: normal;
   font-weight: 600;
@@ -10427,7 +10427,7 @@ div {
   text-align: center;
 }
 @media screen and (max-width: 991px) {
-  .box-card-icons .box-title-top .title-top {
+  .box-card-icons .box-title-top h1, .box-card-icons .box-title-top h2, .box-card-icons .box-title-top h3, .box-card-icons .box-title-top h4, .box-card-icons .box-title-top h5, .box-card-icons .box-title-top h6, .box-card-icons .box-title-top p, .box-card-icons .box-title-top span, .box-card-icons .box-title-top pre, .box-card-icons .box-title-top .title-top {
     font-size: 19px;
     line-height: 22px;
   }
@@ -10469,7 +10469,7 @@ div {
     line-height: 22px;
   }
 }
-.box-card-icons .box-cards .card .card-body p {
+.box-card-icons .box-cards .card .card-body p, .box-card-icons .box-cards .card .card-body pre, .box-card-icons .box-cards .card .card-body span {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
