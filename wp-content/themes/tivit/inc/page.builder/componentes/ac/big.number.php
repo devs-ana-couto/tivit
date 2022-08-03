@@ -7,7 +7,8 @@
 function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 {
     $generate_element = "";
-
+    $s_cols_per_rows = get_sub_field("gd-el-big-numbers-cols-numbers");
+    print_r($s_cols_per_rows);
     if (have_rows('ac-pb-big-numbers-group', $obj_id)):
         while (have_rows('ac-pb-big-numbers-group', $obj_id)) : the_row();
 
@@ -17,6 +18,7 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
             $s_color_font = get_sub_field('ac-pb-big-numbers-font-color');
             $s_color_background = get_sub_field('ac-pb-big-numbers-background-color');
             $s_img_background = get_sub_field('ac-big-numbers-background-image');
+
 
             $m_default_margin = get_sub_field('ac-pb-big-numbers-margin-padding-default');
             $m_personalized_margin = get_sub_field('ac-pb-big-numbers-margin-padding-personalized');
@@ -53,6 +55,9 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
                 $colLimiter = round($cols2);
             }
 
+
+            print_r(get_sub_field("gd-ac-big-numbers-cols-numbers"));
+
             $template = '
 	            <!---- AC: Big Numbers Module -->
 	            <style>
@@ -87,7 +92,7 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
                 <div class="row">
                     <div class="col-12 box-cards">
                         <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
-                        <div class="row row-cols-1 row-cols-lg-' . $colLimiter . ' align-items-stretch g-4">
+                        <div class="row row-cols-1 row-cols-lg-' . $s_cols_per_rows . ' align-items-stretch g-4">
                            {content}
                         </div>
                     </div>
