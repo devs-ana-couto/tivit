@@ -1251,6 +1251,7 @@ div {
   background: #F20024;
   border: none;
   border-radius: 40px;
+
   transition: all 0.5s;
 }
 .cta__geral:hover {
@@ -12389,30 +12390,6 @@ div {
     width: 61px;
     height: 61px;
   }
-}
-
-.manegement-services {
-  padding: 100px 0px;
-}
-@media screen and (max-width: 991px) {
-  .manegement-services {
-    padding: 40px 0px;
-  }
-}
-.manegement-services .box-title h1, .manegement-services .box-title h2, .manegement-services .box-title h3, .manegement-services .box-title h4, .manegement-services .box-title h5, .manegement-services .box-title h6, .manegement-services .box-title .title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  /* identical to box height, or 117% */
-  color: #262626;
-  text-align: center;
-}
-.manegement-services .box-card .img-card {
-  height: 90px;
-}
-.manegement-services .box-infos {
-  padding: 20px 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
