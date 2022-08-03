@@ -1,4 +1,4 @@
-<?php /* Template Name: Soluções Old */ ?>
+<?php /* Template Name: Soluções */ ?>
 <?php get_header(); ?>
 
 <!-- Hero banner-->
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<?
+<? 
     if( have_rows('item_psolucoes') ):
     // Loop through rows.
         for($i=0; have_rows('item_psolucoes'); $i++) : the_row();
@@ -48,13 +48,13 @@
         <div class="row mx-auto my-auto justify-content-center">
             <div id="recipeCarouselFirstBlock<?=$i?>" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
-                <?
+                <? 
                     if( have_rows('servicos_da_solucao') ):
                     // Loop through rows.
                         for($x=0; have_rows('servicos_da_solucao'); $x++) : the_row();
                         $name_service[$x] = get_sub_field('nome_do_servico');
                         $description_service[$x] = get_sub_field('descricao_do_servico');
-
+                        
                 ?>
                 <div class="carousel-item <?=$x==0 ? 'active' : '';?> <?=$i==0 ? 'heroslide' : 'heroslide'.$l=$i+1 ;?>">
                     <div class="col-11 col-md-3">
@@ -75,7 +75,7 @@
                 <?
                     endfor;
                     endif;
-                ?>
+                ?>        
             </div>
 
             <div class="d-flex position-absolute controls">
@@ -89,7 +89,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-
+            
             </div>
         </div>
     </div>

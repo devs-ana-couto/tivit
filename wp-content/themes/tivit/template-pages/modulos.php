@@ -31,9 +31,6 @@
     </section>
 
 
-
-
-
     <!-- remover a classe dev no back end -->
     <!-- separei esse modulo em 2 pois já temos o big number criado,
      sendo assim ele pode ou não ser utilizado -->
@@ -41,15 +38,34 @@
 
 
     <!-- box-chamada-pagina -->
-    <section class="container box-chamada-pagina" style="background: white;">
-        <div class="col box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap">
-            <p><strong>Soluções inovadoras na prática.</strong></p>
-            <p> Desafiamos e encorajamos a transformação, porque acreditamos que o
-                plano no papel não muda o mundo</p>
+    <section class="container-fluid box-chamada-pagina" style="background: white;">
+        <div class="container">
+            <div class="col box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap">
+                <p><strong>Soluções inovadoras na prática.</strong></p>
+                <p> Desafiamos e encorajamos a transformação, porque acreditamos que o
+                    plano no papel não muda o mundo</p>
+            </div>
         </div>
     </section>
 
 
+    <!-- time line -->
+    <section class="container-fluid time-line py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-time-line px-0 px-lg-2">
+                    <div class="slider-time-line">
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- segunda parte do modulo  -->
@@ -161,12 +177,12 @@
 
         // init player
         function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '400',
-                width: '100%',
-                videoId: 'n8Q6pqkd7Uw',
+            player = new YT.Player("player", {
+                height: "400",
+                width: "100%",
+                videoId: "n8Q6pqkd7Uw",
                 events: {
-                    'onReady': onPlayerReady
+                    "onReady": onPlayerReady
                 }
             });
         }
@@ -174,16 +190,16 @@
         // when ready, wait for clicks
         function onPlayerReady(event) {
             var player = event.target;
-            iframe = $('#player');
+            iframe = $("#player");
             setupListener();
         }
 
         function setupListener() {
-            $('button.open').click(playFullscreen);
+            $("button.open").click(playFullscreen);
         }
 
         function playFullscreen() {
-            player.playVideo();//won't work on mobile
+            player.playVideo();//wont work on mobile
 
             var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
             if (requestFullScreen) {
@@ -191,11 +207,11 @@
             }
         }
 
-        const myModalEl = document.getElementById('box-modal');
-        myModalEl.addEventListener('hidden.bs.modal', event => {
+        const myModalEl = document.getElementById("box-modal");
+        myModalEl.addEventListener("hidden.bs.modal", event => {
             player.pauseVideo();
         });
-        myModalEl.addEventListener('shown.bs.modal', event => {
+        myModalEl.addEventListener("shown.bs.modal", event => {
             player.playVideo();
         });
 
@@ -3217,6 +3233,74 @@
         </div>
     </section>
 
+
+    <section class="container-fluid manegement-services" style="background: #262626">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 box-title mb-3">
+                    <h3 class="title">Serviços gerenciados na nuvem</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center order-lg-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos order-lg-1"
+                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-8 mt-5 d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">CTA OPCIONAL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- header -->
 
     <!-- Modal -->
@@ -3292,12 +3376,12 @@
 
         // init player
         function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '400',
-                width: '100%',
-                videoId: 'n8Q6pqkd7Uw',
+            player = new YT.Player("player", {
+                height: "400",
+                width: "100%",
+                videoId: "n8Q6pqkd7Uw",
                 events: {
-                    'onReady': onPlayerReady
+                    "onReady": onPlayerReady
                 }
             });
         }
@@ -3305,16 +3389,16 @@
         // when ready, wait for clicks
         function onPlayerReady(event) {
             var player = event.target;
-            iframe = $('#player');
+            iframe = $("#player");
             setupListener();
         }
 
         function setupListener() {
-            $('button.open').click(playFullscreen);
+            $("button.open").click(playFullscreen);
         }
 
         function playFullscreen() {
-            player.playVideo();//won't work on mobile
+            player.playVideo();//won"t work on mobile
 
             var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
             if (requestFullScreen) {
@@ -3322,18 +3406,15 @@
             }
         }
 
-        const myModalEl = document.getElementById('videoOpen');
-        myModalEl.addEventListener('hidden.bs.modal', event => {
+        const myModalEl = document.getElementById("videoOpen");
+        myModalEl.addEventListener("hidden.bs.modal", event => {
             player.pauseVideo();
         });
-        myModalEl.addEventListener('shown.bs.modal', event => {
+        myModalEl.addEventListener("shown.bs.modal", event => {
             player.playVideo();
         });
 
     </script>
-
-
-    <a href="#" style="background:#F20024; color:  color: #FFFFFF; " class="cta__geral">Botão</a>
 
 
 <?php get_footer(); ?>
