@@ -49,6 +49,25 @@
     </section>
 
 
+    <!-- time line -->
+    <section class="container-fluid time-line py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-time-line px-0 px-lg-2">
+                    <div class="slider-time-line">
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- segunda parte do modulo  -->
     <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
@@ -3229,10 +3248,13 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
                                  class="img-card" alt="">
                         </div>
-                        <div class="col box-infos" style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT realizou a migração do ambiente SAP on
-                               premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de Windows, rehost de
-                               Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
                         </div>
                     </div>
                 </div>
@@ -3242,10 +3264,13 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
                                  class="img-card" alt="">
                         </div>
-                        <div class="col box-infos order-lg-1" style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT realizou a migração do ambiente SAP on
-                               premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de Windows, rehost de
-                               Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        <div class="col box-infos order-lg-1"
+                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
                         </div>
                     </div>
                 </div>
@@ -3255,10 +3280,13 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
                                  class="img-card" alt="">
                         </div>
-                        <div class="col box-infos" style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT realizou a migração do ambiente SAP on
-                               premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de Windows, rehost de
-                               Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
                         </div>
                     </div>
                 </div>
