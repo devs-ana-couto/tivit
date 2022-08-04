@@ -8,7 +8,6 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 {
     $generate_element = "";
     $s_cols_per_rows = get_sub_field("gd-el-big-numbers-cols-numbers");
-    print_r($s_cols_per_rows);
     if (have_rows('ac-pb-big-numbers-group', $obj_id)):
         while (have_rows('ac-pb-big-numbers-group', $obj_id)) : the_row();
 
@@ -54,9 +53,6 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
             } else {
                 $colLimiter = round($cols2);
             }
-
-
-            print_r(get_sub_field("gd-ac-big-numbers-cols-numbers"));
 
             $template = '
 	            <!---- AC: Big Numbers Module -->

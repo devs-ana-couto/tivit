@@ -25,7 +25,7 @@ section {
 
 
   &:hover {
-    background: #990017 ;
+    background: #990017;
     color: white;
   }
 }
@@ -255,7 +255,6 @@ $primary-color: #990017;
         }
 
 
-
         p, pre {
           font-style: normal;
           font-weight: 400;
@@ -268,6 +267,7 @@ $primary-color: #990017;
 
           color: #262626;
         }
+
         h1, h2, h3, h4, h5, h6, .card-title {
           font-style: normal;
           font-weight: 600;
@@ -282,6 +282,7 @@ $primary-color: #990017;
             line-height: 22px;
           }
         }
+
         img {
           max-height: 70px;
         }
@@ -1001,6 +1002,7 @@ $primary-color: #990017;
   @media screen and (max-width: 991px) {
     padding-top: 50px;
   }
+
   .box-title {
     h1, h2, h3, h4, h5, h6 .title {
       font-style: normal;
@@ -2510,12 +2512,15 @@ $primary-color: #990017;
     min-height: 500px;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    .card-img-overlay{
+
+    .card-img-overlay {
       background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
     }
-    .row-box{
+
+    .row-box {
       min-height: 500px;
     }
+
     .box-infos {
       z-index: 1054;
 
@@ -2586,17 +2591,20 @@ $primary-color: #990017;
         line-height: 21px;
         text-transform: uppercase;
         color: #FFFFFF;
-        &:hover{
+
+        &:hover {
           background: white;
           color: $primary-color;
         }
       }
+
       .player {
         box-sizing: border-box;
         z-index: 1050;
         @media screen and (max-width: 991px) {
           //bottom: -50px;
         }
+
         .aura {
           width: 250px;
           height: 250px;
@@ -2645,7 +2653,8 @@ $primary-color: #990017;
           &:hover, &:focus, &:active {
 
           }
-          img{
+
+          img {
             @media screen and (max-width: 991px) {
               width: 61px;
               height: 61px;
@@ -2656,13 +2665,15 @@ $primary-color: #990017;
     }
   }
 }
-.manegement-services{
+
+.manegement-services {
   padding: 100px 0px;
-  @media screen and(max-width: 991px){
+  @media screen and(max-width: 991px) {
     padding: 40px 0px;
   }
-  .box-title{
-    h1, h2, h3, h4, h5, h6, .title{
+
+  .box-title {
+    h1, h2, h3, h4, h5, h6, .title {
       font-style: normal;
       font-weight: 400;
       font-size: 36px;
@@ -2673,19 +2684,70 @@ $primary-color: #990017;
 
     }
   }
-  .box-card{
-    .img-card{
+
+  .box-card {
+    .img-card {
       height: 90px;
     }
   }
-  .box-infos{
+
+  .box-infos {
     padding: 20px 35px;
     //border-left: 3px solid !important;
   }
 }
 
-.time-line{
-  .box-time-line{
+.time-line {
+  //height: 620px;
+  .box-time-line {
+    overflow: hidden;
 
+    .box-vmask {
+      z-index: 1054;
+      mix-blend-mode: multiply;
+      .mask-active {
+        height: 570px;
+        img {
+          height: 570px;
+        }
+      }
+    }
+
+    .box-active {
+      z-index: 1053;
+
+      .mask-active {
+
+
+        .mask-images {
+          object-fit: cover;
+          -webkit-mask-image: url("../images/modulos/time-line/mask-principal.svg");
+          -webkit-mask-repeat: no-repeat;
+          mask-image: url("../images/modulos/time-line/mask-principal.svg");
+          mask-repeat: no-repeat;
+        }
+      }
+    }
+
+
+    .last, .next {
+      @media screen and (min-width: 991px) {
+        overflow: hidden;
+        height: 340px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .mask {
+        background: linear-gradient(2.11deg, #000000 4.05%, rgba(0, 0, 0, 0.3) 43.72%);
+      }
+    }
+
+    .box-controler {
+      height: 280px;
+    }
   }
+
 }
