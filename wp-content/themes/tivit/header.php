@@ -99,7 +99,7 @@
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'header-menu',
-                            'depth' => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                            'depth' => 1, // 1 = no dropdowns, 2 = with dropdowns.
                             'container' => 'div',
                             'container_class' => 'collapse navbar-collapse',
                             'container_id' => 'bs-example-navbar-collapse-1',
@@ -188,8 +188,51 @@
                                     </div>
                                 </div>
                                 <div class="col-md-9">
-                                    <div class="row">
+<?php
+$menu = wp_get_nav_menu_object( 'solucoes' );
+$menu_items = wp_get_nav_menu_items($menu->term_id);
+$menus = array();
+for ($mm=0; $mm<count($menu_items); $mm++) {
+    $eu =  $menu_items[$mm]->ID;
+    $pai = $menu_items[$mm]->menu_item_parent;
+    $oque = array('link'=>$menu_items[$mm]->url, 'titulo'=>$menu_items[$mm]->title);
+    if ($pai>0) {
+        $menus[$pai]['submenu'][] = $oque;
+    } else {
+        $menus[$eu] = $oque;
+    }
+}
+// print_r($menus);
+echo '<div class="row">';
+$ss=0;
+foreach ($menus as $chave => $conteudo) {
+    if ($ss > 2) {
+        $mt5= "mt-lg-5";
+    }
+    echo '<div class="col-md-4 ' . $mt5 .'">';
+    echo '<div class="textMenu">';
+    echo '<h2><a href="'.$conteudo['link'].'">'.$conteudo['titulo'].'</a></h2>';
+    echo '<div class="menu-solucoes-cloud-solutions-container"><ul id="menu-solucoes-cloud-solutions" class="menu" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">';
+    $list_por_servico = $conteudo['submenu'];
+    foreach ($list_por_servico as $key => $submenu) {
+            echo '<li id="menu-item-'.$key.'" class="menu-item menu-item-type-post_type menu-item-object-solucoes menu-item-'.$key.' nav-item">';
+            echo '<a itemprop="url" href="' . $submenu['link'] . '" class="nav-link">';
+            echo '<span itemprop="name">' . $submenu['titulo'] . '</span></a></li>';
+
+    }
+    echo '</ul></div>';
+    echo '</div>';
+    echo '</div>';
+    $ss++;
+}
+// echo '</div>';
+// echo '</div>';
+// echo '</div>';
+echo '</div>';
+?>
+                                <div class="row" style="display:none;">
                                         <?php
+
                                         for ($ss = 0; $ss < count($rel_por_servico); $ss++) {
                                             if ($ss > 2) {
                                                 $mt5= "mt-lg-5";
