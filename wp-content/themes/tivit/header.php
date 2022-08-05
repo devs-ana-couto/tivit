@@ -235,7 +235,7 @@ echo '</div>';
 
                                         for ($ss = 0; $ss < count($rel_por_servico); $ss++) {
                                             if ($ss > 2) {
-                                                $mt5= "mt-lg-5";
+                                                $mt5= "pt-lg-5 bt-1-w";
                                             }
                                             echo '<div class="col-md-4 ' . $mt5 .'">';
                                             echo '<div class="textMenu">';
