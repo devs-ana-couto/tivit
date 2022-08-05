@@ -54,13 +54,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 box-time-line px-0 px-lg-2">
-                    <div class="slider-time-line">
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
+                    <div class="row position-relative">
+                        <div class="box-vmask position-absolute h-100">
+                            <div class="col-12 h-100 position-relative">
+                                <div class="card-img-overlay d-flex justify-content-center mask-active">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/time-line/mascara_v.svg"
+                                         alt="">
+                                   </div>
+                            </div>
+                        </div>
+
+                        <div class="box-active position-absolute h-100">
+                            <div class="col-12 h-100 position-relative">
+                                <div class="card-img-overlay mask-active">
+                                    <div class="col-12 d-flex justify-content-center">
+
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/time-line/active.png"
+                                             class="mask-images" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 position-relative last p-0">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/time-line/last.png"
+                                 alt="">
+                            <div class="card-img-overlay mask"></div>
+                        </div>
+                        <div class="col-6 position-relative next p-0">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/time-line/next.png"
+                                 alt="">
+                            <div class="card-img-overlay mask"></div>
+                        </div>
+                        <div class="col-12 box-controler" style="background: #000;"></div>
                     </div>
                 </div>
             </div>

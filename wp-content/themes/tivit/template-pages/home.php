@@ -22,7 +22,7 @@
                                      src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg"
                                      alt="mask"/>
                                 <div class="title position-absolute">
-                                    <h1><?= $chamada[$i] ?></h1>
+                                    <?= $chamada[$i] ?>
                                     <div class="botao">
                                         <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>">Saiba Mais</a>
                                     </div>
