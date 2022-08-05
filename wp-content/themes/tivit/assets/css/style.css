@@ -7885,9 +7885,6 @@ div {
     margin: 5px 5px 0 5px;
   }
 }
-#main-solutions {
-  margin: 100px 0 0 0;
-}
 @media (max-width: 1024px) {
   #main-solutions {
     margin: 50px 0px;
@@ -7929,7 +7926,7 @@ div {
 #main-solutions .tag img {
   width: 60px;
   top: -40px;
-  left: 59%;
+  right: 0;
   z-index: 1;
 }
 #main-solutions .subtitle {
@@ -10699,7 +10696,6 @@ div {
 
 .box-big-number .box-title-top {
   padding-top: 100px;
-  padding-bottom: 40px;
 }
 .box-big-number .box-title-top h1, .box-big-number .box-title-top h2, .box-big-number .box-title-top h3, .box-big-number .box-title-top h4, .box-big-number .box-title-top h5, .box-big-number .box-title-top h6, .box-big-number .box-title-top .title-top {
   z-index: 1054;
