@@ -1,6 +1,8 @@
 <?php /* Template Name: Pessoas e Carreiras */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">
             <div class="row justify-content-center">

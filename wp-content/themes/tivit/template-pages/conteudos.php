@@ -1,6 +1,8 @@
 <?php /* Template Name: Conteudos */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <div class="a-tivit-cases cases conteudos">
   <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <?=do_shortcode('[ac_bloco_header_conteudo]') ?>

@@ -1,6 +1,8 @@
 <?php /* Template Name: ESG */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="esg-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_esg') : the_field('banner_desktop_esg'); ?>') no-repeat center center; background-size: cover;">
   <div class="esg-hero-title">
@@ -63,7 +65,7 @@
                     <?the_field('label_3')?>
                   </p>
               </div>
-            </div>  
+            </div>
 
             <div class="col-12 col-md-3">
               <p>
@@ -74,7 +76,7 @@
                     <?the_field('label_4')?>
                   </p>
               </div>
-            </div> 
+            </div>
 
           </div>
         </div>

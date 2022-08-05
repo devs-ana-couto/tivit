@@ -1,6 +1,8 @@
 <?php /* Template Name: Soluções Novo */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="services-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_psolucoes') : the_field('banner_desktop_psolucoes'); ?>') no-repeat center center; background-size: cover;">
     <div class="services-hero-title">

@@ -1,6 +1,8 @@
 <?php /* Template Name: Ventures */ ?>
-
 <?php get_header(); ?>
+
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="ventures-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_ventures') : the_field('banner_desktop_ventures'); ?>') no-repeat center center; background-size: cover;">
   <div class="ventures-hero-title">
@@ -220,7 +222,7 @@
       <?
         endfor;
         endif;
-       
+
       ?>
   </div>
   </div>
@@ -297,7 +299,7 @@
           </div>
       </div>
     </div>
-    
+
 
   </div>
 </section>
@@ -308,7 +310,7 @@
     <div class="container">
       <div class="row">
         <div class="title">
-          <h2 class="text-center">A atuação da Ventures empreende com e para você. Conheça nossos cases:</h2> 
+          <h2 class="text-center">A atuação da Ventures empreende com e para você. Conheça nossos cases:</h2>
         </div>
         <?=do_shortcode('[ac-bloco-cases]')?>
       </div>
