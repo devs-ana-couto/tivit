@@ -1,6 +1,8 @@
 <?php /* Template Name: Soluções Ativas */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="services-hero position-relative">
   <div class="services-hero-title">

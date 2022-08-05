@@ -1,6 +1,8 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <section class="home-hero">
         <div id="hero" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
             <div class="carousel-inner text-center">

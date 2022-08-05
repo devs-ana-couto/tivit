@@ -1,6 +1,8 @@
 <?php /* Template Name: Landing Tbanks */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <div class="lp-tbanks-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_tbanks') : the_field('banner_desktop_tbanks'); ?>')">
   <div class="container">
     <div class="row">
@@ -22,7 +24,7 @@
     <div class="lp-tbanks-arrow text-center mb-5">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/landing/tbanks/icons/seta-purple.svg" class="bounce" alt="Tbanks Saiba Mais">
     </div>
-    
+
     <div class="row">
       <div class="col-12">
 
@@ -34,7 +36,7 @@
 
       </div>
 
-      <div class="lp-tbanks-services text-center">      
+      <div class="lp-tbanks-services text-center">
         <div class="">
           <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-5">
             <h2 class="title text-center">
@@ -115,7 +117,7 @@
                 <div class="w-100 position-relative">
                   <a class="carousel-control-prev bg-transparent w-aut" href="#serviceMobileCarousel" role="button" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  </a>  
+                  </a>
                   <div class="d-flex flex-row justify-content-center counter3 mt-3">
                     <div class="numactive3"></div><div class="numseparation3"></div><div class="numtotal3"></div>
                   </div>
@@ -384,7 +386,7 @@
           <div class="w-100 position-relative mt-4">
             <a class="carousel-control-prev bg-transparent w-aut" href="#paymentMobileCarousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>  
+            </a>
             <div class="d-flex flex-row justify-content-center counter4 mt-3">
               <div class="numactive4"></div><div class="numseparation4"></div><div class="numtotal4"></div>
             </div>
@@ -588,7 +590,7 @@
                     <div class="w-100 position-relative mt-2">
                       <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      </a>  
+                      </a>
                       <div class="d-flex flex-row justify-content-center counter2 mt-3">
                         <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
                       </div>

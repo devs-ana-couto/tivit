@@ -1,6 +1,8 @@
 <?php /* Template Name: Inovação */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <!-- Hero banner-->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">
@@ -128,7 +130,7 @@
           <p>Juntas, nossas marcas tem skills para atender nossos clientes com diversas soluções:</p>
         </div>
       </div>
-      <div class="w-100"> 
+      <div class="w-100">
         <div class="d-flex justify-content-center flex-row services">
           <?
             if (have_rows('skills_inovacao_ventures')):
