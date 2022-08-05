@@ -1,6 +1,8 @@
 <?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <!-- Modal -->
     <!--<div class="modal fade" id="videoOpen" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoOpenLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">

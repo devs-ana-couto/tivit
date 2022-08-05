@@ -1,6 +1,8 @@
 <?php /* Template Name: A Tivit */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <!-- Modal -->
     <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
          aria-hidden="true">

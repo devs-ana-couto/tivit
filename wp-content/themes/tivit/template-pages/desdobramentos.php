@@ -1,6 +1,8 @@
 <?php /* Template Name: Desdobramentos de Soluções */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="unfolding-hero position-relative">
   <div class="unfolding-hero-title">
@@ -53,7 +55,7 @@
                     <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
                         <h2>XXX</h2>
                         <div class="subtitle">
-                            Clientes atendidos 
+                            Clientes atendidos
                         </div>
                     </div>
                 </div>
@@ -61,25 +63,25 @@
                     <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
                         <h2>+600</h2>
                         <div class="subtitle">
-                            Profissionais dedicados à nuvem 
+                            Profissionais dedicados à nuvem
                         </div>
-                    </div>       
+                    </div>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
                         <h2>XX</h2>
                         <div class="subtitle">
-                            Certificações de parceiros 
+                            Certificações de parceiros
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
                         <h2>XX</h2>
                         <div class="subtitle">
-                            Certificações de parceiros 
+                            Certificações de parceiros
                         </div>
-                    </div>     
+                    </div>
                 </div>
             </div>
 
@@ -92,7 +94,7 @@
                         </div>
                         <div class="col-6">
                             <div class="subtitle">
-                                Clientes atendidos 
+                                Clientes atendidos
                             </div>
                         </div>
                     </div>
@@ -104,7 +106,7 @@
                         </div>
                         <div class="col-6">
                             <div class="subtitle">
-                                Profissionais dedicados à nuvem 
+                                Profissionais dedicados à nuvem
                             </div>
                         </div>
                     </div>
@@ -264,7 +266,7 @@
         <div>
             <h2>CYBERSECURITY</h2>
             <p>
-                Para empresas que buscam capacidade de escalonamento com agilidade de implantação e custos de infraestrutura sob demanda, 
+                Para empresas que buscam capacidade de escalonamento com agilidade de implantação e custos de infraestrutura sob demanda,
                 a solução está nos Serviços de Public Cloud da TIVIT.
             </p>
         </div>
@@ -369,7 +371,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
-            
+
             </div>
         </div>
     </div>
@@ -598,7 +600,7 @@
     <div class="row hide-mobile">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="cardContent p-1"> 
+        <div class="cardContent p-1">
           <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
             <div class="position-absolute tagContent">artigo</div>
@@ -692,7 +694,7 @@
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide4 content active">
                   <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2"> 
+                    <div class="cardContent p-2">
                       <div class="img position-relative">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
                         <div class="position-absolute tagContent">artigo</div>
