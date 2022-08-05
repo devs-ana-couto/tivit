@@ -2,6 +2,7 @@
 get_header();
 
 if(have_posts()) : while(have_posts()) : the_post();
+page_bulder_init(get_the_ID(),$post,true);
 ?>
 
 
@@ -69,15 +70,15 @@ if(have_posts()) : while(have_posts()) : the_post();
                             <div class="subtitle">
                             <?the_field('item_02_-_label_lp')?>
                             </div>
-                        </div>       
+                        </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
                             <h2><?the_field('item_03_-_numeros_lp')?></h2>
                             <div class="subtitle">
-                            <?the_field('item_03_-_label_lp')?> 
+                            <?the_field('item_03_-_label_lp')?>
                             </div>
-                        </div>     
+                        </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="d-flex justify-content-center align-items-center w-100 bigNumbersTitle flex-column position-relative">
@@ -85,7 +86,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                             <div class="subtitle">
                                 <?the_field('item_04_-_label_lp')?>
                             </div>
-                        </div>     
+                        </div>
                     </div>
                 </div>
 
@@ -210,7 +211,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                                     </div>
                                 </div>
                             </div>
-                        <? 
+                        <?
                             endfor;
                             endif;
                         ?>
@@ -227,7 +228,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
                     </div>
-                
+
                 </div>
             </div>
         </div>
@@ -265,7 +266,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                             </div>
                         </div>
                     </div>
-                    <? 
+                    <?
                         endfor;
                         endif;
                     ?>
@@ -373,7 +374,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         </div>
         </div>
     </div>
-    
+
 <? } ?>
 
 <div id="contatoUnfolding" class="lp-tbanks-form">

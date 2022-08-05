@@ -2,7 +2,7 @@
 get_header();
 
 if(have_posts()) : while(have_posts()) : the_post();
-
+    page_bulder_init(get_the_ID(),$post,true);
 ?>
 
 <!-- Hero banner-->
@@ -31,7 +31,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     </div>
 </section>
 
-<? 
+<?
 
     $introduction = '/components/introduction.php';
 
@@ -176,7 +176,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 2) {
             if(get_field('exibir_clouds') == true){
@@ -251,7 +251,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
   </div>
   <!-- //Clouds -->
 
@@ -331,7 +331,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?>   
+    ?>
 
     <?
         if($clouds_order == 4) {
@@ -407,7 +407,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
   </div>
   <!-- //Middle Content -->
 
@@ -488,7 +488,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     </div>
     <!-- //Stratregy  -->
 
@@ -567,7 +567,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 7) {
             if(get_field('exibir_clouds') == true){
@@ -793,7 +793,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
 
     <?
         if($clouds_order == 10) {
@@ -869,7 +869,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 11) {
             if(get_field('exibir_clouds') == true){
@@ -944,7 +944,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 12) {
             if(get_field('exibir_clouds') == true){
@@ -1019,7 +1019,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 13) {
             if(get_field('exibir_clouds') == true){
@@ -1094,7 +1094,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 14) {
             if(get_field('exibir_clouds') == true){
@@ -1319,7 +1319,7 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <?
         if($clouds_order == 17) {
             if(get_field('exibir_clouds') == true){
@@ -1394,10 +1394,10 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?> 
+    ?>
     <!-- //Depoiments  -->
 
-    <!-- Content -->  
+    <!-- Content -->
     <?
       include get_template_directory() . $content_page;
     ?>

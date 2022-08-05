@@ -1,6 +1,8 @@
 <?php /* Template Name: Contato */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
     <!-- Banner -->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">

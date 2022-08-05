@@ -1,6 +1,7 @@
 <?php /* Template Name: Landing TDX */ ?>
-<?php get_header(); 
-?>
+<?php get_header(); ?>
+
+<?php page_bulder_init(get_the_ID(),$post,true);?>
 
 <div class="lp-tbanks-hero lp-tdx-hero" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile') : the_field('banner_desktop'); ?>') no-repeat center center; background-size: cover;">
   <div class="container">
@@ -52,7 +53,7 @@
                 </br>
                 Clientes
               </p>
-            </div>  
+            </div>
           </div>
         </div>
 
@@ -90,7 +91,7 @@
         <div class="mt-5">
           <div class="row d-flex justify-content-center align-items-center">
             <?php
-                // Check rows exists.   
+                // Check rows exists.
                 if( have_rows('parceiros_tdx') ):
                     // Loop through rows.
                     for($i=0; have_rows('parceiros_tdx'); $i++) : the_row();
@@ -121,7 +122,7 @@
         <div id="triangle-down"></div>
 
         <div class="carousel-inner">
-        
+
           <div class="row columnReverseMobile">
             <div class="col-12 col-md-6 lp-tbanks-confira-bg-right lp-tdx-confira-bg-right">
               <div class="lp-tbanks-confira-content">
@@ -237,7 +238,7 @@
     <div class="row">
       <div class="col-12">
         <div class="lp-tdx-como-fazemos-content">
-            <h2><? the_field('titulo_como_fazemos'); ?></h2>          
+            <h2><? the_field('titulo_como_fazemos'); ?></h2>
             <? the_field('texto_como_fazemos'); ?>
         </div>
         <img class="fade-in-bottom" src="<?= $detect->isMobile() ? the_field('grafico_mobile_como_fazemos') : the_field('grafico_desktop_como_fazemos');?>" alt="Como fazemos TDX">
@@ -250,15 +251,15 @@
   <div class="container">
 
     <div class="lp-tdx-metodologia-content">
-        
-      <? 
+
+      <?
       $entrega_de_valor = get_field('entrega_de_valor');
       if($entrega_de_valor): ?>
       <h2><?=$entrega_de_valor['titulo'] ?></h2>
       <p class="paragrafo2">
       <?=$entrega_de_valor['descricao'] ?>
       </p>
-      
+
     </div>
     <?php
         if($detect->isMobile()){
@@ -308,11 +309,11 @@
                 </div>
             </div>
         </div>
-    
-        <? 
+
+        <?
             endfor;
             endif;
-            endif; 
+            endif;
 
             if($detect->isMobile()){
                 echo '</div>
@@ -322,14 +323,14 @@
                 echo '</div>';
             }
         ?>
-    
-   
+
+
 
     <div class="hide-desktop mt-4">
     <div class="w-100 position-relative mt-4">
         <a class="carousel-control-prev bg-transparent w-aut" href="#valuesMobileCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>  
+        </a>
         <div class="d-flex flex-row justify-content-center counter4 mt-3">
             <div class="numactive4"></div>
             <div class="numseparation4"></div>
@@ -346,7 +347,7 @@
         <a href="#" class="btn btn-conheca">Conheça todas nossas soluções</a>
     </div>
 
-            
+
   </div>
 </div>
 
@@ -463,7 +464,7 @@
                     <div class="w-100 position-relative mt-2">
                       <a class="carousel-control-prev bg-transparent w-aut" href="#customerCarousel" role="button" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      </a>  
+                      </a>
                       <div class="d-flex flex-row justify-content-center counter2 mt-3">
                         <div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>
                       </div>
@@ -509,7 +510,7 @@
     <div class="row hide-mobile">
       <!-- content 1 -->
       <div class="col-12 col-md-4">
-        <div class="cardContent p-1"> 
+        <div class="cardContent p-1">
           <div class="img position-relative">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
             <div class="position-absolute tagContent">artigo</div>
@@ -603,7 +604,7 @@
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item heroslide3 content active">
                   <div class="col-11 m-0 p-0">
-                    <div class="cardContent p-2"> 
+                    <div class="cardContent p-2">
                       <div class="img position-relative">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/artigo1.png" alt="Depoimento">
                         <div class="position-absolute tagContent">artigo</div>

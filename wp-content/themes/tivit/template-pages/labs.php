@@ -1,6 +1,8 @@
 <?php /* Template Name: Labs */ ?>
 <?php get_header(); ?>
 
+<?php page_bulder_init(get_the_ID(),$post,true);?>
+
 <!-- Hero banner-->
 <div class="labs-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_tivit_labs') : the_field('banner_desktop_tivit_labs'); ?>') no-repeat center center; background-size: cover;">
   <div class="labs-hero-title">
@@ -47,7 +49,7 @@
   <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
-          <? 
+          <?
             if( have_rows('itens_de_atuacao_pilares_tivit_labs') ):
             // Loop through rows.
                 for($i=0; have_rows('itens_de_atuacao_pilares_tivit_labs'); $i++) : the_row();
