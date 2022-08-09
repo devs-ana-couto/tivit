@@ -1,7 +1,7 @@
 <?php /* Template Name: Cases */ ?>
 <?php get_header(); ?>
 
-<?php page_bulder_init(get_the_ID(),$post,true);?>
+<?php page_bulder_init(get_the_ID(), $post, true); ?>
 
     <!-- Modal -->
     <!--<div class="modal fade" id="videoOpen" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoOpenLabel" aria-hidden="true">
@@ -50,34 +50,35 @@
             </div>
         </div>
         <div class="col-12 p-0 box-header position-relative"
-             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/cases/bannerdesktop.jpg"');">
-            <div class="card-img-overlay mask-gradient"></div>
-            <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
-                <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
-                    <p class="desc-title">CASES</p>
-                    <h1 class="title">Nome do cliente videocase <strong>Lorem ipsum</strong></h1>
-                </div>
-                <div class="col-auto player position-absolute">
-                    <div class="d-flex flex-column">
-                        <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
-                            <div class="col-12">
-                                <div class="aura"></div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-center position-absolute">
-                                <button data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
-                                         alt="...">
-                                </button>
-                            </div>
+             style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/cases/bannerdesktop.jpg"
+        ');">
+        <div class="card-img-overlay mask-gradient"></div>
+        <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
+            <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
+                <p class="desc-title">CASES</p>
+                <h1 class="title">Nome do cliente videocase <strong>Lorem ipsum</strong></h1>
+            </div>
+            <div class="col-auto player position-absolute">
+                <div class="d-flex flex-column">
+                    <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
+                        <div class="col-12">
+                            <div class="aura"></div>
                         </div>
-                        <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
-                            <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                Assista ao reel
+                        <div class="col-12 d-flex justify-content-center position-absolute">
+                            <button data-bs-toggle="modal" data-bs-target="#videoOpen">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
+                                     alt="...">
                             </button>
                         </div>
                     </div>
+                    <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
+                        <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
+                            Assista ao reel
+                        </button>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -92,7 +93,7 @@
                             <h2>Nome do cliente videocase Lorem ipsum</h2>
                         </div>
                         <div class="maskDiv text-center hide-desktop">
-                            <img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/contato/banner-mask.svg"
+                            <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/contato/banner-mask.svg"
                                  class="position-absolute mask" alt="Máscara">
                         </div>
                     </div>
@@ -101,18 +102,18 @@
         </div>
         <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
             <img class="mask w-100 position-absolute"
-                 src="<?php /*echo get_template_directory_uri(); */?>/assets/images/esg/v_slider_home.svg" alt="mask"/>
+                 src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/esg/v_slider_home.svg" alt="mask"/>
         </div>
         <div class="botaoReels m-0 hide-mobile">
             <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
                 Assista ao reel
-                <img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/a-tivit/play.svg" alt="...">
+                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
             </button>
         </div>
         <div class="botaoReels m-0 hide-desktop">
             <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
                 Assista ao reel
-                <img src="<?php /*echo get_template_directory_uri(); */?>/assets/images/a-tivit/play.svg" alt="...">
+                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
             </button>
         </div>
     </div>-->
@@ -138,15 +139,32 @@
         </div>
     </div>
 
-    <div class="a-tivit-cases cases">
+    <!--<div class="a-tivit-cases cases">
         <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="container">
                 <div class="row">
-                    <?= do_shortcode('[ac-bloco-cases]') ?>
+                    <?/*= do_shortcode('[ac-bloco-cases]') */?>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+
+    <section class="container px-0 slider-projetos solto">
+        <div class="col-12 px-0">
+            <div id="slider-categoria01" class="carousel slide slider-categoria"
+                 data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <?php echo do_shortcode('[ac-bloco-cases]') ?>
+            </div>
+        </div>
+    </section>
 
     <div class="cases-recentes">
         <!--- Desktop -->
@@ -211,6 +229,7 @@
                 requestFullScreen.bind(iframe)();
             }
         }
+
         const myModalEl = document.getElementById('videoOpen');
         myModalEl.addEventListener('hidden.bs.modal', event => {
             player.pauseVideo();

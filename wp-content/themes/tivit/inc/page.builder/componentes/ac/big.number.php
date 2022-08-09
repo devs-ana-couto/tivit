@@ -113,7 +113,6 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 
             $generate_content = "";
             foreach ($numbers as $it) {
-
                 $generate_content .=
                     str_replace(
                         array('{label}', '{number}', '{cols}'),

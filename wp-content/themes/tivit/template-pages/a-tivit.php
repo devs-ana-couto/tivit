@@ -285,7 +285,7 @@
     </div>
 
     <!-- Conheça a nossa equipe -->
-    <?= do_shortcode('[ac-bloco-equipe]'); ?>
+   <!-- --><?/*= do_shortcode('[ac-bloco-equipe]'); */?>
 
     <!-- Bloco ESG + SLIDER -->
     <div id="esgTivit" class="esg a-tivit carousel slide carousel-fade" data-bs-ride="carousel">
