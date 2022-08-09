@@ -22,6 +22,7 @@ require_once('componentes/ac/beneficios.php');
 require_once('componentes/ac/video.php');
 require_once('componentes/ac/card.icon.php');
 require_once('componentes/ac/bloco.intro.php');
+require_once('componentes/ac/slider-simple.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -29,6 +30,7 @@ require_once('componentes/video.full.php');
 require_once('componentes/image.full.php');
 require_once('componentes/gallery.php');
 require_once('componentes/iframe.php');
+
 
 
 function page_bulder_init($obj_id, $obj = null, $echo = true)
@@ -119,6 +121,9 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                     break;
                 case 'gd-ac-bloco-intro':
                     $return[$layout] = pb_ac_bloco_intro($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-slider-simple':
+                    $return[$layout] = pb_ac_slide_simple($obj_id, $obj, $block, $echo);
                     break;
 
             }

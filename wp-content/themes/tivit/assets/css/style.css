@@ -12418,43 +12418,4 @@ div {
   padding: 20px 35px;
 }
 
-.time-line .box-time-line {
-  overflow: hidden;
-}
-.time-line .box-time-line .box-vmask {
-  z-index: 1054;
-  mix-blend-mode: multiply;
-}
-.time-line .box-time-line .box-vmask .mask-active {
-  height: 570px;
-}
-.time-line .box-time-line .box-vmask .mask-active img {
-  height: 570px;
-}
-.time-line .box-time-line .box-active {
-  z-index: 1053;
-}
-.time-line .box-time-line .box-active .mask-active .mask-images {
-  object-fit: cover;
-  -webkit-mask-image: url("../images/modulos/time-line/mask-principal.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-image: url("../images/modulos/time-line/mask-principal.svg");
-  mask-repeat: no-repeat;
-}
-@media screen and (min-width: 991px) {
-  .time-line .box-time-line .last, .time-line .box-time-line .next {
-    overflow: hidden;
-    height: 340px;
-  }
-}
-.time-line .box-time-line .last img, .time-line .box-time-line .next img {
-  width: 100%;
-}
-.time-line .box-time-line .last .mask, .time-line .box-time-line .next .mask {
-  background: linear-gradient(2.11deg, #000000 4.05%, rgba(0, 0, 0, 0.3) 43.72%);
-}
-.time-line .box-time-line .box-controler {
-  height: 280px;
-}
-
 /*# sourceMappingURL=style.css.map */

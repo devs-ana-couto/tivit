@@ -1073,7 +1073,8 @@ function selecionaMenu(id) {
         }
     });
 }
-function paragrafoDinamico(index){
+
+function paragrafoDinamico(index) {
     var idDesc = "#portfolio__desc-" + index;
     var textDesc = document.querySelector(idDesc).innerText;
 
@@ -1086,7 +1087,8 @@ function paragrafoDinamico(index){
 
 
 }
-function linkDinamico(index){
+
+function linkDinamico(index) {
     var idLink = "#portfolio__link__url-" + index;
     var textLink = document.querySelector(idLink).innerText;
 
@@ -1097,30 +1099,26 @@ function linkDinamico(index){
     ctaLink.classList.add("fadein");
     textDisplay.appendChild(ctaLink);
 }
+
 infosPortfolio(null, 0);
 
-$('.slider-time-line').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+function getBaseUrl() {
+    // Nome do host
+    let hostName = location.hostname;
+
+    if (hostName === "localhost") {
+        // Endereço após o domínio do site
+        pathname = window.location.pathname;
+        // Separa o pathname com uma barra transformando o resultado em um array
+        splitPath = pathname.split('/');
+
+        // Obtém o segundo valor do array, que é o nome da pasta do servidor local
+        path = splitPath[1];
+
+        baseUrl = "http://" + hostName + "/" + path;
+    } else {
+        baseUrl = "http://" + hostName;
+    }
+
+    return baseUrl;
+}
