@@ -125,6 +125,9 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                 case 'gd-ac-slider-simple':
                     $return[$layout] = pb_ac_slide_simple($obj_id, $obj, $block, $echo);
                     break;
+                case 'gd-ac-header-internal':
+                    $return[$layout] = pb_ac_header_internal($obj_id, $obj, $block, $echo);
+                    break;
 
             }
             $block++;

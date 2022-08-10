@@ -1,6 +1,6 @@
 <?php
 
-function pb_ac_slide_simple($obj_id, $obj = null, $echo = true)
+function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = '';
     $generate_content = '';
@@ -9,32 +9,16 @@ function pb_ac_slide_simple($obj_id, $obj = null, $echo = true)
     $template = '
     <section class="container px-0 slider-projetos solto">
         <div class="col-12 px-0">
-            <div id="slider-categoria01" class="carousel slide slider-categoria"
+            <div id="slider-categoria' . $obj_id . '" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                    {bullets}
                 </div>
                 <div class="carousel-inner">
                     {content}
                 </div>
                 <div class="col-auto position-relative controlador">
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    {arrows}
                 </div>
 
             </div>
@@ -88,6 +72,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $echo = true)
                     </div>
     ';
 
+
     foreach ($r_slider as $key => $slide) {
         $title = $slide["gd-el-slider-simples-repeter-title"];
         $descript = $slide["gd-el-slider-simples-repeter-descript"];
@@ -113,10 +98,59 @@ function pb_ac_slide_simple($obj_id, $obj = null, $echo = true)
                 $content
             );
     }
+
+    $bullets = '              
+        <button type="button" data-bs-target="#slider-categoria{obj_id}" data-bs-slide-to="{id_bullet}"
+              {active} aria-current="true" aria-label="Slide {id_bullet}"></button>
+              
+    ';
+
+    $generate_bullets = '';
+    foreach ($r_slider as $key => $bullet) {
+        if (count($r_slider) > 1) {
+            $active = '';
+
+            if ($key === 0)
+                $active = 'class="active"';
+
+            $generate_bullets .=
+                str_replace(
+                    array('{active}', '{obj_id}', '{id_bullet}'),
+                    array($active, $obj_id, $key),
+                    $bullets
+                );
+        } else {
+            break;
+        }
+    }
+
+    $generate_arrows = '';
+    if (count($r_slider) > 1) {
+        $arrows = '<button class="carousel-control-prev" type="button"
+                            data-bs-target="#slider-categoria{obj_id}"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#slider-categoria{obj_id}"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>';
+
+        $generate_arrows =
+            str_replace(
+                array('{obj_id}'),
+                array( $obj_id),
+                $arrows
+            )
+        ;
+    }
     $generate_element =
         str_replace(
-            array('{id}', '{content}'),
-            array($obj_id, $generate_content),
+            array('{id}', '{content}', '{bullets}', '{arrows}'),
+            array($obj_id, $generate_content, $generate_bullets, $generate_arrows),
             $template
         );;
 

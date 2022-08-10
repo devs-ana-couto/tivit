@@ -1,7 +1,7 @@
 <?php /* Template Name: A Tivit */ ?>
 <?php get_header(); ?>
 
-<?php page_bulder_init(get_the_ID(),$post,true);?>
+<?php page_bulder_init(get_the_ID(), $post, true); ?>
 
     <!-- Modal -->
     <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
@@ -206,16 +206,22 @@
 </div> -->
 
     <div class="a-tivit-cases cases ctivit">
-    <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="container">
-            <div class="row">
-                <div class="title">
-                    <h2 class="text-center">Confira o que nossas parcerias estratégicas já fizeram!</h2>
-                </div>
-                <?= do_shortcode('[ac-bloco-cases]') ?>
+    <section class="container px-0 slider-projetos solto">
+        <div class="col-12 px-0">
+            <div id="slider-categoria01" class="carousel slide slider-categoria"
+                 data-bs-ride="carousel">
+                <!--<div class="carousel-indicators">
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>-->
+                <?php echo do_shortcode('[ac-bloco-cases]') ?>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="a-tivit-inovacao">
         <div class="container">
@@ -285,7 +291,7 @@
     </div>
 
     <!-- Conheça a nossa equipe -->
-   <!-- --><?/*= do_shortcode('[ac-bloco-equipe]'); */?>
+    <!-- --><? /*= do_shortcode('[ac-bloco-equipe]'); */ ?>
 
     <!-- Bloco ESG + SLIDER -->
     <div id="esgTivit" class="esg a-tivit carousel slide carousel-fade" data-bs-ride="carousel">

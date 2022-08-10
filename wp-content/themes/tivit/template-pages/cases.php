@@ -153,14 +153,14 @@
         <div class="col-12 px-0">
             <div id="slider-categoria01" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <!--<div class="carousel-indicators">
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                </div>
+                </div>-->
                 <?php echo do_shortcode('[ac-bloco-cases]') ?>
             </div>
         </div>
