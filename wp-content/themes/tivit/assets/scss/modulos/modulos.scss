@@ -1277,8 +1277,11 @@ $primary-color: #990017;
     }
 
     .carousel-indicators {
-      margin-bottom: 0px !important;
+      margin-bottom: -15px !important;
       bottom: -20px;
+      @media screen and (max-width: 991px) {
+        margin-bottom: -25px !important;
+      }
     }
   }
 
@@ -1927,8 +1930,8 @@ $primary-color: #990017;
     list-style: none;
     z-index: 1001;
     @media screen and (max-width: 991px) {
-      bottom: 2rem !important;
-      right: 25px !important;
+      bottom: 9rem !important;
+      right: 30px !important;
       top: unset;
     }
   }
@@ -2206,6 +2209,9 @@ $primary-color: #990017;
   .carousel-indicators {
     bottom: 9rem;
     right: 40px;
+  }
+  .box-background-full{
+      z-index: -1;
   }
 }
 

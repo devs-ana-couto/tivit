@@ -6,8 +6,13 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
     $generate_content = '';
     $r_slider = get_sub_field("gd-el-slider-simples-repeter");
 
+    $full_background = get_sub_field("gd-el-header-internal_mask_background_full");
+    $metade_top = get_sub_field("gd-el-header-internal_mask_background_50_top");
+    $metade_bottom = get_sub_field("gd-el-header-internal_mask_background_50_bottom");
+
     $template = '
-    <section class="container px-0 slider-projetos solto">
+    <section class="container-fluid px-0 slider-projetos solto position-relative">
+        <div class="container">
         <div class="col-12 px-0">
             <div id="slider-categoria' . $obj_id . '" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
@@ -20,8 +25,12 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                 <div class="col-auto position-relative controlador">
                     {arrows}
                 </div>
-
             </div>
+        </div>
+        </div>
+        <div class="card-img-overlay box-background-full" style="background: {full_back};">
+            <div class="w-100 h-50" style="background: {meio_top}"></div>
+            <div class="w-100 h-50" style="background: {meio_bottom}"></div>
         </div>
     </section> 
     ';
@@ -149,8 +158,8 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
     }
     $generate_element =
         str_replace(
-            array('{id}', '{content}', '{bullets}', '{arrows}'),
-            array($obj_id, $generate_content, $generate_bullets, $generate_arrows),
+            array('{id}', '{content}', '{bullets}', '{arrows}', '{full_back}', '{meio_top}', '{meio_bottom}'),
+            array($obj_id, $generate_content, $generate_bullets, $generate_arrows, $full_background, $metade_top, $metade_bottom),
             $template
         );;
 

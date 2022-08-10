@@ -52,7 +52,6 @@
     <!-- time line -->
 
 
-
     <!-- segunda parte do modulo  -->
     <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
@@ -2513,7 +2512,7 @@
     <!-- altenative
     carro o cliente sete o modo escuro, esse bloco precisará se carregado ao invés do outro
     -->
-    <section class="container-fluid px-lg-0 box-feedback-cliente alternative" style="background: #262626">
+    <section class="container-fluid px-lg-0 box-feedback-cliente " style="background: #262626">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
@@ -3038,183 +3037,189 @@
     </section>
 
     <!-- slider solto -->
-    <section class="container px-0 slider-projetos solto">
-        <div class="col-12 px-0">
-            <div id="slider-categoria01" class="carousel slide slider-categoria"
-                 data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
+    <section class="container-fluid px-0 slider-projetos solto position-relative">
+        <div class="container">
+            <div class="col-12 px-0">
+                <div id="slider-categoria01" class="carousel slide slider-categoria"
+                     data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais relevantes instituições culturais do país e foi por isso
-                                                que escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais relevantes instituições culturais do país e foi por isso
+                                                    que escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
+                        <div class="carousel-item">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais
-                                                relevantes instituições culturais do país e foi por isso
-                                                que
-                                                escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais
+                                                    relevantes instituições culturais do país e foi por isso
+                                                    que
+                                                    escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
+                        <div class="carousel-item">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais
-                                                relevantes instituições culturais do país e foi por isso
-                                                que
-                                                escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais
+                                                    relevantes instituições culturais do país e foi por isso
+                                                    que
+                                                    escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="col-auto position-relative controlador">
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#slider-categoria01"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#slider-categoria01"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
 
                 </div>
-                <div class="col-auto position-relative controlador">
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
             </div>
+        </div>
+        <div class="card-img-overlay box-background-full" style="background: #262626;">
+            <div class="w-100 h-50" style="background: #0a4b78"></div>
+            <div class="w-100 h-50" style="background: #0A246A"></div>
         </div>
     </section>
 
