@@ -11,6 +11,10 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
     $h_small_text = get_sub_field("gd-el-header-internal_mask_text_small_mask");
     $h_video = get_sub_field("gd-el-header-internal_mask_video");
 
+    $cta_group = get_sub_field("gd-el-header-internal_mask_group_cta");
+    $cta_name = $cta_group["gd-el-header-internal_mask_group_cta_name"];
+    $cta_link = $cta_group["gd-el-header-internal_mask_group_cta_link"];
+
 
     $template = '
     
@@ -37,6 +41,7 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
     <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
         <p class="desc-title">{cat_page}</p>
         <h1 class="title">{title}</h1>
+            {cta_box}
     </div>
     {html_player}
    {small_text}
@@ -156,6 +161,21 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
 
     }
 
+    if($cta_link !== ""){
+        $template_cta = '
+            <div class="buttoncta mt-4">
+                <a href="{cta_link}" class="cta text-white" target="_blank">{cta_name}</a>
+            </div>
+';
+
+        $generate_template_cta =
+            str_replace(
+                array('{cta_link}', '{cta_name}'),
+                array($cta_link, $cta_name),
+                $template_cta
+            )
+        ;
+    }
     if($h_small_text !== ''){
         $template_small_text = '
         <div class="col-auto player position-absolute peoples">
@@ -173,8 +193,10 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
 
     $generate_element =
         str_replace(
-            array('{id}', '{title}', '{image}', '{cat_page}',  '{html_player}', '{modal_player}', '{small_text}'),
-            array($obj_id, $h_title, $h_image['url'], $h_cat_page, $generate_template_player, $generate_modal_player, $generate_small_text),
+            array('{id}', '{title}', '{image}', '{cat_page}',
+                '{html_player}', '{modal_player}', '{small_text}', '{cta_box}'),
+            array($obj_id, $h_title, $h_image['url'], $h_cat_page,
+                $generate_template_player, $generate_modal_player, $generate_small_text, $generate_template_cta),
             $template
         );
 

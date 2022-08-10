@@ -48,7 +48,9 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                                 <div class="container h-100 case-infos d-flex align-items-end">
                                     <div class="row justify-content-start align-items-end">
                                         <div class="col-12 n-acao">
+                                        <p>
                                             {action_name}
+                                        </p>
                                         </div>
                                         <div class="col-12 title">
                                             <h3 class="title-text">{title}</h3>

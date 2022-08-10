@@ -4,71 +4,7 @@
 <?php page_bulder_init(get_the_ID(), $post, true); ?>
 
     <!-- Modal -->
-    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
 
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <script src="https://www.youtube.com/iframe_api"></script>
-                    <div id="player"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="container-fluid p-0 header-inner position-relative">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 position-relative box-mask">
-                    <div class="card-img-overlay p-0 bottom-0">
-                        <img class="w-100 d-none d-lg-block"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/Vector.svg"
-                             alt="">
-                        <img class="w-100 d-lg-none"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/mask-mobile.svg"
-                             alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 p-0 box-header position-relative"
-             style="background: url('<?php $detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); ?>);">
-            <div class="card-img-overlay mask-gradient"></div>
-            <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
-                <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
-                    <p class="desc-title">QUEM SOMOS</p>
-                    <h1 class="title">A TIVIT transforma pessoas e tecnologia com expertise em <strong>soluções de ponta
-                            a ponta.</strong></h1>
-                </div>
-                <div class="col-auto player position-absolute">
-                    <div class="d-flex flex-column">
-                        <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
-                            <div class="col-12">
-                                <div class="aura"></div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-center position-absolute">
-                                <button data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
-                                         alt="...">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
-                            <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                Assista ao reel
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Modulo Antigo -->
     <!-- <div class="a-tivit-hero position-relative"
          style="background: url('<?php /*$detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); */ ?>') no-repeat center center; background-size: cover;">
@@ -456,50 +392,5 @@
         </div>
     </div>
 
-    <script>
-        var player, iframe;
-        var $ = document.querySelector.bind(document);
-
-        // init player
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '400',
-                width: '100%',
-                videoId: '<?php the_field('assista_ao_reel')?>',
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        // when ready, wait for clicks
-        function onPlayerReady(event) {
-            var player = event.target;
-            iframe = $('#player');
-            setupListener();
-        }
-
-        function setupListener() {
-            $('button.open').click(playFullscreen);
-        }
-
-        function playFullscreen() {
-            player.playVideo();//won't work on mobile
-
-            var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-            if (requestFullScreen) {
-                requestFullScreen.bind(iframe)();
-            }
-        }
-
-        const myModalEl = document.getElementById('videoOpen');
-        myModalEl.addEventListener('hidden.bs.modal', event => {
-            player.pauseVideo();
-        });
-        myModalEl.addEventListener('shown.bs.modal', event => {
-            player.playVideo();
-        });
-
-    </script>
 
 <?php get_footer(); ?>

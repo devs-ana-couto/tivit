@@ -2210,8 +2210,9 @@ $primary-color: #990017;
     bottom: 9rem;
     right: 40px;
   }
-  .box-background-full{
-      z-index: -1;
+
+  .box-background-full {
+    z-index: -1;
   }
 }
 
@@ -2703,3 +2704,32 @@ $primary-color: #990017;
   }
 }
 
+.tab-pane {
+  .textMenu {
+    h2 {
+      a {
+        color: white;
+
+        &:after {
+          content: url('../images/expandmenu.svg');
+          margin-left: 9px;
+          width: auto;
+          transition: all .2s linear;
+          margin-bottom: 1px;
+          position: absolute;
+        }
+
+        &:hover {
+          color: white;
+
+          &:after {
+            margin-left: 19px;
+            transition: all .2s linear;
+
+          }
+        }
+
+      }
+    }
+  }
+}

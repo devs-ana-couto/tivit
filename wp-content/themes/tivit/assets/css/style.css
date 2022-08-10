@@ -12426,4 +12426,23 @@ div {
   padding: 20px 35px;
 }
 
+.tab-pane .textMenu h2 a {
+  color: white;
+}
+.tab-pane .textMenu h2 a:after {
+  content: url("../images/expandmenu.svg");
+  margin-left: 9px;
+  width: auto;
+  transition: all 0.2s linear;
+  margin-bottom: 1px;
+  position: absolute;
+}
+.tab-pane .textMenu h2 a:hover {
+  color: white;
+}
+.tab-pane .textMenu h2 a:hover:after {
+  margin-left: 19px;
+  transition: all 0.2s linear;
+}
+
 /*# sourceMappingURL=style.css.map */
