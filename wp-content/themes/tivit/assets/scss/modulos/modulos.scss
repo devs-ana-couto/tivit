@@ -2088,6 +2088,15 @@ $primary-color: #990017;
           background-repeat: no-repeat;
           margin-left: 5px;
         }
+
+        &:hover {
+
+          &:after {
+            margin-left: 19px;
+            transition: all .2s linear;
+
+          }
+        }
       }
     }
 
@@ -2408,6 +2417,13 @@ $primary-color: #990017;
         align-content: center;
         align-items: center;
       }
+
+      &:hover {
+        &:after {
+          margin-left: 15px;
+          transition: margin-left .2s linear;
+        }
+      }
     }
   }
 
@@ -2723,7 +2739,7 @@ $primary-color: #990017;
           color: white;
 
           &:after {
-            margin-left: 19px;
+            margin-left: 15px;
             transition: all .2s linear;
 
           }
@@ -2731,5 +2747,166 @@ $primary-color: #990017;
 
       }
     }
+  }
+}
+
+.header-conteudo {
+  height: 520px;
+
+
+  .carousel-control-prev {
+    left: 60px !important;
+
+    .carousel-control-prev-icon {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/modulos/header-conteudo/arrow-left.svg");
+    }
+  }
+
+  .carousel-control-next {
+    right: 60px !important;
+
+    .carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/modulos/header-conteudo/arrow-right.svg");
+    }
+  }
+
+  .mask-v {
+    z-index: 1054;
+    mix-blend-mode: multiply;
+  }
+
+  .mask-bg {
+    background: linear-gradient(270.67deg, rgba(0, 0, 0, 0.56) 28.48%, rgba(0, 0, 0, 0.16) 90.18%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    z-index: 1054;
+  }
+
+  .box-slider-header-content {
+    .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .carousel-item {
+      height: 520px;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center center !important;
+
+
+      .box-infos-slider {
+        z-index: 1055;
+      }
+
+      .infos {
+        -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2.5s; /* Firefox < 16 */
+        -ms-animation: fadein 2.5s; /* Internet Explorer */
+        -o-animation: fadein 2.5s; /* Opera < 12.1 */
+        animation: fadein 2.5s;
+
+        .btn-tivit1 {
+          background: #990017;
+          width: auto !important;
+          padding-left: 35px !important;
+          padding-right: 35px !important;
+
+          &:hover {
+            background: white;
+            color: $primary-color;
+          }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 40px;
+          /* or 111% */
+
+          text-align: center;
+          text-transform: uppercase;
+
+          /* Branco */
+
+          color: #FFFFFF;
+          @media screen and (max-width: 991px) {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 32px;
+            /* or 114% */
+
+            text-transform: uppercase;
+
+            /* Branco */
+
+            color: #FFFFFF;
+          }
+        }
+
+        small {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-bottom: 15px !important;
+          @media screen and (max-width: 991px) {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+
+          }
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          color: #FFFFFF;
+          @media screen and (max-width: 991px) {
+
+          }
+
+          strong {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    .carousel-indicators {
+      z-index: 1056;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+      z-index: 1056;
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

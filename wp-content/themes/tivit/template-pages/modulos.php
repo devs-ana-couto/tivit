@@ -3,6 +3,7 @@
     <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
         poderam ser personalizados pelo usuario -->
 
+
     <!-- Header Mobile -->
     <section class="container-fluid p-0 header-landing position-relative mt-0"
              style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/background.png')">
@@ -35,6 +36,82 @@
     <!-- separei esse modulo em 2 pois já temos o big number criado,
      sendo assim ele pode ou não ser utilizado -->
     <!-- fim do Header Mobile -->
+
+
+    <!--header Conteudo -->
+
+    <section class="container-fluid p-0 header-conteudo position-relative">
+        <div class="d-flex">
+            <div class="card-img-overlay p-0 d-flex justify-content-center mask-bg"></div>
+            <div class="card-img-overlay p-0 d-flex justify-content-center align-items-end mask-v">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-v.svg"
+                     alt="" class="d-none d-lg-block">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-mobile.svg"
+                     alt="" class="w-100 d-block d-lg-none">
+            </div>
+            <div class="col-12 box-slider-header-content">
+                <div id="carouselHeaderSlider" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item position-relative active" id="carousel-01">
+                            <div class="position-absolute h-100 w-100 box-infos-slider">
+                                <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 infos d-flex flex-column justify-content-center">
+                                        <small>01/09/2021</small>
+                                        <h1>Será que sua empresa está pronta para um futuro hiperconectado?</h1>
+                                        <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
+                                        <div class="col-12 d-flex justify-content-center pt-4">
+                                            <a href="#" class="btn btn-tivit1">Ver matéria</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img id="imagem-01"
+                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/01.png"
+                                 class="d-none d-lg-block w-100 h-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <div class="position-absolute h-100 w-100 box-infos-slider">
+                                <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 infos d-flex flex-column justify-content-center">
+                                        <small>01/09/2021</small>
+                                        <h1>Será que sua empresa está pronta para um futuro hiperconectado?</h1>
+                                        <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
+                                        <div class="col-12 d-flex justify-content-center pt-4">
+                                            <a href="#" class="btn btn-tivit1">Ver matéria</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/01.png"
+                                 class="d-block w-100 h-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- box-chamada-pagina -->

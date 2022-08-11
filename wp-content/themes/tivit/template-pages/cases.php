@@ -7,11 +7,9 @@
     <div class="cases-recentes">
         <!--- Desktop -->
         <div class="container hide-mobile">
-
             <div class="row">
                 <?= do_shortcode('[ac-pagina-cases]') ?>
             </div>
-
         </div>
         <!--- End Desktop -->
     </div>
