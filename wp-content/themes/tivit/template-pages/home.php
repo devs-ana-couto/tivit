@@ -210,8 +210,8 @@
                              style="background: url('<?php echo $mascara; ?>');">
                         </div>
                         <div class="col-12  box__mask h-100">
-                            <div class="row h-100 row-cols-1 row-cols-lg-2">
-                                <div class="col p-lg-5 box-z-index">
+                            <div class="row h-100 row-cols-1 row-cols-lg-auto">
+                                <div class="col-12 col-lg-7 p-lg-5 box-z-index">
                                     <div class="mask__links py-5 px-0 p-lg-5 h-100">
                                         <div class="d-flex align-content-center h-100">
                                             <div class="col-12">
@@ -235,17 +235,20 @@
                                                             if ($i === 0) {
                                                                 $active = "active";
                                                             }
+                                                            echo '<div id="port'.$i.'" class="">';
                                                             echo '<div class="d-none" id="portfolio__img__url-' . $i . '" data-img="' . $bg . '"></div>';
                                                             echo '<div class="d-none" id="portfolio__desc-' . $i . '">' . get_sub_field("portifolio_lista_desc") . '</div>';
                                                             echo '<div class="d-none" id="portfolio__link__url-' . $i . '">' . get_sub_field("portifolio_lista_cta") . '</div>';
+                                                            echo '<div class="d-none" id="portfolio__link__text-' . $i . '">' . get_sub_field("portifolio_lista_cta_text") . '</div>';
                                                             echo '<button id="' . $i . '" class="links--a ' . $active . ' w-100"
                                                             onclick="infosPortfolio(' . $bg . ', ' . $i . ')">' . get_sub_field('portifolio_titulo') . '</button>';
+                                                            echo '</div>';
                                                         }
                                                     }
                                                     ?>
                                                     <?php
                                                     $cta = get_field("portifolio_call_to_action_geral");
-                                                    if ($cta): ?>
+                                                    if ($cta['portifolio_call_to_action_link'] !== ""): ?>
                                                         <div class="col-12 col-lg-auto mt-5 d-flex justify-content-center justify-content-lg-start flex-wrap">
                                                             <a href="<?php echo $cta['portifolio_call_to_action_link']; ?>"
                                                                class="btn btn-primary links__cta--geral"
@@ -261,7 +264,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col p-lg-5 box-z-index">
+                                <div class="col-12 col-lg-5 p-lg-5 box-z-index">
                                     <div class="d-flex align-items-end p-3 py-5 p-lg-5 h-100">
                                         <div class="col text-display fadein">
                                             <p>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de

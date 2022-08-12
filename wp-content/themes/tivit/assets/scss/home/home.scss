@@ -1732,6 +1732,13 @@
             align-items: center;
             align-content: center;
           }
+          &:hover {
+            color: #F20024;
+            &:after {
+              margin-left: 15px;
+              transition: margin-left .2s linear;
+            }
+          }
         }
       }
     }

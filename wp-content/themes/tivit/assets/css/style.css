@@ -2742,6 +2742,13 @@ div {
   align-items: center;
   align-content: center;
 }
+.portfolio .portfolio__box .box__mask .text-display a:hover {
+  color: #F20024;
+}
+.portfolio .portfolio__box .box__mask .text-display a:hover:after {
+  margin-left: 15px;
+  transition: margin-left 0.2s linear;
+}
 
 .pec-hero {
   height: 580px;
@@ -11644,7 +11651,7 @@ div {
   align-items: center;
   align-content: center;
   text-transform: uppercase;
-  color: #F20024;
+  color: #FFF;
 }
 .box-three-news .box-cards-news .card .card-footer .box-link a:after {
   content: "";
@@ -11655,6 +11662,13 @@ div {
   height: 12px;
   background-repeat: no-repeat;
   margin-left: 5px;
+}
+.box-three-news .box-cards-news .card .card-footer .box-link a:hover {
+  color: #F20024;
+}
+.box-three-news .box-cards-news .card .card-footer .box-link a:hover:after {
+  margin-left: 15px;
+  transition: margin-left 0.2s linear;
 }
 .box-three-news .box-cards-news .card:hover .card-title {
   color: #F20024 !important;
@@ -12554,6 +12568,7 @@ div {
   }
 }
 .header-conteudo .box-slider-header-content .carousel-item .infos p {
+  margin-top: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

@@ -1731,7 +1731,7 @@ $primary-color: #990017;
             align-items: center;
             align-content: center;
             text-transform: uppercase;
-            color: #F20024;
+            color: #FFF;
 
             &:after {
               content: "";
@@ -1742,6 +1742,13 @@ $primary-color: #990017;
               height: 12px;
               background-repeat: no-repeat;
               margin-left: 5px;
+            }
+            &:hover {
+              color: #F20024;
+              &:after {
+                margin-left: 15px;
+                transition: margin-left .2s linear;
+              }
             }
           }
         }
@@ -2870,6 +2877,7 @@ $primary-color: #990017;
         }
 
         p {
+          margin-top: 15px;
           font-style: normal;
           font-weight: 400;
           font-size: 12px;

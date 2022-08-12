@@ -11,6 +11,12 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
     $metade_bottom = get_sub_field("gd-el-header-internal_mask_background_50_bottom");
 
     $template = '
+    <style>
+        #slider-categoria' . $obj_id . ' .carousel-inner{
+        -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2) !important; 
+        box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2) !important;
+        }
+    </style>
     <section class="container-fluid px-0 slider-projetos solto position-relative">
         <div class="container">
         <div class="col-12 px-0">
