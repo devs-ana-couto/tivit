@@ -25,6 +25,7 @@ require_once('componentes/ac/bloco.intro.php');
 require_once('componentes/ac/slider-simple.php');
 require_once('componentes/ac/header.internal.php');
 require_once('componentes/ac/depoimentos.php');
+require_once('componentes/ac/cards.hover.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -131,6 +132,9 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                     break;
                 case 'gd-ac-depoimentos':
                     $return[$layout] = pb_ac_depoimentos($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-cards-hover':
+                    $return[$layout] = pb_ac_cards_hover($obj_id, $obj, $block, $echo);
                     break;
 
 

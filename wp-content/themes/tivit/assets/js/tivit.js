@@ -1148,3 +1148,16 @@ var headerConteudo = document.querySelector(".header-conteudo");
 if (headerConteudo !== "") {
     imgMobileContent();
 }
+
+function cardHoverOn(id){
+    var card = document.getElementById(id);
+    var infos = card.querySelector(".infos");
+
+    infos.classList.add("active");
+}
+function cardHoverLeave(id){
+    var card = document.getElementById(id);
+    var infos = card.querySelector(".infos");
+
+    infos.classList.remove("active");
+}

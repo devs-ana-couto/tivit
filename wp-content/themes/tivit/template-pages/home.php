@@ -3,7 +3,7 @@
 
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
-    <section class="home-hero">
+    <section class="home-hero position-relative">
         <div id="hero" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
             <div class="carousel-inner text-center">
                 <?php
@@ -15,6 +15,7 @@
                         $banner_mobile_url[$i] = get_sub_field('banner_mobile');
                         $chamada[$i] = get_sub_field('chamada');
                         $cta[$i] = get_sub_field("slider-cta");
+                        $cta_text[$i] = get_sub_field("slider-cta-text");
                         ?>
                         <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
                             <div class="content position-relative">
@@ -25,9 +26,14 @@
                                      alt="mask"/>
                                 <div class="title position-absolute">
                                     <?= $chamada[$i] ?>
+                                    <?php
+                                    if($cta[$i] !== ""){
+                                    ?>
                                     <div class="botao">
-                                        <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>">Saiba Mais</a>
+
+                                        <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>"><?php echo $cta_text[$i] ?></a>
                                     </div>
+                                    <?php } ?>
                                 </div>
 
                             </div>
@@ -38,44 +44,6 @@
                 endif;
                 ?>
             </div>
-
-
-            <!--    <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="navigation <? /*= count(get_field('slider_hero')) == 1 ? 'hide-desktop hide-mobile' : '' */ ?>">
-                            <button class="carousel-control-prev hide-mobile" type="button" data-bs-target="#hero"
-                                    data-bs-slide="prev">
-                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/icons/navegacao/arrow_left.png"
-                                     alt="arrow_left">
-                            </button>
-                            <div class="d-flex flex-row counter hide-mobile">
-                                <div class="numactive"></div>
-                                <div class="numseparation"></div>
-                                <div class="numtotal"></div>
-                            </div>
-                            <button class="carousel-control-next hide-mobile" type="button" data-bs-target="#hero"
-                                    data-bs-slide="next">
-                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/icons/navegacao/arrow_right.png"
-                                     alt="arrow_right">
-                            </button>
-                            <div class="carousel-indicators">
-                                <?php
-            /*                                if (have_rows('slider_hero')):
-                                                // Loop through rows.
-                                                for ($i = 0; have_rows('slider_hero'); $i++) : the_row();
-                                                    */ ?>
-                                        <button type="button" data-bs-target="#hero"
-                                                data-bs-slide-to="<? /*= $i */ ?>" <? /*= $i == 0 ? 'class="active" aria-current="true"' : 'class=""' */ ?>
-                                                aria-label="Hero"></button>
-                                    <?php
-            /*                                    endfor; endif; */ ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
             <div class="col-auto controladores position-absolute">
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     <div class="col-auto d-none d- d-lg-flex align-items-center px-5 px-lg-3">
@@ -122,6 +90,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -159,6 +128,12 @@
                     <?php } ?>
                 </div>
             </div>
+
+        </div>
+        <div class="col-12 d-none position-relative box-arrow d-lg-flex justify-content-center">
+            <div class="arrow slider-arrow-back text-center position-absolute">
+                <img src="http://tivit.local/wp-content/themes/tivit/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
+            </div>
         </div>
     </section>
 
@@ -175,11 +150,11 @@
             </div>
         </div>
         <div class="container pcustom">
-            <div class="row">
-                <div class="col-12">
-                    <p class="mt-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="mt-4">
                         <?php the_field('texto_de_introducao') ?>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

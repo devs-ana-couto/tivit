@@ -1743,8 +1743,10 @@ $primary-color: #990017;
               background-repeat: no-repeat;
               margin-left: 5px;
             }
+
             &:hover {
               color: #F20024;
+
               &:after {
                 margin-left: 15px;
                 transition: margin-left .2s linear;
@@ -2047,8 +2049,8 @@ $primary-color: #990017;
 
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
-          line-height: 27px;
+          font-size: 10px;
+          line-height: unset;
           letter-spacing: 0.02em;
           text-transform: uppercase;
 
@@ -2061,8 +2063,8 @@ $primary-color: #990017;
           a {
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
-            line-height: 27px;
+            font-size: 10px;
+            line-height: unset;
             letter-spacing: 0.02em;
             text-transform: uppercase;
 
@@ -2915,6 +2917,167 @@ $primary-color: #990017;
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+.box-arrow {
+  .slider-arrow-back {
+    z-index: 1054;
+    margin-top: unset !important;
+    bottom: 80px;
+
+    -webkit-animation: arrowTopDown 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: arrowTopDown 1s; /* Firefox < 16 */
+    -ms-animation: arrowTopDown 1s; /* Internet Explorer */
+    -o-animation: arrowTopDown 1s; /* Opera < 12.1 */
+    //animation: arrowTopDown 1s;
+    animation: arrowTopDown 1s infinite;
+    animation-direction: alternate;
+
+  }
+}
+
+@keyframes arrowTopDown {
+  from {
+    bottom: 120px;
+  }
+  to {
+    bottom: 80px;
+  }
+}
+
+.card-hover {
+  padding: 100px 0px;
+
+  .box-title {
+    padding-bottom: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+      /* identical to box height, or 157% */
+
+      text-align: center;
+      text-transform: uppercase;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .box-descript {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+
+      text-align: center;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .row-card {
+    padding-top: 55px;
+
+    .box-card {
+      transition: all 1s;
+      cursor: pointer;
+      a{
+        color: unset;
+        &:hover{
+          color: unset;
+        }
+      }
+      .card {
+        filter: grayscale(1);
+        border: 1px solid #CAD2D8;
+        border-radius: 0px;
+        height: 250px !important;
+        transition: all 1s;
+        @media screen and (max-width: 991px) {
+          filter: grayscale(0) !important;
+        }
+        &:hover {
+          filter: grayscale(0);
+        }
+
+        .box-imagem {
+          transition: all 1s;
+          img {
+            height: 85px;
+          }
+        }
+        a.link{
+          color: $primary-color;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-decoration: none;
+          margin-top: 10px;
+          transition: 1.2s;
+
+          &::after {
+            content: "";
+            background: url("../images/modulos/conteudo/arrow_artigo.svg");
+            margin-left: 10px;
+            transition: all .2s linear;
+            display: inline-block;
+            vertical-align: center;
+            width: 12px;
+            height: 12px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all .2s linear;
+            padding-top: 3px;
+          }
+
+          &:hover{
+            color: $primary-color;
+            &::after {
+              margin-left: 20px;
+            }
+          }
+
+        }
+
+        .infos {
+          animation: cardSlider 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          height: auto;
+          overflow: hidden !important;
+          @media screen and (min-width: 991px) {
+            animation: cardSlider 1s ease-in-out;
+            transition:  0.5s ease-in-out;
+            height: 0 !important;
+          }
+          &.active{
+            animation: cardSlider 1s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            height: 50% !important;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes cardSlider {
+  from{
+    opacity: 0;
+  }
+  to{
     opacity: 1;
   }
 }

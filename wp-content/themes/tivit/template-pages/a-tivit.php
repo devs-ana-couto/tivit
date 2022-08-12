@@ -2,69 +2,25 @@
 <?php get_header(); ?>
 
 <?php page_bulder_init(get_the_ID(), $post, true); ?>
-
-    <!-- Modal -->
-
-    <!-- Modulo Antigo -->
-    <!-- <div class="a-tivit-hero position-relative"
-         style="background: url('<?php /*$detect->isMobile() ? the_field('banner_mobile_ativit') : the_field('banner_desktop_ativit'); */ ?>') no-repeat center center; background-size: cover;">
-        <div class="a-tivit-hero-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="zindex textBanner">
-                            <h1><?php /*the_field('pre_chamada_ativit'); */ ?></h1>
-                            <h2><?php /*the_field('chamada_ativit'); */ ?></h2>
-                        </div>
-                        <div class="maskDiv text-center hide-desktop">
-                            <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/contato/banner-mask.svg"
-                                 class="position-absolute mask" alt="Máscara">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="customMargin d-flex justify-content-center align-items-center hide-mobile">
-            <img class="mask w-100 position-absolute"
-                 src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/esg/v_slider_home.svg" alt="mask"/>
-        </div>
-        <div class="box-aura position-absolute m-0 hide-mobile d-flex justify-content-center align-items-center">
-            <div class="aura"></div>
-        </div>
-        <div class="botaoReels m-0 hide-mobile d-flex justify-content-center align-items-center">
-            <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
-                <span>Assista ao reel</span>
-            </button>
-        </div>
-        <div class="botaoReels m-0 hide-desktop">
-            <button class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                Assista ao reel
-
-                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/a-tivit/play.svg" alt="...">
-            </button>
-            <a href="#" class="open" data-bs-toggle="modal" data-bs-target="#videoOpen">teste</a>
-        </div>
-    </div>-->
-
-    <div class="a-tivit-sobre">
+<!--
+        <div class="a-tivit-sobre">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <p>
-                        <?php the_field('introducao_ativit'); ?>
+                        <?php /*the_field('introducao_ativit'); */?>
                     </p>
                     <?php
-                    if (the_field('cta_url_ativit') != "") {
-                        ?>
+/*                    if (the_field('cta_url_ativit') != "") {
+                        */?>
                         <div class="botao">
-                            <a href="<?php the_field('cta_url_ativit'); ?>"><?php the_field('cta_texto_ativit') ?></a>
+                            <a href="<?php /*the_field('cta_url_ativit'); */?>"><?php /*the_field('cta_texto_ativit') */?></a>
                         </div>
-                    <?php } ?>
+                    <?php /*} */?>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- <div class="a-tivit-carousel hide-desktop">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -141,31 +97,31 @@
   </div>
 </div> -->
 
-    <div class="a-tivit-cases cases ctivit">
+   <!-- <div class="a-tivit-cases cases ctivit">
     <section class="container px-0 slider-projetos solto">
         <div class="col-12 px-0">
             <div id="slider-categoria01" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
-                <!--<div class="carousel-indicators">
+                <div class="carousel-indicators">
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                </div>-->
-                <?php echo do_shortcode('[ac-bloco-cases]') ?>
+                </div>
+                <?php /*echo do_shortcode('[ac-bloco-cases]') */?>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <div class="a-tivit-inovacao">
+  <!--  <div class="a-tivit-inovacao">
         <div class="container">
             <div class="row">
                 <div class="col-12">
 
                     <div class="content">
-                        <?php the_field('chamada_inovacao_ativit') ?>
+                        <?php /*the_field('chamada_inovacao_ativit') */?>
                     </div>
 
                     <div class="row">
@@ -174,7 +130,7 @@
                         <div class="col-12 col-md-5">
                             <div class="card">
                                 <div class="card-content" style="
-                                        background: url('<?php $detect->isMobile() ? '' : the_field('logo_1_ativit'); ?>');
+                                        background: url('<?php /*$detect->isMobile() ? '' : the_field('logo_1_ativit'); */?>');
                                         background-size: contain;
                                         background-repeat: no-repeat;
                                         background-position: center;
@@ -182,11 +138,11 @@
                                         mix-blend-mode: luminosity;
                                         max-width: 100%;
                                         min-width: 100%;">
-                                    <p class="hide-mobile"><?php the_field('texto_logo_1_ativit') ?></p>
-                                    <img src="<?php the_field('logo_1_ativit'); ?>" class="hide-desktop"
+                                    <p class="hide-mobile"><?php /*the_field('texto_logo_1_ativit') */?></p>
+                                    <img src="<?php /*the_field('logo_1_ativit'); */?>" class="hide-desktop"
                                          alt="Tivit Inovação">
-                                    <a href="<?php the_field('url_logo_1_ativit') ?>">conheça a tivit labs <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg"
+                                    <a href="<?php /*the_field('url_logo_1_ativit') */?>">conheça a tivit labs <img
+                                                src="<?php /*echo get_template_directory_uri(); */?>/assets/images/a-tivit/arrow-red.svg"
                                                 alt="Saiba Mais"></a>
                                 </div>
                             </div>
@@ -195,7 +151,7 @@
                         <div class="col-12 col-md-5">
                             <div class="card">
                                 <div class="card-content" style="
-                                        background: url('<?php $detect->isMobile() ? '' : the_field('logo_2_ativit'); ?>');
+                                        background: url('<?php /*$detect->isMobile() ? '' : the_field('logo_2_ativit'); */?>');
                                         background-size: contain;
                                         background-repeat: no-repeat;
                                         background-position: center;
@@ -203,13 +159,13 @@
                                         mix-blend-mode: luminosity;
                                         max-width: 100%;
                                         min-width: 100%;">
-                                    <p class="hide-mobile"><?php the_field('texto_logo_2_ativit') ?></p>
-                                    <img src="<?php the_field('logo_2_ativit'); ?>" class="hide-desktop"
+                                    <p class="hide-mobile"><?php /*the_field('texto_logo_2_ativit') */?></p>
+                                    <img src="<?php /*the_field('logo_2_ativit'); */?>" class="hide-desktop"
                                          alt="Tivit Experts">
-                                    <div class="pt-4 pt-md-0"><a href="<?php the_field('url_logo_2_ativit') ?>">conheça
+                                    <div class="pt-4 pt-md-0"><a href="<?php /*the_field('url_logo_2_ativit') */?>">conheça
                                             a
                                             ventures <img
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/arrow-red.svg"
+                                                    src="<?php /*echo get_template_directory_uri(); */?>/assets/images/a-tivit/arrow-red.svg"
                                                     alt="Saiba Mais"></a></div>
                                 </div>
                             </div>
@@ -218,13 +174,13 @@
                     </div>
 
                     <div class="botao">
-                        <a href="<?php the_field('cta_url2_ativit') ?>"><?php the_field('cta_texto2_ativit') ?></a>
+                        <a href="<?php /*the_field('cta_url2_ativit') */?>"><?php /*the_field('cta_texto2_ativit') */?></a>
                     </div>
 
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- Conheça a nossa equipe -->
     <!-- --><? /*= do_shortcode('[ac-bloco-equipe]'); */ ?>

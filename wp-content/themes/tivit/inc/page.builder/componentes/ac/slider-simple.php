@@ -10,11 +10,35 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
     $metade_top = get_sub_field("gd-el-header-internal_mask_background_50_top");
     $metade_bottom = get_sub_field("gd-el-header-internal_mask_background_50_bottom");
 
+    $paddingTop = get_sub_field("gd-el-header-internal-padding-top");
+    $paddindBottom = get_sub_field("gd-el-header-internal-padding-bottom");
+    $paddingTopMobile = get_sub_field("gd-el-header-internal-padding-top-mobile");
+    $paddindBottomMobile = get_sub_field("gd-el-header-internal-padding-bottom-mobile");
+
+    if ($paddingTop !== "" || $paddingTopMobile !== "") {
+        $paddindTopCss = 'padding-top: ' . $paddingTop . 'px !important;';
+        $paddindTopMobileCss = 'padding-top: ' . $paddingTopMobile . 'px !important;';
+    }
+    if ($paddindBottom !== "" || $paddingTopMobile !== "") {
+        $paddindBottomCss = 'padding-bottom: ' . $paddindBottom . 'px !important ;';
+        $paddindBottomMobileCss = 'padding-bottom: ' . $paddindBottomMobile . 'px !important ;';
+    }
     $template = '
     <style>
         #slider-categoria' . $obj_id . ' .carousel-inner{
         -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2) !important; 
         box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2) !important;
+       
+        }
+        #slider-categoria' . $obj_id . ' {
+        ' . $paddindBottomCss . '
+			' . $paddindTopCss . '     
+        }
+        @media screen and (max-width: 991px) {
+            #slider-categoria' . $obj_id . ' {
+        ' . $paddindBottomMobileCss . '
+			' . $paddindTopMobileCss . '     
+        }
         }
     </style>
     <section class="container-fluid px-0 slider-projetos solto position-relative">
@@ -66,17 +90,11 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                                                 {descript}
                                             </p>
                                         </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="{tag_link}">{tag_name}</a></li>
-                                            </ul>
-                                        </div>
+                                        {tag_box}
                                         <div class="col-auto box-time-slide mt-2 mt-lg-4">
                                             <p>{reading_time}</p>
                                         </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="{cta_link}">{cta_name}</a>
-                                        </div>
+                                        {cta_box}
                                     </div>
                                 </div>
                             </div>
@@ -102,16 +120,31 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         $image = $slide["gd-el-slider-simples-repeter-images"]["url"];
 
         $active = "";
+        $tag_box = "";
+        if ($tag_name !== "") {
+            $tag_box = '
+            <div class="col-auto box-tags mt-2 mt-lg-2">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href="' . $tag_link . '">' . $tag_name . '</a></li>
+                </ul>
+            </div>        
+                                            ';
+        }
 
+        if ($cta_link !== "") {
+            $cta_box = '<div class="col-12 box-link mt-2 mt-lg-4">
+                                            <a href="' . $cta_link . '">' . $cta_name . '</a>
+                                        </div>';
+        }
         if ($key === 0)
             $active = "active";
 
         $generate_content .=
             str_replace(
-                array('{title}', '{descript}', '{action_name}', '{tag_name}', '{tag_link}',
-                    '{reading_time}', '{cta_name}', '{cta_link}', '{image}', '{active}'),
-                array($title, $descript, $action_name, $tag_name, $tag_link, $reading_time,
-                    $cta_name, $cta_link, $image, $active),
+                array('{title}', '{descript}', '{action_name}', '{tag_box}',
+                    '{reading_time}', '{cta_box}', '{image}', '{active}'),
+                array($title, $descript, $action_name, $tag_box, $reading_time,
+                    $cta_box, $image, $active),
                 $content
             );
     }
@@ -121,6 +154,21 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
               {active} aria-current="true" aria-label="Slide {id_bullet}"></button>
               
     ';
+    $template_tag = '
+     <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><a href="{tag_link}">{tag_name}</a></li>
+     </ul>
+    ';
+
+    foreach ($r_slider as $key => $slide) {
+
+        $generate_template_tag =
+            str_replace(
+                array(),
+                array(),
+                $template_tag
+            );
+    }
 
     $generate_bullets = '';
     foreach ($r_slider as $key => $bullet) {
@@ -159,10 +207,9 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         $generate_arrows =
             str_replace(
                 array('{obj_id}'),
-                array( $obj_id),
+                array($obj_id),
                 $arrows
-            )
-        ;
+            );
     }
     $generate_element =
         str_replace(

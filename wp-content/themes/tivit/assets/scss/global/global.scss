@@ -110,6 +110,12 @@ html, body, * {
     //font-weight: 600;
     line-height: 54px;
     z-index: 2;
+    @media screen and (max-width: 991px) {
+
+        font-size: 36px;
+        line-height: 36px;
+
+    }
   }
 
   h3 {

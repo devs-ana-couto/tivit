@@ -125,6 +125,85 @@
         </div>
     </section>
 
+    <!-- card hover -->
+
+    <section class="container-fluid p-lg-0 card-hover">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-12 col-lg-8 box-title">
+                    <h1>INOVAÇÃO DE DENTRO PARA FORA</h1>
+                </div>
+                <div class="col-12 col-lg-8 box-descript">
+                    <p>Investir em pessoas e ideias faz parte do nosso DNA. Entendemos que a transformação digital e a
+                        busca
+                        por inovação se fazem a partir da antecipação das tendências do mercado. Para compor nossa
+                        atuação,
+                        contamos com soluções personalizadas e áreas como TIVIT Ventures, TBanks, TIVIT Labs e Tdx.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-1 justify-content-center row-card">
+                <div class="col box-card p-3" id="card-1" onmouseover="cardHoverOn('card-1')"
+                     onmouseleave="cardHoverLeave('card-1')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col box-card p-3" id="card-2" onmouseover="cardHoverOn('card-2')"
+                     onmouseleave="cardHoverLeave('card-2')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col box-card p-3" id="card-3" onmouseover="cardHoverOn('card-3')"
+                     onmouseleave="cardHoverLeave('card-3')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- time line -->
 
@@ -136,8 +215,9 @@
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
         d-none no container abaixo -->
         <div class="containe d-none">
-            <div class="col d-flex justify-content-center box-title-top">
+            <div class="col d-flex flex-wrap justify-content-center box-title-top">
                 <h3 class="title-top">Titulo (Opcional)</h3>
+
             </div>
         </div>
 
