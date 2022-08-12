@@ -773,11 +773,11 @@ $primary-color: #990017;
     .cta-theme {
       z-index: 2;
       margin-top: 30px;
-      border: 1px solid white;
+      //border: 1px solid white;
       border-radius: 30px;
       padding-right: 30px;
       padding-left: 30px;
-      color: white;
+      //color: white;
 
       font-style: normal;
       font-weight: 700;
@@ -802,7 +802,6 @@ $primary-color: #990017;
 
     .slide {
       .carousel-inner {
-
 
         .box-images {
           //height: 640px !important;
@@ -990,7 +989,7 @@ $primary-color: #990017;
   }
 
   .bg-slider {
-    z-index: -1;
+    z-index: 0;
 
     .box-50per {
     }
@@ -1907,8 +1906,8 @@ $primary-color: #990017;
 }
 
 .box-slider {
-  margin-top: 55px;
-  padding: 0px !important;
+  //margin-top: 55px;
+  padding: 100px 0px !important;
 }
 
 .slider-projetos {

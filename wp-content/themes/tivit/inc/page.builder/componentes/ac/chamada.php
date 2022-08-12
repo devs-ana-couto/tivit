@@ -97,7 +97,7 @@ function pb_ac_chamada($obj_id, $obj = null, $echo = true)
 		<section class="container-fluid box-chamada-pagina css_danamic_'. $obj_id .'" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}">
         <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap" style="z-index: 1048">
+            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap" style="z-index: 1048">
                 {c_title}
                 {c_button}
             </div>

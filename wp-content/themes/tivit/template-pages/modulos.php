@@ -1974,7 +1974,7 @@
     <!-- modulo slider -->
     <section class="container-fluid px-lg-0 box-slider position-relative" style="background: white">
         <div class="container position-relative">
-            <div class="card-img-overlay box-mask ">
+            <div class="card-img-overlay box-mask d-none ">
                 <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
                          alt="">
@@ -1982,9 +1982,6 @@
             </div>
 
             <div class="row row-cols-1 row-cols-lg-2">
-                <div class="w-100 d-none position-absolute box-triangulo d-lg-flex justify-content-center w-100 p-lg-0">
-                    <div class="box-triangulo-color" style="background: #fff;"></div>
-                </div>
                 <div class="col box-solid p-lg-0">
                     <div class="col-12 box-title-solid h-100" style="background: #F14517;">
                         <h3 class="title-solid" style="color: white">Cases de sucesso da
@@ -1999,7 +1996,7 @@
                 </div>
 
 
-                <div class="col case-sliders position-relative p-lg-0">
+                <div class="col case-sliders position-relative p-lg-0" style="z-index: 1;">
                     <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular"
                             data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -2101,7 +2098,7 @@
             </div>
         </div>
         <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
-            <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
+            <div class="h-50 w-100 box-50per" style="background: #f00;"></div>
         </div>
     </section>
     <!-- fim do modulo slider -->

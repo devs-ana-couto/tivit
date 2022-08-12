@@ -10897,11 +10897,9 @@ div {
 .box-slider .box-solid .cta-theme {
   z-index: 2;
   margin-top: 30px;
-  border: 1px solid white;
   border-radius: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -11071,7 +11069,7 @@ div {
   background-size: cover;
 }
 .box-slider .bg-slider {
-  z-index: -1;
+  z-index: 0;
 }
 .card-only-text {
   padding: 100px 0px;
@@ -11780,8 +11778,7 @@ div {
 }
 
 .box-slider {
-  margin-top: 55px;
-  padding: 0px !important;
+  padding: 100px 0px !important;
 }
 
 .slider-projetos .v-mask {
