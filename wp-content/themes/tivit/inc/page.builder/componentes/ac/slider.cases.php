@@ -62,7 +62,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
     <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
             <div class="h-50 w-100 box-50per" style="background: {background_half_color};"></div>
         </div>
-        <div class="container position-relative shadow-lg">
+        <div class="container position-relative shadow">
             <div class="card-img-overlay box-mask">
                 <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
                     <img src="' . get_template_directory_uri() . '/assets/images/modulos/slider/mask.svg"

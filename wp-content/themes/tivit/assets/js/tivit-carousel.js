@@ -8,7 +8,7 @@ $('.slider-parceiros').owlCarousel({
     responsive:{
         0:{
             items:2,
-            margin:20,
+            margin:40,
             autoWidth: true,
             dots: false
         },

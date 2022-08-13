@@ -851,8 +851,13 @@
     <section class="container-fluid px-0 box-parceiros" style="background: white;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-auto box-title mt-5 mt-lg- auto">
+                <div class="col-12 col-lg-8 box-title">
                     <h2>Parceiros</h2>
+                </div>
+                <div class="col-12 col-lg-8 mt-3 mt-lg-4 box-descript">
+                    <p>Nossa expertise é garantida e certificada por diversas organizações de atuação nacional e
+                        internacional. Com mais de 20 anos de mercado, acumulamos excelência no que há de mais
+                        importante.</p>
                 </div>
                 <div class="col-12 box-slider">
                     <div class="owl-carousel owl-theme slider-parceiros">
@@ -3377,94 +3382,6 @@
         </div>
     </section>
 
-
-    <section class="container-fluid manegement-services" style="background: #262626">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 box-title mb-3">
-                    <h3 class="title">Serviços gerenciados na nuvem</h3>
-                </div>
-            </div>
-            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos"
-                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center order-lg-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos order-lg-1"
-                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos"
-                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-8 mt-5 d-flex justify-content-center">
-                    <a href="#" class="btn btn-tivit1">CTA OPCIONAL</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- header -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <script src="https://www.youtube.com/iframe_api"></script>
-                    <div id="player"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header Inner -->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">
@@ -3559,6 +3476,109 @@
         });
 
     </script>
+
+    <section class="container-fluid manegement-services" style="background: #262626">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 box-title mb-3">
+                    <h3 class="title">Serviços gerenciados na nuvem</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center order-lg-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos order-lg-1"
+                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-8 mt-5 d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">CTA OPCIONAL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- header -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container-fluid box-before-footer" style="background-color: #C7EDE3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-triancle position-relative">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/before-footer/bg-default.png"
+                         class="img-triancle" alt="">
+                    <div class="card-img-overlay mask-v">
+                        <img  src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <?php get_footer(); ?>

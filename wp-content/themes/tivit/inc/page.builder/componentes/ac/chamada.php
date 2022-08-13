@@ -4,7 +4,7 @@
  * AC / Chamada
 */
 
-function pb_ac_chamada($obj_id, $obj = null, $echo = true)
+function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 {
     global $detect;
     $generate_element = "";
@@ -36,7 +36,6 @@ function pb_ac_chamada($obj_id, $obj = null, $echo = true)
     }
 
     $css_id_object = get_sub_field('gd-el-simple-id');
-    print_r($css_id_object);
     $css_content = get_sub_field('gd-el-simple-css');
     if (empty($css_id_object)) {
         $css_id_object = 'element-chamada-' . $obj_id;
