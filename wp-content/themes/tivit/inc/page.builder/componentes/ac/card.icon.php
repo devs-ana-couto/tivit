@@ -1,5 +1,5 @@
 <?php
-function pb_ac_card_icon($obj_id, $obj = null, $echo = true)
+function pb_ac_card_icon($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
 

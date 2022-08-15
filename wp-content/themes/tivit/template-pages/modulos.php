@@ -3,6 +3,7 @@
     <!-- todos os paramentos que tiverem como css inline(paramentro style="..."
         poderam ser personalizados pelo usuario -->
 
+
     <!-- Header Mobile -->
     <section class="container-fluid p-0 header-landing position-relative mt-0"
              style="background: url('<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header/background.png')">
@@ -37,6 +38,82 @@
     <!-- fim do Header Mobile -->
 
 
+    <!--header Conteudo -->
+
+    <section class="container-fluid p-0 header-conteudo position-relative">
+        <div class="d-flex">
+            <div class="card-img-overlay p-0 d-flex justify-content-center mask-bg"></div>
+            <div class="card-img-overlay p-0 d-flex justify-content-center align-items-end mask-v">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-v.svg"
+                     alt="" class="d-none d-lg-block">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-mobile.svg"
+                     alt="" class="w-100 d-block d-lg-none">
+            </div>
+            <div class="col-12 box-slider-header-content">
+                <div id="carouselHeaderSlider" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item position-relative active" id="carousel-01">
+                            <div class="position-absolute h-100 w-100 box-infos-slider">
+                                <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 infos d-flex flex-column justify-content-center">
+                                        <small>01/09/2021</small>
+                                        <h1>Será que sua empresa está pronta para um futuro hiperconectado?</h1>
+                                        <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
+                                        <div class="col-12 d-flex justify-content-center pt-4">
+                                            <a href="#" class="btn btn-tivit1">Ver matéria</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img id="imagem-01"
+                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/01.png"
+                                 class="d-none d-lg-block w-100 h-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <div class="position-absolute h-100 w-100 box-infos-slider">
+                                <div class="col-12 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 infos d-flex flex-column justify-content-center">
+                                        <small>01/09/2021</small>
+                                        <h1>Será que sua empresa está pronta para um futuro hiperconectado?</h1>
+                                        <p>Escrito por: <strong>Ana Helena Lazaroni</strong></p>
+                                        <div class="col-12 d-flex justify-content-center pt-4">
+                                            <a href="#" class="btn btn-tivit1">Ver matéria</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/01.png"
+                                 class="d-block w-100 h-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- box-chamada-pagina -->
     <section class="container-fluid box-chamada-pagina" style="background: white;">
         <div class="container">
@@ -48,9 +125,87 @@
         </div>
     </section>
 
+    <!-- card hover -->
+
+    <section class="container-fluid p-lg-0 card-hover">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center">
+                <div class="col-12 col-lg-8 box-title">
+                    <h1>INOVAÇÃO DE DENTRO PARA FORA</h1>
+                </div>
+                <div class="col-12 col-lg-8 box-descript">
+                    <p>Investir em pessoas e ideias faz parte do nosso DNA. Entendemos que a transformação digital e a
+                        busca
+                        por inovação se fazem a partir da antecipação das tendências do mercado. Para compor nossa
+                        atuação,
+                        contamos com soluções personalizadas e áreas como TIVIT Ventures, TBanks, TIVIT Labs e Tdx.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-1 justify-content-center row-card">
+                <div class="col box-card p-3" id="card-1" onmouseover="cardHoverOn('card-1')"
+                     onmouseleave="cardHoverLeave('card-1')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col box-card p-3" id="card-2" onmouseover="cardHoverOn('card-2')"
+                     onmouseleave="cardHoverLeave('card-2')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col box-card p-3" id="card-3" onmouseover="cardHoverOn('card-3')"
+                     onmouseleave="cardHoverLeave('card-3')">
+                    <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
+                        <div class="col-12 d-flex justify-content-center box-imagem">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/card-hover/logo-tivitlabs.svg"
+                                 alt="">
+                        </div>
+                        <div class="col-12 d-flex justify-content-center flex-wrap infos">
+                            <div class="col-12">
+                                <p>A TIVIT Ventures é o braço de investimento da TIVIT, voltada à aquisição de startups
+                                    com modelos escaláveis e de alto impacto.</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <a href="#" class="link">CONHEÇA A TIVIT LABS</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- time line -->
-
 
 
     <!-- segunda parte do modulo  -->
@@ -60,8 +215,9 @@
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
         d-none no container abaixo -->
         <div class="containe d-none">
-            <div class="col d-flex justify-content-center box-title-top">
+            <div class="col d-flex flex-wrap justify-content-center box-title-top">
                 <h3 class="title-top">Titulo (Opcional)</h3>
+
             </div>
         </div>
 
@@ -695,8 +851,13 @@
     <section class="container-fluid px-0 box-parceiros" style="background: white;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-auto box-title mt-5 mt-lg- auto">
+                <div class="col-12 col-lg-8 box-title">
                     <h2>Parceiros</h2>
+                </div>
+                <div class="col-12 col-lg-8 mt-3 mt-lg-4 box-descript">
+                    <p>Nossa expertise é garantida e certificada por diversas organizações de atuação nacional e
+                        internacional. Com mais de 20 anos de mercado, acumulamos excelência no que há de mais
+                        importante.</p>
                 </div>
                 <div class="col-12 box-slider">
                     <div class="owl-carousel owl-theme slider-parceiros">
@@ -1818,7 +1979,7 @@
     <!-- modulo slider -->
     <section class="container-fluid px-lg-0 box-slider position-relative" style="background: white">
         <div class="container position-relative">
-            <div class="card-img-overlay box-mask ">
+            <div class="card-img-overlay box-mask d-none ">
                 <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/slider/mask.svg"
                          alt="">
@@ -1826,9 +1987,6 @@
             </div>
 
             <div class="row row-cols-1 row-cols-lg-2">
-                <div class="w-100 d-none position-absolute box-triangulo d-lg-flex justify-content-center w-100 p-lg-0">
-                    <div class="box-triangulo-color" style="background: #fff;"></div>
-                </div>
                 <div class="col box-solid p-lg-0">
                     <div class="col-12 box-title-solid h-100" style="background: #F14517;">
                         <h3 class="title-solid" style="color: white">Cases de sucesso da
@@ -1843,7 +2001,7 @@
                 </div>
 
 
-                <div class="col case-sliders position-relative p-lg-0">
+                <div class="col case-sliders position-relative p-lg-0" style="z-index: 1;">
                     <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular"
                             data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1945,7 +2103,7 @@
             </div>
         </div>
         <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
-            <div class="h-50 w-100 box-50per" style="background: #F4F6F7;"></div>
+            <div class="h-50 w-100 box-50per" style="background: #f00;"></div>
         </div>
     </section>
     <!-- fim do modulo slider -->
@@ -2513,7 +2671,7 @@
     <!-- altenative
     carro o cliente sete o modo escuro, esse bloco precisará se carregado ao invés do outro
     -->
-    <section class="container-fluid px-lg-0 box-feedback-cliente alternative" style="background: #262626">
+    <section class="container-fluid px-lg-0 box-feedback-cliente " style="background: #262626">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
@@ -3038,274 +3196,192 @@
     </section>
 
     <!-- slider solto -->
-    <section class="container px-0 slider-projetos solto">
-        <div class="col-12 px-0">
-            <div id="slider-categoria01" class="carousel slide slider-categoria"
-                 data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
-                            </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais relevantes instituições culturais do país e foi por isso
-                                                que escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
-                            </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais
-                                                relevantes instituições culturais do país e foi por isso
-                                                que
-                                                escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-end d-none d-lg-flex">
-                            <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
-                            </div>
-                        </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
-                                <div class="container h-100 case-infos d-flex align-items-end">
-                                    <div class="row justify-content-start align-items-end">
-                                        <div class="col-12 n-acao">
-                                            <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
-                                        </div>
-                                        <div class="col-12 title">
-                                            <h3 class="title-text">Masp sp</h3>
-                                        </div>
-                                        <div class="col-12 box-desc">
-                                            <p>
-                                                Apoiar o Masp é contribuir para a manutenção de uma das
-                                                mais
-                                                relevantes instituições culturais do país e foi por isso
-                                                que
-                                                escolhemos apoiá-lo em 2019.
-                                            </p>
-                                        </div>
-                                        <div class="col-auto box-tags mt-2 mt-lg-4">
-                                            <ul class="list-group list-group-horizontal">
-                                                <li class="list-group-item"><a href="#">CULTURA E
-                                                        RESPONSABILIDADE SOCIAL</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-auto box-time-slide mt-2 mt-lg-4">
-                                            <p>10 minutos de leitura</p>
-                                        </div>
-                                        <div class="col-12 box-link mt-2 mt-lg-4">
-                                            <a href="#">VER AÇÃO</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
-                                     class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-auto position-relative controlador">
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="container-fluid manegement-services" style="background: #262626">
+    <section class="container-fluid px-0 slider-projetos solto position-relative">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 box-title mb-3">
-                    <h3 class="title">Serviços gerenciados na nuvem</h3>
-                </div>
-            </div>
-            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos"
-                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
+            <div class="col-12 px-0">
+                <div id="slider-categoria01" class="carousel slide slider-categoria"
+                     data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                     </div>
-                </div>
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center order-lg-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos order-lg-1"
-                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-lg-8 box-card">
-                    <div class="row gap-4 justify-content-center">
-                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
-                                 class="img-card" alt="">
-                        </div>
-                        <div class="col box-infos"
-                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
-                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
-                                realizou a migração do ambiente SAP on
-                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
-                                Windows, rehost de
-                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <div class="carousel-inner">
 
-            <div class="row justify-content-center">
-                <div class="col-8 mt-5 d-flex justify-content-center">
-                    <a href="#" class="btn btn-tivit1">CTA OPCIONAL</a>
+                        <div class="carousel-item active">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
+                            </div>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais relevantes instituições culturais do país e foi por isso
+                                                    que escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
+                            </div>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais
+                                                    relevantes instituições culturais do país e foi por isso
+                                                    que
+                                                    escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-end d-none d-lg-flex">
+                                <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
+                                    <img class="img-fluid"
+                                         src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/mask-slider.svg"
+                                         alt="">
+                                </div>
+                            </div>
+                            <div class="row gx-0 h-100 justify-content-between">
+                                <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                                    <div class="container h-100 case-infos d-flex align-items-end">
+                                        <div class="row justify-content-start align-items-end">
+                                            <div class="col-12 n-acao">
+                                                <p>Nome da ação: <strong>Lorem Ipsum</strong></p>
+                                            </div>
+                                            <div class="col-12 title">
+                                                <h3 class="title-text">Masp sp</h3>
+                                            </div>
+                                            <div class="col-12 box-desc">
+                                                <p>
+                                                    Apoiar o Masp é contribuir para a manutenção de uma das
+                                                    mais
+                                                    relevantes instituições culturais do país e foi por isso
+                                                    que
+                                                    escolhemos apoiá-lo em 2019.
+                                                </p>
+                                            </div>
+                                            <div class="col-auto box-tags mt-2 mt-lg-4">
+                                                <ul class="list-group list-group-horizontal">
+                                                    <li class="list-group-item"><a href="#">CULTURA E
+                                                            RESPONSABILIDADE SOCIAL</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto box-time-slide mt-2 mt-lg-4">
+                                                <p>10 minutos de leitura</p>
+                                            </div>
+                                            <div class="col-12 box-link mt-2 mt-lg-4">
+                                                <a href="#">VER AÇÃO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-8 box-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/categoria-slider/slider-01.png"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-auto position-relative controlador">
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#slider-categoria01"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#slider-categoria01"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
+        </div>
+        <div class="card-img-overlay box-background-full" style="background: #262626;">
+            <div class="w-100 h-50" style="background: #0a4b78"></div>
+            <div class="w-100 h-50" style="background: #0A246A"></div>
         </div>
     </section>
 
-
-    <!-- header -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-                    <script src="https://www.youtube.com/iframe_api"></script>
-                    <div id="player"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header Inner -->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container">
@@ -3400,6 +3476,109 @@
         });
 
     </script>
+
+    <section class="container-fluid manegement-services" style="background: #262626">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 box-title mb-3">
+                    <h3 class="title">Serviços gerenciados na nuvem</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-1.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center order-lg-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-2.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos order-lg-1"
+                             style="background: #F4F6F7; border-right: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-8 box-card">
+                    <div class="row gap-4 justify-content-center">
+                        <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/manegement-services/icon-3.svg"
+                                 class="img-card" alt="">
+                        </div>
+                        <div class="col box-infos"
+                             style="background: #F4F6F7; border-left: 3px solid #F20024 !important;">
+                            <p><strong>Projeto e Migração</strong> com a equipe de Professional Services da TIVIT
+                                realizou a migração do ambiente SAP on
+                                premisses com 10 estâncias e 17 tera de storage, onde foram realizados o rehost de
+                                Windows, rehost de
+                                Linux, rehost SQL para rodar na nuvem pública Microsoft Azure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-8 mt-5 d-flex justify-content-center">
+                    <a href="#" class="btn btn-tivit1">CTA OPCIONAL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- header -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <div id="player"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container-fluid box-before-footer" style="background-color: #C7EDE3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-triancle position-relative">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/before-footer/bg-default.png"
+                         class="img-triancle" alt="">
+                    <div class="card-img-overlay mask-v">
+                        <img  src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <?php get_footer(); ?>

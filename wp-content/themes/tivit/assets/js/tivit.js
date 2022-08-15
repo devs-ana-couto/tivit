@@ -1093,11 +1093,13 @@ function linkDinamico(index) {
     var textLink = document.querySelector(idLink).innerText;
 
     var textDisplay = document.querySelector(".text-display");
-    var ctaLink = document.createElement("a");
-    ctaLink.setAttribute("href", textLink);
-    ctaLink.innerText = "Conheça nossos produtos";
-    ctaLink.classList.add("fadein");
-    textDisplay.appendChild(ctaLink);
+    if (textLink !== "") {
+        var ctaLink = document.createElement("a");
+        ctaLink.setAttribute("href", textLink);
+        ctaLink.innerText = document.querySelector(`#portfolio__link__text-${index}`).textContent;
+        ctaLink.classList.add("fadein");
+        textDisplay.appendChild(ctaLink);
+    }
 }
 
 infosPortfolio(null, 0);
@@ -1121,4 +1123,41 @@ function getBaseUrl() {
     }
 
     return baseUrl;
+}
+
+function imgMobileContent() {
+    var headerConteudo = document.querySelector(".header-conteudo");
+    var sliders = headerConteudo.querySelectorAll(".carousel-item");
+
+    /*var altura = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;*/
+    sliders.forEach((slider, index) => {
+            var indexId = slider.getAttribute('id');
+            var sliderAtual = document.querySelector(`#${indexId}`);
+            var sliderImage = sliderAtual.querySelector(`#imagem-${index}`);
+            var getImage = sliderImage.getAttribute("src");
+            sliderAtual.style.backgroundImage = `url(${getImage})`;
+            console.log(sliderAtual);
+        }
+    );
+}
+
+var headerConteudo = document.querySelector(".header-conteudo");
+
+if (headerConteudo !== "") {
+    imgMobileContent();
+}
+
+function cardHoverOn(id){
+    var card = document.getElementById(id);
+    var infos = card.querySelector(".infos");
+
+    infos.classList.add("active");
+}
+function cardHoverLeave(id){
+    var card = document.getElementById(id);
+    var infos = card.querySelector(".infos");
+
+    infos.classList.remove("active");
 }

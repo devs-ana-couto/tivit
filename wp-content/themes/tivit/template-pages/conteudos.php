@@ -1,11 +1,22 @@
 <?php /* Template Name: Conteudos */ ?>
 <?php get_header(); ?>
 
-    <div class="a-tivit-cases cases conteudos">
-        <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <?= do_shortcode('[ac_bloco_header_conteudo]') ?>
+    <section class="container-fluid p-0 header-conteudo position-relative">
+        <div class="d-flex">
+            <div class="card-img-overlay p-0 d-flex justify-content-center mask-bg"></div>
+            <div class="card-img-overlay p-0 d-flex justify-content-center align-items-end mask-v">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-v.svg"
+                     alt="" class="d-none d-lg-block">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/header-conteudo/mask-mobile.svg"
+                     alt="" class="w-100 d-block d-lg-none">
+            </div>
+            <div class="col-12 box-slider-header-content">
+                <div id="carouselHeaderSlider" class="carousel slide" data-bs-ride="true">
+                    <?= do_shortcode('[ac_bloco_header_conteudo]') ?>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="cases-recentes conteudos">
         <div class="container hide-mobile">

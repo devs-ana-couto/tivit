@@ -3,53 +3,6 @@
 
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
-    <!-- Hero banner-->
-    <section class="container-fluid p-0 header-inner position-relative">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 position-relative box-mask">
-                    <div class="card-img-overlay p-0 bottom-0">
-                        <img class="w-100 d-none d-lg-block"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/Vector.svg"
-                             alt="">
-                        <img class="w-100 d-lg-none"
-                             src="<?php echo get_template_directory_uri(); ?>/assets/images/header-inner/mask-mobile.svg"
-                             alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 p-0 box-header position-relative"
-             style="background: url('<?php $detect->isMobile() ? the_field('header_mobile_inovacao') : the_field('header_desktop_inovacao'); ?>')">
-            <div class="card-img-overlay mask-gradient"></div>
-            <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
-                <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
-                    <p class="desc-title"><?php the_field('pre_chamada_inovacao'); ?></p>
-                    <h1 class="title"><?php the_field('chamada_inovacao');?></h1>
-                </div>
-                <div class="col-auto player position-absolute d-none">
-                    <div class="d-flex flex-column">
-                        <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
-                            <div class="col-12">
-                                <div class="aura"></div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-center position-absolute">
-                                <button data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/a-tivit/play.svg"
-                                         alt="...">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-12 order-1 order-lg-2 d-flex justify-content-center">
-                            <button class="text-white" data-bs-toggle="modal" data-bs-target="#videoOpen">
-                                Assista ao reel
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- modulo antigo desativado -->
     <!--<div class="inovacao-hero"
          style="background: url('<? /* $detect->isMobile() ? the_field('header_mobile_inovacao') : the_field('header_desktop_inovacao'); */ ?>') no-repeat center center; background-size: cover;">

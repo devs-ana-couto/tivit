@@ -3,7 +3,7 @@
 
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
-    <section class="home-hero">
+    <section class="home-hero position-relative">
         <div id="hero" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
             <div class="carousel-inner text-center">
                 <?php
@@ -15,6 +15,7 @@
                         $banner_mobile_url[$i] = get_sub_field('banner_mobile');
                         $chamada[$i] = get_sub_field('chamada');
                         $cta[$i] = get_sub_field("slider-cta");
+                        $cta_text[$i] = get_sub_field("slider-cta-text");
                         ?>
                         <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
                             <div class="content position-relative">
@@ -25,9 +26,14 @@
                                      alt="mask"/>
                                 <div class="title position-absolute">
                                     <?= $chamada[$i] ?>
+                                    <?php
+                                    if($cta[$i] !== ""){
+                                    ?>
                                     <div class="botao">
-                                        <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>">Saiba Mais</a>
+
+                                        <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>"><?php echo $cta_text[$i] ?></a>
                                     </div>
+                                    <?php } ?>
                                 </div>
 
                             </div>
@@ -38,44 +44,6 @@
                 endif;
                 ?>
             </div>
-
-
-            <!--    <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="navigation <? /*= count(get_field('slider_hero')) == 1 ? 'hide-desktop hide-mobile' : '' */ ?>">
-                            <button class="carousel-control-prev hide-mobile" type="button" data-bs-target="#hero"
-                                    data-bs-slide="prev">
-                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/icons/navegacao/arrow_left.png"
-                                     alt="arrow_left">
-                            </button>
-                            <div class="d-flex flex-row counter hide-mobile">
-                                <div class="numactive"></div>
-                                <div class="numseparation"></div>
-                                <div class="numtotal"></div>
-                            </div>
-                            <button class="carousel-control-next hide-mobile" type="button" data-bs-target="#hero"
-                                    data-bs-slide="next">
-                                <img src="<?php /*echo get_template_directory_uri(); */ ?>/assets/icons/navegacao/arrow_right.png"
-                                     alt="arrow_right">
-                            </button>
-                            <div class="carousel-indicators">
-                                <?php
-            /*                                if (have_rows('slider_hero')):
-                                                // Loop through rows.
-                                                for ($i = 0; have_rows('slider_hero'); $i++) : the_row();
-                                                    */ ?>
-                                        <button type="button" data-bs-target="#hero"
-                                                data-bs-slide-to="<? /*= $i */ ?>" <? /*= $i == 0 ? 'class="active" aria-current="true"' : 'class=""' */ ?>
-                                                aria-label="Hero"></button>
-                                    <?php
-            /*                                    endfor; endif; */ ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
             <div class="col-auto controladores position-absolute">
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     <div class="col-auto d-none d- d-lg-flex align-items-center px-5 px-lg-3">
@@ -122,6 +90,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -159,6 +128,12 @@
                     <?php } ?>
                 </div>
             </div>
+
+        </div>
+        <div class="col-12 d-none position-relative box-arrow d-lg-flex justify-content-center">
+            <div class="arrow slider-arrow-back text-center position-absolute">
+                <img src="http://tivit.local/wp-content/themes/tivit/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
+            </div>
         </div>
     </section>
 
@@ -175,11 +150,11 @@
             </div>
         </div>
         <div class="container pcustom">
-            <div class="row">
-                <div class="col-12">
-                    <p class="mt-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="mt-4">
                         <?php the_field('texto_de_introducao') ?>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,8 +185,8 @@
                              style="background: url('<?php echo $mascara; ?>');">
                         </div>
                         <div class="col-12  box__mask h-100">
-                            <div class="row h-100 row-cols-1 row-cols-lg-2">
-                                <div class="col p-lg-5 box-z-index">
+                            <div class="row h-100 row-cols-1 row-cols-lg-auto">
+                                <div class="col-12 col-lg-7 p-lg-5 box-z-index">
                                     <div class="mask__links py-5 px-0 p-lg-5 h-100">
                                         <div class="d-flex align-content-center h-100">
                                             <div class="col-12">
@@ -235,17 +210,20 @@
                                                             if ($i === 0) {
                                                                 $active = "active";
                                                             }
+                                                            echo '<div id="port'.$i.'" class="">';
                                                             echo '<div class="d-none" id="portfolio__img__url-' . $i . '" data-img="' . $bg . '"></div>';
                                                             echo '<div class="d-none" id="portfolio__desc-' . $i . '">' . get_sub_field("portifolio_lista_desc") . '</div>';
                                                             echo '<div class="d-none" id="portfolio__link__url-' . $i . '">' . get_sub_field("portifolio_lista_cta") . '</div>';
+                                                            echo '<div class="d-none" id="portfolio__link__text-' . $i . '">' . get_sub_field("portifolio_lista_cta_text") . '</div>';
                                                             echo '<button id="' . $i . '" class="links--a ' . $active . ' w-100"
                                                             onclick="infosPortfolio(' . $bg . ', ' . $i . ')">' . get_sub_field('portifolio_titulo') . '</button>';
+                                                            echo '</div>';
                                                         }
                                                     }
                                                     ?>
                                                     <?php
                                                     $cta = get_field("portifolio_call_to_action_geral");
-                                                    if ($cta): ?>
+                                                    if ($cta['portifolio_call_to_action_link'] !== ""): ?>
                                                         <div class="col-12 col-lg-auto mt-5 d-flex justify-content-center justify-content-lg-start flex-wrap">
                                                             <a href="<?php echo $cta['portifolio_call_to_action_link']; ?>"
                                                                class="btn btn-primary links__cta--geral"
@@ -261,7 +239,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col p-lg-5 box-z-index">
+                                <div class="col-12 col-lg-5 p-lg-5 box-z-index">
                                     <div class="d-flex align-items-end p-3 py-5 p-lg-5 h-100">
                                         <div class="col text-display fadein">
                                             <p>Na TIVIT, o Programa de Aceleração de Carreiras, nosso PAC, acontece de

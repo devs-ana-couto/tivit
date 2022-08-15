@@ -23,6 +23,11 @@ require_once('componentes/ac/video.php');
 require_once('componentes/ac/card.icon.php');
 require_once('componentes/ac/bloco.intro.php');
 require_once('componentes/ac/slider-simple.php');
+require_once('componentes/ac/header.internal.php');
+require_once('componentes/ac/depoimentos.php');
+require_once('componentes/ac/cards.hover.php');
+require_once('componentes/ac/slider.cases.php');
+require_once('componentes/ac/slider.logos.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -30,7 +35,6 @@ require_once('componentes/video.full.php');
 require_once('componentes/image.full.php');
 require_once('componentes/gallery.php');
 require_once('componentes/iframe.php');
-
 
 
 function page_bulder_init($obj_id, $obj = null, $echo = true)
@@ -45,58 +49,58 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
             $layout = get_row_layout();
             switch ($layout) {
                 case 'gd-ac-banner-home':
-                    $return[$layout] = pb_ac_banner_home($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_home($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-header-interno':
-                    $return[$layout] = pb_ac_banner_interno($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_interno($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-01':
-                    $return[$layout] = pb_ac_banner_01($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_01($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-02':
-                    $return[$layout] = pb_ac_banner_02($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_02($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-03':
-                    $return[$layout] = pb_ac_banner_03($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_03($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-04':
-                    $return[$layout] = pb_ac_banner_04($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_04($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-05':
-                    $return[$layout] = pb_ac_banner_05($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_05($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-banner-06':
-                    $return[$layout] = pb_ac_banner_06($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_banner_06($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-big-numbers':
-                    $return[$layout] = pb_ac_big_number($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_big_number($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-diferenciais':
-                    $return[$layout] = pb_ac_diferencial($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_diferencial($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-chamada':
-                    $return[$layout] = pb_ac_chamada($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_chamada($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-lista-logos-01':
-                    $return[$layout] = pb_ac_lista_logos_01($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_lista_logos_01($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-formulario':
-                    $return[$layout] = pb_ac_formulario($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_formulario($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-conteudo-relacionado':
-                    $return[$layout] = pb_ac_conteudo_relacionado($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_conteudo_relacionado($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-planejamento':
-                    $return[$layout] = pb_ac_planejamento($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_planejamento($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-beneficios':
-                    $return[$layout] = pb_ac_beneficios($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_beneficios($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-video':
-                    $return[$layout] = pb_ac_video($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_video($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-carrossel':
-                    $return[$layout] = pb_ac_carrossel($obj_id, $obj, $echo);
+                    $return[$layout] = pb_ac_carrossel($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-element-section':
                     $return[$layout] = pb_bloco_conteudo($obj_id, $obj, $block, $echo);
@@ -125,6 +129,22 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                 case 'gd-ac-slider-simple':
                     $return[$layout] = pb_ac_slide_simple($obj_id, $obj, $block, $echo);
                     break;
+                case 'gd-ac-header-internal-mask':
+                    $return[$layout] = pb_ac_header_internal_mask($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-depoimentos':
+                    $return[$layout] = pb_ac_depoimentos($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-cards-hover':
+                    $return[$layout] = pb_ac_cards_hover($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-slider-slider-cases':
+                    $return[$layout] = pb_ac_slider_cases($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-slider-logo':
+                    $return[$layout] = pb_ac_slide_logos($obj_id, $obj, $block, $echo);
+                    break;
+
 
             }
             $block++;

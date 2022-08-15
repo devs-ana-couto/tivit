@@ -4,7 +4,7 @@
  * AC / Chamada
 */
 
-function pb_ac_chamada($obj_id, $obj = null, $echo = true)
+function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 {
     global $detect;
     $generate_element = "";
@@ -19,6 +19,21 @@ function pb_ac_chamada($obj_id, $obj = null, $echo = true)
     $s_img_background = $detect->isMobile() ? $s_img_background_mobile_array['url'] : $s_img_background_array['url'];
     $bgColor = "background-color: $s_color_background;";
     $bgImg = "background-image: $s_img_background;";
+
+
+    $paddingTop = get_sub_field("gd-el-simple-padding-top");
+    $paddindBottom = get_sub_field("gd-el-simple-padding-bottom");
+    $paddingTopMobile = get_sub_field("gd-el-simple-padding-top-mobile");
+    $paddindBottomMobile = get_sub_field("gd-el-simple-padding-bottom-mobile");
+
+    if ($paddingTop !== "" || $paddingTopMobile !== "") {
+        $paddindTopCss = 'padding-top: ' . $paddingTop . 'px !important;';
+        $paddindTopMobileCss = 'padding-top: ' . $paddingTopMobile . 'px !important;';
+    }
+    if ($paddindBottom !== "" || $paddingTopMobile !== "") {
+        $paddindBottomCss = 'padding-bottom: ' . $paddindBottom . 'px !important ;';
+        $paddindBottomMobileCss = 'padding-bottom: ' . $paddindBottomMobile . 'px !important ;';
+    }
 
     $css_id_object = get_sub_field('gd-el-simple-id');
     $css_content = get_sub_field('gd-el-simple-css');
@@ -62,16 +77,26 @@ function pb_ac_chamada($obj_id, $obj = null, $echo = true)
 			' . $t_margin_and_padding . '
 
 			/* CSS Personalized */
+			.css_danamic_'. $obj_id .' {
+			    '. $paddindBottomCss .'
+			    '. $paddindTopCss .'
+			}
+			@media screen and (max-width: 991px) {
+            .css_danamic_'. $obj_id .' {
+        ' . $paddindBottomMobileCss . '
+			' . $paddindTopMobileCss . '     
+        }
+        }
 
 				{css_content}
 
 			/* CSS: END Personalized */
 		</style>
 
-		<section class="container-fluid box-chamada-pagina" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}">
+		<section class="container-fluid box-chamada-pagina css_danamic_'. $obj_id .'" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}">
         <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap" style="z-index: 1048">
+            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap" style="z-index: 1048">
                 {c_title}
                 {c_button}
             </div>

@@ -462,9 +462,9 @@ if (!function_exists('ac_bloco_header_conteudo')) {
         $arg['porpagina'] = 3;
         $arg['pagina'] = 1;
         $dados = ac_conteudo_listar($arg);
+        $saida = '';
+        //var_dump($dados);
 
-        $saida .= '<div class="container">';
-        $saida .= '<div class="row">';
         $saida .= '<div class="carousel-inner">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
@@ -481,44 +481,46 @@ if (!function_exists('ac_bloco_header_conteudo')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="carousel-item heroslide ' . ($ac == 0 ? 'active' : '') . '">';
-            $saida .= '<div class="col-12 col-md-6">';
-            $saida .= '<div class="detalhes">';
-            $saida .= '<div class="autor-time">';
+
+            $saida .= '<div class="carousel-item position-relative ' . ($ac == 0 ? 'active' : '') . '" id="carousel-' .  $ac .'">';
+            $saida .= '<div class="position-absolute h-100 w-100 box-infos-slider">';
+            $saida .= '<div class="col-12 h-100 d-flex justify-content-center align-items-center">';
+            $saida .= '<div class="col-12 col-lg-6 infos d-flex flex-column justify-content-center">';
+            $saida .= '<small>01/09/2021</small>';
+            $saida .= '<h1>' . $dados[$ac]['titulo'] . '</h1>';
             $saida .= '<p>Escrito por: <strong>' . $dados[$ac]['quem'] . '</strong></p>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '<div class="content">';
-            $saida .= '<h2>' . $dados[$ac]['titulo'] . '</h2>';
-            $saida .= '</div>';
-            $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">acessar artigo <img src="' . get_template_directory_uri() . '/assets/images/a-tivit/arrow-red.svg" class="hide-desktop" alt="Saiba Mais"></a>';
+            $saida .= '<div class="col-12 d-flex justify-content-center pt-4">';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="btn btn-tivit1">Ver matéria</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
-        }
-        $saida .= '<div class="col-12 col-md-6">';
-        $saida .= '<div class="navigation ' . ($ac <= 1 ? ' hide-mobile hide-desktop' : '') . '">';
-        $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">';
-        $saida .= '<img src="' . get_template_directory_uri() . '/assets/icons/navegacao/arrow_left.png" alt="arrow_left">';
-        $saida .= '</button>';
-        $saida .= '<div class="d-flex flex-row counter">';
-        $saida .= '<div class="numactive"></div><div class="numseparation"></div><div class="numtotal"></div>';
-        $saida .= '</div>';
-        $saida .= '<button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">';
-        $saida .= '<img src="' . get_template_directory_uri() . '/assets/icons/navegacao/arrow_right.png" alt="arrow_right">';
-        $saida .= '</button>';
-        $saida .= '<div class="carousel-indicators">';
-        for ($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= '<button type="button" data-bs-target="#content" data-bs-slide-to="' . $ac . '" class="' . ($ac == 0 ? 'active' : '') . '" aria-current="true" aria-label="Content 1"></button>';
+            $saida .= '</div>';
+            $saida .= '<img id="imagem-'. $ac . '"
+                                 src="'. $dados[$ac]['bhdesktop'] . '"
+                                 class="d-none w-100 h-100" alt="...">';
+            $saida .= '</div>';
 
         }
         $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
+
+        $saida .= '<button class="carousel-control-prev d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>';
+        $saida .= '<button class="carousel-control-next d-none d-lg-block" type="button"
+                            data-bs-target="#carouselHeaderSlider"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>';
+
+        $saida .= '<div class="carousel-indicators">';
+        for ($ac = 0; $ac < count($dados); $ac++) {
+             $saida .= '<button type="button" data-bs-target="#carouselHeaderSlider" data-bs-slide-to="' . $ac . '" class="' . ($ac == 0 ? 'active' : '') . '"
+                                aria-current="true" aria-label="Slide '. $ac .'"></button>';
+        }
         return $saida;
     }
 }
