@@ -2601,7 +2601,7 @@ div {
   .portfolio .portfolio__box {
     height: unset;
     background-position: center top !important;
-    background-size: contain !important;
+    background-size: cover !important;
   }
 }
 .portfolio .portfolio__box .card-img-overlay {
