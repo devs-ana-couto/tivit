@@ -3195,6 +3195,8 @@
         </div>
     </section>
 
+
+
     <!-- slider solto -->
     <section class="container-fluid px-0 slider-projetos solto position-relative">
         <div class="container">
@@ -3573,7 +3575,8 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/before-footer/bg-default.png"
                          class="img-triancle" alt="">
                     <div class="card-img-overlay mask-v">
-                        <img  src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg" alt="">
+
+                        <img class="v-vermelho"  src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg" alt="">
                     </div>
                 </div>
             </div>

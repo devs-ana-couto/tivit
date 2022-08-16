@@ -315,7 +315,8 @@
 
     <!-- Depoimentos -->
     <div id="pecDepoimentos" class="lp-tbanks-depoimentos">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel"
+             >
             <div class="carousel-inner">
                 <?
                 if (have_rows('depoimentos_pc')):

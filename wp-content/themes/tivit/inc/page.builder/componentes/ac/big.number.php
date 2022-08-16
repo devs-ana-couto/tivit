@@ -8,6 +8,7 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 {
     $generate_element = "";
     $s_cols_per_rows = get_sub_field("gd-el-big-numbers-cols-numbers");
+    $c_background_half_top = get_sub_field("gd-el-big-numbers-half-background");
     if (have_rows('ac-pb-big-numbers-group', $obj_id)):
         while (have_rows('ac-pb-big-numbers-group', $obj_id)) : the_row();
 
@@ -74,7 +75,7 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 								
                 <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: ' . $s_color_background . '">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
-        <div class="card-img-overlay h-50 fundo-50-top" style="background: transparent;"></div>
+        <div class="card-img-overlay h-50 fundo-50-top" style="background-color: {half_top_background};"></div>
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
         d-none no container abaixo -->
         <div class="container">
@@ -123,8 +124,8 @@ function pb_ac_big_number($obj_id, $obj = null, $echo = true)
 
             $generate_element =
                 str_replace(
-                    array('{id}', '{c_text}', '{css_content}', '{css_id_object}', '{s_color_of_menu}', '{content}'),
-                    array($obj_id, $c_text, $css_content, $css_id_object, $s_color_of_menu, $generate_content),
+                    array('{id}', '{c_text}', '{css_content}', '{css_id_object}', '{s_color_of_menu}', '{content}', '{half_top_background}'),
+                    array($obj_id, $c_text, $css_content, $css_id_object, $s_color_of_menu, $generate_content, $c_background_half_top),
                     $template);
 
             if ($echo) {

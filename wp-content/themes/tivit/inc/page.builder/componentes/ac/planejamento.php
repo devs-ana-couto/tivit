@@ -119,7 +119,7 @@ function pb_ac_planejamento($obj_id, $obj = null, $echo = true)
     $content = '
 				
 				<div class="col">
-                        <div class="card h-100" style="border-color: ' . $t_color_border . ';">
+                        <div class="card h-100" style="border-left-color: ' . $t_color_border . ';">
                             <div class="card-header">                           
                                 {titulo}                                               
                             </div>

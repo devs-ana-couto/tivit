@@ -1,7 +1,7 @@
 <?php /* Template Name: Inovação */ ?>
 <?php get_header(); ?>
 
-<?php page_bulder_init(get_the_ID(),$post,true);?>
+<?php page_bulder_init(get_the_ID(), $post, true); ?>
 
     <!-- modulo antigo desativado -->
     <!--<div class="inovacao-hero"
@@ -35,46 +35,46 @@
     </div>-->
 
     <!-- Introdução abaixo do Hero-->
-    <div class="inovacao-intro">
+    <!--<div class="inovacao-intro">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <p>
-                        <? the_field('introducao_inovacao'); ?>
+                        <? /* the_field('introducao_inovacao'); */ ?>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- Bloco Ventures -->
-    <div id="ventures">
+    <!--<div id="ventures">
         <div class="d-flex flex-column container w-100 text-center justify-content-center align-items-center">
-            <h2><? the_field('chamada_inovacao_ventures'); ?></h2>
-            <p><? the_field('descricao_inovacao_ventures'); ?></p>
+            <h2><? /* the_field('chamada_inovacao_ventures'); */ ?></h2>
+            <p><? /* the_field('descricao_inovacao_ventures'); */ ?></p>
         </div>
         <div class="container mt-3 mb-3 mt-md-5 mb-md-5">
 
             <div class="row">
-                <?
+                <? /*
                 if (have_rows('logo_inovacao_ventures')):
                     // Loop through rows.
                     for ($i = 0; have_rows('logo_inovacao_ventures'); $i++) : the_row();
                         $logo_url[$i] = get_sub_field('logo');
                         $cta_texto[$i] = get_sub_field('cta_texto');
                         $cta_url[$i] = get_sub_field('cta_url');
-                        ?>
+                        */ ?>
                         <div class="col-sm-12 col-md-4 mt-3">
                             <div class="box">
                                 <div class="d-flex justify-content-custom text-center">
-                                    <img src="<?= $logo_url[$i] ?>" alt="Privally">
+                                    <img src="<? /*= $logo_url[$i] */ ?>" alt="Privally">
                                 </div>
                                 <div class="chamada">
-                                    <a href="<?= $cta_url[$i] ?>"><?= $cta_texto[$i] ?></a>
+                                    <a href="<? /*= $cta_url[$i] */ ?>"><? /*= $cta_texto[$i] */ ?></a>
                                 </div>
                             </div>
                         </div>
-                    <? endfor; endif; ?>
+                    <? /* endfor; endif; */ ?>
             </div>
 
             <!-- <div class="esconder-por-hora">
@@ -85,25 +85,25 @@
       </div>
       <div class="w-100">
         <div class="d-flex justify-content-center flex-row services">
-          <?
+          <? /*
             if (have_rows('skills_inovacao_ventures')):
                 // Loop through rows.
                 for ($i = 0; have_rows('skills_inovacao_ventures'); $i++) : the_row();
                     $skill[$i] = get_sub_field('skill');
-                    ?>
-          <em><?= $skill[$i] ?></em>
+                    */ ?>
+          <em><? /*= $skill[$i] */ ?></em>
 
-        <? endfor; endif; ?>
+        <? /* endfor; endif; */ ?>
         </div>
       </div>
     </div> -->
 
-            <div class="d-flex justify-content-center mt-5 w-100">
-                <a href="/staged/tivit/ventures" class="button">CONHEÇA MAIS SOBRE VENTURES</a>
-            </div>
-            <div id="triangle-down"></div>
-        </div>
-    </div>
+    <!-- <div class="d-flex justify-content-center mt-5 w-100">
+         <a href="/staged/tivit/ventures" class="button">CONHEÇA MAIS SOBRE VENTURES</a>
+     </div>
+     <div id="triangle-down"></div>
+ </div>
+</div>-->
 
     <!-- Bloco TivitLabs -->
     <div id="tivitLabs" class="container">
@@ -120,17 +120,25 @@
     <!-- Bloco Carrossel Infinito -->
     <div id="carouselCustom" class="container-fluid p-0 text-center my-3">
         <div class="row mx-auto my-auto justify-content-center">
-            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="recipeCarousel" class="carousel slide position-relative" data-bs-ride="carousel"
+                 data-bs-wrap="false">
                 <div class="carousel-inner" role="listbox">
-                    <?
+                    <?php
                     if (have_rows('itens_labs_inovacao')):
                         // Loop through rows.
                         for ($i = 0; have_rows('itens_labs_inovacao'); $i++) : the_row();
                             $img_url[$i] = get_sub_field('imagem_item_inovacao');
                             $title_item[$i] = get_sub_field('titulo_item_inovacao');
                             $description[$i] = get_sub_field('descricao_item_inovacao');
+                            $active = "";
+                            if($i === 0){
+                                $active = "active";
+                            }
+
+                            $bullets[$i] = '<button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="'. $i .'" class="'. $active .'"
+                                    aria-current="true"></button>'
                             ?>
-                            <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
+                            <div class="carousel-item heroslide <?= $active; ?>">
                                 <div class="col-11 col-md-3">
                                     <div class="card">
                                         <div class="card-img">
@@ -143,22 +151,32 @@
                                     </div>
                                 </div>
                             </div>
-                        <? endfor; endif; ?>
+                        <?php endfor; endif; ?>
                 </div>
-                <div class="d-flex justify-content-center mt-3 mt-md-5">
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
-                       data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <div class="d-flex flex-row counter">
-                        <div class="numactive"></div>
-                        <div class="numseparation"></div>
-                        <div class="numtotal"></div>
+                <div class="row row-cols- justify-content-center">
+                    <div class="col-auto d-flex align-items-center">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
                     </div>
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
-                       data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
+                    <div class="col-auto p-0">
+                        <div class="carousel-indicators">
+                           <?php
+                            foreach ($bullets as $bullet){
+                                echo $bullet;
+                            }
+                           ?>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

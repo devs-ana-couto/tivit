@@ -5307,8 +5307,39 @@ div {
   overflow: hidden;
   padding: 0;
 }
-#carouselCustom .carousel-inner {
-  right: -13%;
+#carouselCustom .carousel .carousel-indicators {
+  margin-bottom: unset;
+  position: relative;
+}
+#carouselCustom .carousel .carousel-control-next, #carouselCustom .carousel .carousel-control-prev {
+  position: relative;
+}
+#carouselCustom .carousel .carousel-control-next-icon {
+  background-image: url("../images/modulos/categoria-slider/article-arrow-next.svg");
+}
+#carouselCustom .carousel .carousel-control-prev-icon {
+  background-image: url("../images/modulos/categoria-slider/article-arrow-back.svg");
+}
+#carouselCustom .carousel .carousel-control-next-icon, #carouselCustom .carousel .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  opacity: unset;
+}
+#carouselCustom .carousel .carousel-dark .carousel-control-next-icon, #carouselCustom .carousel .carousel-dark .carousel-control-prev-icon {
+  filter: unset;
+}
+#carouselCustom .carousel .controladores {
+  bottom: -50px;
+}
+#carouselCustom .carousel .carousel-indicators [data-bs-target] {
+  width: 19.5px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #F20024;
 }
 @media (max-width: 767px) {
   #carouselCustom .carousel-inner {
@@ -10467,10 +10498,11 @@ div {
 .box-card-icons .box-cards .card .card-body {
   background: #FBFBFC;
   border: 1px solid #CAD2D8;
+  padding: 50px 0px;
 }
 @media screen and (max-width: 991px) {
   .box-card-icons .box-cards .card .card-body {
-    padding-bottom: 25px;
+    padding: 25px 0px;
   }
 }
 .box-card-icons .box-cards .card .card-body p, .box-card-icons .box-cards .card .card-body pre {
@@ -10791,9 +10823,6 @@ div {
   .box-parceiros .box-slider, .box-nosso-clientes .box-slider {
     padding: 40px 0px !important;
   }
-}
-.box-parceiros .box-slider .slider-parceiros .item img, .box-nosso-clientes .box-slider .slider-parceiros .item img {
-  max-height: 130px;
 }
 @media screen and (min-width: 991px) {
   .box-parceiros .box-slider .slider-parceiros .item img, .box-nosso-clientes .box-slider .slider-parceiros .item img {
@@ -11160,7 +11189,7 @@ div {
   padding-left: 0px;
 }
 .card-only-text .box-cards .card .card-header h1, .card-only-text .box-cards .card .card-header h2, .card-only-text .box-cards .card .card-header h3, .card-only-text .box-cards .card .card-header h4, .card-only-text .box-cards .card .card-header h5, .card-only-text .box-cards .card .card-header h6, .card-only-text .box-cards .card .card-header .card-title {
-  max-width: 148px;
+  max-width: 100%;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -12473,6 +12502,7 @@ div {
 
 .tab-pane .textMenu h2 a {
   color: white;
+  font-size: 18px;
 }
 .tab-pane .textMenu h2 a:after {
   content: url("../images/expandmenu.svg");
@@ -12490,6 +12520,16 @@ div {
   transition: all 0.2s linear;
 }
 
+@media screen and (min-width: 991px) {
+  .solution-menu .textMenu ul li {
+    padding-bottom: 12px;
+    width: 230px;
+  }
+  .solution-menu .textMenu ul li a {
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+}
 .header-conteudo {
   height: 520px;
 }
@@ -12779,19 +12819,6 @@ div {
 }
 .box-before-footer .box-triancle .img-triancle {
   width: 100%;
-  height: auto;
-  -webkit-mask-image: url("../images/modulos/before-footer/mask-background.svg");
-  mask-image: url("../images/modulos/before-footer/mask-background.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  -webkit-mask-size: contain;
-}
-.box-before-footer .box-triancle .mask-v {
-  mix-blend-mode: multiply;
-}
-.box-before-footer .box-triancle .mask-v img {
-  width: 100%;
   height: 100%;
   -webkit-mask-image: url("../images/modulos/before-footer/mask-background.svg");
   mask-image: url("../images/modulos/before-footer/mask-background.svg");
@@ -12799,6 +12826,13 @@ div {
   mask-repeat: no-repeat;
   mask-size: cover;
   -webkit-mask-size: contain;
+  top: 0;
+}
+.box-before-footer .box-triancle .mask-v {
+  mix-blend-mode: multiply;
+}
+.box-before-footer .box-triancle .v-vermelho {
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

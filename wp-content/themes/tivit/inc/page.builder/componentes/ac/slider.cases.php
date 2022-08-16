@@ -72,7 +72,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
 
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col box-solid p-lg-0">
-                    <div class="col-12 box-title-solid h-100" style="background: #F14517;">
+                    <div class="col-12 box-title-solid h-100" style="background: {global_background_slider};">
                         {title}
                         {descript}
                         {cta_global}
@@ -196,12 +196,12 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
                 '{background_half_color}', '{content}', '{bullets}', '{cta_background}', '{cta_color_text}',
                 '{s_cta_border_color}', '{cta_background_hover}', '{cta_color_text_hover}',
                 '{s_cta_border_color_hover}', '{bullets_color}', '{paddingTop}', '{paddingBottom}',
-                '{paddingTopMobile}', '{paddingBottomMobile}', '{background_global}'),
+                '{paddingTopMobile}', '{paddingBottomMobile}', '{background_global}', '{global_background_slider}'),
             array($obj_id, $generate_cta_global, $c_title, $c_descript, $global_background,
                 $global_background_bottom_half, $generate_content, $generate_controller_bullets
             , $s_cta_background, $s_cta_color_text, $s_cta_border_color, $s_cta_background_hover,
                 $s_cta_color_text_hover, $s_cta_border_color_hover, $s_cta_bullets_color, $paddingTop,
-                $paddingBottom, $paddingTopMobile, $paddingBottomMobile,  $s_background_container),
+                $paddingBottom, $paddingTopMobile, $paddingBottomMobile,  $s_background_container, $c_background ),
             $template
         );
     if ($echo)
