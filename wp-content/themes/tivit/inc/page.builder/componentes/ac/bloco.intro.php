@@ -12,7 +12,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
             if(!empty($b1_image_array['url'])){
             $b1_image = '
             <div class="col-12 my-5 my-lg-auto d-flex justify-content-center">
-                <img src="' . $b1_image_array["url"] . '" class="logo-tivit my-4" height="40" alt="">
+                <img src="' . $b1_image_array["url"] . '" class="logo-tivit my-4" style="min-height: 40px;" alt="">
             </div>';
             }
             if (have_rows("gd-ac-bloco-intro-bloco-1-cta", $obj_id)):
@@ -54,9 +54,9 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
             $b2_image_array = get_sub_field("gd-ac-bloco-intro-bloco-2-image");
             if(!empty($b2_image_array['url'])){
             $b2_image = '
-           <div class="col-12 my-5 mt-lg-4 d-flex justify-content-center justify-content-lg-start">
+           <div class="col-12 my-5 mt-lg-4 d-flex justify-content-center">
                   
-                <img src="' . $b2_image_array["url"] . '" class="logo-tivit my-4" height="40" alt="">
+                <img src="' . $b2_image_array["url"] . '" class="logo-tivit my-4" height="" style="min-height: 40px;" alt="">
             </div>';
             }
             if (have_rows("gd-ac-bloco-intro-bloco-2-cta", $obj_id)):
