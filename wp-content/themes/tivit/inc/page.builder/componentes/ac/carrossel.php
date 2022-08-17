@@ -4,7 +4,7 @@
  * AC / Carrossel
 */
 
-function pb_ac_carrossel($obj_id,$obj = null,$echo = true){	
+function pb_ac_carrossel($obj_id,$obj = null, $block, $echo = true){
 	$generate_element = "";
 
 	if( have_rows('ac-pb-carrossel-group',$obj_id) ):

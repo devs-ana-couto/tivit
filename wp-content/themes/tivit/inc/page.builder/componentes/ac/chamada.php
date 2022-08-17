@@ -20,6 +20,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
     $bgColor = "background-color: $s_color_background;";
     $bgImg = "background-image: $s_img_background;";
 
+    $css_round = md5(rand(0, 1000));
 
     $paddingTop = get_sub_field("gd-el-simple-padding-top");
     $paddindBottom = get_sub_field("gd-el-simple-padding-bottom");
@@ -40,7 +41,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
     if (empty($css_id_object)) {
         $css_id_object = 'element-chamada-' . $obj_id;
     }
-    $div_el = '#' . $css_id_object;
+    $div_el = '#' . $css_id_object . '-' . $css_round;
 
     // $t_color_font = set_font_color($div_el.' h1',$s_color_font);
     // $t_color_font .= set_font_color($div_el.' p',$s_color_font);
@@ -77,12 +78,12 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 			' . $t_margin_and_padding . '
 
 			/* CSS Personalized */
-			.css_danamic_'. $obj_id .' {
+			.css_danamic_{id_css} {
 			    '. $paddindBottomCss .'
 			    '. $paddindTopCss .'
 			}
 			@media screen and (max-width: 991px) {
-            .css_danamic_'. $obj_id .' {
+            .css_danamic_{id_css} {
         ' . $paddindBottomMobileCss . '
 			' . $paddindTopMobileCss . '     
         }
@@ -93,13 +94,17 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 			/* CSS: END Personalized */
 		</style>
 
-		<section class="container-fluid box-chamada-pagina css_danamic_'. $obj_id .'" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}">
+		<section class="container-fluid box-chamada-pagina css_danamic_{id_css}" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}-{id_css}">
         <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-wrap" style="z-index: 1048">
-                {c_title}
-                {c_button}
-            </div>
+            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column" style="z-index: 1048">
+                    <div class="col-auto">
+                        {c_title}
+                    </div>
+                    <div class="col-auto">
+                        {c_button}
+                    </div>           
+                </div>
             </div>
         </div>
     </section>
@@ -139,8 +144,8 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 
     $generate_element =
         str_replace(
-            array('{id}', '{css_content}', '{css_id_object}', '{s_color_of_menu}', '{c_position}', '{content}', '{s_img_background}', '{c_title}', '{c_button_link}', '{c_button_target}', '{c_button_tittle}', '{c_button}'),
-            array($obj_id, $css_content, $css_id_object, $s_color_of_menu, $c_position, $generate_content, $s_img_background, $c_title, $c_button_link, $c_button_target, $c_button_tittle, $c_button),
+            array('{id}', '{css_content}', '{css_id_object}', '{s_color_of_menu}', '{c_position}', '{content}', '{s_img_background}', '{c_title}', '{c_button_link}', '{c_button_target}', '{c_button_tittle}', '{c_button}','{id_css}'),
+            array($obj_id, $css_content, $css_id_object, $s_color_of_menu, $c_position, $generate_content, $s_img_background, $c_title, $c_button_link, $c_button_target, $c_button_tittle, $c_button, $css_round),
             $template);
 
     if ($echo) {

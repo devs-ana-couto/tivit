@@ -4,7 +4,7 @@
  * AC / Big Number
 */
 
-function pb_ac_big_number($obj_id, $obj = null, $echo = true)
+function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
     $s_cols_per_rows = get_sub_field("gd-el-big-numbers-cols-numbers");

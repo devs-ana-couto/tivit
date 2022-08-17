@@ -175,6 +175,10 @@ html, body, * {
     line-height: 24.34px;
     font-weight: 700;
     color: $vermelho-tivit;
+
+    &:hover{
+      color: #262626;
+    }
   }
 
   .nota-rodape {

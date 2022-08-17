@@ -95,7 +95,7 @@
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/dev-api.svg" width="95px" height="60px" alt="DevApi Tivit">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/lambda.svg" width="127px" height="40px" alt="Lambda Tivit">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo_lambda3_rodape.svg" alt="Lambda Tivit">
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/privally.svg" width="121.58px" height="29px" alt="Privally Tivit">
 

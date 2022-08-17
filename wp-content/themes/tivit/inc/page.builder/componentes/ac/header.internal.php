@@ -15,15 +15,20 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
     $cta_name = $cta_group["gd-el-header-internal_mask_group_cta_name"];
     $cta_link = $cta_group["gd-el-header-internal_mask_group_cta_link"];
 
+    $active_mask = "";
+    $mask_v = get_sub_field("gd-el-header-internal_mask_active");
+
+    if(!$mask_v)
+        $active_mask = "d-none";
 
     $template = '
     
     <!-- Header Inner -->
     <section class="container-fluid p-0 header-inner position-relative">
-        <div class="container">
+        <div class="container {active_mask}">
             <div class="row justify-content-center">
                 <div class="col-12 position-relative box-mask">
-                    <div class="card-img-overlay p-0 bottom-0">
+                    <div class="card-img-overlay p-0 bottom-0 ">
                         <img class="w-100 d-none d-lg-block"
                              src="' . get_template_directory_uri() . '/assets/images/header-inner/Vector.svg"
                              alt="">
@@ -36,18 +41,18 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
         </div>
         <div class="col-12 p-0 box-header position-relative"
              style="background: url({image});">
-<div class="card-img-overlay mask-gradient"></div>
-<div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
-    <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
-        <p class="desc-title">{cat_page}</p>
-        <h1 class="title">{title}</h1>
-            {cta_box}
-    </div>
-    {html_player}
-   {small_text}
-</div>
-</div>
-</section>
+                <div class="card-img-overlay mask-gradient"></div>
+                    <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
+                        <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title">
+                            <p class="desc-title">{cat_page}</p>
+                            <h1 class="title">{title}</h1>
+                            {cta_box}
+                        </div>
+                        {html_player}
+                        {small_text}
+                    </div>
+                </div>
+        </section>
 
     ';
 
@@ -194,9 +199,10 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
     $generate_element =
         str_replace(
             array('{id}', '{title}', '{image}', '{cat_page}',
-                '{html_player}', '{modal_player}', '{small_text}', '{cta_box}'),
+                '{html_player}', '{modal_player}', '{small_text}', '{cta_box}', '{active_mask}'),
             array($obj_id, $h_title, $h_image['url'], $h_cat_page,
-                $generate_template_player, $generate_modal_player, $generate_small_text, $generate_template_cta),
+                $generate_template_player, $generate_modal_player, $generate_small_text,
+                $generate_template_cta, $active_mask),
             $template
         );
 

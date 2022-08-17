@@ -2,7 +2,7 @@
 get_header();
 
 if(have_posts()) : while(have_posts()) : the_post();
-    page_bulder_init(get_the_ID(),$post,true);
+
 ?>
 
 <!-- Hero banner-->
@@ -32,6 +32,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <?
+    page_bulder_init(get_the_ID(),$post,true);
+
 
     $introduction = '/components/introduction.php';
 

@@ -3,7 +3,6 @@ get_header();
 
 if(have_posts()) : while(have_posts()) : the_post();
 
-page_bulder_init(get_the_ID(),$post,true);
 ?>
 
 <!-- Section Banner -->
@@ -23,7 +22,11 @@ page_bulder_init(get_the_ID(),$post,true);
         </div>
     </div>
 </section>
+<?php
 
+    page_bulder_init(get_the_ID(),$post,true);
+
+    ?>
 <section class="conteudo">
   <div class="container">
     <div class="row">

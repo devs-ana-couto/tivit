@@ -4,7 +4,7 @@
  * AC / Conteudo Relacionado
 */
 
-function pb_ac_conteudo_relacionado($obj_id,$obj = null,$echo = true){
+function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
 	global $detect;
 	$generate_element = "";
 	$c_title = get_sub_field('gd-el-simple-content');

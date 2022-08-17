@@ -4,7 +4,7 @@
  * AC / Banner 5
 */
 
-function pb_ac_banner_05($obj_id,$obj = null,$echo = true){	
+function pb_ac_banner_05($obj_id,$obj = null, $block, $echo = true){
 	$generate_element = "";
 
 	if( have_rows('ac-pb-banner-05-group',$obj_id) ):

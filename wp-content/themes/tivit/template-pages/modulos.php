@@ -2339,7 +2339,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <div class="col box-card-text d-flex justify-content-center flex-column">
+                                    <div class="col box-card-text d-flex justify-content-center flex-wrap">
                                         <div class="col-12 d-flex justify-content-center">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/cards-img/card-03.svg"
                                                  alt="">
@@ -2347,6 +2347,9 @@
                                         <div class="col-12 d-flex justify-content-center">
                                             <h5 class="card-title" style="color:  #582689">Avisos de movimentações
                                                 bancárias</h5>
+                                        </div>
+                                        <div class="col-10 card-text d-flex justify-content-center">
+                                            <p class=""  style="color:  #582689">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -4,7 +4,7 @@
  * AC / Video
 */
 
-function pb_ac_video($obj_id, $obj = null, $echo = true)
+function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
 

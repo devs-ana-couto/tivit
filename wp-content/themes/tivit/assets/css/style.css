@@ -87,6 +87,9 @@ html a, body a, * a {
   font-weight: 700;
   color: #F20024;
 }
+html a:hover, body a:hover, * a:hover {
+  color: #262626;
+}
 html .nota-rodape, body .nota-rodape, * .nota-rodape {
   font-size: 12px;
   font-weight: 400;
@@ -11150,6 +11153,14 @@ div {
     font-size: 18px;
     text-align: left;
   }
+}
+.card-only-text .card-text p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #262626;
+  font-weight: lighter;
+  text-align: center;
+  font-weight: 600;
 }
 .card-only-text .box-text p, .card-only-text .box-text .box-text {
   max-width: 980px;
