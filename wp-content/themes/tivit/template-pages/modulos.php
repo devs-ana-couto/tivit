@@ -208,6 +208,7 @@
     <!-- time line -->
 
 
+
     <!-- segunda parte do modulo  -->
     <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
@@ -2349,7 +2350,8 @@
                                                 bancárias</h5>
                                         </div>
                                         <div class="col-10 card-text d-flex justify-content-center">
-                                            <p class=""  style="color:  #582689">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <p class="" style="color:  #582689">Lorem Ipsum is simply dummy text of the
+                                                printing and typesetting industry.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -3199,7 +3201,6 @@
     </section>
 
 
-
     <!-- slider solto -->
     <section class="container-fluid px-0 slider-projetos solto position-relative">
         <div class="container">
@@ -3579,7 +3580,9 @@
                          class="img-triancle" alt="">
                     <div class="card-img-overlay mask-v">
 
-                        <img class="v-vermelho"  src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg" alt="">
+                        <img class="v-vermelho"
+                             src="<?php echo get_template_directory_uri() ?>/assets/images/modulos/before-footer/mask-v.svg"
+                             alt="">
                     </div>
                 </div>
             </div>

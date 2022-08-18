@@ -1059,7 +1059,8 @@ $primary-color: #990017;
       }
     }
   }
-  .card-text p{
+
+  .card-text p {
     margin-top: 12px;
     font-size: 16px;
     color: #262626;
@@ -2807,8 +2808,9 @@ $primary-color: #990017;
     }
   }
 }
+
 @media screen and (min-width: 991px) {
-  .solution-menu .textMenu ul li{
+  .solution-menu .textMenu ul li {
     padding-bottom: 12px;
     width: 230px;
   }
@@ -3175,12 +3177,121 @@ $primary-color: #990017;
       -webkit-mask-size: contain;
       top: 0;
     }
-    .mask-v{
+
+    .mask-v {
       mix-blend-mode: multiply;
 
     }
-    .v-vermelho{
+
+    .v-vermelho {
       top: 0;
+    }
+  }
+}
+
+.owl-notices {
+  overflow: hidden;
+  .box-cta{
+    margin-top: 60px;
+  }
+  .box-title {
+    p{
+      text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 44px;
+      /* identical to box height, or 116% */
+
+      text-align: center;
+      text-transform: uppercase;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 50px;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #990017;
+  }
+
+  .box-descript {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+
+      text-align: center;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .box-content {
+    .owl-carousel {
+      .owl-stage-outer {
+        overflow: visible !important;
+      }
+    }
+
+    .owl-item {
+      height: 480px !important;
+      @media screen and (max-width: 991px) {
+
+      }
+    }
+
+    .item {
+      width: 370px;
+      @media screen and (max-width: 991px) {
+        width: 350px;
+      }
+
+      .card {
+        border-radius: 0px;
+        .card-img{
+          img{
+            height: 242px;
+          }
+        }
+        .card-body {
+          padding: 35px;
+
+          h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 15px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            /* identical to box height, or 125% */
+
+            text-transform: uppercase;
+
+            /* Vermelho Tivit */
+
+            color: #F20024;
+          }
+
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #000000;
+          }
+        }
+      }
     }
   }
 }

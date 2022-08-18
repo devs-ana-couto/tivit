@@ -12846,4 +12846,82 @@ div {
   top: 0;
 }
 
+.owl-notices {
+  overflow: hidden;
+}
+.owl-notices .box-cta {
+  margin-top: 60px;
+}
+.owl-notices .box-title p {
+  text-align: center;
+}
+.owl-notices .box-title h1, .owl-notices .box-title h2, .owl-notices .box-title h3, .owl-notices .box-title h4, .owl-notices .box-title h5, .owl-notices .box-title h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 44px;
+  /* identical to box height, or 116% */
+  text-align: center;
+  text-transform: uppercase;
+  /* Cinza Dark Tivit */
+  color: #262626;
+}
+.owl-notices .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 50px;
+}
+.owl-notices .owl-theme .owl-dots .owl-dot.active span, .owl-notices .owl-theme .owl-dots .owl-dot:hover span {
+  background: #990017;
+}
+.owl-notices .box-descript p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  text-align: center;
+  /* Cinza Dark Tivit */
+  color: #262626;
+}
+.owl-notices .box-content .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.owl-notices .box-content .owl-item {
+  height: 480px !important;
+}
+.owl-notices .box-content .item {
+  width: 370px;
+}
+@media screen and (max-width: 991px) {
+  .owl-notices .box-content .item {
+    width: 350px;
+  }
+}
+.owl-notices .box-content .item .card {
+  border-radius: 0px;
+}
+.owl-notices .box-content .item .card .card-img img {
+  height: 242px;
+}
+.owl-notices .box-content .item .card .card-body {
+  padding: 35px;
+}
+.owl-notices .box-content .item .card .card-body h1, .owl-notices .box-content .item .card .card-body h2, .owl-notices .box-content .item .card .card-body h3, .owl-notices .box-content .item .card .card-body h4, .owl-notices .box-content .item .card .card-body h5, .owl-notices .box-content .item .card .card-body h6 {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  text-transform: uppercase;
+  /* Vermelho Tivit */
+  color: #F20024;
+}
+.owl-notices .box-content .item .card .card-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
 /*# sourceMappingURL=style.css.map */
