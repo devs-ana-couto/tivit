@@ -11374,6 +11374,8 @@ div {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .box-feedback-cliente.alternative {
   background: #262626;
@@ -12752,6 +12754,18 @@ div {
 }
 .card-hover .row-card .box-card .card .box-imagem img {
   height: 85px;
+}
+.card-hover .row-card .box-card .card .box-imagem h1, .card-hover .row-card .box-card .card .box-imagem h2, .card-hover .row-card .box-card .card .box-imagem h3, .card-hover .row-card .box-card .card .box-imagem h4, .card-hover .row-card .box-card .card .box-imagem h5, .card-hover .row-card .box-card .card .box-imagem h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 .card-hover .row-card .box-card .card a.link {
   color: #990017;

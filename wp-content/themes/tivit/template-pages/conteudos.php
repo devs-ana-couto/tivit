@@ -192,11 +192,11 @@
                             </select>
                         </div>
 
-                        <div class="search">
+                        <!--<div class="search">
                             <a href="#"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg"
+                                        src="<?php /*echo get_template_directory_uri(); */?>/assets/icons/nav/search-white.svg"
                                         alt="Search Tivit"></a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

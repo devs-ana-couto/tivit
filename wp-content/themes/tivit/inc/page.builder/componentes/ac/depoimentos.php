@@ -36,12 +36,18 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
             padding-bottom: {padding_bottom}px;
             
         }
+        
+        #feedbackSlider{id}{
+            height: unset !important;
+          }
+        
         @media screen and (max-width: 991px){
                 #box-f-client{id}{
                     padding-top: {mobile_padding_top}px;
                     padding-bottom: {mobile_padding_bottom}px;
                 }
             }
+          
     </style>
      <section class="container-fluid px-lg-0 box-feedback-cliente {classAlt}" id="box-f-client{id}">
         <div class="container">

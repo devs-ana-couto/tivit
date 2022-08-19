@@ -91,9 +91,9 @@ function pb_ac_cards_hover($obj_id, $obj = null, $block, $echo = true)
     <div class="col box-card p-3" id="card-{id}" onmouseover="cardHoverOn(\'card-{id}\')"
                      onmouseleave="cardHoverLeave(\'card-{id}\')">
                     <div class="d-flex flex-wrap h-100 justify-content-center align-items-center card p-4">
-                        <div class="col-12 d-flex justify-content-center box-imagem">
-                            <img src="{card_image}"
-                                 alt="">
+                        <div class="col-12 d-flex flex-wrap justify-content-center box-imagem">
+                            {card_image}
+                            {title_hover}
                         </div>
                         <div class="col-12 d-flex justify-content-center flex-wrap infos">
                             <div class="col-12">
@@ -111,6 +111,14 @@ function pb_ac_cards_hover($obj_id, $obj = null, $block, $echo = true)
         $card_descript = $card['gd-el-cards-hover-card-descript'];
         $card_cta_link = $card['gd-el-cards-hover-card-cta-group']['gd-el-cards-hover-card-cta-link'];
         $card_cta_text = $card['gd-el-cards-hover-card-cta-group']['gd-el-cards-hover-card-cta-text'];
+
+        $card_title_hover = $card['gd-el-cards-hover-card-title'];
+
+
+        if(!empty($card_image)){
+            $card_title_hover = "";
+            $card_image = '<img src="' . $card_image . '" alt="">';
+        }
         if ($card_cta_link !== "") {
             $generate_link = '<div class="col-12 d-flex justify-content-center">
                                 <a href="' . $card_cta_link . '" class="link">' . $card_cta_text . '</a>
@@ -118,8 +126,8 @@ function pb_ac_cards_hover($obj_id, $obj = null, $block, $echo = true)
         }
         $generate_content .=
             str_replace(
-                array('{card_image}', '{card_descript}', '{cta_group}', '{id}'),
-                array($card_image, $card_descript, $generate_link, $key),
+                array('{card_image}', '{card_descript}', '{cta_group}', '{id}', '{title_hover}'),
+                array($card_image, $card_descript, $generate_link, $key, $card_title_hover),
                 $container
             );
     }
