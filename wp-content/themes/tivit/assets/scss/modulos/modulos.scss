@@ -1121,8 +1121,7 @@ $primary-color: #990017;
       .card-body {
         padding: 0px;
         display: flex;
-        align-items: center;
-
+        align-items: start;
         .box-card-text {
           min-height: 50%;
 
@@ -1313,7 +1312,7 @@ $primary-color: #990017;
           font-size: 28px;
           line-height: 34px;
           text-align: center;
-          color: #582689;
+          //color: #582689;
           justify-self: center;
           @media screen and (max-width: 991px) {
             max-width: 100%;
@@ -3276,7 +3275,7 @@ $primary-color: #990017;
         border-radius: 0px;
         .card-img{
           img{
-            height: 242px;
+            height: 210px;
           }
         }
         .card-body {
@@ -3308,5 +3307,10 @@ $primary-color: #990017;
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .tab-content>.active {
+    display: none !important;
   }
 }

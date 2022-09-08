@@ -1601,6 +1601,9 @@ div {
   color: #F20024;
   transition: all 0.2s linear;
 }
+.home-content .cardContent:hover .acessar a {
+  color: #F20024;
+}
 .home-content .cardContent:hover .acessar a:after {
   margin-left: 20px;
   transition: all 0.2s linear;
@@ -1680,9 +1683,10 @@ div {
   transition: all 0.3s linear;
   display: flex;
   align-items: center;
+  color: white;
 }
 .home-content .acessar a:hover {
-  color: white;
+  color: #F20024;
   transition: all 0.3s linear;
 }
 .home-content .acessar a img {
@@ -2196,7 +2200,6 @@ div {
 }
 @media (min-width: 760px) {
   .home-portifolio .home-portifolio-image {
-    background: url("../images/home/img_banner1.jpg") no-repeat center center;
     background-size: cover;
     transition: background 0.4s linear;
   }
@@ -2328,6 +2331,9 @@ div {
     color: #F20024;
     transition: all 0.2s linear;
   }
+  .home-cases .home-cases-content .cardCases:hover a {
+    color: #F20024;
+  }
   .home-cases .home-cases-content .cardCases:hover a:after {
     margin-left: 20px;
     transition: all 0.2s linear;
@@ -2344,14 +2350,18 @@ div {
     font-size: 24px;
     transition: all 0.2s linear;
     line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
   }
   .home-cases .home-cases-content .textCase p {
     color: white;
     text-align: left;
     font-weight: lighter;
+    width: 85%;
   }
   .home-cases .home-cases-content .textCase a {
-    color: #F20024;
+    color: white;
     text-transform: uppercase;
     text-align: left;
     transition: all 0.3s linear;
@@ -2373,7 +2383,7 @@ div {
     align-content: center;
   }
   .home-cases .home-cases-content .textCase a:hover {
-    color: white;
+    color: #F20024;
     transition: all 0.3s linear;
   }
   .home-cases .home-cases-content .textCase a img {
@@ -11212,7 +11222,7 @@ div {
 .card-only-text .box-cards .card .card-body {
   padding: 0px;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .card-only-text .box-cards .card .card-body .box-card-text {
   min-height: 50%;
@@ -11350,7 +11360,6 @@ div {
   font-size: 28px;
   line-height: 34px;
   text-align: center;
-  color: #582689;
   justify-self: center;
 }
 @media screen and (max-width: 991px) {
@@ -12914,7 +12923,7 @@ div {
   border-radius: 0px;
 }
 .owl-notices .box-content .item .card .card-img img {
-  height: 242px;
+  height: 210px;
 }
 .owl-notices .box-content .item .card .card-body {
   padding: 35px;
@@ -12936,6 +12945,12 @@ div {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-content > .active {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

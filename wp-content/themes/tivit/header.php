@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
+    <nav class="navbar navbar-expand-xl navbar-light" role="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-2 col-md-5 header-menu">
@@ -461,7 +461,6 @@ echo '</div>';
 
                 </div>
             </div>
-
         </div>
     </nav>
 </header>

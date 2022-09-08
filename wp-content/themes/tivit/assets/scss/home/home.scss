@@ -161,8 +161,6 @@
 .home-intro.active {
   background: white;
   transition: all 0.6s ease-in;
-
-
 }
 
 .home-intro {
@@ -370,6 +368,7 @@
       }
 
       .acessar a {
+        color: $vermelho-tivit;
         &:after {
           margin-left: 20px;
           transition: all 0.2s linear;
@@ -465,9 +464,10 @@
       transition: all 0.3s linear;
       display: flex;
       align-items: center;
+      color: white;
 
       &:hover {
-        color: white;
+        color: $vermelho-tivit;
         transition: all 0.3s linear;
       }
 
@@ -1095,7 +1095,7 @@
     }
 
     .home-portifolio-image {
-      background: url('../images/home/img_banner1.jpg') no-repeat center center;
+      //background: url('../images/home/img_banner1.jpg') no-repeat center center;
       background-size: cover;
       transition: background .4s linear;
     }
@@ -1259,6 +1259,7 @@
           }
 
           a {
+            color: #F20024;
             &:after {
               margin-left: 20px;
               transition: all 0.2s linear;
@@ -1279,16 +1280,21 @@
           font-size: 24px;
           transition: all 0.2s linear;
           line-height: 30px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
         }
 
         p {
           color: white;
           text-align: left;
           font-weight: lighter;
+          width: 85%;
         }
 
         a {
-          color: #F20024;
+          color: white;
+
           text-transform: uppercase;
           text-align: left;
           transition: all .3s linear;
@@ -1311,7 +1317,7 @@
           }
 
           &:hover {
-            color: white;
+            color: #F20024;
             transition: all .3s linear;
           }
 

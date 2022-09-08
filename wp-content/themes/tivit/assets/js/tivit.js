@@ -1052,7 +1052,6 @@ function infosPortfolio(url, index) {
 
         paragrafoDinamico(index);
         linkDinamico(index);
-        console.log(index)
 
     }
 }
@@ -1077,7 +1076,6 @@ function selecionaMenu(id) {
 
 function paragrafoDinamico(index) {
     var idDesc = "#portfolio__desc-" + index;
-    console.log(idDesc);
     var textDesc = document.querySelector(idDesc).innerText;
 
     var textDisplay = document.querySelector(".text-display");

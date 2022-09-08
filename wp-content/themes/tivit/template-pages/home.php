@@ -273,7 +273,7 @@
 
                 <div class="home-cases-title">
                     <h2>Nossos Cases</h2>
-                    <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>
+                   <!-- <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>-->
                 </div>
                 <?= do_shortcode('[ac_bloco_home_cases]'); ?>
             </div>

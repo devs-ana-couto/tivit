@@ -278,8 +278,8 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '<div class="overlay"></div>';
             $saida .= '<img class="w-100 h-100 img-fluid" src="' . $dados[$ac]['bgmobile'] . '" alt="backgroundcase1">';
             $saida .= '<div class="textCase">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '<p>' . $dados[$ac]['resumo'] . '</p>';
+            $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
+            $saida .= '<p>' . $dados[$ac]['titulo']. '</p>';
             $saida .= '<div class="w-100 d-flex text-left">';
             $saida .= '<a href="' . $dados[$ac]['link'] . '">VER MAIS</a>';
             $saida .= '</div>';
@@ -319,8 +319,8 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '<div class="overlay"></div>';
             $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="backgroundcase1">';
             $saida .= '<div class="textCase">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '<p>' . $dados[$ac]['resumo'] . '</p>';
+            $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
+            $saida .= '<p>' .  $dados[$ac]['titulo']. '</p>';
             $saida .= '<div class="w-100 d-flex text-left mt-3">';
             $saida .= '<a href="' . $dados[$ac]['link'] . '">VER CASE</a>';
             $saida .= '</div>';
@@ -370,7 +370,7 @@ if (!function_exists('ac_pagina_cases')) {
         $t_categorias = ac_cases_listar_categorias();
         $t_etiquetas = ac_cases_listar_tags($arg);
 
-        $saida = '';
+
         $saida .= '<div class="col-7">';
         $saida .= '<div class="assuntos">';
         $saida .= '<h4>' . _('escolha um ou mais assuntos') . '</h4>';
@@ -382,6 +382,24 @@ if (!function_exists('ac_pagina_cases')) {
                 $saida .= '<a href="#" class="' . $ativo . '">' . $slug . '</a>';
             }
         }
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '<div class="col-5">';
+        $saida .= '<div class="filtros">';
+        $saida .= '<div class="select">';
+        $saida .= '<select name="">';
+        $saida .= '<option value="">' . ('Filtrar por') . '</option>';
+        if (is_array($t_categorias) || is_object($t_categorias)) {
+            foreach ($t_categorias as $slug => $nome) {
+                $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
+                $saida .= '<option value="" ' . $ativo . '>' . $slug . '</option>';
+            }
+        }
+        $saida .= '</select>';
+        $saida .= '</div>';
+        $saida .= '<div class="search">';
+        $saida .= '<a href="#"><img src="' . get_template_directory_uri() . '/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
+        $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
@@ -403,7 +421,7 @@ if (!function_exists('ac_pagina_cases')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4" data-bs-target="'. $etiqueta->name . '">';
+            $saida .= '<div class="col-12 col-md-4">';
             $saida .= '<div class="img">';
             $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '</div>';
