@@ -955,6 +955,7 @@ window.onscroll = () => {
 var solutionMenu = document.querySelectorAll('.solution-link-menu');
 const modalSolution = new bootstrap.Modal('#open-solution-menu');
 solutionMenu.forEach((menu, index) => {
+
     menu.addEventListener('click', () => {
         var checkSolutionShow = document.querySelector('#open-solution-menu');
         if (!checkSolutionShow.classList.contains('show')) {

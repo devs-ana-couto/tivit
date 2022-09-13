@@ -1,40 +1,47 @@
 <footer class="footer text-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
   <div class="bg-white">
     <div class="container">
+        <div class="row justify-content-center justify-content-lg-between">
+            <div class="col d-none d-lg-flex footer-menu">
+                <nav class="navbar navbar-expand-lg bg-transparent" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'header-menu',
+                    'depth' => 1, // 1 = no dropdowns, 2 = with dropdowns.
+                    'container' => '',
+                    'container_class' => '',
+                    'container_id' => '',
+                    'menu_class' => 'navbar-nav',
+                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker' => new WP_Bootstrap_Navwalker(),
+                ));
+
+                ?>
+                </nav>
+            </div>
+
+            <div class="col-auto footer-logo" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-red.png" width="148px" height="21px" alt="Logo Tivit"></a>
+            </div>
+            <div class="col footer-menu d-none d-lg-flex justify-content-end">
+                <nav class="navbar navbar-expand-lg bg-transparent" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'header-menu-02',
+                    'depth' => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                    'container' => '',
+                    'container_class' => '',
+                    'container_id' => '',
+                    'menu_class' => 'navbar-nav',
+                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker' => new WP_Bootstrap_Navwalker(),
+                ));
+                ?>
+                </nav>
+            </div>
+        </div>
+
       <div class="row">
-
-        <div class="col-5 hide-mobile footer-menu">
-          <?php
-            wp_nav_menu(
-              array(
-                'theme_location' => 'footer-menu',
-                'menu_class' => 'nav',
-                'container' => 'ul',
-              )
-            );
-          ?>
-        </div>
-
-        <div class="col-12 col-md-2 footer-logo">
-          <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-red.png" width="148px" height="21px" alt="Logo Tivit"></a>
-        </div>
-
-        <div class="col-md-5 footer-options hide-mobile">
-
-          <div class="footer-people-and-careers">
-            <p><a href="/staged/tivit/pessoas-e-carreiras">Pessoas e Carreiras</a></p>
-          </div>
-
-          <div class="footer-contact">
-            <p><a href="/staged/tivit/contato" class="btn btn-contact">Contato</a></p>
-          </div>
-
-          <div class="language" style="display:none;">
-            EN/ES
-          </div>
-
-        </div>
-
         <div class="col-12 col-md-3 footer-phone">
           <p>
             <a href="#">

@@ -178,9 +178,9 @@
                     }
                     ?>
                     <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-                        <div class="d-flex justify-content-center w-100">
+                        <!--<div class="d-flex justify-content-center w-100">
                             <div id="triangle-down"></div>
-                        </div>
+                        </div>-->
                         <div class="card-img-overlay"
                              style="background: url('<?php echo $mascara; ?>');">
                         </div>
@@ -286,7 +286,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="home-pessoas-e-carreiras-title">
-                            <?php /*the_field('texto_pc') */?>
+                            <?php the_field('texto_pc') ?>
                         </div>
                         <div class="botao">
                             <a href="<?php /*the_field('url_cta_pc') */?>"><?php /*the_field('texto_cta_pc') */?></a>
@@ -297,9 +297,33 @@
         </div>
     </section>-->
 
-    <section class="partners active mt-5">
+
+    <section class="container-fluid px-lg-0 box-nosso-clientes"
+             style="background: white;"   data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <?= do_shortcode('[ac-bloco-clientes]'); ?>
     </section>
 
+
+    <section class="container-fluid box-chamada-pagina"
+             style="background-color: ;
+             background-image: url('<?php the_field('background_desktop_pc'); ?>');
+                     background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column fadeInUp animated"
+                     style="z-index: 1048" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-auto fadeInUp animated" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                        <?php the_field('texto_pc') ?>
+                    </div>
+                    <div class="col-auto fadeInUp animated" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                        <div class="mt-5">
+                            <a href="<?php the_field('url_cta_pc'); ?>" class="btn btn-primary cta__geral" target=""><?php the_field('texto_cta_pc') ?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>

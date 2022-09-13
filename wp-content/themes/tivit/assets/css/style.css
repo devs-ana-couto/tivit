@@ -13309,4 +13309,13 @@ div {
   }
 }
 
+footer.footer .footer-menu ul li {
+  padding: 0px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+footer.footer .footer-menu ul li a {
+  padding: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */

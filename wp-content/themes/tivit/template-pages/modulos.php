@@ -758,12 +758,12 @@
     <!-- modulo cliente -->
     <section class="container-fluid px-lg-0 box-nosso-clientes" style="background: white;">
         <div class="container">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center">
                 <div class="col-auto box-title mt-5">
                     <h2>Nosso Clientes</h2>
                 </div>
                 <div class="col-12 box-slider">
-                    <div class="row justify-content-around row-cols-3 row-cols-lg-6">
+                    <div class="row justify-content-start row-cols-3 row-cols-lg-4">
                         <div class="col box-img">
                             <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"
