@@ -79,7 +79,7 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
         <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
         d-none no container abaixo -->
         <div class="container">
-            <div class="col d-flex justify-content-center box-title-top">
+            <div class="col d-flex justify-content-center box-title-top" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
               {c_text}
             </div>
         </div>
@@ -89,7 +89,7 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
                 <div class="row">
                     <div class="col-12 box-cards">
                         <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
-                        <div class="row row-cols-1 row-cols-lg-' . $s_cols_per_rows . ' align-items-stretch g-4">
+                        <div class="row row-cols-1 row-cols-lg-' . $s_cols_per_rows . ' align-items-stretch g-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                            {content}
                         </div>
                     </div>
@@ -102,7 +102,7 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
 
 
             $content = '
-                <div class="col">
+                <div class="col" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                                <div class="card h-100">
                                     <div class="card-body p-0">
                                         <h5 class="card-title" style="color: ' . $s_color_font . '">{number}</h5>

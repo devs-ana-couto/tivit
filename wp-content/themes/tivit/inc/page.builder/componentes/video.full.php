@@ -53,7 +53,7 @@ function pb_video_full($obj_id,$obj = null,$block=0,$echo = true){
 	$generate_element = '	            
         <!---- Video Full Module -->
         <section class="box-video-full header-coutoman-dark" id="gd-el-video-full-'.$block.'" style="'.$tb.'">
-            <div class="video-wrapper">
+            <div class="video-wrapper" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 				<iframe width="560" height="315" 
 				src="https://www.youtube.com/embed/'.$youtube_id.'?oi=1'.$autoplay.$autocontrols.'&loop=1" 
 				frameborder="0" allowfullscreen></iframe>

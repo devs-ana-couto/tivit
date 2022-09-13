@@ -314,7 +314,7 @@ if (!function_exists('ac_bloco_home_cases')) {
         $saida .= '<div class="d-flex customContainer">';
 
         for ($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= '<div class="col-md-4">';
+            $saida .= '<div class="col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="cardCases bg1 m-3">';
             $saida .= '<div class="overlay"></div>';
             $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="backgroundcase1">';
@@ -384,24 +384,6 @@ if (!function_exists('ac_pagina_cases')) {
         }
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '<div class="col-5">';
-        $saida .= '<div class="filtros">';
-        $saida .= '<div class="select">';
-        $saida .= '<select name="">';
-        $saida .= '<option value="">' . ('Filtrar por') . '</option>';
-        if (is_array($t_categorias) || is_object($t_categorias)) {
-            foreach ($t_categorias as $slug => $nome) {
-                $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
-                $saida .= '<option value="" ' . $ativo . '>' . $slug . '</option>';
-            }
-        }
-        $saida .= '</select>';
-        $saida .= '</div>';
-        $saida .= '<div class="search">';
-        $saida .= '<a href="#"><img src="' . get_template_directory_uri() . '/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
         $saida .= '</div>';
 
         /* cases */
@@ -421,7 +403,7 @@ if (!function_exists('ac_pagina_cases')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="img">';
             $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '</div>';

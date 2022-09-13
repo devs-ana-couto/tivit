@@ -94,14 +94,15 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 			/* CSS: END Personalized */
 		</style>
 
-		<section class="container-fluid box-chamada-pagina css_danamic_{id_css}" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}-{id_css}">
+		<section class="container-fluid box-chamada-pagina css_danamic_{id_css}" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}-{id_css}" >
         <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column" style="z-index: 1048">
-                    <div class="col-auto">
+            <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column" style="z-index: 1048"
+            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-auto" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {c_title}
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {c_button}
                     </div>           
                 </div>

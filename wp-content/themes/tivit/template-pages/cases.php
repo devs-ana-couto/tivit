@@ -6,7 +6,7 @@
 
     <div class="cases-recentes">
         <!--- Desktop -->
-        <div class="container hide-mobile">
+        <div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row">
                 <?= do_shortcode('[ac-pagina-cases]') ?>
             </div>

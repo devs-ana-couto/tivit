@@ -72,7 +72,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
 
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col box-solid p-lg-0">
-                    <div class="col-12 box-title-solid h-100" style="background: {global_background_slider};">
+                    <div class="col-12 box-title-solid h-100" style="background: {global_background_slider};"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {title}
                         {descript}
                         {cta_global}
@@ -120,7 +120,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
             );
     }
     $content = '            
-    <div class="carousel-item {active} position-relative">
+    <div class="carousel-item {active} position-relative"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <div class="row row-cols-1">
             <div class="col box-images p-lg-0">
                 <div class="col-12">

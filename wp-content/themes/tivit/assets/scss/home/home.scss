@@ -2,6 +2,10 @@
   *  Hide desktop and mobile
   */
 
+* {
+  transition: all 1s;
+}
+
 @media(max-width: 760px) {
   .hide-mobile {
     display: none;
@@ -369,6 +373,7 @@
 
       .acessar a {
         color: $vermelho-tivit;
+
         &:after {
           margin-left: 20px;
           transition: all 0.2s linear;
@@ -1024,7 +1029,7 @@
   }
   .home-intro {
     .pcustom {
-      padding: 140px 0 140px 0;
+      padding: 70px 0 70px 0;
     }
 
     p {
@@ -1260,6 +1265,7 @@
 
           a {
             color: #F20024;
+
             &:after {
               margin-left: 20px;
               transition: all 0.2s linear;
@@ -1762,4 +1768,21 @@
   }
 }
 
+.solution-menu {
+  .nav-item {
+    &.inicial {
+      width: auto;
+      h2{
+        color: white;
+        font-weight: lighter;
+        font-size: 18px;
+        border: unset;
+        text-transform: uppercase;
+        strong{
+          font-weight: bold;
+        }
 
+      }
+    }
+  }
+}

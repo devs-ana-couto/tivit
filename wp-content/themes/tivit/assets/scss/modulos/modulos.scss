@@ -673,7 +673,7 @@ $primary-color: #990017;
             filter: grayscale(100%);
             filter: gray;*/
             /* IE */
-            transform: scale(0.85);
+            //transform: scale(0.85);
             transition: 0.5s;
           }
 
@@ -682,7 +682,7 @@ $primary-color: #990017;
             filter: unset;
             filter: unset;*/
             /* IE */
-            transform: scale(1.0);
+            //transform: scale(1.0);
             transition: all 0.5s;
           }
         }
@@ -1122,6 +1122,7 @@ $primary-color: #990017;
         padding: 0px;
         display: flex;
         align-items: start;
+
         .box-card-text {
           min-height: 50%;
 
@@ -2271,6 +2272,13 @@ $primary-color: #990017;
 }
 
 .slider-projetos.solto {
+  .slider-categoria {
+    @media screen and (min-width: 991px) {
+
+
+    }
+  }
+
   .controlador {
     bottom: 5rem !important;
   }
@@ -2282,6 +2290,17 @@ $primary-color: #990017;
 
   .box-background-full {
     z-index: -1;
+  }
+  .carousel-item{
+    height: 560px;
+  }
+  .v-mask{
+    height: 100%;
+    width: 95%;
+    background-image: url("../images/modulos/categoria-slider/mask-slider.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 }
 
@@ -3085,7 +3104,8 @@ $primary-color: #990017;
           img {
             height: 85px;
           }
-          h1, h2, h3, h4, h5, h6{
+
+          h1, h2, h3, h4, h5, h6 {
             font-style: normal;
             font-weight: 700;
             font-size: 28px;
@@ -3205,13 +3225,16 @@ $primary-color: #990017;
 
 .owl-notices {
   overflow: hidden;
-  .box-cta{
+
+  .box-cta {
     margin-top: 60px;
   }
+
   .box-title {
-    p{
+    p {
       text-align: center;
     }
+
     h1, h2, h3, h4, h5, h6 {
       font-style: normal;
       font-weight: 700;
@@ -3231,7 +3254,8 @@ $primary-color: #990017;
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 50px;
   }
-  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #990017;
   }
 
@@ -3273,11 +3297,13 @@ $primary-color: #990017;
 
       .card {
         border-radius: 0px;
-        .card-img{
-          img{
+
+        .card-img {
+          img {
             height: 210px;
           }
         }
+
         .card-body {
           padding: 35px;
 
@@ -3309,8 +3335,9 @@ $primary-color: #990017;
     }
   }
 }
+
 @media screen and (max-width: 1024px) {
-  .tab-content>.active {
+  .tab-content > .active {
     display: none !important;
   }
 }

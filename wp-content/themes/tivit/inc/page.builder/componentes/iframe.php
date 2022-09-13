@@ -11,7 +11,7 @@ function pb_iframe_full($obj_id,$obj = null,$block=0,$echo = true){
 	$id = 'gd-el-iframe-full_-src-'.$block;
 	$generate_element = '	            
         <!---- Iframe Full  -->
-        <section class="box-iframe-full header-coutoman-dark" id="gd-el-iframe-full-'.$block.'">
+        <section class="box-iframe-full header-coutoman-dark" id="gd-el-iframe-full-'.$block.'" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <iframe src="'.$c_url.'" class="w100 no-border p-0 m-0" id="'.$id.'"></iframe>
         </section>     
 		<style>

@@ -53,14 +53,14 @@ function pb_ac_slider_content($obj_id, $obj = null, $block, $echo = true){
     <section class="container-fluid p-0 owl-notices" id="{css_id}">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 box-title">
+            <div class="col-12 col-lg-8 box-title" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                {title_container}
             </div>
-            <div class="col-12 col-lg-8 box-descript mt-5 mb-5">
+            <div class="col-12 col-lg-8 box-descript mt-5 mb-5" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 {desc_container}
             </div>
             <div class="col-12 box-content">
-                <div class="owl-carousel owl-theme content-notices">
+                <div class="owl-carousel owl-theme content-notices" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     {content}
                 </div>
             </div>
@@ -94,7 +94,7 @@ function pb_ac_slider_content($obj_id, $obj = null, $block, $echo = true){
 </script>
     ';
     $content = '
-    <div class="item h-100">
+    <div class="item h-100"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         {monta_link}
             <div class="card h-100">
                 <div class="card-img">
@@ -134,7 +134,7 @@ function pb_ac_slider_content($obj_id, $obj = null, $block, $echo = true){
     }
 
     $cta_box = '
-        <div class="col-12 box-cta d-flex justify-content-center">
+        <div class="col-12 box-cta d-flex justify-content-center"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <a href="{cta_link}" class="btn btn-tivit1">{cta_text}</a>
             </div>
         ';

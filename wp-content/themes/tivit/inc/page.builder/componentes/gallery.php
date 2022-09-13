@@ -22,7 +22,7 @@ function pb_gallery($obj_id,$obj = null,$block=0,$echo = true){
 	$generate_element = '	            
         <!---- Gallery Module -->
         <section class="box-gallery header-coutoman-dark" id="gd-el-gallery-'.$block.'" style="'.$tb.'">        
-            <div class="container content photo-gallery">
+            <div class="container content photo-gallery"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 				{content}
 			</div>
         </section>

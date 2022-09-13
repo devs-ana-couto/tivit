@@ -1,4 +1,4 @@
-<footer class="footer text-center">
+<footer class="footer text-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
   <div class="bg-white">
     <div class="container">
       <div class="row">

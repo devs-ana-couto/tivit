@@ -51,7 +51,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
 			/* CSS: END Personalized */
 		</style>
 <div id="main-solutions">
-<div id="contentServices" class="home-content content-inovacao">
+<div id="contentServices" class="home-content content-inovacao"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
   <div id="triangle-down"></div><!-- Triangle Down -->
   <div class="container pd">
     <div class="title">

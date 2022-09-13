@@ -93,14 +93,14 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
                  <div class="row justify-content-center">         
-                     <div class="col-12 col-lg-8">              
+                     <div class="col-12 col-lg-8"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">              
                         {c_text}
                    </div>    
                   </div>     
                 </div>
             </div>
             <div class="col-12 box-cards  mt-5">
-                <div class="row  row-cols-1 row-cols-lg-' . $colsLimiter . ' g-4 justify-content-start">
+                <div class="row  row-cols-1 row-cols-lg-' . $colsLimiter . ' g-4 justify-content-start" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 {content}
                 </div>
             </div>
@@ -114,13 +114,13 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
 
     $content = '
 				
-				<div class="col">
+				<div class="col" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" >
                         <div class="card h-100" style="border-left-color: ' . $t_color_border . ';">
-                            <div class="card-header">                           
+                            <div class="card-header"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">                           
                                 {titulo}                                               
                             </div>
                             <div class="card-body">
-                                <div class="col box-card-text">
+                                <div class="col box-card-text"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                                     {miolo}
                                 </div>
                             </div>

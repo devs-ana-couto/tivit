@@ -55,20 +55,20 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
         }
     </style>
     <section class="container-fluid px-lg-0 card-only-text cards-images-centred" id="{css_id}">
-        <div class="container">
+        <div class="container"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col-12 box-title d-flex flex-wrap justify-content-center">
-                    <div class="col-8 d-flex justify-content-center mb-3">
+                    <div class="col-8 d-flex justify-content-center mb-3"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {container_title}
                     </div>
-                    <div class="col-8 d-flex justify-content-center">
+                    <div class="col-8 d-flex justify-content-center"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {container_descript}
                     </div>
                 </div>
                 <div class="col-12 box-cards  mt-5">
                     <!-- passa row-col-lg-number  a quantidade de colunas que o usuario
                     deseja sendo no maximo row-cols-lg-4 e no minimo row-cols-lg-2 -->
-                    <div class="row  row-cols-1 row-cols-lg-{cards-cols} g-4 justify-content-center">
+                    <div class="row  row-cols-1 row-cols-lg-{cards-cols} g-4 justify-content-center"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {content}
                     </div>
                 </div>
@@ -80,7 +80,7 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $content_template = '
-                        <div class="col">
+                        <div class="col" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <div class="col box-card-text d-flex justify-content-center flex-wrap">
@@ -113,7 +113,7 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
     }
 
     $cta_template = '
-            <div class="col-12 cta-card mt-5">
+            <div class="col-12 cta-card mt-5"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="row row-cols-1 justify-content-center">
                     <div class="col-auto">
                         <a href="{cta_link}" class="btn btn-tivit1">{cta_text}</a>

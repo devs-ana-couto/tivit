@@ -52,7 +52,7 @@ function pb_bloco_conteudo($obj_id,$obj = null,$block=0,$echo = true){
 		echo '</style>';
 		echo "<div id=\"$css_id_object\">";
 		echo "<section id=\"gd-el-section-$block-$obj_id\" class=\"box-section height-$s_height  header-coutoman-$s_color_of_menu\">";
-		echo "<div class=\"wrapper $m_option_margin\">";
+		echo "<div class=\"wrapper $m_option_margin\" data-anijs=\"if: scroll, on: window, do: fadeInUp animated, before: scrollReveal\">";
 		echo "<div class=\"$css_container\">";
 	}
 

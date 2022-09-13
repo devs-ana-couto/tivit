@@ -62,18 +62,18 @@ function pb_ac_diferencial($obj_id,$obj = null, $block, $echo = true){
 	            </style>
 
 
-				<div id="main-solutions">
+				<div id="main-solutions" >
 					<div class="diferenciais" id="{css_id_object}">
 						<div class="container">
 							<div class="row">
 								<div class="col-12 col-md-4">
-									<div class="intro">
+									<div class="intro" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 										{c_text}
 									</div>
 								</div>
 
 								<div class="col-md-8">
-									<div class="row">
+									<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 										{content}
 									</div>
 								</div>
@@ -87,7 +87,7 @@ function pb_ac_diferencial($obj_id,$obj = null, $block, $echo = true){
 
 
 			$content = '
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 					<div class="content">
 						<div>
 							<h2>{titulo}</h2>

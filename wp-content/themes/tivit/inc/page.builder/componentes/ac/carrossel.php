@@ -66,7 +66,7 @@ function pb_ac_carrossel($obj_id,$obj = null, $block, $echo = true){
 
 				<div id="{css_id_object}">
 		            <section id="carrossel-{id}" class="box-slider header-coutoman-{s_color_of_menu}">
-		                <div class="{css_container}">
+		                <div class="{css_container}"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 		                	<div class="row">
 				               	<div class="col-md-12">
 					                <ul class="slider-content-list">

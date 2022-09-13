@@ -28,7 +28,7 @@
     </div>
 
     <!-- Pessoas e Carreiras -->
-    <div class="home-pessoas-e-carreiras">
+    <!--<div class="home-pessoas-e-carreiras">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <div class="contato-canais">

@@ -47,17 +47,13 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
     </style>
     <section class="container-fluid px-lg-0 portfolio port" id="{css_id}">
     <div class="d-flex justify-content-center bgport position-absolute active"></div>
-    <div class="container home-portifolio active">
-        <div class="home-portifolio-image p-0">
-            <div class="d-flex justify-content-center w-100">
-                <div id="triangle-down"></div>
-            </div>
+    <div class="container home-portifolio active" >
+        <div class="home-portifolio-image p-0" >
+           
             <div class="row row-cols-1">
             
-                <div class="col-12 portfolio__box position-relative fadein">
-                    <div class="d-flex justify-content-center w-100">
-                        <div id="triangle-down"></div>
-                    </div>
+                <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" >
+                 
 
                     <div class="card-img-overlay mask-default">
                     </div>
@@ -70,7 +66,7 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
                                             <div class="col links__title">
                                                 {title}
                                             </div>
-                                            <div class="col-12 col-lg-auto mt-5">
+                                            <div class="col-12 col-lg-auto mt-5" >
                                                 {content}
                                             </div>
                                         </div>
@@ -96,7 +92,7 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $content = '
-    <div id="port-{id}" class="">
+    <div id="port-{id}" class=""  >
         <div class="d-none" id="portfolio__img__url-{id}"
         data-img="{img}"></div>
         <div class="d-none" id="portfolio__desc-{id}">

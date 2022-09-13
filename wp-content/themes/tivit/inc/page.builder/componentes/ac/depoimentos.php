@@ -50,7 +50,7 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
           
     </style>
      <section class="container-fluid px-lg-0 box-feedback-cliente {classAlt}" id="box-f-client{id}">
-        <div class="container">
+        <div class="container"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             {title_container}
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
@@ -71,7 +71,7 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $template_title = '
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="col-12 col-lg-10 box-title d-flex justify-content-center">
                     <h3 class="title">{title}</h3>
                 </div>
@@ -94,7 +94,7 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $content = '
-                            <div class="carousel-item {active}">
+                            <div class="carousel-item {active}" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                                 <div class="row">
                                     <div class="col-12 box-img d-flex justify-content-center">
                                         <img src="{photo_client}"

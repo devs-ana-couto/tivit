@@ -47,15 +47,15 @@ function pb_ac_card_icon($obj_id, $obj = null, $block, $echo = true)
     </style>
     <section class="container-fluid box-card-icons px-lg-0" style="background: '. $s_background_color .';">
         <div class="container">
-            <div class="col d-flex justify-content-center box-title-top">
+            <div class="col d-flex justify-content-center box-title-top"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             {title}    
             </div>
             <div class="col box-cards h-100">
-                <div class="row row-cols-1 row-cols-lg-'.$r_number.' gy-4 g-lg-4 p-1  px-lg-5">
+                <div class="row row-cols-1 row-cols-lg-'.$r_number.' gy-4 g-lg-4 p-1  px-lg-5"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     {content}
                 </div>
             </div>
-            <div class="col box-cta d-flex justify-content-center">
+            <div class="col box-cta d-flex justify-content-center"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             ' . $content_cta . '
             </div>
         </div>
@@ -66,7 +66,7 @@ function pb_ac_card_icon($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $content = '
-                    <div class="col card">
+                    <div class="col card" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <div class="card-body d-flex flex-wrap align-items-center px-4 px-lg-5">
                             <div class="row">
                                 <div class="col-12 col-lg-auto d-flex d-lg-block justify-content-center box-img">

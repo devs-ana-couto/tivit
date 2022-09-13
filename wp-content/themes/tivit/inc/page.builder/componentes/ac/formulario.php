@@ -52,7 +52,7 @@ function pb_ac_formulario($obj_id,$obj = null, $block, $echo = true){
 			/* CSS: END Personalized */
 		</style>
 
-		<div id="main-solutions">
+		<div id="main-solutions" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 			<div class="lp-tbanks-form" id="{css_id_object}">
 			<div id="contatoUnfolding">
 				<div class="container">

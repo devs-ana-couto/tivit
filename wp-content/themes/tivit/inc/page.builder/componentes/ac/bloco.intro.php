@@ -125,17 +125,16 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
             '. $s_image .'
         }
     </style>
-    <section class="container-fluid px-0 box-intro box-intro-{css_id}-refatorado position-relative"
-             style=" ">
+    <section class="container-fluid px-0 box-intro box-intro-{css_id}-refatorado position-relative">
 
 <div class="container">
     <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
-        <div class="col modulo flex-wrap d-flex justify-content-center justify-content-lg-start align-items-center">
+        <div class="col modulo flex-wrap d-flex justify-content-center justify-content-lg-start align-items-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
           {b1_img}
           {b1_text}
           {content_btn}
         </div>
-        <div class="col modulo  d-flex flex-wrap justify-content-start align-items-center">
+        <div class="col modulo  d-flex flex-wrap justify-content-start align-items-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
           {b2_img}
           {b2_text}
           {content_btn2}

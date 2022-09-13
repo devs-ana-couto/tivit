@@ -225,7 +225,7 @@ if (!function_exists('ac_bloco_conteudo')) {
         $dados = ac_conteudo_listar($arg);
 
 
-        $saida = '<div class="container pd">';
+        $saida = '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
         $saida .= '<div class="title">';
         $saida .= '<h2 class="titleText text-center">' . __('NOSSOS CONTEÚDOS') . '</h2>';
         $saida .= '</div>';
@@ -245,7 +245,7 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0">';
             $saida .= '<div class="img position-relative">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="Depoimento">';
@@ -370,7 +370,7 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="col-12 col-md-4"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="cardContent p-1">';
             $saida .= '<div class="img position-relative">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="Depoimento">';
@@ -563,24 +563,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         }
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '<div class="col-5">';
-        $saida .= '<div class="filtros">';
-        $saida .= '<div class="select">';
-        $saida .= '<select name="">';
-        $saida .= '<option value="">' . ('Filtrar por') . '</option>';
-        if ((is_array($t_categorias)) && (count($t_categorias) > 0)) {
-            foreach ($t_categorias as $slug => $nome) {
-                $ativo = ($slug == $get_categoria) ? 'selected' : '';
-                $saida .= '<option value="' . $slug . '" ' . $ativo . '>' . $nome . '</option>';
-            }
-        }
-        $saida .= '</select>';
-        $saida .= '</div>';
-        $saida .= '<div class="search">';
-        $saida .= '<a href="#"><img src="' . get_template_directory_uri() . '/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
+
         $saida .= '</div>';
 
         /* Conteudos */
@@ -600,7 +583,7 @@ if (!function_exists('ac_pagina_conteudo')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="col-12 col-md-4"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="img">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '</div>';
@@ -745,7 +728,7 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
                     $etiquetas[] = $etiqueta->name;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4">';
+            $saida .= '<div class="col-12 col-md-4"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="cardContent p-1">';
             $saida .= '<div class="img position-relative">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="Depoimento">';

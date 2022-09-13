@@ -62,7 +62,7 @@ function pb_ac_lista_logos_01($obj_id,$obj = null, $block, $echo = true){
 					<div class="gap" id="{css_id_object}">
 						<div class="container">
 							<div class="row">
-								<div class="col-12 mb-5 text-center">
+								<div class="col-12 mb-5 text-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 								{c_text}
 								</div>
 								{content}
@@ -76,7 +76,7 @@ function pb_ac_lista_logos_01($obj_id,$obj = null, $block, $echo = true){
 
 
 			$content = '
-                <div class="col-12 col-md-{cols} mt-5">
+                <div class="col-12 col-md-{cols} mt-5" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 					<div class="d-flex justify-content-center align-items-center w-100 cloudTitle flex-column position-relative">
 						<h2>{nome}</h2>
 						<div class="tag">
