@@ -60,14 +60,14 @@ function pb_ac_slide_logos($obj_id, $obj = null, $block, $echo = true)
     <section class="container-fluid px-0 box-parceiros" id="box-parceiros-{idRand}">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 box-title">
+                <div class="col-12 col-lg-8 box-title" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     {title}
                 </div>
-                <div class="col-12 col-lg-8 mt-3 mt-lg-4 box-descript">
+                <div class="col-12 col-lg-8 mt-3 mt-lg-4 box-descript"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     {descript}
                 </div>
                 <div class="col-12 box-slider">
-                    <div class="owl-carousel owl-theme slider-parceiros">
+                    <div class="owl-carousel owl-theme slider-parceiros"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {content}
 
                     </div>
@@ -77,7 +77,7 @@ function pb_ac_slide_logos($obj_id, $obj = null, $block, $echo = true)
     </section>';
 
     $content = '
-         <div class="item">
+         <div class="item" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             {openLink}
                 <img src="{image}" alt="">
             {closeLink}

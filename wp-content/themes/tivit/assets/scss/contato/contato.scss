@@ -97,6 +97,9 @@
             color: $cinza-dark-cyber-tivit;
         }
     }
+    input[type="checkbox"]{
+        width: auto;
+    }
     input{
         padding-left: 5px;
     }
@@ -292,7 +295,8 @@
             margin-bottom: 30px;
             flex-direction: row;
             span{
-                width: 48%;
+                width: 95%;
+                margin-right: 25px;
             }
             .wpcf7-form-control.has-spinner.wpcf7-submit{
                 margin: 0 0 0 auto;

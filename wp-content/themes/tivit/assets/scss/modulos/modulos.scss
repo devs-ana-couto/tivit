@@ -250,8 +250,9 @@ $primary-color: #990017;
       .card-body {
         background: #FBFBFC;
         border: 1px solid #CAD2D8;
+        padding: 50px 0px;
         @media screen and (max-width: 991px) {
-          padding-bottom: 25px;
+          padding: 25px 0px;
         }
 
 
@@ -665,14 +666,14 @@ $primary-color: #990017;
 
       .item {
         img {
-          max-height: 130px;
+          //max-height: 130px;
 
           @media screen and (min-width: 991px) {
             /*-webkit-filter: grayscale(100%);
             filter: grayscale(100%);
             filter: gray;*/
             /* IE */
-            transform: scale(0.85);
+            //transform: scale(0.85);
             transition: 0.5s;
           }
 
@@ -681,7 +682,7 @@ $primary-color: #990017;
             filter: unset;
             filter: unset;*/
             /* IE */
-            transform: scale(1.0);
+            //transform: scale(1.0);
             transition: all 0.5s;
           }
         }
@@ -1059,6 +1060,15 @@ $primary-color: #990017;
     }
   }
 
+  .card-text p {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #262626;
+    font-weight: lighter;
+    text-align: center;
+    font-weight: 600;
+  }
+
   .box-text {
     p, .box-text {
       max-width: 980px;
@@ -1097,7 +1107,7 @@ $primary-color: #990017;
         padding-left: 0px;
 
         h1, h2, h3, h4, h5, h6, .card-title {
-          max-width: 148px;
+          max-width: 100%;
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
@@ -1111,7 +1121,7 @@ $primary-color: #990017;
       .card-body {
         padding: 0px;
         display: flex;
-        align-items: center;
+        align-items: start;
 
         .box-card-text {
           min-height: 50%;
@@ -1303,7 +1313,7 @@ $primary-color: #990017;
           font-size: 28px;
           line-height: 34px;
           text-align: center;
-          color: #582689;
+          //color: #582689;
           justify-self: center;
           @media screen and (max-width: 991px) {
             max-width: 100%;
@@ -1328,6 +1338,9 @@ $primary-color: #990017;
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+
   }
 
   &.alternative {
@@ -2259,6 +2272,13 @@ $primary-color: #990017;
 }
 
 .slider-projetos.solto {
+  .slider-categoria {
+    @media screen and (min-width: 991px) {
+
+
+    }
+  }
+
   .controlador {
     bottom: 5rem !important;
   }
@@ -2270,6 +2290,17 @@ $primary-color: #990017;
 
   .box-background-full {
     z-index: -1;
+  }
+  .carousel-item{
+    height: 560px;
+  }
+  .v-mask{
+    height: 100%;
+    width: 95%;
+    background-image: url("../images/modulos/categoria-slider/mask-slider.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 }
 
@@ -2773,6 +2804,7 @@ $primary-color: #990017;
     h2 {
       a {
         color: white;
+        font-size: 18px;
 
         &:after {
           content: url('../images/expandmenu.svg');
@@ -2797,6 +2829,19 @@ $primary-color: #990017;
     }
   }
 }
+
+@media screen and (min-width: 991px) {
+  .solution-menu .textMenu ul li {
+    padding-bottom: 12px;
+    width: 230px;
+  }
+
+  .solution-menu .textMenu ul li a {
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+}
+
 
 .header-conteudo {
   height: 520px;
@@ -3059,6 +3104,19 @@ $primary-color: #990017;
           img {
             height: 85px;
           }
+
+          h1, h2, h3, h4, h5, h6 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #262626;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+          }
         }
 
         a.link {
@@ -3144,26 +3202,142 @@ $primary-color: #990017;
 
     .img-triancle {
       width: 100%;
-      height: auto;
+      height: 100%;
       -webkit-mask-image: url("../images/modulos/before-footer/mask-background.svg");
       mask-image: url("../images/modulos/before-footer/mask-background.svg");
       -webkit-mask-repeat: no-repeat;
       mask-repeat: no-repeat;
       mask-size: cover;
       -webkit-mask-size: contain;
+      top: 0;
     }
-    .mask-v{
+
+    .mask-v {
       mix-blend-mode: multiply;
-      img{
-        width: 100%;
-        height: 100%;
-        -webkit-mask-image: url("../images/modulos/before-footer/mask-background.svg");
-        mask-image: url("../images/modulos/before-footer/mask-background.svg");
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        mask-size: cover;
-        -webkit-mask-size: contain;
+
+    }
+
+    .v-vermelho {
+      top: 0;
+    }
+  }
+}
+
+.owl-notices {
+  overflow: hidden;
+
+  .box-cta {
+    margin-top: 60px;
+  }
+
+  .box-title {
+    p {
+      text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 44px;
+      /* identical to box height, or 116% */
+
+      text-align: center;
+      text-transform: uppercase;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 50px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #990017;
+  }
+
+  .box-descript {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+
+      text-align: center;
+
+      /* Cinza Dark Tivit */
+
+      color: #262626;
+    }
+  }
+
+  .box-content {
+    .owl-carousel {
+      .owl-stage-outer {
+        overflow: visible !important;
       }
     }
+
+    .owl-item {
+      height: 480px !important;
+      @media screen and (max-width: 991px) {
+
+      }
+    }
+
+    .item {
+      width: 370px;
+      @media screen and (max-width: 991px) {
+        width: 350px;
+      }
+
+      .card {
+        border-radius: 0px;
+
+        .card-img {
+          img {
+            height: 210px;
+          }
+        }
+
+        .card-body {
+          padding: 35px;
+
+          h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 15px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            /* identical to box height, or 125% */
+
+            text-transform: uppercase;
+
+            /* Vermelho Tivit */
+
+            color: #F20024;
+          }
+
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tab-content > .active {
+    display: none !important;
   }
 }

@@ -14,7 +14,7 @@ const header_ico_search = document.querySelector(".search-ico")
 const header_ico_hamburguer = document.querySelector(".navbar-toggler-icon")
 const header_logo_desktop = document.querySelector(".logo-brand")
 
-const header_height = header.offsetHeight
+//const header_height = header.offsetHeight
 // Add class on scroll
 const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-global")
 // Add class mobile
@@ -765,247 +765,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// Add class on scroll
-window.addEventListener('scroll', function () {
-    scrollpos = window.scrollY;
-
-    if (window.location.pathname === '/staged/tivit' || window.location.pathname === '/staged/tivit/' ||
-        window.location.pathname === '/' || window.location.pathname === '/home') {
-        //transition vars
-        var offsetsIntro = document.querySelector('.transition').getBoundingClientRect();
-        var offsetsPortifolio = document.querySelector('.home-portifolio').getBoundingClientRect();
-        var offsetsContent = document.querySelector('.home-content').getBoundingClientRect();
-        var offsetsCases = document.querySelector('.home-cases').getBoundingClientRect();
-        var offsetsPessoas = document.querySelector('.pessoasCarreiras').getBoundingClientRect();
-        var offsetsPartners = document.querySelector('.partners').getBoundingClientRect();
-
-        //Effect Intro
-        if (scrollpos > offsetsIntro.top + -300) {
-            document.querySelector('.imgtransition').classList.add('active')
-            document.querySelector('.home-intro').classList.add('active')
-            document.querySelector('.pcustom').classList.add('active')
-        } else {
-            // document.querySelector('.imgtransition').classList.remove('active')
-            // document.querySelector('.home-intro').classList.remove('active')
-            // document.querySelector('.pcustom').classList.remove('active')
-        }
-
-        //Effect portifolio
-        if (scrollpos > offsetsPortifolio.top + 350) {
-            document.querySelector('.home-portifolio').classList.add('active')
-            document.querySelector('.bgport').classList.add('active')
-        } else {
-            // document.querySelector('.home-portifolio').classList.remove('active')
-            // document.querySelector('.bgport').classList.remove('active')
-        }
-
-        //Effect Content
-        if (scrollpos > offsetsContent.top + 1250) {
-            document.querySelector('.home-content').classList.add('active')
-            document.querySelector('.transitionContent').classList.add('active')
-            document.querySelector('.transitionCases').classList.add('active')
-        } else {
-            // document.querySelector('.home-content').classList.remove('active')
-            // document.querySelector('.transitionContent').classList.remove('active')
-            // document.querySelector('.transitionCases').classList.remove('active')
-        }
-
-        //Effect Cases
-        if (scrollpos > offsetsCases.top + 1950) {
-            document.querySelector('.transitionCases').classList.add('deactive')
-            document.querySelector('.home-cases').classList.add('active')
-            document.querySelector('.divOpacity').classList.add('active')
-            document.querySelector('.bgtriangulo').classList.add('active')
-            document.querySelector('.transCarreiras').classList.add('active')
-        } else {
-            // document.querySelector('.transitionCases').classList.remove('deactive')
-            // document.querySelector('.home-cases').classList.remove('active')
-            // document.querySelector('.divOpacity').classList.remove('active')
-            // document.querySelector('.bgtriangulo').classList.remove('active')
-            // document.querySelector('.transCarreiras').classList.remove('active')
-        }
-
-        //Effect Pessoas e Carreiras
-        if (scrollpos > offsetsPessoas.top + 3050) {
-            document.querySelector('.home-pessoas-e-carreiras').classList.add('active')
-            document.querySelector('.pessoasCarreiras').classList.add('active')
-            document.querySelector('.transCarreiras').classList.add('deactive')
-        } else {
-            // document.querySelector('.home-pessoas-e-carreiras').classList.remove('active')
-            // document.querySelector('.pessoasCarreiras').classList.remove('active')
-            // document.querySelector('.transCarreiras').classList.remove('deactive')
-        }
-
-        //Effect Partners
-        if (scrollpos > offsetsPartners.top + 3460) {
-            document.querySelector('.partners').classList.add('active')
-            // document.querySelector('.pessoasCarreiras > #triangle-down').classList.add('active')
-        } else {
-            // document.querySelector('.partners').classList.remove('active')
-            // document.querySelector('.pessoasCarreiras > #triangle-down').classList.remove('active')
-        }
-    }
-
-    if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tbanks/") {
-        add_class_on_scroll_tbanks();
-    } else if (scrollpos >= header_height && window.location.pathname === "/staged/tivit/tdx/") {
-        add_class_on_scroll_tdx();
-    } else if (scrollpos >= header_height && window.location.pathname != "/staged/tivit/" || scrollpos >= header_height && window.location.pathname != "/staged/tdx/") {
-        add_class_on_scroll_global();
-    } else {
-        remove_class_on_scroll_tbanks();
-        remove_class_on_scroll_tdx();
-        remove_class_on_scroll_global();
-    }
-
-
-    if (scrollpos >= header_height && window.innerWidth > 768 && window.location.pathname === "/staged/tivit/tbanks/" || window.location.pathname === "/staged/tivit/tdx/")
-        change_logo_on_scroll_desktop();
-    else {
-        change_logo_on_scroll_desktop_original();
-    }
-})
-
-//Function on Solutions Menu
-window.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('solutions').addEventListener('click', function () {
-        document.querySelector('.solution-menu').classList.contains('solution-menu-open') ?
-            document.querySelector('.solution-menu').classList.remove('solution-menu-open')
-            :
-            document.querySelector('.solution-menu').classList.add('solution-menu-open')
-
-        //Red background on menu
-        document.querySelector('.navbar-expand-md').classList.contains('navbar-expand-md-red') ?
-            document.querySelector('.navbar-expand-md').classList.remove('navbar-expand-md-red')
-            :
-            document.querySelector('.navbar-expand-md').classList.add('navbar-expand-md-red')
-
-        //Do not allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-
-        //rotate menu arrow
-        document.getElementById('solutions').classList.contains('rotate180') ?
-            document.getElementById('solutions').classList.remove('rotate180')
-            :
-            document.getElementById('solutions').classList.add('rotate180')
-    }, false);
-
-    //Open services and Products mobile
-    document.getElementById('service-product').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile').classList.add('solutions-service-mobile-open')
-
-        //Do not allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Close open services and procuts mobile
-    document.querySelector('.solutions-service-mobile > .container > .intro > h2').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile').classList.add('solutions-service-mobile-open')
-
-        //Allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Open Industry mobile
-    document.getElementById('industry').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile-cards.por-industria').classList.add('solutions-service-mobile-open')
-
-        //Do not allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Close industry mobile
-    document.querySelector('.solutions-service-mobile-cards.por-industria > .container > .intro > h2').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile-cards.por-industria').classList.add('solutions-service-mobile-open')
-
-        //Allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Open Challenge mobile
-    document.getElementById('challenge').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.add('solutions-service-mobile-open')
-
-        //Do not allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Close Challenge mobile
-    document.querySelector('.solutions-service-mobile-cards.por-desafios > .container > .intro > h2').addEventListener('click', function () {
-        document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
-            :
-            document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.add('solutions-service-mobile-open')
-
-        //Allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            document.body.classList.add('nomove')
-    }, false);
-
-    //Close everything on main menu closed click
-    document.querySelector('.navbar-toggler').addEventListener('click', function () {
-        //Services and products
-        document.querySelector('.solutions-service-mobile').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile').classList.remove('solutions-service-mobile-open')
-            :
-            ''
-
-        //Industry
-        document.querySelector('.solutions-service-mobile-cards.por-industria').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-industria').classList.remove('solutions-service-mobile-open')
-            :
-            ''
-
-        //Challenge
-        document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.contains('solutions-service-mobile-open') ?
-            document.querySelector('.solutions-service-mobile-cards.por-desafios').classList.remove('solutions-service-mobile-open')
-            :
-            ''
-
-        //Allow overflow on body
-        document.body.classList.contains('nomove') ?
-            document.body.classList.remove('nomove')
-            :
-            ''
-
-    }, false);
-}, false);
-
 // Global Sliders
 let items = document.querySelectorAll('.carousel .global')
 items.forEach((el) => {
@@ -1039,6 +798,10 @@ items2.forEach((el) => {
 
 function abre_barra_pesquisa() {
     jQuery('.barra-pesquisa').css({top: 0});
+}
+
+function close_bar_search() {
+    jQuery('.barra-pesquisa').css({top: -63});
 }
 
 function infosPortfolio(url, index) {
@@ -1144,20 +907,69 @@ function imgMobileContent() {
 }
 
 var headerConteudo = document.querySelector(".header-conteudo");
-
-if (headerConteudo !== "") {
+if (headerConteudo !== null && headerConteudo !== "") {
     imgMobileContent();
 }
 
-function cardHoverOn(id){
+function cardHoverOn(id) {
     var card = document.getElementById(id);
     var infos = card.querySelector(".infos");
 
     infos.classList.add("active");
 }
-function cardHoverLeave(id){
+
+function cardHoverLeave(id) {
     var card = document.getElementById(id);
     var infos = card.querySelector(".infos");
 
     infos.classList.remove("active");
 }
+
+window.onscroll = () => {
+    var headerNew = jQuery("header.nav-header-new");
+    var sticky = jQuery(headerNew).offset();
+    var largura = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+    if (headerNew.hasClass("sticky")) {
+        if (60 >= sticky.top) {
+            headerNew.removeClass("sticky");
+            if (largura <= 1199) {
+                headerNew.removeClass("fixed-top");
+            }else{
+                headerNew.addClass("fixed-top");
+            }
+        }
+    } else {
+        if (window.pageYOffset > 60) {
+            headerNew.addClass("sticky");
+            if (largura <= 1199) {
+                headerNew.addClass("fixed-top");
+            }else{
+                headerNew.addClass("fixed-top");
+            }
+        }
+    }
+};
+
+var solutionMenu = document.querySelectorAll('.solution-link-menu');
+const modalSolution = new bootstrap.Modal('#open-solution-menu');
+solutionMenu.forEach((menu, index) => {
+    menu.addEventListener('click', () => {
+        var checkSolutionShow = document.querySelector('#open-solution-menu');
+        if (!checkSolutionShow.classList.contains('show')) {
+            modalSolution.show();
+            jQuery('body').css('padding-right', '0');
+            var menuItens = checkSolutionShow.querySelectorAll('.menu-item');
+            menuItens.forEach((item, index) =>{
+                if(item.classList.contains('solution-link-menu')){
+                    item.classList.add('active');
+                }else{
+                    item.classList.remove('active');
+                }
+            });
+        } else {
+            modalSolution.hide();
+        }
+    });
+});

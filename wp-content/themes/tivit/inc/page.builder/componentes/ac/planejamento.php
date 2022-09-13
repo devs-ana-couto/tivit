@@ -4,7 +4,7 @@
  * AC / Planejamento
 */
 
-function pb_ac_planejamento($obj_id, $obj = null, $echo = true)
+function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
 
@@ -40,13 +40,9 @@ function pb_ac_planejamento($obj_id, $obj = null, $echo = true)
     }
 
     $colunas = get_sub_field('gd-el-planejamento-itens');
-    $cols = 12 / count($colunas);
+    $cols = get_sub_field("gd-el-simple-cols-rows");
 
-    if ($cols >= 4) {
-        $colsLimiter = 4;
-    } else {
-        $colsLimiter = $cols + 1;
-    }
+    $colsLimiter = $cols;
 
     $content_cta = "";
     $c_box_url = get_sub_field("gd-el-box-cta");
@@ -81,34 +77,34 @@ function pb_ac_planejamento($obj_id, $obj = null, $echo = true)
 
 	            	/* CSS: END Personalized */
 	            	.card-only-text .btn-tivit1 {
-	            	    background: ' . $c_background_cta .' !important; 
-	            	    color: '. $c_text_color_cta . ' !important;           
+	            	    background: ' . $c_background_cta . ' !important; 
+	            	    color: ' . $c_text_color_cta . ' !important;           
 	            	}
 	            	.card-only-text .btn-tivit1:hover{
-	            	    background: ' . $c_text_color_cta.' !important; 
-	            	    color: '. $c_background_cta  . '	!important;         
+	            	    background: ' . $c_text_color_cta . ' !important; 
+	            	    color: ' . $c_background_cta . '	!important;         
 	            	}
 	            </style>
 
 
 				
-    <section class="container-fluid px-lg-0 card-only-text" style="background: '. $s_color_background .';">
+    <section class="container-fluid px-lg-0 card-only-text" style="background: ' . $s_color_background . ';">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
                  <div class="row justify-content-center">         
-                     <div class="col-12 col-lg-8">              
+                     <div class="col-12 col-lg-8"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">              
                         {c_text}
                    </div>    
                   </div>     
                 </div>
             </div>
             <div class="col-12 box-cards  mt-5">
-                <div class="row  row-cols-1 row-cols-lg-' . $colsLimiter . ' g-4 justify-content-center">
+                <div class="row  row-cols-1 row-cols-lg-' . $colsLimiter . ' g-4 justify-content-start" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 {content}
                 </div>
             </div>
-           '. $content_cta . '
+           ' . $content_cta . '
         </div>
     </section>
     
@@ -118,13 +114,13 @@ function pb_ac_planejamento($obj_id, $obj = null, $echo = true)
 
     $content = '
 				
-				<div class="col">
-                        <div class="card h-100" style="border-color: ' . $t_color_border . ';">
-                            <div class="card-header">                           
+				<div class="col" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" >
+                        <div class="card h-100" style="border-left-color: ' . $t_color_border . ';">
+                            <div class="card-header"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">                           
                                 {titulo}                                               
                             </div>
                             <div class="card-body">
-                                <div class="col box-card-text">
+                                <div class="col box-card-text"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                                     {miolo}
                                 </div>
                             </div>

@@ -58,10 +58,10 @@ if (!function_exists('ac_bloco_clientes')) {
 
 
         $saida .= '<div class="container">';
-        $saida .= '<div class="title w-100">';
+        $saida .= '<div class="title w-100" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
         $saida .= '<h2 class="text-center">Com quem trabalhamos</h2>';
         $saida .= '</div>';
-        $saida .= '<div class="d-flex justify-content-between hide-mobile">';
+        $saida .= '<div class="d-flex justify-content-between hide-mobile" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
         for ($ac = 0; $ac < count($dados); $ac++ ) {
             $saida .= '<a href="'.$dados[$ac]['link'].'">';
             $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="Logo da '.$dados[$ac]['titulo'].'">';

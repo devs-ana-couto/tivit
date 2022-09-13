@@ -4,7 +4,7 @@
  * AC / Beneficios
 */
 
-function pb_ac_beneficios($obj_id, $obj = null, $echo = true)
+function pb_ac_beneficios($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
 
@@ -51,7 +51,7 @@ function pb_ac_beneficios($obj_id, $obj = null, $echo = true)
 
         $content_cta = '
             <div class="row justify-content-center">
-                <div class="col-8 mt-5 d-flex justify-content-center">
+                <div class="col-8 mt-5 d-flex justify-content-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     <a href="' . $cta["gd-el-beneficios-cta-link"] . '" class="btn btn-tivit1">' . $cta["gd-el-beneficios-cta-link-text"] . '</a>
                 </div>
             </div>';
@@ -87,11 +87,11 @@ function pb_ac_beneficios($obj_id, $obj = null, $echo = true)
     <section class="container-fluid manegement-services" style="background: ' . $s_color_background . ';" id="{css_id_object}">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8 box-title mb-3">
+                <div class="col-12 col-lg-8 box-title mb-3" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     {c_text}
                 </div>
             </div>
-            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3">
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-3" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             {content}                          
             </div>
             ' . $content_cta . '
@@ -101,7 +101,7 @@ function pb_ac_beneficios($obj_id, $obj = null, $echo = true)
 			';
 
     $content = '
-                <div class="col-11 col-lg-8 box-card" style="background: ">
+                <div class="col-11 col-lg-8 box-card" style="background: " data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     <div class="row gap-4 justify-content-center">
                         <div class="col-12 col-lg-auto d-flex align-items-center justify-content-center {i_order}">
                             <img src="{icone}"

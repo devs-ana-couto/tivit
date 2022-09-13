@@ -4,7 +4,7 @@
  * AC / Conteudo Relacionado
 */
 
-function pb_ac_conteudo_relacionado($obj_id,$obj = null,$echo = true){
+function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
 	global $detect;
 	$generate_element = "";
 	$c_title = get_sub_field('gd-el-simple-content');
@@ -51,7 +51,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null,$echo = true){
 			/* CSS: END Personalized */
 		</style>
 <div id="main-solutions">
-<div id="contentServices" class="home-content content-inovacao">
+<div id="contentServices" class="home-content content-inovacao"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
   <div id="triangle-down"></div><!-- Triangle Down -->
   <div class="container pd">
     <div class="title">

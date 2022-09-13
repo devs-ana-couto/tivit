@@ -51,8 +51,8 @@ function pb_bloco_conteudo_simples($obj_id,$obj = null,$block=0,$echo = true){
 		echo $t_margin_and_padding;
 		echo '</style>';
 		echo "<div id=\"$css_id_object\">";
-		echo "<section id=\"gd-el-simple-$block-$obj_id\" class=\"box-section height-$s_height  header-coutoman-$s_color_of_menu\">";
-		echo "<div class=\"wrapper $m_option_margin\">";
+		echo "<section id=\"gd-el-simple-$block-$obj_id\" class=\"box-section height-$s_height  header-coutoman-$s_color_of_menu\" >";
+		echo "<div class=\"wrapper $m_option_margin\" data-anijs=\"if: scroll, on: window, do: fadeInUp animated, before: scrollReveal\">";
 		echo "<div class=\"$css_container\">";
 	}	
 
@@ -67,7 +67,7 @@ function pb_bloco_conteudo_simples($obj_id,$obj = null,$block=0,$echo = true){
 			preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $you_link, $match);
 			$youtube_id = $match[1];            
 
-            $generate_content .=  '<div class="video-wrapper">';
+            $generate_content .=  '<div class="video-wrapper" data-anijs=\"if: scroll, on: window, do: fadeInUp animated, before: scrollReveal\">';
 			$generate_content .=  '<iframe width="560" height="349" src="http://www.youtube.com/embed/'.$youtube_id.'?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>';
 			$generate_content .=  '</div>';									
 			break;		

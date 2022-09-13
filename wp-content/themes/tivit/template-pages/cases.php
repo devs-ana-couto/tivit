@@ -6,7 +6,7 @@
 
     <div class="cases-recentes">
         <!--- Desktop -->
-        <div class="container hide-mobile">
+        <div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row">
                 <?= do_shortcode('[ac-pagina-cases]') ?>
             </div>
@@ -14,7 +14,7 @@
         <!--- End Desktop -->
     </div>
 
-    <div class="home-pessoas-e-carreiras inovar">
+    <!--<div class="home-pessoas-e-carreiras inovar">
         <div id="triangle-down"></div>
         <div class="container">
             <div class="row">
@@ -28,6 +28,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 <?php get_footer(); ?>

@@ -4,7 +4,7 @@
  * AC / Banner Home
 */
 
-function pb_ac_banner_interno($obj_id, $obj = null, $echo = true)
+function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
 {
     global $detect;
     $generate_element = "";

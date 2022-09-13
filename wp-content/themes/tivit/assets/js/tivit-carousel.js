@@ -38,3 +38,12 @@ $('.slider-cliente').owlCarousel({
 })
 
 //const carousel = new bootstrap.Carousel('#slider-base-modular')
+
+var recipeCarousel = document.getElementById("recipeCarousel");
+
+if(recipeCarousel !== "" || recipeCarousel !== null){
+    const carousel = new bootstrap.Carousel(recipeCarousel, {
+        interval: 5000,
+        wrap: false,
+    });
+}

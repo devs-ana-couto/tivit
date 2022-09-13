@@ -20,7 +20,7 @@ function pb_image_full($obj_id,$obj = null,$block=0,$echo = true){
 
 	$generate_element = '	            
         <!---- Image Full Module -->
-        <section class="box-image-full header-coutoman-dark" id="gd-el-image-full-'.$block.'" style="'.$tb.'">
+        <section class="box-image-full header-coutoman-dark" id="gd-el-image-full-'.$block.'" style="'.$tb.'" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <img src="'.$c_url['url'].'" class="w100">
         </section>        
         <!---- // Image Full Module -->';		

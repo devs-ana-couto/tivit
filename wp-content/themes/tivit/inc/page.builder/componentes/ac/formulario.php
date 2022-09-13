@@ -4,7 +4,7 @@
  * AC / Formulario
 */
 
-function pb_ac_formulario($obj_id,$obj = null,$echo = true){
+function pb_ac_formulario($obj_id,$obj = null, $block, $echo = true){
 	global $detect;
 	$generate_element = "";
 	$c_title = get_sub_field('gd-el-simple-content');
@@ -52,7 +52,7 @@ function pb_ac_formulario($obj_id,$obj = null,$echo = true){
 			/* CSS: END Personalized */
 		</style>
 
-		<div id="main-solutions">
+		<div id="main-solutions" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
 			<div class="lp-tbanks-form" id="{css_id_object}">
 			<div id="contatoUnfolding">
 				<div class="container">

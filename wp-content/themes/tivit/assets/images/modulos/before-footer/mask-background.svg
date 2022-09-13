@@ -1,17 +1,3 @@
-<svg width="1324" height="686" viewBox="0 0 1324 686" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_6272_29463)">
-<path d="M4 0C345.5 418.5 662.5 678 662.5 678C662.5 678 1000.73 399.632 1320 0H4Z" fill="#AB0043"/>
-</g>
-<defs>
-<filter id="filter0_d_6272_29463" x="0" y="0" width="1324" height="686" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6272_29463"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6272_29463" result="shape"/>
-</filter>
-</defs>
+<svg width="1314" height="677" viewBox="0 0 1314 677" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M279.399 1H0C187.866 234.881 441.553 495.944 656.006 676.5L658.028 674.725C860.953 501.594 1118.05 243.122 1313.12 0H1033.41L279.399 1Z" fill="#00FF00"/>
 </svg>

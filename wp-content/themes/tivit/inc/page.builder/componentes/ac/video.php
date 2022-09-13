@@ -4,7 +4,7 @@
  * AC / Video
 */
 
-function pb_ac_video($obj_id, $obj = null, $echo = true)
+function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
 
@@ -66,7 +66,7 @@ function pb_ac_video($obj_id, $obj = null, $echo = true)
                     <div class="w-100 h-50" style="background: ' . $s_color_background . '; "></div>
                  </div>
                 <div class="d-flex justify-content-center">
-                <div class="col-11 col-lg-9">
+                <div class="col-11 col-lg-9"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                     <div class="container box-dados position-relative p-4"
                      style="background: url(' . $video_imagem_desk . ');">
                         <div class="row row-box justify-content-center align-items-center h-100">

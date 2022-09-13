@@ -4,7 +4,7 @@
  * AC / Banner Home
 */
 
-function pb_ac_banner_home($obj_id,$obj = null,$echo = true){	
+function pb_ac_banner_home($obj_id,$obj = null, $block, $echo = true){
 	$generate_element = "";
 	if( have_rows('ac-pb-banner-home-group',$obj_id) ):
 		while ( have_rows('ac-pb-banner-home-group',$obj_id) ) : the_row();

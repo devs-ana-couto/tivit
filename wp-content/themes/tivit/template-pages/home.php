@@ -3,7 +3,7 @@
 
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
-    <section class="home-hero position-relative">
+    <section class="home-hero position-relative" >
         <div id="hero" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
             <div class="carousel-inner text-center">
                 <?php
@@ -137,19 +137,20 @@
         </div>
     </section>
 
-    <div class="home-intro">
-        <div class="w-100 transition">
+    <div class="home-intro active">
+        <!--<div class="w-100 transition">
             <img class="imgtransition position-absolute hide-mobile"
-                 src="<?php echo get_template_directory_uri(); ?>/assets/images/home/trans1flp.svg"
+                 src="<?php /*echo get_template_directory_uri(); */?>/assets/images/home/trans1flp.svg"
                  alt="transition1">
-        </div>
-        <div class="col-12 position-relative box-arrow">
+        </div>-->
+        <div class="col-12 position-relative box-arrow"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="arrow text-center position-absolute">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg"
                      alt="Saiba Mais">
             </div>
         </div>
-        <div class="container pcustom">
+        <div class="container pcustom active"
+             data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="mt-4">
@@ -161,12 +162,12 @@
     </div>
 
     <section class="container-fluid px-lg-0 portfolio port mb-5">
-        <div class="d-flex justify-content-center bgport position-absolute"></div>
-        <div class="container home-portifolio">
+        <div class="d-flex justify-content-center bgport active position-absolute"></div>
+        <div class="container home-portifolio active" >
             <div class="home-portifolio-image p-0">
-                <div class="d-flex justify-content-center w-100">
+                <!--<div class="d-flex justify-content-center w-100">
                     <div id="triangle-down"></div>
-                </div>
+                </div>-->
                 <div class="row row-cols-1">
                     <?php
                     $mascara = "";
@@ -176,11 +177,10 @@
                         $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
                     }
                     ?>
-                    <div class="col-12 portfolio__box position-relative fadein">
+                    <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <div class="d-flex justify-content-center w-100">
                             <div id="triangle-down"></div>
                         </div>
-
                         <div class="card-img-overlay"
                              style="background: url('<?php echo $mascara; ?>');">
                         </div>
@@ -260,45 +260,44 @@
     </section>
 
     <div id="contentTdx" class="home-content content-inovacao">
-        <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>
-        <div id="triangle-down" style=""></div>
+       <!-- <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>-->
+        <!--<div id="triangle-down" style=""></div>-->
         <?= do_shortcode('[ac-bloco-conteudo]'); ?>
     </div>
 
-    <div class="home-cases">
-        <div class="d-flex justify-content-center transitionCases position-absolute hide-mobile"></div>
-        <div class="d-flex justify-content-center bgtriangulo position-absolute"></div>
-        <div class="container divOpacity">
-            <div class="row d-flex justify-content-center align-items-center position-absolute m-0 lr">
-
+    <div class="home-cases active">
+        <div class="d-none   justify-content-center transitionCases position-absolute hide-mobile"></div>
+        <div class="d-none d-lg-flex active justify-content-center bgtriangulo position-absolute" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"></div>
+        <div class="container divOpacity active">
+            <div class="row d-flex justify-content-center align-items-center position-absolute m-0 lr" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="home-cases-title">
                     <h2>Nossos Cases</h2>
-                    <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>
+                   <!-- <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>-->
                 </div>
                 <?= do_shortcode('[ac_bloco_home_cases]'); ?>
             </div>
         </div>
     </div>
 
-    <section class="pessoasCarreiras">
+    <!--<section class="pessoasCarreiras">
         <div class="d-flex justify-content-center transCarreiras position-absolute hide-mobile"></div>
         <div class="d-flex justify-content-center home-pessoas-e-carreiras">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="home-pessoas-e-carreiras-title">
-                            <?php the_field('texto_pc') ?>
+                            <?php /*the_field('texto_pc') */?>
                         </div>
                         <div class="botao">
-                            <a href="<?php the_field('url_cta_pc') ?>"><?php the_field('texto_cta_pc') ?></a>
+                            <a href="<?php /*the_field('url_cta_pc') */?>"><?php /*the_field('texto_cta_pc') */?></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section class="partners">
+    <section class="partners active mt-5">
         <?= do_shortcode('[ac-bloco-clientes]'); ?>
     </section>
 

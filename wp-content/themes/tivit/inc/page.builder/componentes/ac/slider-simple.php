@@ -41,8 +41,8 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         }
         }
     </style>
-    <section class="container-fluid px-0 slider-projetos solto position-relative">
-        <div class="container">
+    <section class="container-fluid px-0 slider-projetos solto position-relative" >
+        <div class="container" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <div class="col-12 px-0">
             <div id="slider-categoria' . $obj_id . '" class="carousel slide slider-categoria"
                  data-bs-ride="carousel">
@@ -65,13 +65,10 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
     </section> 
     ';
     $content = '
-                    <div class="carousel-item {active}">
+                    <div class="carousel-item {active}" >
                         <div class="row justify-content-end d-none d-lg-flex">
                             <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                                <img class="img-fluid"
-                                     src="' . get_template_directory_uri() . '/assets/images/modulos/categoria-slider/mask-slider.svg"
-                                     alt="">
-                            </div>
+                                                            </div>
                         </div>
                         <div class="row gx-0 h-100 justify-content-between">
                             <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
@@ -99,18 +96,26 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                                 </div>
                             </div>
 
-                            <div class="col-12 col-lg-8 box-img">
-                                <img src="{image}"
-                                     class="d-block w-100" alt="...">
+                            <div class="col-12 col-lg-8 box-img" style="background-image: url(\'{image}\'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                                <!--<img src=""
+                                     class="d-block w-100" alt="...">-->
                             </div>
                         </div>
                     </div>
     ';
+    function tamanho_texto($str, $limit, $suffix = '...')
+    {
+        $count_string = strlen( $str);
+        if ($count_string > $limit) {
+            $str = substr($str, 0, $limit) . $suffix;
+        }
 
+        return $str;
+    }
 
     foreach ($r_slider as $key => $slide) {
-        $title = $slide["gd-el-slider-simples-repeter-title"];
-        $descript = $slide["gd-el-slider-simples-repeter-descript"];
+        $title = tamanho_texto($slide["gd-el-slider-simples-repeter-title"], 100, '...');
+        $descript = tamanho_texto($slide["gd-el-slider-simples-repeter-descript"], 200, '...');
         $action_name = $slide["gd-el-slider-simples-repeter-action-name"];
         $tag_name = $slide["gd-el-slider-simples-repeter-tag-group"]["gd-el-slider-simples-repeter-tag-name"];
         $tag_link = $slide["gd-el-slider-simples-repeter-tag-group"]["gd-el-slider-simples-repeter-link-tag"];
@@ -118,6 +123,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         $cta_name = $slide["gd-el-slider-simples-repeter-cta-group"]["gd-el-slider-simples-repeter-title-button"];
         $cta_link = $slide["gd-el-slider-simples-repeter-cta-group"]["gd-el-slider-simples-repeter-cta-link"];
         $image = $slide["gd-el-slider-simples-repeter-images"]["url"];
+
 
         $active = "";
         $tag_box = "";
@@ -191,7 +197,8 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
 
     $generate_arrows = '';
     if (count($r_slider) > 1) {
-        $arrows = '<button class="carousel-control-prev" type="button"
+        $arrows = '';
+        /*$arrows = '<button class="carousel-control-prev" type="button"
                             data-bs-target="#slider-categoria{obj_id}"
                             data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -202,7 +209,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                             data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                    </button>';
+                    </button>';*/
 
         $generate_arrows =
             str_replace(

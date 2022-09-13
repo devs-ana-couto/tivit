@@ -1,8 +1,9 @@
 <?php
 
-function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
+function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
+    $css_id = md5(rand(0, 1000));
     if (have_rows("gd-ac-bloco-intro-bloco-1", $obj_id)):
         while (have_rows("gd-ac-bloco-intro-bloco-1", $obj_id)):the_row();
 
@@ -11,7 +12,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
             if(!empty($b1_image_array['url'])){
             $b1_image = '
             <div class="col-12 my-5 my-lg-auto d-flex justify-content-center">
-                <img src="' . $b1_image_array["url"] . '" class="logo-tivit my-4" height="40" alt="">
+                <img src="' . $b1_image_array["url"] . '" class="logo-tivit my-4" style="min-height: 40px;" alt="">
             </div>';
             }
             if (have_rows("gd-ac-bloco-intro-bloco-1-cta", $obj_id)):
@@ -23,12 +24,12 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
                     $b1_cta_text_color = get_sub_field("gd-ac-bloco-intro-bloco-1-cta-text-color");
 
                     $b1_css = '
-                        .box-intro .modulo .btn-tivit1 {
+                        .box-intro-{css_id}-refatorado .modulo .btn-tivit1 {
                             background: ' . $b1_cta_bg_color . ';
                             border: 1px solid ' . $b1_cta_border_color . ';
                             color: ' . $b1_cta_text_color . ';
                         }
-                        .box-intro .modulo .btn-tivit1:hover {
+                        .box-intro-{css_id}-refatorado .modulo .btn-tivit1:hover {
                             background: ' . $b1_cta_text_color . ';
                             border: 1px solid ' . $b1_cta_bg_color . ';
                             color: ' . $b1_cta_bg_color . ';
@@ -53,9 +54,9 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
             $b2_image_array = get_sub_field("gd-ac-bloco-intro-bloco-2-image");
             if(!empty($b2_image_array['url'])){
             $b2_image = '
-           <div class="col-12 my-5 mt-lg-4 d-flex justify-content-center justify-content-lg-start">
+           <div class="col-12 my-5 mt-lg-4 d-flex justify-content-center">
                   
-                <img src="' . $b2_image_array["url"] . '" class="logo-tivit my-4" height="40" alt="">
+                <img src="' . $b2_image_array["url"] . '" class="logo-tivit my-4" height="" style="min-height: 40px;" alt="">
             </div>';
             }
             if (have_rows("gd-ac-bloco-intro-bloco-2-cta", $obj_id)):
@@ -67,12 +68,12 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
                     $b2_cta_text_color = get_sub_field("gd-ac-bloco-intro-bloco-2-cta-text-color");
 
                     $b2_css = '
-                        .box-intro .modulo .btn-tivit1 {
+                        .box-intro-{css_id}-refatorado .modulo .btn-tivit1 {
                             background: ' . $b2_cta_bg_color . ';
                             border: 1px solid ' . $b2_cta_border_color . ';
                             color: ' . $b2_cta_text_color . ';
                         }
-                        .box-intro .modulo .btn-tivit1:hover {
+                        .box-intro-{css_id}-refatorado .modulo .btn-tivit1:hover {
                             background: ' . $b2_cta_text_color . ';
                             border: 1px solid ' . $b2_cta_bg_color . ';
                             color: ' . $b2_cta_bg_color . ';
@@ -119,22 +120,21 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
         ' . $b1_css . '
         ' . $b2_css . '
         
-        .box-intro {
+        .box-intro-{css_id}-refatorado {
             '. $css_bg_color .'
             '. $s_image .'
         }
     </style>
-    <section class="container-fluid px-0 box-intro position-relative"
-             style=" ">
+    <section class="container-fluid px-0 box-intro box-intro-{css_id}-refatorado position-relative">
 
 <div class="container">
     <div class="row row-cols-1 row-cols-lg-2 g-lg-5 gy-lg-0">
-        <div class="col modulo flex-wrap d-flex justify-content-center justify-content-lg-start align-items-center">
+        <div class="col modulo flex-wrap d-flex justify-content-center justify-content-lg-start align-items-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
           {b1_img}
           {b1_text}
           {content_btn}
         </div>
-        <div class="col modulo  d-flex flex-wrap justify-content-start align-items-center">
+        <div class="col modulo  d-flex flex-wrap justify-content-start align-items-center" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
           {b2_img}
           {b2_text}
           {content_btn2}
@@ -149,8 +149,8 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $echo = true)
 
     $generate_element =
         str_replace(
-            array('{id}', '{b1_text}', '{content_btn}', '{b1_img}', '{b2_text}', '{content_btn2}', '{b2_img}'),
-            array($obj_id, $b1_text, $content_btn, $b1_image, $b2_text, $content_btn2, $b2_image),
+            array('{id}', '{b1_text}', '{content_btn}', '{b1_img}', '{b2_text}', '{content_btn2}', '{b2_img}', '{css_id}'),
+            array($obj_id, $b1_text, $content_btn, $b1_image, $b2_text, $content_btn2, $b2_image, $css_id),
             $template
         );
 

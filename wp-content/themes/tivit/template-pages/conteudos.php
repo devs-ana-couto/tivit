@@ -18,7 +18,7 @@
         </div>
     </section>
 
-    <div class="cases-recentes conteudos">
+    <div class="cases-recentes conteudos" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <div class="container hide-mobile">
             <div class="row">
                 <?= do_shortcode('[ac-pagina-conteudo]') ?>
@@ -29,7 +29,7 @@
 <? if (false) { ?>
 
 
-    <div class="a-tivit-cases cases conteudos">
+    <div class="a-tivit-cases cases conteudos" >
         <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="container">
                 <div class="row">
