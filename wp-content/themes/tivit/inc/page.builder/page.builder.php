@@ -38,6 +38,7 @@ require_once('componentes/video.full.php');
 require_once('componentes/image.full.php');
 require_once('componentes/gallery.php');
 require_once('componentes/iframe.php');
+require_once('componentes/shortcode.php');
 
 
 function page_bulder_init($obj_id, $obj = null, $echo = true)
@@ -50,6 +51,7 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
         // loop through the rows of data
         while (have_rows('gd-elements', $obj_id)) : the_row();
             $layout = get_row_layout();
+            // echo $layout;
             switch ($layout) {
                 case 'gd-ac-banner-home':
                     $return[$layout] = pb_ac_banner_home($obj_id, $obj, $block, $echo);
@@ -122,6 +124,9 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                     break;
                 case 'gd-element-iframe':
                     $return[$layout] = pb_iframe_full($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-shortcode':
+                    $return[$layout] = ac_shortcode($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-ac-card-icon':
                     $return[$layout] = pb_ac_card_icon($obj_id, $obj, $block, $echo);

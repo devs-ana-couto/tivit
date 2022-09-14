@@ -217,18 +217,96 @@ if (!function_exists('ac_conteudo_listar_tags')) {
 }
 
 
+/***
+ * [ac-bloco-conteudo categorias="categoria1,categoria2" fundo="claro" quantidade="3" vejamais=false]Título[/ac-bloco-conteudo]
+ *
+ * Sendo:
+ *   categorias: listar os slugs das categorias a listar separadas por virgula
+ *   fundo: "claro" ou "escuro" determina qual a cor do fundo do componente, padrão é "claro"
+ *   quantidade: quantos cards serão mostrados, padrão é 3
+ *   vejamais: true/false se deve aparecer o botao "veja mais" ou não
+ *   Título: texto que aparecerá como titulo do componente
+ *
+***/
 if (!function_exists('ac_bloco_conteudo')) {
-    function ac_bloco_conteudo()
-    {
-        $arg['porpagina'] = 3;
-        $arg['pagina'] = 1;
-        $dados = ac_conteudo_listar($arg);
+    function ac_bloco_conteudo( $atts, $content = null ) {
+        $conteudo_bloco = apply_filters( 'the_content', $content );
+        $conteudo_bloco = str_replace( ']]>', ']]&gt;', $conteudo_bloco );
+        $categorias_bloco = (isset($atts['categorias'])) ? $atts['categorias'] : '';
+        $fundo = (isset($atts['fundo'])) ? $atts['fundo'] : 'claro';
+        $quantidade = (isset($atts['quantidade'])) ? intval($atts['quantidade']) : 3;
+        $vejamais = (isset($atts['vejamais'])) ? $atts['vejamais'] : false;
+        if ($quantidade==0) $quantidade = 3;
+        $cor_fundo = ($fundo=='escuro') ? 'ac_bloco_conteudo_escuro' : 'ac_bloco_conteudo_claro';
+        // $cor_fundo = ($fundo=='escuro') ? 'home-content' : 'cases-recentes';
 
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => $quantidade,
+            'page' => 1,
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+        );
+        if ($categorias_bloco != '') {
+            $args['category_name'] = $categorias_bloco;
+        }
+        // if ($etiqueta != '') {
+        //     $args['tag'] = $etiqueta;
+        // }
+        $the_query = new WP_Query($args);
+        $dados = array();
+        // print_r($the_query);
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+            $identif = $the_query->post->ID;
+            $titulo = get_the_title();
+            $conteudo = apply_filters('the_content', get_the_content());
+            $conteudo = str_replace(']]>', ']]&gt;', $conteudo);
+            $resumo = get_the_content();
+            $link = get_permalink();
+            $dia = get_the_date();
+            $quem = get_the_author();
 
-        $saida = '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-        $saida .= '<div class="title">';
-        $saida .= '<h2 class="titleText text-center">' . __('NOSSOS CONTEÚDOS') . '</h2>';
-        $saida .= '</div>';
+            $bhdesktop = get_field('banner_header_desktop_conteudo');
+            $bhmobile = get_field('banner_header_mobile_conteudo');
+            // $tleitura = get_field('tempo_de_leitura');
+            // $chamada = get_field('chamada_sobre_cases');
+            $imagem = '';
+            $teste = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $conteudo, $encontrou);
+            $imagem = (isset($encontrou[1][0])) ? $encontrou[1][0] : '';
+            $cat_aux = get_the_category();
+            $categorias = array();
+            if ((is_array($cat_aux)) && (count($cat_aux) > 0)) {
+                foreach ($cat_aux as $categoria) {
+                    $categorias[$categoria->term_id] = $categoria->name;
+                }
+            }
+            // $etiquetas = get_the_tags($identif);
+            $dados[] = array(
+                'postid' => $identif,
+                'postdate' => $dia,
+                'link' => $link,
+                'imagem' => $imagem,
+                'conteudo' => $conteudo,
+                'quem' => $quem,
+                'resumo' => $resumo,
+                'titulo' => $titulo,
+                'categorias' => $categorias,
+                'etiquetas' => $etiquetas,
+                'bhdesktop' => $bhdesktop,
+                'bhmobile' => $bhmobile,
+                // 'tleitura' => $tleitura,
+                // 'chamada' => $chamada,
+            );
+        }
+        wp_reset_query();
+
+        $saida  = '';
+        $saida .= '<div id="contentTdx" class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
+        $saida .= '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+        $saida .= '<input id="ac_bloco_conteudo_categorias" type="hidden" value="'.$categorias_bloco.'">';
+        $saida .= '<div class="title"><h2 class="titleText text-center">'.$content.'</h2></div>';
         $saida .= '<div class="row hide-mobile">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
@@ -238,53 +316,46 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $categorias[] = $categoria;
                 }
             }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if ((is_array($etq_aux)) && (count($etq_aux) > 0)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
+            // $etiquetas = array();
+            // $etq_aux = $dados[$ac]['etiquetas'];
+            // if ((is_array($etq_aux)) && (count($etq_aux) > 0)) {
+            //     foreach ($etq_aux as $etiqueta) {
+            //         $etiquetas[] = $etiqueta->name;
+            //     }
+            // }
             $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0">';
             $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="Depoimento">';
-            $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
-            $saida .= '</div>';
+            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
+            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '</div>'; //.img
             $saida .= '<div class="card-body">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>';
-            $saida .= '<div class="content">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '</div>';
-            $saida .= '<div class="autor-time w-100">';
-
-            if (!empty($etiquetas)) {
-                $saida .= '<div class="col-auto">';
-                for ($k = 0; $k < count($etiquetas); $k++) {
-                    $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
-                }
-                $saida .= '</div>';
-            }
-
-
-            $saida .= '<div class="col-auto">';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
+            $saida .= '</div>'; //.detalhes
+            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            // $saida .= '<div class="autor-time w-100">';
+            // if (!empty($etiquetas)) {
+            //     $saida .= '<div class="col-auto">';
+            //     for ($k = 0; $k < count($etiquetas); $k++) {
+            //         $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
+            //     }
+            //     $saida .= '</div>';
+            // }
+            // $saida .= '<div class="col-auto">';
+            // $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            $saida .= '</div>'; //.card-body
+            // $saida .= '</div>';
+            // $saida .= '</div>';
             $saida .= '<div class="card-footer border-0 bg-transparent">';
-            $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '</div>'; //.card-footer
+            $saida .= '</div>'; //.card
+            $saida .= '</div>'; //.col-12
         }
-        $saida .= '</div>';
-        $saida .= '<div class="row mx-auto my-auto justify-content-center hide-desktop">';
+        $saida .= '</div>'; //.row
+        $saida .= '<div class="row mx-auto my-auto justify-content-center hide-desktop" arua-hidden="true" style="background-color:'.$cor_fundo.';">';
         $saida .= '<div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">';
         $saida .= '<div class="carousel-inner" role="listbox">';
         for ($ac = 0; $ac < count($dados); $ac++) {
@@ -295,47 +366,44 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $categorias[] = $categoria;
                 }
             }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if ((is_array($etq_aux)) && (count($etq_aux) > 0)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
+            // $etiquetas = array();
+            // $etq_aux = $dados[$ac]['etiquetas'];
+            // if ((is_array($etq_aux)) && (count($etq_aux) > 0)) {
+            //     foreach ($etq_aux as $etiqueta) {
+            //         $etiquetas[] = $etiqueta->name;
+            //     }
+            // }
             $saida .= '<div class="carousel-item heroslide4 content ' . ($ac == 0 ? 'active' : '') . '">';
             $saida .= '<div class="col-12 m-0 p-0">';
             $saida .= '<div class="cardContent p-2 h-100">';
             $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="' . $dados[$ac]['bhmobile'] . '" alt="Depoimento">';
+            $saida .= '<img src="' . $dados[$ac]['bhmobile'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
-            $saida .= '</div>';
+            $saida .= '</div>'; //.img
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>';
-            $saida .= '<div class="content">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '</div>';
-            $saida .= '<div class="autor-time w-100">';
-            $saida .= '<div class="d-flex flex-row aaa">';
-            for ($k = 0; $k < count($etiquetas); $k++) {
-                $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
-            }
-            $saida .= '</div>';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
-            $saida .= '</div>';
-            $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
+            $saida .= '</div>'; //.detalhes
+            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            // $saida .= '<div class="autor-time w-100">';
+            // $saida .= '<div class="d-flex flex-row aaa">';
+            // for ($k = 0; $k < count($etiquetas); $k++) {
+            //     $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
+            // }
+            // $saida .= '</div>';
+            // $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            // $saida .= '</div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '</div>'; //.cardContent
+            $saida .= '</div>'; //.col-12
+            $saida .= '</div>'; //.carousel-item
         }
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
+        $saida .= '</div>'; //.carousel-inner
+        $saida .= '</div>'; //.carousel
+        $saida .= '</div>'; //.row
+        // $saida .= '</div>';
+        $saida .= '</div>'; //.container
+        $saida .= '</div>'; //.ac_bloco_conteudo
         return $saida;
     }
 }
