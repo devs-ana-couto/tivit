@@ -189,10 +189,10 @@
         <nav class="navbar navbar-dark bg-transparent">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        data-bs-target="#canvaMenuMobile" aria-controls="canvaMenuMobile">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px"
                          height="21px" class="logo-brand" alt="Logo Tivit">
                 </a>
@@ -201,12 +201,12 @@
                          alt="Search Tivit" onclick="abre_barra_pesquisa();">
                 </div>
                 <div class="offcanvas offcanvas-start text-bg-dark m-0 menu-expanded-mobile" tabindex="-1"
-                     id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                     id="canvaMenuMobile" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
                         <button class="btn-close btn-close-white" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                                data-bs-target="#canvaMenuMobile" aria-controls="offcanvasDarkNavbar">
                         </button>
-                        <a class="navbar-brand" href="#"
+                        <a class="navbar-brand" href="<?php echo get_site_url(); ?>"
                            data-anijs="if: DOMContentLoaded, on: document, do: bounceInDown animated">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px"
                                  height="21px" class="logo-brand" alt="Logo Tivit">
@@ -260,12 +260,12 @@
                                 <div class="col-auto">
                                     <a href="#" class="active">BR</a>
                                 </div>
-                               <!-- <div class="col-auto">
-                                    <a href="#">US</a>
-                                </div>
-                                <div class="col-auto">
-                                    <a href="#">ES</a>
-                                </div>-->
+                                <!-- <div class="col-auto">
+                                     <a href="#">US</a>
+                                 </div>
+                                 <div class="col-auto">
+                                     <a href="#">ES</a>
+                                 </div>-->
                             </div>
                         </div>
                         <div class="col-12 mt-5 social-net">
@@ -372,11 +372,11 @@
                         <div class="container-fluid">
                             <div class="d-flex w-100 justify-content-between">
                                 <div class="col-auto d-flex justify-content-center align-items-center">
-                                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                    </button>
+                                    <button class="btn-close btn-close-white" type="button"
+                                            onclick="closeAllMenu()"></button>
                                 </div>
                                 <div class="col d-flex justify-content-center align-items-center">
-                                    <a class="navbar-brand" href="#">
+                                    <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                                              width="148px"
                                              height="21px" class="logo-brand" alt="Logo Tivit">
@@ -397,8 +397,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 box-title pb-3">
-                            <h1 class="d-xl-none title-mobile">SOLUÇÕES</h1>
-                            <p><?php echo $por_servico_port; ?></p>
+                            <div class="d-flex flex-wrap">
+                                <div class="col-1 d-flex d-xl-none align-items-center">
+                                    <button type="button" class="btn-close btn-arrow-back" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="col-11">
+                                    <button type="button" class="d-xl-none mb-xl-auto btn  title-mobile"  data-bs-dismiss="modal"
+                                            aria-label="Close">SOLUÇÕES</button>
+                                </div>
+                                <div class="col-10 mt-2 offset-1 offset-lg-0">
+                                <p><?php echo $por_servico_port; ?></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -417,14 +428,14 @@
                             }
                         }
                         // print_r($menus);
-                        echo '<div class="row row-cols-1 row-cols-xl-4 justify-content-between gx-3">';
+                        echo '<div class="row row-cols-1 row-cols-xl-4 justify-content-xl-between gx-3">';
                         $ss = 0;
                         foreach ($menus as $chave => $conteudo) {
-                            echo '<div class="col col-xl-auto box-list-solutions p-0">';
+                            echo '<div class="col box-list-solutions p-0">';
                             echo '<div class="textMenu">';
                             echo '<h2><a href="' . $conteudo['link'] . '">' . $conteudo['titulo'] . '</a></h2>';
                             echo '<div class="menu-solucoes-cloud-solutions-container">
-                                    <ul id="menu-solucoes-cloud-solutions p-0" class="menu" 
+                                    <ul id="menu-solucoes-cloud-solutions" class="menu" 
                                     itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">';
                             $list_por_servico = $conteudo['submenu'];
                             foreach ($list_por_servico as $key => $submenu) {
@@ -445,7 +456,7 @@
                         echo '</div>';
                         ?>
                     </div>
-                    <div class="col-12 mt-5 d-xl-none language-box">
+                    <div class="col-12 mt-5 mb-5 d-xl-none language-box">
                         <div class="row justify-content-center gx-5">
                             <div class="col-auto">
                                 <a href="#" class="active">BR</a>

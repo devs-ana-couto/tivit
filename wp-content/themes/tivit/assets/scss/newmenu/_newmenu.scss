@@ -26,6 +26,16 @@
       width: 100vw !important;
       background-color: #990017 !important;
 
+      .offcanvas-header {
+        padding: 8px 12px;
+
+        .btn-close {
+          padding: 0;
+          width: 1em;
+          height: 2em;
+        }
+      }
+
       .navbar-nav {
         .nav-item {
           display: flex;
@@ -165,6 +175,28 @@
             border: 1px solid #FFFFFF;
             border-radius: 50px;
           }
+
+          &.solution-link-menu, &.solution-link-menu2 {
+            padding: 0px 12px !important;
+
+            a {
+              position: relative;
+
+              &:after {
+                content: "";
+                background: url("../icons/nav/expand_more_new.svg");
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                right: -5px;
+
+                display: flex;
+                background-repeat: no-repeat;
+                background-position: left center;
+              }
+
+            }
+          }
         }
 
       }
@@ -264,6 +296,37 @@
 #open-solution-menu {
   z-index: 2000;
 
+  &.show {
+    .solution-link-menu, .solution-link-menu2 {
+      padding: 0px 12px !important;
+
+      a {
+        position: relative;
+
+        &:after {
+          content: "";
+          background: url("../icons/nav/expand_more_new_show.svg");
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          right: -5px;
+
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: left center;
+        }
+
+      }
+    }
+  }
+
+  .modal-header .btn-close {
+    width: 1em;
+    height: 2em;
+    padding: unset;
+    margin: unset;
+  }
+
   .modal-dialog {
     max-width: 100% !important;
     background-color: #990017;
@@ -287,12 +350,26 @@
       .title-mobile {
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
-        line-height: 14px;
+        font-size: 20px;
+        line-height: unset;
         letter-spacing: 0.01em;
         text-transform: uppercase;
+        margin: 0px;
+        padding: 0px;
+        margin: 0px;
 
         color: #FFFFFF;
+      }
+
+      .btn-arrow-back {
+        padding: 0px;
+        background: url('../icons/nav/back_solutions.svg');
+        background-position: left center;
+        background-repeat: no-repeat;
+        //background-size: cover;
+        opacity: 1;
+        width: 16px;
+        height: 20px;
       }
     }
 
@@ -302,48 +379,38 @@
       }
 
       .textMenu {
-        @media screen and (max-width: 1199px) {
-          display: flex;
-        }
         margin: 25px 0px;
 
         h2 {
-          @media screen and (max-width: 1199px) {
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
-            text-align: right;
-            margin-bottom: 0px;
-          }
           margin: 0px;
           margin-bottom: 20px;
           margin-top: 5px;
           line-height: 0px;
+          @media screen and (max-width: 1199px) {
+            padding-left: 8.33333333%;
+          }
 
           a {
-            @media screen and (min-width: 1200px) {
-              font-size: 18px;
-            }
             font-style: normal;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 21px;
             text-transform: uppercase;
             color: #FFFFFF;
-            transition: 1s all;
-            @media screen and (min-width: 1200px) {
-              &::after {
-                content: url("../icons/navegacao/expand_more_white-right.svg");
-                margin-left: 5px;
-                transition: 1s all;
-              }
+            transition: 0.5s all;
+
+            &::after {
+              content: url("../icons/navegacao/expand_more_white-right.svg");
+              margin-left: 5px;
+              transition: 0.5s all;
             }
 
             &:hover {
 
               @media screen and (min-width: 1200px) {
                 &::after {
-                  margin-left: 20px;
-                  transition: 1s all;
+                  margin-left: 15px;
+                  transition: 0.5s all;
                 }
               }
             }
@@ -351,12 +418,15 @@
         }
 
         .menu-solucoes-cloud-solutions-container {
+          .textMenu {
+
+          }
 
           ul {
             @media screen and (max-width: 1199px) {
-              padding-left: 27px;
+              padding-left: 8.33333333%;
             }
-            padding-left: 0px;
+            padding: 0px;
 
             li {
               list-style: none;
@@ -378,12 +448,12 @@
 
                 color: #FFFFFF;
 
-                @media screen and (max-width: 1199px) {
+                /*@media screen and (max-width: 1199px) {
                   &::after {
                     content: url("../icons/navegacao/expand_more_white-right.svg");
                     margin-left: 5px;
                   }
-                }
+                }*/
               }
             }
           }
@@ -395,12 +465,13 @@
 
 footer.footer {
   .footer-menu {
-    ul{
-      li{
+    ul {
+      li {
         padding: 0px;
         border: 1px solid transparent;
         border-radius: 50px;
-        a{
+
+        a {
           padding: 0px;
         }
       }

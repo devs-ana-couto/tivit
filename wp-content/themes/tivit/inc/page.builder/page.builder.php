@@ -31,6 +31,7 @@ require_once('componentes/ac/slider.logos.php');
 require_once('componentes/ac/cards.logo.top.php');
 require_once('componentes/ac/portfolio.php');
 require_once('componentes/ac/slider.content.php');
+require_once('componentes/ac/slider.projetos.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -155,6 +156,9 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                     break;
                 case 'gd-ac-slider-content':
                     $return[$layout] = pb_ac_slider_content($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-slider-projetos':
+                    $return[$layout] = pb_ac_slider_projetos($obj_id, $obj, $block, $echo);
                     break;
 
 

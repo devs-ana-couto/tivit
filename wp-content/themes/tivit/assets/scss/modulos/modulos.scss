@@ -3092,6 +3092,7 @@ $primary-color: #990017;
         transition: all 1s;
         @media screen and (max-width: 991px) {
           filter: grayscale(0) !important;
+          height: auto !important;
         }
 
         &:hover {

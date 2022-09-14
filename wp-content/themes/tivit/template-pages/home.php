@@ -132,7 +132,7 @@
         </div>
         <div class="col-12 d-none position-relative box-arrow d-lg-flex justify-content-center">
             <div class="arrow slider-arrow-back text-center position-absolute">
-                <img src="http://tivit.local/wp-content/themes/tivit/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
             </div>
         </div>
     </section>
@@ -297,16 +297,9 @@
         </div>
     </section>-->
 
-
-    <section class="container-fluid px-lg-0 box-nosso-clientes"
-             style="background: white;"   data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-        <?= do_shortcode('[ac-bloco-clientes]'); ?>
-    </section>
-
-
     <section class="container-fluid box-chamada-pagina"
              style="background-color: ;
-             background-image: url('<?php the_field('background_desktop_pc'); ?>');
+                     background-image: url('<?php the_field('background_desktop_pc'); ?>');
                      background-repeat: no-repeat; background-size: cover; background-position: center center;">
 
         <div class="container">
@@ -325,5 +318,13 @@
             </div>
         </div>
     </section>
+
+    <section class="container-fluid px-lg-0 box-nosso-clientes"
+             style="background: white;"   data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+        <?= do_shortcode('[ac-bloco-clientes]'); ?>
+    </section>
+
+
+
 
 <?php get_footer(); ?>
