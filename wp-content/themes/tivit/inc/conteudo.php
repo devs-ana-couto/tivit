@@ -238,6 +238,11 @@ if (!function_exists('ac_bloco_conteudo')) {
         $vejamais = (isset($atts['vejamais'])) ? $atts['vejamais'] : false;
         if ($quantidade==0) $quantidade = 3;
         $cor_fundo = ($fundo=='escuro') ? 'ac_bloco_conteudo_escuro' : 'ac_bloco_conteudo_claro';
+        if ($vejamais=="true") {
+            $vejamais = true;
+        } else {
+            $vejamais = false;
+        }
         // $cor_fundo = ($fundo=='escuro') ? 'home-content' : 'cases-recentes';
 
         $args = array(
@@ -256,6 +261,7 @@ if (!function_exists('ac_bloco_conteudo')) {
         // }
         $the_query = new WP_Query($args);
         $dados = array();
+        $categoria_lista = array();
         // print_r($the_query);
         while ($the_query->have_posts()) {
             $the_query->the_post();
@@ -280,6 +286,7 @@ if (!function_exists('ac_bloco_conteudo')) {
             if ((is_array($cat_aux)) && (count($cat_aux) > 0)) {
                 foreach ($cat_aux as $categoria) {
                     $categorias[$categoria->term_id] = $categoria->name;
+                    $categoria_lista[$categoria->term_id] = $categoria->name;
                 }
             }
             // $etiquetas = get_the_tags($identif);
@@ -301,12 +308,30 @@ if (!function_exists('ac_bloco_conteudo')) {
             );
         }
         wp_reset_query();
+        asort($categoria_lista);
 
         $saida  = '';
-        $saida .= '<div id="contentTdx" class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
+        // $saida .= '<div id="contentTdx" class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
+        $saida .= '<div class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
         $saida .= '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
         $saida .= '<input id="ac_bloco_conteudo_categorias" type="hidden" value="'.$categorias_bloco.'">';
         $saida .= '<div class="title"><h2 class="titleText text-center">'.$content.'</h2></div>';
+
+        if ($vejamais) {
+            $saida .= '<div class="row">';
+            $saida .= '<div class="col-12">';
+            $saida .= '<div class="assuntos">';
+            $saida .= '<h4>'.__('escolha um ou mais assuntos', 'tivit').'</h4>';
+            $saida .= '<a href="#" class="active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_selecao(\'todos\')">'.__('Todos', 'tivit').'</a>';
+            foreach ($categoria_lista as $chave => $valor) {
+                $saida .= '<a href="#" class="conteudo_etiqueta conteudo_etiqueta_'.$chave.'" data-conteudo="'.$chave.'" onclick="ac_conteudo_selecao(\''.$chave.'\')">'.$valor.'</a>';
+            }
+            $saida .= '</div>'; //.assuntos
+            $saida .= '</div>'; //.col
+            $saida .= '</div>'; //.row
+        }
+
+
         $saida .= '<div class="row hide-mobile">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();

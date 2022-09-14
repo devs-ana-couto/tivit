@@ -381,4 +381,31 @@
             color: white;
         }
     }
+    @media (min-width: 992px) {
+        .assuntos {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+
+            h4 {
+                color: $cinza-dark-cyber-tivit;
+            }
+            a {
+                border: 1px solid $cinza-dark-cyber-tivit;
+                font-size: 12px;
+                border-radius: 50px;
+                padding: 0 13px;
+                text-decoration: none;
+                color: $cinza-dark-cyber-tivit;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-right: 7px;
+            }
+            a.active,
+            a:hover {
+                color: white;
+                background-color: red;
+            }
+        }
+    }
 }

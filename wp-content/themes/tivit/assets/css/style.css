@@ -9100,6 +9100,32 @@ div {
 .ac_bloco_conteudo.ac_bloco_conteudo_escuro a {
   color: white;
 }
+@media (min-width: 992px) {
+  .ac_bloco_conteudo .assuntos {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .ac_bloco_conteudo .assuntos h4 {
+    color: #262626;
+  }
+  .ac_bloco_conteudo .assuntos a {
+    border: 1px solid #262626;
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 0 13px;
+    text-decoration: none;
+    color: #262626;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 7px;
+  }
+  .ac_bloco_conteudo .assuntos a.active,
+.ac_bloco_conteudo .assuntos a:hover {
+    color: white;
+    background-color: red;
+  }
+}
 
 .labs-hero {
   height: 580px;
