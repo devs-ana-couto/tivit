@@ -1,6 +1,8 @@
 <?php /* Template Name: Conteudos */ ?>
 <?php get_header(); ?>
+<?php page_bulder_init(get_the_ID(), $post, true); ?>
 
+<?php if (true) { ?>
     <section class="container-fluid p-0 header-conteudo position-relative">
         <div class="d-flex">
             <div class="card-img-overlay p-0 d-flex justify-content-center mask-bg"></div>
@@ -26,6 +28,7 @@
         </div>
     </div>
 
+<? } ?>
 <? if (false) { ?>
 
 
