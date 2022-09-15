@@ -52,6 +52,135 @@
     <!-- time line -->
 
 
+    <!--vagas-->
+
+    <section class="container-fluid box-vagas" style="background-color: #262626;">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col-12 box-vagas-title d-flex justify-content-center">
+                    <h3>vagas</h3>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3">
+
+                <div class="col box-card mt-5">
+                    <div class="card h-100" style="">
+                        <div class="card-body">
+                            <p class="card-text card-vaga">Profissional iniciante</p>
+                            <h5 class="card-title">Package Consultant-SAP BW Analytics</h5>
+                            <p class="card-text">Descritivo breve lorem ipsum dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn cta-conteudo2">confira esta vaga</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col box-card mt-5">
+                    <div class="card h-100" style="">
+                        <div class="card-body">
+                            <p class="card-text card-vaga">Profissional iniciante</p>
+                            <h5 class="card-title">Package Consultant-SAP BW Analytics</h5>
+                            <p class="card-text">Descritivo breve lorem ipsum dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn cta-conteudo2">confira esta vaga</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col box-card mt-5">
+                    <div class="card h-100" style="">
+                        <div class="card-body">
+                            <p class="card-text card-vaga">Profissional iniciante</p>
+                            <h5 class="card-title">Package Consultant-SAP BW Analytics</h5>
+                            <p class="card-text">Descritivo breve lorem ipsum dolor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn cta-conteudo2">confira esta vaga</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto mt-5">
+                    <a href="#" class="btn btn-tivit1">Ver todas AS VAGAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid box-accordion" style="background-color: #262626;">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col-12 box-vagas-title d-flex my-5 justify-content-center">
+                    <h3>ainda tem dúvidas? veja as perguntas frequentes:</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Plano de carreira, regime de trabalho e benefícios?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Com o que a TIVIT trabalha?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Onde ficam os escritórios da TIVIT?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Quais são as unidades de negócios (BUs) da TIVIT?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- segunda parte do modulo  -->
     <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: white;">
         <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
@@ -758,12 +887,12 @@
     <!-- modulo cliente -->
     <section class="container-fluid px-lg-0 box-nosso-clientes" style="background: white;">
         <div class="container">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center">
                 <div class="col-auto box-title mt-5">
                     <h2>Nosso Clientes</h2>
                 </div>
                 <div class="col-12 box-slider">
-                    <div class="row justify-content-around row-cols-3 row-cols-lg-6">
+                    <div class="row justify-content-start row-cols-3 row-cols-lg-4">
                         <div class="col box-img">
                             <a href="">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/modulos/clientes/brf.png"

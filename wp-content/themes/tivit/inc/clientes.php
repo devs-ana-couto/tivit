@@ -10,7 +10,7 @@ if (!function_exists('ac_clientes_listar')) {
      * categoria => slug da categoria a pesquisar (separar com virgual quando for mais de uma)
      * etiqueta => slug da tag a pesquisar (separar com virgual quando for mais de uma)
      */
-    function ac_clientes_listar($attr=array()) {
+    function ac_clientes_listar( $attr=array() ) {
         $porpagina = (isset($attr['porpagina']) ? $attr['porpagina'] : 5);
         $pagina    = (isset($attr['pagina'])    ? $attr['pagina']    : 1);
         $categoria = (isset($attr['categoria']) ? $attr['categoria'] : '');
@@ -49,8 +49,38 @@ if (!function_exists('ac_clientes_listar')) {
     }
 }
 
-
 if (!function_exists('ac_bloco_clientes')) {
+    function ac_bloco_clientes() {
+        $arg['porpagina'] = 100;
+        $arg['pagina']    = 1;
+        $dados = ac_clientes_listar($arg);
+
+        $saida = '<div class="container">';
+        $saida .= '<div class="row justify-content-center">';
+
+        $saida .= '<div class="col-auto box-title mt-5">';
+        $saida .= '<h2>Com quem trabalhamos</h2>';
+        $saida .= '</div>';
+
+        $saida .= '<div class="col-12 box-slider">';
+        $saida .= '<div class="row justify-content-start row-cols-3 row-cols-lg-4">';
+        for ($ac = 0; $ac < count($dados); $ac++ ) {
+            $saida .= '<div class="col box-img"   data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">';
+            $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="Logo da '.$dados[$ac]['titulo'].'">';
+            $saida .= '</a>';
+            $saida .= '</div>';
+        }
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+
+        return $saida;
+    }
+}
+/*if (!function_exists('ac_bloco_clientes')) {
     function ac_bloco_clientes() {
         $arg['porpagina'] = 6;
         $arg['pagina']    = 1;  
@@ -103,5 +133,5 @@ if (!function_exists('ac_bloco_clientes')) {
 
         return $saida;
     }
-}
+}*/
 add_shortcode( 'ac-bloco-clientes', 'ac_bloco_clientes' );

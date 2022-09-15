@@ -954,7 +954,9 @@ window.onscroll = () => {
 
 var solutionMenu = document.querySelectorAll('.solution-link-menu');
 const modalSolution = new bootstrap.Modal('#open-solution-menu');
+const offCanvaSolution = new bootstrap.Offcanvas('#canvaMenuMobile');
 solutionMenu.forEach((menu, index) => {
+
     menu.addEventListener('click', () => {
         var checkSolutionShow = document.querySelector('#open-solution-menu');
         if (!checkSolutionShow.classList.contains('show')) {
@@ -973,3 +975,10 @@ solutionMenu.forEach((menu, index) => {
         }
     });
 });
+
+function closeAllMenu(){
+    modalSolution.hide();
+    offCanvaSolution.hide();
+    var backdrop = document.querySelector(".offcanvas-backdrop");
+    backdrop.classList.remove('show');
+}
