@@ -351,12 +351,12 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<div class="card-body">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '</div>'; //.card-body
             $saida .= '<div class="card-footer border-0 bg-transparent">';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('ver mais', 'tivit') . '</a></div>';
             $saida .= '</div>'; //.card-footer
             $saida .= '</div>'; //.card
             $saida .= '</div>'; //.col-12
@@ -384,10 +384,10 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '</div>'; //.img
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('ver mais', 'tivit') . '</a></div>';
             $saida .= '</div>'; //.cardContent
             $saida .= '</div>'; //.col-12
             $saida .= '</div>'; //.carousel-item
