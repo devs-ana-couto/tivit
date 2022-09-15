@@ -11,12 +11,12 @@ add_action( 'init', 'create_posts_taxonomies' );
 
 function create_posts_taxonomies(){
 	$labels = array(
-		'name'              => __( 'Categorias (Tools)', ''),
+		'name'              => __( 'Categorias (Cases)', ''),
 		'singular_name'     => __( 'Categoria', ''),
 		'add_new_item'      => __( 'Adicionar', ''),
 		'new_item_name'     => __( 'Nova', ''),
 		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Categorias de Tools', ''),
+		'menu_name'         => __( 'Categorias de Cases', ''),
 	);
 	$args = array(
 		'hierarchical'      => true,

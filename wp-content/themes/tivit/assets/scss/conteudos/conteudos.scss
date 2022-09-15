@@ -252,22 +252,38 @@
     }
 
     .img {
+        max-width: 100%;
+        width: 100%;
+        height: 250px;
+        max-height: 100%;
+        margin: 40px auto 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+
         img {
-            max-width: 100%;
             width: 100%;
-            height: 250px;
-            max-height: 100%;
-            cursor: pointer;
+            height: 100%;
+            object-fit: cover;
         }
+    }
+
+    .card-body {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .content {
         width: 100%;
-        margin-top: 12px;
+        margin: 12px auto 0 auto;
     }
 
     h3 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        margin: 0;
         color: #262626;
+        text-transform: uppercase;
     }
 
     &.ac_bloco_conteudo_escuro {
@@ -277,7 +293,7 @@
     }
 
     p {
-        color: #262626;
+        color: #262626 !important;
         font-size: 12px;
     }
     &.ac_bloco_conteudo_escuro {
@@ -318,13 +334,14 @@
     }
 
     .detalhes {
-        margin-top: 20px;
+        margin: 0 auto 21px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-weight: 400;
 
         span {
-            color: #262626;
+            color: #262626 !important;
             font-size: 12px;
             line-height: 18.25px;
         }
@@ -338,19 +355,30 @@
         }
     }
 
+    .card-footer {
+        padding: 0 var(--bs-card-spacer-x);
+    }
     .acessar {
         font-size: 14px;
         line-height: 21.29px;
         text-transform: uppercase;
         display: flex;
         text-decoration: unset !important;
+        margin: 10px auto 50px auto;
+        // padding: 0 var(--bs-card-spacer-x);
 
-        a {
+        // a {
             text-decoration: unset !important;
-            transition: all 0.3s linear;
+            transition: 0.2s all;
             display: flex;
             align-items: center;
             color: $vermelho-tivit;
+            font-size: 14px;
+            line-height: 21.29px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
 
             &:hover {
                 color: $vermelho-tivit;
@@ -374,11 +402,24 @@
                 align-items: center;
                 align-content: center;
             }
-        }
+        // }
     }
     &.ac_bloco_conteudo_escuro {
         a {
             color: white;
+        }
+    }
+    .vejamais {
+        text-align: center;
+
+        .btn {
+            border: 1px solid #262626;
+            border-radius: 38px;
+        }
+        .btn:hover {
+            border: 1px solid #F20024;
+            background-color: #F20024;
+            color: #fff;
         }
     }
     @media (min-width: 992px) {
@@ -389,6 +430,9 @@
 
             h4 {
                 color: $cinza-dark-cyber-tivit;
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
             }
             a {
                 border: 1px solid $cinza-dark-cyber-tivit;
@@ -405,6 +449,7 @@
             a:hover {
                 color: white;
                 background-color: red;
+                border-color: red;
             }
         }
     }
