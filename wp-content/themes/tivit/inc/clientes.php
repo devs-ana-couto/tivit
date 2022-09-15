@@ -10,7 +10,7 @@ if (!function_exists('ac_clientes_listar')) {
      * categoria => slug da categoria a pesquisar (separar com virgual quando for mais de uma)
      * etiqueta => slug da tag a pesquisar (separar com virgual quando for mais de uma)
      */
-    function ac_clientes_listar($attr=array()) {
+    function ac_clientes_listar( $attr=array() ) {
         $porpagina = (isset($attr['porpagina']) ? $attr['porpagina'] : 5);
         $pagina    = (isset($attr['pagina'])    ? $attr['pagina']    : 1);
         $categoria = (isset($attr['categoria']) ? $attr['categoria'] : '');
@@ -51,7 +51,7 @@ if (!function_exists('ac_clientes_listar')) {
 
 if (!function_exists('ac_bloco_clientes')) {
     function ac_bloco_clientes() {
-        $arg['porpagina'] = 6;
+        $arg['porpagina'] = 100;
         $arg['pagina']    = 1;
         $dados = ac_clientes_listar($arg);
 

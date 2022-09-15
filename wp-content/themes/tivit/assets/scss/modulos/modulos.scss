@@ -6,10 +6,148 @@ section {
   //margin-top: 40px;
 }
 
+.box-vagas {
+  padding: 150px 0px 75px 0px;
+
+  .box-vagas-title {
+    h1, h2, h3, h4, h5, h6 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin: 0px;
+    }
+  }
+
+  .box-card {
+    .card {
+      border-radius: 0px;
+      background: transparent;
+      border: 1px solid white;
+
+      .card-body {
+        padding: 20px;
+
+        .card-text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 10px;
+
+          color: #FFFFFF;
+
+          &.card-vaga {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+          }
+        }
+
+        .card-title {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          /* or 133% */
+
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+
+        }
+      }
+
+      .card-footer {
+        padding: 20px;
+        border: unset;
+
+      }
+    }
+  }
+}
+
+.box-accordion{
+  padding: 50px 0px;
+  .box-vagas-title{
+    h1, h2, h3, h4, h5, h6{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+      /* identical to box height, or 157% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+
+    }
+  }
+  .accordion{
+    .accordion-item{
+      background: transparent !important;
+      .accordion-header{
+        background: transparent !important;
+
+        .accordion-button{
+          border: 0px !important;
+          background: transparent !important;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          padding-left: 0px;
+
+          &:after{
+            background: url("../icons/nav/add-white.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          &:not(.collapsed)::after{
+            background: url("../icons/nav/add-white.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .accordion-body{
+        p{
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+          /* or 143% */
+
+
+          /* Branco */
+
+          color: #FFFFFF;
+
+        }
+      }
+    }
+  }
+}
+
 .btn-tivit1 {
   border-radius: 30px;
-  width: 280px;
-  height: 50px;
+  /*width: 280px;
+  height: 50px;*/
+  padding: 15px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2291,10 +2429,12 @@ $primary-color: #990017;
   .box-background-full {
     z-index: -1;
   }
-  .carousel-item{
+
+  .carousel-item {
     height: 560px;
   }
-  .v-mask{
+
+  .v-mask {
     height: 100%;
     width: 95%;
     background-image: url("../images/modulos/categoria-slider/mask-slider.svg");
@@ -3340,5 +3480,42 @@ $primary-color: #990017;
 @media screen and (max-width: 1024px) {
   .tab-content > .active {
     display: none !important;
+  }
+}
+
+a.cta-conteudo2 {
+  text-decoration: unset !important;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: unset;
+  padding: 0px;
+
+  &:after {
+    content: "";
+    background: url("../images/home/icons/arrow-right-red.svg");
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    transition: all 0.5s;
+  }
+  &:hover{
+    border: 0px;
+    transition: all 0.5s;
+    color: $vermelho-tivit;
+    &:after{
+      margin-left: 20px;
+    }
   }
 }

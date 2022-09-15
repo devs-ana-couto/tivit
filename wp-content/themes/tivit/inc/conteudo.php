@@ -312,7 +312,7 @@ if (!function_exists('ac_bloco_conteudo')) {
         // print_r($categoria_lista);
 
         $saida  = '';
-        $saida .= '<div class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
+        $saida .= '<div class="ac_bloco_conteudo '.$cor_fundo.'">';
         $saida .= '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
         $saida .= '<input id="ac_bloco_conteudo_quantidade" type="hidden" value="'.$quantidade.'">';
         $saida .= '<input id="ac_bloco_conteudo_pagina" type="hidden" value="1">';
@@ -345,7 +345,9 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0">';
             $saida .= '<div class="img position-relative">';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="cta-card-geral">';
             $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
+            $saida .= '</a>'; //.col-12
             $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
             $saida .= '</div>'; //.img
             $saida .= '<div class="card-body">';
@@ -353,10 +355,14 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
-            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            $saida .= '<div class="content">';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="cta-card-geral">';
+            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
+            $saida .= '</a>'; //.col-12
+            $saida .='</div>';
             $saida .= '</div>'; //.card-body
             $saida .= '<div class="card-footer border-0 bg-transparent">';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a class="cta-conteudo" href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
             $saida .= '</div>'; //.card-footer
             $saida .= '</div>'; //.card
             $saida .= '</div>'; //.col-12

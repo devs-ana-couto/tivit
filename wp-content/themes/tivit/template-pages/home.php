@@ -260,9 +260,7 @@
     </section>
 
     <div id="contentTdx" class="home-content content-inovacao">
-       <!-- <div class="d-flex justify-content-center transitionContent hide-mobile position-absolute"></div>-->
-        <!--<div id="triangle-down" style=""></div>-->
-        <?= do_shortcode('[ac-bloco-conteudo]'); ?>
+        <?= do_shortcode('[ac-bloco-conteudo fundo="escuro"]Nossos conteúdos[/ac-bloco-conteudo]'); ?>
     </div>
 
     <div class="home-cases active">
@@ -272,7 +270,6 @@
             <div class="row d-flex justify-content-center align-items-center position-absolute m-0 lr" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="home-cases-title">
                     <h2>Nossos Cases</h2>
-                   <!-- <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur.</p>-->
                 </div>
                 <?= do_shortcode('[ac_bloco_home_cases]'); ?>
             </div>

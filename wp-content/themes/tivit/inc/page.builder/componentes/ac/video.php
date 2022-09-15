@@ -99,6 +99,9 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
                 </div>
             </div>
         </div>
+        
+  
+    </section>
         <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -116,9 +119,6 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
             </div>
         </div>
     </div>
-  
-    </section>
-        
     <script>
         var player, iframe;
         var $ = document.querySelector.bind(document);

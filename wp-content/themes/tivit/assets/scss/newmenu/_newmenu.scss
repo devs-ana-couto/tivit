@@ -379,8 +379,7 @@
       }
 
       .textMenu {
-        margin: 25px 0px;
-
+        margin: 0px;
         h2 {
           margin: 0px;
           margin-bottom: 20px;
@@ -427,15 +426,20 @@
               padding-left: 8.33333333%;
             }
             padding: 0px;
+            @media screen and (min-width: 1200px) {
+              margin-bottom: 0px;
+            }
 
             li {
               list-style: none;
-              margin-bottom: 15px;
-
+              margin-bottom: 10px;
+              &:last-child{
+                margin-bottom: 0px;
+              }
               a {
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 27px;
                 text-transform: uppercase;
                 @media screen and (min-width: 1200px) {

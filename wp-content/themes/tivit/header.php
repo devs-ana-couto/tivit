@@ -396,7 +396,7 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 box-title pb-3">
+                        <div class="col-12 box-title pb-4">
                             <div class="d-flex flex-wrap">
                                 <div class="col-1 d-flex d-xl-none align-items-center">
                                     <button type="button" class="btn-close btn-arrow-back" data-bs-dismiss="modal"
@@ -406,7 +406,7 @@
                                     <button type="button" class="d-xl-none mb-xl-auto btn  title-mobile"  data-bs-dismiss="modal"
                                             aria-label="Close">SOLUÇÕES</button>
                                 </div>
-                                <div class="col-10 mt-2 offset-1 offset-lg-0">
+                                <div class="col-10 mt-2 offset-1 offset-xl-0">
                                 <p><?php echo $por_servico_port; ?></p>
                                 </div>
                             </div>
@@ -430,9 +430,15 @@
                         // print_r($menus);
                         echo '<div class="row row-cols-1 row-cols-xl-4 justify-content-xl-between gx-3">';
                         $ss = 0;
+                        $indexConteudo = 0;
                         foreach ($menus as $chave => $conteudo) {
+                            $mt = 'mt-4 mb-4 mb-xl-auto mt-xl-4';
+                            if($indexConteudo > 3){
+                                $mt = 'mt-4 mb-4 mb-xl-auto mt-xl-0';
+                            }
+                            $indexConteudo++;
                             echo '<div class="col box-list-solutions p-0">';
-                            echo '<div class="textMenu">';
+                            echo '<div class="textMenu ' . $mt . '">';
                             echo '<h2><a href="' . $conteudo['link'] . '">' . $conteudo['titulo'] . '</a></h2>';
                             echo '<div class="menu-solucoes-cloud-solutions-container">
                                     <ul id="menu-solucoes-cloud-solutions" class="menu" 
