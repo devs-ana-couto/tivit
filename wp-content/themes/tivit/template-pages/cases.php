@@ -3,17 +3,17 @@
 
 <?php page_bulder_init(get_the_ID(), $post, true); ?>
 
-
+<?php if (false) { ?>
     <div class="cases-recentes">
         <!--- Desktop -->
         <div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row">
-                <?= do_shortcode('[ac-pagina-cases]') ?>
+                <?= do_shortcode('[ac-pagina-cases quantidade="15" listacategoria="true"]Nosso cases[/ac-pagina-cases]') ?>
             </div>
         </div>
         <!--- End Desktop -->
     </div>
-
+<?php } ?>
     <!--<div class="home-pessoas-e-carreiras inovar">
         <div id="triangle-down"></div>
         <div class="container">
