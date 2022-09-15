@@ -186,7 +186,7 @@ if (!function_exists('ac_bloco_cases')) {
                            src="' . get_template_directory_uri() . '/assets/images/modulos/categoria-slider/mask-slider.svg"
                               alt="">
                    </div>
-                </div>                  
+                </div>
             ';
 
             $saida .= '<div class="row gx-0 h-100 justify-content-between">';
@@ -348,45 +348,110 @@ if (!function_exists('ac_bloco_home_cases')) {
 add_shortcode('ac_bloco_home_cases', 'ac_bloco_home_cases');
 
 
+
+
+/***
+ * [ac-pagina-cases categorias="categoria1,categoria2" quantidade="3" listacategoria=false]Título[/ac-pagina-cases]
+ *
+ * Sendo:
+ *   categorias: listar os slugs das categorias a listar separadas por virgula
+ *   quantidade: quantos cards serão mostrados, padrão é 3
+ *   listacategoria: true/false se deve aparecer a lista de categorias para filtrar ou não
+ *   Título: texto que aparecerá como titulo do componente
+ *
+***/
 if (!function_exists('ac_pagina_cases')) {
-    function ac_pagina_cases()
-    {
-        $arg = array();
-        if (isset($_GET['pagina'])) {
-            $arg['pagina'] = $_GET['pagina'] + 1;
-            $get_pagina = $_GET['pagina'] + 1;
+    function ac_pagina_cases( $atts, $content = null ) {
+        $conteudo_bloco = apply_filters( 'the_content', $content );
+        $conteudo_bloco = str_replace( ']]>', ']]&gt;', $conteudo_bloco );
+        $categorias_bloco = (isset($atts['categorias'])) ? $atts['categorias'] : '';
+        $quantidade = (isset($atts['quantidade'])) ? intval($atts['quantidade']) : 3;
+        $listacateg = (isset($atts['listacategoria'])) ? $atts['listacategoria'] : false;
+        if ($quantidade==0) $quantidade = 3;
+        if ($listacateg=="true") {
+            $listacateg = true;
+        } else {
+            $listacateg = false;
         }
-        $get_categoria = '';
-        if (isset($_GET['categoria'])) {
-            $arg['categoria'] = $_GET['categoria'];
-            $get_categoria = explode(',', $_GET['categoria']);
-        }
-        $get_etiqueta = array();
-        if (isset($_GET['etiqueta'])) {
-            $arg['etiqueta'] = $_GET['etiqueta'];
-            $get_etiqueta = explode(',', $_GET['etiqueta']);
-        }
-        $dados = ac_cases_listar($arg);
-        $t_categorias = ac_cases_listar_categorias();
-        $t_etiquetas = ac_cases_listar_tags($arg);
 
-
-        $saida .= '<div class="col-7">';
-        $saida .= '<div class="assuntos">';
-        $saida .= '<h4>' . _('escolha um ou mais assuntos') . '</h4>';
-        $ativo = (count($get_etiqueta) == 0) ? 'active' : '';
-        $saida .= '<a href="#" class="' . $ativo . '">' . __('Todos') . '</a>';
-        if (is_array($t_etiquetas) || is_object($t_etiquetas)) {
-            foreach ($t_etiquetas as $slug => $nome) {
-                $ativo = (in_array($slug, $get_etiqueta)) ? 'active' : '';
-                $saida .= '<a href="#" class="' . $ativo . '">' . $slug . '</a>';
+        $args = array(
+            'post_type' => 'cases',
+            'posts_per_page' => $quantidade,
+            'page' => 1,
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+        );
+        if ($categorias_bloco != '') {
+            $args['category_name'] = $categorias_bloco;
+        }
+        $the_query = new WP_Query($args);
+        $dados = array();
+        $categoria_lista = array();
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+            $identif = $the_query->post->ID;
+            $titulo = get_the_title();
+            $cases = apply_filters('the_content', get_the_content());
+            $cases = str_replace(']]>', ']]&gt;', $cases);
+            $resumo = get_the_content();
+            $link = get_permalink();
+            $dia = get_the_date();
+            $quem = get_the_author();
+            $cliente = get_field('nome_do_cliente');
+            $bgmobile = get_field('banner_mobile');
+            $bgdesktop = get_field('banner_desktop');
+            // $tleitura = get_field('tempo_de_leitura');
+            // $chamada = get_field('chamada_sobre');
+            $imagem = '';
+            $teste = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $cases, $encontrou);
+            $imagem = (isset($encontrou[1][0])) ? $encontrou[1][0] : '';
+            $cat_aux = get_the_category();
+            $categorias = array();
+            if (is_array($cat_aux) || is_object($cat_aux)) {
+                foreach ($cat_aux as $categoria) {
+                    $categorias[$categoria->slug] = $categoria->name;
+                    $categoria_lista[$categoria->slug] = $categoria->name;
+                }
             }
+            $etiquetas = get_the_tags($identif);
+            $dados[] = array(
+                'postid' => $identif,
+                'postdate' => $dia,
+                'link' => $link,
+                'imagem' => $imagem,
+                'cases' => $cases,
+                'quem' => $quem,
+                'resumo' => $resumo,
+                'titulo' => $titulo,
+                'categorias' => $categorias,
+                'etiquetas' => $etiquetas,
+                'cliente' => $cliente,
+                'bgmobile' => $bgmobile,
+                'bgdesktop' => $bgdesktop,
+            );
         }
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
+        wp_reset_query();
+        asort($categoria_lista);
 
-        /* cases */
+        $saida  = '';
+        $saida .= '<div class="cases-recentes">';
+
+        // DESKTOP
+        $saida .= '<div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+        if ($listacateg) {
+            $saida .= '<div class="row">';
+            $saida .= '<div class="col-12">';
+            $saida .= '<div class="assuntos">';
+            $saida .= '<h4>' . _('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<a href="#" class="active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">'.__('Todos', 'tivit').'</a>';
+            foreach ($categoria_lista as $chave => $valor) {
+                $saida .= '<a href="#" class="conteudo_etiqueta conteudo_etiqueta_'.$chave.'" data-conteudo="'.$chave.'" onclick="ac_conteudo_lista_categoria(\''.$chave.'\')">'.$valor.'</a>';
+            }
+            $saida .= '</div>'; //.assuntos
+            $saida .= '</div>'; //.col
+            $saida .= '</div>'; //.row
+        }
         $saida .= '<div class="row">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
@@ -396,65 +461,37 @@ if (!function_exists('ac_pagina_cases')) {
                     $categorias[] = $categoria;
                 }
             }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if (is_array($etq_aux) || is_object($etq_aux)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
             $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="img">';
-            $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
-            $saida .= '</div>';
-            $saida .= '<div class="autor-time">';
-            $saida .= '<p><b>' . $dados[$ac]['postdate'] . '</b></p>';
-            $saida .= '</div>';
-            $saida .= '<div class="content">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '</div>';
-            $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">Ver mais <img src="' . get_template_directory_uri() . '/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
+            $saida .= '<div class="img"><img src="' . $dados[$ac]['bgdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '"></div>';
+            // $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
+            // $saida .= '</div>';
+            $saida .= '<div class="autor-time"><p><b>' . $dados[$ac]['postdate'] . '</b></p></div>';
+            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">'.__('Ver mais','tivit').' <img src="' . get_template_directory_uri() . '/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a></div>';
+            $saida .= '</div>'; //.col
         }
-        $saida .= '</div>';
-        $saida .= '</div>';
+        $saida .= '</div>'; //.row
+        $saida .= '</div>'; //.container
 
-
-        /* Mobile */
-        $saida .= '<div id="cases" class="carousel slide carousel-fade hide-desktop" data-bs-ride="carousel">';
+        // MOBILE
+        $saida .= '<div id="cases" class="carousel slide carousel-fade hide-desktop" data-bs-ride="carousel" aria-hidden="true">';
         $saida .= '<div class="container">';
-        $saida .= '<div class="row">';
-        $saida .= '<div class="col-12">';
-
-        /* Filtros */
-        $saida .= '<div class="filtros">';
-        $saida .= '<div class="select">';
-        $saida .= '<select name="">';
-        $saida .= '<option value="">' . _('escolha um ou mais assuntos') . '</option>';
-        for ($ac = 0; $ac < count($t_etiquetas); $ac++) {
-            $ativo = (in_array($t_etiquetas[$ac], $get_etiqueta)) ? 'selected' : '';
-            $saida .= '<option value="" ' . $ativo . '">' . $t_etiquetas[$ac] . '</option>';
+        if ($listacateg) {
+            $saida .= '<div class="row">';
+            $saida .= '<div class="col-12">';
+            $saida .= '<div class="filtros">';
+            $saida .= '<div class="select">';
+            $saida .= '<select name="">';
+            $saida .= '<option value="">' . ('Filtrar por') . '</option>';
+            foreach ($categoria_lista as $chave => $valor) {
+                $saida .= '<option value="'.$chave.'" selected>' . $valor . '</option>';
+            }
+            $saida .= '</select>';
+            $saida .= '</div>'; //.select
+            $saida .= '</div>'; //.filtros
+            $saida .= '</div>'; //.col
+            $saida .= '</div>'; //.row
         }
-        $saida .= '</select>';
-        $saida .= '</div>';
-        $saida .= '<div class="divisao">';
-        $saida .= '<div class="select">';
-        $saida .= '<select name="">';
-        $saida .= '<option value="">' . ('Filtrar por') . '</option>';
-        for ($ac = 0; $ac < count($t_categorias); $ac++) {
-            $ativo = (in_array($t_categorias[$ac], $t_categorias)) ? 'selected' : '';
-            $saida .= '<option value="" ' . $ativo . '>' . $t_categorias[$ac] . '</option>';
-        }
-        $saida .= '</select>';
-        $saida .= '</div>';
-        $saida .= '<div class="search">';
-        $saida .= '<a href="#"><img src="' . get_template_directory_uri() . '/assets/icons/nav/search-white.svg" alt="Search Tivit"></a>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-        $saida .= '</div>';
         $saida .= '<div class="carousel-inner">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
@@ -464,45 +501,29 @@ if (!function_exists('ac_pagina_cases')) {
                     $categorias[] = $categoria;
                 }
             }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if (is_array($etq_aux) || is_object($etq_aux)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
             $saida .= '<div class="carousel-item' . ($ac == 0 ? ' active' : '') . '">';
             $saida .= '<div class="col-11 m-0 p-0">';
             $saida .= '<div class="cardContent p-2">';
             $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="' . $dados[$ac]['bgmobile'] . '" alt="Depoimento">';
+            $saida .= '<img src="' . $dados[$ac]['bgmobile'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
-            $saida .= '</div>';
+            $saida .= '</div>'; //.img
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>';
-            $saida .= '<div class="content">';
-            $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
-            $saida .= '</div>';
-            $saida .= '<div class="autor-time w-100">';
-            $saida .= '<div class="d-flex flex-row">';
-            for ($k = 0; $k < count($etiquetas); $k++) {
-                $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
-            }
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('ver mais') . '</a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
+            $saida .= '</div>'; //.detalhes
+            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('ver mais') . '</a></div>';
+            $saida .= '</div>'; //.cardContent
+            $saida .= '</div>'; //.col
+            $saida .= '</div>'; //.carousel-item
         }
-        $saida .= '</div>';
-        $saida .= '</div>';
-        return $saida;
+        $saida .= '</div>'; //.carousel-inner
+        $saida .= '</div>'; //.container
+        $saida .= '</div>'; //.carousel
 
+        $saida .= '</div>'; //.cases-recentes
+        return $saida;
     }
 }
 add_shortcode('ac-pagina-cases', 'ac_pagina_cases');

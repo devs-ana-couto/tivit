@@ -8,7 +8,7 @@
         <!--- Desktop -->
         <div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="row">
-                <?= do_shortcode('[ac-pagina-cases]') ?>
+                <?= do_shortcode('[ac-pagina-cases quantidade="15" listacategoria="true"]Nosso cases[/ac-pagina-cases]') ?>
             </div>
         </div>
         <!--- End Desktop -->
