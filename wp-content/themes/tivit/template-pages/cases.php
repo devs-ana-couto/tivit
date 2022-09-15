@@ -3,7 +3,7 @@
 
 <?php page_bulder_init(get_the_ID(), $post, true); ?>
 
-
+<?php if (false) { ?>
     <div class="cases-recentes">
         <!--- Desktop -->
         <div class="container hide-mobile"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -13,7 +13,7 @@
         </div>
         <!--- End Desktop -->
     </div>
-
+<?php } ?>
     <!--<div class="home-pessoas-e-carreiras inovar">
         <div id="triangle-down"></div>
         <div class="container">
