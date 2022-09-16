@@ -4,7 +4,8 @@
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
 
-    <!-- Intro -->
+<?php if (false) { ?>
+     <!-- Intro -->
     <div class="contato-intro">
         <div class="container">
             <div class="row">
@@ -26,6 +27,7 @@
             </div>
         </div>
     </div>
+<?php } ?>
 
     <!-- Pessoas e Carreiras -->
     <!--<div class="home-pessoas-e-carreiras">
