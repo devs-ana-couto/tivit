@@ -92,6 +92,13 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 				{css_content}
 
 			/* CSS: END Personalized */
+        #{css_id_object}-{id_css} .home-pessoas-e-carreiras.inovar{
+            background-image: unset;
+            height: unset;
+        }
+       #{css_id_object}-{id_css} .home-pessoas-e-carreiras-title {
+            margin: unset;
+        }
 		</style>
 
 		<section class="container-fluid box-chamada-pagina css_danamic_{id_css}" style="'. $bgColor .''. $bgImg .'" id="{css_id_object}-{id_css}" >
