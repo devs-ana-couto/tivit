@@ -5,7 +5,6 @@ if(have_posts()) : while(have_posts()) : the_post();
 page_bulder_init(get_the_ID(),$post,true);
 ?>
 
-<?php if (false) { ?>
 
 <!-- Hero banner-->
 <div class="unfolding-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_-_mobile_lp') : the_field('banner_-_desktop_lp'); ?>') no-repeat center center; background-size: cover;">
@@ -394,8 +393,6 @@ page_bulder_init(get_the_ID(),$post,true);
         </div>
     </div>
 </div>
-
-<?php } ?>
 
 <?php
 endwhile; endif;

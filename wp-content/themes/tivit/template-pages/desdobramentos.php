@@ -3,7 +3,6 @@
 
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
-<?php if (false) { ?>
 <!-- Hero banner-->
 <div class="unfolding-hero position-relative">
   <div class="unfolding-hero-title">
@@ -780,7 +779,5 @@
 
   </div>
 </div>
-
-<?php } ?>
 
 <?php get_footer(); ?>
