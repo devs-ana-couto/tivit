@@ -11,12 +11,12 @@ add_action( 'init', 'create_posts_taxonomies' );
 
 function create_posts_taxonomies(){
 	$labels = array(
-		'name'              => __( 'Categorias (Cases)', ''),
-		'singular_name'     => __( 'Categoria', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Categorias de Cases', ''),
+		'name'              =>'Categorias (Cases)',
+		'singular_name'     =>'Categoria',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Categorias de Cases',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -30,12 +30,12 @@ function create_posts_taxonomies(){
 
 
 	$labels = array(
-		'name'              => __( 'Tipos', ''),
-		'singular_name'     => __( 'Tipo', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Tipo de Post', ''),
+		'name'              =>'Tipos',
+		'singular_name'     =>'Tipo',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Tipo de Post',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -49,12 +49,12 @@ function create_posts_taxonomies(){
 
 
 	$labels = array(
-		'name'              => __( 'Por serviços', ''),
-		'singular_name'     => __( 'Por serviço', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Por serviços', ''),
+		'name'              =>'Por serviços',
+		'singular_name'     =>'Por serviço',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Por serviços',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -68,12 +68,12 @@ function create_posts_taxonomies(){
 
 
 	$labels = array(
-		'name'              => __( 'Por indústrias', ''),
-		'singular_name'     => __( 'Por indústria', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Por indústrias', ''),
+		'name'              =>'Por indústrias',
+		'singular_name'     =>'Por indústria',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Por indústrias',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -87,12 +87,12 @@ function create_posts_taxonomies(){
 
 
 	$labels = array(
-		'name'              => __( 'Por desafios', ''),
-		'singular_name'     => __( 'Por desafio', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Por desafios', ''),
+		'name'              =>'Por desafios',
+		'singular_name'     =>'Por desafio',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Por desafios',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -106,12 +106,12 @@ function create_posts_taxonomies(){
 
 
 	$labels = array(
-		'name'              => __( 'Categorias', ''),
-		'singular_name'     => __( 'Categoria', ''),
-		'add_new_item'      => __( 'Adicionar', ''),
-		'new_item_name'     => __( 'Nova', ''),
-		'edit_item'         => __( 'Editar', ''),
-		'menu_name'         => __( 'Categorias', ''),
+		'name'              =>'Categorias',
+		'singular_name'     =>'Categoria',
+		'add_new_item'      =>'Adicionar',
+		'new_item_name'     =>'Nova',
+		'edit_item'         =>'Editar',
+		'menu_name'         =>'Categorias',
 	);
 	$args = array(
 		'hierarchical'      => true,
@@ -133,12 +133,12 @@ function create_cases() {
 	register_post_type( 'cases',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Cases', '' ),
-		        'singular_name' => __( 'Cases', '' ),
-				'add_new' => __( 'Adicionar Case', '' ),
-				'add_new_item' => __( 'Adicionar Novo Case', '' ),
-				'edit_item' => __( 'Editar Case', '' ),
-				'new_item' => __( 'Novo Case', '' ),
+		        'name' =>'Cases',
+		        'singular_name' =>'Cases',
+				'add_new' =>'Adicionar Case',
+				'add_new_item' =>'Adicionar Novo Case',
+				'edit_item' =>'Editar Case',
+				'new_item' =>'Novo Case',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -151,12 +151,12 @@ function create_cases() {
 
 
 	$labels = array(
-		'name'              => __( 'Tags', ''),
-		'singular_name'     => __( 'Tag', ''),
-		'add_new_item'      => __( 'Adicionar Tag', ''),
-		'new_item_name'     => __( 'Nova Tag', ''),
-		'edit_item'         => __( 'Editar Tag', ''),
-		'menu_name'         => __( 'Tags', ''),
+		'name'              =>'Tags',
+		'singular_name'     =>'Tag',
+		'add_new_item'      =>'Adicionar Tag',
+		'new_item_name'     =>'Nova Tag',
+		'edit_item'         =>'Editar Tag',
+		'menu_name'         =>'Tags',
 	);
 
 	$args = array(
@@ -176,12 +176,12 @@ function create_clientes() {
 	register_post_type( 'clientes',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Clientes', '' ),
-		        'singular_name' => __( 'Cliente', '' ),
-				'add_new' => __( 'Adicionar Cliente', '' ),
-				'add_new_item' => __( 'Adicionar Novo Cliente', '' ),
-				'edit_item' => __( 'Editar Cliente', '' ),
-				'new_item' => __( 'Novo Cliente', '' ),
+		        'name' =>'Clientes',
+		        'singular_name' =>'Cliente',
+				'add_new' =>'Adicionar Cliente',
+				'add_new_item' =>'Adicionar Novo Cliente',
+				'edit_item' =>'Editar Cliente',
+				'new_item' =>'Novo Cliente',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -199,12 +199,12 @@ function create_solucoes() {
 	register_post_type( 'solucoes',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Solucões', '' ),
-		        'singular_name' => __( 'Solução', '' ),
-				'add_new' => __( 'Adicionar Solução', '' ),
-				'add_new_item' => __( 'Adicionar Nova Solução', '' ),
-				'edit_item' => __( 'Editar Solução', '' ),
-				'new_item' => __( 'Nova Solução', '' ),
+		        'name' =>'Solucões',
+		        'singular_name' =>'Solução',
+				'add_new' =>'Adicionar Solução',
+				'add_new_item' =>'Adicionar Nova Solução',
+				'edit_item' =>'Editar Solução',
+				'new_item' =>'Nova Solução',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -224,12 +224,12 @@ function create_faq() {
 	register_post_type( 'faq',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'FAQs', '' ),
-		        'singular_name' => __( 'FAQ', '' ),
-				'add_new' => __( 'Adicionar FAQ', '' ),
-				'add_new_item' => __( 'Adicionar Nova FAQ', '' ),
-				'edit_item' => __( 'Editar FAQ', '' ),
-				'new_item' => __( 'Nova FAQ', '' ),
+		        'name' =>'FAQs',
+		        'singular_name' =>'FAQ',
+				'add_new' =>'Adicionar FAQ',
+				'add_new_item' =>'Adicionar Nova FAQ',
+				'edit_item' =>'Editar FAQ',
+				'new_item' =>'Nova FAQ',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -249,12 +249,12 @@ function create_vaga() {
 	register_post_type( 'vaga',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Vagas', '' ),
-		        'singular_name' => __( 'Vaga', '' ),
-				'add_new' => __( 'Adicionar Vaga', '' ),
-				'add_new_item' => __( 'Adicionar Nova Vaga', '' ),
-				'edit_item' => __( 'Editar Vaga', '' ),
-				'new_item' => __( 'Nova Vaga', '' ),
+		        'name' =>'Vagas',
+		        'singular_name' =>'Vaga',
+				'add_new' =>'Adicionar Vaga',
+				'add_new_item' =>'Adicionar Nova Vaga',
+				'edit_item' =>'Editar Vaga',
+				'new_item' =>'Nova Vaga',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -273,12 +273,12 @@ function create_equipe() {
 	register_post_type( 'equipe',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Equipe', '' ),
-		        'singular_name' => __( 'Equipe', '' ),
-				'add_new' => __( 'Adicionar Equipe', '' ),
-				'add_new_item' => __( 'Adicionar Nova Equipe', '' ),
-				'edit_item' => __( 'Editar Equipe', '' ),
-				'new_item' => __( 'Nova Equipe', '' ),
+		        'name' =>'Equipe',
+		        'singular_name' =>'Equipe',
+				'add_new' =>'Adicionar Equipe',
+				'add_new_item' =>'Adicionar Nova Equipe',
+				'edit_item' =>'Editar Equipe',
+				'new_item' =>'Nova Equipe',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -296,12 +296,12 @@ function create_lp() {
 	register_post_type( 'lp',
 	    array(
 	      	'labels' => array(
-		        'name' => __( 'Landings', '' ),
-		        'singular_name' => __( 'Landing', '' ),
-				'add_new' => __( 'Adicionar Landing', '' ),
-				'add_new_item' => __( 'Adicionar Nova Landing', '' ),
-				'edit_item' => __( 'Editar Landing', '' ),
-				'new_item' => __( 'Nova Landing', '' ),
+		        'name' =>'Landings',
+		        'singular_name' =>'Landing',
+				'add_new' =>'Adicionar Landing',
+				'add_new_item' =>'Adicionar Nova Landing',
+				'edit_item' =>'Editar Landing',
+				'new_item' =>'Nova Landing',
 			),
 			'public' => true,
 			'capability_type' => 'post',
@@ -314,12 +314,12 @@ function create_lp() {
 
 
 	$labels = array(
-		'name'              => __( 'Tags', ''),
-		'singular_name'     => __( 'Tag', ''),
-		'add_new_item'      => __( 'Adicionar Tag', ''),
-		'new_item_name'     => __( 'Nova Tag', ''),
-		'edit_item'         => __( 'Editar Tag', ''),
-		'menu_name'         => __( 'Tags', ''),
+		'name'              =>'Tags',
+		'singular_name'     =>'Tag',
+		'add_new_item'      =>'Adicionar Tag',
+		'new_item_name'     =>'Nova Tag',
+		'edit_item'         =>'Editar Tag',
+		'menu_name'         =>'Tags',
 	);
 
 	$args = array(
@@ -331,4 +331,47 @@ function create_lp() {
 		'rewrite'           => array( 'slug' => 'tags-landings' ),
 	);
 	register_taxonomy( 'tags-landings', array( 'landings' ), $args );
+}
+
+// Projetos
+add_action( 'init', 'create_projetos' );
+function create_projetos() {
+	register_post_type( 'projetos',
+	    array(
+	      	'labels' => array(
+		        'name' =>'Projetos',
+		        'singular_name' =>'Projeto',
+				'add_new' =>'Adicionar Projeto',
+				'add_new_item' =>'Adicionar Novo Projeto',
+				'edit_item' =>'Editar Projeto',
+				'new_item' =>'Nova Projeto',
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-universal-access',
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'projeto-esg'),
+			'supports' => array( 'title', 'editor', 'thumbnail'),
+			'taxonomies' => array('categorias-esg'),
+		)
+	);
+
+	$labels = array(
+		'name'              =>'Categorias Projetos ESG',
+		'singular_name'     =>'Categoria Projetos ESG',
+		'add_new_item'      =>'Adicionar categoria',
+		'new_item_name'     =>'Nova categoria',
+		'edit_item'         =>'Editar categoria',
+		'menu_name'         =>'Categorias Projetos ESG',
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'categorias-esg' ),
+	);
+	register_taxonomy( 'categorias-esg', array( 'projetos' ), $args );
 }

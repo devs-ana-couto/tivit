@@ -4,6 +4,7 @@
 <?php page_bulder_init(get_the_ID(),$post,true);?>
 
 <!-- Hero banner-->
+<?php if (false) { ?>
 <div class="esg-hero position-relative" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile_esg') : the_field('banner_desktop_esg'); ?>') no-repeat center center; background-size: cover;">
   <div class="esg-hero-title">
     <div class="container">
@@ -102,7 +103,10 @@
     </div>
 </div>
 
+<?php } ?>
+
 <!-- Projetos por Categoria -->
+<?php if (false) {  ?>
 <div id="projetos">
   <div id="triangle-down"></div>
   <div class="container">
@@ -183,6 +187,7 @@
       </div>
   </div>
 </div>
+<?php } ?>
 
 <!-- Cultura -->
 <div id="contentTdx" class="home-content content-inovacao esg1">
