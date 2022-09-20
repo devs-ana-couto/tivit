@@ -223,11 +223,8 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
             array('{id}', '{content}', '{bullets}', '{arrows}', '{full_back}', '{meio_top}', '{meio_bottom}'),
             array($obj_id, $generate_content, $generate_bullets, $generate_arrows, $full_background, $metade_top, $metade_bottom),
             $template
-        );;
-
+        );
     if ($echo)
         echo $generate_element;
-
     return $generate_element;
-
 }

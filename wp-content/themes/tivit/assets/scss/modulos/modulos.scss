@@ -75,10 +75,11 @@ section {
   }
 }
 
-.box-accordion{
+.box-accordion {
   padding: 50px 0px;
-  .box-vagas-title{
-    h1, h2, h3, h4, h5, h6{
+
+  .box-vagas-title {
+    h1, h2, h3, h4, h5, h6 {
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
@@ -94,13 +95,15 @@ section {
 
     }
   }
-  .accordion{
-    .accordion-item{
+
+  .accordion {
+    .accordion-item {
       background: transparent !important;
-      .accordion-header{
+
+      .accordion-header {
         background: transparent !important;
 
-        .accordion-button{
+        .accordion-button {
           border: 0px !important;
           background: transparent !important;
           font-style: normal;
@@ -113,35 +116,31 @@ section {
           padding-left: 0px;
 
 
-        &:focus {
-          box-shadow: unset;
-        }
+          &:focus {
+            box-shadow: unset;
+          }
 
-          &:after{
+          &:after {
             background: url("../icons/nav/add-white.svg");
             background-size: cover;
             background-repeat: no-repeat;
           }
-          &:not(.collapsed)::after{
+
+          &:not(.collapsed)::after {
             background: url("../icons/nav/add-white.svg");
             background-size: cover;
             background-repeat: no-repeat;
           }
         }
       }
-      .accordion-body{
-        p{
+
+      .accordion-body {
+        p {
           font-style: normal;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 20px;
-          /* or 143% */
-
-
-          /* Branco */
-
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
           color: #FFFFFF;
-
         }
       }
     }
@@ -2317,16 +2316,12 @@ $primary-color: #990017;
   }
 
   .box-img {
-    @media screen and (max-width: 991px) {
-      height: 320px;
-    }
     z-index: 998;
   }
 
   .controlador {
     //bottom: 5rem;
     bottom: -85%;
-
   }
 
   .carousel-control-prev {
@@ -2660,7 +2655,7 @@ $primary-color: #990017;
     background-position: center center !important;
     background-size: cover !important;
     @media screen and (max-width: 991px) {
-      height: 350px;
+      height: 410px;
       background-position: top center !important;
     }
     @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -2684,7 +2679,7 @@ $primary-color: #990017;
         color: #FFFFFF;
       }
 
-      h1, h2, h3, h4, h5, h6, .title {
+      h1, h2, h3, h4, h5, h6 .title {
         font-style: normal;
         font-weight: 400;
         font-size: 48px;
@@ -2693,8 +2688,8 @@ $primary-color: #990017;
         color: white;
         margin: 0px;
         @media screen and (max-width: 991px) {
-          font-size: 24px;
-          line-height: 30px;
+          font-size: 28px;
+          line-height: 32px;
         }
 
         strong {
@@ -2713,7 +2708,7 @@ $primary-color: #990017;
     }
 
     &.peoples {
-      bottom: -70px;
+      bottom: -15px;
 
       .customNumbers {
         width: 110px;
@@ -2760,16 +2755,26 @@ $primary-color: #990017;
 
   .box-dados {
     z-index: 1054;
-    min-height: 500px;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 
+    @media screen and (min-width: 992px){
+      min-height: 500px;
+    }
+    @media screen and (max-width: 991px){
+      min-height: 420px;
+    }
     .card-img-overlay {
       background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
     }
 
     .row-box {
-      min-height: 500px;
+      @media screen and (min-width: 992px){
+        min-height: 500px;
+      }
+      @media screen and (max-width: 991px){
+        height: 420px;
+      }
     }
 
     .box-infos {
@@ -3519,17 +3524,67 @@ a.cta-conteudo2 {
     align-content: center;
     transition: all 0.5s;
   }
-  &:hover{
+
+  &:hover {
     border: 0px;
     transition: all 0.5s;
     color: $vermelho-tivit;
-    &:after{
+
+    &:after {
       margin-left: 20px;
     }
   }
 }
 
-.box-mask-cases-new{
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+.box-mask-cases-new {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cardContent {
+  .box-link-cta {
+    a {
+      border: none;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      text-transform: uppercase;
+      color: #F20024;
+      padding: 0px;
+
+      &:after {
+        content: "";
+        background: url("../images/modulos/conteudo/arrow_artigo.svg");
+        background-size: cover;
+        background-position: center center;
+        width: 12px;
+        height: 12px;
+        background-repeat: no-repeat;
+        margin-left: 5px;
+      }
+
+      &:hover {
+
+        color: #F20024;
+
+        &:after {
+          margin-left: 10px;
+          transition: margin-left .2s linear;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .box-link-cta {
+      &:after {
+        margin-left: 10px;
+        transition: margin-left .2s linear;
+      }
+    }
+  }
 }

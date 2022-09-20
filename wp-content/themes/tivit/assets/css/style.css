@@ -1375,9 +1375,12 @@ div {
 }
 @media (max-width: 759px) {
   .home-hero .content {
-    background: url("../../assets/images/home/slider-1-mobile.png") no-repeat center center;
     background-size: cover;
+    background-position: center center;
   }
+}
+.home-hero .content .mask-mobile {
+  background: linear-gradient(2.11deg, #000000 4.05%, rgba(0, 0, 0, 0.1) 89.5%);
 }
 .home-hero .content .title {
   max-width: 320px;
@@ -1814,7 +1817,6 @@ div {
 .home-cases {
   background-color: white;
   transition: background-color 0.35s linear;
-  height: 930px;
 }
 .home-cases .bgtriangulo {
   background: url("../../assets/images/home/triangulocinza.svg") no-repeat top center;
@@ -1859,9 +1861,9 @@ div {
   width: 100%;
   transition: all 0.4s linear;
 }
-@media (max-width: 767px) {
+@media (max-width: 1px) {
   .home-cases {
-    height: 800px;
+    height: auto !important;
   }
 }
 @media (max-width: 760px) {
@@ -1897,12 +1899,6 @@ div {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
-}
-@media (max-width: 760px) {
-  .home-cases .home-cases-title h2 {
-    margin-top: 60px;
-  }
 }
 .home-cases .carousel {
   margin-top: 30px;
@@ -2068,7 +2064,7 @@ div {
 /**
  *  Desktop
  */
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-hero {
     margin-bottom: 0px;
   }
@@ -2197,18 +2193,18 @@ div {
     transition: all 0.6s ease-in;
   }
 }
-@media (min-width: 760px) and (min-width: 760px) {
+@media (min-width: 768px) and (min-width: 760px) {
   .home-portifolio .customposition {
     position: absolute;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-portifolio .home-portifolio-image {
     background-size: cover;
     transition: background 0.4s linear;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-portifolio #triangle-down {
     border-left: 48.84px solid transparent !important;
     border-right: 48.84px solid transparent !important;
@@ -2216,7 +2212,7 @@ div {
     position: absolute;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-portifolio .mascaraDobra3 {
     left: 0;
     right: 0;
@@ -2224,7 +2220,7 @@ div {
     top: 0;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-portifolio .home-portifolio-content .txt {
     margin-top: 150px;
     margin-left: 150px;
@@ -2280,163 +2276,7 @@ div {
     transition: all 0.4s linear;
   }
 }
-@media (min-width: 760px) {
-  .home-cases.active {
-    background-color: black;
-    transition: background-color 0.35s linear;
-  }
-}
-@media (min-width: 760px) {
-  .home-cases {
-    background-color: #262626;
-    transition: background-color 0.35s linear;
-  }
-  .home-cases img {
-    height: 400px;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-  }
-  .home-cases .divOpacity {
-    opacity: 0;
-    transition: all 0.55s linear;
-  }
-  .home-cases .divOpacity.active {
-    opacity: 1;
-    transition: all 0.55s linear;
-  }
-  .home-cases .home-cases-title h2 {
-    margin-top: 100px;
-  }
-  .home-cases .home-cases-title p {
-    text-align: center;
-    color: white;
-    margin-top: 25px;
-  }
-  .home-cases .home-cases-content .bg1, .home-cases .home-cases-content .bg2, .home-cases .home-cases-content .bg3 {
-    position: relative;
-  }
-  .home-cases .home-cases-content .overlay {
-    background: linear-gradient(to top, rgb(0, 0, 0), RGBA(0, 0, 0, 0.1));
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  }
-  .home-cases .home-cases-content .cardCases {
-    cursor: pointer;
-  }
-  .home-cases .home-cases-content .cardCases img {
-    height: 400px;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-  }
-  .home-cases .home-cases-content .cardCases:hover h3 {
-    color: #F20024;
-    transition: all 0.2s linear;
-  }
-  .home-cases .home-cases-content .cardCases:hover a {
-    color: #F20024;
-  }
-  .home-cases .home-cases-content .cardCases:hover a:after {
-    margin-left: 20px;
-    transition: all 0.2s linear;
-  }
-  .home-cases .home-cases-content .textCase {
-    position: absolute;
-    top: 55%;
-    margin: 20px;
-  }
-  .home-cases .home-cases-content .textCase h3 {
-    color: white;
-    font-weight: 600;
-    text-align: left;
-    font-size: 24px;
-    transition: all 0.2s linear;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  .home-cases .home-cases-content .textCase p {
-    color: white;
-    text-align: left;
-    font-weight: lighter;
-    width: 85%;
-  }
-  .home-cases .home-cases-content .textCase a {
-    color: white;
-    text-transform: uppercase;
-    text-align: left;
-    transition: all 0.3s linear;
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  .home-cases .home-cases-content .textCase a:after {
-    content: "";
-    background: url(../images/home/icons/arrow-right-red.svg);
-    margin-left: 10px;
-    width: 15px;
-    height: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-flex;
-    align-items: center;
-    align-content: center;
-  }
-  .home-cases .home-cases-content .textCase a:hover {
-    color: #F20024;
-    transition: all 0.3s linear;
-  }
-  .home-cases .home-cases-content .textCase a img {
-    margin-left: 5px;
-    transition: all 0.2s linear;
-  }
-  .home-cases .home-cases-content .home-cases-autor {
-    width: 450px;
-  }
-  .home-cases .home-cases-content .home-cases-autor h3 {
-    color: #F20024;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .home-cases .home-cases-content .home-cases-autor p {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: white;
-  }
-  .home-cases .home-cases-content .botao a {
-    background: transparent;
-    border: 1px solid #F20024;
-    border-radius: 50px;
-  }
-  .home-cases .home-cases-content .botao a:hover {
-    background: white;
-    color: #F20024;
-    border: white solid 1px;
-  }
-  .home-cases .home-cases-content.left {
-    margin-top: 50px;
-  }
-  .home-cases .home-cases-content.left h3, .home-cases .home-cases-content.left p, .home-cases .home-cases-content.left .botao {
-    text-align: left;
-  }
-  .home-cases .home-cases-content.right {
-    margin-top: 205px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .home-cases .home-cases-content.right h3, .home-cases .home-cases-content.right p, .home-cases .home-cases-content.right .botao {
-    text-align: right;
-  }
-}
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .home-pessoas-e-carreiras {
     background: url("../../assets/images/home/carreiras.png") no-repeat center center;
     height: 790px;
@@ -2457,13 +2297,13 @@ div {
     color: #FFFFFF;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .pessoasCarreiras.active {
     background: white;
     transition: all 0.7s ease-in;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .pessoasCarreiras {
     position: relative;
     background: black;
@@ -2513,7 +2353,7 @@ div {
     transition: all 0.3s linear 0.2s;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .partners {
     padding: 0px 0 50px 0;
     transition: all 0.4s linear 0.2s;
@@ -2529,12 +2369,12 @@ div {
     font-weight: 600;
   }
 }
-@media (min-width: 760px) and (max-width: 760px) {
+@media (min-width: 768px) and (max-width: 760px) {
   .partners .title h2 {
     font-size: 20px;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .partners.active {
     opacity: 1;
     transition: all 0.4s linear 0.2s;
@@ -2798,6 +2638,202 @@ div {
 }
 .solution-menu .nav-item.inicial h2 strong {
   font-weight: bold;
+}
+
+.home-cases.active {
+  background-color: black;
+  transition: background-color 0.35s linear;
+  padding: 100px 0px;
+}
+@media screen and (max-width: 991px) {
+  .home-cases.active {
+    padding: 75px 0px;
+  }
+}
+
+.home-cases {
+  background-color: #262626;
+  transition: background-color 0.35s linear;
+}
+.home-cases img {
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.home-cases .divOpacity {
+  opacity: 0;
+  transition: all 0.55s linear;
+}
+.home-cases .divOpacity.active {
+  opacity: 1;
+  transition: all 0.55s linear;
+}
+.home-cases .home-cases-title p {
+  text-align: center;
+  color: white;
+  margin-top: 25px;
+}
+.home-cases .home-cases-content .bg1, .home-cases .home-cases-content .bg2, .home-cases .home-cases-content .bg3 {
+  position: relative;
+}
+.home-cases .home-cases-content .overlay {
+  background: linear-gradient(to top, rgb(0, 0, 0), RGBA(0, 0, 0, 0.1));
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.home-cases .home-cases-content .cardCases {
+  border-radius: 0px;
+  border-color: transparent;
+  border: none;
+  background-color: transparent;
+  height: 420px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.home-cases .home-cases-content .cardCases .card-body {
+  background-color: transparent;
+  border-radius: 0px;
+  border-color: transparent;
+  border: none;
+  z-index: 1054;
+}
+.home-cases .home-cases-content .cardCases .card-footer {
+  border-radius: 0px;
+  background: transparent;
+  z-index: 1054;
+  border-color: transparent;
+  border: none;
+}
+.home-cases .home-cases-content .cardCases .card-footer .box-link-cta a {
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  color: #F20024;
+  padding: 0px;
+}
+.home-cases .home-cases-content .cardCases .card-footer .box-link-cta a:after {
+  content: "";
+  background: url("../images/modulos/conteudo/arrow_artigo.svg");
+  background-size: cover;
+  background-position: center center;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+.home-cases .home-cases-content .cardCases .card-footer .box-link-cta a:hover {
+  color: #F20024;
+}
+.home-cases .home-cases-content .cardCases .card-footer .box-link-cta a:hover:after {
+  margin-left: 10px;
+  transition: margin-left 0.2s linear;
+}
+.home-cases .home-cases-content .cardCases img {
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.home-cases .home-cases-content .cardCases:hover h3 {
+  color: #F20024;
+  transition: all 0.2s linear;
+}
+.home-cases .home-cases-content .textCase h3 {
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  font-size: 24px;
+  transition: all 0.2s linear;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.home-cases .home-cases-content .textCase p {
+  color: white;
+  text-align: left;
+  font-weight: lighter;
+  width: 85%;
+}
+.home-cases .home-cases-content .textCase a {
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.home-cases .home-cases-content .textCase a:after {
+  content: "";
+  background: url(../images/home/icons/arrow-right-red.svg);
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+.home-cases .home-cases-content .textCase a:hover {
+  color: #F20024;
+  transition: all 0.3s linear;
+}
+.home-cases .home-cases-content .textCase a img {
+  margin-left: 5px;
+  transition: all 0.2s linear;
+}
+.home-cases .home-cases-content .home-cases-autor {
+  width: 450px;
+}
+.home-cases .home-cases-content .home-cases-autor h3 {
+  color: #F20024;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.home-cases .home-cases-content .home-cases-autor p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+}
+.home-cases .home-cases-content .botao a {
+  background: transparent;
+  border: 1px solid #F20024;
+  border-radius: 50px;
+}
+.home-cases .home-cases-content .botao a:hover {
+  background: white;
+  color: #F20024;
+  border: white solid 1px;
+}
+.home-cases .home-cases-content.left {
+  margin-top: 50px;
+}
+.home-cases .home-cases-content.left h3, .home-cases .home-cases-content.left p, .home-cases .home-cases-content.left .botao {
+  text-align: left;
+}
+.home-cases .home-cases-content.right {
+  margin-top: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.home-cases .home-cases-content.right h3, .home-cases .home-cases-content.right p, .home-cases .home-cases-content.right .botao {
+  text-align: right;
 }
 
 .pec-hero {
@@ -10777,11 +10813,9 @@ h3 {
 }
 .box-accordion .accordion .accordion-item .accordion-body p {
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-  /* or 143% */
-  /* Branco */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
   color: #FFFFFF;
 }
 
@@ -12519,11 +12553,6 @@ h3 {
 .slider-projetos .box-img {
   z-index: 998;
 }
-@media screen and (max-width: 991px) {
-  .slider-projetos .box-img {
-    height: 320px;
-  }
-}
 .slider-projetos .controlador {
   bottom: -85%;
 }
@@ -12777,7 +12806,7 @@ h3 {
 }
 @media screen and (max-width: 991px) {
   .header-inner .box-header {
-    height: 350px;
+    height: 410px;
     background-position: top center !important;
   }
 }
@@ -12804,7 +12833,7 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6, .header-inner .box-header .box-title .title {
+.header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6 .title {
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -12814,12 +12843,12 @@ h3 {
   margin: 0px;
 }
 @media screen and (max-width: 991px) {
-  .header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6, .header-inner .box-header .box-title .title {
-    font-size: 24px;
-    line-height: 30px;
+  .header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6 .title {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
-.header-inner .box-header .box-title h1 strong, .header-inner .box-header .box-title h2 strong, .header-inner .box-header .box-title h3 strong, .header-inner .box-header .box-title h4 strong, .header-inner .box-header .box-title h5 strong, .header-inner .box-header .box-title h6 strong, .header-inner .box-header .box-title .title strong {
+.header-inner .box-header .box-title h1 strong, .header-inner .box-header .box-title h2 strong, .header-inner .box-header .box-title h3 strong, .header-inner .box-header .box-title h4 strong, .header-inner .box-header .box-title h5 strong, .header-inner .box-header .box-title h6 .title strong {
   font-weight: 600;
 }
 .header-inner .player {
@@ -12833,7 +12862,7 @@ h3 {
   }
 }
 .header-inner .player.peoples {
-  bottom: -70px;
+  bottom: -15px;
 }
 .header-inner .player.peoples .customNumbers {
   width: 110px;
@@ -12868,15 +12897,31 @@ h3 {
 }
 .box-videos .box-dados {
   z-index: 1054;
-  min-height: 500px;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+@media screen and (min-width: 992px) {
+  .box-videos .box-dados {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados {
+    min-height: 420px;
+  }
 }
 .box-videos .box-dados .card-img-overlay {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
-.box-videos .box-dados .row-box {
-  min-height: 500px;
+@media screen and (min-width: 992px) {
+  .box-videos .box-dados .row-box {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .box-videos .box-dados .row-box {
+    height: 420px;
+  }
 }
 .box-videos .box-dados .box-infos {
   z-index: 1054;
@@ -13497,6 +13542,41 @@ a.cta-conteudo2:hover:after {
 .box-mask-cases-new {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cardContent .box-link-cta a {
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-transform: uppercase;
+  color: #F20024;
+  padding: 0px;
+}
+.cardContent .box-link-cta a:after {
+  content: "";
+  background: url("../images/modulos/conteudo/arrow_artigo.svg");
+  background-size: cover;
+  background-position: center center;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+.cardContent .box-link-cta a:hover {
+  color: #F20024;
+}
+.cardContent .box-link-cta a:hover:after {
+  margin-left: 10px;
+  transition: margin-left 0.2s linear;
+}
+.cardContent:hover .box-link-cta:after {
+  margin-left: 10px;
+  transition: margin-left 0.2s linear;
 }
 
 .nav-header-new {

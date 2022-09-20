@@ -343,24 +343,24 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $categorias[] = $categoria;
                 }
             }
-            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="col-12 col-md-4" >';
+            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="img position-relative">';
+            $saida .= '<div class="img position-relative"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
             $saida .= '</div>'; //.img
-            $saida .= '<div class="card-body">';
+            $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '</div>'; //.card-body
-            $saida .= '<div class="card-footer">';
-            $saida .= '<div class="acessar">' . __('ver mais', 'tivit') . '</div>';
+            $saida .= '<div class="card-footer box-link-cta">';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
             $saida .= '</div>';
             $saida .= '</div>'; //.card
-            $saida .= '</a>'; //.col-12
+            $saida .= '</div>';
         }
         $saida .= '</div>'; //.row
 

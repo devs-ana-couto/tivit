@@ -253,76 +253,28 @@ if (!function_exists('ac_bloco_home_cases')) {
         $dados = ac_cases_listar($arg);
 
         $saida = "";
-        $saida .= '<div class="col-12">';
-        $saida .= '<div id="labs" class="carousel slide position-relative hide-desktop" data-bs-ride="carousel">';
-        $saida .= '<div class="carousel-inner" role="listbox">';
-        for ($ac = 0; $ac < count($dados); $ac++) {
-            $categorias = array();
-            $cat_aux = $dados[$ac]['categorias'];
-            if (is_array($cat_aux) || is_object($cat_aux)) {
-                foreach ($cat_aux as $categoria) {
-                    $categorias[] = $categoria;
-                }
-            }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if (is_array($etq_aux) || is_object($etq_aux)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
-            $saida .= '<div class="carousel-item heroslide2 ' . ($ac == 0 ? 'active' : '') . '">';
-            $saida .= '<div class="row">';
-            $saida .= '<div class="col-12">';
-            $saida .= '<div class="cardCases bg1 m-2 position-relative">';
-            $saida .= '<div class="overlay"></div>';
-            $saida .= '<img class="w-100 h-100 img-fluid" src="' . $dados[$ac]['bgmobile'] . '" alt="backgroundcase1">';
-            $saida .= '<div class="textCase">';
-            $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
-            $saida .= '<p>' . $dados[$ac]['titulo']. '</p>';
-            $saida .= '<div class="w-100 d-flex text-left">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">VER MAIS</a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
 
-        }
-        $saida .= '</div>';
-
-        $saida .= '<div class="navigation ' . ($ac <= 1 ? ' hide-mobile hide-desktop' : '') . ' w-100">';
-        $saida .= '<div class="d-flex justify-content-center align-items-center">';
-        $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#labs" data-bs-slide="prev">';
-        $saida .= '<img src="' . get_template_directory_uri() . '/assets/icons/navegacao/arrow_left.png" alt="arrow_left">';
-        $saida .= '</button>';
-        $saida .= '<div class="d-flex flex-row counter2">';
-        $saida .= '<div class="numactive2"></div><div class="numseparation2"></div><div class="numtotal2"></div>';
-        $saida .= '</div>';
-        $saida .= '<button class="carousel-control-next" type="button" data-bs-target="#labs" data-bs-slide="next">';
-        $saida .= '<img src="' . get_template_directory_uri() . '/assets/icons/navegacao/arrow_right.png" alt="arrow_right">';
-        $saida .= '</button>';
-        $saida .= '</div>';
-        $saida .= '</div>';
-
-        $saida .= '</div>';
-        $saida .= '</div>';
-
-        $saida .= '<div class="home-cases-content left text-center hide-mobile">';
+        $saida .= '<div class="home-cases-content left text-center">';
         $saida .= '<div class="row d-flex justify-content-center">';
-        $saida .= '<div class="d-flex customContainer">';
+        $saida .= '<div class="d-flex flex-wrap customContainer">';
 
         for ($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= '<div class="col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="cardCases bg1 m-3">';
-            $saida .= '<div class="overlay"></div>';
-            $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" alt="backgroundcase1">';
+            $saida .= '<div class="col-12 col-lg-4" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+            $saida .= '<div class="card border-0 cardCases bg1 m-3 position-relative" style="background-image: url(\'' . $dados[$ac]['bgdesktop'] . ' \')">';
+            $saida .= '<div class="card-img-overlay overlay d-flex align-content-end flex-wrap">';
+            $saida .= '<div class="card-body border-0 p-0  ">';
+
+
             $saida .= '<div class="textCase">';
             $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
             $saida .= '<p>' .  $dados[$ac]['titulo']. '</p>';
-            $saida .= '<div class="w-100 d-flex text-left mt-3">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">VER CASE</a>';
+            $saida .= '</div>';
+
+            $saida .= '</div>';
+            $saida .= '<div class="card-footer w-100 border-0 px-0">';
+            $saida .= '<div class="box-link-cta">';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="p-0">VER CASE</a>';
+            $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';

@@ -34,7 +34,6 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
                 padding-bottom: {padding_bottom_mobile}px;
             }
             #{css_id} .mask-default{
-                background: url({mascara-mobile}) !important;
                 background-size: cover !important;
                 background-repeat: no-repeat !important;
             }

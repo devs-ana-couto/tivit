@@ -339,7 +339,7 @@
                             aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body ">
                     <script src="https://www.youtube.com/iframe_api"></script>
                     <div id="player"></div>
                 </div>

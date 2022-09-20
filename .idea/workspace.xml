@@ -2,235 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8ae776-01fc-444a-980c-bf8bf31d7b6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/tivit/header-old.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/tivit/single-solucoes-old.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/contato.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/contato.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/conteudos.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/conteudos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/docs.theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/global.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/global.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/owl.carousel.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/owl.theme.default.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/owl.theme.green.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/solucoes.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/solucoes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases-old.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/frameworks/js/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/Calendario-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/Calendario-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/before-footer/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/before-footer/share-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/calendar/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/calendar/heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Incorporar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/Whatsapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/arrow-orange.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/arrows_white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/checked.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/icon-calendar-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/icon_calendario.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/link_peoples.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/link_peoples_hover.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/share-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/share.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/telegram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/graphics/whatsapp-footer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/03a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/drive-download-20220826T165239Z-001.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/drive-download-20220826T165239Z-001/Prancheta 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/drive-download-20220826T165239Z-001/Prancheta 2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/drive-download-20220826T165239Z-001/Prancheta 3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/slider-01m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/slider-02m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/slider-03am.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/header/slider/slider-03m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/incorporar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/icons-shared-white/whatsapp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/img_rede_fundo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/MOSAICO-MASTER_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/Rectangle282-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/Rectangle282.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/Rectangle288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/background-section.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/master-class/background2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/news/cartao_embarque_19-ITA-00287914.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/AngelaMendes.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/JosiMalheiros.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/NatalhaTheofilo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/Oreme Ikpeng- Polinizador .jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/mariaivoneide.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/people/vic-pinheiro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/Melhor Envio.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/acf-export-2022-08-23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/acf-export-2022-09-16 (1).json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/acf-export-2022-09-16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/slider01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/slider/slider01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/thumb_master.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/video-box/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/video-box/fundo_video.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/video-box/fundo_video.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/images/video-box/icon_play.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/slider-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/slider-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/global/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/global/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/index/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_autoheight.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_lazyload.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/_video.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/owl.carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/owl.theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/owl/owl.theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/global/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/index/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_animate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_autoheight.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_lazyload.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/_video.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/owl.carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/owl.theme.default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/owl/owl.theme.green.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss2/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/nossos.contatos.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/nossos.contatos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/page.builder.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/page.builder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/tivit.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/tivit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/json/arquivos.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/json/arquivos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/a-tivit/a-tivit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/a-tivit/a-tivit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/cases/cases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/cases/cases.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/contato/contato.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/contato/contato.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudo-single/conteudo-single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudo-single/conteudo-single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudos/conteudos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudos/conteudos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/desdobramentos/desdobramento.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/desdobramentos/desdobramento.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/esg/esg.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/esg/esg.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/inovacao/inovacao.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/inovacao/inovacao.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/labs/labs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/labs/labs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/lps/tdx-tbanks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/lps/tdx-tbanks.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/modulos/modulos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/modulos/modulos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/newmenu/_newmenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/newmenu/_newmenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pesquisa/pesquisa.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pesquisa/pesquisa.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pessoas-e-carreiras/pessoas-e-carreiras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pessoas-e-carreiras/pessoas-e-carreiras.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/post-types/cases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/post-types/cases.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes-ativas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes-ativas.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/ventures/ventures.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/ventures/ventures.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/conteudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/conteudo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/conteudo.relacionado.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/conteudo.relacionado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider-simple.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider-simple.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider.cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider.cases.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/projetos-esg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/projetos-esg.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/vendor/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/modulos.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/modulos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,22 +66,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bnmar/Local Sites/tivit/app/public/wp-content/themes/tivit/template-pages&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/bnmar/Local Sites/tivit/app/public/wp-content/themes/tivit/inc",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bnmar\Local Sites\tivit\app\public\wp-content\themes\tivit\inc" />
       <recent name="C:\Users\bnmar\Local Sites\tivit\app\public\wp-content\themes\tivit\template-pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -297,6 +106,8 @@
       <workItem from="1663351133143" duration="2631000" />
       <workItem from="1663358334636" duration="5888000" />
       <workItem from="1663623668561" duration="8683000" />
+      <workItem from="1663689529879" duration="639000" />
+      <workItem from="1663690638143" duration="14823000" />
     </task>
     <servers />
   </component>

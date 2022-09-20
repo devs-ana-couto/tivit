@@ -58,11 +58,11 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
         }
         }
     </style>
-    <section class="container-fluid px-lg-0 box-slider position-relative" id="case_slider_{id}" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+    <section class="container-fluid px-lg-0 box-slider position-relative" id="case_slider_{id}"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
     <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
             <div class="h-50 w-100 box-50per" style="background: {background_half_color};"></div>
         </div>
-        <div class="container position-relative shadow">
+        <div class="container position-relative">
             <div class="card-img-overlay box-mask">
                 <div class="col-auto mask d-flex justify-content-end d-none d-lg-flex">
                     <img src="' . get_template_directory_uri() . '/assets/images/modulos/slider/mask.svg"
@@ -81,16 +81,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
 
 
                 <div class="col case-sliders position-relative p-lg-0">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#slider-base-modular-{id}"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#slider-base-modular-{id}"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                   
                     <div id="slider-base-modular-{id}" class="carousel slide position-relative" data-bs-ride="true">
                          <div class="carousel-indicators">
                             {bullets}

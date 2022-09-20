@@ -1,10 +1,18 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
 
-<?php page_bulder_init(get_the_ID(),$post,true);?>
+<?php
 
-    <section class="home-hero position-relative" >
-        <div id="hero" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+page_bulder_init(get_the_ID(), $post, true);
+
+if (!$detect->isMobile()) {
+    $carouselFade = 'carousel-fade';
+}
+
+?>
+
+    <section class="home-hero position-relative">
+        <div id="hero" class="carousel slide <?php echo $carouselFade; ?> position-relative" data-bs-ride="carousel">
             <div class="carousel-inner text-center">
                 <?php
                 // Check rows exists.
@@ -16,23 +24,30 @@
                         $chamada[$i] = get_sub_field('chamada');
                         $cta[$i] = get_sub_field("slider-cta");
                         $cta_text[$i] = get_sub_field("slider-cta-text");
+                        if ($detect->isMobile()) {
+                            $imgStyle = "background-image: url('$banner_desktop_url[$i]')";
+                        }
                         ?>
                         <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
-                            <div class="content position-relative">
-                                <img class="maskImg hide-mobile w-100" src="<?= $banner_desktop_url[$i] ?>"
+                            <div class="content position-relative mt-0" style="<?php echo $imgStyle; ?>">
+                                <img class="maskImg w-100 hide-mobile" src="<?= $banner_desktop_url[$i] ?>"
                                      alt="Imagem do Slider"/>
                                 <img class="mask"
                                      src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mascara_slider_v.svg"
                                      alt="mask"/>
+                                <div class="card-img-overlay mask-mobile d-lg-none">
+
+                                </div>
                                 <div class="title position-absolute">
                                     <?= $chamada[$i] ?>
                                     <?php
-                                    if($cta[$i] !== ""){
-                                    ?>
-                                    <div class="botao">
+                                    if ($cta[$i] !== "") {
+                                        ?>
+                                        <div class="botao">
 
-                                        <a class="btn btn-primary" href="<?php echo $cta[$i]; ?>"><?php echo $cta_text[$i] ?></a>
-                                    </div>
+                                            <a class="btn btn-primary"
+                                               href="<?php echo $cta[$i]; ?>"><?php echo $cta_text[$i] ?></a>
+                                        </div>
                                     <?php } ?>
                                 </div>
 
@@ -83,7 +98,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="col-auto d-none d- d-lg-flex align-items-center px-5 px-lg-3">
+                    <div class="col-auto d-none d-lg-flex align-items-center px-5 px-lg-3">
                         <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -132,7 +147,8 @@
         </div>
         <div class="col-12 d-none position-relative box-arrow d-lg-flex justify-content-center">
             <div class="arrow slider-arrow-back text-center position-absolute">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg" alt="Saiba Mais">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg"
+                     alt="Saiba Mais">
             </div>
         </div>
     </section>
@@ -140,10 +156,11 @@
     <div class="home-intro active">
         <!--<div class="w-100 transition">
             <img class="imgtransition position-absolute hide-mobile"
-                 src="<?php /*echo get_template_directory_uri(); */?>/assets/images/home/trans1flp.svg"
+                 src="<?php /*echo get_template_directory_uri(); */ ?>/assets/images/home/trans1flp.svg"
                  alt="transition1">
         </div>-->
-        <div class="col-12 position-relative box-arrow"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+        <div class="col-12 position-relative box-arrow"
+             data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
             <div class="arrow text-center position-absolute">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/icons/seta-red.svg"
                      alt="Saiba Mais">
@@ -163,20 +180,21 @@
 
     <section class="container-fluid px-lg-0 portfolio port mb-5">
         <div class="d-flex justify-content-center bgport active position-absolute"></div>
-        <div class="container home-portifolio active" >
+        <div class="container home-portifolio active">
             <div class="home-portifolio-image p-0">
                 <!--<div class="d-flex justify-content-center w-100">
                     <div id="triangle-down"></div>
                 </div>-->
                 <div class="row row-cols-1">
                     <?php
-                   /* if ($detect->isMobile()) {
-                        $mascara = get_template_directory_uri() . "/assets/images/home/portmaskmobile.svg";
-                    } else {
-                    }*/
+                    /* if ($detect->isMobile()) {
+                         $mascara = get_template_directory_uri() . "/assets/images/home/portmaskmobile.svg";
+                     } else {
+                     }*/
                     $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
                     ?>
-                    <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-12 portfolio__box position-relative"
+                         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <!--<div class="d-flex justify-content-center w-100">
                             <div id="triangle-down"></div>
                         </div>-->
@@ -209,7 +227,7 @@
                                                             if ($i === 0) {
                                                                 $active = "active";
                                                             }
-                                                            echo '<div id="port'.$i.'" class="">';
+                                                            echo '<div id="port' . $i . '" class="">';
                                                             echo '<div class="d-none" id="portfolio__img__url-' . $i . '" data-img="' . $bg . '"></div>';
                                                             echo '<div class="d-none" id="portfolio__desc-' . $i . '">' . get_sub_field("portifolio_lista_desc") . '</div>';
                                                             echo '<div class="d-none" id="portfolio__link__url-' . $i . '">' . get_sub_field("portifolio_lista_cta") . '</div>';
@@ -258,15 +276,15 @@
         </div>
     </section>
 
-    <div id="contentTdx" class="home-content content-inovacao"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+    <div id="contentTdx" class="home-content content-inovacao"
+         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <?= do_shortcode('[ac-bloco-conteudo fundo="escuro"]Nossos conteúdos[/ac-bloco-conteudo]'); ?>
     </div>
 
     <div class="home-cases active">
-        <div class="d-none   justify-content-center transitionCases position-absolute hide-mobile"></div>
-        <div class="d-none d-lg-flex active justify-content-center bgtriangulo position-absolute" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"></div>
-        <div class="container divOpacity active">
-            <div class="row d-flex justify-content-center align-items-center position-absolute m-0 lr" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+        <div class="container">
+            <div class="row justify-content-center align-items-center"
+                 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                 <div class="home-cases-title">
                     <h2>Nossos Cases</h2>
                 </div>
@@ -282,13 +300,17 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column fadeInUp animated"
-                     style="z-index: 1048" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-                    <div class="col-auto fadeInUp animated" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                     style="z-index: 1048"
+                     data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-auto fadeInUp animated"
+                         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <?php the_field('texto_pc') ?>
                     </div>
-                    <div class="col-auto fadeInUp animated" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-auto fadeInUp animated"
+                         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <div class="mt-5">
-                            <a href="<?php the_field('url_cta_pc'); ?>" class="btn btn-primary cta__geral" target=""><?php the_field('texto_cta_pc') ?></a>
+                            <a href="<?php the_field('url_cta_pc'); ?>" class="btn btn-primary cta__geral"
+                               target=""><?php the_field('texto_cta_pc') ?></a>
                         </div>
                     </div>
                 </div>
@@ -298,11 +320,10 @@
     </section>
 
     <section class="container-fluid px-lg-0 box-nosso-clientes"
-             style="background: white;"   data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+             style="background: white;"
+             data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <?= do_shortcode('[ac-bloco-clientes]'); ?>
     </section>
-
-
 
 
 <?php get_footer(); ?>
