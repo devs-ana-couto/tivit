@@ -58,7 +58,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
         }
         }
     </style>
-    <section class="container-fluid px-lg-0 box-slider position-relative" id="case_slider_{id}">
+    <section class="container-fluid px-lg-0 box-slider position-relative" id="case_slider_{id}" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
     <div class="card-img-overlay h-100 bg-slider d-flex align-items-end">
             <div class="h-50 w-100 box-50per" style="background: {background_half_color};"></div>
         </div>
@@ -72,7 +72,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
 
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col box-solid p-lg-0">
-                    <div class="col-12 box-title-solid h-100" style="background: {global_background_slider};"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="col-12 box-title-solid h-100" style="background: {global_background_slider};" >
                         {title}
                         {descript}
                         {cta_global}
@@ -120,7 +120,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
             );
     }
     $content = '            
-    <div class="carousel-item {active} position-relative"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+    <div class="carousel-item {active} position-relative">
         <div class="row row-cols-1">
             <div class="col box-images p-lg-0">
                 <div class="col-12">
