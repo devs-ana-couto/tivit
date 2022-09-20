@@ -73,6 +73,12 @@
     ?>
 </head>
 <body <?php body_class(); ?>>
+<input type="hidden" id="change_icon_hamburguer_color_tbanks" name="change_icon_hamburguer_color_tbanks" value="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/hamburguer-white.svg" />
+<input type="hidden" id="change_icon_search_color_tbanks" name="change_icon_search_color_tbanks" value="<?php echo get_template_directory_uri(); ?>/assets/icons/navsearch-white.svg" />
+<input type="hidden" id="change_logo_on_scroll_desktop" name="change_logo_on_scroll_desktop" value="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" />
+<input type="hidden" id="change_logo_on_scroll_desktop_original" name="change_logo_on_scroll_desktop_original" value="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" />
+<input type="hidden" id="change_icon_hamburguer_color_tdx" name="change_icon_hamburguer_color_tdx" value="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/hamburguer-white.svg" />
+<input type="hidden" id="change_icon_search_color_tdx" name="change_icon_search_color_tdx" value="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svgg" />
 
 
 <header class="fixed-top nav-header-new">
@@ -441,7 +447,7 @@
                             echo '<div class="textMenu ' . $mt . '">';
                             echo '<h2><a href="' . $conteudo['link'] . '">' . $conteudo['titulo'] . '</a></h2>';
                             echo '<div class="menu-solucoes-cloud-solutions-container">
-                                    <ul id="menu-solucoes-cloud-solutions" class="menu" 
+                                    <ul id="menu-solucoes-cloud-solutions" class="menu"
                                     itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">';
                             $list_por_servico = $conteudo['submenu'];
                             foreach ($list_por_servico as $key => $submenu) {

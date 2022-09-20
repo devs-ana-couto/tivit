@@ -63,7 +63,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="img position-relative">
-            <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo1.png" alt="Depoimento">
+            <img src="'.get_template_directory_uri().'/assets/images/home/artigo1.png" alt="Depoimento">
             <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
@@ -91,7 +91,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="img position-relative">
-            <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo2.png" alt="Depoimento">
+            <img src="'.get_template_directory_uri().'/assets/images/home/artigo2.png" alt="Depoimento">
             <div class="position-absolute tagContent">press release</div>
           </div>
           <div class="detalhes">
@@ -118,7 +118,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
       <div class="col-12 col-md-4">
         <div class="cardContent p-1">
           <div class="img position-relative">
-            <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo3.png" alt="Depoimento">
+            <img src="'.get_template_directory_uri().'/assets/images/home/artigo3.png" alt="Depoimento">
             <div class="position-absolute tagContent">artigo</div>
           </div>
           <div class="detalhes">
@@ -151,7 +151,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
                   <div class="col-11 m-0 p-0">
                     <div class="cardContent p-2">
                       <div class="img position-relative">
-                        <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo1.png" alt="Depoimento">
+                        <img src="'.get_template_directory_uri().'/assets/images/home/artigo1.png" alt="Depoimento">
                         <div class="position-absolute tagContent">artigo</div>
                       </div>
                       <div class="detalhes">
@@ -178,7 +178,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
                   <div class="col-11 m-0 p-0">
                     <div class="cardContent p-2">
                       <div class="img position-relative">
-                        <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo2.png" alt="Depoimento">
+                        <img src="'.get_template_directory_uri().'/assets/images/home/artigo2.png" alt="Depoimento">
                         <div class="position-absolute tagContent">press release</div>
                       </div>
                       <div class="detalhes">
@@ -205,7 +205,7 @@ function pb_ac_conteudo_relacionado($obj_id,$obj = null, $block, $echo = true){
                   <div class="col-11 m-0 p-0">
                     <div class="cardContent p-2">
                       <div class="img position-relative">
-                        <img src="https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/home/artigo3.png" alt="Depoimento">
+                        <img src="'.get_template_directory_uri().'/assets/images/home/artigo3.png" alt="Depoimento">
                         <div class="position-absolute tagContent">artigo</div>
                       </div>
                       <div class="detalhes">
