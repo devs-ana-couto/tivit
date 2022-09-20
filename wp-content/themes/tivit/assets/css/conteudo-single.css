@@ -3,14 +3,20 @@
   line-height: 18px;
   font-weight: 400;
   color: #fff;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .conteudo {
-  padding: 70px 0; }
-  .conteudo .autor {
-    margin: 0 0 20px 0; }
-    .conteudo .autor h3 {
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 400;
-      margin-top: 20px; }
+  padding: 70px 0;
+}
+.conteudo .autor {
+  margin: 0 0 20px 0;
+}
+.conteudo .autor h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=conteudo-single.css.map */
