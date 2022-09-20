@@ -70,8 +70,8 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                             <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
                                                             </div>
                         </div>
-                        <div class="row gx-0 h-100 justify-content-between">
-                            <div class="col-12 col-lg-4 box-infos p-4 p-lg-5">
+                        <div class="row d-flex gx-0 h-100 justify-content-between">
+                            <div class="col-12 col-lg-4 box-infos p-lg-5 order-2 order-lg-1">
                                 <div class="container h-100 case-infos d-flex align-items-end">
                                     <div class="row justify-content-start align-items-end">
                                         <div class="col-12 n-acao">
@@ -95,8 +95,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-12 col-lg-8 box-img" style="background-image: url(\'{image}\'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+                            <div class="col-12 col-lg-8 box-img order-1 order-lg-2" style="background-image: url(\'{image}\'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
                                 <!--<img src=""
                                      class="d-block w-100" alt="...">-->
                             </div>
@@ -129,7 +128,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         $tag_box = "";
         if ($tag_name !== "") {
             $tag_box = '
-            <div class="col-auto box-tags mt-2 mt-lg-2">
+            <div class="col-auto box-tags mt-3 mt-lg-2">
                 <ul class="list-group list-group-horizontal">
                     <li class="list-group-item"><a href="' . $tag_link . '">' . $tag_name . '</a></li>
                 </ul>
@@ -138,7 +137,7 @@ function pb_ac_slide_simple($obj_id, $obj = null, $block, $echo = true)
         }
 
         if ($cta_link !== "") {
-            $cta_box = '<div class="col-12 box-link mt-2 mt-lg-4">
+            $cta_box = '<div class="col-12 box-link mt-3 mt-lg-4">
                                             <a href="' . $cta_link . '">' . $cta_name . '</a>
                                         </div>';
         }

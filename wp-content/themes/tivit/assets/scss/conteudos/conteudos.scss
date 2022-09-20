@@ -219,7 +219,7 @@
 
   .pd {
     padding-bottom: 140px;
-    padding-top: 140px;
+    padding-top: 50px;
 
     @media(max-width: 760px) {
       padding-bottom: 40px;
@@ -302,6 +302,21 @@
 .content {
   width: 100%;
   margin: 12px auto 0 auto;
+  h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #262626;
+    @media (min-width: 991px){
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #262626;
+    }
+  }
 }
 
 h3 {
@@ -453,23 +468,24 @@ h3 {
       color: $cinza-dark-cyber-tivit;
     }
 
-    a {
+    a, button {
       border: 1px solid $cinza-dark-cyber-tivit;
       font-size: 12px;
-      border-radius: 50px;
+      border-radius: 0px;
       padding: 0 13px;
       text-decoration: none;
       color: $cinza-dark-cyber-tivit;
       text-transform: uppercase;
       font-weight: 400;
       margin-right: 7px;
+      &.active, &:hover  {
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+      }
     }
 
-    a.active,
-    a:hover {
-      color: white;
-      background-color: red;
-    }
+
 
     .card-footer {
       padding: 0 var(--bs-card-spacer-x);

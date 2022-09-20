@@ -2176,6 +2176,9 @@ $primary-color: #990017;
 
     .case-infos {
       z-index: 1054;
+      @media screen and (max-width: 991px) {
+        padding: 25px;
+      }
     }
 
     .n-acao {
@@ -2317,6 +2320,9 @@ $primary-color: #990017;
 
   .box-img {
     z-index: 998;
+    @media screen and (max-width: 991px){
+      height: 300px;
+    }
   }
 
   .controlador {
@@ -2426,8 +2432,10 @@ $primary-color: #990017;
   }
 
   .carousel-indicators {
-    bottom: 9rem;
-    right: 40px;
+    top: 360px;
+    right: 0px !important;
+    left: 0px;
+    z-index: 1060;
   }
 
   .box-background-full {
@@ -2435,7 +2443,9 @@ $primary-color: #990017;
   }
 
   .carousel-item {
-    height: 560px;
+    @media screen and (min-width: 992px) {
+      height: 560px;
+    }
   }
 
   .v-mask {

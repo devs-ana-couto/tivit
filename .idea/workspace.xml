@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8ae776-01fc-444a-980c-bf8bf31d7b6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases-old.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/slider-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/slider-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/tivit.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/js/tivit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/json/arquivos.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/json/arquivos.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/a-tivit/a-tivit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/a-tivit/a-tivit.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/cases/cases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/cases/cases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/contato/contato.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/contato/contato.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudo-single/conteudo-single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudo-single/conteudo-single.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudos/conteudos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/conteudos/conteudos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/desdobramentos/desdobramento.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/desdobramentos/desdobramento.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/esg/esg.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/esg/esg.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/home/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/inovacao/inovacao.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/inovacao/inovacao.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/labs/labs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/labs/labs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/lps/tdx-tbanks.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/lps/tdx-tbanks.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/modulos/modulos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/modulos/modulos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/newmenu/_newmenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/newmenu/_newmenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pesquisa/pesquisa.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pesquisa/pesquisa.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pessoas-e-carreiras/pessoas-e-carreiras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/pessoas-e-carreiras/pessoas-e-carreiras.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/post-types/cases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/post-types/cases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes-ativas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes-ativas.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/solucoes/solucoes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/ventures/ventures.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/assets/scss/ventures/ventures.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/cases.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/conteudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/conteudo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/conteudo.relacionado.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/conteudo.relacionado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/portfolio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider-simple.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider-simple.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider.cases.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/page.builder/componentes/ac/slider.cases.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/inc/projetos-esg.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/inc/projetos-esg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/modulos.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/tivit/template-pages/modulos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +78,7 @@
       <workItem from="1663358334636" duration="5888000" />
       <workItem from="1663623668561" duration="8683000" />
       <workItem from="1663689529879" duration="639000" />
-      <workItem from="1663690638143" duration="14823000" />
+      <workItem from="1663690638143" duration="17865000" />
     </task>
     <servers />
   </component>

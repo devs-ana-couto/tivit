@@ -198,7 +198,7 @@
                         data-bs-target="#canvaMenuMobile" aria-controls="canvaMenuMobile">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+                <a class="navbar-brand m-0" href="<?php echo get_site_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px"
                          height="21px" class="logo-brand" alt="Logo Tivit">
                 </a>
@@ -212,7 +212,7 @@
                         <button class="btn-close btn-close-white" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#canvaMenuMobile" aria-controls="offcanvasDarkNavbar">
                         </button>
-                        <a class="navbar-brand" href="<?php echo get_site_url(); ?>"
+                        <a class="navbar-brand m-0" href="<?php echo get_site_url(); ?>"
                            data-anijs="if: DOMContentLoaded, on: document, do: bounceInDown animated">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" width="148px"
                                  height="21px" class="logo-brand" alt="Logo Tivit">
@@ -382,7 +382,7 @@
                                             onclick="closeAllMenu()"></button>
                                 </div>
                                 <div class="col d-flex justify-content-center align-items-center">
-                                    <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
+                                    <a class="navbar-brand m-0" href="<?php echo get_site_url(); ?>">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"
                                              width="148px"
                                              height="21px" class="logo-brand" alt="Logo Tivit">

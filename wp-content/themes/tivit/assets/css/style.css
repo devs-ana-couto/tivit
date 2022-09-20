@@ -8946,7 +8946,7 @@ div {
 }
 .ac_bloco_conteudo .pd {
   padding-bottom: 140px;
-  padding-top: 140px;
+  padding-top: 50px;
 }
 @media (max-width: 760px) {
   .ac_bloco_conteudo .pd {
@@ -9013,6 +9013,23 @@ div {
 .content {
   width: 100%;
   margin: 12px auto 0 auto;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #262626;
+}
+@media (min-width: 991px) {
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #262626;
+  }
 }
 
 h3 {
@@ -9141,10 +9158,10 @@ h3 {
   .assuntos h4 {
     color: #262626;
   }
-  .assuntos a {
+  .assuntos a, .assuntos button {
     border: 1px solid #262626;
     font-size: 12px;
-    border-radius: 50px;
+    border-radius: 0px;
     padding: 0 13px;
     text-decoration: none;
     color: #262626;
@@ -9152,10 +9169,10 @@ h3 {
     font-weight: 400;
     margin-right: 7px;
   }
-  .assuntos a.active,
-.assuntos a:hover {
+  .assuntos a.active, .assuntos a:hover, .assuntos button.active, .assuntos button:hover {
     color: white;
     background-color: red;
+    border: 1px solid red;
   }
   .assuntos .card-footer {
     padding: 0 var(--bs-card-spacer-x);
@@ -12451,6 +12468,11 @@ h3 {
 .slider-projetos .box-infos .case-infos {
   z-index: 1054;
 }
+@media screen and (max-width: 991px) {
+  .slider-projetos .box-infos .case-infos {
+    padding: 25px;
+  }
+}
 .slider-projetos .box-infos .n-acao {
   margin-bottom: 20px;
 }
@@ -12553,6 +12575,11 @@ h3 {
 .slider-projetos .box-img {
   z-index: 998;
 }
+@media screen and (max-width: 991px) {
+  .slider-projetos .box-img {
+    height: 300px;
+  }
+}
 .slider-projetos .controlador {
   bottom: -85%;
 }
@@ -12632,14 +12659,18 @@ h3 {
   bottom: 5rem !important;
 }
 .slider-projetos.solto .carousel-indicators {
-  bottom: 9rem;
-  right: 40px;
+  top: 360px;
+  right: 0px !important;
+  left: 0px;
+  z-index: 1060;
 }
 .slider-projetos.solto .box-background-full {
   z-index: -1;
 }
-.slider-projetos.solto .carousel-item {
-  height: 560px;
+@media screen and (min-width: 992px) {
+  .slider-projetos.solto .carousel-item {
+    height: 560px;
+  }
 }
 .slider-projetos.solto .v-mask {
   height: 100%;
