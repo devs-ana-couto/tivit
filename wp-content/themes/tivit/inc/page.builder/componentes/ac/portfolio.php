@@ -42,18 +42,18 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
         #{css_id} .home-portifolio{
             height: unset !important;
             margin-bottom: unset !important;
-            
+
         }
     </style>
     <section class="container-fluid px-lg-0 portfolio port" id="{css_id}">
     <div class="d-flex justify-content-center bgport position-absolute active"></div>
     <div class="container home-portifolio active" >
         <div class="home-portifolio-image p-0" >
-           
+
             <div class="row row-cols-1">
-            
+
                 <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" >
-                 
+
 
                     <div class="card-img-overlay mask-default">
                     </div>
@@ -78,7 +78,7 @@ function pb_ac_portfolio($obj_id, $obj = null, $block, $echo = true)
                                     <div class="col text-display fadein"><p class="fadein">Somos especialistas em nuvem
                                         e entregamos soluções fim a fim para acelerar jornadas transformacionais em
                                         todos os níveis de maturidade digital.</p><a
-                                            href="https://www.anacouto.com.br/staged/tivit/solucoes/cloud-solutions/"
+                                            href="/solucoes/cloud-solutions/"
                                             class="fadein">Cloud Solutions</a></div>
                                 </div>
                             </div>
