@@ -2317,12 +2317,16 @@ $primary-color: #990017;
   }
 
   .box-img {
+    @media screen and (max-width: 991px) {
+      height: 320px;
+    }
     z-index: 998;
   }
 
   .controlador {
     //bottom: 5rem;
     bottom: -85%;
+
   }
 
   .carousel-control-prev {
@@ -2680,7 +2684,7 @@ $primary-color: #990017;
         color: #FFFFFF;
       }
 
-      h1, .title {
+      h1, h2, h3, h4, h5, h6, .title {
         font-style: normal;
         font-weight: 400;
         font-size: 48px;
@@ -2690,7 +2694,7 @@ $primary-color: #990017;
         margin: 0px;
         @media screen and (max-width: 991px) {
           font-size: 24px;
-          line-height: 38px;
+          line-height: 30px;
         }
 
         strong {

@@ -46,8 +46,8 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
                     <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
                         <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title" 
                         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-                            <p class="desc-title">{cat_page}</p>
-                            <h1 class="title">{title}</h1>
+                            {cat_page}
+                            {title}
                             {cta_box}
                         </div>
                         {html_player}

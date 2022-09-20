@@ -12519,6 +12519,11 @@ h3 {
 .slider-projetos .box-img {
   z-index: 998;
 }
+@media screen and (max-width: 991px) {
+  .slider-projetos .box-img {
+    height: 320px;
+  }
+}
 .slider-projetos .controlador {
   bottom: -85%;
 }
@@ -12799,7 +12804,7 @@ h3 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.header-inner .box-header .box-title h1, .header-inner .box-header .box-title .title {
+.header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6, .header-inner .box-header .box-title .title {
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -12809,12 +12814,12 @@ h3 {
   margin: 0px;
 }
 @media screen and (max-width: 991px) {
-  .header-inner .box-header .box-title h1, .header-inner .box-header .box-title .title {
+  .header-inner .box-header .box-title h1, .header-inner .box-header .box-title h2, .header-inner .box-header .box-title h3, .header-inner .box-header .box-title h4, .header-inner .box-header .box-title h5, .header-inner .box-header .box-title h6, .header-inner .box-header .box-title .title {
     font-size: 24px;
-    line-height: 38px;
+    line-height: 30px;
   }
 }
-.header-inner .box-header .box-title h1 strong, .header-inner .box-header .box-title .title strong {
+.header-inner .box-header .box-title h1 strong, .header-inner .box-header .box-title h2 strong, .header-inner .box-header .box-title h3 strong, .header-inner .box-header .box-title h4 strong, .header-inner .box-header .box-title h5 strong, .header-inner .box-header .box-title h6 strong, .header-inner .box-header .box-title .title strong {
   font-weight: 600;
 }
 .header-inner .player {
