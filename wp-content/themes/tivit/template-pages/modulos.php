@@ -51,13 +51,6 @@
 
     <!-- time line -->
 
-    <section class="container-fluid box-time-line-new">
-        <div class="container">
-            <div class="row">
-
-            </div>
-        </div>
-    </section>
 
     <!--vagas-->
 

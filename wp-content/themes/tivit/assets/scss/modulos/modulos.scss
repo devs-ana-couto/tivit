@@ -6,10 +6,6 @@ section {
   //margin-top: 40px;
 }
 
-.box-time-line-new{
-
-}
-
 .box-vagas {
   padding: 150px 0px 75px 0px;
 
@@ -115,6 +111,11 @@ section {
           text-transform: uppercase;
           color: #FFFFFF;
           padding-left: 0px;
+
+
+        &:focus {
+          box-shadow: unset;
+        }
 
           &:after{
             background: url("../icons/nav/add-white.svg");
@@ -716,7 +717,7 @@ $primary-color: #990017;
         h1, h2, h3, h4, h5, h6, .card-title {
           font-style: normal;
           font-weight: 600;
-          font-size: 48px;
+          font-size: 2.5rem;
           line-height: 48px;
           color: #FE4817;
           margin-bottom: 25px;
@@ -3522,4 +3523,9 @@ a.cta-conteudo2 {
       margin-left: 20px;
     }
   }
+}
+
+.box-mask-cases-new{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
 }

@@ -32,7 +32,9 @@ require_once('componentes/ac/cards.logo.top.php');
 require_once('componentes/ac/portfolio.php');
 require_once('componentes/ac/slider.content.php');
 require_once('componentes/ac/cards.vagas.php');
+require_once('componentes/ac/nossos.contatos.php');
 require_once('componentes/ac/accordion.php');
+require_once('componentes/ac/chama.fim.page.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -166,9 +168,14 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                 case 'gd-ac-cards-vacancies':
                     $return[$layout] = pb_ac_vacancies($obj_id, $obj, $block, $echo);
                     break;
-
                 case 'gd-ac-accordion':
                     $return[$layout] = pb_ac_accordion($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-nossos-canais':
+                    $return[$layout] = pb_ac_nossos_canais($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-ac-chamada-fim-page':
+                    $return[$layout] = pb_ac_chamada_fim_page($obj_id, $obj, $block, $echo);
                     break;
 
 

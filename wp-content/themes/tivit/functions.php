@@ -29,6 +29,9 @@ function prefix_bs5_dropdown_data_attribute($atts, $item, $args)
     return $atts;
 }
 
+
+add_theme_support('post-thumbnails');
+
 /**
  * Função para carregamento de scripts e estilos
  */
@@ -90,6 +93,7 @@ require_once(get_template_directory() . '/inc/clientes.php');
 require_once(get_template_directory() . '/inc/faq.php');
 require_once(get_template_directory() . '/inc/vaga.php');
 require_once(get_template_directory() . '/inc/equipe.php');
+require_once(get_template_directory() . '/inc/projetos-esg.php');
 
 
 // Include ACF (Metabox & Options Pages)

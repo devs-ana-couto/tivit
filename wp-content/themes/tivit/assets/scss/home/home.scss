@@ -1594,6 +1594,9 @@
     .card-img-overlay {
       background-size: cover !important;
       background-repeat: no-repeat !important;
+      @media screen and (max-width: 991px) {
+        opacity: 0.80;
+      }
     }
 
     .box-z-index {
@@ -1606,18 +1609,18 @@
       .mask__links {
         .links__title {
           @media screen and (max-width: 991px) {
-            display: flex;
-            justify-content: center;
+            /*display: flex;
+            justify-content: center;*/
           }
 
           h1, h2, h3, h4, h5, h6, .title {
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 14px;
             line-height: 30px;
             display: flex;
-            align-items: center;
-            text-align: center;
+            /*align-items: center;
+            text-align: center;*/
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
@@ -1643,9 +1646,10 @@
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
-            line-height: 30px;
+            line-height: 36px;
             text-align: center;
-            justify-content: center;
+            justify-content: left;
+            padding-bottom: 5px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
@@ -1686,11 +1690,12 @@
               justify-content: start;
             }
 
+            @media screen and (min-width: 992px) {
+              &:after {
+                content: url('../images/home/icons/arrow-right-red.svg');
+                margin-left: 15px;
 
-            &:after {
-              content: url('../images/home/icons/arrow-right-red.svg');
-              margin-left: 15px;
-
+              }
             }
           }
         }
@@ -1772,13 +1777,15 @@
   .nav-item {
     &.inicial {
       width: auto;
-      h2{
+
+      h2 {
         color: white;
         font-weight: lighter;
         font-size: 18px;
         border: unset;
         text-transform: uppercase;
-        strong{
+
+        strong {
           font-weight: bold;
         }
 

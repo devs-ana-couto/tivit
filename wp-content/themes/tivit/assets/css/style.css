@@ -2625,6 +2625,11 @@ div {
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+@media screen and (max-width: 991px) {
+  .portfolio .portfolio__box .card-img-overlay {
+    opacity: 0.8;
+  }
+}
 .portfolio .portfolio__box .box-z-index {
   z-index: 1055;
 }
@@ -2633,18 +2638,18 @@ div {
 }
 @media screen and (max-width: 991px) {
   .portfolio .portfolio__box .box__mask .mask__links .links__title {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
   }
 }
 .portfolio .portfolio__box .box__mask .mask__links .links__title h1, .portfolio .portfolio__box .box__mask .mask__links .links__title h2, .portfolio .portfolio__box .box__mask .mask__links .links__title h3, .portfolio .portfolio__box .box__mask .mask__links .links__title h4, .portfolio .portfolio__box .box__mask .mask__links .links__title h5, .portfolio .portfolio__box .box__mask .mask__links .links__title h6, .portfolio .portfolio__box .box__mask .mask__links .links__title .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 30px;
   display: flex;
-  align-items: center;
-  text-align: center;
+  /*align-items: center;
+  text-align: center;*/
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -2668,9 +2673,10 @@ div {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 36px;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
+    padding-bottom: 5px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -2713,9 +2719,11 @@ div {
     justify-content: start;
   }
 }
-.portfolio .portfolio__box .box__mask .mask__links .links--a:hover:after, .portfolio .portfolio__box .box__mask .mask__links .links--a.active:after {
-  content: url("../images/home/icons/arrow-right-red.svg");
-  margin-left: 15px;
+@media screen and (min-width: 992px) {
+  .portfolio .portfolio__box .box__mask .mask__links .links--a:hover:after, .portfolio .portfolio__box .box__mask .mask__links .links--a.active:after {
+    content: url("../images/home/icons/arrow-right-red.svg");
+    margin-left: 15px;
+  }
 }
 .portfolio .portfolio__box .box__mask .mask__links .links__cta--geral {
   font-style: normal;
@@ -8961,6 +8969,11 @@ div {
   padding-bottom: 0;
 }
 
+.card-footer {
+  background: transparent;
+  border: none;
+}
+
 .content {
   width: 100%;
   margin: 12px auto 0 auto;
@@ -8975,12 +8988,15 @@ h3 {
   line-height: 28px;
   font-weight: 600;
   margin: 0;
-  color: #262626;
+  color: #fff;
   text-transform: uppercase;
 }
 .ac_bloco_conteudo_escuro p {
-  color: #262626;
+  color: #fff;
   font-size: 12px;
+}
+.ac_bloco_conteudo_escuro span {
+  color: #fff !important;
 }
 
 .ac_bloco_conteudo_escuro p {
@@ -9028,14 +9044,14 @@ h3 {
 }
 
 .ac_bloco_conteudo_escuro .detalhes {
-  margin: 0 auto 21px auto;
+  margin: 20 auto 21px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 400;
 }
 .ac_bloco_conteudo_escuro .detalhes span {
-  color: #262626 !important;
+  color: #fff !important;
   font-size: 12px;
   line-height: 18.25px;
 }
@@ -10746,6 +10762,9 @@ h3 {
   color: #FFFFFF;
   padding-left: 0px;
 }
+.box-accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: unset;
+}
 .box-accordion .accordion .accordion-item .accordion-header .accordion-button:after {
   background: url("../icons/nav/add-white.svg");
   background-size: cover;
@@ -11254,7 +11273,7 @@ h3 {
 .box-big-number .box-cards .card .card-body h1, .box-big-number .box-cards .card .card-body h2, .box-big-number .box-cards .card .card-body h3, .box-big-number .box-cards .card .card-body h4, .box-big-number .box-cards .card .card-body h5, .box-big-number .box-cards .card .card-body h6, .box-big-number .box-cards .card .card-body .card-title {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #FE4817;
   margin-bottom: 25px;
@@ -13470,6 +13489,11 @@ a.cta-conteudo2:hover:after {
   margin-left: 20px;
 }
 
+.box-mask-cases-new {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
 .nav-header-new {
   z-index: 2000;
 }
@@ -13712,7 +13736,7 @@ a.cta-conteudo2:hover:after {
   z-index: 2000;
 }
 #open-solution-menu.show .solution-link-menu, #open-solution-menu.show .solution-link-menu2 {
-  padding: 0px 12px !important;
+  padding: 0px 9px !important;
 }
 #open-solution-menu.show .solution-link-menu a, #open-solution-menu.show .solution-link-menu2 a {
   position: relative;
@@ -13826,7 +13850,7 @@ a.cta-conteudo2:hover:after {
 }
 #open-solution-menu .modal-body .box-list-solutions .textMenu .menu-solucoes-cloud-solutions-container ul li {
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 #open-solution-menu .modal-body .box-list-solutions .textMenu .menu-solucoes-cloud-solutions-container ul li:last-child {
   margin-bottom: 0px;
@@ -13835,21 +13859,28 @@ a.cta-conteudo2:hover:after {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 27px;
   text-transform: uppercase;
+  transition: all 0.5s;
+  line-height: 20px;
   /* Branco */
   color: #FFFFFF;
   /*@media screen and (max-width: 1199px) {
-    &::after {
-      content: url("../icons/navegacao/expand_more_white-right.svg");
-      margin-left: 5px;
-    }
+
   }*/
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   #open-solution-menu .modal-body .box-list-solutions .textMenu .menu-solucoes-cloud-solutions-container ul li a {
-    max-width: 180px;
+    max-width: 200px;
   }
+}
+#open-solution-menu .modal-body .box-list-solutions .textMenu .menu-solucoes-cloud-solutions-container ul li a::after {
+  content: url("../icons/navegacao/expand_more_white-right.svg");
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+#open-solution-menu .modal-body .box-list-solutions .textMenu .menu-solucoes-cloud-solutions-container ul li a:hover::after {
+  margin-left: 10px;
+  transition: all 0.5s;
 }
 
 footer.footer .footer-menu ul li {

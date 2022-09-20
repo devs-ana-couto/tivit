@@ -1,0 +1,44 @@
+<!-- Section Serviços Nuvem -->
+<section class="nuvem-cases-item" style="background: <?=the_field('cor_de_fundo_cloud_cases');?>">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <? if(get_field('chamada_nuvem_services') != ''){  ?>
+                    <h2><?the_field('chamada_nuvem_services')?></h2>
+                <? } ?>
+                <? if(get_field('descricao_nuvem_services') != ''){  ?>
+                    <? the_field('descricao_nuvem_services') ?>
+                <? } ?>
+            </div>
+        </div>
+        <?php
+        // Check rows exists.
+        if( have_rows('servico_nuvem') ):
+            // Loop through rows.
+            for($i=0; have_rows('servico_nuvem'); $i++) : the_row();
+                $icon_url[$i] = get_sub_field('icone');
+                $description[$i] = get_sub_field('texto');
+            ?>
+        <div class="servico-item">
+            <div class="row">
+                <div class="col-12 col-md-2 offset-md-1">
+                    <div class="logo text-center">
+                        <img src="<?=$icon_url[$i];?>" alt="..."></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="box">
+                        <p class="paragrafo3">
+                            <?=$description[$i];?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+            // End loop.
+            endfor;
+            endif;
+        ?>
+    </div>
+</section>

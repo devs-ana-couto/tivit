@@ -29,12 +29,12 @@ if(have_posts()) : while(have_posts()) : the_post();
     ?>
 <section class="conteudo">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
         <div class="autor">
             <h3>Escrito por: <strong><? the_author() ?></strong></h3>
         </div>
-        <? the_content(); ?>
+        <?php the_content(); ?>
       </div>
     </div>
   </div>
@@ -56,29 +56,12 @@ if(have_posts()) : while(have_posts()) : the_post();
   <div class="container hide-mobile">
 
     <div class="row">
-      <?=do_shortcode('[ac-pagina-cases]') ?>
+      <?=do_shortcode('[ac-bloco-conteudo fundo="escuro"]Conteúdos Relacionais[/ac-bloco-conteudo]') ?>
     </div>
 
   </div>
   <!--- End Desktop -->
 </div>
-
-<!-- Section Inovar -->
-<section class="home-pessoas-e-carreiras inovar">
-  <div id="triangle-down"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="home-pessoas-e-carreiras-title">
-          <h2>pronto para inovar?</h2>
-        </div>
-        <div class="botao">
-          <a href="#" class="btn btn-primary">Acesse para saber mais!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <?php
 endwhile; endif;

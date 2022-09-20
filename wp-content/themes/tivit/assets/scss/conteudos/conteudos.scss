@@ -294,6 +294,10 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.card-footer{
+  background: transparent;
+  border: none;
+}
 
 .content {
   width: 100%;
@@ -310,12 +314,15 @@ h3 {
     line-height: 28px;
     font-weight: 600;
     margin: 0;
-    color: #262626;
+    color: #fff;
     text-transform: uppercase;
   }
   p {
-    color: #262626;
+    color: #fff;
     font-size: 12px;
+  }
+  span{
+    color: #fff !important;
   }
 }
 
@@ -373,14 +380,14 @@ h3 {
 
 .ac_bloco_conteudo_escuro {
   .detalhes {
-    margin: 0 auto 21px auto;
+    margin: 20 auto 21px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
 
     span {
-      color: #262626 !important;
+      color: #fff !important;
       font-size: 12px;
       line-height: 18.25px;
     }

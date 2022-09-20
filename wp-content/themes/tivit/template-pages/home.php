@@ -18,7 +18,7 @@
                         $cta_text[$i] = get_sub_field("slider-cta-text");
                         ?>
                         <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
-                            <div class="content position-relative">
+                            <div class="content position-relative mt-0">
                                 <img class="maskImg hide-mobile w-100" src="<?= $banner_desktop_url[$i] ?>"
                                      alt="Imagem do Slider"/>
                                 <img class="mask"
@@ -170,12 +170,11 @@
                 </div>-->
                 <div class="row row-cols-1">
                     <?php
-                    $mascara = "";
-                    if ($detect->isMobile()) {
+                   /* if ($detect->isMobile()) {
                         $mascara = get_template_directory_uri() . "/assets/images/home/portmaskmobile.svg";
                     } else {
-                        $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
-                    }
+                    }*/
+                    $mascara = get_template_directory_uri() . "/assets/images/home/mascara_banner.svg";
                     ?>
                     <div class="col-12 portfolio__box position-relative" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <!--<div class="d-flex justify-content-center w-100">
@@ -259,7 +258,7 @@
         </div>
     </section>
 
-    <div id="contentTdx" class="home-content content-inovacao">
+    <div id="contentTdx" class="home-content content-inovacao"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <?= do_shortcode('[ac-bloco-conteudo fundo="escuro"]Nossos conteúdos[/ac-bloco-conteudo]'); ?>
     </div>
 
@@ -276,29 +275,10 @@
         </div>
     </div>
 
-    <!--<section class="pessoasCarreiras">
-        <div class="d-flex justify-content-center transCarreiras position-absolute hide-mobile"></div>
-        <div class="d-flex justify-content-center home-pessoas-e-carreiras">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="home-pessoas-e-carreiras-title">
-                            <?php the_field('texto_pc') ?>
-                        </div>
-                        <div class="botao">
-                            <a href="<?php /*the_field('url_cta_pc') */?>"><?php /*the_field('texto_cta_pc') */?></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <section class="container-fluid box-chamada-pagina"
+    <section class="container-fluid box-chamada-pagina position-relative"
              style="background-color: ;
                      background-image: url('<?php the_field('background_desktop_pc'); ?>');
                      background-repeat: no-repeat; background-size: cover; background-position: center center;">
-
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8 box-title px-lg-0 d-flex align-items-center justify-content-center flex-column fadeInUp animated"
@@ -314,6 +294,7 @@
                 </div>
             </div>
         </div>
+        <div class="card-img-overlay box-mask-cases-new"></div>
     </section>
 
     <section class="container-fluid px-lg-0 box-nosso-clientes"

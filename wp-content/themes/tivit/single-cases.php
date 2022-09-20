@@ -6,16 +6,16 @@ if(have_posts()) : while(have_posts()) : the_post();
 ?>
 
 <!-- Hero banner-->
-<section class="banner-cases-item">
+<section class="banner-cases-item position-relative">
     <div class="case-item-background" style="background: url('<? $detect->isMobile() ? the_field('banner_mobile') : the_field('banner_desktop'); ?>') no-repeat center center; background-size: cover;display: flex; align-items: center;">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5">
-                    <div class="case-item-content">
+                <div class="col-12 col-md-5" style="z-index: 1054">
+                    <div class="case-item-content" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <h2>Cliente: <strong><? the_field('nome_do_cliente'); ?></strong></h2>
                         <h1><?php the_title(); ?></h1>
                     </div>
-                    <div class="case-item-logos">
+                    <div class="case-item-logos" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <div class="row">
                             <div class="col-4 col-md-3">
                                 <img src="<? the_field('logo_01'); ?>" alt="">
@@ -29,6 +29,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             </div>
         </div>
     </div>
+    <div class="card-img-overlay box-mask-cases-new"></div>
 </section>
 
 <?
