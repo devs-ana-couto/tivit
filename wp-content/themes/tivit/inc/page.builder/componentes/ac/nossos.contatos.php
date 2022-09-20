@@ -56,6 +56,19 @@ function pb_ac_nossos_canais($obj_id, $obj = null, $block, $echo = true)
     <div class="contato-canais" id="contato-canais-{css_id}">
         <div class="container">
             <div class="row">
+<<<<<<< HEAD
+                <div class="col-12" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    {title_container}
+                </div>
+                <div class="col-12 col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="borda">
+                        <div class="contato-canais-item">
+                            <p><img src="' . get_template_directory_uri() . '/assets/images/contato/phone.svg" alt="Telefone">{c_telefone}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+=======
                 <div class="col-12">
                     {title_container}
                 </div>
@@ -67,6 +80,7 @@ function pb_ac_nossos_canais($obj_id, $obj = null, $block, $echo = true)
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
+>>>>>>> main
                     <div class="borda socials">
                         {t_instagram}
                         {t_linkedin}
@@ -86,9 +100,15 @@ function pb_ac_nossos_canais($obj_id, $obj = null, $block, $echo = true)
             array('{id}', '{title_container}', '{css_id}', '{padding_top}', '{padding_bottom}', '{padding_top_mobile}', '{padding_bottom_mobile}','{background}', '{color_link_text_color}','{c_telefone}', '{t_instagram}', '{t_linkedin}', '{t_facebook}', '{t_twitter}', '{t_youtube}'
             ),
             array($obj_id, $c_title, $css_id, $c_padding_top, $c_padding_bottom,
+<<<<<<< HEAD
+                $c_padding_top_mobile, $c_padding_bottom_mobile, $c_background, $c_color_link_text_color, $c_telefone, $t_instagram, $t_linkedin, $t_facebook, $t_twitter, $t_youtube),
+            $template
+        );
+=======
             $c_padding_top_mobile, $c_padding_bottom_mobile, $c_background, $c_color_link_text_color, $c_telefone, $t_instagram, $t_linkedin, $t_facebook, $t_twitter, $t_youtube),
             $template
             );
+>>>>>>> main
 
     if ($echo) {
         echo $generate_element;
