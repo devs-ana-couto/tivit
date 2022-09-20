@@ -9,17 +9,21 @@ function buscaDados() {
     var navLink = menuCat.querySelector(".nav-link.active");
 
     var categoryOnly = navLink.getAttribute("id");
-    var xhr = new XMLHttpRequest;
+    // var xhr = new XMLHttpRequest;
 
     preparaBusca();
     defineTitle(navLink.getAttribute("id"));
 
-    xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
-    xhr.addEventListener("load", function () {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            var dados = JSON.parse(response);
-
+    // xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
+    // xhr.addEventListener("load", function () {
+        // if (xhr.status === 200) {
+            // var response = xhr.responseText;
+            var response = jQuery('#projeto_json').val();
+    // console.log(projeto_json_txt);
+    // console.log(response);
+            // var dados = JSON.parse(response);
+    var dados = projeto_json_txt;
+    console.log(dados);
             var indexDados = 0;
             var indexArticle = 0;
             var indexRow = 0;
@@ -46,10 +50,10 @@ function buscaDados() {
                     indexDados++
                 }
             });
-        }
-    });
+        // }
+    // });
 
-    xhr.send();
+    // xhr.send();
 
 }
 
@@ -112,28 +116,27 @@ function defineAtivo(menu) {
 function defineTitle(menuAtivo) {
     var boxArticle = document.querySelector(".box-article-slider")
     var titleArticle = boxArticle.querySelector("#title-articles-slider");
-
-    var title;
-    switch (menuAtivo) {
-        case 'cultura-responsabilidade' :
-            title = "outros projetos culturais e de responsabilidade social"
-            break;
-        case 'ambientais':
-            title = "outros projetos ambientais"
-            break;
-        case 'diversidade':
-            title = "outros projetos de diversidade"
-            break;
-        case 'capacitacao':
-            title = "outros projetos de capacitação"
-            break;
-        case 'educacao':
-            title = "outros projetos de Educação"
-            break;
-        default:
-            title = "Outros Projetos";
-            break;
-    }
+    var title = jQuery('#desc-' + menuAtivo).val();
+    // switch (menuAtivo) {
+    //     case 'cultura-responsabilidade' :
+    //         title = "outros projetos culturais e de responsabilidade social"
+    //         break;
+    //     case 'ambientais':
+    //         title = "outros projetos ambientais"
+    //         break;
+    //     case 'diversidade':
+    //         title = "outros projetos de diversidade"
+    //         break;
+    //     case 'capacitacao':
+    //         title = "outros projetos de capacitação"
+    //         break;
+    //     case 'educacao':
+    //         title = "outros projetos de Educação"
+    //         break;
+    //     default:
+    //         title = "Outros Projetos";
+    //         break;
+    // }
     titleArticle.classList.add("right-to-left");
     titleArticle.classList.remove("right-to-left");
     titleArticle.classList.add("fadein");

@@ -168,6 +168,13 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                 case 'gd-ac-cards-vacancies':
                     $return[$layout] = pb_ac_vacancies($obj_id, $obj, $block, $echo);
                     break;
+<<<<<<< HEAD
+=======
+                case 'gd-ac-nossos-canais':
+                    $return[$layout] = pb_ac_nossos_canais($obj_id, $obj, $block, $echo);
+                    break;
+
+>>>>>>> main
                 case 'gd-ac-accordion':
                     $return[$layout] = pb_ac_accordion($obj_id, $obj, $block, $echo);
                     break;
