@@ -184,7 +184,8 @@ if (!function_exists('projetos_esg')) {
                 'link' => $dados[$x]['link'],
             );
         }
-        $saida .= '<input type="hidden" id="projeto_json" name="projeto_json" value="'.json_encode($pjson).'" />';
+        // $saida .= '<input type="hidden" id="projeto_json" name="projeto_json" value="'.json_encode($pjson).'" />';
+        $saida .= '<input type="hidden" id="projeto_mascara" name="projeto_mascara" value="'.get_template_directory_uri().'/assets/images/modulos/categoria-slider/mask-slider.svg">';
         $saida .= '<script type="text/javascript" id="contact-form-7-js-extra">';
         $saida .= '/* <![CDATA[ */';
         $saida .= 'var projeto_json_txt = '.json_encode($pjson).';';

@@ -9,16 +9,17 @@ function buscaDados() {
     var navLink = menuCat.querySelector(".nav-link.active");
 
     var categoryOnly = navLink.getAttribute("id");
-    var xhr = new XMLHttpRequest;
+    // var xhr = new XMLHttpRequest;
 
     preparaBusca();
-    defineTitle(navLink.getAttribute("id"));
+    // defineTitle(navLink.getAttribute("id"));
 
-    xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
-    xhr.addEventListener("load", function () {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            var dados = JSON.parse(response);
+    // xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
+    // xhr.addEventListener("load", function () {
+        // if (xhr.status === 200) {
+            // var response = xhr.responseText;
+            // var dados = JSON.parse(response);
+            var dados = projeto_json_txt;
 
             var indexDados = 0;
             var indexArticle = 0;
@@ -46,10 +47,10 @@ function buscaDados() {
                     indexDados++
                 }
             });
-        }
-    });
+        // }
+    // });
 
-    xhr.send();
+    // xhr.send();
 
 }
 
@@ -181,7 +182,8 @@ function montaSlider(dados, index) {
     rowMask.appendChild(vmask);
 
     var mask = document.createElement("img");
-    var urlMask = "https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/modulos/categoria-slider/mask-slider.svg";
+    // var urlMask = "https://www.anacouto.com.br/staged/tivit/wp-content/themes/tivit/assets/images/modulos/categoria-slider/mask-slider.svg";
+    var urlMask = jQ('#projeto_mascara').val();
     mask.setAttribute("src", urlMask);
     mask.classList.add("w-100")
     mask.classList.add("img-fluid")
