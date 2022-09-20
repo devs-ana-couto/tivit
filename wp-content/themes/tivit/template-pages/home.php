@@ -18,7 +18,7 @@
                         $cta_text[$i] = get_sub_field("slider-cta-text");
                         ?>
                         <div class="carousel-item heroslide <?= $i == 0 ? 'active' : '' ?>">
-                            <div class="content position-relative mt-0">
+                            <div class="content position-relative">
                                 <img class="maskImg hide-mobile w-100" src="<?= $banner_desktop_url[$i] ?>"
                                      alt="Imagem do Slider"/>
                                 <img class="mask"
