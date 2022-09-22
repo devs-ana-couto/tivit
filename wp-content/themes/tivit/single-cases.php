@@ -415,10 +415,10 @@ if(have_posts()) : while(have_posts()) : the_post();
   <!-- //Middle Content -->
 
   <!-- Stratregy -->
-  <div id="strategy">
+  <!--<div id="strategy">
 
-    <?
-        if($clouds_order == 5) {
+    <?php
+/*        if($clouds_order == 5) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
             }
@@ -491,12 +491,12 @@ if(have_posts()) : while(have_posts()) : the_post();
                 include get_template_directory() . $external_links_cases;
             }
         }
-    ?>
-    </div>
+    */?>
+    </div>-->
     <!-- //Stratregy  -->
 
   <!-- Depoiments -->
-    <?
+    <?php
         if($clouds_order == 6) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -571,7 +571,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 7) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -646,7 +646,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 8) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -721,7 +721,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 9) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -798,7 +798,7 @@ if(have_posts()) : while(have_posts()) : the_post();
         }
     ?>
 
-    <?
+    <?php
         if($clouds_order == 10) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -873,7 +873,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 11) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -948,7 +948,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 12) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1023,7 +1023,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 13) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1098,7 +1098,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 14) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1173,7 +1173,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 15) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1248,7 +1248,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 16) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1323,7 +1323,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             }
         }
     ?>
-    <?
+    <?php
         if($clouds_order == 17) {
             if(get_field('exibir_clouds') == true){
                 include get_template_directory() . $clouds;
@@ -1401,11 +1401,13 @@ if(have_posts()) : while(have_posts()) : the_post();
     <!-- //Depoiments  -->
 
     <!-- Content -->
-    <?
+    <?/*
       include get_template_directory() . $content_page;
-    ?>
+    */?>
     <!-- //Content  -->
 </section>
+    <?php echo do_shortcode('[ac-pagina-cases fundo="escuro" quantidade="6" vejamais=false]CASES RELACIONADOS[/ac-pagina-cases]'); ?>
+
 
 <?php
 endwhile; endif;

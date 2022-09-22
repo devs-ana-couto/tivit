@@ -320,13 +320,13 @@ if (!function_exists('ac_bloco_conteudo')) {
         $saida .= '<div class="title"><h2 class="titleText text-center">' . $content . '</h2></div>';
 
         if ($vejamais) {
-            $saida .= '<div class="row">';
-            $saida .= '<div class="col-12">';
+            $saida .= '<div class="row justify-content-center">';
+            $saida .= '<div class="col-auto">';
             $saida .= '<div class="assuntos">';
-            $saida .= '<h4>' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
-            $saida .= '<a href="#" class="active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</a>';
+            $saida .= '<h4 class="text-center text-uppercase">' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
             foreach ($categoria_lista as $chave => $valor) {
-                $saida .= '<a href="#" class="conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</a>';
+                $saida .= '<button type="button" class="btn conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</button>';
             }
             $saida .= '</div>'; //.assuntos
             $saida .= '</div>'; //.col
@@ -343,24 +343,24 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $categorias[] = $categoria;
                 }
             }
-            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="col-12 col-md-4" >';
+            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="img position-relative">';
+            $saida .= '<div class="img position-relative"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
             $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
             $saida .= '</div>'; //.img
-            $saida .= '<div class="card-body">';
+            $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '</div>'; //.card-body
-            $saida .= '<div class="card-footer">';
-            $saida .= '<div class="acessar">' . __('ver mais', 'tivit') . '</div>';
+            $saida .= '<div class="card-footer box-link-cta">';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
             $saida .= '</div>';
             $saida .= '</div>'; //.card
-            $saida .= '</a>'; //.col-12
+            $saida .= '</div>';
         }
         $saida .= '</div>'; //.row
 
@@ -704,7 +704,7 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b> 1111111111' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
@@ -772,7 +772,7 @@ if (!function_exists('ac_pagina_conteudo')) {
                 }
             }
             $saida .= '<div class="carousel-item heroslide4 content active">';
-            $saida .= '<div class="col-11 m-0 p-0">';
+            $saida .= '<div class="col-12 m-0 p-0">';
             $saida .= '<div class="cardContent p-2">';
             $saida .= '<div class="img position-relative">';
             $saida .= '<img src="' . $dados[$ac]['bhmobile'] . '" alt="Depoimento">';
