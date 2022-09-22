@@ -68,11 +68,11 @@
           <? if(get_field('facebook', 'option') != ""){?>
             <a href="<? the_field('facebook', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/facebook-red.svg" alt="Facebook"></a>
           <? } ?>
-          
+
           <? if(get_field('twitter', 'option') != ""){?>
             <a href="<? the_field('twitter', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/twitter-red.svg" alt="Twitter"></a>
           <? } ?>
-          
+
           <? if(get_field('youtube', 'option') != ""){?>
             <a href="<? the_field('youtube', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/social/youtube-red.svg" alt="Youtube"></a>
           <? } ?>
@@ -111,6 +111,8 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tdx.svg" width="68.28px" height="30px" alt="Tdx Tivit">
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tivit-labs.svg" width="188.4" height="18px" alt="Tivit Labs">
+
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" width="174" height="55" alt="Sensr.it">
 
         </div>
 

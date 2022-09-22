@@ -982,3 +982,7 @@ function closeAllMenu(){
     var backdrop = document.querySelector(".offcanvas-backdrop");
     backdrop.classList.remove('show');
 }
+
+function redirect_article(url){
+    window.location.href = url;
+}
