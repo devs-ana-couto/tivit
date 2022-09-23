@@ -112,7 +112,7 @@
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tivit-labs.svg" width="188.4" height="18px" alt="Tivit Labs">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" width="135px" height="55" alt="Sensr.it">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" height="30px"  alt="Sensr.it">
 
         </div>
 

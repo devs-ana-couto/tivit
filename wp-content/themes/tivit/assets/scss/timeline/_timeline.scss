@@ -1,0 +1,194 @@
+.timeline-new {
+  padding: 150px 0px;
+
+  .preview-timeline {
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.img-left {
+      background-position: right;
+
+    }
+
+    &.img-right {
+      background-position: left;
+    }
+
+    .preview-mask {
+      background: linear-gradient(2.11deg, #000000 4.05%, rgba(0, 0, 0, 0.3) 43.72%);
+    }
+  }
+
+
+  .row-active {
+    .active {
+      height: 300px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 1399px) {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+      @media screen and (min-width: 991px) and (max-width: 1399px) {
+        height: 450px;
+        background-position: top center;
+      }
+      @media screen and (min-width: 1400px) {
+        position: absolute;
+        top: 0;
+        height: 570px;
+        -webkit-mask-image: url('../images/timeline/mask.svg');
+        mask-image: url('../images/timeline/mask.svg');
+        mask-size: cover !important;
+        -webkit-mask-size: contain !important;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      //background: green;
+      @media screen and (min-width: 1400px) {
+        .v-shadow {
+          background: url("../images/timeline/v-shadow.svg");
+          background-size: contain;
+        }
+        .mask-red {
+          background: url("../images/timeline/mask-red.svg");
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          display: flex;
+          align-items: end;
+          justify-content: center;
+
+          p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 55px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 45px;
+          }
+        }
+      }
+    }
+
+    &.row-desc {
+      @media screen and (min-width: 1400px) {
+        position: absolute;
+        left: 50%;
+      }
+
+      .desc-active {
+        p {
+          width: 390px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+
+          color: #FFFFFF;
+
+        }
+      }
+    }
+  }
+
+  .controller {
+    height: 280px;
+    background: black;
+    @media screen and (max-width: 1399px) {
+      height: 165px;
+      .desc-active{
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          /* or 138% */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .box-controller {
+      top: 165px;
+
+      button {
+        position: relative;
+
+        &.last {
+          margin-right: 100px;
+          border: none;
+          padding: 0px;
+
+        }
+
+        &.next {
+          margin-left: 80px;
+          border: none;
+          padding: 0px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1399px) {
+      &.mobile {
+        height: 75px;
+
+        .mask-red {
+          background: url("../images/timeline/mask-red.svg");
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 90px;
+          z-index: 1054;
+          p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+          }
+        }
+
+        .box-controller {
+          top: unset;
+
+          button {
+            position: relative;
+            z-index: 1600;
+
+            &.last {
+              margin-right: unset;
+              border: none;
+              padding: 0px;
+
+            }
+
+            &.next {
+              margin-left: unset;
+              border: none;
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

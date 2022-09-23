@@ -354,11 +354,12 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
             $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
-            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '</div>'; //.card-body
-            $saida .= '<div class="card-footer box-link-cta">';
+            $saida .= '<div class="content px-0 pt-2"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            $saida .= '<div class="box-link-cta px-0 py-2">';
             $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
             $saida .= '</div>';
+            $saida .= '</div>'; //.card-body
+
             $saida .= '</div>'; //.card
             $saida .= '</div>';
         }

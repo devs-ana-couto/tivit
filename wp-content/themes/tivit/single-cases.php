@@ -1406,7 +1406,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     */?>
     <!-- //Content  -->
 </section>
-    <?php echo do_shortcode('[ac-pagina-cases fundo="escuro" quantidade="6" vejamais=false]CASES RELACIONADOS[/ac-pagina-cases]'); ?>
+    <?php echo do_shortcode('[ac-pagina-cases fundo="escuro" quantidade="3" vejamais=false]CASES RELACIONADOS[/ac-pagina-cases]'); ?>
 
 
 <?php

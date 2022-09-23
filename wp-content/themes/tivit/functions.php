@@ -55,6 +55,7 @@ function load_scripts()
     wp_enqueue_script('tivit-carousel', get_template_directory_uri() . '/assets/js/tivit-carousel.js', array(), '1.0.0', true);
     wp_enqueue_script('tivit', get_template_directory_uri() . '/assets/js/tivit.js', array(), '1.0.0', true);
     wp_enqueue_script('tivit-slider-categoria', get_template_directory_uri() . '/assets/js/slider-ajax.js', array(), '1.0.0', true);
+    wp_enqueue_script('tivit-timeline', get_template_directory_uri() . '/assets/js/tivit-timeline.js', array(), '1.0.0', true);
 
     /*=================================
       Registro de ajax

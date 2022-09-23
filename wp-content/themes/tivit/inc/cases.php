@@ -435,15 +435,16 @@ if (!function_exists('ac_pagina_cases')) {
             /*$saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';*/
             $saida .= '</div>'; //.img
             $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
-            /*$saida .= '<div class="detalhes">';
-            $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>'; //.detalhes*/
+            $saida .= '<div class="detalhes">';
+            /*$saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';*/
+            $saida .= '<p class="m-0 h-100"> Cliente: <strong>' . $dados[$ac]['cliente'] . '</strong></p>';
+            $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '</div>'; //.card-body
-            $saida .= '<div class="card-footer box-link-cta">';
+            $saida .= '<div class="box-link-cta px-0 py-2">';
             $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
             $saida .= '</div>';
+            $saida .= '</div>'; //.card-body
+
             $saida .= '</div>'; //.card
             $saida .= '</div>';
         }
