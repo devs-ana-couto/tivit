@@ -35,6 +35,7 @@ require_once('componentes/ac/cards.vagas.php');
 require_once('componentes/ac/nossos.contatos.php');
 require_once('componentes/ac/accordion.php');
 require_once('componentes/ac/chama.fim.page.php');
+require_once('componentes/ac/timeline.php');
 
 require_once('componentes/bloco.conteudo.php');
 require_once('componentes/bloco.conteudo.simples.php');
@@ -176,6 +177,10 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
                     break;
                 case 'gd-ac-chamada-fim-page':
                     $return[$layout] = pb_ac_chamada_fim_page($obj_id, $obj, $block, $echo);
+                    break;
+
+                case 'gd-gl-timeline':
+                    $return[$layout] = pb_ac_timeline($obj_id, $obj, $block, $echo);
                     break;
 
 

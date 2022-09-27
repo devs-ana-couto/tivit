@@ -253,59 +253,13 @@ if (!function_exists('ac_bloco_home_cases')) {
         $dados = ac_cases_listar($arg);
 
         $saida = "";
-        $saida .= '<div class="col-12 d-none">';
-        $saida .= '<div id="labs" class="carousel slide position-relative " id="casesNew" data-bs-ride="carousel">';
-        /*$saida .= '<div class="carousel-indicators">';
-        foreach ($dados as $key => $dado){
-            $saida = '<button type="button" data-bs-target="#casesNew" data-bs-slide-to="' . $key  .'" class="active" aria-current="true" aria-label="Slide 1"></button>';
-        }
-        $saida .= '</div>';*/
-        $saida .= '<div class="carousel-inner" role="listbox">';
-        for ($ac = 0; $ac < count($dados); $ac++) {
-            $categorias = array();
-            $cat_aux = $dados[$ac]['categorias'];
-            if (is_array($cat_aux) || is_object($cat_aux)) {
-                foreach ($cat_aux as $categoria) {
-                    $categorias[] = $categoria;
-                }
-            }
-            $etiquetas = array();
-            $etq_aux = $dados[$ac]['etiquetas'];
-            if (is_array($etq_aux) || is_object($etq_aux)) {
-                foreach ($etq_aux as $etiqueta) {
-                    $etiquetas[] = $etiqueta->name;
-                }
-            }
-            $saida .= '<div class="carousel-item heroslide2 ' . ($ac == 0 ? 'active' : '') . '">';
-            $saida .= '<div class="row">';
-            $saida .= '<div class="col-12">';
-            $saida .= '<div class="cardCases bg1 m-2 position-relative">';
-            $saida .= '<div class="overlay"></div>';
-            $saida .= '<img class="w-100 h-100 img-fluid" src="' . $dados[$ac]['bgmobile'] . '" alt="backgroundcase1">';
-            $saida .= '<div class="textCase">';
-            $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
-            $saida .= '<p>' . $dados[$ac]['titulo']. '</p>';
-            $saida .= '<div class="w-100 d-flex text-left">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">VER MAIS</a>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-            $saida .= '</div>';
-
-        }
-        $saida .= '</div>';
-
-        $saida .= '</div>';
-        $saida .= '</div>';
 
         $saida .= '<div class="home-cases-content left text-center">';
-        $saida .= '<div class="row justify-content-center">';
-        $saida .= '<div class="d-flex customContainer">';
+        $saida .= '<div class="row d-flex justify-content-center">';
+        $saida .= '<div class="d-flex flex-wrap customContainer">';
 
         for ($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+            $saida .= '<div class="col-12 col-lg-4" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="card border-0 cardCases bg1 m-3 position-relative" style="background-image: url(\'' . $dados[$ac]['bgdesktop'] . ' \')">';
             $saida .= '<div class="card-img-overlay overlay d-flex align-content-end flex-wrap">';
             $saida .= '<div class="card-body border-0 p-0  ">';
@@ -465,7 +419,7 @@ if (!function_exists('ac_pagina_cases')) {
         }
 
 
-        $saida .= '<div class="row hide-mobile ac_bloco_conteudo_resultado">';
+        $saida .= '<div class="row ac_bloco_conteudo_resultado">';
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
@@ -474,57 +428,28 @@ if (!function_exists('ac_pagina_cases')) {
                     $categorias[] = $categoria;
                 }
             }
-            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0">';
-            $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
-            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+            $saida .= '<div class="img position-relative"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
+            /*$saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';*/
             $saida .= '</div>'; //.img
-            $saida .= '<div class="card-body">';
+            $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="detalhes">';
-            $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            /*$saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';*/
+            $saida .= '<p class="m-0 h-100"> Cliente: <strong>' . $dados[$ac]['cliente'] . '</strong></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '<div class="acessar">' . __('ver mais', 'tivit') . '</div>';
+            $saida .= '<div class="box-link-cta px-0 py-2">';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
+            $saida .= '</div>';
             $saida .= '</div>'; //.card-body
+
             $saida .= '</div>'; //.card
-            $saida .= '</a>'; //.col-12
+            $saida .= '</div>';
         }
         $saida .= '</div>'; //.row
 
-        // MOBILE
-        $saida .= '<div class="row mx-auto my-auto justify-content-center hide-desktop" arua-hidden="true" style="background-color:'.$cor_fundo.';">';
-        $saida .= '<div id="contentMobileCarousel" class="carousel slide p-0" data-bs-ride="carousel">';
-        $saida .= '<div class="carousel-inner ac_bloco_conteudo_resultado_mobile" role="listbox">';
-        for ($ac = 0; $ac < count($dados); $ac++) {
-            $categorias = array();
-            $cat_aux = $dados[$ac]['categorias'];
-            if ((is_array($cat_aux)) && (count($cat_aux) > 0)) {
-                foreach ($cat_aux as $categoria) {
-                    $categorias[] = $categoria;
-                }
-            }
-            $saida .= '<div class="carousel-item heroslide4 content ' . ($ac == 0 ? 'active' : '') . '">';
-            $saida .= '<div class="col-12 m-0 p-0">';
-            $saida .= '<div class="cardContent p-2 h-100">';
-            $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="' . $dados[$ac]['bhmobile'] . '" alt="' . $dados[$ac]['titulo'] . '">';
-            $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
-            $saida .= '</div>'; //.img
-            $saida .= '<div class="detalhes">';
-            $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>'; //.detalhes
-            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('ver mais', 'tivit') . '</a></div>';
-            $saida .= '</div>'; //.cardContent
-            $saida .= '</div>'; //.col-12
-            $saida .= '</div>'; //.carousel-item
-        }
-        $saida .= '</div>'; //.carousel-inner
-        $saida .= '</div>'; //.carousel
-        $saida .= '</div>'; //.row
 
         if ($vejamais) {
             $saida .= '<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';

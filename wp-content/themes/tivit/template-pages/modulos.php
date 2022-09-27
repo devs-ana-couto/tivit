@@ -49,149 +49,145 @@
     </section>
 
 
-    <!-- time line -->
+    <!-- news -->
 
-    <section class="container-fluid timeline-new" id="timeline-new" >
-        <div class="container" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-
-            <div class="d-none itens-time-line" id="itens-time-line">
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/02.png" alt="">
-                    <div class="data">1991</div>
-                    <div class="desc">1 It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/03.png" alt="">
-                    <div class="data">1992</div>
-                    <div class="desc">2 A Proceda é adquirida e chega com
-                        experiência em missão crítica. É criada a marca TIVIT.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/02.png" alt="">
-                    <div class="data">1993</div>
-                    <div class="desc">3 It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/03.png" alt="">
-                    <div class="data">1994</div>
-                    <div class="desc">4 A Proceda é adquirida e chega com
-                        experiência em missão crítica. É criada a marca TIVIT.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/01.png" alt="">
-                    <div class="data">1995</div>
-                    <div class="desc">5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/02.png" alt="">
-                    <div class="data">1996</div>
-                    <div class="desc">6 It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/03.png" alt="">
-                    <div class="data">1997</div>
-                    <div class="desc">7 A Proceda é adquirida e chega com
-                        experiência em missão crítica. É criada a marca TIVIT.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/02.png" alt="">
-                    <div class="data">1998</div>
-                    <div class="desc">8 It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/03.png" alt="">
-                    <div class="data">1999</div>
-                    <div class="desc">9 A Proceda é adquirida e chega com
-                        experiência em missão crítica. É criada a marca TIVIT.
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/timeline/imagens/01.png" alt="">
-                    <div class="data">2000</div>
-                    <div class="desc">10 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-            </div>
-
-            <div class="row d-xxl-none">
-                <div class="col-12 controller mobile position-relative">
-                    <div class="card-img-overlay mask-red">
-                        <p></p>
-                    </div>
-                    <div class="col-12 h-100 box-controller d-flex justify-content-between align-content-center" style="z-index: 1060; ">
-                        <button type="button" onclick="lastItem()" class="last">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/timeline/arrow_back.svg" alt="">
-                        </button>
-                        <button type="button" onclick="nextItem()" class="next">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/timeline/arrow_forward.svg" alt="">
-                        </button>
-                    </div>
+    <section class="container-fluid box-news-cards dark-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title">
+                    <h3>Nossos conteúdos</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="row justify-content-between">
-                        <div class="col-4 d-none d-xxl-block preview-timeline img-left position-relative">
-                            <div class="card-img-overlay preview-mask"></div>
+                <div class="col-12 box-cards">
+                    <div class="owl-carousel owl-theme owl-news-cards">
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <div class="box-img position-relative">
+                                    <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                         class="card-img-top" alt="">
+                                    <div class="position-absolute tagContent">
+                                        <p>Cybersecurity</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 d-none d-xxl-block preview-timeline img-right position-relative">
-                            <div class="card-img-overlay preview-mask"></div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row justify-content-center row-active">
-                        <div class="col-12 col-xxl-10 active">
-                            <div class="w-100 h-100 d-none d-xxl-block position-relative">
-                                <div class="card-img-overlay v-shadow"></div>
-                                <div class="card-img-overlay mask-red mask-red-desk">
-                                    <p></p>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row d-none d-xxl-flex justify-content-center row-active row-desc">
-                        <div class="col-auto desc-active mt-4">
-                            <p></p>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 controller d-none d-xxl-block">
-                    <div class="row justify-content-center position-relative">
-                        <div class="col-auto position-absolute box-controller" style="z-index: 1060; ">
-                            <button type="button" onclick="lastItem()" class="last">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/timeline/arrow_back.svg" alt="">
-                            </button>
-                            <button type="button" onclick="nextItem()" class="next">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/timeline/arrow_forward.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 controller d-flex d-xxl-none justify-content-center align-content-center flex-wrap">
-                    <div class="col-12 col-lg-10 d-flex justify-content-center desc-active mobile-desc">
-                        <p></p>
-                    </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-auto">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="container-fluid box-news-cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title">
+                    <h3>Nossos conteúdos</h3>
+                </div>
+                <div class="col-12 box-cards dark-theme">
+                    <div class="owl-carousel owl-theme owl-news-cards">
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-auto">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- time line -->
+
 
     <!--vagas-->
 

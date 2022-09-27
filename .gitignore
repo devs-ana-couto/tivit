@@ -50,3 +50,6 @@ xmlrpc.php
 # Ignore the sftp file
 .vscode
 wp-content/themes/tivit/assets/icons/nav/Curso de Viola Caipira - Musixe.torrent
+*.pdf
+wp-content/themes/tivit/assets/images/timeline/acf-export-2022-09-23 (1).json
+wp-content/themes/tivit/assets/images/timeline/acf-export-2022-09-23.json

@@ -237,15 +237,6 @@ if (!function_exists('ac_bloco_conteudo')) {
         $fundo = (isset($atts['fundo'])) ? $atts['fundo'] : 'claro';
         $quantidade = (isset($atts['quantidade'])) ? intval($atts['quantidade']) : 3;
         $vejamais = (isset($atts['vejamais'])) ? $atts['vejamais'] : false;
-
-        $dataAnime = '';
-       if(isset($atts['dataanime']) && isset($atts['dataanimecolor'])
-       && isset($atts['dataanimetedcolor'])){
-            $dataAnime .= 'data-anime="' . $atts['dataanime'] . '" ';
-            $dataAnime .= 'data-anime-color="' . $atts['dataanimecolor'] . '" ';
-            $dataAnime .= 'data-animeted-color="' . $atts['dataanimetedcolor'] . '"';
-
-        }
         if ($quantidade == 0) $quantidade = 3;
         $cor_fundo = ($fundo == 'escuro') ? 'dark-theme' : '';
         if ($vejamais == "true") {
@@ -323,12 +314,12 @@ if (!function_exists('ac_bloco_conteudo')) {
 
         $saida = '';
 
-        $saida .= '<section ' . $dataAnime .' class="container-fluid box-news-cards '. $cor_fundo .'" >';
+        $saida .= '<section class="container-fluid box-news-cards '. $cor_fundo .'">';
         $saida .= '<div class="container">';
-        $saida .= '<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+        $saida .= '<div class="row">';
 
         $saida .= '<div class="col-12 box-title">';
-        $saida .= '<h3>' . $content .'<h3>';
+        $saida .= '<h3>Nossos conteúdos</h3>';
         $saida .= '</div>';
 
         $saida .= '<div class="col-12 box-cards">';
@@ -344,20 +335,22 @@ if (!function_exists('ac_bloco_conteudo')) {
             }
 
             $saida .= '<div class="item">';
-            $saida .= '<div class="card" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<div class="card" onclick="redirect_article(\'http://tivit.local/algoritmos-ia/\')">';
             $saida .= '<div class="box-img position-relative">';
-            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" class="card-img-top" alt="' . $dados[$ac]['titulo'] . '">';
+            $saida .= 'img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                         class="card-img-top" alt="">';
             $saida .= '<div class="position-absolute tagContent">';
-            $saida .= '<p>' . $categorias[0] . '</p>';
+            $saida .= '<p>Cybersecurity</p>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '<div class="card-body">';
             $saida .= '<div class="col-12 d-flex justify-content-between mt-4">';
-            $saida .= '<p class="data">' . $dados[$ac]['postdate'] . '</p>';
-            $saida .= '<p class="author">' . __('Por', 'tivit') . ': <strong>' . $dados[$ac]['quem'] . '</strong></p>';
+            $saida .= '<p class="data">23/09/2022</p>';
+            $saida .= '<p class="author">Por: <strong>Bruno Nogueira</strong></p>';
             $saida .= '</div>';
-            $saida .= '<h5 class="card-title pt-3">' . $dados[$ac]['titulo'] . '</h5>';
-            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn btn-view-more pt-2">Veja mais</a>';
+            $saida .= '<h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>';
+            $saida .= '<a href="#" class="btn btn-view-more pt-2">Veja mais</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -370,6 +363,103 @@ if (!function_exists('ac_bloco_conteudo')) {
 
         $saida .= '</div>';
         $saida .= '</section>';
+
+        $saida .= '<div class="ac_bloco_conteudo ' . $cor_fundo . '">';
+        $saida .= '<div class="ac_bloco_conteudo ' . $cor_fundo . '">';
+        $saida .= '<div class="container pd">';
+        $saida .= '<input id="ac_bloco_conteudo_quantidade" type="hidden" value="' . $quantidade . '">';
+        $saida .= '<input id="ac_bloco_conteudo_pagina" type="hidden" value="1">';
+        $saida .= '<div class="title"><h2 class="titleText text-center">' . $content . '</h2></div>';
+
+        if ($vejamais) {
+            $saida .= '<div class="row justify-content-center">';
+            $saida .= '<div class="col-auto">';
+            $saida .= '<div class="assuntos">';
+            $saida .= '<h4 class="text-center text-uppercase">' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
+            foreach ($categoria_lista as $chave => $valor) {
+                $saida .= '<button type="button" class="btn conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</button>';
+            }
+            $saida .= '</div>'; //.assuntos
+            $saida .= '</div>'; //.col
+            $saida .= '</div>'; //.row
+        }
+
+
+        $saida .= '<div class="row ac_bloco_conteudo_resultado">';
+        for ($ac = 0; $ac < count($dados); $ac++) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if ((is_array($cat_aux)) && (count($cat_aux) > 0)) {
+                foreach ($cat_aux as $categoria) {
+                    $categorias[] = $categoria;
+                }
+            }
+            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+            $saida .= '<div class="img position-relative"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
+            $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
+            $saida .= '</div>'; //.img
+            $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
+            $saida .= '<div class="detalhes">';
+            $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
+            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '</div>'; //.detalhes
+            $saida .= '<div class="content px-0 pt-2"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
+            $saida .= '<div class="box-link-cta px-0 py-2">';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
+            $saida .= '</div>';
+            $saida .= '</div>'; //.card-body
+
+            $saida .= '</div>'; //.card
+            $saida .= '</div>';
+        }
+        $saida .= '</div>'; //.row
+
+        //FECHA COMPONENTE
+        $saida .= '</div>'; //.container
+        $saida .= '</div>'; //.ac_bloco_conteudo
+
+        if ($vejamais) {
+            $saida .= '<script>';
+            $saida .= 'function ac_conteudo_lista_categoria(categ) {';
+            $saida .= 'jQuery(".conteudo_etiqueta").removeClass("active");';
+            $saida .= 'jQuery(".conteudo_etiqueta_"+categ).addClass("active");';
+            $saida .= 'jQuery("#ac_bloco_conteudo_pagina").val("1");';
+            $saida .= 'ac_conteudo_lista();';
+            $saida .= '}';
+            $saida .= 'function ac_conteudo_mais() {';
+            $saida .= 'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
+            $saida .= 'var pag = parseInt(pag) + 1;';
+            $saida .= 'jQuery("#ac_bloco_conteudo_pagina").val(pag);';
+            $saida .= 'ac_conteudo_lista();';
+            $saida .= '}';
+            $saida .= 'function ac_conteudo_lista() {';
+            $saida .= 'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
+            $saida .= 'var qtd = jQuery("#ac_bloco_conteudo_quantidade").val();';
+            $saida .= 'var cat = jQuery(".conteudo_etiqueta.active").attr("data-conteudo");';
+            $saida .= 'var data = {';
+            $saida .= 'action: "ac_pagina_conteudo_pesquisa",';
+            $saida .= 'pagina: pag,';
+            $saida .= 'quantidade: qtd,';
+            $saida .= 'categoria: cat,';
+            $saida .= '};';
+            $saida .= 'jQuery.post(referenciaTivit.tivitAjaxUrl, data, function (response) {';
+            $saida .= 'var returnedData = JSON.parse(response);';
+            $saida .= 'if (pag==1) {';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado").html(returnedData[0]);';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado_mobile").html(returnedData[1]);';
+            $saida .= '} else {';
+            $saida .= 'var c1 = jQuery(".ac_bloco_conteudo_resultado").html();';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado").html(c1 + returnedData[0]);';
+            $saida .= 'var c2 = jQuery(".ac_bloco_conteudo_resultado_mobile").html();';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado_mobile").html(c2 + returnedData[1]);';
+            $saida .= '}';
+            $saida .= '});';
+            $saida .= '}';
+            $saida .= '</script>';
+        }
 
         return $saida;
     }
@@ -461,6 +551,56 @@ if (!function_exists('ac_bloco_page_conteudo')) {
         // print_r($categoria_lista);
 
         $saida = '';
+
+        $saida .= '<section class="container-fluid box-news-cards '. $cor_fundo .'">';
+        $saida .= '<div class="container">';
+        $saida .= '<div class="row">';
+
+        $saida .= '<div class="col-12 box-title">';
+        $saida .= '<h3>Nossos conteúdos</h3>';
+        $saida .= '</div>';
+
+        $saida .= '<div class="col-12 box-cards">';
+        $saida .= '<div class="owl-carousel owl-theme owl-news-cards">';
+
+        for ($ac = 0; $ac < count($dados); $ac++) {
+            $categorias = array();
+            $cat_aux = $dados[$ac]['categorias'];
+            if ((is_array($cat_aux)) && (count($cat_aux) > 0)) {
+                foreach ($cat_aux as $categoria) {
+                    $categorias[] = $categoria;
+                }
+            }
+
+            $saida .= '<div class="item">';
+            $saida .= '<div class="card" onclick="redirect_article(\'http://tivit.local/algoritmos-ia/\')">';
+            $saida .= '<div class="box-img position-relative">';
+            $saida .= 'img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                         class="card-img-top" alt="">';
+            $saida .= '<div class="position-absolute tagContent">';
+            $saida .= '<p>Cybersecurity</p>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '<div class="card-body">';
+            $saida .= '<div class="col-12 d-flex justify-content-between mt-4">';
+            $saida .= '<p class="data">23/09/2022</p>';
+            $saida .= '<p class="author">Por: <strong>Bruno Nogueira</strong></p>';
+            $saida .= '</div>';
+            $saida .= '<h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>';
+            $saida .= '<a href="#" class="btn btn-view-more pt-2">Veja mais</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+            $saida .= '</div>';
+        }
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+
+
+        $saida .= '</div>';
+        $saida .= '</section>';
 
         $saida .= '<div class="ac_bloco_conteudo ' . $cor_fundo . '">';
         $saida .= '<div class="ac_bloco_conteudo ' . $cor_fundo . '">';
