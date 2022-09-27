@@ -4,9 +4,9 @@ $num_resul = $wp_query->found_posts;
 if ($num_resul==0) {
     $linha1 = __('nenhum resultado para a pesquisa');
 } elseif ($num_resul>1) {
-    $linha1 = __('Foram encontrados').'<span class="pesquisa-numero-resultados"> '.$num_resul.__(' resultados').'</span>';
+    $linha1 = __('Foram encontrados','tvit').'<span class="pesquisa-numero-resultados"> '.$num_resul.__(' resultados','tivit').'</span>';
 } else {
-    $linha1 = __('Foi encontrado').'<span class="pesquisa-numero-resultados"> '.$num_resul.__(' resultado').'</span>';
+    $linha1 = __('Foi encontrado','tivit').'<span class="pesquisa-numero-resultados"> '.$num_resul.__(' resultado','tivit').'</span>';
 }
 $pesquisa = wp_strip_all_tags($_GET['s'], true);
 

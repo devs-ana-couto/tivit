@@ -1,0 +1,242 @@
+[
+    {
+        "key": "group_632dd704787b9",
+        "title": "Timeline",
+        "fields": [
+            {
+                "key": "field_632dd72bc6e38",
+                "label": "Conteúdo",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_632dd850de28e",
+                "label": "Eventos",
+                "name": "gd-el-timeline-events",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_632dd923de291",
+                        "label": "Imagem",
+                        "name": "gd-el-timeline-image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": 1100,
+                        "min_height": 570,
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_632dd886de28f",
+                        "label": "Ano do Evento",
+                        "name": "gd-el-timeline-events-year",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 1900,
+                        "max": 2100,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_632dd8d7de290",
+                        "label": "Descrição do Evento",
+                        "name": "gd-el-timeline-events-desc",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_632de0073ba7e",
+                "label": "Estilo",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_632de0143ba7f",
+                "label": "Cor de Fundo",
+                "name": "gd-el-timeline-style-background",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FFF",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_632de0556c707",
+                "label": "Margem Interna Superior",
+                "name": "gd-el-timeline-style-padding-top",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 100,
+                "placeholder": "",
+                "prepend": "",
+                "append": "px",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_632de0b46c708",
+                "label": "Margem Interna Superior - Mobile",
+                "name": "gd-el-timeline-style-padding-top-mobile",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 75,
+                "placeholder": "",
+                "prepend": "",
+                "append": "px",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_632de0e06c709",
+                "label": "Margem Interna Inferior",
+                "name": "gd-el-timeline-style-padding-bottom",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 100,
+                "placeholder": "",
+                "prepend": "",
+                "append": "px",
+                "maxlength": ""
+            },
+            {
+                "key": "field_632de0f66c70a",
+                "label": "Margem Interna Inferior - Mobile",
+                "name": "gd-el-timeline-style-padding-bottom-mobile",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 75,
+                "placeholder": "",
+                "prepend": "",
+                "append": "px",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

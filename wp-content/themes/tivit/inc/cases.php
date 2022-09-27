@@ -153,7 +153,7 @@ if (!function_exists('ac_bloco_cases')) {
                 $bulletAtivo = 'class="active"';
             }
             $saida .= '<button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="' . $ac . '"
-                            ' . $bulletAtivo . ' aria-current="true" aria-label="'. $dados[$ac]['titulo'] .'"></button>';
+                            ' . $bulletAtivo . ' aria-current="true" aria-label="' . $dados[$ac]['titulo'] . '"></button>';
 
         }
         $saida .= '</div>';
@@ -252,22 +252,21 @@ if (!function_exists('ac_bloco_home_cases')) {
         $arg['pagina'] = 1;
         $dados = ac_cases_listar($arg);
 
-        $saida = "";
-
-        $saida .= '<div class="home-cases-content left text-center">';
-        $saida .= '<div class="row d-flex justify-content-center">';
-        $saida .= '<div class="d-flex flex-wrap customContainer">';
-
+        $saida = '';
+        $saida .= '<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+        $saida .= '<div class="col-12 box-cards">';
+        $saida .= '<div class="owl-carousel owl-theme owl-news-cards">';
         for ($ac = 0; $ac < count($dados); $ac++) {
-            $saida .= '<div class="col-12 col-lg-4" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="card border-0 cardCases bg1 m-3 position-relative" style="background-image: url(\'' . $dados[$ac]['bgdesktop'] . ' \')">';
+            $saida .= '<div class="item">';
+            $saida .= '<div class="card card-cases border-0 cardCases bg1 m-0 position-relative" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')"
+             style="background-image: url(\'' . $dados[$ac]['bgdesktop'] . ' \')">';
             $saida .= '<div class="card-img-overlay overlay d-flex align-content-end flex-wrap">';
             $saida .= '<div class="card-body border-0 p-0  ">';
 
 
             $saida .= '<div class="textCase">';
             $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
-            $saida .= '<p>' .  $dados[$ac]['titulo']. '</p>';
+            $saida .= '<p>' . $dados[$ac]['titulo'] . '</p>';
             $saida .= '</div>';
 
             $saida .= '</div>';
@@ -280,26 +279,22 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '</div>';
             $saida .= '</div>';
         }
-
-
-        $saida .= '</div>';
-
-
-        $saida .= '<div class="col-12">';
-        $saida .= '<div class="d-flex justify-content-center align-items-center box-btn mt-4">';
-        $saida .= '<button class="btncontent"><a href="/staged/tivit/cases">VER TODOS OS CASES</a></button>';
-
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
+
+        $saida .= '<div class="row justify-content-center mt-5">';
+        $saida .= '<div class="col-auto box-btn">';
+        $saida .= '<a href="/staged/tivit/cases" class="btn btn-tivit1 btncontent">VER TODOS OS CASES</a>';
         $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '';
 
         return $saida;
     }
 }
 add_shortcode('ac_bloco_home_cases', 'ac_bloco_home_cases');
-
-
 
 
 /***
@@ -312,18 +307,19 @@ add_shortcode('ac_bloco_home_cases', 'ac_bloco_home_cases');
  *   vejamais: true/false se deve aparecer o botao "veja mais" ou não
  *   Título: texto que aparecerá como titulo do componente
  *
-***/
+ ***/
 if (!function_exists('ac_pagina_cases')) {
-    function ac_pagina_cases( $atts, $content = null ) {
-        $conteudo_bloco = apply_filters( 'the_content', $content );
-        $conteudo_bloco = str_replace( ']]>', ']]&gt;', $conteudo_bloco );
+    function ac_pagina_cases($atts, $content = null)
+    {
+        $conteudo_bloco = apply_filters('the_content', $content);
+        $conteudo_bloco = str_replace(']]>', ']]&gt;', $conteudo_bloco);
         $categorias_bloco = (isset($atts['categorias'])) ? $atts['categorias'] : '';
         $fundo = (isset($atts['fundo'])) ? $atts['fundo'] : 'claro';
         $quantidade = (isset($atts['quantidade'])) ? intval($atts['quantidade']) : 3;
         $vejamais = (isset($atts['vejamais'])) ? $atts['vejamais'] : false;
-        if ($quantidade==0) $quantidade = 3;
-        $cor_fundo = ($fundo=='escuro') ? 'ac_bloco_conteudo_escuro' : 'ac_bloco_conteudo_claro';
-        if ($vejamais=="true") {
+        if ($quantidade == 0) $quantidade = 3;
+        $cor_fundo = ($fundo == 'escuro') ? 'dark-theme' : '';
+        if ($vejamais == "true") {
             $vejamais = true;
         } else {
             $vejamais = false;
@@ -341,8 +337,8 @@ if (!function_exists('ac_pagina_cases')) {
             $args['tax_query'] = array(
                 array(
                     'taxonomy' => 'areas-de-interesse-tools',
-                    'field'    => 'slug',
-                    'terms'    => $categorias_bloco,
+                    'field' => 'slug',
+                    'terms' => $categorias_bloco,
                 )
             );
         }
@@ -396,30 +392,31 @@ if (!function_exists('ac_pagina_cases')) {
         wp_reset_query();
         asort($categoria_lista);
 
-        $saida  = '';
-        // $saida .= '<div class="ac_bloco_conteudo '.$cor_fundo.'"><div id="triangle-down"></div>';
-        $saida .= '<div class="ac_bloco_conteudo '.$cor_fundo.'">';
-        $saida .= '<div class="container pd" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-        $saida .= '<input id="ac_bloco_conteudo_quantidade" type="hidden" value="'.$quantidade.'">';
-        $saida .= '<input id="ac_bloco_conteudo_pagina" type="hidden" value="1">';
-        $saida .= '<div class="title"><h2 class="titleText text-center">'.$content.'</h2></div>';
+        $saida = '';
+        $saida .= '<section class="container-fluid box-news-cards ' . $cor_fundo . '">';
+        $saida .= '<div class="container">';
+        $saida .= '<div class="row">';
+
+        $saida .= '<div class="col-12 box-title">';
+        $saida .= '<h3>' . $content . '</h3>';
+        $saida .= '</div>';
 
         if ($vejamais) {
-            $saida .= '<div class="row">';
-            $saida .= '<div class="col-12">';
+            $saida .= '<div class="col-auto">';
             $saida .= '<div class="assuntos">';
-            $saida .= '<h4>'.__('escolha um ou mais assuntos', 'tivit').'</h4>';
-            $saida .= '<a href="#" class="active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria_case(\'todos\')" data-conteudo="">'.__('Todos', 'tivit').'</a>';
+            $saida .= '<h4 class="text-center text-uppercase">' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
             foreach ($categoria_lista as $chave => $valor) {
-                $saida .= '<a href="#" class="conteudo_etiqueta conteudo_etiqueta_'.$chave.'" data-conteudo="'.$chave.'" onclick="ac_conteudo_lista_categoria_case(\''.$chave.'\')">'.$valor.'</a>';
+                $saida .= '<button type="button" class="btn conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</button>';
             }
             $saida .= '</div>'; //.assuntos
             $saida .= '</div>'; //.col
-            $saida .= '</div>'; //.row
         }
 
+        $saida .= '<div class="col-12 box-cards">';
+        $saida .= '<div class="owl-carousel owl-theme owl-news-cards">';
 
-        $saida .= '<div class="row ac_bloco_conteudo_resultado">';
+
         for ($ac = 0; $ac < count($dados); $ac++) {
             $categorias = array();
             $cat_aux = $dados[$ac]['categorias'];
@@ -428,78 +425,75 @@ if (!function_exists('ac_pagina_cases')) {
                     $categorias[] = $categoria;
                 }
             }
-            $saida .= '<div class="col-12 col-md-4" onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
-            $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="img position-relative"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
-            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
-            /*$saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';*/
-            $saida .= '</div>'; //.img
-            $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
-            /*$saida .= '<div class="detalhes">';
-            $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
-            $saida .= '</div>'; //.detalhes*/
-            $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '</div>'; //.card-body
-            $saida .= '<div class="card-footer box-link-cta">';
-            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
+
+            $saida .= '<div class="item">';
+            $saida .= '<div class="card" onclick="redirect_article(\'' . $dados[$ac]['link'] . '\')">';
+            $saida .= '<div class="box-img position-relative">';
+            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" class="card-img-top" alt="' . $dados[$ac]['titulo'] . '">';
+            //$saida .= '<div class="position-absolute tagContent"><p>' . $categorias[0] . '</p></div>';
             $saida .= '</div>';
-            $saida .= '</div>'; //.card
+            $saida .= '<div class="card-body">';
+            $saida .= '<div class="col-12 d-flex justify-content-between mt-4">';
+            $saida .= '<p class="author">Cliente: <strong>' . $dados[$ac]['cliente'] . '</strong></p>';
+            $saida .= '</div>';
+            $saida .= '<h5 class="card-title pt-3">' . $dados[$ac]['titulo'] . '</h5>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="btn btn-view-more pt-2">Veja mais</a>';
+            $saida .= '</div>';
+            $saida .= '</div>';
             $saida .= '</div>';
         }
-        $saida .= '</div>'; //.row
+
+        $saida .= '</div>';
+        $saida .= '</div>';
+        $saida .= '</div>';
 
 
         if ($vejamais) {
-            $saida .= '<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
-            $saida .= '<div class="col-12">';
-            $saida .= '<div class="vejamais">';
-            $saida .= '<a href="#" class="btn" onclick="ac_conteudo_mais_case();return false;">'.__('Carregar mais', 'tivit').'</a>';
-            $saida .= '</div>'; //.vejamais
-            $saida .= '</div>'; //.col
-            $saida .= '</div>'; //.row
+            $saida .= '<div class="row justify-content-center mt-5">';
+            $saida .= '<div class="col-auto">';
+            $saida .= '<button type="button" class="btn btn-tivit1" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
+            $saida .= '</div>';
+            $saida .= '</div>';
         }
 
-        //FECHA COMPONENTE
-        $saida .= '</div>'; //.container
-        $saida .= '</div>'; //.ac_bloco_conteudo
-
+        $saida .= '</div>';
+        $saida .= '</section>';
         if ($vejamais) {
             $saida .= '<script>';
-            $saida .= 'function ac_conteudo_lista_categoria_case(categ) {';
-            $saida .=   'jQuery(".conteudo_etiqueta").removeClass("active");';
-            $saida .=   'jQuery(".conteudo_etiqueta_"+categ).addClass("active");';
-            $saida .=   'jQuery("#ac_bloco_conteudo_pagina").val("1");';
-            $saida .=   'ac_conteudo_lista_case();';
+            $saida .= 'function ac_conteudo_lista_categoria(categ) {';
+            $saida .= 'jQuery(".conteudo_etiqueta").removeClass("active");';
+            $saida .= 'jQuery(".conteudo_etiqueta_"+categ).addClass("active");';
+            $saida .= 'jQuery("#ac_bloco_conteudo_pagina").val("1");';
+            $saida .= 'ac_conteudo_lista();';
             $saida .= '}';
-            $saida .= 'function ac_conteudo_mais_case() {';
-            $saida .=   'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
-            $saida .=   'var pag = parseInt(pag) + 1;';
-            $saida .=   'jQuery("#ac_bloco_conteudo_pagina").val(pag);';
-            $saida .=   'ac_conteudo_lista_case();';
+            $saida .= 'function ac_conteudo_mais() {';
+            $saida .= 'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
+            $saida .= 'var pag = parseInt(pag) + 1;';
+            $saida .= 'jQuery("#ac_bloco_conteudo_pagina").val(pag);';
+            $saida .= 'ac_conteudo_lista();';
             $saida .= '}';
-            $saida .= 'function ac_conteudo_lista_case() {';
-            $saida .=   'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
-            $saida .=   'var qtd = jQuery("#ac_bloco_conteudo_quantidade").val();';
-            $saida .=   'var cat = jQuery(".conteudo_etiqueta.active").attr("data-conteudo");';
-            $saida .=   'var data = {';
-            $saida .=       'action: "ac_pagina_case_pesquisa",';
-            $saida .=       'pagina: pag,';
-            $saida .=       'quantidade: qtd,';
-            $saida .=       'categoria: cat,';
-            $saida .=   '};';
-            $saida .=   'jQuery.post(referenciaTivit.tivitAjaxUrl, data, function (response) {';
-            $saida .=       'var returnedData = JSON.parse(response);';
-            $saida .=       'if (pag==1) {';
-            $saida .=         'jQuery(".ac_bloco_conteudo_resultado").html(returnedData[0]);';
-            $saida .=         'jQuery(".ac_bloco_conteudo_resultado_mobile").html(returnedData[1]);';
-            $saida .=       '} else {';
-            $saida .=         'var c1 = jQuery(".ac_bloco_conteudo_resultado").html();';
-            $saida .=         'jQuery(".ac_bloco_conteudo_resultado").html(c1 + returnedData[0]);';
-            $saida .=         'var c2 = jQuery(".ac_bloco_conteudo_resultado_mobile").html();';
-            $saida .=         'jQuery(".ac_bloco_conteudo_resultado_mobile").html(c2 + returnedData[1]);';
-            $saida .=       '}';
-            $saida .=   '});';
+            $saida .= 'function ac_conteudo_lista() {';
+            $saida .= 'var pag = jQuery("#ac_bloco_conteudo_pagina").val();';
+            $saida .= 'var qtd = jQuery("#ac_bloco_conteudo_quantidade").val();';
+            $saida .= 'var cat = jQuery(".conteudo_etiqueta.active").attr("data-conteudo");';
+            $saida .= 'var data = {';
+            $saida .= 'action: "ac_pagina_conteudo_pesquisa",';
+            $saida .= 'pagina: pag,';
+            $saida .= 'quantidade: qtd,';
+            $saida .= 'categoria: cat,';
+            $saida .= '};';
+            $saida .= 'jQuery.post(referenciaTivit.tivitAjaxUrl, data, function (response) {';
+            $saida .= 'var returnedData = JSON.parse(response);';
+            $saida .= 'if (pag==1) {';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado").html(returnedData[0]);';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado_mobile").html(returnedData[1]);';
+            $saida .= '} else {';
+            $saida .= 'var c1 = jQuery(".ac_bloco_conteudo_resultado").html();';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado").html(c1 + returnedData[0]);';
+            $saida .= 'var c2 = jQuery(".ac_bloco_conteudo_resultado_mobile").html();';
+            $saida .= 'jQuery(".ac_bloco_conteudo_resultado_mobile").html(c2 + returnedData[1]);';
+            $saida .= '}';
+            $saida .= '});';
             $saida .= '}';
             $saida .= '</script>';
         }
@@ -511,18 +505,19 @@ add_shortcode('ac-pagina-cases', 'ac_pagina_cases');
 
 
 if (!function_exists('ac_pagina_case_pesquisa_desktop')) {
-    function ac_pagina_case_pesquisa_desktop() {
+    function ac_pagina_case_pesquisa_desktop()
+    {
         $arg = array();
         $pagina = (isset($_POST['pagina'])) ? intval($_POST['pagina']) : 1;
         $quanti = (isset($_POST['quantidade'])) ? intval($_POST['quantidade']) : 15;
         $catego = (isset($_POST['categoria'])) ? $_POST['categoria'] : '';
-        if ($pagina<0) $pagina = 1;
-        if ($quanti<0) $quanti = 15;
+        if ($pagina < 0) $pagina = 1;
+        if ($quanti < 0) $quanti = 15;
 
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => $quanti,
-            'offset' => ($pagina-1) * $quanti,
+            'offset' => ($pagina - 1) * $quanti,
             'post_status' => 'publish',
             'orderby' => 'date',
             'order' => 'DESC',
@@ -586,8 +581,8 @@ if (!function_exists('ac_pagina_case_pesquisa_desktop')) {
             $saida .= '<div class="col-12 col-md-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
             $saida .= '<div class="card cardContent p-1 h-100 bg-transparent border-0">';
             $saida .= '<div class="img position-relative">';
-            $saida .= '<img src="'.$dados[$ac]['bhdesktop'].'" alt="'.$dados[$ac]['titulo'].'">';
-            $saida .= '<div class="position-absolute tagContent">'.$categorias[0].'</div>';
+            $saida .= '<img src="' . $dados[$ac]['bhdesktop'] . '" alt="' . $dados[$ac]['titulo'] . '">';
+            $saida .= '<div class="position-absolute tagContent">' . $categorias[0] . '</div>';
             $saida .= '</div>'; //.img
             $saida .= '<div class="card-body">';
             $saida .= '<div class="detalhes">';

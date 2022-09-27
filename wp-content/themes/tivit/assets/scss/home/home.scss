@@ -133,6 +133,7 @@
         color: #fff;
         font-weight: 400;
         margin-top: 100px;
+        text-transform: unset;
         @media screen and (max-width: 991px) {
           margin-top: 0px;
           font-size: 36px;
@@ -173,7 +174,7 @@
 
 .home-intro {
   position: relative;
-  background: #990017;
+  //background: #fff;
   transition: all 0.3s ease-in;
   @media(max-width: 760px) {
     background: white;
@@ -957,6 +958,9 @@
       .title {
         max-width: 900px;
         z-index: 300;
+        h1, h2, h3, h4, h5 ,h6{
+          text-transform: unset;
+        }
       }
     }
 
@@ -1443,24 +1447,24 @@
           font-style: normal;
           font-weight: 400;
           font-size: 36px;
-          line-height: 56px;
+          line-height: 40px;
           display: flex;
-
           align-items: center;
           letter-spacing: 0.03em;
           text-transform: uppercase;
           color: #FFFFFF;
           border: unset;
+          text-align: left;
           transition: color 0.5s, font-weight 0.5s;
-
+          padding-bottom: 10px;
           @media screen and (max-width: 1024px) {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
-            line-height: 36px;
-            text-align: center;
+            line-height: 28px;
+            text-align: left;
             justify-content: left;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
@@ -1479,18 +1483,19 @@
             font-style: normal;
             font-weight: 600;
             font-size: 36px;
-            line-height: 56px;
+            line-height: 40px;
             text-transform: uppercase;
             color: $vermelho-tivit;
             @media screen and (max-width: 1024px) {
               font-weight: 600;
               font-size: 24px;
-              line-height: 30px;
+              line-height: 28px;
               display: flex;
               align-items: center;
               text-align: center;
               letter-spacing: 0.01em;
               text-transform: uppercase;
+              padding-bottom: 10px;
 
               /* Vermelho Tivit */
 
@@ -1505,7 +1510,6 @@
               &:after {
                 content: url('../images/home/icons/arrow-right-red.svg');
                 margin-left: 15px;
-
               }
             }
           }

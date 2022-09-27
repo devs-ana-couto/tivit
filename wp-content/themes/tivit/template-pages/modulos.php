@@ -49,6 +49,143 @@
     </section>
 
 
+    <!-- news -->
+
+    <section class="container-fluid box-news-cards dark-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title">
+                    <h3>Nossos conteúdos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 box-cards">
+                    <div class="owl-carousel owl-theme owl-news-cards">
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <div class="box-img position-relative">
+                                    <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                         class="card-img-top" alt="">
+                                    <div class="position-absolute tagContent">
+                                        <p>Cybersecurity</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-auto">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid box-news-cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-title">
+                    <h3>Nossos conteúdos</h3>
+                </div>
+                <div class="col-12 box-cards dark-theme">
+                    <div class="owl-carousel owl-theme owl-news-cards">
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card" onclick="redirect_article('http://tivit.local/algoritmos-ia/')">
+                                <img src="http://tivit.local/wp-content/uploads/2022/03/banner_artigo_AI_desktop_tivit.jpg"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="col-12 d-flex justify-content-between mt-4">
+                                        <p class="data">23/09/2022</p>
+                                        <p class="author">Por: <strong>Bruno Nogueira</strong></p>
+                                    </div>
+                                    <h5 class="card-title pt-3">Algoritmos de Inteligência Artificial: Entenda o papel
+                                        deles</h5>
+                                    <a href="#" class="btn btn-view-more pt-2">Veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-auto">
+                    <a href="#" class="btn btn-tivit1">Ver todos nossos conteúdos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- time line -->
 
 
@@ -125,52 +262,68 @@
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
                                     Plano de carreira, regime de trabalho e benefícios?
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua
+                                        expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
                                     Com o que a TIVIT trabalha?
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua
+                                        expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
                                     Onde ficam os escritórios da TIVIT?
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua
+                                        expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
                                     Quais são as unidades de negócios (BUs) da TIVIT?
                                 </button>
                             </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
+                                    <p>Através de um serviço modular, de contratação sob demanda, a TIVIT coloca sua
+                                        expertise reconhecida em toda a América Latina Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +492,7 @@
                             aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body ">
                     <script src="https://www.youtube.com/iframe_api"></script>
                     <div id="player"></div>
                 </div>
@@ -3534,6 +3687,5 @@
         });
 
     </script>
-
 
 <?php get_footer(); ?>

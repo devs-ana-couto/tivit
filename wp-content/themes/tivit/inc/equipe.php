@@ -80,7 +80,7 @@ if (!function_exists('ac_bloco_equipe')) {
                     $saida .= '<div class="col-md-12">';
                     $saida .= '<div class="lp-tbanks-depoimentos-content text-center ">';
                     $saida .= '<div class="lp-tbanks-depoimentos-autor">';
-                    $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="Tbanks Saiba Mais">';
+                    $saida .= '<img src="'.$dados[$ac]['imagem'].'" alt="'.$dados[$ac]['titulo'].'">';
                     $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
                     $saida .= '<h4>'.$dados[$ac]['atuacao'].'</h4>';
                     $saida .= '<div class="redes d-flex flex-row justify-content-center align-items-center w-100">';
@@ -114,7 +114,7 @@ if (!function_exists('ac_bloco_equipe')) {
             $saida .= '<div id="triangle-down"></div>';
             $saida .= '<div class="container">';
             $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
-            $saida .= '<h2 class="title text-center">'.__('CONHEÇA A NOSSA EQUIPE').'</h2>';
+            $saida .= '<h2 class="title text-center">'.__('CONHEÇA A NOSSA EQUIPE','tivit').'</h2>';
             $saida .= '</div>';
             $saida .= '<div id="carouselCustom" class="container-fluid text-center my-3">';
             $saida .= '<div class="row mx-auto my-auto justify-content-center">';

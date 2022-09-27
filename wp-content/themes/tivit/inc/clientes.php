@@ -41,7 +41,7 @@ if (!function_exists('ac_clientes_listar')) {
                 'postid'     => $identif,
                 'link'       => $link,
                 'imagem'     => $imagem,
-                'titulo'     => $titulo,       
+                'titulo'     => $titulo,
             );
         }
         wp_reset_query();
@@ -59,7 +59,7 @@ if (!function_exists('ac_bloco_clientes')) {
         $saida .= '<div class="row justify-content-center">';
 
         $saida .= '<div class="col-auto box-title mt-5">';
-        $saida .= '<h2>Com quem trabalhamos</h2>';
+        $saida .= '<h2>'.__('Com quem trabalhamos','tivit').'</h2>';
         $saida .= '</div>';
 
         $saida .= '<div class="col-12 box-slider">';
@@ -83,7 +83,7 @@ if (!function_exists('ac_bloco_clientes')) {
 /*if (!function_exists('ac_bloco_clientes')) {
     function ac_bloco_clientes() {
         $arg['porpagina'] = 6;
-        $arg['pagina']    = 1;  
+        $arg['pagina']    = 1;
         $dados = ac_clientes_listar($arg);
 
 
