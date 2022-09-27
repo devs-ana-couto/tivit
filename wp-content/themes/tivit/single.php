@@ -6,12 +6,12 @@ if(have_posts()) : while(have_posts()) : the_post();
 ?>
 
 <!-- Section Banner -->
-<section class="banner-cases-item">
+<section class="banner-cases-item position-relative">
     <div class="case-item-background" style="background: url('<? $detect->isMobile() ? the_field('banner_header_mobile_conteudo') : the_field('banner_header_desktop_conteudo'); ?>') no-repeat center center; background-size: cover;display: flex;
     align-items: center;">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5" style="    z-index: 1054;">
                     <div class="case-item-content">
                         <h2>Artigo</h2>
                         <h1><?php the_title(); ?></h1>
@@ -21,6 +21,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             </div>
         </div>
     </div>
+    <div class="card-img-overlay box-mask-cases-new" style="z-index: 0"></div>
 </section>
 <?php
 
@@ -41,15 +42,15 @@ if(have_posts()) : while(have_posts()) : the_post();
 </section>
 
 <!-- Section Newsletter -->
-<section class="newsletter-cases-item">
+<!--<section class="newsletter-cases-item">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <?=do_shortcode('[contact-form-7 id="220" title="Newsletter"]');?>
+                <?/*=do_shortcode('[contact-form-7 id="220" title="Newsletter"]');*/?>
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <div class="cases-recentes">
   <!--- Desktop -->

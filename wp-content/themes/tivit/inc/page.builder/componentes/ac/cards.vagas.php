@@ -44,7 +44,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
         #box-vagas-{css_id} .card a:hover{
            color: #F20024 !important;
         }
-        
+
         #box-vagas-{css_id} .btn-tivit1{
             background-color: {color_link_global};
             color: {color_link_text_color};
@@ -52,7 +52,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
         #box-vagas-{css_id} .btn-tivit1:hover{
             background-color: {color_link_global_hover};
         }
-        
+
     </style>
     <section class="container-fluid box-vagas" id="box-vagas-{css_id}">
         <div class="container" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -66,7 +66,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto mt-5">
-                    <a href="{link_global}" class="btn btn-tivit1">VER TODAS AS VAGAS</a>
+                    <a href="{link_global}" class="btn btn-tivit1">'.__('VER TODAS AS VAGAS','tivit').'</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
                             <p class="card-text">{card_desc}</p>
                         </div>
                         <div class="card-footer">
-                            <a href="{card_link}" class="btn cta-conteudo2">confira esta vaga</a>
+                            <a href="{card_link}" class="btn cta-conteudo2">'.__('confira esta vaga','tivit').'</a>
                         </div>
                     </div>
                 </div>

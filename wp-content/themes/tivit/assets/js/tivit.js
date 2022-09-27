@@ -20,7 +20,7 @@ const add_class_on_scroll_tbanks = () => header.classList.add("on-scroll-global"
 // Add class mobile
 const add_class_page_tbanks = () => header_logo.classList.add("on-scroll-mobile-tbanks")
 // Change search icon color
-const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(' + jQuery('#change_icon_hamburguer_color_tbanks').val()+')'
+const change_icon_hamburguer_color_tbanks = () => header_ico_hamburguer.style['background-image'] = 'url(' + jQuery('#change_icon_hamburguer_color_tbanks').val() + ')'
 // Change hamburguer icon color
 const change_icon_search_color_tbanks = () => header_ico_search.setAttribute('src', jQuery('#change_icon_search_color_tbanks').val());
 // Remove class on scroll
@@ -48,7 +48,7 @@ const add_class_on_scroll_tdx = () => header.classList.add("on-scroll-tdx")
 // Add class mobile
 const add_class_page_tdx = () => header_logo.classList.add("on-scroll-mobile-tdx")
 // Change search icon color
-const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(' + jQuery('#change_icon_hamburguer_color_tdx').val()+')'
+const change_icon_hamburguer_color_tdx = () => header_ico_hamburguer.style['background-image'] = 'url(' + jQuery('#change_icon_hamburguer_color_tdx').val() + ')'
 // Change hamburguer icon color
 const change_icon_search_color_tdx = () => header_ico_search.setAttribute('src', jQuery('#change_icon_search_color_tdx').val());
 // Remove class on scroll
@@ -936,7 +936,7 @@ window.onscroll = () => {
             headerNew.removeClass("sticky");
             if (largura <= 1199) {
                 headerNew.removeClass("fixed-top");
-            }else{
+            } else {
                 headerNew.addClass("fixed-top");
             }
         }
@@ -945,7 +945,7 @@ window.onscroll = () => {
             headerNew.addClass("sticky");
             if (largura <= 1199) {
                 headerNew.addClass("fixed-top");
-            }else{
+            } else {
                 headerNew.addClass("fixed-top");
             }
         }
@@ -963,10 +963,10 @@ solutionMenu.forEach((menu, index) => {
             modalSolution.show();
             jQuery('body').css('padding-right', '0');
             var menuItens = checkSolutionShow.querySelectorAll('.menu-item');
-            menuItens.forEach((item, index) =>{
-                if(item.classList.contains('solution-link-menu')){
+            menuItens.forEach((item, index) => {
+                if (item.classList.contains('solution-link-menu')) {
                     item.classList.add('active');
-                }else{
+                } else {
                     item.classList.remove('active');
                 }
             });
@@ -976,13 +976,74 @@ solutionMenu.forEach((menu, index) => {
     });
 });
 
-function closeAllMenu(){
+function closeAllMenu() {
     modalSolution.hide();
     offCanvaSolution.hide();
     var backdrop = document.querySelector(".offcanvas-backdrop");
     backdrop.classList.remove('show');
 }
 
-function redirect_article(url){
+function redirect_article(url) {
     window.location.href = url;
 }
+
+jQuery('.owl-news-cards').owlCarousel({
+    loop: false,
+
+    responsive: {
+        0: {
+            items: 1,
+            margin: 20,
+            autoWidth: true,
+        },
+        600: {
+            margin: 20,
+            items: 2
+        },
+        992: {
+            margin: 30,
+            items: 3
+        }
+    }
+});
+
+const itemScroll = document.querySelectorAll('[data-anime]');
+itemScroll.forEach((element) => {
+    let animeColor = element.getAttribute("data-anime-color");
+    element.style.backgroundColor = animeColor;
+});
+const animeScroll = () => {
+    const windowTop = document.documentElement.scrollTop + window.innerHeight * 0.5;
+    let headerHome = document.querySelector("#header-home-scroll");
+    let mask = headerHome.querySelectorAll(".carousel-item .mask.mask-desk");
+    itemScroll.forEach((element) => {
+        if (windowTop >= element.offsetTop) {
+            element.classList.add('anime');
+            let animetedColor = element.getAttribute("data-animeted-color");
+            element.style.backgroundColor = animetedColor;
+
+            if (windowTop > 716) {
+                mask.forEach((element) => {
+                    if (element.classList.contains("red")) {
+                        element.classList.remove("active");
+                    } else if (element.classList.contains("white")) {
+                        element.classList.add("active");
+                    }
+                });
+            }
+        }
+    });
+    if(windowTop < 716){
+        mask.forEach((element) => {
+            if (element.classList.contains("red")) {
+                element.classList.add("active");
+            } else if (element.classList.contains("white")) {
+                element.classList.remove("active");
+            }
+        });
+    }
+};
+
+window.addEventListener('scroll', () => {
+    animeScroll();
+});

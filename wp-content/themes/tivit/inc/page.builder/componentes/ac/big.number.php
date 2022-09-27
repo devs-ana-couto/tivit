@@ -69,15 +69,12 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
 
 	            	/* CSS: END Personalized */
 	            </style>
-	            
 
-     
-								
+
+
+
                 <section class="container-fluid px-lg-0 box-big-number position-relative" style="background: ' . $s_color_background . '">
-        <!-- mascara 50% color top permitir que o usuario passar a cor desejada  através do style background -->
         <div class="card-img-overlay h-50 fundo-50-top" style="background-color: {half_top_background};"></div>
-        <!-- o titulo é opicinal, caso o usurio não passe nenhum titulo, adiconar a classe
-        d-none no container abaixo -->
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
               {c_text}
@@ -88,7 +85,6 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
             <div class="container">
                 <div class="row">
                     <div class="col-12 box-cards">
-                        <!-- passar o numero de colunas no row-cols-lg-numero, recomendado no máximo 3 colunas -->
                         <div class="row row-cols-1 row-cols-lg-' . $s_cols_per_rows . ' align-items-stretch g-4" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                            {content}
                         </div>
@@ -97,7 +93,7 @@ function pb_ac_big_number($obj_id, $obj = null, $block, $echo = true)
             </div>
         </div>
     </section>
-		       
+
 			';
 
 

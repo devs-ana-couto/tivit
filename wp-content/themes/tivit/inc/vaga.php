@@ -63,7 +63,7 @@ if (!function_exists('ac_bloco_vaga')) {
         $saida .= '<div id="triangle-down"></div>';
         $saida .= '<div class="container">';
         $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
-        $saida .= '<h2 class="title text-center">'.__('VAGAS').'</h2>';
+        $saida .= '<h2 class="title text-center">'.__('VAGAS','tivit').'</h2>';
         $saida .= '</div>';
         $saida .= '<div class="row items m-0 m-md-auto">';
 
@@ -76,7 +76,7 @@ if (!function_exists('ac_bloco_vaga')) {
         }
         $saida .= '</div>';
         $saida .= '<div class="btnCta d-flex justify-content-center align-items-center w-100">';
-        $saida .= '<a href="https://jobs.kenoby.com/tivit" target="_blank">'.__('Ver todas AS VAGAS').'</a>';
+        $saida .= '<a href="https://jobs.kenoby.com/tivit" target="_blank">'.__('Ver todas AS VAGAS','tivit').'</a>';
         $saida .= '</div>';
         return $saida;
     }

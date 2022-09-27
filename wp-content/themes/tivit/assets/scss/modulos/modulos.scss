@@ -2432,10 +2432,13 @@ $primary-color: #990017;
   }
 
   .carousel-indicators {
-    top: 360px;
-    right: 0px !important;
-    left: 0px;
+    bottom: 140px;
+    right: 60px !important;
     z-index: 1060;
+    @media screen and (max-width: 991px){
+      right: 0px !important;
+      left: 0px;
+    }
   }
 
   .box-background-full {

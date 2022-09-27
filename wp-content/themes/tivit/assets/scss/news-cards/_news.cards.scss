@@ -1,0 +1,320 @@
+.box-news-cards {
+  padding: 75px 0px 115px 0px;
+  overflow: hidden;
+
+  .box-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 44px;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: #262626;
+    }
+  }
+
+  .box-cards {
+    .card-cases {
+      height: 420px;
+
+      .overlay {
+        background: linear-gradient(2.11deg, #000000 1.77%, rgba(0, 0, 0, 0.2) 98.23%);
+      }
+
+      .textCase {
+        height: 110px;
+
+        h3 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+        }
+      }
+
+      a {
+        font-style: normal;
+        font-weight: 700;
+
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        /* Vermelho Tivit */
+
+        color: #F20024;
+
+        &:after {
+          transition: all 0.5s;
+          content: "";
+          background: url('../images/modulos/conteudo/arrow_artigo.svg');
+          background-size: cover;
+          background-position: center center;
+          width: 12px;
+          height: 12px;
+          background-repeat: no-repeat;
+          margin-left: 5px;
+        }
+      }
+
+      &:hover {
+        .textCase {
+          height: 110px;
+
+          h3 {
+            font-weight: 700;
+          }
+        }
+
+        a {
+          color: #F20024;
+
+          &:after {
+            transition: all 0.5s;
+            margin-left: 10px;
+          }
+        }
+      }
+
+    }
+
+    .owl-carousel .owl-stage-outer {
+      overflow: visible;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      margin-top: 25px;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+      &.active {
+        span {
+          background: #F20024;
+        }
+      }
+
+      span {
+        width: 12px;
+        height: 12px;
+        margin: 5px 5px;
+        background: #D6D6D6;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity .2s ease;
+        border-radius: 30px;
+      }
+    }
+
+    .card {
+      cursor: pointer;
+      background: transparent;
+      @media screen and (max-width: 600px) {
+        width: 330px;
+      }
+      border: none;
+      border-radius: 0px;
+
+      .card-img-top {
+        border-radius: 0px;
+      }
+
+      .card-body {
+        background: transparent;
+
+        .data {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+
+          /* Branco */
+
+          color: #262626;
+        }
+
+        .author {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #262626;
+
+          strong {
+
+          }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 28px;
+          /* or 140% */
+
+          text-transform: uppercase;
+
+          /* Cinza Dark Tivit */
+
+          color: #262626;
+        }
+
+        .btn-view-more {
+          border: none;
+          padding: 0px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          transition: all 0.5s;
+          /* Vermelho Tivit */
+
+          color: #F20024;
+
+          &:after {
+            transition: all 0.5s;
+            content: "";
+            background: url("../images/modulos/conteudo/arrow_artigo.svg");
+            background-size: cover;
+            background-position: center center;
+            width: 12px;
+            height: 12px;
+            background-repeat: no-repeat;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      &:hover {
+        h1, h2, h3, h4, h5, h6 {
+          color: #F20024;
+        }
+
+        .btn-view-more {
+          transition: all 0.5s;
+          color: #F20024;
+
+          &:after {
+            transition: all 0.5s;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &.dark-theme:not([data-anime="background-color"]) {
+
+    background: #262626;
+  }
+
+  &.dark-theme {
+    background-color: unset;
+
+
+    .box-title {
+      h1, h2, h3, h4, h5, h6 {
+        color: #FFF;
+      }
+    }
+
+
+    .card {
+      .card-body {
+        background: transparent;
+
+        .data {
+          color: #FFF;
+        }
+
+        .author {
+          color: #fff;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          color: #FFF;
+        }
+
+        .btn-view-more {
+          color: #F20024;
+        }
+      }
+
+      &:hover {
+        h1, h2, h3, h4, h5, h6 {
+          color: #F20024;
+        }
+
+        .btn-view-more {
+          color: #F20024;
+        }
+      }
+    }
+  }
+
+  &.box-news-cards-cases {
+    background: black;
+  }
+
+  .btn-tivit1 {
+    background: #990017;
+
+    &:hover {
+      background: #FE4817 !important;
+    }
+  }
+}
+
+#header-home-scroll {
+  opacity: 1;
+  transition: all 1s linear;
+
+  &.inactive-header {
+    transition: all 1s linear;
+    opacity: 0;
+  }
+}
+
+.heroslide {
+  .mask-desk{
+    opacity: 0;
+    &.red{
+      opacity: 1 !important;
+      transition: all 0.35s linear;
+    }
+    &.white{
+      transition: all 0.35s linear;
+    }
+    &.active{
+      opacity: 1;
+      transition: all 0.35s linear;
+    }
+
+  }
+}

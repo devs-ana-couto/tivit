@@ -131,8 +131,7 @@ if (!function_exists('projetos_esg')) {
             <div class="col-12 box-article-slider">
                 <div class="row justify-content-center">
                     <div class="col-auto box-title">
-                        <h3 class="title" id="title-articles-slider">outros projetos de cultura e responsabilidade
-                            social</h3>
+                        <h3 class="title" id="title-articles-slider">outros projetos de cultura e responsabilidade social</h3>
                     </div>
                     <div class="col-12 box-news-slider px-lg-0" id="boxArticles">
 

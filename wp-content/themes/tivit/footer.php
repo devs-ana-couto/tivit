@@ -112,7 +112,7 @@
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tivit-labs.svg" width="188.4" height="18px" alt="Tivit Labs">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" width="174" height="55" alt="Sensr.it">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" height="30px"  alt="Sensr.it">
 
         </div>
 
@@ -125,7 +125,7 @@
         <div class="col-7 col-md-3 footer-copyright">
 
           <p>
-            <span>TIVIT®</span> Todos os direitos reservados
+            <span>TIVIT®</span> <?php _e('Todos os direitos reservados','tivit'); ?>
           </p>
 
         </div>
@@ -144,7 +144,7 @@
 
         <div class="col-5 col-md-3 footer-ac">
           <p>
-            Criado por <span>ANA COUTO</span>
+            <?php _e('Criado por <span>ANA COUTO</span>','tivit'); ?>
           </p>
         </div>
 

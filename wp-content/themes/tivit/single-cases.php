@@ -12,7 +12,7 @@ if(have_posts()) : while(have_posts()) : the_post();
             <div class="row">
                 <div class="col-12 col-md-5" style="z-index: 1054">
                     <div class="case-item-content" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-                        <h2>Cliente: <strong><? the_field('nome_do_cliente'); ?></strong></h2>
+                        <h2><?php _e('Cliente:','tivit'); ?> <strong><? the_field('nome_do_cliente'); ?></strong></h2>
                         <h1><?php the_title(); ?></h1>
                     </div>
                     <div class="case-item-logos" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -1406,7 +1406,7 @@ if(have_posts()) : while(have_posts()) : the_post();
     */?>
     <!-- //Content  -->
 </section>
-    <?php echo do_shortcode('[ac-pagina-cases fundo="escuro" quantidade="6" vejamais=false]CASES RELACIONADOS[/ac-pagina-cases]'); ?>
+    <?php echo do_shortcode('[ac-pagina-cases fundo="escuro" quantidade="3" vejamais=false]CASES RELACIONADOS[/ac-pagina-cases]'); ?>
 
 
 <?php

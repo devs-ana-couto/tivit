@@ -55,6 +55,7 @@ function load_scripts()
     wp_enqueue_script('tivit-carousel', get_template_directory_uri() . '/assets/js/tivit-carousel.js', array(), '1.0.0', true);
     wp_enqueue_script('tivit', get_template_directory_uri() . '/assets/js/tivit.js', array(), '1.0.0', true);
     wp_enqueue_script('tivit-slider-categoria', get_template_directory_uri() . '/assets/js/slider-ajax.js', array(), '1.0.0', true);
+    wp_enqueue_script('tivit-timeline', get_template_directory_uri() . '/assets/js/tivit-timeline.js', array(), '1.0.0', true);
 
     /*=================================
       Registro de ajax
@@ -246,3 +247,68 @@ function ac_customiza($wp_customize)
 }
 
 add_action('customize_register', 'ac_customiza');
+
+function pll_ativo() {
+    $saida = false;
+    if(in_array('polylang/polylang.php', apply_filters('active_plugins', get_option('active_plugins')))){
+        $saida = true;
+    }
+    return $saida;
+}
+if (pll_ativo()) {
+    pll_register_string( 'tivit', 'acessar artigo', 'tivit', false );
+    pll_register_string( 'tivit', 'ainda tem dúvidas? veja as perguntas frequentes:', 'tivit', false );
+    pll_register_string( 'tivit', 'Carregar mais', 'tivit', false );
+    pll_register_string( 'tivit', 'Cliente:', 'tivit', false );
+    pll_register_string( 'tivit', 'Com quem trabalhamos', 'tivit', false );
+    pll_register_string( 'tivit', 'confira esta vaga', 'tivit', false );
+    pll_register_string( 'tivit', 'CONHEÇA A NOSSA EQUIPE', 'tivit', false );
+    pll_register_string( 'tivit', 'Criado por <span>ANA COUTO</span>', 'tivit', false );
+    pll_register_string( 'tivit', 'escolha um ou mais assuntos', 'tivit', false );
+    pll_register_string( 'tivit', 'Filtrar por', 'tivit', false );
+    pll_register_string( 'tivit', 'minutos de leitura', 'tivit', false );
+    pll_register_string( 'tivit', 'NOSSOS CONTEÚDOS', 'tivit', false );
+    pll_register_string( 'tivit', 'Por', 'tivit', false );
+    pll_register_string( 'tivit', 'SOLUÇÕES', 'tivit', false );
+    pll_register_string( 'tivit', 'Todos os direitos reservados', 'tivit', false );
+    pll_register_string( 'tivit', 'Todos', 'tivit', false );
+    pll_register_string( 'tivit', 'ÚLTIMOS PROJETOS', 'tivit', false );
+    pll_register_string( 'tivit', 'VAGAS', 'tivit', false );
+    pll_register_string( 'tivit', 'Veja mais', 'tivit', false );
+    pll_register_string( 'tivit', 'VER AÇÃO', 'tivit', false );
+    pll_register_string( 'tivit', 'VER CASE', 'tivit', false );
+    pll_register_string( 'tivit', 'VER TODAS AS VAGAS', 'tivit', false );
+    pll_register_string( 'tivit', 'VER TODOS OS CASES', 'tivit', false );
+}
+
+/**
+ * Wrap an existing default callback passed in parameter and create
+ * a new permission callback introducing preliminary checks and
+ * falling-back on the default callback in case of success.
+ */
+function permission_callback_hardener ($existing_callback) {
+    return function ($request) use($existing_callback) {
+        if (! current_user_can('list_users')) {
+            return new WP_Error(
+                'rest_user_cannot_view',
+                __( 'Sorry, you are not allowed to access users.' ),
+                [ 'status' => rest_authorization_required_code() ]
+            );
+        }
+
+        return $existing_callback($request);
+    };
+}
+
+function api_users_endpoint_force_auth($endpoints)
+{
+    $users_get_route = &$endpoints['/wp/v2/users'][0];
+    $users_get_route['permission_callback'] = permission_callback_hardener($users_get_route['permission_callback']);
+
+    $user_get_route = &$endpoints['/wp/v2/users/(?P<id>[\d]+)'][0];
+    $user_get_route['permission_callback'] = permission_callback_hardener($user_get_route['permission_callback']);
+
+    return $endpoints;
+}
+
+add_filter('rest_endpoints', 'api_users_endpoint_force_auth');
