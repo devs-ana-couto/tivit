@@ -145,7 +145,6 @@ if (!function_exists('ac_bloco_cases')) {
         $arg['porpagina'] = 3;
         $arg['pagina'] = 1;
         $dados = ac_cases_listar($arg);
-
         $saida = '';
         $saida .= '<div class="carousel-indicators">';
         for ($ac = 0; $ac < count($dados); $ac++) {
@@ -154,7 +153,6 @@ if (!function_exists('ac_bloco_cases')) {
             }
             $saida .= '<button type="button" data-bs-target="#slider-categoria01" data-bs-slide-to="' . $ac . '"
                             ' . $bulletAtivo . ' aria-current="true" aria-label="' . $dados[$ac]['titulo'] . '"></button>';
-
         }
         $saida .= '</div>';
         $saida .= '<div class="carousel-inner">';
@@ -175,20 +173,8 @@ if (!function_exists('ac_bloco_cases')) {
                     $classEtiqueta = "d-block";
                 }
             }
-
-
             $saida .= '<div class="carousel-item' . ($ac == 0 ? ' active' : '') . '">';
-
-            $saida .= '
-                <div class="row justify-content-end d-none d-lg-flex">
-                   <div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end">
-                       <img class="img-fluid"
-                           src="' . get_template_directory_uri() . '/assets/images/modulos/categoria-slider/mask-slider.svg"
-                              alt="">
-                   </div>
-                </div>
-            ';
-
+            $saida .= '<div class="row justify-content-end d-none d-lg-flex"><div class="col-auto position-absolute h-100 v-mask d-flex justify-content-end"><img class="img-fluid" src="' . get_template_directory_uri() . '/assets/images/modulos/categoria-slider/mask-slider.svg" alt=""></div></div>';
             $saida .= '<div class="row gx-0 h-100 justify-content-between">';
             $saida .= '<div class="col-12 col-lg-4 box-infos p-4 p-lg-5">';
             $saida .= '<div class="container h-100 case-infos d-flex align-items-end">';
@@ -208,42 +194,29 @@ if (!function_exists('ac_bloco_cases')) {
             $saida .= '</ul>';
             $saida .= '</div>';
             $saida .= '<div class="col-12 box-link mt-2 mt-lg-4">';
-            $saida .= '<a href="#">VER AÇÃO</a>';
+            $saida .= '<a href="#">'.__('VER AÇÃO','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '<div class="col-12 col-lg-8 box-img">';
-            $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '"
-                                     class="d-block w-100" alt="...">';
+            $saida .= '<img src="' . $dados[$ac]['bgdesktop'] . '" class="d-block w-100" alt="...">';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
-
         }
         $saida .= '</div>';
         $saida .= '<div class="col-auto position-relative controlador">';
-        $saida .= '<button class="carousel-control-prev" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>';
-        $saida .= '<button class="carousel-control-next" type="button"
-                            data-bs-target="#slider-categoria01"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>';
+        $saida .= '<button class="carousel-control-prev" type="button" data-bs-target="#slider-categoria01" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>';
+        $saida .= '<button class="carousel-control-next" type="button" data-bs-target="#slider-categoria01" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>';
         $saida .= '</div>';
         $saida .= '';
         $saida .= '';
-
-
         return $saida;
     }
 }
 add_shortcode('ac-bloco-cases', 'ac_bloco_cases');
+
 
 if (!function_exists('ac_bloco_home_cases')) {
     function ac_bloco_home_cases()
@@ -262,13 +235,10 @@ if (!function_exists('ac_bloco_home_cases')) {
              style="background-image: url(\'' . $dados[$ac]['bgdesktop'] . ' \')">';
             $saida .= '<div class="card-img-overlay overlay d-flex align-content-end flex-wrap">';
             $saida .= '<div class="card-body border-0 p-0  ">';
-
-
             $saida .= '<div class="textCase">';
             $saida .= '<h3>' . $dados[$ac]['cliente'] . '</h3>';
             $saida .= '<p>' . $dados[$ac]['titulo'] . '</p>';
             $saida .= '</div>';
-
             $saida .= '</div>';
             $saida .= '<div class="card-footer w-100 border-0 px-0">';
             $saida .= '<div class="box-link-cta">';
@@ -282,15 +252,13 @@ if (!function_exists('ac_bloco_home_cases')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-
         $saida .= '<div class="row justify-content-center mt-5">';
         $saida .= '<div class="col-auto box-btn">';
-        $saida .= '<a href="/staged/tivit/cases" class="btn btn-tivit1 btncontent">VER TODOS OS CASES</a>';
+        $saida .= '<a href="'.get_site_url().'/cases" class="btn btn-tivit1 btncontent">'.__('VER TODOS OS CASES','tivit').'</a>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '';
-
         return $saida;
     }
 }
