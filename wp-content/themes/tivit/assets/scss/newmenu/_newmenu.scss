@@ -95,6 +95,12 @@
             }
           }
         }
+        .nav-language {
+          color:white;
+          a {
+            color: white;
+          }
+        }
       }
 
 
@@ -198,7 +204,19 @@
             }
           }
         }
-
+        .nav-language {
+          color: white;
+          width: 60px;
+          &:hover {
+            border: none;
+          }
+          a {
+            color: white;
+              &:hover {
+                  color:#990017;
+                }
+          }
+        }
       }
     }
 

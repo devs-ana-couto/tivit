@@ -15,16 +15,31 @@
     <?php
     // Path: header.php
     wp_head();
+    $url_atual = $_SERVER['REQUEST_URI'];
+    if (strpos($_SERVER['REQUEST_URI'], '/en/') === false) {
+        $idioma = 'PT';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/es/') === false) {
+        $idioma = 'ES';
+    } else {
+        $idioma = 'EN';
+    }
 
-    $por_servico_port = get_theme_mod('por_servico_port');
-    $por_industria_port = get_theme_mod('por_industria_port');
-    $por_desafio_port = get_theme_mod('por_desafio_port');
+
+    if ($idioma=='PT') {
+        $por_servico_port = get_theme_mod('por_servico_port');
+    } elseif ($idioma=='ES') {
+        $por_servico_port = get_theme_mod('por_servico_esp');
+    } else {
+        $por_servico_port = get_theme_mod('por_servico_eng');
+    }
+    // $por_industria_port = get_theme_mod('por_industria_port');
+    // $por_desafio_port = get_theme_mod('por_desafio_port');
     $por_servico_eng = get_theme_mod('por_servico_eng');
-    $por_industria_eng = get_theme_mod('por_industria_eng');
-    $por_desafio_eng = get_theme_mod('por_desafio_eng');
+    // $por_industria_eng = get_theme_mod('por_industria_eng');
+    // $por_desafio_eng = get_theme_mod('por_desafio_eng');
     $por_servico_esp = get_theme_mod('por_servico_esp');
-    $por_industria_esp = get_theme_mod('por_industria_esp');
-    $por_desafio_esp = get_theme_mod('por_desafio_esp');
+    // $por_industria_esp = get_theme_mod('por_industria_esp');
+    // $por_desafio_esp = get_theme_mod('por_desafio_esp');
 
     $rel_por_servico = get_terms('por-servico');
 
@@ -266,12 +281,22 @@
                                             <a class="nav-link" href="#">CONTATOS</a>
                                         </li>-->
 
-                                        <!--<li class="nav-item">
-                                            <a class="nav-link active" href="#">BR</a>
-                                        </li>-->
-                                        <!--<li class="nav-item">
-                                            <a class="nav-link" href="#">ES</a>
-                                        </li>-->
+                                        <li class="nav-item nav-language">
+                                            <?php
+                                            if ($idioma != 'PT') {
+                                                echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'pt')).'" class="nav-language">BR</a> / ';
+                                            }
+                                            if ($idioma != 'EN') {
+                                                echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'en')).'" class="nav-language">EN</a>';
+                                            }
+                                            if ($idioma == 'PT') {
+                                                echo ' / ';
+                                            }
+                                            if ($idioma != 'ES') {
+                                                echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'es')).'" class="nav-language">ES</a>';
+                                            }
+                                            ?>
+                                        </li>
                                         <div class="search">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg"
                                                  alt="Search Tivit" onclick="abre_barra_pesquisa();">
@@ -356,17 +381,11 @@
                     </div>-->
                     <div class="offcanvas-footer">
                         <div class="col-12  language-box">
-                            <div class="row justify-content-center gx-5">
-                                <div class="col-auto">
-                                    <a href="#" class="active">BR</a>
-                                </div>
-                                <!-- <div class="col-auto">
-                                     <a href="#">US</a>
-                                 </div>
-                                 <div class="col-auto">
-                                     <a href="#">ES</a>
-                                 </div>-->
-                            </div>
+                            <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'pt')); ?>" class="active">BR</a>
+                            /
+                            <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'en')); ?>">EN</a>
+                            /
+                            <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'es')); ?>">ES</a>
                         </div>
                         <div class="col-12 mt-5 social-net">
                             <div class="row justify-content-center gx-5">
@@ -454,6 +473,13 @@
                                                 ));
                                                 ?>
                                                 <ul class="navbar-nav">
+                                                    <div class="col-12  language-box">
+                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'pt')); ?>" class="active">BR</a>
+                                                        /
+                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'en')); ?>">EN</a>
+                                                        /
+                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'es')); ?>">ES</a>
+                                                    </div>
                                                     <div class="search">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg"
                                                              alt="Search Tivit" onclick="abre_barra_pesquisa();">
@@ -514,7 +540,10 @@
                     </div>
                     <div class="col-12">
                         <?php
-                        $menu = wp_get_nav_menu_object('solucoes');
+                        $locations = get_nav_menu_locations();
+                        // print_r($locations);
+                        // $menu = wp_get_nav_menu_object('solucoes');
+                        $menu = wp_get_nav_menu_object($locations['menu-solucoes']);
                         $menu_items = wp_get_nav_menu_items($menu->term_id);
                         $menus = array();
                         for ($mm = 0; $mm < count($menu_items); $mm++) {
@@ -565,14 +594,14 @@
                     <div class="col-12 mt-5 mb-5 d-xl-none language-box">
                         <div class="row justify-content-center gx-5">
                             <div class="col-auto">
-                                <a href="#" class="active">BR</a>
-                            </div><!--
-                            <div class="col-auto">
-                                <a href="#">US</a>
+                                <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'pt')); ?>" class="active">BR</a>
                             </div>
                             <div class="col-auto">
-                                <a href="#">ES</a>
-                            </div>-->
+                                <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'en')); ?>">EN</a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'es')); ?>">ES</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 mt-5 d-xl-none mb-3 social-net">
