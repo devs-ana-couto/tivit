@@ -393,8 +393,11 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		public function add_schema_to_navbar_ul( $args ) {
 			if ( isset( $args['items_wrap'] ) ) {
 				$wrap = $args['items_wrap'];
-				if ( strpos( $wrap, 'SiteNavigationElement' ) === false ) {
-					$args['items_wrap'] = preg_replace( '/(>).*>?\%3\$s/', ' itemscope itemtype="http://www.schema.org/SiteNavigationElement"$0', $wrap );
+				// echo '$wrap='.$wrap.'<br>';
+				if ($wrap !== NULL) {
+					if ( strpos( $wrap, 'SiteNavigationElement' ) === false ) {
+						$args['items_wrap'] = preg_replace( '/(>).*>?\%3\$s/', ' itemscope itemtype="http://www.schema.org/SiteNavigationElement"$0', $wrap );
+					}
 				}
 			}
 			return $args;

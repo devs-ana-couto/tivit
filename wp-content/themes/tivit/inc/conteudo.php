@@ -299,7 +299,7 @@ if (!function_exists('ac_bloco_conteudo')) {
                     $categoria_lista[$categoria->slug] = $categoria->name;
                 }
             }
-            // $etiquetas = get_the_tags($identif);
+            $etiquetas = get_the_tags($identif);
             $dados[] = array(
                 'postid' => $identif,
                 'postdate' => $dia,
@@ -438,7 +438,7 @@ if (!function_exists('ac_bloco_page_conteudo')) {
                     $categoria_lista[$categoria->slug] = $categoria->name;
                 }
             }
-            // $etiquetas = get_the_tags($identif);
+            $etiquetas = get_the_tags($identif);
             $dados[] = array(
                 'postid' => $identif,
                 'postdate' => $dia,

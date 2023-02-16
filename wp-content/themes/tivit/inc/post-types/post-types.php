@@ -375,3 +375,26 @@ function create_projetos() {
 	);
 	register_taxonomy( 'categorias-esg', array( 'projetos' ), $args );
 }
+
+// Rodape
+add_action( 'init', 'create_rodape' );
+function create_rodape() {
+	register_post_type( 'rodape',
+	    array(
+	      	'labels' => array(
+		        'name' =>'Rodapé',
+		        'singular_name' =>'Rodapé',
+				'add_new' =>'Adicionar Rodapé',
+				'add_new_item' =>'Adicionar Novo Rodapé',
+				'edit_item' =>'Editar Rodapé',
+				'new_item' =>'Novo Rodapé',
+			),
+			'public' => true,
+			'capability_type' => 'post',
+			'menu_icon' => 'dashicons-align-full-width',
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'vm50-rodape'),
+			'supports' => array( 'title', 'thumbnail'),
+		)
+	);
+}

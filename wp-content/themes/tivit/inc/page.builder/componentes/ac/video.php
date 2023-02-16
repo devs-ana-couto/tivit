@@ -24,7 +24,7 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
     }
     $div_el = $css_id_object;
 
-
+    $s_color_font = (isset($s_color_font)) ? $s_color_font : '';
     $t_color_font = set_font_color($div_el . ' h1', $s_color_font);
     $t_color_font .= set_font_color($div_el . ' p', $s_color_font);
     $t_color_font .= set_font_color($div_el, $s_color_font);
@@ -99,8 +99,8 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
                 </div>
             </div>
         </div>
-        
-  
+
+
     </section>
         <div class="modal fade" id="videoOpen" data-bs-keyboard="true" tabindex="-1" aria-labelledby="videoOpenLabel"
          aria-hidden="true">
@@ -164,7 +164,7 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
         });
 
     </script>
-  
+
 
 ';
     $content = '
@@ -196,6 +196,7 @@ function pb_ac_video($obj_id, $obj = null, $block, $echo = true)
                 $content);
     endwhile;
 
+    $s_color_of_menu = '';
 
     $generate_element =
         str_replace(

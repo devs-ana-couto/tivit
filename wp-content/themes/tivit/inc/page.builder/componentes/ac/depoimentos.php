@@ -34,20 +34,20 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
             background: {bg_container};
             padding-top: {padding_top}px;
             padding-bottom: {padding_bottom}px;
-            
+
         }
-        
+
         #feedbackSlider{id}{
             height: unset !important;
           }
-        
+
         @media screen and (max-width: 991px){
                 #box-f-client{id}{
                     padding-top: {mobile_padding_top}px;
                     padding-bottom: {mobile_padding_bottom}px;
                 }
             }
-          
+
     </style>
      <section class="container-fluid px-lg-0 box-feedback-cliente {classAlt}" id="box-f-client{id}">
         <div class="container"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -57,12 +57,12 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
                     <div id="feedbackSlider{id}" class="carousel carousel-dark slide feedbackSlider"
                          data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            {bullets}                         
+                            {bullets}
                         </div>
                         <div class="carousel-inner">
                             {content}
                         </div>
-                        {arrows}                      
+                        {arrows}
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
                                     </div>
                                 </div>
                             </div>
-    
+
     ';
 
     $count_dep = 0;
@@ -126,7 +126,7 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
         $role_client = $slide['gd-el-depositions-role-client'];
         $text_client = $slide['gd-el-depositions-text-client'];
 
-        $generate_content .=
+        $generate_content =
             str_replace(
                 array('{active}', '{photo_client}', '{name_client}', '{role_client}', '{text_client}'),
                 array($active, $photo_client, $name_client, $role_client, $text_client),
@@ -135,12 +135,14 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
 
 
         if (count($r_slider) > 1) {
-            $generate_bullets .=
+            $generate_bullets =
                 str_replace(
                     array('{id}', '{active}', '{key}'),
                     array($obj_id, $active, $key),
                     $bullets
                 );
+        } else {
+            $generate_bullets = '';
         }
 
 
@@ -167,6 +169,8 @@ function pb_ac_depoimentos($obj_id, $obj = null, $block, $echo = true)
                 array($obj_id),
                 $arrows
             );
+    } else {
+        $generate_arrows = '';
     }
 
 

@@ -246,13 +246,21 @@ if (!function_exists('ac_bloco_cases')) {
 add_shortcode('ac-bloco-cases', 'ac_bloco_cases');
 
 if (!function_exists('ac_bloco_home_cases')) {
-    function ac_bloco_home_cases()
+    function ac_bloco_home_cases($atts, $content = null)
     {
         $arg['porpagina'] = 3;
         $arg['pagina'] = 1;
         $dados = ac_cases_listar($arg);
 
         $saida = '';
+        $saida .= '<section data-anime="background-color" data-anime-color="#262626" data-animeted-color="#000" class="container-fluid box-news-cards dark-theme box-news-cards-cases">';
+        $saida .= '<div class="container">';
+        $saida .= '<div class="row" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">';
+        $saida .= '<div class="col-12 box-title">';
+        $saida .= '<h2>'.$content.'</h2>';
+        $saida .= '</div>';
+        $saida .= '</div>';
+
         $saida .= '<div class="row">';
         $saida .= '<div class="col-12 box-cards">';
         $saida .= '<div class="owl-carousel owl-theme owl-news-cards">';
@@ -285,11 +293,13 @@ if (!function_exists('ac_bloco_home_cases')) {
 
         $saida .= '<div class="row justify-content-center mt-5">';
         $saida .= '<div class="col-auto box-btn">';
-        $saida .= '<a href="/staged/tivit/cases" class="btn btn-tivit1 btncontent">VER TODOS OS CASES</a>';
+        $saida .= '<a href="'.site_url('/cases').'" class="btn btn-tivit1 btncontent">'.__('VER TODOS OS CASES', 'tivit').'</a>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
-        $saida .= '';
+
+        $saida .= '</div>';
+        $saida .= '</section>';
 
         return $saida;
     }

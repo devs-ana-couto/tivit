@@ -23,7 +23,7 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
         $active_mask = "d-none";
 
     $template = '
-    
+
     <!-- Header Inner -->
     <section class="container-fluid p-0 header-inner position-relative">
         <div class="container {active_mask}">
@@ -44,7 +44,7 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
              style="background: url({image});">
                 <div class="card-img-overlay mask-gradient"></div>
                     <div class="d-flex flex-column h-100 justify-content-center position-relative align-items-center">
-                        <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title" 
+                        <div class="col-10 col-xxl-9 d-flex justify-content-center align-items-center flex-column box-title"
                         data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                             <p class="desc-title">{cat_page}</p>
                             <h1 class="title">{title}</h1>
@@ -59,7 +59,7 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
     ';
 
     $template_player = '
-    <div class="col-auto player position-absolute" 
+    <div class="col-auto player position-absolute"
     data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <div class="d-flex flex-column">
             <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
@@ -184,11 +184,13 @@ function pb_ac_header_internal_mask($obj_id, $obj = null, $block, $echo = true)
                 $template_cta
             )
         ;
+    } else {
+        $generate_template_cta = '';
     }
     if($h_small_text !== ''){
         $template_small_text = '
         <div class="col-auto player position-absolute peoples">
-            <p class="customNumbers">{small_text}</p>             
+            <p class="customNumbers">{small_text}</p>
         </div>
         ';
         $generate_small_text =

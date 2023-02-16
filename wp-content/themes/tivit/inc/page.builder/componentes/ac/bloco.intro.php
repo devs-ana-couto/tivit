@@ -3,6 +3,7 @@
 function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
 {
     $generate_element = "";
+    $content_btn = $content_btn2 = $b2_image = $b1_image = '';
     $css_id = md5(rand(0, 1000));
     if (have_rows("gd-ac-bloco-intro-bloco-1", $obj_id)):
         while (have_rows("gd-ac-bloco-intro-bloco-1", $obj_id)):the_row();
@@ -36,7 +37,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
                         }
                     ';
                     if (!empty($b1_cta_link) && !empty($b1_cta_text)):
-                        $content_btn = ' 
+                        $content_btn = '
                     <div class="col-12 my-5 my-lg-auto mt-lg-4 d-flex justify-content-center justify-content-lg-start">
                   <a href="' . $b1_cta_link . '" class="btn btn-tivit1">' . $b1_cta_text . '</a>
                     </div>';
@@ -55,7 +56,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
             if(!empty($b2_image_array['url'])){
             $b2_image = '
            <div class="col-12 my-5 mt-lg-4 d-flex justify-content-center">
-                  
+
                 <img src="' . $b2_image_array["url"] . '" class="logo-tivit my-4" height="" style="min-height: 40px;" alt="">
             </div>';
             }
@@ -80,7 +81,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
                         }
                     ';
                     if (!empty($b2_cta_link) && !empty($b2_cta_text)):
-                        $content_btn2 = ' 
+                        $content_btn2 = '
                      <div class="col-12 my-5 my-lg-auto mt-lg-4 d-flex justify-content-center justify-content-lg-start">
                     <a href="' . $b2_cta_link . '" class="btn btn-tivit1">' . $b2_cta_text . '</a>
                     </div>';
@@ -94,6 +95,7 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
 
     $s_mask_test = get_sub_field("gd-ac-bloco-intro-bloco-mask");
 
+    $s_mask = '';
     if($s_mask_test) {
         $s_mask = '<div class="card-img-overlay box-mask w-100 h-100"></div>';
     }
@@ -109,17 +111,19 @@ function pb_ac_bloco_intro($obj_id, $obj = null, $block, $echo = true)
         $css_bg_color = "";
         $s_image = '
         background: url("' .$s_bg_image['url'] . '");
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
         ';
+    } else {
+        $s_image = '';
     }
 
     $template = '
     <style>
         ' . $b1_css . '
         ' . $b2_css . '
-        
+
         .box-intro-{css_id}-refatorado {
             '. $css_bg_color .'
             '. $s_image .'

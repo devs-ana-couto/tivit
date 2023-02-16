@@ -382,7 +382,7 @@ page_bulder_init(get_the_ID(),$post,true);
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="w-100 d-flex justify-content-center align-items-center h-100 cta">
-                    <h2><strong>PRONTO PARA INOVAR?</strong> FALE COM NOSSOS ESPECIALISTAS</h2>
+                    <h2><strong><?php _e('PRONTO PARA INOVAR?','tivit'); ?></strong> <?php _e('FALE COM NOSSOS ESPECIALISTAS','tivit'); ?></h2>
                 </div>
             </div>
             <div class="col-12 col-md-8">

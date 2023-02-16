@@ -30,6 +30,8 @@ function pb_ac_slide_logos($obj_id, $obj = null, $block, $echo = true)
             filter: unset;
             filter: unset; /* IE */
         ';
+    } else {
+        $css_grayScale = $css_grayScale_hover = '';
     }
 
     $template = '
@@ -47,16 +49,16 @@ function pb_ac_slide_logos($obj_id, $obj = null, $block, $echo = true)
          }
         #box-parceiros-{idRand} .slider-parceiros .item img{
             '. $css_grayScale .'
-        } 
+        }
         #box-parceiros-{idRand} .slider-parceiros .item img:hover{
             '. $css_grayScale_hover .'
         }
         #box-parceiros-{idRand} .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
             background: {css_bullets} !important;
         }
-        
+
     </style>
-    
+
     <section class="container-fluid px-0 box-parceiros" id="box-parceiros-{idRand}">
         <div class="container">
             <div class="row justify-content-center">

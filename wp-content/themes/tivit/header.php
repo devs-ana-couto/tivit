@@ -17,9 +17,13 @@
     wp_head();
     $url_atual = $_SERVER['REQUEST_URI'];
     if (strpos($_SERVER['REQUEST_URI'], '/en/') === false) {
-        $idioma = 'PT';
-    } elseif (strpos($_SERVER['REQUEST_URI'], '/es/') === false) {
-        $idioma = 'ES';
+        if (strpos($_SERVER['REQUEST_URI'], '/es/') === false) {
+            $idioma = 'PT';
+        } else {
+            $idioma = 'ES';
+        }
+    // } elseif (strpos($_SERVER['REQUEST_URI'], '/es/') === false) {
+    //     $idioma = 'ES';
     } else {
         $idioma = 'EN';
     }
@@ -47,12 +51,20 @@
     $menu_name = 'landing-menu'; //menu slug
     $locations = get_nav_menu_locations();
     $menu = wp_get_nav_menu_object($locations[$menu_name]);
-    $rel_por_industria = wp_get_nav_menu_items($menu->term_id, array('order' => 'DESC'));
+    if (isset($menu->term_id)) {
+        $rel_por_industria = wp_get_nav_menu_items($menu->term_id, array('order' => 'DESC'));
+    } else {
+        $rel_por_industria = array();
+    }
 
     $menu_name02 = 'landing-menu-02'; //menu slug
     $locations02 = get_nav_menu_locations();
     $menu02 = wp_get_nav_menu_object($locations02[$menu_name02]);
-    $rel_por_desafio = wp_get_nav_menu_items($menu02->term_id, array('order' => 'DESC'));
+    if (isset($menu02->term_id)) {
+        $rel_por_desafio = wp_get_nav_menu_items($menu02->term_id, array('order' => 'DESC'));
+    } else {
+        $rel_por_desafio = array();
+    }
 
 
     function le_subpaginas($tipo_categoria, $valor_categoria)
@@ -179,9 +191,20 @@
 }
 </style>
 
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5MZ555T');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body <?php body_class(); ?>>
+<script type="text/javascript" id="PrivallyApp" src="https://app.privally.global/app.js" pid="71bce7-9fb716" async></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MZ555T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <input type="hidden" id="change_icon_hamburguer_color_tbanks" name="change_icon_hamburguer_color_tbanks" value="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/hamburguer-white.svg" />
 <input type="hidden" id="change_icon_search_color_tbanks" name="change_icon_search_color_tbanks" value="<?php echo get_template_directory_uri(); ?>/assets/icons/navsearch-white.svg" />
 <input type="hidden" id="change_logo_on_scroll_desktop" name="change_logo_on_scroll_desktop" value="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" />
@@ -217,7 +240,7 @@
             <div class="row">
                 <nav class="navbar navbar-expand bg-transparent">
                     <div class="w-100">
-                        <div class="row row-cols-lg-3 justify-content-around">
+                        <div class="row justify-content-around">
                             <div class="col-auto d-flex align-items-center">
                                 <?php
                                 wp_nav_menu(array(
@@ -436,7 +459,8 @@
                         <div class="row">
                             <nav class="navbar navbar-expand bg-transparent">
                                 <div class="w-100">
-                                    <div class="row row-cols-lg-3 justify-content-around">
+                                    <!-- <div class="row row-cols-lg-3 justify-content-around"> -->
+                                    <div class="row justify-content-around">
                                         <div class="col-auto d-flex align-items-center">
                                             <?php
                                             wp_nav_menu(array(
@@ -473,16 +497,25 @@
                                                 ));
                                                 ?>
                                                 <ul class="navbar-nav">
-                                                    <div class="col-12  language-box">
-                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'pt')); ?>" class="active">BR</a>
-                                                        /
-                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'en')); ?>">EN</a>
-                                                        /
-                                                        <a href="<?php echo get_permalink(pll_get_post(get_the_ID(),'es')); ?>">ES</a>
-                                                    </div>
+                                                    <li class="nav-item nav-language">
+                                                        <?php
+                                                        if ($idioma != 'PT') {
+                                                            echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'pt')).'" class="nav-language">BR</a> / ';
+                                                        }
+                                                        if ($idioma != 'EN') {
+                                                            echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'en')).'" class="nav-language">EN</a>';
+                                                        }
+                                                        if ($idioma == 'PT') {
+                                                            echo ' / ';
+                                                        }
+                                                        if ($idioma != 'ES') {
+                                                            echo '<a href="'.get_permalink(pll_get_post(get_the_ID(),'es')).'" class="nav-language">ES</a>';
+                                                        }
+                                                        ?>
+                                                    </li>
                                                     <div class="search">
                                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/nav/search-white.svg"
-                                                             alt="Search Tivit" onclick="abre_barra_pesquisa();">
+                                                            alt="Search Tivit" onclick="abre_barra_pesquisa();">
                                                     </div>
                                                 </ul>
                                             </div>
@@ -566,13 +599,13 @@
                                 $mt = 'mt-4 mb-4 mb-xl-auto mt-xl-0';
                             }
                             $indexConteudo++;
-                            echo '<div class="col box-list-solutions p-0">';
+                            echo '<div class="col box-list-solutions p-0 mb-4">';
                             echo '<div class="textMenu ' . $mt . '">';
                             echo '<h2><a href="' . $conteudo['link'] . '">' . $conteudo['titulo'] . '</a></h2>';
                             echo '<div class="menu-solucoes-cloud-solutions-container">
                                     <ul id="menu-solucoes-cloud-solutions" class="menu"
                                     itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">';
-                            $list_por_servico = $conteudo['submenu'];
+                            $list_por_servico = isset($conteudo['submenu']) ? $conteudo['submenu'] : array();
                             foreach ($list_por_servico as $key => $submenu) {
                                 echo '<li id="menu-item-' . $key . '" class="menu-item menu-item-type-post_type menu-item-object-solucoes menu-item-' . $key . ' nav-item">';
                                 echo '<a itemprop="url" href="' . $submenu['link'] . '" class="nav-link">';

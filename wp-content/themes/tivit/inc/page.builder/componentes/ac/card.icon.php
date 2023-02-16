@@ -27,28 +27,30 @@ function pb_ac_card_icon($obj_id, $obj = null, $block, $echo = true)
 
 
         $css_cta = '.box-card-icons .btn-tivit1 {
-	            	    background: ' . $cta_background_cta . ' !important; 
-	            	    color: ' . $cta_text_color_cta . ' !important;           
+	            	    background: ' . $cta_background_cta . ' !important;
+	            	    color: ' . $cta_text_color_cta . ' !important;
 	            	}
 	            	.box-card-icons .btn-tivit1:hover{
-	            	    background: ' . $cta_text_color_cta . ' !important; 
-	            	    color: ' . $cta_background_cta . '	!important;         
+	            	    background: ' . $cta_text_color_cta . ' !important;
+	            	    color: ' . $cta_background_cta . '	!important;
 	            	}';
+    } else {
+        $content_cta = '';
     }
 
 
     $template = '
 
     <style>
-        
-        
+
+
         '. $c_css .'
         ' . $css_cta .'
     </style>
     <section class="container-fluid box-card-icons px-lg-0" style="background: '. $s_background_color .';">
         <div class="container">
             <div class="col d-flex justify-content-center box-title-top"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
-            {title}    
+            {title}
             </div>
             <div class="col box-cards h-100">
                 <div class="row row-cols-1 row-cols-lg-'.$r_number.' gy-4 g-lg-4 p-1  px-lg-5"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -60,9 +62,9 @@ function pb_ac_card_icon($obj_id, $obj = null, $block, $echo = true)
             </div>
         </div>
     </section>
-    
-    
-    
+
+
+
     ';
 
     $content = '
