@@ -1049,7 +1049,7 @@ html .paragrafo6, body .paragrafo6, * .paragrafo6 {
     height: 18px;
   }
   .footer .footer-partners {
-    padding: 0;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1341,6 +1341,7 @@ div {
   left: 0;
   right: 0;
   bottom: 50px;
+  z-index: 200;
 }
 @media screen and (min-width: 992px) {
   .home-hero #hero .controladores {
@@ -2116,7 +2117,7 @@ div {
     position: relative;
   }
   .home-hero .container .redes {
-    z-index: 2;
+    z-index: 200;
     position: absolute;
     display: flex;
     flex-direction: column;

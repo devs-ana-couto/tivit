@@ -100,7 +100,7 @@
 
         <div class="footer-partners hide-mobile">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/dev-api.svg" width="95px" height="60px" alt="DevApi Tivit">
+          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/dev-api.svg" width="95px" height="60px" alt="DevApi Tivit">
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo_lambda3_rodape.svg" alt="Lambda Tivit">
 
@@ -112,7 +112,26 @@
 
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/tivit-labs.svg" width="188.4" height="18px" alt="Tivit Labs">
 
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" height="30px"  alt="Sensr.it">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/partners/logo-sensr.it-tivit-company.png" height="30px"  alt="Sensr.it"> -->
+<?php
+    $args['post_type']   = 'rodape';
+    $args['orderby']     = 'menu_order';
+    $args['order']       = 'ASC';
+    $args['post_status'] = 'publish';
+    $args['nopaging']    = true;
+    $the_query = new WP_Query( $args );
+    // var_dump($the_query);
+    while ( $the_query->have_posts() ) {
+        $the_query->the_post();
+        $identif    = $the_query->post->ID;
+        $titulo     = get_the_title();
+        $thumbnail  = ( has_post_thumbnail()) ? wp_get_attachment_url(get_post_thumbnail_id()) : '';
+        $thumb_alt  = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+        echo '<img src="'.$thumbnail.'" alt="'.$thumb_alt.'" style="width:auto;height:auto;max-width:188px;max-height:90px;">';
+
+    }
+    wp_reset_query();
+?>
 
         </div>
 

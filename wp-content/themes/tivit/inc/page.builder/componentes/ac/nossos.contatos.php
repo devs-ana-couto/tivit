@@ -22,19 +22,19 @@ function pb_ac_nossos_canais($obj_id, $obj = null, $block, $echo = true)
 
     $t_instagram = $t_linkedin = $t_facebook = $t_twitter = $t_youtube = '';
     if ($c_instagram != "") {
-        $t_instagram = '<a href="{c_instagram}" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/instagram-white.svg" alt="Instagram"></a>';
+        $t_instagram = '<a href="'.$c_instagram.'" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/instagram-white.svg" alt="Instagram"></a>';
     }
     if ($c_linkedin != "") {
-        $t_linkedin = '<a href="{c_linkedin}" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/linkedin-white.svg" alt="Linkedin"></a>';
+        $t_linkedin = '<a href="'.$c_linkedin.'" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/linkedin-white.svg" alt="Linkedin"></a>';
     }
     if ($c_facebook != "") {
-        $t_facebook = '<a href="{c_facebook}" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/facebook-white.svg" alt="Facebook"></a>';
+        $t_facebook = '<a href="'.$c_facebook.'" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/facebook-white.svg" alt="Facebook"></a>';
     }
     if ($c_twitter != "") {
-        $t_twitter = '<a href="{c_twitter}" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/twitter-white.svg" alt="Twitter"></a>';
+        $t_twitter = '<a href="'.$c_twitter.'" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/twitter-white.svg" alt="Twitter"></a>';
     }
     if ($c_youtube != "") {
-        $t_youtube = '<a href="{c_youtube}" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/youtube-white.svg" alt="Youtube"></a>';
+        $t_youtube = '<a href="'.$c_youtube.'" target="_blank"><img src="'.get_template_directory_uri().'/assets/icons/social/youtube-white.svg" alt="Youtube"></a>';
     }
 
 

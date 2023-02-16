@@ -76,7 +76,7 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
             {cta_content}
         </div>
     </section>
-    
+
     ';
 
     $content_template = '
@@ -105,7 +105,7 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
         $desc_card = $card['gd-el-card-image-top-content-descript'];
 
 
-        $generate_content .= str_replace(
+        $generate_content = str_replace(
             array('{title_card}', '{image_card}', '{desc_card}'),
             array($title, $image, $desc_card),
             $content_template
@@ -130,6 +130,8 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
                 array($cta_link, $cta_text),
                 $cta_template
             );
+    } else {
+        $generate_template_cta = '';
     }
 
     $generate_element =

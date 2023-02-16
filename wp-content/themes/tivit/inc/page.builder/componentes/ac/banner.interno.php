@@ -60,6 +60,10 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
     if (empty($s_color_background)) {
         $s_color_background = "#fff";
     }
+    $t_color_font = '';
+    $t_color_button = '';
+    $t_color_background = '';
+    $t_margin_and_padding = '';
 
     // $t_color_button = set_button_color($div_el.' a.read-more', $s_color_button, $s_color_background);
     // $css_button = "";
@@ -70,6 +74,8 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
     // if(!$m_default_margin){
     // 	$t_margin_and_padding = set_margin_personalized($m_personalized_margin, $div_el);
     // }
+    $modal = '';
+    $script = '';
 
     if (!empty($c_button_link_array)) {
         $modal = '
@@ -139,7 +145,7 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
         ';
 
         $player = '
-        
+
         <div class="col-auto player position-absolute">
                                     <div class="d-flex flex-column">
                                         <div class="col-12 d-flex justify-content-center flex-column position-relative order-2 order-lg-1">
@@ -162,6 +168,7 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
 
     }
 
+    $player = (isset($player)) ? $player : '';
     $template = '
 	            <!---- AC: Banner Home Module -->
 	            <style>
@@ -178,7 +185,7 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
 	            	/* CSS: END Personalized */
 	            </style>
 
-				
+
 
                 <section class="container-fluid p-0 header-inner position-relative">
                     <div class="container">
@@ -243,6 +250,8 @@ function pb_ac_banner_interno($obj_id, $obj = null, $block, $echo = true)
     // 		array('{c_button_tittle}','{c_button_link}','{c_button_target}','{c_title}','{c_title_clean}','{img}','{id}','{css_button}','{c_button}'),
     // 		array($c_button_tittle,$c_button_link,$c_button_target,$c_title,$c_title_clean,$c_image['url'],$obj_id,$css_button,$generate_button),
     // 		$content);
+
+    $s_color_of_menu = $c_position = $generate_content = '';
 
     $generate_element =
         str_replace(

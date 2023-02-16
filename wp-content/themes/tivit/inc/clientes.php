@@ -55,7 +55,9 @@ if (!function_exists('ac_bloco_clientes')) {
         $arg['pagina']    = 1;
         $dados = ac_clientes_listar($arg);
 
-        $saida = '<div class="container">';
+        $saida  = '';
+        $saida .= '<section data-anime="background-color" data-anime-color="#FFF" data-animeted-color="#FFF" class="container-fluid px-lg-0 box-nosso-clientes" style="background: white;">';
+        $saida .= '<div class="container">';
         $saida .= '<div class="row justify-content-center">';
 
         $saida .= '<div class="col-auto box-title mt-5">';
@@ -75,6 +77,7 @@ if (!function_exists('ac_bloco_clientes')) {
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
+        $saida .= '</section>';
 
 
         return $saida;

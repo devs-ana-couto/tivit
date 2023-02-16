@@ -23,7 +23,7 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
     }
     $div_el = $css_id_object;
 
-
+    $s_color_font = (isset($s_color_font)) ? $s_color_font : '';
     $t_color_font = set_font_color($div_el . ' h1', $s_color_font);
     $t_color_font .= set_font_color($div_el . ' p', $s_color_font);
     $t_color_font .= set_font_color($div_el, $s_color_font);
@@ -61,6 +61,8 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
                 </div>
             </div>
         ';
+    } else {
+        $c_background_cta = $c_text_color_cta = '';
     }
 
     $template = '
@@ -77,26 +79,26 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
 
 	            	/* CSS: END Personalized */
 	            	.card-only-text .btn-tivit1 {
-	            	    background: ' . $c_background_cta . ' !important; 
-	            	    color: ' . $c_text_color_cta . ' !important;           
+	            	    background: ' . $c_background_cta . ' !important;
+	            	    color: ' . $c_text_color_cta . ' !important;
 	            	}
 	            	.card-only-text .btn-tivit1:hover{
-	            	    background: ' . $c_text_color_cta . ' !important; 
-	            	    color: ' . $c_background_cta . '	!important;         
+	            	    background: ' . $c_text_color_cta . ' !important;
+	            	    color: ' . $c_background_cta . '	!important;
 	            	}
 	            </style>
 
 
-				
+
     <section class="container-fluid px-lg-0 card-only-text" style="background: ' . $s_color_background . ';">
         <div class="container">
             <div class="row row-cols-1 justify-content-center">
                 <div class="col box-title">
-                 <div class="row justify-content-center">         
-                     <div class="col-12 col-lg-8"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">              
+                 <div class="row justify-content-center">
+                     <div class="col-12 col-lg-8"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {c_text}
-                   </div>    
-                  </div>     
+                   </div>
+                  </div>
                 </div>
             </div>
             <div class="col-12 box-cards  mt-5">
@@ -107,17 +109,17 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
            ' . $content_cta . '
         </div>
     </section>
-    
+
 		        <!---- // AC: Planejamento Module -->
 			';
 
 
     $content = '
-				
+
 				<div class="col" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" >
                         <div class="card h-100" style="border-left-color: ' . $t_color_border . ';">
-                            <div class="card-header"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">                           
-                                {titulo}                                               
+                            <div class="card-header"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
+                                {titulo}
                             </div>
                             <div class="card-body">
                                 <div class="col box-card-text"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
@@ -126,7 +128,7 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
                             </div>
                         </div>
                     </div>
-				
+
 				';
 
     $generate_content = "";
@@ -145,6 +147,7 @@ function pb_ac_planejamento($obj_id, $obj = null, $block, $echo = true)
     endwhile;
     // endif;
 
+    $s_color_of_menu = '';
 
     $generate_element =
         str_replace(

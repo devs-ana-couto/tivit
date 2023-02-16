@@ -58,6 +58,7 @@
       left: 0;
       right: 0;
       bottom: 50px;
+      z-index: 200;
       @media screen and (min-width: 992px) {
         bottom: 90px;
         left: 130px;
@@ -968,7 +969,7 @@
       position: relative;
 
       .redes {
-        z-index: 2;
+        z-index: 200;
         position: absolute;
         display: flex;
         flex-direction: column;

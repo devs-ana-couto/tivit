@@ -50,7 +50,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
         #case_slider_{id} .carousel-indicators [data-bs-target] {
             background-color: {bullets_color};
         }
-        
+
         @media screen and (max-width: 991px) {
         #case_slider_{id}{
             padding-top: {paddingTopMobile}px !important;
@@ -102,7 +102,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
                 </div>
             </div>
         </div>
-        
+
     </section>
     ';
 
@@ -119,7 +119,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
                 $template_cta_global
             );
     }
-    $content = '            
+    $content = '
     <div class="carousel-item {active} position-relative"  data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
         <div class="row row-cols-1">
             <div class="col box-images p-lg-0">
@@ -163,7 +163,7 @@ function pb_ac_slider_cases($obj_id, $obj = null, $block, $echo = true)
         if ($key === 0)
             $active = "active";
 
-        $generate_content .=
+        $generate_content =
             str_replace(
                 array('{id}', '{active}', '{image}', '{title}', '{descript}', '{cta_slider}'),
                 array($key, $active, $image, $title, $descript, $generate_cta),

@@ -3,6 +3,8 @@
  * Page Builder Componentes
 */
 require_once('componentes/ac/banner.home.php');
+require_once('componentes/ac/hero.home.php');
+require_once('componentes/ac/home.portifolio.php');
 require_once('componentes/ac/banner.interno.php');
 require_once('componentes/ac/banner.01.php');
 require_once('componentes/ac/banner.02.php');
@@ -60,6 +62,12 @@ function page_bulder_init($obj_id, $obj = null, $echo = true)
             switch ($layout) {
                 case 'gd-ac-banner-home':
                     $return[$layout] = pb_ac_banner_home($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-hero-home':
+                    $return[$layout] = pb_ac_hero_home($obj_id, $obj, $block, $echo);
+                    break;
+                case 'gd-home-portifolio':
+                    $return[$layout] = pb_ac_home_portifolio($obj_id, $obj, $block, $echo);
                     break;
                 case 'gd-header-interno':
                     $return[$layout] = pb_ac_banner_interno($obj_id, $obj, $block, $echo);

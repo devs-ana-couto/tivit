@@ -5,53 +5,58 @@ if (sliderCategoria !== null) {
 }
 
 function buscaDados() {
-    var menuCat = document.querySelector(".menu-categoria");
-    var navLink = menuCat.querySelector(".nav-link.active");
 
-    var categoryOnly = navLink.getAttribute("id");
-    // var xhr = new XMLHttpRequest;
+    try {
+        var menuCat = document.querySelector(".menu-categoria");
+        var navLink = menuCat.querySelector(".nav-link.active");
 
-    preparaBusca();
-    // defineTitle(navLink.getAttribute("id"));
+        var categoryOnly = navLink.getAttribute("id");
+        // var xhr = new XMLHttpRequest;
 
-    // xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
-    // xhr.addEventListener("load", function () {
+        preparaBusca();
+        // defineTitle(navLink.getAttribute("id"));
+
+        // xhr.open("GET", "https://www.anacouto.com.br/staged/tivit/wp-content/uploads/2022/01/json/arquivos.json");
+        // xhr.addEventListener("load", function () {
         // if (xhr.status === 200) {
-            // var response = xhr.responseText;
-            // var dados = JSON.parse(response);
-            var dados = projeto_json_txt;
+        // var response = xhr.responseText;
+        // var dados = JSON.parse(response);
+        var dados = projeto_json_txt;
 
-            var indexDados = 0;
-            var indexArticle = 0;
-            var indexRow = 0;
-            dados.forEach(function (dado) {
-                if (dado.category === categoryOnly && indexDados <= 3) {
-                    montaSlider(dado, indexDados);
-                    indexDados++;
-                } else if (dado.category === categoryOnly && indexDados > 3) {
+        var indexDados = 0;
+        var indexArticle = 0;
+        var indexRow = 0;
+        dados.forEach(function (dado) {
+            if (dado.category === categoryOnly && indexDados <= 3) {
+                montaSlider(dado, indexDados);
+                indexDados++;
+            } else if (dado.category === categoryOnly && indexDados > 3) {
 
-                    if (indexArticle === 0) {
-                        montaCarouselArticle(indexRow);
-                        montaArticleSlider(dado, indexRow);
-                        montaBullets(indexRow);
-                        indexArticle++;
-                        indexRow++;
-                    } else if (indexArticle > 0 && indexArticle < 3) {
-                        indexRow -= 1;
-                        montaArticleSlider(dado, indexRow);
-                        indexRow++;
-                        indexArticle++;
-                    } else if (indexArticle >= 3) {
-                        indexArticle = 0;
-                    }
-                    indexDados++
+                if (indexArticle === 0) {
+                    montaCarouselArticle(indexRow);
+                    montaArticleSlider(dado, indexRow);
+                    montaBullets(indexRow);
+                    indexArticle++;
+                    indexRow++;
+                } else if (indexArticle > 0 && indexArticle < 3) {
+                    indexRow -= 1;
+                    montaArticleSlider(dado, indexRow);
+                    indexRow++;
+                    indexArticle++;
+                } else if (indexArticle >= 3) {
+                    indexArticle = 0;
                 }
-            });
+                indexDados++
+            }
+        });
         // }
     // });
 
     // xhr.send();
 
+    } catch (error) {
+
+    }
 }
 
 function preparaBusca() {

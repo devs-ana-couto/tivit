@@ -16,7 +16,11 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
     $s_color_background = get_sub_field('gd-el-simple-background-color');
     $s_img_background_array = get_sub_field('gd-el-simple-background-image');
     $s_img_background_mobile_array = get_sub_field(' gd-el-simple-background-image-mobile');
-    $s_img_background = $detect->isMobile() ? $s_img_background_mobile_array['url'] : $s_img_background_array['url'];
+    if ($detect->isMobile()) {
+        $s_img_background = (isset($s_img_background_mobile_array['url'])) ? $s_img_background_mobile_array['url'] : '';
+    } else {
+        $s_img_background = (isset($s_img_background_array['url'])) ? $s_img_background_array['url'] : '';
+    }
     $bgColor = "background-color: $s_color_background;";
     $bgImg = "background-image: $s_img_background;";
 
@@ -53,9 +57,9 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
     $t_color_background = $div_el . '{background-image: url(\'' . $s_img_background . '\'); background-repeat:no-repeat; background-position:center center; background-size: cover; background-color:' . $s_color_background . '}';
 
     $t_margin_and_padding = "";
-    if (!$m_default_margin) {
-        $t_margin_and_padding = set_margin_personalized($m_personalized_margin, $div_el);
-    }
+    // if (!$m_default_margin) {
+    //     $t_margin_and_padding = set_margin_personalized($m_personalized_margin, $div_el);
+    // }
 
 
     $c_button_target = "_self";
@@ -65,6 +69,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
         $c_button = '<div class="mt-5"><a href="' . $c_button_link . '" class="btn btn-primary cta__geral" target="' . $c_button_target . '">' . $c_button_tittle . '</a></div>';
     } else {
         $c_button = '';
+        $c_button_link = '';
     }
 
     if (empty($s_color_background)) {
@@ -85,7 +90,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
 			@media screen and (max-width: 991px) {
             .css_danamic_{id_css} {
         ' . $paddindBottomMobileCss . '
-			' . $paddindTopMobileCss . '     
+			' . $paddindTopMobileCss . '
         }
         }
 
@@ -104,7 +109,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
                     </div>
                     <div class="col-auto" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         {c_button}
-                    </div>           
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,6 +148,7 @@ function pb_ac_chamada($obj_id, $obj = null, $block, $echo = true)
     // 		array($c_button_tittle,$c_button_link,$c_button_target,$c_title,$c_title_clean,$c_image['url'],$obj_id,$css_button,$generate_button),
     // 		$content);
 
+    $s_color_of_menu = $c_position = $generate_content = '';
     $generate_element =
         str_replace(
             array('{id}', '{css_content}', '{css_id_object}', '{s_color_of_menu}', '{c_position}', '{content}', '{s_img_background}', '{c_title}', '{c_button_link}', '{c_button_target}', '{c_button_tittle}', '{c_button}','{id_css}'),

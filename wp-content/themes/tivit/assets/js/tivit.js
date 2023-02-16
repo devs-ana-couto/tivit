@@ -961,7 +961,7 @@ solutionMenu.forEach((menu, index) => {
         var checkSolutionShow = document.querySelector('#open-solution-menu');
         if (!checkSolutionShow.classList.contains('show')) {
             modalSolution.show();
-            jQuery('body').css('padding-right', '0');
+            // jQuery('body').css('padding-right', '0');
             var menuItens = checkSolutionShow.querySelectorAll('.menu-item');
             menuItens.forEach((item, index) => {
                 if (item.classList.contains('solution-link-menu')) {
@@ -1015,33 +1015,38 @@ itemScroll.forEach((element) => {
 const animeScroll = () => {
     const windowTop = document.documentElement.scrollTop + window.innerHeight * 0.5;
     let headerHome = document.querySelector("#header-home-scroll");
-    let mask = headerHome.querySelectorAll(".carousel-item .mask.mask-desk");
-    itemScroll.forEach((element) => {
-        if (windowTop >= element.offsetTop) {
-            element.classList.add('anime');
-            let animetedColor = element.getAttribute("data-animeted-color");
-            element.style.backgroundColor = animetedColor;
+    try {
+        let mask = headerHome.querySelectorAll(".carousel-item .mask.mask-desk");
+        itemScroll.forEach((element) => {
+            if (windowTop >= element.offsetTop) {
+                element.classList.add('anime');
+                let animetedColor = element.getAttribute("data-animeted-color");
+                element.style.backgroundColor = animetedColor;
 
-            if (windowTop > 716) {
-                mask.forEach((element) => {
-                    if (element.classList.contains("red")) {
-                        element.classList.remove("active");
-                    } else if (element.classList.contains("white")) {
-                        element.classList.add("active");
-                    }
-                });
-            }
-        }
-    });
-    if(windowTop < 716){
-        mask.forEach((element) => {
-            if (element.classList.contains("red")) {
-                element.classList.add("active");
-            } else if (element.classList.contains("white")) {
-                element.classList.remove("active");
+                if (windowTop > 716) {
+                    mask.forEach((element) => {
+                        if (element.classList.contains("red")) {
+                            element.classList.remove("active");
+                        } else if (element.classList.contains("white")) {
+                            element.classList.add("active");
+                        }
+                    });
+                }
             }
         });
+        if (windowTop < 716) {
+            mask.forEach((element) => {
+                if (element.classList.contains("red")) {
+                    element.classList.add("active");
+                } else if (element.classList.contains("white")) {
+                    element.classList.remove("active");
+                }
+            });
+        }
+    } catch (error) {
+
     }
+
 };
 
 window.addEventListener('scroll', () => {
