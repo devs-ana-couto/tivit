@@ -99,13 +99,14 @@ function pb_ac_card_imagem_top($obj_id, $obj = null, $block, $echo = true)
                             </div>
                         </div>
     ';
+    $generate_content = '';
     foreach ($r_cards as $key => $card) {
         $title = $card['gd-el-card-image-top-content-title'];
         $image = $card['gd-el-card-image-top-content-image']['url'];
         $desc_card = $card['gd-el-card-image-top-content-descript'];
 
 
-        $generate_content = str_replace(
+        $generate_content .= str_replace(
             array('{title_card}', '{image_card}', '{desc_card}'),
             array($title, $image, $desc_card),
             $content_template

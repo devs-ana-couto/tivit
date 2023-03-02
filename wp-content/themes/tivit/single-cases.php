@@ -18,10 +18,10 @@ if(have_posts()) : while(have_posts()) : the_post();
                     <div class="case-item-logos" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">
                         <div class="row">
                             <div class="col-4 col-md-3">
-                                <img src="<? the_field('logo_01'); ?>" alt="">
+                                <img src="<? the_field('logo_01'); ?>" alt="" style="max-width:90px;">
                             </div>
                             <div class="col-7 col-md-5">
-                                <img src="<? the_field('logo_02'); ?>" alt="">
+                                <img src="<? the_field('logo_02'); ?>" alt="" style="max-width:90px;">
                             </div>
                         </div>
                     </div>
