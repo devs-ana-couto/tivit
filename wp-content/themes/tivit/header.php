@@ -563,7 +563,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <div class="col-11">
                                     <button type="button" class="d-xl-none mb-xl-auto btn  title-mobile"  data-bs-dismiss="modal"
-                                            aria-label="Close"><?php _e('SOLUÇÕES','tivit'); ?></button>
+                                            aria-label="Close"><?php pll_e('SOLUÇÕES','tivit'); ?></button>
                                 </div>
                                 <div class="col-10 mt-2 offset-1 offset-xl-0">
                                 <p><?php echo $por_servico_port; ?></p>

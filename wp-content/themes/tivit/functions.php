@@ -256,29 +256,29 @@ function pll_ativo() {
     return $saida;
 }
 if (pll_ativo()) {
-    pll_register_string( 'tivit', 'acessar artigo', 'tivit', false );
-    pll_register_string( 'tivit', 'ainda tem dúvidas? veja as perguntas frequentes:', 'tivit', false );
-    pll_register_string( 'tivit', 'Carregar mais', 'tivit', false );
-    pll_register_string( 'tivit', 'Cliente:', 'tivit', false );
-    pll_register_string( 'tivit', 'Com quem trabalhamos', 'tivit', false );
-    pll_register_string( 'tivit', 'confira esta vaga', 'tivit', false );
-    pll_register_string( 'tivit', 'CONHEÇA A NOSSA EQUIPE', 'tivit', false );
-    pll_register_string( 'tivit', 'Criado por <span>ANA COUTO</span>', 'tivit', false );
-    pll_register_string( 'tivit', 'escolha um ou mais assuntos', 'tivit', false );
-    pll_register_string( 'tivit', 'Filtrar por', 'tivit', false );
-    pll_register_string( 'tivit', 'minutos de leitura', 'tivit', false );
-    pll_register_string( 'tivit', 'NOSSOS CONTEÚDOS', 'tivit', false );
-    pll_register_string( 'tivit', 'Por', 'tivit', false );
-    pll_register_string( 'tivit', 'SOLUÇÕES', 'tivit', false );
-    pll_register_string( 'tivit', 'Todos os direitos reservados', 'tivit', false );
-    pll_register_string( 'tivit', 'Todos', 'tivit', false );
-    pll_register_string( 'tivit', 'ÚLTIMOS PROJETOS', 'tivit', false );
-    pll_register_string( 'tivit', 'VAGAS', 'tivit', false );
-    pll_register_string( 'tivit', 'Veja mais', 'tivit', false );
-    pll_register_string( 'tivit', 'VER AÇÃO', 'tivit', false );
-    pll_register_string( 'tivit', 'VER CASE', 'tivit', false );
-    pll_register_string( 'tivit', 'VER TODAS AS VAGAS', 'tivit', false );
-    pll_register_string( 'tivit', 'VER TODOS OS CASES', 'tivit', false );
+    pll_register_string( 'tivit', 'acessar artigo', 'tivit', 'polylang', false );
+    pll_register_string( 'tivit', 'ainda tem dúvidas? veja as perguntas frequentes:', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Carregar mais', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Cliente:', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Com quem trabalhamos', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'confira esta vaga', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'CONHEÇA A NOSSA EQUIPE', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Criado por <span>ANA COUTO</span>', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'escolha um ou mais assuntos', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Filtrar por', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'minutos de leitura', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'NOSSOS CONTEÚDOS', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Por', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'SOLUÇÕES', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Todos os direitos reservados', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Todos', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'ÚLTIMOS PROJETOS', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'VAGAS', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'Veja mais', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'VER AÇÃO', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'VER CASE', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'VER TODAS AS VAGAS', 'tivit', 'polylang', false  );
+    pll_register_string( 'tivit', 'VER TODOS OS CASES', 'tivit', 'polylang', false  );
 }
 
 /**

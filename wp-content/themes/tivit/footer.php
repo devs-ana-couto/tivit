@@ -144,7 +144,7 @@
         <div class="col-7 col-md-3 footer-copyright">
 
           <p>
-            <span>TIVIT®</span> <?php _e('Todos os direitos reservados','tivit'); ?>
+            <span>TIVIT®</span> <?php pll_e('Todos os direitos reservados','tivit'); ?>
           </p>
 
         </div>
@@ -163,7 +163,7 @@
 
         <div class="col-5 col-md-3 footer-ac">
           <p>
-            <?php _e('Criado por <span>ANA COUTO</span>','tivit'); ?>
+            <?php pll_e('Criado por <span>ANA COUTO</span>','tivit'); ?>
           </p>
         </div>
 

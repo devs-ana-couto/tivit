@@ -61,7 +61,7 @@ if (!function_exists('ac_bloco_clientes')) {
         $saida .= '<div class="row justify-content-center">';
 
         $saida .= '<div class="col-auto box-title mt-5">';
-        $saida .= '<h2>'.__('Com quem trabalhamos','tivit').'</h2>';
+        $saida .= '<h2>'.pll__('Com quem trabalhamos','tivit').'</h2>';
         $saida .= '</div>';
 
         $saida .= '<div class="col-12 box-slider">';

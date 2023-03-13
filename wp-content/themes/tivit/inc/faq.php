@@ -110,13 +110,13 @@ if (!function_exists('ac_bloco_faq')) {
         $saida .= '<div id="triangle-down"></div>';
         $saida .= '<div class="container pd">';
         $saida .= '<div class="title">';
-        $saida .= '<h2 class="titleText text-center">'.__('NOSSOS CONTEÚDOS','tivit').'</h2>';
+        $saida .= '<h2 class="titleText text-center">'.pll__('NOSSOS CONTEÚDOS','tivit').'</h2>';
         $saida .= '</div>';
         $saida .= '<div class="row hide-mobile">';
 
         $saida  = '<div id="faq" class="d-flex flex-column align-items-center justify-content-center insiderBlock">';
         $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
-        $saida .= '<h2 class="title text-center">'.__('ainda tem dúvidas? veja as perguntas frequentes:','tivit').'</h2>';
+        $saida .= '<h2 class="title text-center">'.pll__('ainda tem dúvidas? veja as perguntas frequentes:','tivit').'</h2>';
         $saida .= '</div>';
         $saida .= '<div class="w-100 block">';
         $saida .= '<div class="accordion accordion-flush" id="accordionFlushExample">';
@@ -172,7 +172,7 @@ if (!function_exists('ac_pagina_faq')) {
         $saida .= '<div class="filtros">';
         $saida .= '<div class="select">';
         $saida .= '<select name="" onchange="ac_faq_selecao(\'\')" class="faq_categoria">';
-        $saida .= '<option value="">'.__('Filtrar por','tivit').'</option>';
+        $saida .= '<option value="">'.pll__('Filtrar por','tivit').'</option>';
         if ((is_array($t_categorias)) && (count($t_categorias)>0)) {
             foreach ($t_categorias as $slug => $nome) {
                 $ativo = ($slug == $get_categoria) ? 'selected' : '';
@@ -206,7 +206,7 @@ if (!function_exists('ac_pagina_faq')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '<p class="m-0 h-100">'.pll__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -214,10 +214,10 @@ if (!function_exists('ac_pagina_faq')) {
             $saida .= '<div class="autor-time w-100">';
             $saida .= '<div class="d-flex flex-row">';
             $saida .= '</div>';
-            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura','tivit').'</p>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.pll__('minutos de leitura','tivit').'</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo','tivit').'</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.pll__('acessar artigo','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -236,7 +236,7 @@ if (!function_exists('ac_pagina_faq')) {
         $saida .= '<div class="divisao">';
         $saida .= '<div class="select">';
         $saida .= '<select name="" onchange="ac_faq_selecao(\'\')" class="faq_categoria_mobile">';
-        $saida .= '<option value="">'.__('Filtrar por','tivit').'</option>';
+        $saida .= '<option value="">'.pll__('Filtrar por','tivit').'</option>';
         if ((is_array($t_categorias)) && (count($t_categorias)>0)) {
             foreach ($t_categorias as $slug => $nome) {
                 $ativo = ($slug == $get_categoria) ? 'selected' : '';
@@ -269,7 +269,7 @@ if (!function_exists('ac_pagina_faq')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '<p class="m-0 h-100">'.pll__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -277,10 +277,10 @@ if (!function_exists('ac_pagina_faq')) {
             $saida .= '<div class="autor-time w-100">';
             $saida .= '<div class="d-flex flex-row aaa">';
             $saida .= '</div>';
-            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura','tivit').'</p>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.pll__('minutos de leitura','tivit').'</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo','tivit').'</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.pll__('acessar artigo','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -331,7 +331,7 @@ if (!function_exists('ac_pagina_faq_pesquisa_desktop')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '<p class="m-0 h-100">'.pll__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -339,10 +339,10 @@ if (!function_exists('ac_pagina_faq_pesquisa_desktop')) {
             $saida .= '<div class="autor-time w-100">';
             $saida .= '<div class="d-flex flex-row">';
             $saida .= '</div>';
-            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura','tivit').'</p>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.pll__('minutos de leitura','tivit').'</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo','tivit').'</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.pll__('acessar artigo','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -391,7 +391,7 @@ if (!function_exists('ac_pagina_faq_pesquisa_mobile')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>'.$dados[$ac]['postdate'].'</span>';
-            $saida .= '<p class="m-0 h-100">'.__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
+            $saida .= '<p class="m-0 h-100">'.pll__('Por','tivit').' <b>'.$dados[$ac]['quem'].'</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>'.$dados[$ac]['titulo'].'</h3>';
@@ -399,10 +399,10 @@ if (!function_exists('ac_pagina_faq_pesquisa_mobile')) {
             $saida .= '<div class="autor-time w-100">';
             $saida .= '<div class="d-flex flex-row aaa">';
             $saida .= '</div>';
-            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.__('minutos de leitura','tivit').'</p>';
+            $saida .= '<p>'.$dados[$ac]['tleitura'].' '.pll__('minutos de leitura','tivit').'</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="'.$dados[$ac]['link'].'">'.__('acessar artigo','tivit').'</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'].'">'.pll__('acessar artigo','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';

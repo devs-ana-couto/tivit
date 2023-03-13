@@ -345,10 +345,10 @@ if (!function_exists('ac_bloco_conteudo')) {
             $saida .= '<div class="card-body">';
             $saida .= '<div class="col-12 d-flex justify-content-between mt-4">';
             $saida .= '<p class="data">' . $dados[$ac]['postdate'] . '</p>';
-            $saida .= '<p class="author">' . __('Por', 'tivit') . ': <strong>' . $dados[$ac]['quem'] . '</strong></p>';
+            $saida .= '<p class="author">' . pll__('Por', 'tivit') . ': <strong>' . $dados[$ac]['quem'] . '</strong></p>';
             $saida .= '</div>';
             $saida .= '<h5 class="card-title pt-3">' . $dados[$ac]['titulo'] . '</h5>';
-            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn btn-view-more pt-2">Veja mais</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn btn-view-more pt-2">'.pll__('Veja mais','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -464,8 +464,8 @@ if (!function_exists('ac_bloco_page_conteudo')) {
             $saida .= '<div class="row justify-content-center">';
             $saida .= '<div class="col-auto">';
             $saida .= '<div class="assuntos">';
-            $saida .= '<h4 class="text-center text-uppercase">' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
-            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
+            $saida .= '<h4 class="text-center text-uppercase">' . pll__('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . pll__('Todos', 'tivit') . '</button>';
             foreach ($categoria_lista as $chave => $valor) {
                 $saida .= '<button type="button" class="btn conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</button>';
             }
@@ -493,11 +493,11 @@ if (!function_exists('ac_bloco_page_conteudo')) {
             $saida .= '<div class="card-body"  onclick="redirect_article(\''.$dados[$ac]['link'] .'\')">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por', 'tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content px-0 pt-2"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '<div class="box-link-cta px-0 py-2">';
-            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">Veja mais</a>';
+            $saida .= '<a href="'.$dados[$ac]['link'] .'" class="btn">'.pll__('Veja mais','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>'; //.card-body
 
@@ -565,7 +565,7 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
 
         $saida .= '<div class="container pd">';
         $saida .= '<div class="title">';
-        $saida .= '<h2 class="titleText text-center">' . __('ÚLTIMOS PROJETOS') . '</h2>';
+        $saida .= '<h2 class="titleText text-center">' . pll__('ÚLTIMOS PROJETOS','tivit') . '</h2>';
         $saida .= '</div>';
         $saida .= '<div class="row hide-mobile">';
         for ($ac = 0; $ac < count($dados); $ac++) {
@@ -591,7 +591,7 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
@@ -602,10 +602,10 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
                 $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
             }
             $saida .= '</div>';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . pll__('minutos de leitura','tivit') . '</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo','tivit') . '</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -638,7 +638,7 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
@@ -649,10 +649,10 @@ if (!function_exists('ac_bloco_conteudo_esg')) {
                 $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
             }
             $saida .= '</div>';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . pll__('minutos de leitura','tivit') . '</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo','tivit') . '</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -767,7 +767,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<div class="assuntos">';
         $saida .= '<h4>' . _('escolha um ou mais assuntos') . '</h4>';
         $ativo = (count($get_etiqueta) == 0) ? 'active' : '';
-        $saida .= '<a href="#" class="' . $ativo . ' conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_selecao(\'todos\')">' . __('Todos') . '</a>';
+        $saida .= '<a href="#" class="' . $ativo . ' conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_selecao(\'todos\')">' . pll__('Todos') . '</a>';
         if ((is_array($t_etiquetas)) && (count($t_etiquetas) > 0)) {
             foreach ($t_etiquetas as $slug => $nome) {
                 $ativo = (in_array($slug, $get_etiqueta)) ? 'active' : '';
@@ -802,13 +802,13 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b> 1111111111' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b> 1111111111' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">acessar artigo <img src="' . get_template_directory_uri() . '/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '"'.pll_('acessar artigo', 'tivit'). '<img src="' . get_template_directory_uri() . '/assets/images/a-tivit/arrow.svg" class="hide-desktop" alt="Saiba Mais"></a>';
             $saida .= '</div>';
             $saida .= '</div>';
         }
@@ -826,7 +826,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<div class="filtros">';
         $saida .= '<div class="select">';
         $saida .= '<select name="">';
-        $saida .= '<option value="">' . _('escolha um ou mais assuntos') . '</option>';
+        $saida .= '<option value="">' . pll_('escolha um ou mais assuntos') . '</option>';
         if ((is_array($t_etiquetas)) && (count($t_etiquetas) > 0)) {
             foreach ($t_etiquetas as $slug => $nome) {
                 $ativo = (in_array($slug, $get_etiqueta)) ? 'selected' : '';
@@ -838,7 +838,7 @@ if (!function_exists('ac_pagina_conteudo')) {
         $saida .= '<div class="divisao">';
         $saida .= '<div class="select">';
         $saida .= '<select name="">';
-        $saida .= '<option value="">' . ('Filtrar por') . '</option>';
+        $saida .= '<option value="">' . pll_('Filtrar por', 'tivit') . '</option>';
         if ((is_array($t_categorias)) && (count($t_categorias) > 0)) {
             foreach ($t_categorias as $slug => $nome) {
                 $ativo = ($slug == $get_categoria) ? 'selected' : '';
@@ -878,7 +878,7 @@ if (!function_exists('ac_pagina_conteudo')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
@@ -889,10 +889,10 @@ if (!function_exists('ac_pagina_conteudo')) {
                 $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
             }
             $saida .= '</div>';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . pll__('minutos de leitura','tivit') . '</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo','tivit') . '</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -989,12 +989,12 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
             $saida .= '<div class="card-body">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '</div>'; //.card-body
             $saida .= '<div class="card-footer border-0 bg-transparent">';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo') . '</a></div>';
             $saida .= '</div>'; //.card-footer
             $saida .= '</div>'; //.card
             $saida .= '</div>'; //.col-12
@@ -1019,10 +1019,10 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_desktop')) {
             $saida .= '</div>'; //.img
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo') . '</a></div>';
             $saida .= '</div>'; //.cardContent
             $saida .= '</div>'; //.col-12
             $saida .= '</div>'; //.carousel-item
@@ -1083,7 +1083,7 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
             $saida .= '</div>';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>';
             $saida .= '<div class="content">';
             $saida .= '<h3>' . $dados[$ac]['titulo'] . '</h3>';
@@ -1094,10 +1094,10 @@ if (!function_exists('ac_pagina_conteudo_pesquisa_mobile')) {
                 $saida .= '<a href="#">' . $etiquetas[$k] . '</a>';
             }
             $saida .= '</div>';
-            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . __('minutos de leitura') . '</p>';
+            $saida .= '<p>' . $dados[$ac]['tleitura'] . ' ' . pll__('minutos de leitura','tivit') . '</p>';
             $saida .= '</div>';
             $saida .= '<div class="acessar">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo','tivit') . '</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';

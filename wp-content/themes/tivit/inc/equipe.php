@@ -114,7 +114,7 @@ if (!function_exists('ac_bloco_equipe')) {
             $saida .= '<div id="triangle-down"></div>';
             $saida .= '<div class="container">';
             $saida .= '<div class="d-flex justify-content-center align-items-center flex-column w-100">';
-            $saida .= '<h2 class="title text-center">'.__('CONHEÇA A NOSSA EQUIPE','tivit').'</h2>';
+            $saida .= '<h2 class="title text-center">'.pll__('CONHEÇA A NOSSA EQUIPE','tivit').'</h2>';
             $saida .= '</div>';
             $saida .= '<div id="carouselCustom" class="container-fluid text-center my-3">';
             $saida .= '<div class="row mx-auto my-auto justify-content-center">';

@@ -194,7 +194,7 @@ if (!function_exists('ac_bloco_cases')) {
             $saida .= '</ul>';
             $saida .= '</div>';
             $saida .= '<div class="col-12 box-link mt-2 mt-lg-4">';
-            $saida .= '<a href="#">'.__('VER AÇÃO','tivit').'</a>';
+            $saida .= '<a href="#">'.pll__('VER AÇÃO','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -253,7 +253,7 @@ if (!function_exists('ac_bloco_home_cases')) {
             $saida .= '</div>';
             $saida .= '<div class="card-footer w-100 border-0 px-0">';
             $saida .= '<div class="box-link-cta">';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="p-0">VER CASE</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="p-0">'.pll__('VER CASE','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -266,7 +266,7 @@ if (!function_exists('ac_bloco_home_cases')) {
 
         $saida .= '<div class="row justify-content-center mt-5">';
         $saida .= '<div class="col-auto box-btn">';
-        $saida .= '<a href="'.site_url('/cases').'" class="btn btn-tivit1 btncontent">'.__('VER TODOS OS CASES', 'tivit').'</a>';
+        $saida .= '<a href="'.site_url('/cases').'" class="btn btn-tivit1 btncontent">'.pll__('VER TODOS OS CASES', 'tivit').'</a>';
         $saida .= '</div>';
         $saida .= '</div>';
         $saida .= '</div>';
@@ -387,8 +387,8 @@ if (!function_exists('ac_pagina_cases')) {
         if ($vejamais) {
             $saida .= '<div class="col-auto">';
             $saida .= '<div class="assuntos">';
-            $saida .= '<h4 class="text-center text-uppercase">' . __('escolha um ou mais assuntos', 'tivit') . '</h4>';
-            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
+            $saida .= '<h4 class="text-center text-uppercase">' . pll__('escolha um ou mais assuntos', 'tivit') . '</h4>';
+            $saida .= '<button type="button" class="btn active conteudo_etiqueta conteudo_etiqueta_todos" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . pll__('Todos', 'tivit') . '</button>';
             foreach ($categoria_lista as $chave => $valor) {
                 $saida .= '<button type="button" class="btn conteudo_etiqueta conteudo_etiqueta_' . $chave . '" data-conteudo="' . $chave . '" onclick="ac_conteudo_lista_categoria(\'' . $chave . '\')">' . $valor . '</button>';
             }
@@ -420,7 +420,7 @@ if (!function_exists('ac_pagina_cases')) {
             $saida .= '<p class="author">Cliente: <strong>' . $dados[$ac]['cliente'] . '</strong></p>';
             $saida .= '</div>';
             $saida .= '<h5 class="card-title pt-3">' . $dados[$ac]['titulo'] . '</h5>';
-            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="btn btn-view-more pt-2">Veja mais</a>';
+            $saida .= '<a href="' . $dados[$ac]['link'] . '" class="btn btn-view-more pt-2">'.pll__('Veja mais','tivit').'</a>';
             $saida .= '</div>';
             $saida .= '</div>';
             $saida .= '</div>';
@@ -434,7 +434,7 @@ if (!function_exists('ac_pagina_cases')) {
         if ($vejamais) {
             $saida .= '<div class="row justify-content-center mt-5">';
             $saida .= '<div class="col-auto">';
-            $saida .= '<button type="button" class="btn btn-tivit1" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . __('Todos', 'tivit') . '</button>';
+            $saida .= '<button type="button" class="btn btn-tivit1" onclick="ac_conteudo_lista_categoria(\'todos\')" data-conteudo="">' . pll__('Todos', 'tivit') . '</button>';
             $saida .= '</div>';
             $saida .= '</div>';
         }
@@ -570,12 +570,12 @@ if (!function_exists('ac_pagina_case_pesquisa_desktop')) {
             $saida .= '<div class="card-body">';
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
             $saida .= '</div>'; //.card-body
             $saida .= '<div class="card-footer border-0 bg-transparent">';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo') . '</a></div>';
             $saida .= '</div>'; //.card-footer
             $saida .= '</div>'; //.card
             $saida .= '</div>'; //.col-12
@@ -600,10 +600,10 @@ if (!function_exists('ac_pagina_case_pesquisa_desktop')) {
             $saida .= '</div>'; //.img
             $saida .= '<div class="detalhes">';
             $saida .= '<span>' . $dados[$ac]['postdate'] . '</span>';
-            $saida .= '<p class="m-0 h-100">' . __('Por') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
+            $saida .= '<p class="m-0 h-100">' . pll__('Por','tivit') . ' <b>' . $dados[$ac]['quem'] . '</b></p>';
             $saida .= '</div>'; //.detalhes
             $saida .= '<div class="content"><h3>' . $dados[$ac]['titulo'] . '</h3></div>';
-            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . __('acessar artigo') . '</a></div>';
+            $saida .= '<div class="acessar"><a href="' . $dados[$ac]['link'] . '">' . pll__('acessar artigo') . '</a></div>';
             $saida .= '</div>'; //.cardContent
             $saida .= '</div>'; //.col-12
             $saida .= '</div>'; //.carousel-item

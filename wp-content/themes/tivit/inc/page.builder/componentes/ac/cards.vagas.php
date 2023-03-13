@@ -66,7 +66,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto mt-5">
-                    <a href="{link_global}" class="btn btn-tivit1">'.__('VER TODAS AS VAGAS','tivit').'</a>
+                    <a href="{link_global}" class="btn btn-tivit1">'.pll__('VER TODAS AS VAGAS','tivit').'</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ function pb_ac_vacancies($obj_id, $obj = null, $block, $echo = true)
                             <p class="card-text">{card_desc}</p>
                         </div>
                         <div class="card-footer">
-                            <a href="{card_link}" class="btn cta-conteudo2">'.__('confira esta vaga','tivit').'</a>
+                            <a href="{card_link}" class="btn cta-conteudo2">'.pll__('confira esta vaga','tivit').'</a>
                         </div>
                     </div>
                 </div>
